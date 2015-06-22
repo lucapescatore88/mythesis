@@ -1,0 +1,844 @@
+Sender: LSF System <lsfadmin@b6fc707651.cern.ch>
+Subject: Job 610336813: <RKst_drawVarEE> in cluster batch Exited
+
+Job <RKst_drawVarEE> was submitted from host <lxplus0056.cern.ch> by user <pluca> in cluster <batch>.
+Job was executed on host(s) <b6fc707651.cern.ch>, in queue <8nh>, as user <pluca> in cluster <batch>.
+</afs/cern.ch/user/p/pluca> was used as the home directory.
+</afs/cern.ch/user/p/pluca/repositories/lhcbbham/RKst> was used as the working directory.
+Started at Mon Jan 12 09:56:01 2015
+Results reported at Mon Jan 12 10:01:13 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+cd /afs/cern.ch/work/p/pluca/jobs/RKst/drawVarEE
+./drawVariables.out EE
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time   :    206.38 sec.
+    Max Memory :      1233 MB
+    Max Swap   :      2095 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/pluca/610336813> on <>
+
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+
+Draw EE
+
+
+TCut Common
+OBJ: TCut	CUT	((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88)
+
+TCut BGS
+OBJ: TCut	CUT	(((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300)
+
+TCut JPs
+OBJ: TCut	CUT	((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300))&&(TMath::Abs(B0_M - 5279.58) < 200)
+
+TCut SB
+OBJ: TCut	CUT	((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(B0_DTF_PV_M[0] > 5600 && B0_DTF_PV_M[0] < 5900))&&(B0_DTF_PV_JPs_M[0] > 5150))&&(wNB > 0.88)
+
+
+CL JPs
+
+getTreeReader: KstJPsEE
+
+Number of trees in chain: 1
+
+Set up 731 / 731 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_candidates.root
+
+Read in 26439 events
+
+
+CopyTree
+N Tot = 26439
+TCut 
+OBJ: TCut	CUT	((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300))&&(TMath::Abs(B0_M - 5279.58) < 200)
+N Pas = 16868 (63.7997%)
+Frac  = -1
+Copied 16868 entries
+
+
+MC JPs
+
+getTreeReader: Bd2KstJPsEE
+
+Number of trees in chain: 1
+
+Set up 992 / 992 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_candidates.root
+
+Read in 13751 events
+
+
+CopyTree
+N Tot = 13751
+TCut 
+OBJ: TCut	CUT	((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300))&&(TMath::Abs(B0_M - 5279.58) < 200)
+N Pas = 10677 (77.6453%)
+Frac  = -1
+Copied 10677 entries
+
+
+CL SB
+
+getTreeReader: KstEE_sb
+
+Number of trees in chain: 1
+
+Set up 730 / 730 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_candidates.root
+
+Read in 31 events
+
+
+CopyTree
+N Tot = 31
+TCut 
+OBJ: TCut	CUT	((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(B0_DTF_PV_M[0] > 5600 && B0_DTF_PV_M[0] < 5900))&&(B0_DTF_PV_JPs_M[0] > 5150))&&(wNB > 0.88)
+N Pas = 31 (100%)
+Frac  = -1
+
+CL BGS
+
+Fit JPs EE jps (doUnbinned = 1, doSWeight = 0)
+-swap-comb-argus
+-linlog-ANDpulls-noCost-leg[0.5,0.6,0.7,1]-legf-layout[0.7,0.6,1,1]-font0.03-xum_{B_{0}}-plotSigComp
+
+
+MC
+
+getTreeReader: Bd2KstJPs_EE (DecayTuple)
+
+
+Number of trees in chain: 1
+
+Set up 992 / 992 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_Bd2KstJPs_EE.root
+
+Read in 126683 events
+
+
+CL
+
+getTreeReader: LPT (DecayTuple)
+
+
+Number of trees in chain: 1
+
+Set up 730 / 730 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_LPT.root
+
+Read in 552879 events
+
+
+Fit MC
+
+KstJPsEE_MC: Initialize -docuts
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'band_0' created with bounds [4800,5850]
+
+KstJPsEE_MC: CreateReducedTree -docuts
+
+CopyTree
+N Tot = 126683
+TCut 
+OBJ: TCut	CUT	(((TMath::Abs(B0_TRUEID) != 0 && TMath::Abs(Kst_MC_MOTHER_ID) == 511 && TMath::Abs(K_MC_MOTHER_ID) == 313 && TMath::Abs(Pi_MC_MOTHER_ID) == 313)&&(TMath::Abs(E1_MC_MOTHER_ID) == 443 && TMath::Abs(E2_MC_MOTHER_ID) == 443 && TMath::Abs(JPs_MC_MOTHER_ID) == 511))&&(TMath::Abs(Kst_TRUEID) == 313 && TMath::Abs(K_TRUEID) == 321 && TMath::Abs(Pi_TRUEID) == 211 && TMath::Abs(E1_TRUEID) == 11 && TMath::Abs(E2_TRUEID) == 11 && TMath::Abs(JPs_TRUEID) == 443))&&((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300))
+N Pas = 12712 (10.0345%)
+Frac  = -1
+Copied 12712 entries
+
+
+KstJPsEE_MC: CreateDataSet 
+Candidates: 12712
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(dataKstJPsEE_MC) Ignored 6 out of range events
+RooDataSet::dataKstJPsEE_MC[B0_PV_JPs_M,weight:1] = 12706 entries (12706 weighted)
+
+KstJPsEE_MC: Initialized Correctly! The model is:
+RooAddPdf::totsig_KstJPsEE_MC[ f_sig_KstJPsEE_MC * CB1_sig_KstJPsEE_MC + [%] * CB2_sig_KstJPsEE_MC ] = 1
+
+KstJPsEE_MC: Fit B0_PV_JPs_M (105,4800,5850) -linlog-ANDpulls-noCost-leg[0.5,0.6,0.7,1]-legf-layout[0.7,0.6,1,1]-font0.03-xum_{B_{0}}-plotSigComp
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'FitRange' created with bounds [4800,5850]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC) constructing test statistic for sub-range named FitRange
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'NormalizationRangeForFitRange' created with bounds [4800,5850]
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC' created with bounds [4800,5850]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+ **********
+ **    9 **SET NOWARNINGS           0
+ **********
+ **********
+ **   10 **SET PRINT           2
+ **********
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (CB1_sig_KstJPsEE_MC,CB2_sig_KstJPsEE_MC)
+ **********
+ **   13 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=63171.9 FROM MIGRAD    STATUS=INITIATE       32 CALLS          33 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -1.00000e+00   4.99500e-01   1.72100e-01  -3.74971e+03
+   2  a_sig_KstJPsEE_MC   1.00000e+00   4.99500e-01   1.72100e-01  -3.97132e+03
+   3  f_sig_KstJPsEE_MC   6.00000e-01   1.00000e-01   2.05758e-01   1.63359e+03
+   4  m_sig_KstJPsEE_MC   5.27958e+03   1.05000e+02   2.02159e-01  -6.19029e+04
+   5  n2_sig_KstJPsEE_MC   2.00000e+00   9.90000e-01   2.30555e-02   9.48998e+03
+   6  n_sig_KstJPsEE_MC   2.00000e+00   9.00000e-01   2.19826e-02  -2.07097e+04
+   7  s2_sig_KstJPsEE_MC   1.87885e+01   8.45484e+00   2.44700e-01  -4.82690e+02
+   8  s_sig_KstJPsEE_MC   1.12731e+01   4.60319e+00   2.45473e-01   8.80010e+02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=62613.2 FROM MIGRAD    STATUS=PROGRESS       52 CALLS          53 TOTAL
+                     EDM=433.497    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -8.55166e-01   4.99500e-01   4.99897e-02   6.74307e+02
+   2  a_sig_KstJPsEE_MC   1.16007e+00   4.99500e-01   5.16282e-02  -1.83435e+02
+   3  f_sig_KstJPsEE_MC   5.01705e-01   1.00000e-01  -1.97947e-01  -2.44139e+01
+   4  m_sig_KstJPsEE_MC   5.28110e+03   1.05000e+02   2.90271e-03  -1.17846e+04
+   5  n2_sig_KstJPsEE_MC   1.77556e+00   9.90000e-01  -5.20057e-03  -1.17601e+04
+   6  n_sig_KstJPsEE_MC   2.31516e+00   9.00000e-01   7.13656e-03  -1.52073e+03
+   7  s2_sig_KstJPsEE_MC   2.01750e+01   8.45484e+00   3.83012e-02   2.33523e+02
+   8  s_sig_KstJPsEE_MC   1.00047e+01   4.60319e+00  -6.75987e-02   2.85287e+02
+                               ERR DEF= 0.5
+ FCN=62438.5 FROM MIGRAD    STATUS=PROGRESS      238 CALLS         239 TOTAL
+                     EDM=31.1582    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  21.2 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -2.68920e-01   3.31178e-02   2.85915e-02   1.34484e+02
+   2  a_sig_KstJPsEE_MC   8.92132e-01   2.74480e-02  -3.16823e-02  -5.04989e+02
+   3  f_sig_KstJPsEE_MC   6.41284e-01   1.68796e-02   5.22829e-02   2.60203e+02
+   4  m_sig_KstJPsEE_MC   5.28130e+03   1.68606e-01   6.67863e-05   1.87250e+02
+   5  n2_sig_KstJPsEE_MC   5.87304e+00   3.04431e-01   4.13015e-03  -1.70798e+02
+   6  n_sig_KstJPsEE_MC   3.53101e+00   1.71718e-01   8.75209e-03  -1.94810e+03
+   7  s2_sig_KstJPsEE_MC   1.23388e+01   9.48851e-01  -6.62405e-02   2.64438e+02
+   8  s_sig_KstJPsEE_MC   1.08259e+01   3.18937e-01   4.58542e-03   3.09978e+02
+                               ERR DEF= 0.5
+ FCN=62372.6 FROM MIGRAD    STATUS=PROGRESS      426 CALLS         427 TOTAL
+                     EDM=0.491053    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  15.2 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -2.40945e-01   2.75336e-02  -1.03168e-02   1.47529e+02
+   2  a_sig_KstJPsEE_MC   6.86786e-01   2.94192e-02  -1.42597e-03  -3.35120e+01
+   3  f_sig_KstJPsEE_MC   5.33116e-01   1.55269e-02   4.54469e-03  -2.14512e+01
+   4  m_sig_KstJPsEE_MC   5.27965e+03   2.90624e-01   4.64332e-04  -6.43469e+02
+   5  n2_sig_KstJPsEE_MC   3.66218e+00   2.54998e-01   1.94079e-03  -1.85969e+01
+   6  n_sig_KstJPsEE_MC   5.08308e+00   2.85647e-01  -2.58995e-03  -1.27993e+02
+   7  s2_sig_KstJPsEE_MC   6.55379e+00   8.41171e-01   2.96359e-02   5.58928e+01
+   8  s_sig_KstJPsEE_MC   1.00163e+01   3.27870e-01  -1.63510e-03   1.92095e+01
+                               ERR DEF= 0.5
+ FCN=62370.7 FROM MIGRAD    STATUS=PROGRESS      608 CALLS         609 TOTAL
+                     EDM=2.05519e-05    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   7.2 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -3.27640e-01   4.31689e-02   2.62155e-04  -6.72472e-01
+   2  a_sig_KstJPsEE_MC   5.90345e-01   4.77449e-02   2.82058e-04   9.94414e-01
+   3  f_sig_KstJPsEE_MC   4.90834e-01   2.43541e-02   8.99607e-04  -6.81746e-02
+   4  m_sig_KstJPsEE_MC   5.28016e+03   3.43666e-01   2.75161e-06   1.08331e+01
+   5  n2_sig_KstJPsEE_MC   3.24641e+00   2.08976e-01   3.39895e-05   1.04395e+00
+   6  n_sig_KstJPsEE_MC   5.86618e+00   5.81854e-01  -1.17354e-04   8.99152e-01
+   7  s2_sig_KstJPsEE_MC   7.73822e+00   7.18119e-01  -5.96275e-05  -4.37170e-01
+   8  s_sig_KstJPsEE_MC   9.44720e+00   4.32729e-01   1.62128e-05  -4.49266e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         8.7703e-03  6.8572e-02  8.4988e-02  2.9082e-01  3.2668e-01  1.4351e+00  2.7159e+00  3.0692e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=62370.7 FROM MIGRAD    STATUS=CONVERGED     675 CALLS         676 TOTAL
+                     EDM=5.23257e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsEE_MC  -3.27640e-01   4.51171e-02   5.77209e-04  -6.86790e-01
+   2  a_sig_KstJPsEE_MC   5.90345e-01   5.26615e-02   7.09967e-04   1.01105e+00
+   3  f_sig_KstJPsEE_MC   4.90834e-01   2.73495e-02   2.48074e-03  -6.98526e-02
+   4  m_sig_KstJPsEE_MC   5.28016e+03   3.38434e-01   4.92193e-05   1.08883e+01
+   5  n2_sig_KstJPsEE_MC   3.24641e+00   2.25559e-01   2.24988e-04   1.27332e+00
+   6  n_sig_KstJPsEE_MC   5.86618e+00   6.36049e-01   5.94914e-04   1.13425e+00
+   7  s2_sig_KstJPsEE_MC   7.73822e+00   6.63716e-01   1.19630e-03  -4.12647e-01
+   8  s_sig_KstJPsEE_MC   9.44720e+00   4.52045e-01   1.53063e-03  -4.28497e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  2.036e-03  1.856e-03  1.075e-03 -8.853e-03  7.747e-03 -1.434e-02 -2.425e-02  1.130e-02 
+  1.856e-03  2.774e-03  1.191e-03 -9.701e-03  6.904e-03 -2.534e-02 -1.943e-02  1.866e-02 
+  1.075e-03  1.191e-03  7.487e-04 -2.652e-03  4.432e-03 -1.018e-02 -9.865e-03  6.483e-03 
+ -8.853e-03 -9.701e-03 -2.652e-03  1.145e-01 -1.506e-02  4.912e-02  1.741e-01 -1.017e-01 
+  7.747e-03  6.904e-03  4.432e-03 -1.506e-02  5.088e-02 -6.970e-02 -4.704e-02  2.577e-02 
+ -1.434e-02 -2.534e-02 -1.018e-02  4.912e-02 -6.970e-02  4.046e-01  9.587e-02 -9.142e-02 
+ -2.425e-02 -1.943e-02 -9.865e-03  1.741e-01 -4.704e-02  9.587e-02  4.406e-01 -1.682e-01 
+  1.130e-02  1.866e-02  6.483e-03 -1.017e-01  2.577e-02 -9.142e-02 -1.682e-01  2.044e-01 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.99127   1.000  0.781  0.871 -0.580  0.761 -0.500 -0.810  0.554
+        2  0.98290   0.781  1.000  0.826 -0.544  0.581 -0.757 -0.556  0.784
+        3  0.96487   0.871  0.826  1.000 -0.286  0.718 -0.585 -0.543  0.524
+        4  0.89747  -0.580 -0.544 -0.286  1.000 -0.197  0.228  0.775 -0.665
+        5  0.94453   0.761  0.581  0.718 -0.197  1.000 -0.486 -0.314  0.253
+        6  0.91383  -0.500 -0.757 -0.585  0.228 -0.486  1.000  0.227 -0.318
+        7  0.97200  -0.810 -0.556 -0.543  0.775 -0.314  0.227  1.000 -0.560
+        8  0.93653   0.554  0.784  0.524 -0.665  0.253 -0.318 -0.560  1.000
+ **********
+ **   16 **HESSE        4000
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         7.7661e-03  6.7254e-02  8.4803e-02  2.8731e-01  3.2472e-01  1.4357e+00  2.7199e+00  3.0726e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=62370.7 FROM HESSE     STATUS=OK             61 CALLS         737 TOTAL
+                     EDM=5.49306e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  a2_sig_KstJPsEE_MC  -3.27640e-01   4.78397e-02   1.15442e-04   1.20732e+00
+   2  a_sig_KstJPsEE_MC   5.90345e-01   5.51644e-02   1.41993e-04  -1.08034e+00
+   3  f_sig_KstJPsEE_MC   4.90834e-01   2.84261e-02   4.96148e-04  -1.83328e-02
+   4  m_sig_KstJPsEE_MC   5.28016e+03   3.51348e-01   9.84386e-06  -8.55132e-02
+   5  n2_sig_KstJPsEE_MC   3.24641e+00   2.29671e-01   8.99954e-06  -1.45713e+00
+   6  n_sig_KstJPsEE_MC   5.86618e+00   6.49669e-01   2.37966e-05  -1.42009e+00
+   7  s2_sig_KstJPsEE_MC   7.73822e+00   7.04423e-01   4.78521e-05  -1.06073e+00
+   8  s_sig_KstJPsEE_MC   9.44720e+00   4.69090e-01   3.06127e-04  -6.82008e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  2.289e-03  2.108e-03  1.199e-03 -1.042e-02  8.431e-03 -1.603e-02 -2.804e-02  1.324e-02 
+  2.108e-03  3.044e-03  1.319e-03 -1.125e-02  7.597e-03 -2.731e-02 -2.312e-02  2.068e-02 
+  1.199e-03  1.319e-03  8.089e-04 -3.452e-03  4.751e-03 -1.105e-02 -1.175e-02  7.480e-03 
+ -1.042e-02 -1.125e-02 -3.452e-03  1.234e-01 -1.957e-02  5.946e-02  1.965e-01 -1.134e-01 
+  8.431e-03  7.597e-03  4.751e-03 -1.957e-02  5.275e-02 -7.462e-02 -5.744e-02  3.107e-02 
+ -1.603e-02 -2.731e-02 -1.105e-02  5.946e-02 -7.462e-02  4.221e-01  1.196e-01 -1.045e-01 
+ -2.804e-02 -2.312e-02 -1.175e-02  1.965e-01 -5.744e-02  1.196e-01  4.964e-01 -1.964e-01 
+  1.324e-02  2.068e-02  7.480e-03 -1.134e-01  3.107e-02 -1.045e-01 -1.964e-01  2.201e-01 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.99224   1.000  0.799  0.881 -0.620  0.767 -0.516 -0.832  0.590
+        2  0.98443   0.799  1.000  0.841 -0.581  0.600 -0.762 -0.595  0.799
+        3  0.96753   0.881  0.841  1.000 -0.345  0.727 -0.598 -0.586  0.561
+        4  0.90528  -0.620 -0.581 -0.345  1.000 -0.243  0.260  0.794 -0.688
+        5  0.94655   0.767  0.600  0.727 -0.243  1.000 -0.500 -0.355  0.288
+        6  0.91756  -0.516 -0.762 -0.598  0.260 -0.500  1.000  0.261 -0.343
+        7  0.97519  -0.832 -0.595 -0.586  0.794 -0.355  0.261  1.000 -0.594
+        8  0.94121   0.590  0.799  0.561 -0.688  0.288 -0.343 -0.594  1.000
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(totsig_KstJPsEE_MC) Calculating sum-of-weights-squared correction matrix for covariance matrix
+ **********
+ **   19 **HESSE        4000
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         7.6547e-03  6.7207e-02  8.4788e-02  2.8700e-01  3.2460e-01  1.4357e+00  2.7202e+00  3.0728e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=62370.7 FROM HESSE     STATUS=OK             61 CALLS         798 TOTAL
+                     EDM=5.52291e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  a2_sig_KstJPsEE_MC  -3.27640e-01   4.81826e-02   2.30884e-05   1.20732e+00
+   2  a_sig_KstJPsEE_MC   5.90345e-01   5.54676e-02   2.83987e-05  -1.08034e+00
+   3  f_sig_KstJPsEE_MC   4.90834e-01   2.85890e-02   9.92296e-05  -1.83328e-02
+   4  m_sig_KstJPsEE_MC   5.28016e+03   3.52389e-01   1.96877e-06  -8.55132e-02
+   5  n2_sig_KstJPsEE_MC   3.24641e+00   2.30634e-01   1.79991e-06  -1.45713e+00
+   6  n_sig_KstJPsEE_MC   5.86618e+00   6.50855e-01   4.75931e-06  -1.42009e+00
+   7  s2_sig_KstJPsEE_MC   7.73822e+00   7.08033e-01   9.57042e-06  -1.06073e+00
+   8  s_sig_KstJPsEE_MC   9.44720e+00   4.71121e-01   6.12254e-05  -6.82008e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  2.322e-03  2.141e-03  1.216e-03 -1.058e-02  8.551e-03 -1.625e-02 -2.845e-02  1.348e-02 
+  2.141e-03  3.077e-03  1.337e-03 -1.141e-02  7.715e-03 -2.752e-02 -2.352e-02  2.092e-02 
+  1.216e-03  1.337e-03  8.182e-04 -3.540e-03  4.813e-03 -1.117e-02 -1.197e-02  7.612e-03 
+ -1.058e-02 -1.141e-02 -3.540e-03  1.242e-01 -2.018e-02  6.042e-02  1.984e-01 -1.145e-01 
+  8.551e-03  7.715e-03  4.813e-03 -2.018e-02  5.319e-02 -7.545e-02 -5.894e-02  3.191e-02 
+ -1.625e-02 -2.752e-02 -1.117e-02  6.042e-02 -7.545e-02  4.236e-01  1.222e-01 -1.060e-01 
+ -2.845e-02 -2.352e-02 -1.197e-02  1.984e-01 -5.894e-02  1.222e-01  5.015e-01 -1.993e-01 
+  1.348e-02  2.092e-02  7.612e-03 -1.145e-01  3.191e-02 -1.060e-01 -1.993e-01  2.220e-01 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.99235   1.000  0.801  0.882 -0.623  0.769 -0.518 -0.834  0.594
+        2  0.98461   0.801  1.000  0.843 -0.584  0.603 -0.762 -0.599  0.801
+        3  0.96790   0.882  0.843  1.000 -0.351  0.730 -0.600 -0.591  0.565
+        4  0.90587  -0.623 -0.584 -0.351  1.000 -0.248  0.263  0.795 -0.690
+        5  0.94701   0.769  0.603  0.730 -0.248  1.000 -0.503 -0.361  0.294
+        6  0.91788  -0.518 -0.762 -0.600  0.263 -0.503  1.000  0.265 -0.346
+        7  0.97544  -0.834 -0.599 -0.591  0.795 -0.361  0.265  1.000 -0.597
+        8  0.94173   0.594  0.801  0.565 -0.690  0.294 -0.346 -0.597  1.000
+setting parameter 0 error to 0.0474994
+setting parameter 1 error to 0.054864
+setting parameter 2 error to 0.0282646
+setting parameter 3 error to 0.350321
+setting parameter 4 error to 0.228718
+setting parameter 5 error to 0.648496
+setting parameter 6 error to 0.700848
+setting parameter 7 error to 0.467078
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'PlotRange' created with bounds [4800,5850]
+[#0] ERROR:InputArguments -- RooTreeData::plotOn(dataKstJPsEE_MC) ERROR: unrecognized command: RangeWithName
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (totsig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: (CB1_sig_KstJPsEE_MC,CB2_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (CB1_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (CB2_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: ()
+[#0] ERROR:InputArguments -- RooTreeData::plotOn(dataKstJPsEE_MC) ERROR: unrecognized command: RangeWithName
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (totsig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: (CB1_sig_KstJPsEE_MC,CB2_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (CB1_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) only plotting range 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_totsig_KstJPsEE_MC_dataKstJPsEE_MC'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) directly selected PDF components: (CB2_sig_KstJPsEE_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsEE_MC) indirectly selected PDF components: ()
+
+KstJPsEE_MC: Chi2/NDF = 1.2 NDF = 70.0 - with probability 0.178
+
+
+RooRealVar::a_sig_KstJPsEE_MC = 0.590 +/- 0.055  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsEE_MC = -0.328 +/- 0.047  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsEE_MC = 0.491 +/- 0.028  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsEE_MC = 5280.160 +/- 0.350  L(4800.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsEE_MC = 5.866 +/- 0.648  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsEE_MC = 3.246 +/- 0.229  L(0.020 - 1000.000) 
+RooRealVar::s_sig_KstJPsEE_MC = 9.447 +/- 0.467  L(0.939 - 46.971) 
+RooRealVar::s2_sig_KstJPsEE_MC = 7.738 +/- 0.701  L(1.879 - 93.943) 
+
+
+RooRealVar::a_sig_KstJPsEE_MC = 0.590 +/- 0.055 C  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsEE_MC = -0.328 +/- 0.047 C  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsEE_MC = 0.491 +/- 0.028 C  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsEE_MC = 5280.160 +/- 0.350  L(4800.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsEE_MC = 5.866 +/- 0.648 C  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsEE_MC = 3.246 +/- 0.229 C  L(0.020 - 1000.000) 
+RooFormulaVar::s_scaled[ actualVars=(s_scale,s_sig_KstJPsEE_MC) formula="@0*@1" ] = 9.447
+RooFormulaVar::s2_scaled[ actualVars=(s_scale,s2_sig_KstJPsEE_MC) formula="@0*@1" ] = 7.738
+
+
+Fit CL
+
+
+Swap
+
+getTreeReader: Bd2KstJPs_EE (DecayTuple)
+
+
+Number of trees in chain: 1
+
+Set up 992 / 992 branches
+
+List of files
+/afs/cern.ch/work/s/simone/RD/Analysis/wNtuples/EE_Bd2KstJPs_EE.root
+
+Read in 126683 events
+
+
+CopyTree
+N Tot = 126683
+TCut 
+OBJ: TCut	CUT	(((TMath::Abs(B0_TRUEID) != 0 && TMath::Abs(Kst_MC_MOTHER_ID) == 511 && TMath::Abs(K_MC_MOTHER_ID) == 313 && TMath::Abs(Pi_MC_MOTHER_ID) == 313)&&(TMath::Abs(E1_MC_MOTHER_ID) == 443 && TMath::Abs(E2_MC_MOTHER_ID) == 443 && TMath::Abs(JPs_MC_MOTHER_ID) == 511))&&(TMath::Abs(Kst_TRUEID) == 313 && !(TMath::Abs(K_TRUEID) == 321 && TMath::Abs(Pi_TRUEID) == 211 && TMath::Abs(E1_TRUEID) == 11 && TMath::Abs(E2_TRUEID) == 11) && TMath::Abs(JPs_TRUEID) == 443))&&((((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300))
+N Pas = 68 (0.054%)
+Frac  = -1.000
+Copied 68 entries
+
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+KstJPsEE: Initialize -docuts
+
+KstJPsEE: CreateReducedTree -docuts
+
+CopyTree
+N Tot = 552879
+TCut 
+OBJ: TCut	CUT	(((((B0_L0ElectronDecision_TOS || B0_L0HadronDecision_TOS || B0_L0Global_TIS)&&((B0_Hlt1TrackAllL0Decision_TOS)&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoE2BodyBBDTDecision_TOS || B0_Hlt2TopoE3BodyBBDTDecision_TOS || B0_Hlt2TopoE4BodyBBDTDecision_TOS)))&&((((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && E1_TRACK_CHI2NDOF < 3 && E2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && E1_TRACK_GhostProb < 0.4 && E2_TRACK_GhostProb < 0.4 && K_hasRich && Pi_hasRich)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100)))&&(1)))&&((TMath::Min(E1_MC12TuneV3_ProbNNe, E2_MC12TuneV3_ProbNNe) > 0.2)&&((Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB > 0.88))&&(JPs_M > 2500 && JPs_M < 3300)
+N Pas = 26094 (4.720%)
+Frac  = -1.000
+Copied 26094 entries
+
+
+KstJPsEE: CreateDataSet 
+Candidates: 26094
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(dataKstJPsEE) Ignored 616 out of range events
+RooDataSet::dataKstJPsEE[B0_PV_JPs_M] = 25478 entries
+
+KstJPsEE: Initialized Correctly! The model is:
+RooAddPdf::model[ nsig_KstJPsEE * totsig_KstJPsEE + nbkg_swap * bkg_swap + nbkg_comb * bkg_comb + nbkg_mis-reco * bkg_mis-reco ] = 0.250
+
+KstJPsEE: Fit B0_PV_JPs_M (105,4800.000,5850.000) -linlog-ANDpulls-noCost-leg[0.5,0.6,0.7,1]-legf-layout[0.7,0.6,1,1]-font0.03-xum_{B_{0}}-plotSigComp
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_dataKstJPsEE) constructing test statistic for sub-range named FitRange
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'fit_nll_model_dataKstJPsEE' created with bounds [4800.000,5850.000]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_model_dataKstJPsEE) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+ **********
+ **    9 **SET NOWARNINGS           0
+ **********
+ **********
+ **   10 **SET PRINT           2
+ **********
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkg_swap)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (CB1_sig_KstJPsEE,CB2_sig_KstJPsEE,bkg_comb,bkg_mis-reco)
+ **********
+ **   13 **MIGRAD        4500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-80648.6 FROM MIGRAD    STATUS=INITIATE      201 CALLS         202 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb      -6.94947e-04   2.49950e-03   0.00000e+00   3.78289e+03
+   2  c_mis-reco  -1.20073e+01   5.00000e-01   0.00000e+00   3.64103e+00
+   3  m_sig_KstJPsEE_MC   5.28016e+03   3.50321e-01   0.00000e+00  -1.53439e+04
+   4  nbkg_comb    1.44259e+04   5.00000e+02   0.00000e+00   2.34990e+05
+   5  nbkg_mis-reco   1.00000e+03   5.00000e+02   0.00000e+00   5.55287e+04
+   6  nbkg_swap    1.93204e+04   5.00000e+02   0.00000e+00   1.48800e+05
+   7  nsig_KstJPsEE   6.92508e+03   5.00000e+02   3.26368e-02   6.06165e+03
+   8  p_mis-reco   5.00000e-01   2.50000e-01   0.00000e+00  -5.69862e+01
+   9  s_scale      1.00000e+00   4.50000e-01   0.00000e+00   5.02645e+03
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=-85912.6 FROM MIGRAD    STATUS=PROGRESS      229 CALLS         230 TOTAL
+                     EDM=39854.2    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb      -5.01837e-03   2.49950e-03  -2.85024e-01  -6.28714e+03
+   2  c_mis-reco  -1.22981e+01   5.00000e-01  -8.90065e-03   7.68502e+01
+   3  m_sig_KstJPsEE_MC   5.28102e+03   3.50321e-01   1.64310e-03  -1.86621e+04
+   4  nbkg_comb    6.40903e+03   5.00000e+02  -2.53437e-02   1.03759e+05
+   5  nbkg_mis-reco   2.83853e+02   5.00000e+02  -9.34471e-03   1.57143e+04
+   6  nbkg_swap    1.33349e+04   5.00000e+02  -1.48880e-02  -3.30168e+04
+   7  nsig_KstJPsEE   6.70814e+03   5.00000e+02  -8.31224e-04  -9.52996e+03
+   8  p_mis-reco   7.30174e-01   2.50000e-01   9.62106e-02   7.02409e+01
+   9  s_scale      2.05895e-01   4.50000e-01  -4.05337e-01  -9.18643e+03
+                               ERR DEF= 0.5
+ FCN=-89006.2 FROM MIGRAD    STATUS=PROGRESS      449 CALLS         450 TOTAL
+                     EDM=1.08412    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   5.7 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb      -2.81841e-03   9.74903e-05   4.38070e-03  -4.79331e+01
+   2  c_mis-reco  -7.29589e+01   2.58665e+00   1.90047e-02  -2.57699e+01
+   3  m_sig_KstJPsEE_MC   5.28221e+03   1.44809e-01   7.69817e-05   8.00017e+02
+   4  nbkg_comb    1.86334e+03   7.79290e+01  -6.16891e-04   2.87449e+02
+   5  nbkg_mis-reco   1.93430e+03   6.06762e+01   8.17259e-04   5.01527e+02
+   6  nbkg_swap    2.86442e+03   1.42877e+02  -9.22825e-04  -2.31370e+01
+   7  nsig_KstJPsEE   1.88249e+04   2.32273e+02   1.58129e-04  -3.46855e+01
+   8  p_mis-reco   4.37276e+00   1.96137e-01  -5.68346e-03  -1.38632e+01
+   9  s_scale      1.11325e+00   1.85692e-02  -1.82075e-03  -1.66854e+02
+                               ERR DEF= 0.5
+ FCN=-89015.1 FROM MIGRAD    STATUS=PROGRESS      656 CALLS         657 TOTAL
+                     EDM=7.96124e-05    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.9 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb      -2.27064e-03   1.97847e-04  -2.56743e-05   1.48236e-01
+   2  c_mis-reco  -4.37937e+01   5.92147e+00   1.57944e-04  -8.50445e-03
+   3  m_sig_KstJPsEE_MC   5.28223e+03   1.48612e-01  -2.16590e-07   8.21121e+00
+   4  nbkg_comb    1.16484e+03   2.24884e+02   2.76646e-06  -1.18511e+01
+   5  nbkg_mis-reco   2.48711e+03   1.81422e+02   2.14463e-06  -1.19189e+01
+   6  nbkg_swap    2.36634e+03   4.58920e+02  -4.19396e-05  -2.02582e+00
+   7  nsig_KstJPsEE   1.94592e+04   4.58700e+02   1.31442e-05  -3.31667e+00
+   8  p_mis-reco   2.72577e+00   3.42973e-01   3.26039e-04   1.42533e-02
+   9  s_scale      1.16071e+00   2.72615e-02   7.59999e-05  -2.73918e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-89015.1 FROM MIGRAD    STATUS=CONVERGED     656 CALLS         657 TOTAL
+                     EDM=7.96124e-05    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.0 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb      -2.27064e-03   1.97161e-04  -2.56743e-05   1.48236e-01
+   2  c_mis-reco  -4.37937e+01   5.83027e+00   1.57944e-04  -8.50445e-03
+   3  m_sig_KstJPsEE_MC   5.28223e+03   1.48602e-01  -2.16590e-07   8.21121e+00
+   4  nbkg_comb    1.16484e+03   2.21589e+02   2.76646e-06  -1.18511e+01
+   5  nbkg_mis-reco   2.48711e+03   1.77596e+02   2.14463e-06  -1.19189e+01
+   6  nbkg_swap    2.36634e+03   4.58433e+02  -4.19396e-05  -2.02582e+00
+   7  nsig_KstJPsEE   1.94592e+04   4.55615e+02   1.31442e-05  -3.31667e+00
+   8  p_mis-reco   2.72577e+00   3.44418e-01   3.26039e-04   1.42533e-02
+   9  s_scale      1.16071e+00   2.70252e-02   7.59999e-05  -2.73918e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  36    NPAR=  9    ERR DEF=0.5
+  3.887e-08  8.431e-04 -2.398e-06 -3.309e-02  2.787e-02  4.972e-02 -4.017e-02 -4.457e-05 -1.813e-06 
+  8.431e-04  3.415e+01 -2.523e-02 -1.035e+03  8.262e+02  6.750e+02 -3.962e+02 -1.978e+00 -1.015e-02 
+ -2.398e-06 -2.523e-02  2.208e-02  1.105e+00 -8.826e-01 -1.456e+01  1.355e+01  9.592e-04  8.028e-04 
+ -3.309e-02 -1.035e+03  1.105e+00  4.910e+04 -3.671e+04 -2.813e+04  1.317e+04  5.584e+01 -6.524e-02 
+  2.787e-02  8.262e+02 -8.826e-01 -3.671e+04  3.154e+04  2.309e+04 -1.241e+04 -4.500e+01 -2.135e-01 
+  4.972e-02  6.750e+02 -1.456e+01 -2.813e+04  2.309e+04  2.102e+05 -1.956e+05 -3.209e+01 -1.036e+01 
+ -4.017e-02 -3.962e+02  1.355e+01  1.317e+04 -1.241e+04 -1.956e+05  2.076e+05  1.788e+01  1.022e+01 
+ -4.457e-05 -1.978e+00  9.592e-04  5.584e+01 -4.500e+01 -3.209e+01  1.788e+01  1.189e-01  4.628e-04 
+ -1.813e-06 -1.015e-02  8.028e-04 -6.524e-02 -2.135e-01 -1.036e+01  1.022e+01  4.628e-04  7.304e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9
+        1  0.89117   1.000  0.732 -0.082 -0.757  0.796  0.550 -0.447 -0.656 -0.340
+        2  0.99106   0.732  1.000 -0.029 -0.799  0.796  0.252 -0.149 -0.982 -0.064
+        3  0.22217  -0.082 -0.029  1.000  0.034 -0.033 -0.214  0.200  0.019  0.200
+        4  0.95025  -0.757 -0.799  0.034  1.000 -0.933 -0.277  0.130  0.731 -0.011
+        5  0.94633   0.796  0.796 -0.033 -0.933  1.000  0.284 -0.153 -0.735 -0.044
+        6  0.96213   0.550  0.252 -0.214 -0.277  0.284  1.000 -0.936 -0.203 -0.836
+        7  0.94699  -0.447 -0.149  0.200  0.130 -0.153 -0.936  1.000  0.114  0.830
+        8  0.98792  -0.656 -0.982  0.019  0.731 -0.735 -0.203  0.114  1.000  0.050
+        9  0.88265  -0.340 -0.064  0.200 -0.011 -0.044 -0.836  0.830  0.050  1.000
+ **********
+ **   16 **HESSE        4500
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         9.4782e-03  3.9350e-02  1.4645e-01  5.3478e-01  9.9562e-01  1.1095e+00  1.4509e+00  2.1664e+00  2.5476e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-89015.1 FROM HESSE     STATUS=OK             83 CALLS         740 TOTAL
+                     EDM=0.000216167    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  b_comb      -2.27064e-03   3.32373e-04   2.76473e-03   1.26834e+00
+   2  c_mis-reco  -4.37937e+01   5.73267e+00   3.26675e-03   1.24447e-01
+   3  m_sig_KstJPsEE_MC   5.28223e+03   1.49495e-01   5.73442e-05  -8.15636e-02
+   4  nbkg_comb    1.16484e+03   2.41102e+02   1.44664e-04  -1.54921e+00
+   5  nbkg_mis-reco   2.48711e+03   1.86896e+02   7.56151e-05  -1.53925e+00
+   6  nbkg_swap    2.36634e+03   4.58186e+02   1.73969e-04  -1.54003e+00
+   7  nsig_KstJPsEE   1.94592e+04   4.72041e+02   6.95282e-05  -1.48254e+00
+   8  p_mis-reco   2.72577e+00   3.33269e-01   2.49695e-03  -4.72200e-01
+   9  s_scale      1.16071e+00   2.78640e-02   8.67935e-04  -9.03850e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  36    NPAR=  9    ERR DEF=0.5
+  1.105e-07  1.257e-03 -1.442e-06 -4.713e-02  4.360e-02  6.971e-03 -3.425e-03 -6.464e-05 -2.849e-07 
+  1.257e-03  3.301e+01  1.994e-03 -1.103e+03  8.852e+02  1.185e+02  9.934e+01 -1.877e+00  1.232e-02 
+ -1.442e-06  1.994e-03  2.235e-02  1.224e-01 -6.625e-02 -1.485e+01  1.480e+01 -5.488e-04  8.782e-04 
+ -4.713e-02 -1.103e+03  1.224e-01  5.813e+04 -4.180e+04 -1.033e+04 -4.848e+03  5.810e+01 -1.020e+00 
+  4.360e-02  8.852e+02 -6.625e-02 -4.180e+04  3.493e+04  5.259e+03  4.104e+03 -4.724e+01  6.119e-01 
+  6.971e-03  1.185e+02 -1.485e+01 -1.033e+04  5.259e+03  2.099e+05 -2.026e+05 -2.741e+00 -1.066e+01 
+ -3.425e-03  9.934e+01  1.480e+01 -4.848e+03  4.104e+03 -2.026e+05  2.228e+05 -8.142e+00  1.107e+01 
+ -6.464e-05 -1.877e+00 -5.488e-04  5.810e+01 -4.724e+01 -2.741e+00 -8.142e+00  1.113e-01 -7.055e-04 
+ -2.849e-07  1.232e-02  8.782e-04 -1.020e+00  6.119e-01 -1.066e+01  1.107e+01 -7.055e-04  7.764e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9
+        1  0.79926   1.000  0.658 -0.029 -0.588  0.702  0.046 -0.022 -0.583 -0.031
+        2  0.99058   0.658  1.000  0.002 -0.796  0.824  0.045  0.037 -0.979  0.077
+        3  0.22576  -0.029  0.002  1.000  0.003 -0.002 -0.217  0.210 -0.011  0.211
+        4  0.94931  -0.588 -0.796  0.003  1.000 -0.928 -0.094 -0.043  0.722 -0.152
+        5  0.95085   0.702  0.824 -0.002 -0.928  1.000  0.061  0.047 -0.758  0.117
+        6  0.95886   0.046  0.045 -0.217 -0.094  0.061  1.000 -0.937 -0.018 -0.835
+        7  0.94908  -0.022  0.037  0.210 -0.043  0.047 -0.937  1.000 -0.052  0.842
+        8  0.98682  -0.583 -0.979 -0.011  0.722 -0.758 -0.018 -0.052  1.000 -0.076
+        9  0.88644  -0.031  0.077  0.211 -0.152  0.117 -0.835  0.842 -0.076  1.000
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(model) Calculating sum-of-weights-squared correction matrix for covariance matrix
+ **********
+ **   19 **HESSE        4500
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         8.7981e-03  3.8978e-02  1.4568e-01  5.2899e-01  9.9586e-01  1.1094e+00  1.4513e+00  2.1656e+00  2.5554e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-89015.1 FROM HESSE     STATUS=OK             73 CALLS         813 TOTAL
+                     EDM=0.000226358    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  b_comb      -2.27064e-03   3.35315e-04   1.10589e-04   1.26834e+00
+   2  c_mis-reco  -4.37937e+01   5.94968e+00   1.30670e-04   1.24447e-01
+   3  m_sig_KstJPsEE_MC   5.28223e+03   1.49511e-01   1.14688e-05  -8.15636e-02
+   4  nbkg_comb    1.16484e+03   2.48493e+02   2.89327e-05  -1.54921e+00
+   5  nbkg_mis-reco   2.48711e+03   1.92366e+02   1.51230e-05  -1.53925e+00
+   6  nbkg_swap    2.36634e+03   4.60047e+02   6.95878e-06  -1.54003e+00
+   7  nsig_KstJPsEE   1.94592e+04   4.74161e+02   1.39056e-05  -1.48254e+00
+   8  p_mis-reco   2.72577e+00   3.45069e-01   9.98779e-05  -4.72200e-01
+   9  s_scale      1.16071e+00   2.80692e-02   3.47174e-05  -9.03850e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  36    NPAR=  9    ERR DEF=0.5
+  1.125e-07  1.331e-03 -1.409e-06 -4.942e-02  4.547e-02  7.075e-03 -3.118e-03 -6.884e-05 -2.569e-07 
+  1.331e-03  3.557e+01  3.188e-03 -1.196e+03  9.577e+02  1.212e+02  1.178e+02 -2.020e+00  1.417e-02 
+ -1.409e-06  3.188e-03  2.235e-02  5.727e-02 -2.143e-02 -1.497e+01  1.494e+01 -6.142e-04  8.872e-04 
+ -4.942e-02 -1.196e+03  5.727e-02  6.175e+04 -4.452e+04 -1.018e+04 -5.887e+03  6.331e+01 -1.116e+00 
+  4.547e-02  9.577e+02 -2.143e-02 -4.452e+04  3.700e+04  5.216e+03  4.791e+03 -5.127e+01  6.774e-01 
+  7.075e-03  1.212e+02 -1.497e+01 -1.018e+04  5.216e+03  2.116e+05 -2.043e+05 -2.922e+00 -1.079e+01 
+ -3.118e-03  1.178e+02  1.494e+01 -5.887e+03  4.791e+03 -2.043e+05  2.248e+05 -9.124e+00  1.123e+01 
+ -6.884e-05 -2.020e+00 -6.142e-04  6.331e+01 -5.127e+01 -2.922e+00 -9.124e+00  1.193e-01 -8.058e-04 
+ -2.569e-07  1.417e-02  8.872e-04 -1.116e+00  6.774e-01 -1.079e+01  1.123e+01 -8.058e-04  7.879e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9
+        1  0.80321   1.000  0.666 -0.028 -0.593  0.705  0.046 -0.020 -0.594 -0.027
+        2  0.99126   0.666  1.000  0.004 -0.807  0.835  0.044  0.042 -0.981  0.085
+        3  0.22655  -0.028  0.004  1.000  0.002 -0.001 -0.218  0.211 -0.012  0.211
+        4  0.95236  -0.593 -0.807  0.002  1.000 -0.931 -0.089 -0.050  0.738 -0.160
+        5  0.95367   0.705  0.835 -0.001 -0.931  1.000  0.059  0.053 -0.772  0.125
+        6  0.95920   0.046  0.044 -0.218 -0.089  0.059  1.000 -0.937 -0.018 -0.835
+        7  0.94955  -0.020  0.042  0.211 -0.050  0.053 -0.937  1.000 -0.056  0.843
+        8  0.98772  -0.594 -0.981 -0.012  0.738 -0.772 -0.018 -0.056  1.000 -0.083
+        9  0.88819  -0.027  0.085  0.211 -0.160  0.125 -0.835  0.843 -0.083  1.000
+setting parameter 0 error to 0.000
+setting parameter 1 error to 5.525
+setting parameter 2 error to 0.149
+setting parameter 3 error to 234.110
+setting parameter 4 error to 181.732
+setting parameter 5 error to 456.341
+setting parameter 6 error to 469.958
+setting parameter 7 error to 0.322
+setting parameter 8 error to 0.028
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#0] ERROR:InputArguments -- RooTreeData::plotOn(dataKstJPsEE) ERROR: unrecognized command: RangeWithName
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (totsig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (CB1_sig_KstJPsEE,s_scaled,CB2_sig_KstJPsEE,s2_scaled)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (CB1_sig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (s_scaled,totsig_KstJPsEE)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (CB2_sig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (s2_scaled,totsig_KstJPsEE)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_swap)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_comb)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_mis-reco)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#0] ERROR:InputArguments -- RooTreeData::plotOn(dataKstJPsEE) ERROR: unrecognized command: RangeWithName
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (totsig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (CB1_sig_KstJPsEE,s_scaled,CB2_sig_KstJPsEE,s2_scaled)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (CB1_sig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (s_scaled,totsig_KstJPsEE)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (CB2_sig_KstJPsEE)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: (s2_scaled,totsig_KstJPsEE)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_swap)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_comb)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f was fitted in range and no explicit plot,norm range was specified, using fit range as default
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) only plotting range 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) p.d.f. curve is normalized using explicit choice of ranges 'fit_nll_model_dataKstJPsEE'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_mis-reco)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(model_Int[B0_PV_JPs_M|fit_nll_model_dataKstJPsEE]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+
+KstJPsEE: Chi2/NDF = 1.5 NDF = 97.0 - with probability 0.001
+
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'myrange' created with bounds [5079.580,5479.580]
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_mis-reco_Int[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#0] ERROR:InputArguments -- RooFormula::RooFormula(nbkg_tot): compile error
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkg_tot_Int[B0_PV_JPs_M|myrange]_Norm[B0_PV_JPs_M]) using numeric integrator RooIntegrator1D to calculate Int(B0_PV_JPs_M)
+[#0] ERROR:InputArguments -- RooFormula::RooFormula(nbkg_tot): compile error
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+[#0] ERROR:InputArguments -- RooFormula::RooFormula(nbkg_tot): compile error
+[#0] ERROR:Eval -- RooFormula::eval(nbkg_tot): Formula doesn't compile: nbkg_swap + nbkg_comb + nbkg_mis-reco
+
+nBkg = 0.000
+
+
+Job finished at Mon Jan 12 10:01:11 CET 2015 on node 
+ under linux version Scientific Linux CERN SLC release 6.6 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:01 KSI2K hours (421 KSI2K seconds)
+                 This process corresponds to     : 0:27:23 HS06  hours (1643 HS06  seconds)
+
+
+PS:
+
+Read file </afs/cern.ch/work/p/pluca/jobs/RKst/drawVarEE/err> for stderr output of this job.
+

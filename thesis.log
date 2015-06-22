@@ -1,0 +1,3496 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.12.3)  19 JUN 2015 18:38
+entering extended mode
+ %&-line parsing enabled.
+**thesis
+(./thesis.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2003/09/26 v2.3c parameterised ToC, etc., typesetting
+
+
+Package tocloft Note: The document has chapter divisions.
+
+\cftparskip=\skip43
+\cftbeforetoctitleskip=\skip44
+\cftaftertoctitleskip=\skip45
+\cftbeforepartskip=\skip46
+\cftpartnumwidth=\skip47
+\cftpartindent=\skip48
+\cftbeforechapskip=\skip49
+\cftchapindent=\skip50
+\cftchapnumwidth=\skip51
+\cftbeforesecskip=\skip52
+\cftsecindent=\skip53
+\cftsecnumwidth=\skip54
+\cftbeforesubsecskip=\skip55
+\cftsubsecindent=\skip56
+\cftsubsecnumwidth=\skip57
+\cftbeforesubsubsecskip=\skip58
+\cftsubsubsecindent=\skip59
+\cftsubsubsecnumwidth=\skip60
+\cftbeforeparaskip=\skip61
+\cftparaindent=\skip62
+\cftparanumwidth=\skip63
+\cftbeforesubparaskip=\skip64
+\cftsubparaindent=\skip65
+\cftsubparanumwidth=\skip66
+\cftbeforeloftitleskip=\skip67
+\cftafterloftitleskip=\skip68
+\cftbeforefigskip=\skip69
+\cftfigindent=\skip70
+\cftfignumwidth=\skip71
+\c@lofdepth=\count89
+\c@lotdepth=\count90
+\cftbeforelottitleskip=\skip72
+\cftafterlottitleskip=\skip73
+\cftbeforetabskip=\skip74
+\cfttabindent=\skip75
+\cfttabnumwidth=\skip76
+) (/usr/share/texmf/tex/latex/acronym/acronym.sty
+Package: acronym 2006/06/26 v1.26 Support for acronyms (Tobias Oetiker)
+
+(/usr/share/texmf/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5 Variant command support
+)
+(/usr/share/texmf/tex/latex/ltxmisc/relsize.sty
+Package: relsize 2003/07/04 ver 3.1
+)
+\clearlist=\toks15
+)
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip77
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen105
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks20
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (./atlasphysics.sty
+\hrs=\count103
+\minu=\count104
+\temptime=\count105
+\boxsqbox=\box28
+\boxsize=\dimen114
+\dkwidth=\dimen115
+)
+(/usr/share/texmf/tex/latex/bbold/bbold.sty
+Package: bbold 1994/04/06 Bbold symbol package
+LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
+)
+(/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/03/16 v1.6180 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen128
+)
+(/usr/share/texmf/tex/latex/changebar/changebar.sty
+Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
+\cb@nextpoint=\count110
+\cb@topleft=\count111
+\cb@topright=\count112
+\cb@botleft=\count113
+\cb@botright=\count114
+\cb@cnta=\count115
+\cb@cntb=\count116
+\cb@dima=\dimen129
+\cb@curbarwd=\dimen130
+\cb@page=\count117
+\cb@pagecount=\count118
+\cb@odd@left=\dimen131
+\cb@odd@right=\dimen132
+\cb@even@left=\dimen133
+\cb@even@right=\dimen134
+\cb@writexy=\write3
+\cb@readxy=\read1
+\openout3 = `thesis.cb2'.
+
+\changebarwidth=\skip80
+\deletebarwidth=\skip81
+\changebarsep=\skip82
+\c@changebargrey=\count119
+
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+\cb@write=\write4
+\cb@read=\read2
+\openout4 = `thesis.cb'.
+
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip83
+\f@ncyO@elh=\skip84
+\f@ncyO@erh=\skip85
+\f@ncyO@olh=\skip86
+\f@ncyO@orh=\skip87
+\f@ncyO@elf=\skip88
+\f@ncyO@erf=\skip89
+\f@ncyO@olf=\skip90
+\f@ncyO@orf=\skip91
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
+\@linkdim=\dimen135
+\Hy@linkcounter=\count120
+\Hy@pagecounter=\count121
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2444.
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2599.
+\Fld@menulength=\count122
+\Field@Width=\dimen136
+\Fld@charsize=\dimen137
+\Choice@toks=\toks22
+\Field@toks=\toks23
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring OFF on input line 3122.
+\Hy@abspage=\count123
+\c@Item=\count124
+\c@Hfootnote=\count125
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
+\Fld@listcount=\count126
+)
+(/usr/share/texmf/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count127
+\output=\toks24
+\linenoprevgraf=\count128
+\linenumbersep=\dimen138
+\linenumberwidth=\dimen139
+\c@linenumber=\count129
+\c@pagewiselinenumber=\count130
+\c@LN@truepage=\count131
+\c@internallinenumber=\count132
+\c@internallinenumbers=\count133
+\quotelinenumbersep=\dimen140
+\bframerule=\dimen141
+\bframesep=\dimen142
+\bframebox=\box29
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texmf/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen143
+)
+(/usr/share/texmf/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2006/08/12 v0.4a Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count134
+\calc@Bcount=\count135
+\calc@Adimen=\dimen144
+\calc@Bdimen=\dimen145
+\calc@Askip=\skip92
+\calc@Bskip=\skip93
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count136
+\calc@Cskip=\skip94
+)
+(/usr/share/texmf/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+
+(/usr/share/texmf/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2006/08/12 v0.4a Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks25
+\c@AM@survey=\count137
+)
+(/usr/share/texmf/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/share/texmf/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texmf/tex/latex/caption/caption.sty
+Package: caption 2007/01/07 v3.0k Customising captions (AR)
+
+(/usr/share/texmf/tex/latex/caption/caption3.sty
+Package: caption3 2007/01/07 v3.0k caption3 kernel (AR)
+\captionmargin=\dimen146
+\captionmarginx=\dimen147
+\captionwidth=\dimen148
+\captionindent=\dimen149
+\captionparindent=\dimen150
+\captionhangindent=\dimen151
+)
+Package caption Info: hyperref package v6.74m (or newer) detected on input line
+ 304.
+)
+\c@KVtest=\count138
+\sf@farskip=\skip95
+\sf@captopadj=\dimen152
+\sf@capskip=\skip96
+\sf@nearskip=\skip97
+\c@subfigure=\count139
+\c@subfigure@save=\count140
+\c@subtable=\count141
+\c@subtable@save=\count142
+\sf@top=\skip98
+\sf@bottom=\skip99
+)
+(/usr/share/texmf/tex/latex/type1cm/type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+(/usr/share/texmf/tex/latex/ltxmisc/ulem.sty
+\UL@box=\box31
+\UL@hyphenbox=\box32
+\UL@skip=\skip100
+\UL@hook=\toks26
+\UL@pe=\count143
+\UL@pixel=\dimen153
+\ULC@box=\box33
+Package: ulem 2000/05/26
+\ULdepth=\dimen154
+)
+(/usr/share/texmf/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+) (./upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+) (./fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip101
+\mylen=\skip102
+\myhi=\skip103
+\px=\skip104
+\py=\skip105
+\pyy=\skip106
+\pxx=\skip107
+)
+(./lhcb-symbols-def.tex)
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 53.
+
+(./thesis.aux (./abstract.aux) (./Introduction/introduction.aux)
+(./Detector/detector.aux) (./Lmumu/introduction.aux
+
+LaTeX Warning: Label `sec:Introduction' multiply defined.
+
+) (./Lmumu/selection.aux) (./Lmumu/physicsBg.aux) (./Lmumu/fit.aux)
+(./Lmumu/efficiency.aux) (./Lmumu/systematics.aux) (./Lmumu/summaryBR.aux)
+(./Lmumu/afbmethod.aux) (./Lmumu/systematicsAfb.aux) (./Lmumu/summaryAfb.aux)
+(./RKst/introduction.aux) (./RKst/selection.aux) (./RKst/fit.aux)
+(./RKst/efficiency.aux) (./RKst/systematics.aux) (./RKst/result.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+Package hyperref Info: Link coloring ON on input line 110.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count144
+)
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
+
+ ABD: EveryShipout initializing macros
+(/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
+
+(/usr/share/texmf/tex/latex/everysel/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 125.
+)
+\CenteringLeftskip=\skip108
+\RaggedLeftLeftskip=\skip109
+\RaggedRightLeftskip=\skip110
+\CenteringRightskip=\skip111
+\RaggedLeftRightskip=\skip112
+\RaggedRightRightskip=\skip113
+\CenteringParfillskip=\skip114
+\RaggedLeftParfillskip=\skip115
+\RaggedRightParfillskip=\skip116
+\JustifyingParfillskip=\skip117
+\CenteringParindent=\skip118
+\RaggedLeftParindent=\skip119
+\RaggedRightParindent=\skip120
+\JustifyingParindent=\skip121
+)
+Package caption Info: subref 1.2 or 1.3 detected on input line 110.
+LaTeX Info: Redefining \subref on input line 110.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 114.
+
+(/usr/share/texmf/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+<fig/crest_1.pdf, id=455, 1029.8475pt x 1225.57875pt>
+File: fig/crest_1.pdf Graphic file (type pdf)
+ <use fig/crest_1.pdf>
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/crest_1.pdf>]
+[2] [3]
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex [1
+
+
+] [2
+
+
+] [3
+
+
+] [4
+
+] [5] [6
+
+]) (./thesis.toc [7
+
+]
+Overfull \hbox (1.58777pt too wide) detected at line 65
+ \OT1/cmss/bx/n/12 100
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 66
+ \OT1/cmss/bx/n/12 101
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 67
+ \OT1/cmss/bx/n/12 102
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 68
+ \OT1/cmss/bx/n/12 103
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 69
+ \OT1/cmss/bx/n/12 105
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 70
+ \OT1/cmss/bx/n/12 105
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 71
+ \OT1/cmss/bx/n/12 107
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 72
+ \OT1/cmss/bx/n/12 108
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 74
+ \OT1/cmss/bx/n/12 113
+ []
+
+[8]
+Overfull \hbox (1.58777pt too wide) detected at line 75
+ \OT1/cmss/bx/n/12 116
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 76
+ \OT1/cmss/bx/n/12 116
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 77
+ \OT1/cmss/bx/n/12 118
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 78
+ \OT1/cmss/bx/n/12 119
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 79
+ \OT1/cmss/bx/n/12 119
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 80
+ \OT1/cmss/bx/n/12 123
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 81
+ \OT1/cmss/bx/n/12 124
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 82
+ \OT1/cmss/bx/n/12 125
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 83
+ \OT1/cmss/bx/n/12 126
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 84
+ \OT1/cmss/bx/n/12 126
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 85
+ \OT1/cmss/bx/n/12 127
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 86
+ \OT1/cmss/bx/n/12 127
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 87
+ \OT1/cmss/bx/n/12 128
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 88
+ \OT1/cmss/bx/n/12 129
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 89
+ \OT1/cmss/bx/n/12 129
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 90
+ \OT1/cmss/bx/n/12 133
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 91
+ \OT1/cmss/bx/n/12 136
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 92
+ \OT1/cmss/bx/n/12 137
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 93
+ \OT1/cmss/bx/n/12 139
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 94
+ \OT1/cmss/bx/n/12 141
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 95
+ \OT1/cmss/bx/n/12 143
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 96
+ \OT1/cmss/bx/n/12 145
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 97
+ \OT1/cmss/bx/n/12 145
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 98
+ \OT1/cmss/bx/n/12 149
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 99
+ \OT1/cmss/bx/n/12 152
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 100
+ \OT1/cmss/bx/n/12 155
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 101
+ \OT1/cmss/bx/n/12 157
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 102
+ \OT1/cmss/bx/n/12 157
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 103
+ \OT1/cmss/bx/n/12 158
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 104
+ \OT1/cmss/bx/n/12 159
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 105
+ \OT1/cmss/bx/n/12 159
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 106
+ \OT1/cmss/bx/n/12 160
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 107
+ \OT1/cmss/bx/n/12 162
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 108
+ \OT1/cmss/bx/n/12 164
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 109
+ \OT1/cmss/bx/n/12 165
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 110
+ \OT1/cmss/bx/n/12 165
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 111
+ \OT1/cmss/bx/n/12 166
+ []
+
+
+Overfull \hbox (1.58777pt too wide) detected at line 112
+ \OT1/cmss/bx/n/12 167
+ []
+
+)
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+ [9] (./thesis.lot
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [10
+
+]
+Overfull \hbox (9.74179pt too wide) in paragraph at lines 37--37
+ [][] [][][]\OT1/cmr/m/n/12 RMS val-ues for toy ex-per-i-ments on the ex-trac-t
+ion of the three parateme- 
+ []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12])
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+
+[13] (./thesis.lof
+
+LaTeX Warning: Citation `SMimage' on page xiv undefined on input line 2.
+
+
+LaTeX Warning: Citation `wikiCherenkov' on page xiv undefined on input line 11.
+
+
+
+LaTeX Warning: Reference `tab:nnInputs' on page xiv undefined on input line 18.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14
+
+]
+Overfull \hbox (8.75603pt too wide) in paragraph at lines 27--27
+ [][] [][][]\OT1/cmr/m/n/12 Invariant mass dis-tri-bu-tion of sim-u-lated mis-r
+e-con-structed $\OML/cmm/m/it/12 B[] \OMS/cmsy/m/n/12 ! []\OML/cmm/m/it/12 K[]$
+ 
+ []
+
+
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+
+LaTeX Warning: Reference `tab:nnInputs' on page xviii undefined on input line 7
+9.
+
+
+Overfull \hbox (21.31299pt too wide) in paragraph at lines 86--86
+ [][] [][][]\OT1/cmr/m/n/12 Fitted $\OML/cmm/m/it/12 m\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 K^^Y^^V^^V\OT1/cmr/m/n/12 )$ in-vari-ant mass spec-trum for $\OML/cmm/
+m/it/12 K[][]$ \OT1/cmr/m/n/12 (left) and $\OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 
+([] \OMS/cmsy/m/n/12 ! 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18])
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
+
+
+[19]
+\openout2 = `Introduction/introduction.aux'.
+
+ (./Introduction/introduction.tex
+Chapter 1.
+
+Overfull \hbox (11.9661pt too wide) in paragraph at lines 15--25
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 
+      [1
+
+
+
+]
+
+LaTeX Warning: Citation `Glashow:1961tr' on page 2 undefined on input line 37.
+
+<Introduction/figs/StandardModel3.png, id=1196, 1003.75pt x 1087.06125pt>
+File: Introduction/figs/StandardModel3.png Graphic file (type png)
+
+<use Introduction/figs/StandardModel3.png>
+
+LaTeX Warning: Citation `SMimage' on page 2 undefined on input line 52.
+
+
+LaTeX Warning: Citation `SMimage' on page 2 undefined on input line 52.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61 ...ion{Electromagnetic and weak interactions}
+                                                   [2]
+
+LaTeX Warning: Citation `Wu:1957my' on page 3 undefined on input line 80.
+
+
+Underfull \vbox (badness 5908) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 
+      [3 <./Introduction/figs/StandardModel3.png>] [4]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
+ [5]
+
+LaTeX Warning: Command \i invalid in math mode on input line 199.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 199.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 199.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 199.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+<Introduction/figs/Unitarity_triangle.png, id=1232, 1623.06375pt x 1198.4775pt>
+File: Introduction/figs/Unitarity_triangle.png Graphic file (type png)
+<use Introduction/figs/Unitarity_triangle.png>
+<Introduction/figs/Unitarity_triangle_HFAG.png, id=1233, 569.12625pt x 284.0612
+5pt>
+File: Introduction/figs/Unitarity_triangle_HFAG.png Graphic file (type png)
+ <use Introduction/figs/Unitarity_triangle_HFAG.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Zwicky:1933gu' on page 7 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Dunkley:2008ie' on page 7 undefined on input line 247.
+
+
+
+LaTeX Warning: Citation `Gavela:1993ts' on page 7 undefined on input line 253.
+
+[7]
+
+LaTeX Warning: Citation `Maltoni:2011zz' on page 8 undefined on input line 260.
+
+
+[8 <./Introduction/figs/Unitarity_triangle.png (PNG copy)> <./Introduction/figs
+/Unitarity_triangle_HFAG.png>]
+
+LaTeX Warning: Citation `Filippis:2013ana' on page 9 undefined on input line 26
+5.
+
+
+LaTeX Warning: Citation `Isidori:2012ts' on page 9 undefined on input line 287.
+
+
+
+LaTeX Warning: Citation `Buras:2003jf' on page 9 undefined on input line 287.
+
+[9]
+
+LaTeX Warning: Citation `Fayet:1976cr' on page 10 undefined on input line 299.
+
+
+LaTeX Warning: Citation `Randall:1999ee' on page 10 undefined on input line 304
+.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 322.
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+<Introduction/figs/penguins3.png, id=1259, 870.64095pt x 448.74628pt>
+File: Introduction/figs/penguins3.png Graphic file (type png)
+
+<use Introduction/figs/penguins3.png> [12 <./Introduction/figs/penguins3.png>]
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [13]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 438.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 438.
+
+<fig/q2spectrum.png, id=1274, 975.645pt x 657.45625pt>
+File: fig/q2spectrum.png Graphic file (type png)
+
+<use fig/q2spectrum.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./fig/q2spectrum.png>]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 488.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 488.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 488.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 488.
+
+[16]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 520.
+
+[17] <Introduction/figs/LFV.png, id=1308, 820.06375pt x 578.16pt>
+File: Introduction/figs/LFV.png Graphic file (type png)
+
+<use Introduction/figs/LFV.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [18] [19 <./Introduction/figs/LFV.png>]
+\openout2 = `Detector/detector.aux'.
+
+ (./Detector/detector.tex
+Chapter 2.
+<Detector/figs/LHC_scheme.png, id=1319, 890.32625pt x 593.21625pt>
+File: Detector/figs/LHC_scheme.png Graphic file (type png)
+
+<use Detector/figs/LHC_scheme.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `lhc' on page 20 undefined on input line 27.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./Detector/figs/LHC_scheme.png (PNG copy)>]
+
+LaTeX Warning: Citation `Aaij:2010gn' on page 22 undefined on input line 39.
+
+<Detector/figs/LHCb_official.png, id=1332, 1103.12125pt x 782.925pt>
+File: Detector/figs/LHCb_official.png Graphic file (type png)
+
+<use Detector/figs/LHCb_official.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22]
+Overfull \hbox (3.95143pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/n/12 silicon-strip ver-tex de-tec-tor sur-round-ing the $\OML/cmm/m/
+it/12 pp$ \OT1/cmr/m/n/12 in-ter-ac-tion re-gion, a large-area silicon-
+ []
+
+
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+ [23 <./Detector/figs/LHCb_official.png (PNG copy)>] [24]
+<Detector/figs/detector/VELO.png, id=1357, 563.10374pt x 382.42876pt>
+File: Detector/figs/detector/VELO.png Graphic file (type png)
+
+<use Detector/figs/detector/VELO.png>
+<Detector/figs/detector/VELO_scheme.png, id=1358, 271.0125pt x 209.28188pt>
+File: Detector/figs/detector/VELO_scheme.png Graphic file (type png)
+
+<use Detector/figs/detector/VELO_scheme.png> [25 <./Detector/figs/detector/VELO
+.png (PNG copy)> <./Detector/figs/detector/VELO_scheme.png>] [26]
+<Detector/figs/detector/Cherenkov.png, id=1372, 303.534pt x 280.94963pt>
+File: Detector/figs/detector/Cherenkov.png Graphic file (type png)
+
+<use Detector/figs/detector/Cherenkov.png>
+<Detector/figs/detector/RICH_performance.png, id=1373, 258.7266pt x 193.6836pt>
+File: Detector/figs/detector/RICH_performance.png Graphic file (type png)
+<use Detector/figs/detector/RICH_performance.png>
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 159--171
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: Citation `wikiCherenkov' on page 27 undefined on input line 171.
+
+
+
+LaTeX Warning: Citation `wikiCherenkov' on page 27 undefined on input line 171.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] <Detector/figs/muonsystem.png, id=1382, 266.6763pt x 278.2395pt>
+File: Detector/figs/muonsystem.png Graphic file (type png)
+
+<use Detector/figs/muonsystem.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./Detector/figs/detector/Cherenkov.png (PNG copy)> <./Detector/figs/detec
+tor/RICH_performance.png>] [29 <./Detector/figs/muonsystem.png>]
+
+LaTeX Warning: Citation `*Agostinelli:2002hh' on page 30 undefined on input lin
+e 245.
+
+[30]
+
+LaTeX Warning: Citation `Brun:2000es' on page 31 undefined on input line 248.
+
+<Detector/figs/triggerscheme.png, id=1409, 417.7206pt x 264.5082pt>
+File: Detector/figs/triggerscheme.png Graphic file (type png)
+
+<use Detector/figs/triggerscheme.png>) [31 <./Detector/figs/triggerscheme.png>]
+\openout2 = `Lmumu/introduction.aux'.
+
+(./Lmumu/introduction.tex
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\PLambda' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\PLambda' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\mu' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\mu' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+[32
+
+
+
+]
+Chapter 3.
+
+Overfull \hbox (2.89685pt too wide) in paragraph at lines 27--33
+[]\OT1/cmr/m/n/12 With re-spect of $\OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 de-ca
+ys go-ing though the same tran-si-tions, such as $\OML/cmm/m/it/12 B[]  \OMS/cm
+sy/m/n/12 ! \OML/cmm/m/it/12 K[]^^V[]^^V[]$\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33
+
+]
+Overfull \hbox (1.42154pt too wide) detected at line 53
+\OMS/cmsy/m/n/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^C[] \OMS/cmsy/m/n/12 ! \O
+ML/cmm/m/it/12 ^^C^^V[]^^V[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =\OMS/cmsy/m/n/12
+ B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^C[] \OMS/cmsy/m/n/12 ! []\OML/cmm/m/it/12
+ ^^C\OT1/cmr/m/n/12 ) = [1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 54 \OMS/cmsy/m/n/12
+ ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 30([]) \OMS/cmsy/m/n/12
+ ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 20([]) \OMS/cmsy/m/n/12
+ ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 02([])] \OMS/cmsy/m/n/1
+2 ^^B \OT1/cmr/m/n/12 10[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 64.
+
+
+LaTeX Warning: Reference `sec:fig:q2spectrum' on page 35 undefined on input lin
+e 67.
+
+[35] [36] <Lmumu/figs/track_types.png, id=1484, 1067.99pt x 538.01pt>
+File: Lmumu/figs/track_types.png Graphic file (type png)
+
+<use Lmumu/figs/track_types.png>) [37 <./Lmumu/figs/track_types.png>]
+\openout2 = `Lmumu/selection.aux'.
+
+
+(./Lmumu/selection.tex
+Chapter 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38
+
+
+
+]
+[39] <Lmumu/figs/IPandDIRA.png, id=1504, 682.73894pt x 321.01326pt>
+File: Lmumu/figs/IPandDIRA.png Graphic file (type png)
+
+<use Lmumu/figs/IPandDIRA.png> [40]
+
+LaTeX Warning: Reference `PDG2014' on page 41 undefined on input line 123.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./Lmumu/figs/IPandDIRA.png (PNG copy)>]
+<Lmumu/figs/correlation.pdf, id=1527, 569.12625pt x 385.44pt>
+File: Lmumu/figs/correlation.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/correlation.pdf>
+
+LaTeX Warning: Reference `tab:nnInputs' on page 42 undefined on input line 180.
+
+
+
+LaTeX Warning: Reference `tab:nnInputs' on page 42 undefined on input line 180.
+
+
+<Lmumu/figs/TrainAndTest.pdf, id=1528, 569.12625pt x 385.44pt>
+File: Lmumu/figs/TrainAndTest.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/TrainAndTest.pdf>
+<Lmumu/figs/purity_NN.pdf, id=1529, 569.12625pt x 385.44pt>
+File: Lmumu/figs/purity_NN.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/purity_NN.pdf>
+<Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf, id=1531, 569.12625pt x 385.44pt>
+File: Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf Graphic file (type pdf)
+<use Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf>
+<Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf, id=1532, 569.12625pt x 385.44pt
+>
+File: Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf Graphic file (type pdf)
+ <use Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf>
+<Lmumu/figs/significance_Lmumu_lowQ2.pdf, id=1533, 569.12625pt x 385.44pt>
+File: Lmumu/figs/significance_Lmumu_lowQ2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/significance_Lmumu_lowQ2.pdf>
+<Lmumu/figs/significance_Lmumu_highQ2.pdf, id=1534, 569.12625pt x 385.44pt>
+File: Lmumu/figs/significance_Lmumu_highQ2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/significance_Lmumu_highQ2.pdf>
+<Lmumu/figs/ROC.pdf, id=1535, 569.12625pt x 385.44pt>
+File: Lmumu/figs/ROC.pdf Graphic file (type pdf)
+ <use Lmumu/figs/ROC.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+[43] [44 <./Lmumu/figs/correlation.pdf, page is rotated 90 degrees> <./Lmumu/fi
+gs/TrainAndTest.pdf, page is rotated 90 degrees> <./Lmumu/figs/purity_NN.pdf, p
+age is rotated 90 degrees>] [45 <./Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf
+, page is rotated 90 degrees> <./Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf,
+ page is rotated 90 degrees> <./Lmumu/figs/significance_Lmumu_lowQ2.pdf, page i
+s rotated 90 degrees> <./Lmumu/figs/significance_Lmumu_highQ2.pdf, page is rota
+ted 90 degrees> <./Lmumu/figs/ROC.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+ [47]
+<Lmumu/figs/trig_highq2.pdf, id=1922, 569.12625pt x 385.44pt>
+File: Lmumu/figs/trig_highq2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/trig_highq2.pdf>
+<Lmumu/figs/trig_lowq2.pdf, id=1923, 569.12625pt x 385.44pt>
+File: Lmumu/figs/trig_lowq2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/trig_lowq2.pdf>) [48 <./Lmumu/figs/trig_highq2.pdf, page is rot
+ated 90 degrees> <./Lmumu/figs/trig_lowq2.pdf, page is rotated 90 degrees>]
+\openout2 = `Lmumu/physicsBg.aux'.
+
+
+(./Lmumu/physicsBg.tex
+<Lmumu/figs/Kst_plus_distrib.pdf, id=2020, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Kst_plus_distrib.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Kst_plus_distrib.pdf>
+<Lmumu/figs/Jpsi_tail_distrib.pdf, id=2021, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Jpsi_tail_distrib.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Jpsi_tail_distrib.pdf>) [49
+
+
+] [50 <./Lmumu/figs/Kst_plus_distrib.pdf, page is rotated 90 degrees> <./Lmumu/
+figs/Jpsi_tail_distrib.pdf, page is rotated 90 degrees>]
+\openout2 = `Lmumu/fit.aux'.
+
+ (./Lmumu/fit.tex
+Chapter 5.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51
+
+
+
+]
+<Lmumu/figs/fitLb2JpsiL_DD_MC.pdf, id=2126, 569.12625pt x 385.44pt>
+File: Lmumu/figs/fitLb2JpsiL_DD_MC.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/fitLb2JpsiL_DD_MC.pdf>
+<Lmumu/figs/fitLb2JpsiL_LL_MC.pdf, id=2127, 569.12625pt x 385.44pt>
+File: Lmumu/figs/fitLb2JpsiL_LL_MC.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/fitLb2JpsiL_LL_MC.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+<Lmumu/figs/fitKS_bkg.pdf, id=2137, 569.12625pt x 385.44pt>
+File: Lmumu/figs/fitKS_bkg.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/fitKS_bkg.pdf> [53 <./Lmumu/figs/fitLb2JpsiL_DD_MC.pdf, page is
+ rotated 90 degrees> <./Lmumu/figs/fitLb2JpsiL_LL_MC.pdf, page is rotated 90 de
+grees>] [54 <./Lmumu/figs/fitKS_bkg.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 7777) has occurred while \output is active []
+
+ [55]
+<Lmumu/figs/Lb2JpsiL_LL_data_fitAndRes.pdf, id=2289, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2JpsiL_LL_data_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2JpsiL_LL_data_fitAndRes.pdf>
+<Lmumu/figs/Lb2JpsiL_DD_data_fitAndRes.pdf, id=2290, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2JpsiL_DD_data_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2JpsiL_DD_data_fitAndRes.pdf>
+<Lmumu/figs/Lb2JpsiL_LL_data_log_fitAndRes.pdf, id=2291, 569.12625pt x 385.44pt
+>
+File: Lmumu/figs/Lb2JpsiL_LL_data_log_fitAndRes.pdf Graphic file (type pdf)
+ <use Lmumu/figs/Lb2JpsiL_LL_data_log_fitAndRes.pdf>
+<Lmumu/figs/Lb2JpsiL_DD_data_log_fitAndRes.pdf, id=2292, 569.12625pt x 385.44pt
+>
+File: Lmumu/figs/Lb2JpsiL_DD_data_log_fitAndRes.pdf Graphic file (type pdf)
+ <use Lmumu/figs/Lb2JpsiL_DD_data_log_fitAndRes.pdf>
+
+LaTeX Warning: Reference `fig:totalFitMC' on page 56 undefined on input line 19
+7.
+
+
+Underfull \vbox (badness 2951) has occurred while \output is active []
+
+ [56]
+[57 <./Lmumu/figs/Lb2JpsiL_LL_data_fitAndRes.pdf, page is rotated 90 degrees> <
+./Lmumu/figs/Lb2JpsiL_DD_data_fitAndRes.pdf, page is rotated 90 degrees> <./Lmu
+mu/figs/Lb2JpsiL_LL_data_log_fitAndRes.pdf, page is rotated 90 degrees> <./Lmum
+u/figs/Lb2JpsiL_DD_data_log_fitAndRes.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/Lb2JpsiL_lowSel_DD_data_fitAndRes.pdf, id=2489, 569.12625pt x 385.4
+4pt>
+File: Lmumu/figs/Lb2JpsiL_lowSel_DD_data_fitAndRes.pdf Graphic file (type pdf)
+ <use Lmumu/figs/Lb2JpsiL_lowSel_DD_data_fitAndRes.pdf>
+<Lmumu/figs/Lb2JpsiL_lowSel_LL_data_fitAndRes.pdf, id=2490, 569.12625pt x 385.4
+4pt>
+File: Lmumu/figs/Lb2JpsiL_lowSel_LL_data_fitAndRes.pdf Graphic file (type pdf)
+ <use Lmumu/figs/Lb2JpsiL_lowSel_LL_data_fitAndRes.pdf>
+<Lmumu/figs/Lb2Lmumu_DD_highQ2_fitAndRes.pdf, id=2491, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2Lmumu_DD_highQ2_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2Lmumu_DD_highQ2_fitAndRes.pdf>
+<Lmumu/figs/Lb2Lmumu_LL_highQ2_fitAndRes.pdf, id=2492, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2Lmumu_LL_highQ2_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2Lmumu_LL_highQ2_fitAndRes.pdf>
+<Lmumu/figs/Lb2Lmumu_DD_lowQ2_fitAndRes.pdf, id=2493, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2Lmumu_DD_lowQ2_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2Lmumu_DD_lowQ2_fitAndRes.pdf>
+<Lmumu/figs/Lb2Lmumu_LL_lowQ2_fitAndRes.pdf, id=2494, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lb2Lmumu_LL_lowQ2_fitAndRes.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Lb2Lmumu_LL_lowQ2_fitAndRes.pdf>
+<Lmumu/figs/q2_fits_DD_plot1.pdf, id=2495, 569.12625pt x 385.44pt>
+File: Lmumu/figs/q2_fits_DD_plot1.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/q2_fits_DD_plot1.pdf>
+<Lmumu/figs/q2_fits_DD_plot2.pdf, id=2496, 569.12625pt x 385.44pt>
+File: Lmumu/figs/q2_fits_DD_plot2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/q2_fits_DD_plot2.pdf>
+<Lmumu/figs/q2_fits_LL_plot1.pdf, id=2497, 569.12625pt x 385.44pt>
+File: Lmumu/figs/q2_fits_LL_plot1.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/q2_fits_LL_plot1.pdf>
+<Lmumu/figs/q2_fits_LL_plot2.pdf, id=2498, 569.12625pt x 385.44pt>
+File: Lmumu/figs/q2_fits_LL_plot2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/q2_fits_LL_plot2.pdf> [58 <./Lmumu/figs/Lb2JpsiL_lowSel_DD_data
+_fitAndRes.pdf, page is rotated 90 degrees> <./Lmumu/figs/Lb2JpsiL_lowSel_LL_da
+ta_fitAndRes.pdf, page is rotated 90 degrees> <./Lmumu/figs/Lb2Lmumu_DD_highQ2_
+fitAndRes.pdf, page is rotated 90 degrees> <./Lmumu/figs/Lb2Lmumu_LL_highQ2_fit
+AndRes.pdf, page is rotated 90 degrees>] [59 <./Lmumu/figs/Lb2Lmumu_DD_lowQ2_fi
+tAndRes.pdf, page is rotated 90 degrees> <./Lmumu/figs/Lb2Lmumu_LL_lowQ2_fitAnd
+Res.pdf, page is rotated 90 degrees> <./Lmumu/figs/q2_fits_DD_plot1.pdf, page i
+s rotated 90 degrees>] [60 <./Lmumu/figs/q2_fits_DD_plot2.pdf, page is rotated 
+90 degrees> <./Lmumu/figs/q2_fits_LL_plot1.pdf, page is rotated 90 degrees>]
+[61 <./Lmumu/figs/q2_fits_LL_plot2.pdf, page is rotated 90 degrees>] [62])
+\openout2 = `Lmumu/efficiency.aux'.
+
+
+(./Lmumu/efficiency.tex
+
+LaTeX Warning: Reference `ap:LbLmumuAngular' on page 63 undefined on input line
+ 28.
+
+
+LaTeX Warning: Reference `ap:LbJpsiLAngular' on page 63 undefined on input line
+ 41.
+
+[63
+
+
+
+] <Lmumu/figs/wilson_q2.pdf, id=2973, 569.12625pt x 385.44pt>
+File: Lmumu/figs/wilson_q2.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/wilson_q2.pdf>
+<Lmumu/figs/rel_wilson1_sysAll.pdf, id=2974, 569.12625pt x 385.44pt>
+File: Lmumu/figs/rel_wilson1_sysAll.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/rel_wilson1_sysAll.pdf>
+<Lmumu/figs/rel_wilson2_sysAll.pdf, id=2975, 569.12625pt x 385.44pt>
+File: Lmumu/figs/rel_wilson2_sysAll.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/rel_wilson2_sysAll.pdf>
+<Lmumu/figs/rel_wilson3_sysAll.pdf, id=2976, 569.12625pt x 385.44pt>
+File: Lmumu/figs/rel_wilson3_sysAll.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/rel_wilson3_sysAll.pdf> [64 <./Lmumu/figs/wilson_q2.pdf, page i
+s rotated 90 degrees>]
+Overfull \hbox (20.39272pt too wide) in paragraph at lines 88--90
+[]\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 T\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p[
+]\OT1/cmr/m/n/12 )$ is the di-s-tir-bu-tion of all events in the singnal in-ter
+-val ($5605 \OML/cmm/m/it/12 < m\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p^^Y^^V[]^^V[
+]\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 <
+ []
+
+
+LaTeX Warning: Reference `app:MC_data_comp' on page 65 undefined on input line 
+93.
+
+
+Underfull \vbox (badness 6526) has occurred while \output is active []
+
+ [65 <./Lmumu/figs/rel_wilson1_sysAll.pdf, page is rotated 90 degrees> <./Lmumu
+/figs/rel_wilson2_sysAll.pdf, page is rotated 90 degrees> <./Lmumu/figs/rel_wil
+son3_sysAll.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/ratio_Lb_p_pt.pdf, id=3163, 569.12625pt x 385.44pt>
+File: Lmumu/figs/ratio_Lb_p_pt.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/ratio_Lb_p_pt.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <./Lmumu/figs/ratio_Lb_p_pt.pdf, page is rotated 90 degrees>] [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+[69] [70]
+Underfull \vbox (badness 5787) has occurred while \output is active []
+
+ [71]
+[72]
+Overfull \hbox (45.677pt too wide) in paragraph at lines 375--395
+ [][] 
+ []
+
+
+Overfull \hbox (45.677pt too wide) in paragraph at lines 401--421
+ [][] 
+ []
+
+<Lmumu/figs/effvsq2_DD_geom.pdf, id=3253, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_DD_geom.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_DD_geom.pdf>
+<Lmumu/figs/effvsq2_DD_det.pdf, id=3254, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_DD_det.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_DD_det.pdf>
+<Lmumu/figs/effvsq2_DD_reco.pdf, id=3255, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_DD_reco.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_DD_reco.pdf>
+<Lmumu/figs/effvsq2_LL_reco.pdf, id=3256, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_LL_reco.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_LL_reco.pdf>
+<Lmumu/figs/effvsq2_DD_mva.pdf, id=3257, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_DD_mva.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_DD_mva.pdf>
+<Lmumu/figs/effvsq2_LL_mva.pdf, id=3258, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_LL_mva.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_LL_mva.pdf>
+<Lmumu/figs/effvsq2_DD_trig.pdf, id=3259, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_DD_trig.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_DD_trig.pdf>
+<Lmumu/figs/effvsq2_LL_trig.pdf, id=3260, 569.12625pt x 385.44pt>
+File: Lmumu/figs/effvsq2_LL_trig.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/effvsq2_LL_trig.pdf> [73] [74] [75 <./Lmumu/figs/effvsq2_DD_geo
+m.pdf, page is rotated 90 degrees> <./Lmumu/figs/effvsq2_DD_det.pdf, page is ro
+tated 90 degrees> <./Lmumu/figs/effvsq2_DD_reco.pdf, page is rotated 90 degrees
+> <./Lmumu/figs/effvsq2_LL_reco.pdf, page is rotated 90 degrees> <./Lmumu/figs/
+effvsq2_DD_mva.pdf, page is rotated 90 degrees> <./Lmumu/figs/effvsq2_LL_mva.pd
+f, page is rotated 90 degrees> <./Lmumu/figs/effvsq2_DD_trig.pdf, page is rotat
+ed 90 degrees> <./Lmumu/figs/effvsq2_LL_trig.pdf, page is rotated 90 degrees>])
+\openout2 = `Lmumu/systematics.aux'.
+
+(./Lmumu/systematics.tex
+Chapter 6.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76
+
+
+
+
+]
+[77] [78] [79] [80]
+
+LaTeX Warning: Reference `ap:LbLmumuAngular' on page 81 undefined on input line
+ 301.
+
+
+LaTeX Warning: Reference `ap:LbLmumuAngular' on page 81 undefined on input line
+ 309.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\PLambda' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 311.
+
+[81]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 323.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\PLambda' on input line 323.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 323.
+
+<Lmumu/figs/DDvtx_eff_POwen.pdf, id=3664, 569.12625pt x 344.28625pt>
+File: Lmumu/figs/DDvtx_eff_POwen.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDvtx_eff_POwen.pdf> [82 <./Lmumu/figs/DDvtx_eff_POwen.pdf, pag
+e is rotated 90 degrees>]
+<Lmumu/figs/PIDmu_sys.pdf, id=3718, 569.12625pt x 385.44pt>
+File: Lmumu/figs/PIDmu_sys.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/PIDmu_sys.pdf>) [83] [84 <./Lmumu/figs/PIDmu_sys.pdf, page is r
+otated 90 degrees>]
+\openout2 = `Lmumu/summaryBR.aux'.
+
+ (./Lmumu/summaryBR.tex
+Chapter 7.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85
+
+
+
+]
+<Lmumu/figs/q2result_both.pdf, id=3780, 569.12625pt x 385.44pt>
+File: Lmumu/figs/q2result_both.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/q2result_both.pdf>
+<Lmumu/figs/combined_result.pdf, id=3783, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/combined_result.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/combined_result.pdf> [86] [87 <./Lmumu/figs/q2result_both.pdf, 
+page is rotated 90 degrees> <./Lmumu/figs/combined_result.pdf, page is rotated 
+90 degrees>] [88] [89])
+\openout2 = `Lmumu/afbmethod.aux'.
+
+ (./Lmumu/afbmethod.tex
+Chapter 8.
+
+LaTeX Warning: Reference `ap:angObservables' on page 90 undefined on input line
+ 22.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90
+
+
+
+
+]
+Underfull \vbox (badness 1377) has occurred while \output is active []
+
+ [91]
+
+LaTeX Warning: Reference `sec:eff' on page 92 undefined on input line 73.
+
+<Lmumu/figs/DDeffFit_q2_1500_2000.pdf, id=3912, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFit_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFit_q2_1500_2000.pdf>
+<Lmumu/figs/LLeffFit_q2_1500_2000.pdf, id=3913, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFit_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFit_q2_1500_2000.pdf>
+<Lmumu/figs/DDeffFitB_q2_1500_2000.pdf, id=3914, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFitB_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFitB_q2_1500_2000.pdf>
+<Lmumu/figs/LLeffFitB_q2_1500_2000.pdf, id=3915, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFitB_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFitB_q2_1500_2000.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/DDeffFit_q2_110_600.pdf, id=3916, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFit_q2_110_600.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFit_q2_110_600.pdf>
+<Lmumu/figs/LLeffFit_q2_110_600.pdf, id=3917, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFit_q2_110_600.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFit_q2_110_600.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/DDeffFitB_q2_110_600.pdf, id=3918, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFitB_q2_110_600.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFitB_q2_110_600.pdf>
+<Lmumu/figs/LLeffFitB_q2_110_600.pdf, id=3919, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFitB_q2_110_600.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFitB_q2_110_600.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/DDeffFit_jpsi.pdf, id=3920, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFit_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFit_jpsi.pdf>
+<Lmumu/figs/LLeffFit_jpsi.pdf, id=3921, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFit_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFit_jpsi.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/DDeffFitB_jpsi.pdf, id=3922, 569.12625pt x 385.44pt>
+File: Lmumu/figs/DDeffFitB_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/DDeffFitB_jpsi.pdf>
+<Lmumu/figs/LLeffFitB_jpsi.pdf, id=3923, 569.12625pt x 385.44pt>
+File: Lmumu/figs/LLeffFitB_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/LLeffFitB_jpsi.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `app:Efficiencies' on page 92 undefined on input line 
+140.
+
+[92 <./Lmumu/figs/DDeffFit_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmu
+mu/figs/LLeffFit_q2_1500_2000.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `app:AngRes' on page 93 undefined on input line 153.
+
+[93 <./Lmumu/figs/DDeffFitB_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lm
+umu/figs/LLeffFitB_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/
+DDeffFit_q2_110_600.pdf, page is rotated 90 degrees> <./Lmumu/figs/LLeffFit_q2_
+110_600.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/BkgFit_highq2_DD.pdf, id=4203, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFit_highq2_DD.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFit_highq2_DD.pdf>
+<Lmumu/figs/BkgFit_highq2_LL.pdf, id=4204, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFit_highq2_LL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFit_highq2_LL.pdf>
+<Lmumu/figs/BkgFit_lowq2_DD.pdf, id=4205, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFit_lowq2_DD.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFit_lowq2_DD.pdf>
+<Lmumu/figs/BkgFit_lowq2_LL.pdf, id=4206, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFit_lowq2_LL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFit_lowq2_LL.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/BkgFitB_highq2_DD.pdf, id=4207, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFitB_highq2_DD.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFitB_highq2_DD.pdf>
+<Lmumu/figs/BkgFitB_highq2_LL.pdf, id=4208, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFitB_highq2_LL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFitB_highq2_LL.pdf>
+<Lmumu/figs/BkgFitB_lowq2_DD.pdf, id=4209, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFitB_lowq2_DD.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFitB_lowq2_DD.pdf>
+<Lmumu/figs/BkgFitB_lowq2_LL.pdf, id=4210, 569.12625pt x 385.44pt>
+File: Lmumu/figs/BkgFitB_lowq2_LL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/BkgFitB_lowq2_LL.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `app:AngRes' on page 94 undefined on input line 183.
+
+[94 <./Lmumu/figs/DDeffFitB_q2_110_600.pdf, page is rotated 90 degrees> <./Lmum
+u/figs/LLeffFitB_q2_110_600.pdf, page is rotated 90 degrees> <./Lmumu/figs/DDef
+fFit_jpsi.pdf, page is rotated 90 degrees> <./Lmumu/figs/LLeffFit_jpsi.pdf, pag
+e is rotated 90 degrees>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95 <./Lmumu/figs/DDeffFitB_jpsi.pdf, page is rotated 90 degrees> <./Lmumu/fig
+s/LLeffFitB_jpsi.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf, id=4485, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf>
+<Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf, id=4486, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf>
+<Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf, id=4487, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf>
+<Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf, id=4488, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf>
+<Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf, id=4489, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf>
+<Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf, id=4490, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf, id=4491, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf>
+<Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf, id=4492, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf>
+<Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf, id=4493, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf>
+<Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf, id=4494, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf>
+<Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf, id=4495, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf>
+<Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf, id=4496, 569.12625pt x 385.44pt>
+File: Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [96 <./Lmumu/figs/BkgFit_highq2_DD.pdf, page is rotated 90 degrees> <./Lmumu/
+figs/BkgFit_highq2_LL.pdf, page is rotated 90 degrees> <./Lmumu/figs/BkgFit_low
+q2_DD.pdf, page is rotated 90 degrees> <./Lmumu/figs/BkgFit_lowq2_LL.pdf, page 
+is rotated 90 degrees>] [97 <./Lmumu/figs/BkgFitB_highq2_DD.pdf, page is rotate
+d 90 degrees> <./Lmumu/figs/BkgFitB_highq2_LL.pdf, page is rotated 90 degrees> 
+<./Lmumu/figs/BkgFitB_lowq2_DD.pdf, page is rotated 90 degrees> <./Lmumu/figs/B
+kgFitB_lowq2_LL.pdf, page is rotated 90 degrees>] [98 <./Lmumu/figs/toys3D/B1/1
+D/toys3D_afbB.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/1D/toys3
+D_afb.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf
+, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf, page 
+is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf, page is rotat
+ed 90 degrees> <./Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf, page is rotated 90 deg
+rees> <./Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf, page is rotated 90 degrees> <
+./Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf, page is rotated 90 degrees> <./Lmumu/
+figs/toys3D/B2/1D/toys3D_fL.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys
+3D/B2/3D/toys3D_afbB.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/3
+D/toys3D_afb.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/3D/toys3D
+_fL.pdf, page is rotated 90 degrees>]
+\openout2 = `Lmumu/systematicsAfb.aux'.
+
+ (./Lmumu/systematicsAfb.tex
+Chapter 9.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 5.
+
+
+LaTeX Warning: Reference `eq:2DcosThetaLandB' on page 99 undefined on input lin
+e 11.
+
+
+LaTeX Warning: Reference `fig:2DcosThetaLandBeff' on page 99 undefined on input
+ line 11.
+
+<Lmumu/figs/fLsys_efficiency.pdf, id=5391, 569.12625pt x 385.44pt>
+File: Lmumu/figs/fLsys_efficiency.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/fLsys_efficiency.pdf>
+<Lmumu/figs/afbsys_efficiency.pdf, id=5392, 569.12625pt x 385.44pt>
+File: Lmumu/figs/afbsys_efficiency.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/afbsys_efficiency.pdf>
+<Lmumu/figs/afbBsys_efficiency.pdf, id=5393, 569.12625pt x 385.44pt>
+File: Lmumu/figs/afbBsys_efficiency.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/afbBsys_efficiency.pdf> [99
+
+
+
+]
+
+LaTeX Warning: Reference `tab:resolutions' on page 100 undefined on input line 
+36.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100 <./Lmumu/figs/fLsys_efficiency.pdf, page is rotated 90 degrees> <./Lmumu/
+figs/afbsys_efficiency.pdf, page is rotated 90 degrees> <./Lmumu/figs/afbBsys_e
+fficiency.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 3746) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[101] [102]
+
+LaTeX Warning: Reference `eq:lepton2D' on page 103 undefined on input line 158.
+
+
+
+LaTeX Warning: Reference `eq:hadron2D' on page 103 undefined on input line 158.
+
+
+
+<Lmumu/figs/2Deff_tot_cosThetaL_vs_cosTheta_All.pdf, id=5554, 569.12625pt x 385
+.44pt>
+File: Lmumu/figs/2Deff_tot_cosThetaL_vs_cosTheta_All.pdf Graphic file (type pdf
+)
+ <use Lmumu/figs/2Deff_tot_cosThetaL_vs_cosTheta_All.pdf>
+<Lmumu/figs/2Deff_upper_cosThetaB_vs_cosTheta_All.pdf, id=5555, 569.12625pt x 3
+85.44pt>
+File: Lmumu/figs/2Deff_upper_cosThetaB_vs_cosTheta_All.pdf Graphic file (type p
+df)
+ <use Lmumu/figs/2Deff_upper_cosThetaB_vs_cosTheta_All.pdf>
+<Lmumu/figs/fLsys_polarisation.pdf, id=5556, 569.12625pt x 385.44pt>
+File: Lmumu/figs/fLsys_polarisation.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/fLsys_polarisation.pdf>
+<Lmumu/figs/afbsys_polarisation.pdf, id=5557, 569.12625pt x 385.44pt>
+File: Lmumu/figs/afbsys_polarisation.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/afbsys_polarisation.pdf>
+<Lmumu/figs/afbBsys_polarisation.pdf, id=5558, 569.12625pt x 385.44pt>
+File: Lmumu/figs/afbBsys_polarisation.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/afbBsys_polarisation.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[103] [104 <./Lmumu/figs/2Deff_tot_cosThetaL_vs_cosTheta_All.pdf, page is rotat
+ed 90 degrees> <./Lmumu/figs/2Deff_upper_cosThetaB_vs_cosTheta_All.pdf, page is
+ rotated 90 degrees> <./Lmumu/figs/fLsys_polarisation.pdf, page is rotated 90 d
+egrees> <./Lmumu/figs/afbsys_polarisation.pdf, page is rotated 90 degrees> <./L
+mumu/figs/afbBsys_polarisation.pdf, page is rotated 90 degrees>])
+\openout2 = `Lmumu/summaryAfb.aux'.
+
+
+(./Lmumu/summaryAfb.tex
+Chapter 10.
+[105
+
+
+
+
+] <Lmumu/figs/scan.pdf, id=5796, 569.12625pt x 385.44pt>
+File: Lmumu/figs/scan.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/scan.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lmumu/figs/pvalue_fL_1500_2000.pdf, id=5797, 569.12625pt x 385.44pt>
+File: Lmumu/figs/pvalue_fL_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/pvalue_fL_1500_2000.pdf>
+<Lmumu/figs/pvalue_afbB_1500_2000.pdf, id=5798, 569.12625pt x 385.44pt>
+File: Lmumu/figs/pvalue_afbB_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/pvalue_afbB_1500_2000.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[106]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\psii' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 52.
+
+[107 <./Lmumu/figs/scan.pdf, page is rotated 90 degrees> <./Lmumu/figs/pvalue_f
+L_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/pvalue_afbB_1500_200
+0.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, id=5945, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf Graphic file (type pdf)
+<use Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf>
+<Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, id=5946, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf Graphic file (type pdf)
+<use Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf>
+<Lmumu/figs/Afb_DD_jpsi.pdf, id=5949, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Afb_DD_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Afb_DD_jpsi.pdf>
+<Lmumu/figs/Afb_LL_jpsi.pdf, id=5950, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Afb_LL_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Afb_LL_jpsi.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/AfbB_DD_jpsi.pdf, id=5951, 569.12625pt x 385.44pt>
+File: Lmumu/figs/AfbB_DD_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/AfbB_DD_jpsi.pdf>
+<Lmumu/figs/AfbB_LL_jpsi.pdf, id=5952, 569.12625pt x 385.44pt>
+File: Lmumu/figs/AfbB_LL_jpsi.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/AfbB_LL_jpsi.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `app:AngRes' on page 108 undefined on input line 101.
+
+[108 <./Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, page is rotated 90 degree
+s> <./Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, page is rotated 90 degrees>
+] <Lmumu/figs/Afb_DD_q2_1500_2000.pdf, id=6050, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Afb_DD_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Afb_DD_q2_1500_2000.pdf>
+<Lmumu/figs/Afb_LL_q2_1500_2000.pdf, id=6051, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Afb_LL_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/Afb_LL_q2_1500_2000.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Lmumu/figs/AfbB_DD_q2_1500_2000.pdf, id=6052, 569.12625pt x 385.44pt>
+File: Lmumu/figs/AfbB_DD_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/AfbB_DD_q2_1500_2000.pdf>
+<Lmumu/figs/AfbB_LL_q2_1500_2000.pdf, id=6053, 569.12625pt x 385.44pt>
+File: Lmumu/figs/AfbB_LL_q2_1500_2000.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/AfbB_LL_q2_1500_2000.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lmumu/figs/contours_010_200_1D.pdf, id=6056, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_010_200_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_010_200_1D.pdf>
+<Lmumu/figs/contours_1500_2000_1D.pdf, id=6057, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_1500_2000_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_1500_2000_1D.pdf>
+<Lmumu/figs/contours_1100_1250_1D.pdf, id=6058, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_1100_1250_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_1100_1250_1D.pdf>
+<Lmumu/figs/contours_1500_1600_1D.pdf, id=6059, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_1500_1600_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_1500_1600_1D.pdf>
+<Lmumu/figs/contours_1600_1800_1D.pdf, id=6060, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_1600_1800_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_1600_1800_1D.pdf>
+<Lmumu/figs/contours_1800_2000_1D.pdf, id=6061, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/contours_1800_2000_1D.pdf Graphic file (type pdf)
+
+<use Lmumu/figs/contours_1800_2000_1D.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[109 <./Lmumu/figs/Afb_DD_jpsi.pdf, page is rotated 90 degrees> <./Lmumu/figs/A
+fb_LL_jpsi.pdf, page is rotated 90 degrees> <./Lmumu/figs/AfbB_DD_jpsi.pdf, pag
+e is rotated 90 degrees> <./Lmumu/figs/AfbB_LL_jpsi.pdf, page is rotated 90 deg
+rees>] [110 <./Lmumu/figs/Afb_DD_q2_1500_2000.pdf, page is rotated 90 degrees> 
+<./Lmumu/figs/Afb_LL_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/fig
+s/AfbB_DD_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/AfbB_LL_q
+2_1500_2000.pdf, page is rotated 90 degrees>] [111 <./Lmumu/figs/contours_010_2
+00_1D.pdf, page is rotated 90 degrees> <./Lmumu/figs/contours_1500_2000_1D.pdf,
+ page is rotated 90 degrees> <./Lmumu/figs/contours_1100_1250_1D.pdf, page is r
+otated 90 degrees> <./Lmumu/figs/contours_1500_1600_1D.pdf, page is rotated 90 
+degrees> <./Lmumu/figs/contours_1600_1800_1D.pdf, page is rotated 90 degrees> <
+./Lmumu/figs/contours_1800_2000_1D.pdf, page is rotated 90 degrees>])
+\openout2 = `RKst/introduction.aux'.
+
+
+(./RKst/introduction.tex
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1.
+
+[112
+
+
+
+
+]
+Chapter 11.
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 3.
+
+<RKst/figs/penguins3.png, id=6698, 870.64095pt x 448.74628pt>
+File: RKst/figs/penguins3.png Graphic file (type png)
+
+<use RKst/figs/penguins3.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113
+
+]
+<RKst/figs/penguins.png, id=6706, 931.85788pt x 452.10768pt>
+File: RKst/figs/penguins.png Graphic file (type png)
+
+<use RKst/figs/penguins.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114 <./RKst/figs/penguins3.png>] [115 <./RKst/figs/penguins.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 115.
+
+[116]) [117]
+\openout2 = `RKst/selection.aux'.
+
+ (./RKst/selection.tex
+Chapter 12.
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118
+
+
+
+]
+<RKst/figs/electron_B0jpsi2D.pdf, id=6751, 569.12625pt x 385.44pt>
+File: RKst/figs/electron_B0jpsi2D.pdf Graphic file (type pdf)
+
+<use RKst/figs/electron_B0jpsi2D.pdf>
+<RKst/figs/muon_B0jpsi2D.pdf, id=6752, 569.12625pt x 385.44pt>
+File: RKst/figs/muon_B0jpsi2D.pdf Graphic file (type pdf)
+
+<use RKst/figs/muon_B0jpsi2D.pdf> [119]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [120 <./RKst/figs/electron_B0jpsi2D.pdf, page is rotated 90 degrees> <./RKst/f
+igs/muon_B0jpsi2D.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `sec:Lb_stripping' on page 121 undefined on input line
+ 93.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 111.
+
+
+Overfull \hbox (5.98444pt too wide) in paragraph at lines 165--171
+[]\OT1/cmr/m/n/12 Track-quality and ver-tex qual-ity cuts are also ap-plied us-
+ing the $\OML/cmm/m/it/12 ^^_[]=[]$\OT1/cmr/m/n/12 , []\OT1/cmtt/m/n/12 GhostPr
+ob\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121]
+[122] <RKst/figs/muon_PID.pdf, id=6864, 569.12625pt x 385.44pt>
+File: RKst/figs/muon_PID.pdf Graphic file (type pdf)
+
+<use RKst/figs/muon_PID.pdf>
+<RKst/figs/electron_PID.pdf, id=6865, 569.12625pt x 385.44pt>
+File: RKst/figs/electron_PID.pdf Graphic file (type pdf)
+
+<use RKst/figs/electron_PID.pdf>
+<RKst/figs/kaon_PID.pdf, id=6866, 569.12625pt x 385.44pt>
+File: RKst/figs/kaon_PID.pdf Graphic file (type pdf)
+
+<use RKst/figs/kaon_PID.pdf>
+<RKst/figs/pion_PID.pdf, id=6867, 569.12625pt x 385.44pt>
+File: RKst/figs/pion_PID.pdf Graphic file (type pdf)
+
+<use RKst/figs/pion_PID.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123 <./RKst/figs/muon_PID.pdf, page is rotated 90 degrees> <./RKst/figs/elect
+ron_PID.pdf, page is rotated 90 degrees>] [124 <./RKst/figs/kaon_PID.pdf, page 
+is rotated 90 degrees> <./RKst/figs/pion_PID.pdf, page is rotated 90 degrees>]
+<RKst/figs/brem_recovery.png, id=7056, 693.792pt x 452.10768pt>
+File: RKst/figs/brem_recovery.png Graphic file (type png)
+
+<use RKst/figs/brem_recovery.png> [125 <./RKst/figs/brem_recovery.png (PNG copy
+)>]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 282.
+
+
+Underfull \vbox (badness 5388) has occurred while \output is active []
+
+ [126]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 302.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\phi' on input line 302.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 302.
+
+<RKst/figs/RKst/phi.pdf, id=7069, 569.12625pt x 426.59375pt>
+File: RKst/figs/RKst/phi.pdf Graphic file (type pdf)
+
+<use RKst/figs/RKst/phi.pdf>
+<RKst/figs/RKst/Kmumu.pdf, id=7070, 569.12625pt x 426.59375pt>
+File: RKst/figs/RKst/Kmumu.pdf Graphic file (type pdf)
+
+<use RKst/figs/RKst/Kmumu.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\rightarrow' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\ell' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 333.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 333.
+
+[127]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\Lambda' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 344.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128 <./RKst/figs/RKst/phi.pdf, page is rotated 90 degrees> <./RKst/figs/RKst/
+Kmumu.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [129]
+Overfull \hbox (5.03085pt too wide) in paragraph at lines 436--467
+ [][] 
+ []
+
+
+<RKst/figs/Training/electrons/correlation.pdf, id=7183, 569.12625pt x 387.4475p
+t>
+File: RKst/figs/Training/electrons/correlation.pdf Graphic file (type pdf)
+ <use RKst/figs/Training/electrons/correlation.pdf>
+<RKst/figs/Training/muons/correlation.pdf, id=7184, 569.12625pt x 387.4475pt>
+File: RKst/figs/Training/muons/correlation.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/muons/correlation.pdf>
+
+LaTeX Warning: Reference `tab:nnInputs' on page 130 undefined on input line 477
+.
+
+
+LaTeX Warning: Reference `tab:nnInputs' on page 130 undefined on input line 477
+.
+
+<RKst/figs/Training/MM_wNB_TrainAndTest.pdf, id=7185, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/MM_wNB_TrainAndTest.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/MM_wNB_TrainAndTest.pdf>
+<RKst/figs/Training/EE_wNB_TrainAndTest.pdf, id=7186, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/EE_wNB_TrainAndTest.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/EE_wNB_TrainAndTest.pdf>
+Underfull \vbox (badness 3815) has occurred while \output is active []
+
+ [130]
+[131 <./RKst/figs/Training/electrons/correlation.pdf> <./RKst/figs/Training/muo
+ns/correlation.pdf>] [132 <./RKst/figs/Training/MM_wNB_TrainAndTest.pdf, page i
+s rotated 90 degrees> <./RKst/figs/Training/EE_wNB_TrainAndTest.pdf, page is ro
+tated 90 degrees>]
+<RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf, id=7299, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf>
+<RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf, id=7300, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf>
+<RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf, id=7301, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf>
+<RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf, id=7302, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf>
+<RKst/figs/Training/EE_FoM.pdf, id=7303, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/EE_FoM.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/EE_FoM.pdf>
+<RKst/figs/Training/MM_FoM.pdf, id=7304, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/MM_FoM.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/MM_FoM.pdf>
+<RKst/figs/Training/EE_ROC.pdf, id=7305, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/EE_ROC.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/EE_ROC.pdf>
+<RKst/figs/Training/MM_ROC.pdf, id=7306, 569.12625pt x 385.44pt>
+File: RKst/figs/Training/MM_ROC.pdf Graphic file (type pdf)
+
+<use RKst/figs/Training/MM_ROC.pdf>
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [133 <./RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf, page is rotated 90 degrees> 
+<./RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf, page is rotated 90 degrees> <./RKs
+t/figs/Training/MM_wNB_vs_MPV_bkg.pdf, page is rotated 90 degrees> <./RKst/figs
+/Training/MM_wNB_vs_MPV_sgn.pdf, page is rotated 90 degrees>] [134 <./RKst/figs
+/Training/EE_FoM.pdf, page is rotated 90 degrees> <./RKst/figs/Training/MM_FoM.
+pdf, page is rotated 90 degrees> <./RKst/figs/Training/EE_ROC.pdf, page is rota
+ted 90 degrees> <./RKst/figs/Training/MM_ROC.pdf, page is rotated 90 degrees>])
+ [135]
+\openout2 = `RKst/fit.aux'.
+
+
+(./RKst/fit.tex
+Chapter 13.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [136
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137]
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log_fitAndRes.pdf, id=7692, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log_fitAndRes.pdf, id=7693, 569.
+12625pt x 385.44pt>
+File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log_fitAndRes.pdf Graphic f
+ile (type pdf)
+
+<use RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log_fitAndRes.pdf>
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf, id=7694, 569.12625pt
+ x 385.44pt>
+File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf Graphic file (ty
+pe pdf)
+ <use RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf>
+<RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf, id=7695, 569.12625pt x 
+385.44pt>
+File: RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf Graphic file (type 
+pdf)
+ <use RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [139 <./RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log_fitAndRes.pdf, pa
+ge is rotated 90 degrees>] [140 <./RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsM
+M_log_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_MMs_0_MM-q2ce
+ntral-gmc/KstMM_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_MMs
+_0_MM-q2high-gmc/KstMM_fitAndRes.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 184.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 184.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 184.
+
+
+Overfull \hbox (27.48091pt too wide) in paragraph at lines 196--199
+\OT1/cmr/m/n/12 where the $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+x\OT1/cmr/m/n/12 )[]$ func-tions are the cho-sen PDFs for each trig-ger and bre
+msstrahlung
+ []
+
+[141]
+Overfull \hbox (24.93047pt too wide) detected at line 238
+[]\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; \OML/c
+mm/m/it/12 c; m[]\OT1/cmr/m/n/12 )[] = \OML/cmm/m/it/12 f[][]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 c; m[]\OT1/cmr/m/n/12 )[] +
+ \OML/cmm/m/it/12 f[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ; \OM
+L/cmm/m/it/12 c; m[]\OT1/cmr/m/n/12 )[] + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it
+/12 f[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 )[](\OML/cmm/m
+/it/12 x\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 c; m[]\OT1/cmr/m/n/12 )[]
+ []
+
+
+Underfull \vbox (badness 2012) has occurred while \output is active []
+
+ [142]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 242.
+
+<RKst/figs/misreco/part_had_jpsi.pdf, id=7900, 569.12625pt x 387.4475pt>
+File: RKst/figs/misreco/part_had_jpsi.pdf Graphic file (type pdf)
+
+<use RKst/figs/misreco/part_had_jpsi.pdf>
+<RKst/figs/misreco/part_lpt_jpsi.pdf, id=7901, 569.12625pt x 387.4475pt>
+File: RKst/figs/misreco/part_lpt_jpsi.pdf Graphic file (type pdf)
+
+<use RKst/figs/misreco/part_lpt_jpsi.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[143] <RKst/figs/misreco/part_had.pdf, id=7908, 569.12625pt x 387.4475pt>
+File: RKst/figs/misreco/part_had.pdf Graphic file (type pdf)
+
+<use RKst/figs/misreco/part_had.pdf>
+<RKst/figs/misreco/jpsi_leakage.pdf, id=7909, 569.12625pt x 387.4475pt>
+File: RKst/figs/misreco/jpsi_leakage.pdf Graphic file (type pdf)
+
+<use RKst/figs/misreco/jpsi_leakage.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [144 <./RKst/figs/misreco/part_had_jpsi.pdf, page is rotated 90 degrees> <./RK
+st/figs/misreco/part_lpt_jpsi.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 309.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 309.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 309.
+
+
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, id=8009, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf, id=8010, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, id=8011, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, id=8012, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf, id=8013, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf, id=8014, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, id=8015, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf, id=8016, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf, id=8017, 5
+69.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf Graphi
+c file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E_fitAndRes.pdf, id=8018, 569.
+12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E_fitAndRes.pdf Graphic f
+ile (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H_fitAndRes.pdf, id=8019, 569.
+12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H_fitAndRes.pdf Graphic f
+ile (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I_fitAndRes.pdf, id=8020, 569.
+12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I_fitAndRes.pdf Graphic f
+ile (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf, id=8021, 569
+.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf Graphic 
+file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf, id=8022, 569
+.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf Graphic 
+file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf, id=8023, 569
+.12625pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf Graphic 
+file (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 374.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 374.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 374.
+
+[145 <./RKst/figs/misreco/part_had.pdf, page is rotated 90 degrees> <./RKst/fig
+s/misreco/jpsi_leakage.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 7704) has occurred while \output is active []
+
+ [146 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, pa
+ge is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L
+0H_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2centr
+al-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/
+fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, page is rotated 90 de
+grees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf, p
+age is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_
+L0I_fitAndRes.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Text page 147 contains only floats.
+
+[147 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, pag
+e is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0
+H_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2centra
+l-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/f
+it_EEs_0_EE-q2central-gmc/KstJPsEE_L0E_fitAndRes.pdf, page is rotated 90 degree
+s> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H_fitAndRes.pdf, page is 
+rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I_fitAnd
+Res.pdf, page is rotated 90 degrees>] [148 <./RKst/figs/fit_EEs_0_EE-q2central-
+gmc/KstEE_L0E_log_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_E
+Es_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf, page is rotated 90 degrees> 
+<./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf, page is ro
+tated 90 degrees>]
+<RKst/figs/high_central_mass_comparison.pdf, id=8794, 569.12625pt x 387.4475pt>
+File: RKst/figs/high_central_mass_comparison.pdf Graphic file (type pdf)
+<use RKst/figs/high_central_mass_comparison.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf, id=8795, 569.126
+25pt x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf Graphic file
+ (type pdf)
+
+<use RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf>
+<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf, id=8796, 569.12625p
+t x 385.44pt>
+File: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf Graphic file (t
+ype pdf)
+ <use RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [149]
+[150 <./RKst/figs/high_central_mass_comparison.pdf, page is rotated 90 degrees>
+ <./RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf, page is rotat
+ed 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf, pa
+ge is rotated 90 degrees>] [151])
+\openout2 = `RKst/efficiency.aux'.
+
+ (./RKst/efficiency.tex
+Chapter 14.
+
+LaTeX Warning: Reference `sec:Lb_trig_eff' on page 152 undefined on input line 
+16.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152
+
+
+
+
+]
+[153]
+Overfull \hbox (20.5507pt too wide) in paragraph at lines 78--92
+ [][] 
+ []
+
+
+Overfull \hbox (17.64645pt too wide) in paragraph at lines 99--113
+ [][] 
+ []
+
+[154]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [155
+
+
+]
+<RKst/figs/sW/KstJPsEE_log_fitAndRes.pdf, id=8974, 569.12625pt x 385.44pt>
+File: RKst/figs/sW/KstJPsEE_log_fitAndRes.pdf Graphic file (type pdf)
+
+<use RKst/figs/sW/KstJPsEE_log_fitAndRes.pdf>
+<RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, id=8975, 569.12625pt x 385.44pt>
+File: RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf Graphic file (type pdf)
+
+<use RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf>
+<RKst/figs/nspd_12.pdf, id=8976, 569.12625pt x 385.44pt>
+File: RKst/figs/nspd_12.pdf Graphic file (type pdf)
+
+<use RKst/figs/nspd_12.pdf>
+<RKst/figs/bpt.pdf, id=8977, 569.12625pt x 385.44pt>
+File: RKst/figs/bpt.pdf Graphic file (type pdf)
+ <use RKst/figs/bpt.pdf>
+<RKst/figs/nspd_w.pdf, id=8978, 569.12625pt x 385.44pt>
+File: RKst/figs/nspd_w.pdf Graphic file (type pdf)
+
+<use RKst/figs/nspd_w.pdf>
+<RKst/figs/bpt_w.pdf, id=8979, 569.12625pt x 385.44pt>
+File: RKst/figs/bpt_w.pdf Graphic file (type pdf)
+
+<use RKst/figs/bpt_w.pdf> [156 <./RKst/figs/sW/KstJPsEE_log_fitAndRes.pdf, page
+ is rotated 90 degrees> <./RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, page is rot
+ated 90 degrees> <./RKst/figs/nspd_12.pdf, page is rotated 90 degrees> <./RKst/
+figs/bpt.pdf, page is rotated 90 degrees> <./RKst/figs/nspd_w.pdf, page is rota
+ted 90 degrees> <./RKst/figs/bpt_w.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `sec:RKst_weights' on page 157 undefined on input line
+ 210.
+
+[157] <RKst/figs/bin_mig.pdf, id=9256, 569.12625pt x 387.4475pt>
+File: RKst/figs/bin_mig.pdf Graphic file (type pdf)
+
+<use RKst/figs/bin_mig.pdf> [158 <./RKst/figs/bin_mig.pdf, page is rotated 90 d
+egrees>] <RKst/figs/pid_Pi.pdf, id=9308, 569.12625pt x 387.4475pt>
+File: RKst/figs/pid_Pi.pdf Graphic file (type pdf)
+
+<use RKst/figs/pid_Pi.pdf>
+<RKst/figs/pid_K.pdf, id=9309, 569.12625pt x 387.4475pt>
+File: RKst/figs/pid_K.pdf Graphic file (type pdf)
+
+<use RKst/figs/pid_K.pdf>
+<RKst/figs/pid_Mu.pdf, id=9310, 569.12625pt x 387.4475pt>
+File: RKst/figs/pid_Mu.pdf Graphic file (type pdf)
+
+<use RKst/figs/pid_Mu.pdf>
+<RKst/figs/pid_e.pdf, id=9311, 569.12625pt x 387.4475pt>
+File: RKst/figs/pid_e.pdf Graphic file (type pdf)
+
+<use RKst/figs/pid_e.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+ [159]
+[160 <./RKst/figs/pid_Pi.pdf, page is rotated 90 degrees> <./RKst/figs/pid_K.pd
+f, page is rotated 90 degrees> <./RKst/figs/pid_Mu.pdf, page is rotated 90 degr
+ees> <./RKst/figs/pid_e.pdf, page is rotated 90 degrees>]
+<RKst/figs/l0plots/l0E_Inner.pdf, id=9501, 569.12625pt x 385.44pt>
+File: RKst/figs/l0plots/l0E_Inner.pdf Graphic file (type pdf)
+
+<use RKst/figs/l0plots/l0E_Inner.pdf>
+<RKst/figs/l0plots/l0E_Middle.pdf, id=9502, 569.12625pt x 385.44pt>
+File: RKst/figs/l0plots/l0E_Middle.pdf Graphic file (type pdf)
+
+<use RKst/figs/l0plots/l0E_Middle.pdf>
+<RKst/figs/l0plots/l0E_Outer.pdf, id=9503, 569.12625pt x 385.44pt>
+File: RKst/figs/l0plots/l0E_Outer.pdf Graphic file (type pdf)
+
+<use RKst/figs/l0plots/l0E_Outer.pdf> [161 <./RKst/figs/l0plots/l0E_Inner.pdf, 
+page is rotated 90 degrees> <./RKst/figs/l0plots/l0E_Middle.pdf, page is rotate
+d 90 degrees> <./RKst/figs/l0plots/l0E_Outer.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[162] [163])
+\openout2 = `RKst/systematics.aux'.
+
+ (./RKst/systematics.tex
+Chapter 15.
+[164
+
+
+
+
+])
+\openout2 = `RKst/result.aux'.
+
+ (./RKst/result.tex
+Chapter 16.
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\mskip' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\mskip' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\psii' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\mskip' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 8.
+
+[165
+
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `superscript' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 51.
+
+[166] [167] [168]) (./thesis.bbl [169
+
+
+
+
+] [170]
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+[]\OT1/cmr/m/n/12 ``Lhcb loki twiki.'' [][]$\OT1/cmtt/m/n/12 https : / / twiki 
+. cern . ch / twiki / bin / view / LHCb /
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 151--153
+[]\OT1/cmr/m/n/12 M. Feindt and U. Kerzel, ``The Neu-roBayes neu-ral net-work p
+ack-age,''
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 197--199
+[]\OT1/cmr/m/n/12 R. Aaij \OT1/cmr/m/it/12 et al.\OT1/cmr/m/n/12 , ``Pre-ci-sio
+n mea-sure-ment of the $\OML/cmm/m/it/12 ^^C[]$ \OT1/cmr/m/n/12 baryon life-tim
+e,''
+ []
+
+[171]) [172] (./thesis.aux (./abstract.aux) (./Introduction/introduction.aux)
+(./Detector/detector.aux) (./Lmumu/introduction.aux) (./Lmumu/selection.aux)
+(./Lmumu/physicsBg.aux) (./Lmumu/fit.aux) (./Lmumu/efficiency.aux)
+(./Lmumu/systematics.aux) (./Lmumu/summaryBR.aux) (./Lmumu/afbmethod.aux)
+(./Lmumu/systematicsAfb.aux) (./Lmumu/summaryAfb.aux) (./RKst/introduction.aux)
+(./RKst/selection.aux) (./RKst/fit.aux) (./RKst/efficiency.aux)
+(./RKst/systematics.aux) (./RKst/result.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8970 strings out of 256216
+ 138681 string characters out of 1917072
+ 229177 words of memory out of 1500000
+ 11212 multiletter control sequences out of 10000+200000
+ 28834 words of font info for 113 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 43i,15n,45p,1344b,499s stack positions out of 5000i,500n,6000p,200000b,15000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type
+1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi6.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texm
+f/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss
+10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss12.pfb></usr/share/texmf/fo
+nts/type1/bluesky/cm/cmss17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss8.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmssbx10.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmssi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10
+.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts
+/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb>
+</usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb>
+Output written on thesis.pdf (194 pages, 7727822 bytes).
+PDF statistics:
+ 9915 PDF objects out of 10688 (max. 8388607)
+ 565 named destinations out of 1000 (max. 131072)
+ 1844 words of extra memory for PDF output out of 10000 (max. 10000000)
+

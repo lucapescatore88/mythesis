@@ -1,0 +1,106 @@
+\section{Towards new physics: $R_X$}
+
+Flavor-changing neutral currents (FCNCs) processes, where a quark changes its flavour without altering its electric charge, are forbidden in the SM at tree level and arise only at one loop, typically by the exchange of a W boson. Hence, they are sensitive to quantum corrections by loops of heavy particles at and above the electroweak scale ($\sim 100$ GeV). The rare decays $b \rightarrow s \gamma $, $b \rightarrow s g$, $b \rightarrow s l^+l^-$, where $l =  e \text{ or } \mu$, are good probes for these processes. In particular, in this work, decays of $b \rightarrow s\mu\mu$ type, are considered. These decays happen through loop diagrams, called ``penguins diagrams". In Fig. \ref{RKpenguins} the possible Feynman diagrams producing a $B^0 \rightarrow K/K^{*0}l^+l^-$ process are shown. Fig. \ref{penguins} shows how the Feynman diagrams of these processes may include new particles and therefore be used to probe new physics. Recently the measurement of the $B_s \rightarrow \mu^+ \mu^-$ branching fraction by the LHCb experiment has not shown any deviations from the SM \cite{LHCb-PAPER-2012-007}.
+
+\begin{figure}[h]
+\label{RKpenguins}
+\centering \includegraphics[width=0.8\textwidth]{figs/penguins3.png}
+\caption{Loop diagrams of the $B_d \rightarrow K/K^{*0}l^+l^-$ process.}
+\end{figure}
+
+In order to exploit the sensitivity of loop diagrams, in 1984 Hiller and Kruger proposed the measurement of $R_X$ \cite{Hiller:2003js}, defined in Eq. \ref{eqRX}, where $X$ can be an inclusive state containing an $s$ quark ($X_s$) or s-quark resonances like $K$ or $K^{*0}$.
+\begin{equation}
+\label{eqRX}
+R_{K^{*0}} = \frac{\int_{4m_{\mu^2}} \frac{ dB(B^0 \rightarrow K^{*0}\mu\mu) }{ds}}{ \int_{4m_{\mu^2}}\frac{ dB(B^0 \rightarrow K^{*0}ee) }{ds}} ds
+\end{equation}
+In this quantity the decay width is integrated over the squared dilepton mass, $s = q^2$, starting from $s_{min} = 4m_{\mu}$, which is the threshold for the $\mu\mu$ process, up to $s_{max} = m_b^2$. The notation $B(X \rightarrow ~final ~states)$ denotes the fraction of $X$ particles which decays in the given final states, this is called ``branching ratio". For example $B^0 \rightarrow K^{*0}\mu\mu$ is the fraction of $B^0$ particles which decays in $K^{*0}\mu\mu$ with respect to all allowed $B^0$ decays.
+
+One of the good features of this measurement is that, in the theoretical prediction, hadronic uncertainties cancel out. Furthermore, experimentally, some of the systematics also cancel out in the ratio giving a better measurement. For example, what we actually measure is the number of $\mu\mu$ and $ee$ events which happen in a certain period of time and then use the luminosity ($L$) to obtain a cross section ($\sigma$), using $R = L\sigma$, where $R$ is the rate with which a decay happens. The luminosity measurement is usually a source of systematic uncertainty, however it appears on both sides of the ratio and therefore cancels out.
+
+\begin{figure}[h]
+\label{penguins}
+\centering \includegraphics[width=0.8\textwidth]{figs/penguins.png}
+\caption{Example of penguin diagrams, on the left involving SM particles and on the right involving new possible particles.}
+\end{figure}
+
+Since the Standard Model does not distinguish between leptons the predicted value for this ratio is $R_X = 1$ for massless leptons. Taking effects
+of order $m_\mu^2 / m_b^2$ into account Hiller and Kruger calculate that in the SM\cite{Hiller:2003js}:
+
+\begin{equation}
+\begin{array}{l}
+R_{X_s} = 0.987 \pm 0.006 \\
+R_K = 1.0000 \pm 0.0001 \\
+R_{K^{*0}} = 0.991 \pm 0.002
+\end{array}
+\end{equation}
+
+Under the assumptions:
+
+\begin{itemize}
+\item right-handed currents are negligible;
+\item (pseudo-)scalar couplings are proportional to the lepton mass;
+\item there are no CP-violating phases beyond the SM.
+\end{itemize}
+
+The quantities $R_X - 1$ and $B(B_s \rightarrow \mu\mu)$ remain proportional with
+
+\begin{equation}
+\frac{R_X - 1}{B(B_s \rightarrow \mu\mu)} \sim 2 \cdot 10^{-5}
+\end{equation}
+
+A joint measurement of this two quantities can give much information and constrain MFV models. If $R_X = 1$ and $B(B_s \rightarrow \mu\mu)$ is close to the SM prediction as it is measured to be this will allow to put strong constraints on extensions of the SM.
+If instead $R_X > 1$ and the equation above is not verified, this would mean that one of the assumptions above are not verified which can happen is some extensions of the SM, for example broken R-parity in Super-Symmetric models.
+
+The $R_K$ and $R_{K^{*0}}$ have already been measured at the B-factories (hence in $e^+e^-$ collisions). The experimental status in 2006 is summarised in Table \ref{expstatus}. LHCb is expected to reduce the error on $R_X$ by at least a factor of 2 with respect to the B-factories.
+
+\begin{center}
+\begin{table}
+\label{expstatus}
+\centering
+\begin{tabular}{c|c|c | c}
+ 	& Belle 			& BaBar 		& Average \\
+ \hline
+$R_K$	& $1.06 \pm 0.48 \pm 0.05$	& $1.38^{+0.39+0.06}_{-0.41-0.07}$ & $1.23\pm0.32$\\
+$R_{K^{*0}}$	& $0.93 \pm 0.46 \pm 0.12$	& $0.98^{+0.30+0.08}_{-0.31-0.08}$ & $0.96\pm0.28$\\
+\end{tabular}
+\caption{Previous $R_X$ measurement by the BaBar \cite{Lees:2012tva} and Belle\cite{Wei:2009zv} experiment.}
+\end{table}
+\end{center}
+
+\section{The $R_{K^{*0}}$ analysis}
+
+The aim of this analysis is to reconstruct $B^0 \rightarrow K^{*0}\mu\mu$ and $B^0 \rightarrow K^{*0}ee$ events (``rare channels") and evaluate the efficiency of this process in order to be able to deduce a branching fraction. In both cases $K^{*0}$ is reconstructed through its decay in $K^\pm\pi^\mp$.
+
+The analysis has to separate signal candidates from background candidates which have similar observed properties. The selection aims to maximise the yield while minimising the background contamination.
+We can distinguish between two types of background: ``peaking background" and ``combinatorial background". The first comes from the mis-reconstruction of other decays or from partially reconstructed events. This type of background,  because its specific kinematic properties, usually peaks in some variable, such as the invariant mass of all final particles, therefore we can remove these events by removing the peak. The combinatorial background instead comes from the random combination of particles and can be lowered selecting events with good-quality tracks and vertices.
+
+Together with the $B^0 \rightarrow K^{*0} ll$ channels we reconstruct also the $B^0 \rightarrow K^{*0} J/\psi(J/\psi\rightarrow ll)$ channels, called ``charmonium" channels\footnote{More in general ``charmonium" denotes any $c\bar{c}$ state.}. These events have identical final states to the rare channels, differing only in the invariant mass of the dilepton pair. We use the charmonium channels to normalise the signal, which will yield in a reduced systematic error.
+
+
+\subsection{Data and Monte Carlo samples}
+
+This analysis is based on a data set corresponding to $3 \fb$ of integrated luminosity collected by the LHCb detector in 2011 and 2012.
+Candidates have been reconstructed with the ``Reco14" version of the reconstruction software.
+
+\begin{table}[h!]
+\label{TabMC}
+\begin{center}
+\begin{tabular}{c|c|c}
+ Sample					& {$N_{gen}$}		& Br \\ \hline
+$B^0 \rightarrow K^{*0} \mu\mu$		&	519496		& $1.05 \cdot 10^{-6}$  \\
+$B^0 \rightarrow K^{*0} J/\psi$		&	518996		& $1.34 \cdot 10^{-3}$    \\
+$B_s \rightarrow \phi \mu\mu$ 		&   	512995		& $1.23 \cdot 10^{-6}$    \\
+$B^+ \rightarrow K \mu\mu$ 		&    	519999		& $4.8 \cdot 10^{-7}$  \\
+$B^0 \rightarrow K^{*0} ee$		&    	6006968		& $1.05 \cdot 10^{-6}$   \\
+$B^0 \rightarrow K^{*0} \gamma$ 	&   	7413465		& $4.33 \cdot 10^{-5}$   \\
+$J/\psi \rightarrow ll$			&   			& $5.93 \cdot 10^{-2}$    \\
+$\phi \rightarrow KK$ 			&   			& $0.489$    \\
+\end{tabular}
+\caption{Summary of the Monte Carlo samples used for the analysis together with the branching fractions of the simulated processes.}
+\end{center}
+\end{table}
+
+In order to study the peaking background properties, our cuts efficiency and to train the multivariate analysis we also used Monte Carlo events from the MC11a production. Events are fully simulated in the detector and reconstructed using the same algorithms as for data. In Table \ref{TabMC} are reported the MC samples used together with the number of generated events and the branching fractions of the simulated processes
+
+
+

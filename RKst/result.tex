@@ -1,0 +1,152 @@
+\chapter{Result extraction}
+\label{sec:RKst_result}
+
+In the following sections are presented the final results of this analysis
+together with the description of sanity checks performed to verify the stability
+of the methods used.
+
+\section{$R_{\jpsi}$ sanity check}
+
+In order to cross-check the analysis procedure, the ratio between the
+measured branching ratio of the electronic and muonic resonant channels is calculated:
+
+\begin{equation}
+R_{\jpsi} = \frac{\BR(\Bz\to\Kstar\jpsi\to \mu\mu)} {\BR(\Bz\to\Kstar(\jpsi\to \ee))} 
+= \frac{\varepsilon_{\jpsi \mu\mu} \cdot N_{\Bz\to\Kstar(\jpsi\to \ee)}}{\varepsilon_{\jpsi \ee} 
+\cdot N_{\Bz\to\Kstar\jpsi\to \mu\mu}}.
+\end{equation}
+
+One could also look at the single absolute branching fractions but this ratio
+is a better defined sanity check for our analysis. In fact the absolute branching fractions
+can be calculated from the raw yields as
+
+\begin{equation}
+\BR = \mathcal{L} \cdot \sigma_{\bquark\bquarkbar} \cdot f_d \cdot \varepsilon \cdot N_{raw}
+\end{equation}
+
+where $\mathcal{L}$ is the luminosity, $\sigma_{\bquark\bquarkbar}$ is the cross
+section for $\bquark\bquarkbar$ production and $f_d$ is the fragmentation fraction,
+the probability for a $\bquark$ quark to produce a \Bz meson.
+All this quantities come with large uncertainties but they cancel in the $R_{\jpsi}$ ratio.
+
+Measured values of the $R_{\jpsi}$ ratio are reported in Tab.~\ref{tab:Rjpsi}, where
+the error shown is statistical only. Notice that on these values systematic uncertainties,
+which cancel doing the ratio between the rare and resonant channels with same leptonic
+final state, do not cancel.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+
+$R_{J/\psi}$ (L0E) 	& $ 1.01618  \pm  0.00896 $ \\
+$R_{J/\psi}$ (L0H) 	& $ 0.94276  \pm  0.02315 $ \\
+$R_{J/\psi}$ (L0I) 	& $ 1.14471  \pm  0.01758 $ \\
+  \end{tabular}
+ \caption{Fully corrected measured values of the ratio
+ $\BR(\Bz\to\Kstar\jpsi\to \mu\mu) / \BR(\Bz\to\Kstar\jpsi\to ee)$
+ in the three electron trigger categories. }
+ \label{tab:Rjpsi}
+\end{table}
+
+\section{$R_{\Kstar}$ result summary}
+
+The ratio $R_{\Kstar}$ is extracted by dividing the $R_{ee}$ and $R_{\mu\mu}$
+parameters described in Sec.~\ref{sec:rkst_fits}. These ratios are 
+floating in the fit but they can also be built from the yields
+in Tab.~\ref{tab:RKst_yields} and the efficiencies in Tab.~\ref{tab:double_rel_eff}.
+In summary the definition of the $R_{\Kstar}$ ratio is the following :
+
+\begin{equation}
+R_{\Kstar} = \frac{R_{ee}}{R_{\mu\mu}}  
+%= \frac{N_{\Bz\to\Kstar ee}}{N_{\Bz\to\Kstar\jpsi\to ee}} 
+%\cdot \frac{N_{\Bz\to\Kstar \jpsi \mumu}}{N_{\Bz\to\Kstar\mumu}}
+%\cdot \frac{\varepsilon_{\Bz\to\Kstar \jpsi \to ee}}{\varepsilon_{\Bz\to\Kstar ee}} 
+%\cdot \frac{\varepsilon_{\Bz\to\Kstar \mumu}}{\varepsilon_{\Bz\to\Kstar\jpsi\to \mumu}}
+= \frac{N_{ee}}{N_{\jpsi(ee)}} 
+\cdot \frac{N_{\jpsi(\mu\mu)}}{N_{\mu\mu}}
+\cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{ee}} 
+\cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}},
+\end{equation}
+
+where $\Bz\to\Kstar$ has been neglected for brevity.
+
+As the electron ratio $R_{ee}$ is a shared parameter in the simultaneous fit to the
+three electron categories its value is already a combination of the three samples.
+Results are shown in Tab.~\ref{tab:RKst_results}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ Ratio 			& 1--6 GeV$^2/c^4$ & 15--20 GeV$^2/c^4$\\ \hline
+ $R_{ee}$ 	& $ 0.00303  \pm  0.00042 $ 	& $ 0.00395  \pm  0.00083 $ \\
+ $R_{\mu\mu}$ 	& $ 0.00187  \pm  0.00009 $ 	& $ 0.00182  \pm  0.00008 $ \\
+\hline $R_{K^*}$ 	& $ 0.61756  \pm  0.08950 $ 	& $ 0.45980  \pm  0.09919 $ \\
+\hline 
+ \end{tabular}
+ \caption{Measured values of $R_{ee}$, $R_{\mu\mu}$ and $R_{\Kstar}$ ratios.}
+ \label{tab:RKst_results}
+\end{table}
+
+\section{Branching ratios and expectations}
+
+Multiplying the ratios $R_{ee}$ and $R_{\mu\mu}$ by the measured $\Bz\to\Kstar (\jpsi\to\ell^+\ell^-)$~\cite{PDG2014}
+branching ratios one can obtain absolute branching ratios for the rare channes:
+
+\begin{equation}
+\begin{split}
+&\BR(\decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)}) = \BR(\decay{\Bz}{\Kstar\jpsi}) \times \BR(\decay{\Bz}{\ell\ell}) \\
+& = (1.32 \pm 0.06) 10^{-3} \times (5.96 \pm 0.03) 10^{-2} = (7.87 \pm 0.36) \times 10^{-5}
+\end{split}
+\end{equation}
+
+Table~\ref{tab:RKst_abs_BR} reports absolute branching ratio values for the rare channels in the considered 
+\qsq intervals, where the errors are statistical only.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ Channel 			& 1--6 GeV$^2/c^4$ & 15--20 GeV$^2/c^4$\\ \hline
+$ee$ 	& $( 2.37  \pm  0.34 )\times 10^{-7}$ 	& $( 3.09  \pm  0.67 )\times 10^{-7}$ \\
+ $\mu\mu$ 	& $( 1.47  \pm  0.10 )\times 10^{-7}$ 	& $( 1.42  \pm  0.09 )\times 10^{-7}$ \\
+\hline 
+ \end{tabular}
+\caption{Measured absolute branching ratio of the rare $\mu\mu$ and $ee$ channels in
+the central and high \qsq regions. Errors shown are statistical only. }
+\label{tab:RKst_abs_BR}
+\end{table}
+
+The results for the central \qsq bin can be compared also with SM predictions obtained from Ref.~\cite{Ali:2002jg}.
+This paper reports branching predicted ratios in the $1 < \qsq < 6$ \gevgevcccc interval
+for the rare electronic and muonic channels. These are rescaled to the range $1.1 < \qsq < 6$ \gevgevcccc
+using the simulation. Finally, the measured value of the measured \decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)}
+decay is used. The predicted ratio is found to be $0.75 \pm 0.14$,
+which is in agreement with our measurement within one standard deviation.
+In Tab.~\ref{tab:RKst_expectations} are also reported observed and expected ratios of rare
+over resonant raw numbers of candidates ($N_{\ell\ell} / N_{\jpsi}$). In this table the observed ratios
+are simply obtained dividing the rare and resonant yields in Tab.~\ref{tab:RKst_yields}
+and the expected ones are obtained using the predicted rare channel branching ratios and 
+the measured \decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)} branching ratio, rescaled by the
+relative efficiencies in Tab.~\ref{tab:RKst_releff}.  
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+ Sample 			& Expected 			& Observed 			& Obs / exp ratio \\ \hline
+$\mu\mu$ 	& $ 0.0026  \pm  0.0003 $ 	& $ 0.0019  \pm  0.0001 $ 	& $ 0.7265  \pm  0.1012 $ \\
+\hline
+$ee$ (L0E) 	& $ 0.0027  \pm  0.0004 $ 	& $ 0.0027  \pm  0.0004 $ 	& $ 1.0220  \pm  0.1939 $ \\
+
+$ee$ (L0H) 	& $ 0.0072  \pm  0.0009 $ 	& $ 0.0073  \pm  0.0010 $ 	& $ 1.0220  \pm  0.1970 $ \\
+
+$ee$ (L0I) 	& $ 0.0037  \pm  0.0005 $ 	& $ 0.0038  \pm  0.0005 $ 	& $ 1.0220  \pm  0.1951 $ \\
+
+\hline 
+ \end{tabular}
+ \caption{Expected and observed ratios of raw event yields, $N_{\ell\ell} / N_{J/\psi}$. }
+ \label{tab:RKst_expectations}
+\end{table}
+
+\clearpage

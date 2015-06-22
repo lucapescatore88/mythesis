@@ -1,0 +1,83 @@
+Info in <TCanvas::Print>: pdf file KstJPsEE_MC_fitAndRes.pdf has been created
+Info in <TCanvas::Print>: pdf file KstJPsEE_MC_log_fitAndRes.pdf has been created
+Info in <TCanvas::Print>: pdf file KstJPsEE_fitAndRes.pdf has been created
+Info in <TCanvas::Print>: pdf file KstJPsEE_log_fitAndRes.pdf has been created
+Error in <RooFormula::Compile>:  Bad numerical expression : "nbkg_mis"
+Error in <RooFormula::Compile>:  Bad numerical expression : "nbkg_mis"
+Error in <RooFormula::Compile>:  Bad numerical expression : "nbkg_mis"
+Info in <TCanvas::Print>: pdf file drawVariables_B0_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_K_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Pi_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E1_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E2_P.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_K_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Pi_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E1_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E2_PT.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_K_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Pi_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E1_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_E2_IPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_DIRA_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_DIRA_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_DIRA_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_FDCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_FDCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_FDCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_ENDVERTEX_CHI2_B0_ENDVERTEX_NDOF.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_Kst_ENDVERTEX_CHI2_Kst_ENDVERTEX_NDOF.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_JPs_ENDVERTEX_CHI2_Kst_ENDVERTEX_NDOF.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_TAU.pdf has been created
+Info in <TCanvas::Print>: pdf file drawVariables_B0_DTF_PV_chi2_B0_DTF_PV_nDOF.pdf has been created
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00002b069397e61e in waitpid () from /lib64/libc.so.6
+#1  0x00002b0693910609 in do_system () from /lib64/libc.so.6
+#2  0x00002b068ddd7dff in TUnixSystem::StackTrace() () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#3  0x00002b068ddd996c in TUnixSystem::DispatchSignals(ESignals) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#4  <signal handler called>
+#5  0x00000000000029b5 in ?? ()
+#6  0x00002b068dd745da in TList::Delete(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#7  0x00002b068ed011f2 in TDirectoryFile::Close(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libRIO.so
+#8  0x00002b068ecff192 in TFile::Close(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libRIO.so
+#9  0x00002b068de13090 in (anonymous namespace)::R__ListSlowClose(TList*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#10 0x00002b068de1398a in TROOT::CloseFiles() () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#11 0x00002b0693907b22 in exit () from /lib64/libc.so.6
+#12 0x00002b06938f0d64 in __libc_start_main () from /lib64/libc.so.6
+#13 0x0000000000412bb5 in _start ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+If they do not help you then please submit a bug report at
+http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#5  0x00000000000029b5 in ?? ()
+#6  0x00002b068dd745da in TList::Delete(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#7  0x00002b068ed011f2 in TDirectoryFile::Close(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libRIO.so
+#8  0x00002b068ecff192 in TFile::Close(char const*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libRIO.so
+#9  0x00002b068de13090 in (anonymous namespace)::R__ListSlowClose(TList*) () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#10 0x00002b068de1398a in TROOT::CloseFiles() () from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.24/x86_64-slc6-gcc48-opt/root/lib/libCore.so
+#11 0x00002b0693907b22 in exit () from /lib64/libc.so.6
+#12 0x00002b06938f0d64 in __libc_start_main () from /lib64/libc.so.6
+#13 0x0000000000412bb5 in _start ()
+===========================================================
+
+

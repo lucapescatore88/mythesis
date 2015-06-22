@@ -1,0 +1,622 @@
+
+PATH            /afs/cern.ch/user/s/simone/bin:/afs/cern.ch/lhcb/software/releases/LBSCRIPTS/LBSCRIPTS_v8r3p1/InstallArea/scripts:/afs/cern.ch/sw/lcg/releases/LCG_73root6/Python/2.7.9/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/lhcb/software/releases/COMPAT/COMPAT_v1r19/CompatSys/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/sw/contrib/CMT/v1r20p20090520/Linux-x86_64:/afs/cern.ch/lhcb/bin:/afs/cern.ch/sw/lcg/contrib/CMake/2.8.9/Linux-i386/bin:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/user/s/simone/bin:/usr/sue/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin
+
+LD_LIBRARY_PATH .:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64:/afs/cern.ch/sw/lcg/contrib/mpfr/3.1.2/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gmp/5.1.1/x86_64-slc6-gcc48-opt/lib
+
+PYTHONPATH      /afs/cern.ch/lhcb/software/releases/LBSCRIPTS/LBSCRIPTS_v8r3p1/InstallArea/python:/usr/lib/python2.6/site-packages:/usr/lib64/python2.6/site-packages
+
+
+Configuring ROOT from /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root
+Configuring LD_LIBRARY_PATH to /afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:.:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64:/afs/cern.ch/sw/lcg/contrib/mpfr/3.1.2/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gmp/5.1.1/x86_64-slc6-gcc48-opt/lib
+
+Configuring ROOTMACROS from /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/../Macros
+Configuring TMVAMACROS from /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/tmva/test
+
+
+Configuring PYTHON from /afs/cern.ch/sw/lcg/releases/LCG_70/Python/2.7.6/x86_64-slc6-gcc48-opt
+Configuring LD_LIBRARY_PATH to /afs/cern.ch/sw/lcg/releases/LCG_70/Python/2.7.6/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:.:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64:/afs/cern.ch/sw/lcg/contrib/mpfr/3.1.2/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gmp/5.1.1/x86_64-slc6-gcc48-opt/lib
+
+Configuring PYTHONPATH to /usr/lib/python2.6/site-packages:/usr/lib64/python2.6/site-packages:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:/afs/cern.ch/lhcb/software/releases/LBSCRIPTS/LBSCRIPTS_v8r3p1/InstallArea/python:/usr/lib/python2.6/site-packages:/usr/lib64/python2.6/site-packages
+
+
+Configuring NEUROBAYES from /afs/cern.ch/sw/lcg/external/neurobayes/3.16.0/x86_64-slc6-gcc48-opt
+Configuring LD_LIBRARY_PATH to /afs/cern.ch/sw/lcg/external/neurobayes/3.16.0/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/releases/LCG_70/Python/2.7.6/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:.:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64:/afs/cern.ch/sw/lcg/contrib/mpfr/3.1.2/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gmp/5.1.1/x86_64-slc6-gcc48-opt/lib
+
+Configuring NEUROBAYESMACROS from /afs/cern.ch/sw/lcg/external/neurobayes/3.16.0/x86_64-slc6-gcc48-opt/external
+
+
+PATH            /afs/cern.ch/sw/lcg/external/neurobayes/3.16.0/x86_64-slc6-gcc48-opt/external:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/bin:/afs/cern.ch/lhcb/software/releases/LBSCRIPTS/LBSCRIPTS_v8r3p1/InstallArea/scripts:/afs/cern.ch/sw/lcg/releases/LCG_73root6/Python/2.7.9/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/lhcb/software/releases/COMPAT/COMPAT_v1r19/CompatSys/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/sw/contrib/CMT/v1r20p20090520/Linux-x86_64:/afs/cern.ch/lhcb/bin:/afs/cern.ch/sw/lcg/contrib/CMake/2.8.9/Linux-i386/bin:/afs/cern.ch/user/s/simone/bin:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/bin:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/bin:/usr/sue/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin
+
+LD_LIBRARY_PATH /afs/cern.ch/sw/lcg/external/neurobayes/3.16.0/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/releases/LCG_70/Python/2.7.6/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:.:/afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64:/afs/cern.ch/sw/lcg/contrib/mpfr/3.1.2/x86_64-slc6-gcc48-opt/lib:/afs/cern.ch/sw/lcg/contrib/gmp/5.1.1/x86_64-slc6-gcc48-opt/lib
+
+PYTHONPATH      /usr/lib/python2.6/site-packages:/usr/lib64/python2.6/site-packages:/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.28/x86_64-slc6-gcc48-opt/root/lib:/afs/cern.ch/lhcb/software/releases/LBSCRIPTS/LBSCRIPTS_v8r3p1/InstallArea/python:/usr/lib/python2.6/site-packages:/usr/lib64/python2.6/site-packages
+
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+
+Fit MM MM simultaneous central gmc
+5170 - 5850 , 68
+
+
+getTreeReader: /afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc MM candidates_jps DecayTuple Bd2KstJPsMM gmc root 
+
+Number of trees in chain: 1
+
+Set up 786 / 786 branches
+
+List of files
+/afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc/MM_candidates_jps_gmc.root
+
+Read in 842802 events
+
+
+getTreeReader: /afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc MM candidates_jps DecayTuple KstJPsMM gmc root 
+
+Number of trees in chain: 1
+
+Set up 628 / 628 branches
+
+List of files
+/afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc/MM_candidates_jps_gmc.root
+
+Read in 904741 events
+
+
+getTreeReader: /afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2central-gmc MM candidates_central DecayTuple KstMM gmc root 
+
+Number of trees in chain: 1
+
+Set up 628 / 628 branches
+
+List of files
+/afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2central-gmc/MM_candidates_central_gmc.root
+
+Read in 20817 events
+
+
+JPs
+
+KstJPsMM_MC: Initialize -docuts
+
+KstJPsMM_MC: CreateReducedTree -docuts
+
+CopyTree
+N Tot = 842802
+TCut 
+OBJ: TCut	CUT	(((TMath::Abs(B0_TRUEID) != 0 && TMath::Abs(Kst_MC_MOTHER_ID) == 511 && TMath::Abs(K_MC_MOTHER_ID) == 313 && TMath::Abs(Pi_MC_MOTHER_ID) == 313)&&(TMath::Abs(M1_MC_MOTHER_ID) == 443 && TMath::Abs(M2_MC_MOTHER_ID) == 443 && TMath::Abs(JPs_MC_MOTHER_ID) == 511))&&(TMath::Abs(Kst_TRUEID) == 313 && TMath::Abs(K_TRUEID) == 321 && TMath::Abs(Pi_TRUEID) == 211 && TMath::Abs(M1_TRUEID) == 13 && TMath::Abs(M2_TRUEID) == 13 && TMath::Abs(JPs_TRUEID) == 443))&&(((((((B0_L0MuonDecision_TOS)&&(B0_Hlt1TrackAllL0Decision_TOS || B0_Hlt1TrackMuonDecision_TOS))&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoMu2BodyBBDTDecision_TOS || B0_Hlt2TopoMu3BodyBBDTDecision_TOS || B0_Hlt2TopoMu4BodyBBDTDecision_TOS || B0_Hlt2DiMuonDetachedDecision_TOS))&&(((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && M1_TRACK_CHI2NDOF < 3 && M2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && M1_TRACK_GhostProb < 0.4 && M2_TRACK_GhostProb < 0.4)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100))&&(TMath::Abs(B0_M02_Subst2_K2mu - 3096.916) > 60 && TMath::Abs(B0_M02_Subst2_K2mu - 3686.109) > 60))&&(TMath::Abs(B0_M13_Subst3_pi2mu - 3096.916) > 60 && TMath::Abs(B0_M13_Subst3_pi2mu - 3686.109) > 60))))&&(1))&&(TMath::Abs(JPs_M - 3096.916) < 100))&&(wNB_GMC > 0.75))
+N Pas = 578561 (68.6473%)
+Frac  = 100000
+Copying entries...
+Copied 68956 entries
+
+
+KstJPsMM_MC: CreateDataSet 
+Candidates: 68956
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+[#1] INFO:Eval -- RooAbsReal::attachToTree(wGMC) TTree Float_t branch wGMC will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(dataKstJPsMM_MC) Ignored 333 out of range events
+RooDataSet::dataKstJPsMM_MC[B0_PV_JPs_M,weight:wGMC] = 68623 entries (55097.9 weighted)
+
+KstJPsMM_MC: Initialized Correctly! The model is:
+RooAddPdf::totsig_KstJPsMM_MC[ f_sig_KstJPsMM_MC * CB1_sig_KstJPsMM_MC + [%] * CB2_sig_KstJPsMM_MC ] = 1
+
+KstJPsMM_MC: Fit B0_PV_JPs_M (200,5170,5850) -linlog-ANDpulls-noCost-leg[0.5,0.6,0.7,1]-legf-layout[0.7,0.6,1,1]-font0.03-xum_{B_{0}}
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(dataKstJPsMM_MC): fit range of variable B0_PV_JPs_M expanded to nearest bin boundaries: [5170,5850] --> [5170,5850]
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'FitRange' created with bounds [5170,5850]
+ **********
+ **    9 **SET NOWARNINGS           0
+ **********
+ **********
+ **   10 **SET PRINT           2
+ **********
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (CB1_sig_KstJPsMM_MC,CB2_sig_KstJPsMM_MC)
+ **********
+ **   13 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=203986 FROM MIGRAD    STATUS=INITIATE       65 CALLS          66 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsMM_MC  -1.00000e+00   4.99500e-01   0.00000e+00   7.73339e+03
+   2  a_sig_KstJPsMM_MC   1.00000e+00   4.99500e-01   0.00000e+00  -2.76269e+04
+   3  f_sig_KstJPsMM_MC   6.00000e-01   1.00000e-01   0.00000e+00   2.95386e+03
+   4  m_sig_KstJPsMM_MC   5.27958e+03   5.47900e+01   0.00000e+00   1.13801e+05
+   5  n2_sig_KstJPsMM_MC   2.00000e+00   9.90000e-01   0.00000e+00  -9.90489e+04
+   6  n_sig_KstJPsMM_MC   2.00000e+00   9.00000e-01   0.00000e+00  -7.24602e+04
+   7  s2_sig_KstJPsMM_MC   2.63103e+00   8.45484e+00  -1.06685e+00   4.27629e+03
+   8  s_sig_KstJPsMM_MC   1.12731e+01   4.60319e+00   0.00000e+00   1.86827e+04
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=199349 FROM MIGRAD    STATUS=PROGRESS       85 CALLS          86 TOTAL
+                     EDM=11413.3    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsMM_MC  -1.04776e+00   4.99500e-01  -1.57622e-02   6.58006e+02
+   2  a_sig_KstJPsMM_MC   1.20878e+00   4.99500e-01   6.67090e-02  -1.48089e+04
+   3  f_sig_KstJPsMM_MC   5.74952e-01   1.00000e-01  -5.08867e-02  -2.12850e+03
+   4  m_sig_KstJPsMM_MC   5.27947e+03   5.47900e+01  -4.25637e-04   2.89671e+04
+   5  n2_sig_KstJPsMM_MC   2.12250e+00   9.90000e-01   2.71441e-03  -4.88677e+04
+   6  n_sig_KstJPsMM_MC   2.34989e+00   9.00000e-01   7.88956e-03  -4.13087e+04
+   7  s2_sig_KstJPsMM_MC   2.78009e+00   8.45484e+00  -1.71805e-02   6.45925e+03
+   8  s_sig_KstJPsMM_MC   8.22403e+00   4.60319e+00  -1.68957e-01   5.82060e+03
+                               ERR DEF= 0.5
+ FCN=196991 FROM MIGRAD    STATUS=PROGRESS      277 CALLS         278 TOTAL
+                     EDM=0.335509    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  10.5 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsMM_MC  -1.15440e+00   1.30841e-02   1.66012e-03  -2.90124e+01
+   2  a_sig_KstJPsMM_MC   1.90781e+00   2.19344e-02  -1.06621e-03  -5.37462e+01
+   3  f_sig_KstJPsMM_MC   7.21681e-01   4.05813e-03  -7.35067e-04   1.19197e+01
+   4  m_sig_KstJPsMM_MC   5.27975e+03   3.36367e-02  -6.89578e-05  -2.54419e+03
+   5  n2_sig_KstJPsMM_MC   2.98647e+00   2.82986e-02   4.09034e-04  -1.07097e+03
+   6  n_sig_KstJPsMM_MC   1.83145e+00   6.45869e-02  -2.02911e-05  -4.16358e+02
+   7  s2_sig_KstJPsMM_MC   4.45752e+00   7.89110e-02   6.82754e-04   1.47025e+01
+   8  s_sig_KstJPsMM_MC   7.56233e+00   4.32590e-02   1.53683e-03   1.56729e+02
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         7.9539e-02  1.2375e-01  1.8468e-01  3.7339e-01  9.1133e-01  1.2665e+00  2.3714e+00  2.6894e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=196987 FROM MIGRAD    STATUS=CONVERGED     479 CALLS         480 TOTAL
+                     EDM=9.20814e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2_sig_KstJPsMM_MC  -1.08342e+00   3.23665e-02   1.28601e-03   7.99443e-01
+   2  a_sig_KstJPsMM_MC   1.88272e+00   2.47668e-02   9.56582e-04  -1.47692e+00
+   3  f_sig_KstJPsMM_MC   7.16997e-01   1.46291e-02   4.80140e-03   1.73257e-01
+   4  m_sig_KstJPsMM_MC   5.27974e+03   3.40157e-02   3.80591e-05   1.44286e+01
+   5  n2_sig_KstJPsMM_MC   3.42114e+00   1.60984e-01   3.71947e-04  -1.37933e+00
+   6  n_sig_KstJPsMM_MC   1.87662e+00   6.63993e-02   2.65372e-04  -3.10204e+00
+   7  s2_sig_KstJPsMM_MC   4.64774e+00   1.04504e-01   1.20004e-03  -1.55772e+00
+   8  s_sig_KstJPsMM_MC   7.45287e+00   7.29275e-02   6.93957e-04   1.88551e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  1.048e-03  4.559e-05  2.405e-04 -8.212e-05  3.311e-03 -3.556e-05 -5.692e-04 -1.578e-03 
+  4.559e-05  6.134e-04  1.080e-04  2.556e-05 -6.606e-04 -1.326e-03  5.136e-04  3.534e-05 
+  2.405e-04  1.080e-04  2.141e-04  1.410e-04 -3.205e-04 -5.851e-05  2.595e-04 -6.253e-04 
+ -8.212e-05  2.556e-05  1.410e-04  1.157e-03 -1.139e-03  5.382e-05  4.971e-04 -1.398e-04 
+  3.311e-03 -6.606e-04 -3.205e-04 -1.139e-03  2.592e-02  2.694e-04 -9.743e-03 -4.431e-03 
+ -3.556e-05 -1.326e-03 -5.851e-05  5.382e-05  2.694e-04  4.409e-03 -1.838e-04 -8.626e-06 
+ -5.692e-04  5.136e-04  2.595e-04  4.971e-04 -9.743e-03 -1.838e-04  1.092e-02  3.366e-03 
+ -1.578e-03  3.534e-05 -6.253e-04 -1.398e-04 -4.431e-03 -8.626e-06  3.366e-03  5.318e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.91537   1.000  0.057  0.508 -0.075  0.635 -0.017 -0.168 -0.668
+        2  0.87031   0.057  1.000  0.298  0.030 -0.166 -0.807  0.198  0.020
+        3  0.87603   0.508  0.298  1.000  0.283 -0.136 -0.060  0.170 -0.586
+        4  0.40732  -0.075  0.030  0.283  1.000 -0.208  0.024  0.140 -0.056
+        5  0.89897   0.635 -0.166 -0.136 -0.208  1.000  0.025 -0.579 -0.377
+        6  0.84581  -0.017 -0.807 -0.060  0.024  0.025  1.000 -0.026 -0.002
+        7  0.80804  -0.168  0.198  0.170  0.140 -0.579 -0.026  1.000  0.442
+        8  0.86707  -0.668  0.020 -0.586 -0.056 -0.377 -0.002  0.442  1.000
+ **********
+ **   16 **HESSE        4000
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         8.0595e-02  1.1947e-01  1.8124e-01  3.7041e-01  9.1146e-01  1.2680e+00  2.3755e+00  2.6934e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=196987 FROM HESSE     STATUS=OK             61 CALLS         541 TOTAL
+                     EDM=9.24142e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  a2_sig_KstJPsMM_MC  -1.08342e+00   3.21096e-02   5.14403e-05   9.00271e-01
+   2  a_sig_KstJPsMM_MC   1.88272e+00   2.52658e-02   3.82633e-05  -6.73363e-01
+   3  f_sig_KstJPsMM_MC   7.16997e-01   1.45260e-02   1.92056e-04   4.48920e-01
+   4  m_sig_KstJPsMM_MC   5.27974e+03   3.40667e-02   7.61183e-06  -7.43990e-01
+   5  n2_sig_KstJPsMM_MC   3.42114e+00   1.63042e-01   1.48779e-05  -1.45409e+00
+   6  n_sig_KstJPsMM_MC   1.87662e+00   6.76911e-02   1.06149e-05  -1.48887e+00
+   7  s2_sig_KstJPsMM_MC   4.64774e+00   1.04960e-01   4.80015e-05  -1.91941e+00
+   8  s_sig_KstJPsMM_MC   7.45287e+00   7.23478e-02   2.77583e-05  -7.99494e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  1.031e-03  4.135e-05  2.248e-04 -9.269e-05  3.345e-03 -3.945e-05 -5.961e-04 -1.533e-03 
+  4.135e-05  6.384e-04  1.117e-04  2.821e-05 -7.119e-04 -1.392e-03  5.287e-04  3.653e-05 
+  2.248e-04  1.117e-04  2.111e-04  1.420e-04 -3.820e-04 -6.764e-05  2.692e-04 -6.015e-04 
+ -9.269e-05  2.821e-05  1.420e-04  1.161e-03 -1.202e-03  5.149e-05  5.084e-04 -1.300e-04 
+  3.345e-03 -7.119e-04 -3.820e-04 -1.202e-03  2.658e-02  3.187e-04 -9.977e-03 -4.384e-03 
+ -3.945e-05 -1.392e-03 -6.764e-05  5.149e-05  3.187e-04  4.582e-03 -2.062e-04  2.505e-06 
+ -5.961e-04  5.287e-04  2.692e-04  5.084e-04 -9.977e-03 -2.062e-04  1.102e-02  3.401e-03 
+ -1.533e-03  3.653e-05 -6.015e-04 -1.300e-04 -4.384e-03  2.505e-06  3.401e-03  5.234e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.91394   1.000  0.051  0.482 -0.085  0.639 -0.018 -0.177 -0.660
+        2  0.87574   0.051  1.000  0.304  0.033 -0.173 -0.814  0.199  0.020
+        3  0.87413   0.482  0.304  1.000  0.287 -0.161 -0.069  0.177 -0.572
+        4  0.41037  -0.085  0.033  0.287  1.000 -0.216  0.022  0.142 -0.053
+        5  0.90164   0.639 -0.173 -0.161 -0.216  1.000  0.029 -0.583 -0.372
+        6  0.85214  -0.018 -0.814 -0.069  0.022  0.029  1.000 -0.029  0.001
+        7  0.80990  -0.177  0.199  0.177  0.142 -0.583 -0.029  1.000  0.448
+        8  0.86476  -0.660  0.020 -0.572 -0.053 -0.372  0.001  0.448  1.000
+[#1] INFO:Fitting -- RooAbsPdf::fitTo(totsig_KstJPsMM_MC) Calculating sum-of-weights-squared correction matrix for covariance matrix
+ **********
+ **   19 **HESSE        4000
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         9.4529e-02  1.3260e-01  1.8810e-01  3.6444e-01  9.2139e-01  1.2756e+00  2.3938e+00  2.6295e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=444587 FROM HESSE     STATUS=OK             77 CALLS         618 TOTAL
+                     EDM=84.6699    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  a2_sig_KstJPsMM_MC  -1.08342e+00   1.96044e-02   1.04938e-03   9.00271e-01
+   2  a_sig_KstJPsMM_MC   1.88272e+00   1.66180e-02   7.80571e-04  -6.73363e-01
+   3  f_sig_KstJPsMM_MC   7.16997e-01   1.01552e-02   3.91794e-03   4.48920e-01
+   4  m_sig_KstJPsMM_MC   5.27974e+03   2.24949e-02   1.55281e-04  -7.43990e-01
+   5  n2_sig_KstJPsMM_MC   3.42114e+00   8.99288e-02   3.03508e-04  -1.45409e+00
+   6  n_sig_KstJPsMM_MC   1.87662e+00   4.47303e-02   2.16543e-04  -1.48887e+00
+   7  s2_sig_KstJPsMM_MC   4.64774e+00   6.76584e-02   9.79230e-04  -1.91941e+00
+   8  s_sig_KstJPsMM_MC   7.45287e+00   4.52360e-02   5.66269e-04  -7.99494e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  3.843e-04  3.917e-05  1.177e-04  4.799e-07  8.381e-04 -2.649e-05  7.973e-05 -5.415e-04 
+  3.917e-05  2.762e-04  5.059e-05  6.010e-06 -2.290e-04 -6.023e-04  2.265e-04 -5.214e-06 
+  1.177e-04  5.059e-05  1.031e-04  6.700e-05 -1.867e-04 -2.865e-05  1.735e-04 -2.872e-04 
+  4.799e-07  6.010e-06  6.700e-05  5.060e-04 -3.681e-04  2.866e-05  1.969e-04 -1.127e-04 
+  8.381e-04 -2.290e-04 -1.867e-04 -3.681e-04  8.087e-03  8.981e-05 -2.955e-03 -8.742e-04 
+ -2.649e-05 -6.023e-04 -2.865e-05  2.866e-05  8.981e-05  2.001e-03 -7.329e-05  1.532e-05 
+  7.973e-05  2.265e-04  1.735e-04  1.969e-04 -2.955e-03 -7.329e-05  4.578e-03  9.638e-04 
+ -5.415e-04 -5.214e-06 -2.872e-04 -1.127e-04 -8.742e-04  1.532e-05  9.638e-04  2.046e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.89723   1.000  0.120  0.591  0.001  0.475 -0.030  0.060 -0.611
+        2  0.87261   0.120  1.000  0.300  0.016 -0.153 -0.810  0.201 -0.007
+        3  0.89060   0.591  0.300  1.000  0.293 -0.204 -0.063  0.252 -0.625
+        4  0.39253   0.001  0.016  0.293  1.000 -0.182  0.028  0.129 -0.111
+        5  0.85567   0.475 -0.153 -0.204 -0.182  1.000  0.022 -0.486 -0.215
+        6  0.84897  -0.030 -0.810 -0.063  0.028  0.022  1.000 -0.024  0.008
+        7  0.78300   0.060  0.201  0.252  0.129 -0.486 -0.024  1.000  0.315
+        8  0.85031  -0.611 -0.007 -0.625 -0.111 -0.215  0.008  0.315  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_JPs_M) new range named 'PlotRange' created with bounds [5170,5850]
+[#1] INFO:InputArguments -- RooAbsData::plotOn(dataKstJPsMM_MC) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) directly selected PDF components: (totsig_KstJPsMM_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) indirectly selected PDF components: (CB1_sig_KstJPsMM_MC,CB2_sig_KstJPsMM_MC)
+Info in <TCanvas::Print>: pdf file KstJPsMM_MC_fitAndRes.pdf has been created
+[#1] INFO:InputArguments -- RooAbsData::plotOn(dataKstJPsMM_MC) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) directly selected PDF components: (totsig_KstJPsMM_MC)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(totsig_KstJPsMM_MC) indirectly selected PDF components: (CB1_sig_KstJPsMM_MC,CB2_sig_KstJPsMM_MC)
+Info in <TCanvas::Print>: pdf file KstJPsMM_MC_log_fitAndRes.pdf has been created
+
+KstJPsMM_MC: Chi2/NDF = 3.1 NDF = 77.0 - with probability 0.000
+
+
+RooRealVar::a_sig_KstJPsMM_MC = 1.883 +/- 0.039  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsMM_MC = -1.083 +/- 0.055  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsMM_MC = 0.717 +/- 0.021  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsMM_MC = 5279.742 +/- 0.052  L(5170.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsMM_MC = 1.877 +/- 0.102  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsMM_MC = 3.421 +/- 0.299  L(0.020 - 1000.000) 
+RooRealVar::s_sig_KstJPsMM_MC = 7.453 +/- 0.119  L(0.939 - 46.971) 
+RooRealVar::s2_sig_KstJPsMM_MC = 4.648 +/- 0.169  L(1.879 - 93.943) 
+
+
+RooRealVar::a_sig_KstJPsMM_MC = 1.883 +/- 0.039 C  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsMM_MC = -1.083 +/- 0.055 C  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsMM_MC = 0.717 +/- 0.021 C  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsMM_MC = 5279.742 +/- 0.052  L(5170.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsMM_MC = 1.877 +/- 0.102 C  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsMM_MC = 3.421 +/- 0.299 C  L(0.020 - 1000.000) 
+RooFormulaVar::s_scaled[ actualVars=(s_scale_jps,s_sig_KstJPsMM_MC) formula="@0*@1" ] = 7.453
+RooFormulaVar::s2_scaled[ actualVars=(s_scale_jps,s2_sig_KstJPsMM_MC) formula="@0*@1" ] = 4.648
+
+
+
+Backgrounds
+
+
+getTreeReader: /afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc MM candidates_jps DecayTuple Bs2KstJPsMM gmc root 
+
+Number of trees in chain: 1
+
+Set up 786 / 786 branches
+
+List of files
+/afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc/MM_candidates_jps_gmc.root
+
+Read in 323745 events
+
+
+getTreeReader: /afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc MM candidates_jps DecayTuple Lb2pKJPsMM gmc root 
+
+Number of trees in chain: 1
+
+Set up 786 / 786 branches
+
+List of files
+/afs/cern.ch/work/p/pluca/RD/Analysis/lhcbbham/wNtuples/createTuple_MM_1_-q2jps-gmc/MM_candidates_jps_gmc.root
+
+Read in 11749 events
+
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+[#1] INFO:Eval -- RooAbsReal::attachToTree(wGMC) TTree Float_t branch wGMC will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(bkg_Lb2pKJPs_KstJPsMM_DataSet_KstJPsMM) Ignored 7935 out of range events
+KstJPsMM: Initialize -docuts-namepar
+
+KstJPsMM: CreateReducedTree -docuts-namepar
+
+CopyTree
+N Tot = 904741
+TCut 
+OBJ: TCut	CUT	(isSingle)&&(((((((B0_L0MuonDecision_TOS)&&(B0_Hlt1TrackAllL0Decision_TOS || B0_Hlt1TrackMuonDecision_TOS))&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoMu2BodyBBDTDecision_TOS || B0_Hlt2TopoMu3BodyBBDTDecision_TOS || B0_Hlt2TopoMu4BodyBBDTDecision_TOS || B0_Hlt2DiMuonDetachedDecision_TOS))&&(((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && M1_TRACK_CHI2NDOF < 3 && M2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && M1_TRACK_GhostProb < 0.4 && M2_TRACK_GhostProb < 0.4)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100))&&(TMath::Abs(B0_M02_Subst2_K2mu - 3096.916) > 60 && TMath::Abs(B0_M02_Subst2_K2mu - 3686.109) > 60))&&(TMath::Abs(B0_M13_Subst3_pi2mu - 3096.916) > 60 && TMath::Abs(B0_M13_Subst3_pi2mu - 3686.109) > 60))))&&((M1_hasMuon && M2_hasMuon && M1_isMuon && M2_isMuon && TMath::Min(M1_MC12TuneV3_ProbNNmu, M2_MC12TuneV3_ProbNNmu) > 0.2)&&((Pi_hasRich && Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_hasRich && K_PIDK > -5 && K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(TMath::Abs(JPs_M - 3096.916) < 100))&&(wNB_GMC > 0.75))
+N Pas = 874938 (96.706%)
+Frac  = -1.000
+Copied 874938 entries
+
+
+KstJPsMM: CreateDataSet 
+Candidates: 874938
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_JPs_M) TTree Float_t branch B0_PV_JPs_M will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(dataKstJPsMM) Ignored 517905 out of range events
+RooDataSet::dataKstJPsMM[B0_PV_JPs_M] = 357033 entries
+
+KstJPsMM: Initialized Correctly! The model is:
+RooAddPdf::model_KstJPsMM[ nsig_JPs_KstJPsMM * totsig_KstJPsMM + nbkg_Bs2KstJPs_KstJPsMM * bkg_Bs2KstJPs_KstJPsMM + nbkg_Lb2pKJPs_KstJPsMM * bkg_Lb2pKJPs_KstJPsMM + nbkg_comb_KstJPsMM * bkg_comb_KstJPsMM ] = 0.873
+
+MM
+
+
+RooRealVar::a_sig_KstJPsMM_MC = 1.883 +/- 0.039 C  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsMM_MC = -1.083 +/- 0.055 C  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsMM_MC = 0.717 +/- 0.021 C  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsMM_MC = 5279.742 +/- 0.052  L(5170.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsMM_MC = 1.877 +/- 0.102 C  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsMM_MC = 3.421 +/- 0.299 C  L(0.020 - 1000.000) 
+RooRealVar::s_sig_KstJPsMM_MC = 7.453 +/- 0.119 C  L(0.939 - 46.971) 
+RooRealVar::s2_sig_KstJPsMM_MC = 4.648 +/- 0.169 C  L(1.879 - 93.943) 
+
+
+RooRealVar::a_sig_KstJPsMM_MC = 1.883 +/- 0.039 C  L(0.001 - 10.000) 
+RooRealVar::a2_sig_KstJPsMM_MC = -1.083 +/- 0.055 C  L(-10.000 - -0.001) 
+RooRealVar::f_sig_KstJPsMM_MC = 0.717 +/- 0.021 C  L(0.000 - 1.000) 
+RooRealVar::m_sig_KstJPsMM_MC = 5279.742 +/- 0.052  L(5170.000 - 5850.000) 
+RooRealVar::n_sig_KstJPsMM_MC = 1.877 +/- 0.102 C  L(0.200 - 1000.000) 
+RooRealVar::n2_sig_KstJPsMM_MC = 3.421 +/- 0.299 C  L(0.020 - 1000.000) 
+RooFormulaVar::s_scaled[ actualVars=(s_scale_mm,s_sig_KstJPsMM_MC) formula="@0*@1" ] = 7.453
+RooFormulaVar::s2_scaled[ actualVars=(s_scale_mm,s2_sig_KstJPsMM_MC) formula="@0*@1" ] = 4.648
+
+
+KstMM: Initialize -docuts-namepar
+
+KstMM: CreateReducedTree -docuts-namepar
+
+CopyTree
+N Tot = 20817
+TCut 
+OBJ: TCut	CUT	(isSingle)&&(((((((B0_L0MuonDecision_TOS)&&(B0_Hlt1TrackAllL0Decision_TOS || B0_Hlt1TrackMuonDecision_TOS))&&(B0_Hlt2Topo2BodyBBDTDecision_TOS || B0_Hlt2Topo3BodyBBDTDecision_TOS || B0_Hlt2Topo4BodyBBDTDecision_TOS || B0_Hlt2TopoMu2BodyBBDTDecision_TOS || B0_Hlt2TopoMu3BodyBBDTDecision_TOS || B0_Hlt2TopoMu4BodyBBDTDecision_TOS || B0_Hlt2DiMuonDetachedDecision_TOS))&&(((K_TRACK_CHI2NDOF < 3 && Pi_TRACK_CHI2NDOF < 3 && M1_TRACK_CHI2NDOF < 3 && M2_TRACK_CHI2NDOF < 3 && K_TRACK_GhostProb < 0.4 && Pi_TRACK_GhostProb < 0.4 && M1_TRACK_GhostProb < 0.4 && M2_TRACK_GhostProb < 0.4)&&(TMath::Abs(Kst_M - 895.94) < 100))&&((((B0_M23_Subst3_pi2K > 1040)&&(TMath::Max(B0_M012, B0_M013_Subst3_pi2K) < 5100))&&(TMath::Abs(B0_M02_Subst2_K2mu - 3096.916) > 60 && TMath::Abs(B0_M02_Subst2_K2mu - 3686.109) > 60))&&(TMath::Abs(B0_M13_Subst3_pi2mu - 3096.916) > 60 && TMath::Abs(B0_M13_Subst3_pi2mu - 3686.109) > 60))))&&((M1_hasMuon && M2_hasMuon && M1_isMuon && M2_isMuon && TMath::Min(M1_MC12TuneV3_ProbNNmu, M2_MC12TuneV3_ProbNNmu) > 0.2)&&((Pi_hasRich && Pi_MC12TuneV3_ProbNNpi * (1 - Pi_MC12TuneV2_ProbNNk) * (1 - Pi_MC12TuneV2_ProbNNp) > 0.1)&&(K_hasRich && K_PIDK > -5 && K_MC12TuneV3_ProbNNk * (1 - K_MC12TuneV2_ProbNNp) > 0.05))))&&(wNB_GMC > 0.75))&&(TMath::Power(JPs_M/1000,2) > 1.1 && TMath::Power(JPs_M/1000,2) < 6))
+N Pas = 20330 (97.661%)
+Frac  = -1.000
+Copied 20330 entries
+
+
+KstMM: CreateDataSet 
+Candidates: 20330
+[#1] INFO:Eval -- RooAbsReal::attachToTree(B0_PV_M) TTree Float_t branch B0_PV_M will be converted to double precision
+[#1] INFO:Eval -- RooTreeDataStore::loadValues(dataKstMM) Ignored 19402 out of range events
+RooDataSet::dataKstMM[B0_PV_M] = 928 entries
+
+KstMM: Initialized Correctly! The model is:
+RooAddPdf::model_KstMM[ nsig_MM_KstMM * totsig_KstMM + nbkg_comb_KstMM * bkg_comb_KstMM ] = 0.308
+
+Fit
+
+RooDataSet::combData[samples,B0_PV_JPs_M,B0_PV_M] = 357961 entries
+RooSimultaneous::combModel[ indexCat=samples JPs=model_KstJPsMM MM=model_KstMM ] = 0.871
+RooRealVar::a2_Bs2KstJPs_KstJPsMM = -1.083 C  L(-10.000 - -0.001) 
+RooRealVar::a2_sig_KstJPsMM_MC = -1.083 +/- 0.055 C  L(-10.000 - -0.001) 
+RooRealVar::a_Bs2KstJPs_KstJPsMM = 1.883 C  L(0.001 - 10.000) 
+RooRealVar::a_sig_KstJPsMM_MC = 1.883 +/- 0.039 C  L(0.001 - 10.000) 
+RooRealVar::b_comb_KstJPsMM = -0.005  L(-0.100 - -0.000) 
+RooRealVar::b_comb_KstMM = -0.005  L(-0.100 - -0.000) 
+RooRealVar::effR = 1.000 +/- 0.000 C  L(-INF - +INF) 
+RooRealVar::f_Bs2KstJPs_KstJPsMM = 0.717 C  L(0.000 - 1.000) 
+RooRealVar::f_sig_KstJPsMM_MC = 0.717 +/- 0.021 C  L(0.000 - 1.000) 
+RooRealVar::m_Bs2KstJPs_KstJPsMM = 5367.534 C  L(5340.000 - 5380.000) 
+RooRealVar::m_sig_KstJPsMM_MC = 5279.742 +/- 0.052  L(5170.000 - 5850.000) 
+RooRealVar::n2_Bs2KstJPs_KstJPsMM = 3.421 C  L(0.020 - 1000.000) 
+RooRealVar::n2_sig_KstJPsMM_MC = 3.421 +/- 0.299 C  L(0.020 - 1000.000) 
+RooRealVar::n_Bs2KstJPs_KstJPsMM = 1.877 C  L(0.200 - 1000.000) 
+RooRealVar::n_sig_KstJPsMM_MC = 1.877 +/- 0.102 C  L(0.200 - 1000.000) 
+RooRealVar::nbkg_Bs2KstJPs_KstJPsMM = 21873.450  L(0.000 - 10000000.000) 
+RooRealVar::nbkg_Lb2pKJPs_KstJPsMM = 21873.450  L(0.000 - 10000000.000) 
+RooRealVar::nbkg_comb_KstJPsMM = 21873.450  L(0.000 - 10000000.000) 
+RooRealVar::nbkg_comb_KstMM = 1016.500  L(0.000 - 10000000.000) 
+RooRealVar::nsig_JPs_KstJPsMM = 452370.500  L(1.000 - 904741.000) 
+RooRealVar::rMM = 0.001  L(0.000 - 1.000) 
+RooRealVar::s2_Bs2KstJPs_KstJPsMM = 4.648 C  L(1.879 - 93.943) 
+RooRealVar::s2_sig_KstJPsMM_MC = 4.648 +/- 0.169 C  L(1.879 - 93.943) 
+RooRealVar::s_Bs2KstJPs_KstJPsMM = 7.453 C  L(0.939 - 46.971) 
+RooRealVar::s_scale_jps = 1.000  L(0.100 - 10.000) 
+RooRealVar::s_scale_mm = 1.000  L(0.100 - 10.000) 
+RooRealVar::s_sig_KstJPsMM_MC = 7.453 +/- 0.119 C  L(0.939 - 46.971) 
+RooCategory::samples = JPs(idx = 0)
+
+--------------- FITTING --------------- 
+ **********
+ **    9 **SET PRINT           2
+ **********
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state JPs (357033 dataset entries)
+RooAbsTestStatistic::initSimMode: creating slave calculator #1 for state MM (928 dataset entries)
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 2 slave calculators.
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkg_Bs2KstJPs_KstJPsMM,bkg_Lb2pKJPs_KstJPsMM)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (CB1_sig_KstJPsMM,CB2_sig_KstJPsMM,bkg_comb_KstJPsMM)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (CB1_sig_KstMM,CB2_sig_KstMM,bkg_comb_KstMM)
+ **********
+ **   14 **MIGRAD        5500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-2.48517e+06 FROM MIGRAD    STATUS=INITIATE       48 CALLS          49 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb_KstJPsMM  -5.00000e-03   2.49950e-03   1.18613e-01   6.94425e+03
+   2  b_comb_KstMM  -5.00000e-03   2.49950e-03   1.18613e-01   3.74713e+02
+   3  m_sig_KstJPsMM_MC   5.27974e+03   5.18758e-02   2.07368e-04  -1.54876e+06
+   4  nbkg_Bs2KstJPs_KstJPsMM   2.18735e+04   1.09367e+04   2.42348e-02   3.74406e+05
+   5  nbkg_Lb2pKJPs_KstJPsMM   2.18735e+04   1.09367e+04   2.42348e-02   1.66159e+05
+   6  nbkg_comb_KstJPsMM   2.18735e+04   1.09367e+04   2.42348e-02   1.95762e+05
+   7  nbkg_comb_KstMM   1.01650e+03   5.08250e+02   5.21916e-03   4.33805e+04
+   8  nsig_JPs_KstJPsMM   4.52370e+05   9.04740e+04   2.01358e-01   1.26538e+05
+   9  rMM          1.00000e-03   5.00000e-04   1.63770e-02   3.26820e+03
+  10  s_scale_jps   1.00000e+00   4.50000e-01   1.63378e-01  -1.33625e+05
+  11  s_scale_mm   1.00000e+00   4.50000e-01   1.63378e-01  -5.49885e+02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+ FCN=-2.52576e+06 FROM MIGRAD    STATUS=PROGRESS       74 CALLS          75 TOTAL
+                     EDM=7613.5    STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb_KstJPsMM  -6.22805e-03   2.49950e-03  -5.34308e-02  -1.85613e+03
+   2  b_comb_KstMM  -6.12115e-03   2.49950e-03  -4.89893e-02   5.18923e+01
+   3  m_sig_KstJPsMM_MC   5.28060e+03   5.18758e-02   3.43958e-03  -3.69260e+05
+   4  nbkg_Bs2KstJPs_KstJPsMM   4.85358e+03   1.09367e+04  -4.95070e-02   6.21870e+04
+   5  nbkg_Lb2pKJPs_KstJPsMM   8.77819e+03   1.09367e+04  -3.43076e-02  -4.14593e+04
+   6  nbkg_comb_KstJPsMM   9.12104e+03   1.09367e+04  -3.31610e-02  -5.32158e+04
+   7  nbkg_comb_KstMM   6.12585e+02   5.08250e+02  -4.51095e-03   9.96775e+03
+   8  nsig_JPs_KstJPsMM   3.24223e+05   9.04740e+04  -2.87214e-01  -1.16885e+04
+   9  rMM          7.69663e-04   5.00000e-04  -7.76338e-03  -5.18595e+03
+  10  s_scale_jps   1.08797e+00   4.50000e-01   3.02610e-02  -5.36267e+04
+  11  s_scale_mm   1.60357e+00   4.50000e-01   1.88085e-01  -1.43250e+02
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-2.52748e+06 FROM MIGRAD    STATUS=CONVERGED     300 CALLS         301 TOTAL
+                     EDM=0.000123345    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.0 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  b_comb_KstJPsMM  -5.33377e-03   1.24043e-04   0.00000e+00  -1.54349e+00
+   2  b_comb_KstMM  -5.00155e-03   3.89034e-04  -0.00000e+00   3.43240e-01
+   3  m_sig_KstJPsMM_MC   5.28090e+03   1.43075e-02   0.00000e+00  -6.31125e+01
+   4  nbkg_Bs2KstJPs_KstJPsMM   2.24419e+03   7.02996e+01  -0.00000e+00   5.46178e+00
+   5  nbkg_Lb2pKJPs_KstJPsMM   1.41642e+04   4.50273e+02   0.00000e+00   7.29945e+00
+   6  nbkg_comb_KstJPsMM   9.56706e+03   3.42975e+02  -0.00000e+00   4.69525e+00
+   7  nbkg_comb_KstMM   3.02716e+02   2.36529e+01  -0.00000e+00   6.38266e-01
+   8  nsig_JPs_KstJPsMM   3.31058e+05   5.95837e+02   0.00000e+00   1.38602e-02
+   9  rMM          1.88897e-03   9.19057e-05   0.00000e+00  -7.25079e-01
+  10  s_scale_jps   1.13859e+00   1.84042e-03   0.00000e+00  -5.42644e+00
+  11  s_scale_mm   2.65534e+00   1.30200e-01   0.00000e+00  -3.83791e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  56    NPAR= 11    ERR DEF=0.5
+  1.539e-08 
+ -5.484e-09  1.514e-07 
+ -5.685e-08  4.491e-08  2.047e-04 
+ -2.307e-03 -1.706e-03 -3.911e-02  4.942e+03 
+  4.046e-02 -4.037e-03 -1.478e-01 -1.138e+04  2.027e+05 
+ -3.313e-02  1.199e-02  1.682e-01  6.229e+03 -1.320e+05  1.176e+05 
+  8.544e-05 -2.248e-03 -2.247e-03  2.757e+01  4.974e+02 -3.030e+02  5.595e+02 
+ -5.296e-03 -9.753e-03  1.002e-01  2.365e+03 -4.306e+04  1.534e+04 -1.499e+02  3.550e+05 
+ -1.238e-11  8.180e-09  1.359e-08 -7.348e-05  1.427e-03 -4.166e-04 -5.905e-04 -2.922e-03  8.447e-09 
+ -2.647e-08 -9.592e-08  9.433e-07  5.191e-03 -1.586e-01  7.611e-02  1.536e-04  7.372e-02  4.016e-09  3.387e-06 
+  4.202e-07  1.253e-05 -1.224e-05  1.817e-01  1.031e+00 -1.509e+00 -1.030e+00 -9.042e-01  3.774e-06 -3.356e-07  1.696e-02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11
+        1  0.79053   1.000 -0.114 -0.032 -0.265  0.724 -0.779  0.029 -0.072 -0.001 -0.116  0.026
+        2  0.39686  -0.114  1.000  0.008 -0.062 -0.023  0.090 -0.244 -0.042  0.229 -0.134  0.247
+        3  0.07168  -0.032  0.008  1.000 -0.039 -0.023  0.034 -0.007  0.012  0.010  0.036 -0.007
+        4  0.39000  -0.265 -0.062 -0.039  1.000 -0.360  0.258  0.017  0.056 -0.011  0.040  0.020
+        5  0.87972   0.724 -0.023 -0.023 -0.360  1.000 -0.854  0.047 -0.160  0.034 -0.191  0.018
+        6  0.88976  -0.779  0.090  0.034  0.258 -0.854  1.000 -0.037  0.075 -0.013  0.121 -0.034
+        7  0.40889   0.029 -0.244 -0.007  0.017  0.047 -0.037  1.000 -0.011 -0.272  0.004 -0.334
+        8  0.20933  -0.072 -0.042  0.012  0.056 -0.160  0.075 -0.011  1.000 -0.053  0.067 -0.012
+        9  0.39201  -0.001  0.229  0.010 -0.011  0.034 -0.013 -0.272 -0.053  1.000  0.024  0.315
+       10  0.26203  -0.116 -0.134  0.036  0.040 -0.191  0.121  0.004  0.067  0.024  1.000 -0.001
+       11  0.43667   0.026  0.247 -0.007  0.020  0.018 -0.034 -0.334 -0.012  0.315 -0.001  1.000
+ **********
+ **   19 **HESSE        5500
+ **********
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         9.6363e-02  4.7823e-01  7.1300e-01  9.6266e-01  9.9731e-01  1.0383e+00  1.0809e+00  1.1587e+00  1.2528e+00  1.2922e+00  1.9296e+00
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2.52748e+06 FROM HESSE     STATUS=OK            120 CALLS         421 TOTAL
+                     EDM=0.000906068    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  b_comb_KstJPsMM  -5.33377e-03   1.32338e-04   3.91435e-03   1.10473e+00
+   2  b_comb_KstMM  -5.00155e-03   4.10426e-04   1.98015e-02   1.11974e+00
+   3  m_sig_KstJPsMM_MC   5.28090e+03   1.50448e-02   6.56733e-05  -7.39369e-01
+   4  nbkg_Bs2KstJPs_KstJPsMM   2.24419e+03   7.25437e+01   4.90760e-04  -1.54083e+00
+   5  nbkg_Lb2pKJPs_KstJPsMM   1.41642e+04   4.47888e+02   6.27510e-04  -1.49551e+00
+   6  nbkg_comb_KstJPsMM   9.56706e+03   3.53244e+02   5.77571e-04  -1.50893e+00
+   7  nbkg_comb_KstMM   3.02716e+02   2.30999e+01   4.13379e-04  -1.55979e+00
+   8  nsig_JPs_KstJPsMM   3.31058e+05   5.97801e+02   1.47052e-03  -2.71495e-01
+   9  rMM          1.88897e-03   8.84123e-05   2.06255e-03  -1.48384e+00
+  10  s_scale_jps   1.13859e+00   2.04094e-03   7.09720e-04  -9.11109e-01
+  11  s_scale_mm   2.65534e+00   1.28210e-01   3.02163e-02  -5.04957e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  56    NPAR= 11    ERR DEF=0.5
+  1.751e-08 
+  4.050e-12  1.685e-07 
+ -7.578e-08 -1.204e-08  2.263e-04 
+ -2.106e-03 -4.205e-07  7.639e-03  5.263e+03 
+  4.278e-02  1.209e-05 -2.234e-01 -1.153e+04  2.006e+05 
+ -3.683e-02 -1.103e-05  2.062e-01  5.645e+03 -1.333e+05  1.248e+05 
+ -2.188e-07 -2.341e-03  6.500e-04  2.282e-02 -6.544e-01  5.960e-01  5.336e+02 
+ -3.860e-03 -2.274e-06  9.708e-03  2.882e+03 -4.162e+04  1.242e+04  1.372e-01  3.574e+05 
+  2.308e-11  7.023e-09 -2.038e-09 -1.680e-05  2.437e-04 -7.394e-05 -6.893e-04 -2.076e-03  7.817e-09 
+ -2.035e-08  2.752e-11 -5.282e-07  1.262e-02 -1.928e-01  6.233e-02 -1.481e-06  1.177e-01 -6.788e-10  4.165e-06 
+  2.568e-09  9.480e-06 -7.477e-06 -3.006e-04  8.078e-03 -7.019e-03 -9.442e-01 -6.306e-03  2.873e-06  1.548e-08  1.644e-02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11
+        1  0.79584   1.000  0.000 -0.038 -0.219  0.722 -0.788 -0.000 -0.049  0.002 -0.075  0.000
+        2  0.28742   0.000  1.000 -0.002 -0.000  0.000 -0.000 -0.247 -0.000  0.194  0.000  0.180
+        3  0.04612  -0.038 -0.002  1.000  0.007 -0.033  0.039  0.002  0.001 -0.002 -0.017 -0.004
+        4  0.38465  -0.219 -0.000  0.007  1.000 -0.355  0.220  0.000  0.066 -0.003  0.085 -0.000
+        5  0.87731   0.722  0.000 -0.033 -0.355  1.000 -0.842 -0.000 -0.155  0.006 -0.211  0.000
+        6  0.88768  -0.788 -0.000  0.039  0.220 -0.842  1.000  0.000  0.059 -0.002  0.086 -0.000
+        7  0.44230  -0.000 -0.247  0.002  0.000 -0.000  0.000  1.000  0.000 -0.338 -0.000 -0.319
+        8  0.21551  -0.049 -0.000  0.001  0.066 -0.155  0.059  0.000  1.000 -0.039  0.096 -0.000
+        9  0.38547   0.002  0.194 -0.002 -0.003  0.006 -0.002 -0.338 -0.039  1.000 -0.004  0.253
+       10  0.27668  -0.075  0.000 -0.017  0.085 -0.211  0.086 -0.000  0.096 -0.004  1.000  0.000
+       11  0.36489   0.000  0.180 -0.004 -0.000  0.000 -0.000 -0.319 -0.000  0.253  0.000  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (totsig_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_sig_KstJPsMM,s_scaled,CB2_sig_KstJPsMM,s2_scaled)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM,bkg_Lb2pKJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM,bkg_Lb2pKJPs_KstJPsMM,bkg_comb_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+Info in <TCanvas::Print>: pdf file KstJPsMM_fitAndRes.pdf has been created
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (totsig_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_sig_KstJPsMM,s_scaled,CB2_sig_KstJPsMM,s2_scaled)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM,bkg_Lb2pKJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) directly selected PDF components: (bkg_Bs2KstJPs_KstJPsMM,bkg_Lb2pKJPs_KstJPsMM,bkg_comb_KstJPsMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstJPsMM) indirectly selected PDF components: (CB1_Bs2KstJPs_KstJPsMM,CB2_Bs2KstJPs_KstJPsMM)
+Info in <TCanvas::Print>: pdf file KstJPsMM_log_fitAndRes.pdf has been created
+[#1] INFO:Eval -- RooRealVar::setRange(B0_PV_M) new range named 'PlotRange' created with bounds [5170.000,5850.000]
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) directly selected PDF components: (totsig_KstMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) indirectly selected PDF components: (CB1_sig_KstMM,s_scaled,CB2_sig_KstMM,s2_scaled)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) directly selected PDF components: (bkg_comb_KstMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) indirectly selected PDF components: ()
+Info in <TCanvas::Print>: pdf file KstMM_fitAndRes.pdf has been created
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) p.d.f. curve is normalized using explicit choice of ranges 'PlotRange'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) directly selected PDF components: (totsig_KstMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) indirectly selected PDF components: (CB1_sig_KstMM,s_scaled,CB2_sig_KstMM,s2_scaled)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) directly selected PDF components: (bkg_comb_KstMM)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model_KstMM) indirectly selected PDF components: ()
+Info in <TCanvas::Print>: pdf file KstMM_log_fitAndRes.pdf has been created
+
+Rmm = 0.0018890 +- 0.0000884
+

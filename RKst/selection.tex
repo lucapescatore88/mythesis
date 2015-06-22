@@ -1,0 +1,561 @@
+\chapter{Selection}
+\label{sec:RKst_selection}
+
+The selection process, described in the following sections, is divided into four steps. 
+First of all events have to fall into the detector acceptance, produce hits and be selected
+on the basis of quality features, such as $\chi^2$ of tracks and vertices.
+Secondly it is required that some specific trigger lines were switched on by the events.
+%In a second step we apply some cuts so remove specific backgrounds coming from other decays which are
+%misreconstructed or partially reconstructed. 
+The third step consistis in the application of particle identification (PID) conditions which remove a good
+part of misreconstructed background and clear the way for the last step where a neural network is used
+to remove combinatorial background.
+In order to minimise systematic uncertainties the same selection requirements are applied on the rare signal
+candidates and on their relative charmonium channel, a part from the \qsq cuts which serve to 
+distinguish the two and are described in the next section.
+
+\section{Choice of \qsq intervals and signal windows}
+\label{sec:RKst_q2_choice}
+
+Two \qsq intervals are analysed in this work: the ``central" \qsq region, [1.1,6.0] \gevgevcccc,
+and the ``high" \qsq region, above 15 \gevgevcccc. The central \qsq region is the most interesting
+place to look for new physics. In fact al low \qsq the photon pole dominates leaving little
+space for new physics to be found while the central ragion is the most theoretically clean
+(for more details see Sec.~\ref{sec:theo_qsq}). The lower edge of this interval is chosen in order
+to cut out the contribution from $\phi\to\ell^+\ell^-$ decays that can dilute new physics effects.
+The upper edge of the interval is chosen to be sufficiently far away from the \jpsi radiative tail.
+In the high \qsq region the signals are still unobserved and it is therefore new territory to explore.
+
+In order to select the $\Bz \to\Kstar(\jpsi\to \mumu)$ channel a dilepton mass interval of 100 \mevcc
+around the nominal \jpsi peak \cite{PDG2014} is selected. The electron resonant channel it is not possible
+to use a narrow cut ad the \qsq and 4-body $m(K\pi\ee)$ invariant mass distributions are characterised
+by a long radiative tail at low masses due to bremsstrahlung radiation. Furthermore, a cut in \qsq also
+distorts the 4-body mass distribution at low masses and it is important to be able to fit a 
+wide mass range to constrain backgrounds. For these reasons the interval chosen to select
+$\Bz \to\Kstar(\jpsi\to \ee)$ candidates is chosen to go as low as possible without overlapping with
+the rare channel interval. The electronic resonant channel is therefore selected in the interval
+[6,11] \gevgevcccc. Fig.~\ref{fig:2D_q2_B0mass} shows two-dimensional distributions
+of \qsq versus the 4-body $m(K\pi\ell^+\ell^-)$ invariant mass. On these plots horizontal lines can
+be seen at the \qsq corresponding to the \jpsi and \psitwos resonances.
+
+\begin{figure}[t!]
+\label{fig:2D_q2_B0mass}
+\centering 
+\includegraphics[width=0.8\textwidth]{RKst/figs/electron_B0jpsi2D.pdf}
+\includegraphics[width=0.8\textwidth]{RKst/figs/muon_B0jpsi2D.pdf}
+\caption{Two-dimensional distributions of \qsq versus 4-body $m(K\pi\ell\ell)$
+invariant mass for the electronic (left) and muonic (right) channels in 2012 data.}
+\end{figure}
+
+
+
+\section{Trigger and Stripping }
+
+Events are triggered for the $\mu\mu$ and the $ee$ channels by the trigger lines
+reported in Table \ref{triglines}, where the logical $and$ of L0, Hlt1 and Hlt2
+lines is required and the logical $or$ of the lines on the same level. The candidates are
+required to be triggered-on-signal (TOS) for most of the stages, namely
+it is required for the particle which triggered to be one of the particles used to build the signal candidates.
+Only for L0Global, used in the electron case, we require a trigger-independent-of-signal (TIS),
+this is aimed to collect all the possible statistics for the electron channels, which are the most challening.
+The L0Muon trigger requires hits in the muon detector, while L0Electron and L0Hadron use information from the calorimeters;
+Hlt1TrackAllL0 adds information from the trackers to the L0 candidates and triggers if the L0 decision is confirmed;
+finally, Hlt2Topo[2,3]BodyBBDT uses a reconstruction of the event and a neural network
+trained on events with a specific topology in order to detect decays.
+
+\begin{table}[h!]
+\label{triglines}
+\begin{center}
+\begin{tabular}{c|c}
+
+$\mu\mu$ candidates &  $ee$ candidates \\
+\hline
+	L0Muon		& L0Electron\\
+	L0DiMuon	& L0Hadron\\
+	L0Hadron	& L0Global (TIS)\\
+\hline
+	Hlt1TrackAllL0				& Hlt1TrackAllL0 \\
+	Hlt1TrackMuon				&	 \\
+\hline
+	Hlt2Topo[2,4]BodyBBDT 		& Hlt2Topo[2,4]BodyBBDT \\
+	Hlt2TopoMu[2,4]BodyBBDT 	& Hlt2TopoMu[2,4]BodyBBDT \\
+	Hlt2DiMuonDetachedDecision	&							\\
+\end{tabular}
+\caption{Summary of the trigger lines used for the $\mu\mu$ and the $ee$ analysis. }
+\end{center}
+\end{table}
+
+For the muonic channels the L0Muon trigger dominates instead for the electron channels
+all the L0 lines are important and, as they have different properties, the analysis is performed
+separately for three categories of events, depending on the L0 trigger (for more details see Sec.~\ref{sec:RKst_fit_ee}).
+
+Candidates are then required to pass the kinematic and quality cuts summarised in Table \ref{stripping}. 
+The meaning of variables in the table was already explained in Sec.~\ref{sec:Lb_stripping}.
+Loose PID cuts are applied in preselection to limit the size of the samples, while tighter cuts are applied
+in a second stage.
+
+%In the table $IP_{\chi_2}$ is defined as the projected distance from the vertex divided by its uncertainty, for example $IP^B_{\chi_2}(primary) > 4$ means
+%that the B vertex is 2 standard deviations away from the primary vertex.
+%Another quantity used is a pointing variable defined as the angle between the direction of the particle momentum and the flight direction from its mother vertex, called DIRA.
+%This allows the selection of particles with well-defined primary vertices.
+%%$GhostProb$ is the probability, estimated from the reconstruction algorithm, for the track to be a ghost. 
+%Loose PID cuts are applied in preselection to limit the size of the samples, while tighter cuts are applied
+%in a second stage. To quantify the PID of a particle the pion is used as a reference point and a Log-Likelihood
+%variable is used. Therefore the {\verb PID } variable reported in the table is given in terms of the difference between
+%the Log-Likelihood of the particle of a given type and a pion. This is called Delta Log-Likelihood (DLL).
+%For example:
+%\begin{equation}
+%\verb!PID!_K = \text{DLL}_{K-\pi} = \log(\mathcal{L}_K) - \log(\mathcal{L}_\pi)
+%\end{equation}
+
+\begin{table}[]
+\label{stripping}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Particle &  Cuts \\
+\hline
+\multirow{2}{*}{ All final}
+       			&   track $\chi_2/\text{ndf} < 3$ \\
+       			&   {\verb GhostProb } $< 0.4$ \\
+\hline
+$\pi$			& $\chisqip(primary) > 9$ \\      			
+\hline
+\multirow{3}{*}{K}
+      			& {\verb PID }$_K > -5$ \\
+       			& $\chisqip(primary) > 9$ \\
+       			& {\verb hasRICH }  \\
+ \hline
+\multirow{4}{*}{ \Kstar }
+       			& $\pt > 500$ \mevc \\
+       			& $|m - m_{\Kstar}^{PDG}| < 100$ \mevcc  \\ %300 in stripping but then we restrict it to 100
+       			& $\chisqip(primary) > 9$ \\
+       			& Origin vertex $\chi_2/\text{ndf} < 25$ \\
+\hline
+\multirow{3}{*}{ $\mu$ }
+       			& $\pt > 300$ \mevc \\
+       			& $\chisqip(primary) > 9$ \\
+       			& i{\verb sMuon }\\  %RequiresDet='MUON'
+%       		& hasMuon \\
+\hline
+\multirow{4}{*}{ $e$ }
+       			& $\pt > 300$ \mevc \\
+       			& $\chisqip(primary) > 9$ \\
+       			& {\verb hasCalo }\\ %RequiresDet='CALO'
+       			& $PID_e > 0$ \\
+\hline
+\multirow{4}{*}{ Dilepton }
+				& $m_{\ell\ell} < 5500$ \mevcc \\
+			  	& End vertex $\chi^2/\text{ndf} < 9$ \\
+			  	& Origin vertex $\chi^2$ separation $> 16$ \\
+%			  	& $\chisqip(primary) > 0$ \\
+\hline
+\multirow{4}{*}{ $B^0$  }
+ %      & $| m - m_{B^0}^{PDG}| < 600$ \mevcc  \\
+       			& {\verb DIRA } $> 0.9995$ \\ 
+       			& End vertex $\chi^2/\text{ndf} < 9$ \\
+     			& $\chisqip(primary) < 25$ \\
+     			& Primary vertex $\chi^2$ separation $> 100$ \\
+\hline
+\end{tabular}
+\caption{Summary of cuts made for pre-selection of good candidates. }
+\end{center}
+\end{table}
+
+Track-quality and vertex quality cuts are also applied using the $\chi^2_{track}/\text{ndf}$, {\verb GhostProb }, and $\chi^2_{vtx}/\text{ndf}$
+variables. The {\verb GhostProb } quantity describes the probability of a track being fake.
+By construction cutting at 0.4 removes $(1 - 0.4)\cdot 100 = 60\%$ of fake tracks.
+For details about the definition of the variables used see Ref. \cite{Loki_twiki}.
+A large mass window is kept around the \Bz peak in order to be able
+to fit the sideband and to train the multivariate analysis and constrain backgrounds.
+
+\section{PID}
+\label{sec:PID}
+
+After preselection there still are high levels of misreconstructed background.
+In particular, as the ID of kaons and pions are not constrained, the samples
+still contain both ID combinations for most candidates, therefore tighter PID cuts are applied.
+In the LHCb analysis framework the particle identification probability can be quantified
+using the ``{\verb ProbNN }" variables \cite{ProbNNs_pres}. These variables are the output of a Neural Network which
+takes as input information from the calorimeters, the RICH detectors and the muon system.
+Unlike the DLL variables these are bounded from 0 to 1 and can be therefore directly be interpreted as probabilities.
+For example {\verb ProbNNk } is the probability for a reconstructed particle to be a kaon.
+Two tunes of the {\verb ProbNN } variables, labelled V2 and V3, are available.
+Tune V3 was shown to be optimal for positive ID, while tune V3 was found to be optimal
+for background rejection and therefore it is used to quantify the mis-ID probability.
+
+Figure \ref{fig:e_mu_pid} shows distributions of the correct ID variables
+in the 2012 data sample while Fig.~\ref{fig:k_pi_pid} shows in a two-dimensional
+plane the probability of correct identification and mis-identification of kaons and pions.
+These plots are characterised by clear peak at maximal ID probability and minimal mis-ID
+probability, corresponding to particles to which is possible to assign a well
+defined identification.
+
+\begin{figure}[t!]
+\label{fig:e_mu_pid}
+\centering 
+\includegraphics[width=0.48\textwidth]{RKst/figs/muon_PID.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/electron_PID.pdf}
+\caption{Correct ID probability distributions for muons (left)
+and electorn (right) in 2012 data.}
+\end{figure}
+
+\begin{figure}[t!]
+\label{fig:k_pi_pid}
+\centering 
+\includegraphics[width=0.48\textwidth]{RKst/figs/kaon_PID.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/pion_PID.pdf}
+\caption{On the horizontal axis of these plots is shown the correct ID
+probabilities for kaons (left) and pions (right), while the vertical
+axis show the mis-ID probability.}
+\end{figure}
+
+In order to maximise the power of the PID cuts probabilities of correct ID 
+and mis-ID are combined using the following cuts:
+%
+\begin{center}
+\begin{tabular}{lcl}
+$\pi$ &\to  & $\verb!ProbNNpi-V3! \times (1 - \verb!ProbNNk-V2!) \times (1 - \verb!ProbNNp-V2!) > 0.1$ \\
+$K$   &\to  & $\verb!ProbNNk-V3! \times (1 - \verb!ProbNNp-V2! ) > 0.05$ \\ 
+$\mu$ &\to  & $\text{min}(\verb! ProbNNmu-V3! , \verb! ProbNNmu-V3 !) > 0.2$  \\
+$e$   &\to  & $\text{min}(\verb! ProbNNe-V3! , \verb! ProbNNe-V3 !) > 0.2$ \\
+\end{tabular}
+\end{center}
+%
+In the first formula, for example, {\verb ProbNNpi } is the probability of correctly identifying the
+pion as a pion, while {\verb ProbNNk } is the probability of mistaking it for a kaon.
+Therefore by maximising the quantity ``{\verb ProbNNpi } $\times$ (1 - {\verb ProbNNk })",
+one can maximise the correct ID probability and minimise at the same time the mis-ID probability.
+In the kaon case we do not use requirements on the $K\to\pi$ mis-ID probability
+because this cut was found to be unacceptably inefficient.
+
+
+\section{Breamsstrahlung recovery for electrons}
+
+Bremsstrahlung is an electromagnetic radiation produced by particles, that decelerate or deviate because of
+the presence other charged particles. Typically electrons produce Bremsstrahlung when deflected by atomic nuclei.
+The probability of emitting breamsstrahlung radiation is proportional to the inverse of the squared mass of the
+particle ($1/m^2$) and therefore is relevant only for electrons. At these energies, if electrons radiate after
+the magnet, the photon will hit in the same calorimeter cells as the electron and the energy will be automatically
+recovered. However, if the photon is emitted before the magnet, the electron will be deflected by the magnetic
+field whereas the photon will continue on its initial trajectory, with its energy being deposited in a different
+part of the calorimeter. Missing this energy results in a poorer reconstructed \Bz mass resolution, so it is
+desirable to recover these bremsstrahlung photons, when possible.
+A tool for bremsstrahlung recovery is available in the LHCb analysis software.
+This tool looks for other clusters in the calorimeter and reconstructing the trajectory of the electron
+checks if they may have been emitted by that. Then the photon energy is added to the electron and its momentum
+recalculated. Figure \ref{bremreco} shows a schematic view of the process. For more information see
+Ref. \cite{LHCb:2003ab}.
+
+\begin{figure}[t!]
+\label{bremreco}
+\centering
+\includegraphics[width=0.6\textwidth]{RKst/figs/brem_recovery.png}
+\caption{Schematic view of the Breamsstrahlung recovery. }
+\end{figure}
+
+
+\section{Peaking backgrounds }
+
+Cuts are applied in order to remove background sources due to specific decays.
+These types of backgrounds usually peak in some variable because of their mass
+or distinctive kinematic properties and therefore they can be removed without significant
+signal efficiency loss. In the following sections are described the main sources of peaking background.
+
+\subsection{Charmonium vetoes}
+
+Charmonium resonances such as \jpsi and \psitwos peak in \qsq.
+The choice of \qsq binning described in Sec.~\ref{sec:RKst_q2_choice}
+constitutes a natural veto for these decays. Simulated events were used
+to check if resonant events leak inside the \qsq intervals chosen for
+the rare channel analysis. For the muonic channels the leakage is negligible
+as the peaks are sharper due to a better resolution and muons emit fewer
+bremsstrahlung photons, resulting in shorter radiative tails.
+The electronic channels are instead  characterised by
+a worse resolution and at the same time electrons can radiate 
+several bremsstrahlung photons, yielding long tails at low \qsq.
+Analysing Monte Carlo events it was found that 1.3 - 2\% (depending on
+the trigger category) of $\Bz\to\Kstar(\jpsi\to\ee)$ candidates leak into the $1.1 < \qsq < 6$
+\gevgevcccc interval and 1.8\% of \psitwos events leak above 15 \gevgevcccc.
+The contribution from these candidates is modelled in the fit. 
+
+\subsection{Cascade $b \rightarrow c\ell$, $c \rightarrow \ell$ decays}
+\label{sec:RKst_peaking_Dchains}
+
+A source of mis-reconstructed background is due to cascade decays with a \Bz decaying semileptonically
+into a $D$ meson which also decays semileptonically, e.g. $\Bz\to D^{-} \ell^+ \bar{\nu_\ell}$
+followed by $D^{-} \to \Kstar \ell^- \nu_\ell$. The candidates built from these decays tend to have a low
+4-body invariant mass as two or more particles are not reconstructed. This is in general true for
+any partially reconstructed background from $B$ decays.
+
+In order to remove this background in the muonic channels, the 4-body $m(K\pi\mumu)$ invariant mass is recalculated
+with a kinematical fit (in the resonant case this includes a constraint of the dilepton mass to be the \jpsi nominal mass).
+This constraint has the effect of pushing the misreconstructed events far from the \Bz peak.
+Therefore, to avoid this background, it is sufficient to limit the analysis to 4-body invariant masses
+above 5150 \mevcc. %, which is sufficient to fit the peak.
+
+In the electronic case it is instead important to fit a wider mass window to correctly constrain the background
+therefore one cannot eliminate this mis-reconstructed background which is then modelled in the fit
+(for details see Sec.~\ref{sec:RKst_misreco_fit}).
+
+
+\subsection{$\phi$ veto}
+
+It can happen that a kaon from the decay $B_s \rightarrow \phi \ell^+\ell^-$, where the $\phi$ decays in two kaons,
+is mis-identified as a pion and therefore causes the $\phi$ to be reconstructed as a $\Kstar$. This results in
+a candidate with a value of $m_{K\pi}$ that is less than $m_{\Kstar}$ but still high enough to
+enter into the mass selection. In Fig.~\ref{fig:phiplots} is reported the plot of $m_{K\pi}$ versus
+$m_{K\pi \ell\ell}$, where the mass of the kaon has been assigned to the pion. A peak can clearly be seen
+around the $\phi$ mass (1020 \mevcc).
+To remove this background only candidates with $m_{K(\pi\rightarrow K)} > 1040$) are selected.
+This results in a 98\% signal rejection while keeping a 99\% signal efficiency.
+This cut could be further optimised using PID information. On the other hand LHCb simulation 
+struggles modelling the PID variables correctly. Therefore using PID in these cuts would
+add systematic uncertainties without significantly improving the signal efficiency which is already 99\%.
+The $\phi$ could also constitute a background when it decays into two leptons but the
+branching ratio of this decay is small compared to the one into kaons and this
+contribution is taken into account by the choice of the \qsq intervals.
+
+\begin{center}
+\begin{figure}[h!]
+\label{fig:phiplots}
+\centering 
+\includegraphics[width=0.48\textwidth]{RKst/figs/RKst/phi.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/RKst/Kmumu.pdf}
+\caption{ On the left the distribution of 2011 data events on the variables $(m_{K(\pi\rightarrow K)})$ 
+and $(m_{K(\pi\rightarrow K)\mu\mu})$, where $\pi\rightarrow K$ means that the kaon mass is given 
+to the pions too. On the right the mass of the three-body system $(m_{K\mu\mu})$
+where the peak due to the $B^+ \rightarrow K^+ \mu\mu$ decay is visible. }
+\end{figure}
+\end{center}
+
+
+\subsection{$\Bu \to K^+ \ell^+\ell^-$ plus a random pion}
+
+Some $\Bu \to K^+ \ell^+\ell^-$ decays can contaminate the upper \Bz mass sideband if they are reconstructed
+with a soft pion from somewhere else in the event. It can also happen the same but with a kaon
+misidentified as a pion. In Fig.~\ref{fig:phiplots} the three-body invariant mass,
+$m_{K\mu\mu}$, distribution is shown. This is characterised by a narrow peak at the $\Bu$ mass. Since these
+events have $m_{K\pi\ell\ell} > 5380$ \mevcc  there is no contribution under the \Bz peak,
+but they can cause problems when using sidebands events to train the neural network.
+An effective veto for this decay was found to be max$(m_{K\ell\ell},m_{K\to\pi\ell\ell}) < 5100 ~\mbox{MeV/c}^2$,
+which results in 95\% background rejection while keeping 99\% signal efficiency.
+
+\subsection{$\Lambda_b$ decays}
+
+\Lb\to\Lz\jpsi decays are unlikely to be reconstructed as $\Bz \to \Kstar \ell^+\ell^-$ because
+the \Lz is long-lived and decays further in the detector with a separate vertex.
+Simulated events were used to check how many candidates fall into our \Bz samples and found the amount negligible. 
+The $\Lb\to\jpsi pK$ decay can instead contribute more easily since the $m(pK)$ is above the \Lz threshold
+and therefore they must come from $\Lz^*$ resonances, which are not long-lived. This background is already
+reduced using PID but a non-negligible contribution is still expected in the $\mu\mu$ sample, which is modelled in the fit.
+
+\subsubsection{Other peaking backgrounds}
+
+A possible background could come from $\Bz \to\Kstar\gamma$ decays where the photon converts
+into two electrons while traversing the detector. In LHCb, around 40\% of photons convert before the calorimeter,
+but only a small fraction of these, $\sim 10\%$, are reconstructed. Furthermore these events fall
+into a \qsq region well below the intervals considered in these analysis and their contribution is therefore negligible.
+Similar decays are also $\Bz \to\Kstar\eta$ and $\Bz \to\Kstar\pi^0$ where $\eta$ and the pion decay into
+two photons. Once again the contribution from these decays falls well below the considered \qsq intervals.
+Finally, a potentially dangerous background could come from events where the
+identity of the kaon and the pion are swapped as these candidates peak under the signal.
+Their contribution is found to be small, 0.5\%, however the effect of their modelling into the fit
+is taken into account in the systematic uncertainties.
+
+
+\section{Multivariate analysis}
+
+The final selection is performed using a Neural Network classifier (NN) based on the NeuroBayes
+package \cite{Feindt:2006pm,feindt-2004}. The multivariate analysis is intended to remove
+some combinatorial background and obtain a clearer signal peak.
+
+Representative samples of the signal and background are needed to train the classifier.
+For the signal, fully reconstructed \BdToKstmm and \BdKstee Monte Carlo events can be used.
+To the classifier is also passed the event weight calculated to improve the data-simulation
+agreement (see Sec. \ref{sec:RKst_mc_weighting}).
+A sample representative of the background can be obtained taking real data events
+in the upper \Bz sideband ($m_{\Bz} > 5400$ \mevcc). The lower sideband it is not
+used in the training as it contains a significant fraction of mis-reconstructed background.
+All pre-selection cuts are applied to the background samples used for the training.
+As L0 and PID variables are not well described these cuts are not applied in the Monte Carlo
+samples but their effect is taken into account by the event weight.
+For the training 50\% of the sideband events was used, keeping the other 50\% for testing.
+For the signal sample a number of Monte Carlo events was used equal to the number available for
+the background sample. This corresponds to $\sim 1600$ events for the \mumu training and $\sim 500$ for \ee.
+
+The input to the NN consists of 22 variables containing information about the kinematic of the decays
+and the quality of tracks and vertices. All the variables used are listed in Tab.~\ref{tab:RKst_mva_vars}.
+%
+%In appendix \ref{app:MC_data_comp} we report comparisons between the variable used in data and Monte Carlo.
+%On data we extract the signal distribution using the sideband subtraction technique.
+%Under ``only this" we show how much power has single input independent of all others. Under ``loss" we
+%provide information of how much power we loose if we remove this single input and retain all others.
+%
+%Further details on the definition and calculation of the
+%variables importance is available in Ref.~\cite{LHCb-ANA-2011-094}.
+The graphical representation of the correlation matrices are shown in Fig.~\ref{fig:Rkst_nnCorrelation},
+in these figures the variable with ID = 1 is the NN output and the other IDs are reported in Tab.~\ref{tab:RKst_mva_vars}.
+%
+The single most discriminating variable used is the $\chi^2$ of a kinematical fit
+that constrains the decay product of the \Bz, the \Kstar and the dimuon, to originate from their respective vertices.
+Other variables that contribute significantly are the $\chi^2_{IP}$ of \jpsi and \Kstar, the transverse momentum
+of the \Bz and the pointing direction (DIRA) of the reconstructed \Bz to the primary vertex.
+The list the 10 most important variables is reported in Tab.~\ref{tab:RKst_nnInputs}, together
+with information on the relative importance of each input. The meaning of the column headings
+in this table was already explained in Sec.~\ref{sec:Lb_mva}.
+
+\begin{table}
+\centering
+\begin{tabular}{l|l}
+Particle 	& Variables \\ \hline
+\Bz			& $\chi^2_{DTF}/\text{ndf}$ [1], DIRA [19], $\chi^2_{FD}$ [15], $\chi^2_{vtx}/\text{ndf}$ [12], \chisqip [14], \pt [7] \\
+\Kstar		& $\chi^2_{FD}$ [21], $\chi^2_{vtx}/\text{ndf}$ [11], \chisqip [2], \pt [5] \\
+Dilepton	& $\chi^2_{FD}$ [17], $\chi^2_{vtx}/\text{ndf}$ [13], \chisqip [20], \pt [6] \\
+$e$			& \chisqip [3][4], \pt [9][10]\\
+$\mu$		& \chisqip [14][15], \pt [9][10]\\
+K			& \chisqip [18], \pt [16]\\
+$\pi$		& \chisqip [22], \pt [8]\\
+\end{tabular}
+\caption{Variables used as inputs for the NN training.
+Next to each variable the ID number in brackets provides the index
+reported in the correlation matrices shown in Fig.~\ref{fig:Rkst_nnCorrelation}.
+}
+\label{tab:RKst_mva_vars}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Summary of inputs to the neural network in order of importance. The 10 most discriminating variables are shown.
+%Id provides index to correlation matrices shown in Fig.~\ref{fig:Rkst_nnCorrelation}.
+Column ``adds'' gives correlation significance added by given input when adding it to list of those
+ranked above, ``only this'' provides power of given input alone and ``loss'' shows how much information
+is lost when removing only given input. Decay Tree Fit is performed using DecayTreeFitter tool
+on whole decay chain with constraining tracks to appropriate vertex topology and the $m(p\pi)$
+invariant mass to the PDG value.}
+\begin{tabular}{|c|ccc|c|ccc|}\hline
+\multicolumn{4}{|c|}{Muons} 														& \multicolumn{4}{c|}{Electrons}						  \\ \hline   
+Input                   			& Adds 			& Only this 	& Loss 			& Input        							& Adds      & Only this & Loss    \\ \hline
+$ \Bz$ $\chi^2_{DTF}/\text{ndf} $		& 80.44 		& 80.44 		& 13.14  		&	$ \Bz$ $\chi^2_{DTF}/\text{ndf} $		& 28.70 		& 28.70 		& 3.94  \\
+$ \Kstar$ $\chisqip $		& 22.26 		& 67.58 		& 3.48  		&	$ \Kstar$ $\chisqip $		& 12.71 		& 25.11 		& 1.57  \\
+$ \Bz\text{DIRA} $		& 10.58 		& 71.24 		& 3.95  		&	$ e_{2}$ $\chisqip $		& 6.56 		& 20.19 		& 3.30  \\
+$ \Kstar$ $\pt $		& 9.16 		& 49.13 		& 2.07  		&	$ e_{1}$ $\chisqip $		& 5.54 		& 19.66 		& 2.60  \\
+$ \jpsi$ $\chisqip $		& 6.58 		& 56.15 		& 1.35  		&	$ \Kstar$ $\pt $		& 3.74 		& 15.35 		& 3.14  \\
+$ \Bz$ $\pt $		& 6.00 		& 41.42 		& 4.39  		&	$ \jpsi$ $\pt $		& 4.81 		& 5.55 		& 3.18  \\
+$ \mu_{1}$ $\pt $		& 2.96 		& 15.85 		& 3.79  		&	$ \Bz$ $\pt $		& 2.78 		& 13.01 		& 2.20  \\
+$ \mu_{2}$ $\pt $		& 2.73 		& 15.04 		& 3.46  		&	$ \pi$ $\pt $		& 3.08 		& 7.93 		& 1.83  \\
+$ \jpsi$ $\pt $		& 3.06 		& 16.41 		& 2.84  		&	$ e_{2}$ $\pt $		& 2.35 		& 9.81 		& 2.74  \\
+$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 2.41 		& 28.14 		& 2.38  		&	$ e_{1}$ $\pt $		& 2.15 		& 8.04 		& 2.28  \\
+
+%$ \Bz$ $\chi^2_{FD} $		& 2.03 		& 63.73 		& 1.37  		&	$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 1.75 		& 7.45 		& 1.89  \\
+%$ \mu_{1}$ $\chisqip $		& 1.45 		& 47.90 		& 1.75  		&	$ \Bz$ $\chi^2_{vtx}/\text{ndf} $		& 1.83 		& 27.54 		& 1.95  \\
+%$ \mu_{2}$ $\chisqip $		& 1.04 		& 43.24 		& 1.20  		&	$ \jpsi$ $\chi^2_{vtx}/\text{ndf} $		& 1.10 		& 11.28 		& 1.16  \\
+%$ K$ $\chisqip $		& 0.84 		& 62.99 		& 0.71  		&	$ \Bz$ $\chisqip $		& 1.11 		& 14.35 		& 1.24  \\
+%$ \jpsi$ $\chi^2_{FD} $		& 0.60 		& 55.41 		& 0.62  		&	$ \Bz$ $\chi^2_{FD} $		& 0.93 		& 25.65 		& 1.21  \\
+%$ \Bz$ $\chi^2_{vtx}/\text{ndf} $		& 0.56 		& 74.60 		& 0.61  		&	$ K$ $\pt $		& 0.82 		& 14.26 		& 0.61  \\
+%$ \pi$ $\pt $		& 0.55 		& 34.94 		& 0.48  		&	$ \jpsi$ $\chi^2_{FD} $		& 0.69 		& 23.85 		& 0.63  \\
+%$ \Kstar$ $\chi^2_{FD} $		& 0.34 		& 64.88 		& 0.41  		&	$ K$ $\chisqip $		& 0.56 		& 23.59 		& 0.52  \\
+%$ \pi$ $\chisqip $		& 0.32 		& 56.92 		& 0.30  		&	$ \Bz\text{ $		& 0.53 		& 24.50 		& 0.52  \\
+%$ \Bz$ $\chisqip $		& 0.30 		& 52.17 		& 0.30  		&	$ \jpsi$ $\chisqip $		& 0.37 		& 23.54 		& 0.38  \\
+%$ \jpsi$ $\chi^2_{vtx}/\text{ndf} $		& 0.07 		& 18.35 		& 0.07  		&	$ \Kstar$ $\chi^2_{FD} $		& 0.09 		& 23.66 		& 0.07  \\
+%$ K$ $\pt $		& 0.03 		& 43.58 		& 0.03  		&	$ \pi$ $\chisqip $		& 0.01 		& 19.89 		& 0.01  \\
+
+
+\hline
+\end{tabular}
+\label{tab:RKst_nnInputs}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{RKst/figs/Training/electrons/correlation.pdf}
+\includegraphics[width=0.8\textwidth]{RKst/figs/Training/muons/correlation.pdf}
+\caption{Graphical representation of correlation matrix between truth and neural network inputs.
+Column/row number 1 is correlation to the truth (whether candidate is signal or background). All
+others give correlation between inputs with numbering scheme corresponding to the id column of table
+\ref{tab:nnInputs}. Correlation is calculated using all events without distinguishing signal and
+background.}
+\label{fig:Rkst_nnCorrelation}
+\end{figure}
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_wNB_TrainAndTest.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_wNB_TrainAndTest.pdf}
+
+\caption{NN output distributions for training (solid) and test (stripes) samples, for MC signal and data sideband events.
+For the muon training (left) and the electron one (right).}
+\label{fig:RKst_nnDist}
+\end{figure}
+
+Figure \ref{fig:RKst_nnDist} shows distributions of neural network output for signal and background.
+On this plot distributions from test samples are also overlaid in order to check for overtraining. 
+The distributions follow the same slope but with different fluctuations so we conclude that we have no
+significant overtraining. In general we conclude that the neural network is able to separate signal
+from background and that the training converged properly.
+
+It can happen that too much information is given to the classifier which becomes able to 
+calculate the invariant mass of the candidates generating fake peaks. It is therefore important to check
+for correlations between the \Bz mass and the NN output.  Fig \ref{fig:RKst_NNprofiles} reports plots of
+the average NN output as a function of the \Bz mass on sideband data and simulated signal events.
+The distributions do not show potential for peaks, so we conclude that no significant correlation is present.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.4\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf}
+\includegraphics[width=0.4\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.4\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf}
+\caption{Average value of NN output as a function of \Bz mass for data
+sideband (left) and MC signal (right) events for the electron (top) and muon (bottom) training.}
+\label{fig:RKst_NNprofiles}
+\end{figure}
+
+
+% Cut selection
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_FoM.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_FoM.pdf}
+\caption{Dependence of figure-of-merit on the requirement on neural network output
+for electrons (left) and muons (right). The vertical lines corresponds to the chosen cuts.}
+\label{fig:RKst_FOM}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_ROC.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_ROC.pdf}
+\caption{Receiver operating characteristic (ROC) curves for electrons (left) and muons (right).
+They show the signal efficiency versus the background rejection.}
+\label{fig:RKst_ROC}
+\end{figure}
+
+
+\section{MVA optimization}
+
+In order to optimise the cut on our neural network output the expected signal significance,
+$N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, was maximised.
+In this formula $N_\mathrm{S}$ is number of rare signal events and $N_\mathrm{B}$ the number of background events.
+
+The number of signal events accepted after a certain MVA output cut is derived from simulation.
+However, as an arbitrary number of events can be simulated, this has to be rescaled to the expected yield.
+This is done by fitting \decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)} events straight after pre-selection
+and scaling it down by the expected ratio between the rare and the resonant channels.
+The number of background events is instead derived by fitting the combinatorial background in the sideband
+with an exponential function and extrapolating the fit function below the signal peak.
+
+The dependence of the figure-of-merit for both the electron and muon trainings
+are shown in Fig.\ref{fig:RKst_FOM}, where the red line indicate the chosen cut: 0.75 for both samples.
+Curves of signal efficiency versus background rejection are shown in Fig.~\ref{fig:RKst_ROC}.
+Using the described MVA cuts the signal efficiency is $\sim 91\%$ for the muon channels
+and $\sim 84\%$ for the electron channels (for more details see Sec.~\ref{sec:Rkst_efficiency}),
+while the background rejections is $\sim 98\%$ on both samples.
+
+After full selection about $\sim 3\%$ of events still contain multiple candidates
+which are removed at random keeping only a single candidate per event.
+
+
+
+

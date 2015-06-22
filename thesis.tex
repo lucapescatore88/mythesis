@@ -1,0 +1,242 @@
+\documentclass[a4paper,twoside,12pt]{report}
+\usepackage[pdftex]{graphicx}
+\usepackage{tocloft}
+%
+\usepackage[smaller]{acronym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{atlasphysics}
+\usepackage{bbold}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage[pdftex,color]{changebar}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{lineno}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{type1cm}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{upgreek}
+%
+\usepackage{ifthen}
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false}
+
+\usepackage[Sonny]{fncychap} %Styles: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, and Bjornstrup.
+
+\input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+
+
+\newcommand{\thesistitle}{ A search for new physics in $b\rightarrow s \ell\ell$ transitions in mesonic and baryonic systems at the LHCb experiment.
+ } %Fill in title
+\newcommand{\thesisauthor}{L. Pescatore} %Fill in your name
+\newcommand{\thesisemail}{luca.pescatore@cern.ch} %Fill in your email
+%Choose your front page crest. crest_1 (photograph) or crest_2 (logo)
+\newcommand{\thesiscrest}{crest_1}
+
+\hypersetup{pdfpagelayout=TwoColumnRight,
+            colorlinks,
+            linkcolor=black,
+            urlcolor=black,
+            citecolor=blue,
+            pdftitle={\thesistitle},
+            pdfauthor={\thesisauthor},
+            pdfsubject={High Energy Particle Physics Thesis},
+            pdfcreator={\thesisemail}, 
+}
+
+%Set colour of change-bar
+\cbcolor{red}
+
+%Uncomment to add DRAFT watermark on every page
+%\makeatletter
+%\AddToShipoutPicture{%
+%            \setlength{\@tempdimb}{.5\paperwidth}%
+%            \setlength{\@tempdimc}{.5\paperheight}%
+%            \setlength{\unitlength}{1pt}%
+%            \put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+%        \makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.97}%
+%        {\fontsize{6cm}{6cm}\selectfont{DRAFT}}}}%
+%            }%
+%}
+%\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%% Page dimensions %%%%%%%%%%%%%%%%%%%%%
+\allsectionsfont{\sf} %sectsty
+
+\setlength{\parskip}{12pt}  % 12 pt = space between paragraphs
+\setlength{\parindent}{0pt} % 0 pt  = indentation
+
+\textwidth 15.0cm
+\textheight 235mm
+\footskip 10 mm
+
+%5mm is nominal, add remove 4mm
+\setlength{\oddsidemargin}{1mm}
+\setlength{\evensidemargin}{9mm}
+
+\addtolength{\topmargin}{0cm}
+
+\topmargin=0mm
+\headheight=15pt
+\headsep=10mm
+%%%%%%%%%%%%%%%%%%%%%% Page dimensions %%%%%%%%%%%%%%%%%%%%%
+
+% References
+\newcommand{\refeq}[1]{(\ref{#1})}
+\newcommand{\reftab}[1]{Table~\ref{#1}}
+\newcommand{\reftabs}[1]{Tables~\ref{#1}}
+\newcommand{\reffig}[1]{Figure~\ref{#1}}
+\newcommand{\reffigs}[1]{Figures~\ref{#1}}
+\newcommand{\refsec}[1]{Section~\ref{#1}}
+\newcommand{\refapp}[1]{Appendix~\ref{#1}}
+
+% Put your shortcuts here
+\newcommand{\invmicrobarn}{\ensuremath{\mu\textrm{b}^{-1}}\xspace}
+\newcommand{\microbarn}{\ensuremath{\mu\textrm{b}}\xspace}
+\newcommand{\invsqcminvs}{\ensuremath{\textrm{cm}^{-2}\textrm{s}^{-1}}\xspace}
+\newcommand{\mus}{\ensuremath{\mu\textrm{s}}\xspace}
+\newcommand{\mum}{\ensuremath{\mu\textrm{m}}\xspace}
+%\newcommand{\sqs}{\ensuremath{\sqrt{s} = 7}~\TeV\xspace}
+
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{center}
+    {\huge\sc \thesistitle}\\
+    \vspace{3.0cm}
+    {\Large\bf \thesisauthor}\\
+    \vspace{1.5cm}
+    {\large\em Thesis submitted for the degree of}\\
+    {\large\em Doctor of Philosophy}\\
+    \vspace{1.5cm}
+  \end{center}
+  \begin{center}
+    \resizebox{6cm}{!}{
+    \includegraphics*{fig/\thesiscrest}}
+  \end{center}
+  \begin{flushleft}
+    \hspace{7.5cm} Particle Physics Group, \\
+    \hspace{7.5cm} School of Physics and Astronomy, \\
+    \hspace{7.5cm} University of Birmingham. \\
+    \vspace{1cm}
+    \hspace{7.5cm} \emph{\today} \\
+  \end{flushleft}
+  \begin{center}
+  \end{center}
+\end{titlepage}
+
+\setstretch{1} 
+\thispagestyle{empty}%BLANK PAGE
+~
+\newpage
+\thispagestyle{empty}%BLANK PAGE
+~
+\newpage
+
+\pagenumbering{roman} %INTRO
+
+\pagestyle{fancy} %Set up page style
+\fancyfoot{} % clear all footer fields
+\fancyhead{}
+\fancyhead[RE]{\sf \slshape \rightmark \hspace{5mm} \thepage }
+\fancyhead[LO]{\sf \thepage \hspace{5mm} \slshape \leftmark }
+
+%%%%%%%%%%%%%%%%%%%%%% Preamble Formatting %%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\renewcommand\tocloftpagestyle{fancy}
+\renewcommand\cftchapfont{\large\sf}
+\renewcommand\cftsecfont{\normalsize \sf}
+\renewcommand\cftsubsecfont{\small\sf}
+\renewcommand\cftsubsubsecfont{\footnotesize \sf}
+%
+\renewcommand\cftchappagefont{\bfseries\sffamily}
+\renewcommand\cftsecpagefont{\bfseries\sffamily}
+\renewcommand\cftsubsecpagefont{\bfseries\sffamily}
+\renewcommand\cftsubsubsecpagefont{\bfseries\sffamily}
+%
+\renewcommand\cftloftitlefont{\Huge\sf}
+\renewcommand\cftlottitlefont{\Huge\sf}
+\renewcommand\cfttoctitlefont{\Huge\sf}
+%%%%%%%%%%%%%%%%%%%%%% Preamble Formatting %%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% Abstract %%%%%%%%%%
+\include{abstract}
+%%%%%%%%%% Abstract %%%%%%%%%%
+
+\tableofcontents
+\clearpage
+
+%\listoftables
+%\clearpage
+
+%\listoffigures
+%\clearpage
+
+%\chapter*{DEFINITIONS OF ACRONYMS}
+%\sectionmark{DEFINITIONS OF ACRONYMS}
+%\chaptermark{DEFINITIONS OF ACRONYMS}
+%\input{acronym.tex}
+
+%\cleardoublepage
+\pagenumbering{arabic}
+\setstretch{1.5} %Officially should be line spacing 2. But I think it looks too ugly
+\linenumbers %Uncomment for line numbering
+
+%%%%%%%%%% Main Body Text %%%%%%%%%%
+
+\include{Introduction/introduction}
+
+\include{Detector/detector}
+
+%%%%%%%%%%%%%  Lb->Lmumu
+\include{Lmumu/introduction_th}
+\include{Lmumu/selection_th}
+\include{Lmumu/fit}
+\include{Lmumu/efficiency}
+\include{Lmumu/systematics}
+\include{Lmumu/summaryBR}
+\include{Lmumu/afbmethod}
+\include{Lmumu/ang_fit_strategy}
+\include{Lmumu/ang_sys_and_results}
+
+%%%%%%%%%%%%%  RKst
+
+\include{RKst/introduction}
+\include{RKst/selection}
+\include{RKst/fit}
+\include{RKst/efficiency}
+\include{RKst/systematics}
+\include{RKst/result}
+
+%%%%%%%%%%%%%%%%%%%%
+
+%\include{conclusions}
+
+\setstretch{1}
+\cleardoublepage
+\renewcommand{\bibname}{REFERENCES}
+\bibliographystyle{ieeetr}
+\bibliography{thesis,lmumu,LHCb-PAPER,LHCb-TDR,LHCb-CONF,LHCb-DP}
+\clearpage
+
+%%%%%%%%%% Appendix %%%%%%%%%%
+\appendix
+%\chapter{Appendices}
+\include{Lmumu/angularAppendix}
+%\include{Lmumu/appendixNNImportance}
+\include{Lmumu/appMCdataComp}
+\include{Lmumu/appendix_Lb_sys}
+%\include{Lmumu/appendixAngObservables}
+
+
+\end{document} 

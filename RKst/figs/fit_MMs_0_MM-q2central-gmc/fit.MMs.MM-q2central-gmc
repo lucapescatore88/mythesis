@@ -1,0 +1,8 @@
+#!/bin/tcsh
+set PWD = `pwd`
+cd /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_MMs_0_MM-q2central-gmc
+if ( -f tmp.root ) rm -rf tmp.root
+if ( $PWD != /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_MMs_0_MM-q2central-gmc ) ln -sf $PWD/tmp.root .
+source /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/scripts/SetupRKst.csh
+./fitMMs.out -MM-q2central-gmc
+rm -rf tmp.root

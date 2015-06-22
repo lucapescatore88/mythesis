@@ -1,0 +1,96 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: Introduction/introduction.aux
+A level-1 auxiliary file: Detector/detector.aux
+A level-1 auxiliary file: Lmumu/introduction.aux
+A level-1 auxiliary file: Lmumu/selection.aux
+A level-1 auxiliary file: Lmumu/physicsBg.aux
+A level-1 auxiliary file: Lmumu/fit.aux
+A level-1 auxiliary file: Lmumu/efficiency.aux
+A level-1 auxiliary file: Lmumu/systematics.aux
+A level-1 auxiliary file: Lmumu/summaryBR.aux
+A level-1 auxiliary file: Lmumu/afbmethod.aux
+A level-1 auxiliary file: Lmumu/systematicsAfb.aux
+A level-1 auxiliary file: Lmumu/summaryAfb.aux
+A level-1 auxiliary file: RKst/introduction.aux
+A level-1 auxiliary file: RKst/selection.aux
+A level-1 auxiliary file: RKst/fit.aux
+A level-1 auxiliary file: RKst/efficiency.aux
+A level-1 auxiliary file: RKst/systematics.aux
+A level-1 auxiliary file: RKst/result.aux
+The style file: ieeetr.bst
+Database file #1: thesis.bib
+Database file #2: lmumu.bib
+Warning--entry type for "LHCb-ANA-2011-094" isn't style-file defined
+--line 413 of file lmumu.bib
+Warning--entry type for "CDF:10894" isn't style-file defined
+--line 647 of file lmumu.bib
+Database file #3: LHCb-PAPER.bib
+Database file #4: LHCb-TDR.bib
+Database file #5: LHCb-CONF.bib
+Database file #6: LHCb-DP.bib
+Warning--I didn't find a database entry for "SMimage"
+Warning--I didn't find a database entry for "wikiCherenkov"
+Warning--I didn't find a database entry for "Glashow:1961tr"
+Warning--I didn't find a database entry for "Wu:1957my"
+Warning--I didn't find a database entry for "Zwicky:1933gu"
+Warning--I didn't find a database entry for "Dunkley:2008ie"
+Warning--I didn't find a database entry for "Gavela:1993ts"
+Warning--I didn't find a database entry for "Maltoni:2011zz"
+Warning--I didn't find a database entry for "Filippis:2013ana"
+Warning--I didn't find a database entry for "Isidori:2012ts"
+Warning--I didn't find a database entry for "Buras:2003jf"
+Warning--I didn't find a database entry for "Fayet:1976cr"
+Warning--I didn't find a database entry for "Randall:1999ee"
+Warning--I didn't find a database entry for "lhc"
+Warning--I didn't find a database entry for "Aaij:2010gn"
+Warning--I didn't find a database entry for "*Agostinelli:2002hh"
+Warning--I didn't find a database entry for "Brun:2000es"
+Warning--empty journal in Karbach:2011uz
+Warning--empty journal in TomRDreview
+Warning--empty journal in LHCb-PAPER-2014-024
+Warning--empty author in LHCb:2003ab
+Warning--empty journal in LHCb:2003ab
+You've used 54 entries,
+            1876 wiz_defined-function locations,
+            870 strings with 12362 characters,
+and the built_in function-call counts, 14009 in all, are:
+= -- 1455
+> -- 473
+< -- 1
++ -- 178
+- -- 124
+* -- 749
+:= -- 1844
+add.period$ -- 58
+call.type$ -- 54
+change.case$ -- 53
+chr.to.int$ -- 0
+cite$ -- 59
+duplicate$ -- 890
+empty$ -- 1257
+format.name$ -- 124
+if$ -- 3628
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 47
+newline$ -- 171
+num.names$ -- 53
+pop$ -- 181
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 763
+stack$ -- 0
+substring$ -- 633
+swap$ -- 475
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 104
+width$ -- 56
+write$ -- 518
+(There were 24 warnings)

@@ -1,0 +1,36 @@
+\section{Importance of inputs in NeuroBayes}
+\label{ap:nnImportance}
+
+All quantities related to the importance of the input
+are calculated based on the correlation of
+the variables to the classification truth. To calculate
+the  correlation significance,
+one calculates for each variable the correlation to the truth
+defined as
+$$
+\rho^{ti}=\frac{\frac{1}{n}\sum_{j=1}^{n}\left(x^{t}_{j}-<x^{t}>\right)\cdot\left(x^{i}_{j}-<x^i>\right)}{\sqrt{V[x^t]V[x^i]}},
+$$
+where $t$ denotes the truth, $i$ the correlated
+variable, $<x^i>$ the expectation
+value for the given variable, $V[x^i]$ its variance and $n$ is
+number of events in training sample. Then the
+correlation significance for a given variable is
+$\rho^{ti}\cdot\sqrt{n}$. For the significance loss, we first
+decorrelate all input quantities and than calculate the
+correlation between the truth and each decorrelated variable
+$\tilde\rho^{ti}$. The total correlation is then defined by
+$$
+\rho_{TN}^2=\sum_{i=1}^{N}\tilde\rho^{ti2},
+$$
+where $N$ is the number of variables. An analogous procedure is
+repeated without the considered variable to calculate
+$\rho_{TN-1}^2$. The significance loss is then given by
+$$
+\left(\rho_{TN}^2-\rho_{TN-1}^2\right)\cdot\sqrt{n}.
+$$
+Intuitively, the correlation significance is proportional to
+the amount of information which is provided by a given quantity
+without all others while the significance loss corresponds to
+the amount of information lost for the neural network if we
+remove the given quantity while we keep all others.
+

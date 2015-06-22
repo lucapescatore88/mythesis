@@ -1,0 +1,8 @@
+#!/bin/tcsh
+set PWD = `pwd`
+cd /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_EEs_0_EE-q2high-gmc
+if ( -f tmp.root ) rm -rf tmp.root
+$HOME/private/scripts/tmp.csh $PWD /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_EEs_0_EE-q2high-gmc
+source /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/scripts/SetupRKst.csh
+./fitEEs.out -EE-q2high-gmc
+rm -rf tmp.root
