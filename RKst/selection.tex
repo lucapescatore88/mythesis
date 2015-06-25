@@ -230,31 +230,6 @@ In the kaon case we do not use requirements on the $K\to\pi$ mis-ID probability
 because this cut was found to be unacceptably inefficient.
 
 
-\section{Breamsstrahlung recovery for electrons}
-
-Bremsstrahlung is an electromagnetic radiation produced by particles, that decelerate or deviate because of
-the presence other charged particles. Typically electrons produce Bremsstrahlung when deflected by atomic nuclei.
-The probability of emitting breamsstrahlung radiation is proportional to the inverse of the squared mass of the
-particle ($1/m^2$) and therefore is relevant only for electrons. At these energies, if electrons radiate after
-the magnet, the photon will hit in the same calorimeter cells as the electron and the energy will be automatically
-recovered. However, if the photon is emitted before the magnet, the electron will be deflected by the magnetic
-field whereas the photon will continue on its initial trajectory, with its energy being deposited in a different
-part of the calorimeter. Missing this energy results in a poorer reconstructed \Bz mass resolution, so it is
-desirable to recover these bremsstrahlung photons, when possible.
-A tool for bremsstrahlung recovery is available in the LHCb analysis software.
-This tool looks for other clusters in the calorimeter and reconstructing the trajectory of the electron
-checks if they may have been emitted by that. Then the photon energy is added to the electron and its momentum
-recalculated. Figure \ref{bremreco} shows a schematic view of the process. For more information see
-Ref. \cite{LHCb:2003ab}.
-
-\begin{figure}[t!]
-\label{bremreco}
-\centering
-\includegraphics[width=0.6\textwidth]{RKst/figs/brem_recovery.png}
-\caption{Schematic view of the Breamsstrahlung recovery. }
-\end{figure}
-
-
 \section{Peaking backgrounds }
 
 Cuts are applied in order to remove background sources due to specific decays.
@@ -367,7 +342,7 @@ is taken into account in the systematic uncertainties.
 \section{Multivariate analysis}
 
 The final selection is performed using a Neural Network classifier (NN) based on the NeuroBayes
-package \cite{Feindt:2006pm,feindt-2004}. The multivariate analysis is intended to remove
+package~\cite{Feindt:2006pm,feindt-2004}. The multivariate analysis is intended to remove
 some combinatorial background and obtain a clearer signal peak.
 
 Representative samples of the signal and background are needed to train the classifier.

@@ -24,22 +24,24 @@
 \usepackage{url}
 \usepackage{xspace}
 \usepackage{upgreek}
-%
 \usepackage{ifthen}
 \newboolean{uprightparticles}
 \setboolean{uprightparticles}{false}
-
 \usepackage[Sonny]{fncychap} %Styles: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, and Bjornstrup.
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
 
+%\makeatletter \def\@maketitle{% \newpage \null \vskip 2em% \begin{center}% \let \footnote \thanks {\LARGE \@title \par}% \vskip 1.5em% {\large \lineskip .5em% \begin{tabular}[t]{c}% \@author \end{tabular}\par}% \vskip 1em% {\large \@date}% \end{center}% \par \vskip 1.5em} \makeatother
 
-\newcommand{\thesistitle}{ A search for new physics in $b\rightarrow s \ell\ell$ transitions in mesonic and baryonic systems at the LHCb experiment.
- } %Fill in title
+\newcommand{\thesistitle}{
+Searching for new physics  \\
+in $\bquark\to\squark\ell^+\ell^-$ transitions \\
+ at the LHCb experiment
+ }
 \newcommand{\thesisauthor}{L. Pescatore} %Fill in your name
 \newcommand{\thesisemail}{luca.pescatore@cern.ch} %Fill in your email
 %Choose your front page crest. crest_1 (photograph) or crest_2 (logo)
-\newcommand{\thesiscrest}{crest_1}
+\newcommand{\thesiscrest}{crest_2}
 
 \hypersetup{pdfpagelayout=TwoColumnRight,
             colorlinks,
@@ -111,7 +113,9 @@
 
 \begin{titlepage}
   \begin{center}
-    {\huge\sc \thesistitle}\\
+    \huge\sc\linespread{2} \thesistitle\\
+    \end{center}
+    \begin{center}
     \vspace{3.0cm}
     {\Large\bf \thesisauthor}\\
     \vspace{1.5cm}
@@ -199,8 +203,10 @@
 \include{Detector/detector}
 
 %%%%%%%%%%%%%  Lb->Lmumu
-\include{Lmumu/introduction_th}
-\include{Lmumu/selection_th}
+\part{Differential branching fraction and angular analysis of the rare \Lb\to\Lz\mumu decay}
+\label{par:Lmumu}
+\include{Lmumu/introduction}
+\include{Lmumu/selection}
 \include{Lmumu/fit}
 \include{Lmumu/efficiency}
 \include{Lmumu/systematics}
@@ -211,6 +217,8 @@
 
 %%%%%%%%%%%%%  RKst
 
+\part{The $R_{\Kstarz}$ analysis}
+\label{par:RKst}
 \include{RKst/introduction}
 \include{RKst/selection}
 \include{RKst/fit}
@@ -226,17 +234,16 @@
 \cleardoublepage
 \renewcommand{\bibname}{REFERENCES}
 \bibliographystyle{ieeetr}
-\bibliography{thesis,lmumu,LHCb-PAPER,LHCb-TDR,LHCb-CONF,LHCb-DP}
+\bibliography{main,lmumu,LHCb-PAPER,LHCb-TDR,LHCb-CONF,LHCb-DP}
 \clearpage
 
 %%%%%%%%%% Appendix %%%%%%%%%%
 \appendix
-%\chapter{Appendices}
+%\part{Appendices}
 \include{Lmumu/angularAppendix}
 %\include{Lmumu/appendixNNImportance}
 \include{Lmumu/appMCdataComp}
 \include{Lmumu/appendix_Lb_sys}
-%\include{Lmumu/appendixAngObservables}
 
 
 \end{document} 
