@@ -344,10 +344,9 @@ T.~M. Karbach, ``{Feldman-Cousins Confidence Levels - Toy MC Method},'' 2011.
 G.~Hiller and F.~Kruger, ``{More model independent analysis of $b \to s$
   processes},'' {\em Phys.Rev.}, vol.~D69, p.~074020, 2004.
 
-\bibitem{LHCb-PAPER-2014-024}
-R.~Aaij {\em et~al.}, ``{Test of lepton universality using $B^+\to
-  K^+\ell^+\ell^-$ decays},'' 2014.
-\newblock {to appear in Phys. Rev. Lett.}
+\bibitem{Hiller:2014ula}
+G.~Hiller and M.~Schmaltz, ``{Diagnosing lepton-nonuniversality in $b \to s
+  \ell \ell$},'' {\em JHEP}, vol.~1502, p.~055, 2015.
 
 \bibitem{Lees:2012tva}
 J.~Lees {\em et~al.}, ``{Measurement of Branching Fractions and Rate
@@ -358,6 +357,15 @@ J.~Lees {\em et~al.}, ``{Measurement of Branching Fractions and Rate
 J.-T. Wei {\em et~al.}, ``{Measurement of the Differential Branching Fraction
   and Forward-Backword Asymmetry for $B \rightarrow K^{(*)}l^+l^-$},'' {\em
   Phys.Rev.Lett.}, vol.~103, p.~171801, 2009.
+
+\bibitem{LHCb-PAPER-2014-024}
+R.~Aaij {\em et~al.}, ``{Test of lepton universality using $B^+\to
+  K^+\ell^+\ell^-$ decays},'' 2014.
+\newblock {to appear in Phys. Rev. Lett.}
+
+\bibitem{sPlot}
+M.~Pivk and F.~R. Le~Diberder, ``{SPlot: A Statistical tool to unfold data
+  distributions},'' {\em Nucl.Instrum.Meth.}, vol.~A555, pp.~356--369, 2005.
 
 \bibitem{Loki_twiki}
 ``Lhcb loki twiki.''
@@ -372,10 +380,6 @@ J.-T. Wei {\em et~al.}, ``{Measurement of the Differential Branching Fraction
 \bibitem{Verkerke:2003ir}
 W.~Verkerke and D.~P. Kirkby, ``{The RooFit toolkit for data modeling},'' {\em
   eConf}, vol.~C0303241, p.~MOLT007, 2003.
-
-\bibitem{sPlot}
-M.~Pivk and F.~R. Le~Diberder, ``{SPlot: A Statistical tool to unfold data
-  distributions},'' {\em Nucl.Instrum.Meth.}, vol.~A555, pp.~356--369, 2005.
 
 \bibitem{Aaij:1978280}
 R.~e.~a. Aaij, ``{LHCb Detector Performance},'' {\em Int. J. Mod. Phys. A},

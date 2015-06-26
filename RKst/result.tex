@@ -8,12 +8,12 @@ of the methods used.
 \section{$R_{\jpsi}$ sanity check}
 
 In order to cross-check the analysis procedure, the ratio between the
-measured branching ratio of the electronic and muonic resonant channels is calculated:
+measured branching ratio of the electron and muonic resonant channels is calculated:
 
 \begin{equation}
-R_{\jpsi} = \frac{\BR(\Bz\to\Kstar\jpsi\to \mu\mu)} {\BR(\Bz\to\Kstar(\jpsi\to \ee))} 
-= \frac{\varepsilon_{\jpsi \mu\mu} \cdot N_{\Bz\to\Kstar(\jpsi\to \ee)}}{\varepsilon_{\jpsi \ee} 
-\cdot N_{\Bz\to\Kstar\jpsi\to \mu\mu}}.
+R_{\jpsi} = \frac{\BR(\Bz\to\Kstarz\jpsi(\to \mumu))} {\BR(\Bz\to\Kstarz\jpsi(\to \epem))} 
+= \frac{\varepsilon_{\jpsi(\mu\mu)} \cdot N_{\Bz\to\Kstarz\jpsi(\to \epem)}}{\varepsilon_{\jpsi(ee)} 
+\cdot N_{\Bz\to\Kstarz\jpsi(\to \mumu)}}.
 \end{equation}
 
 One could also look at the single absolute branching fractions but this ratio
@@ -36,15 +36,14 @@ final state, do not cancel.
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{c|c}
-
-$R_{J/\psi}$ (L0E) 	& $ 1.01618  \pm  0.00896 $ \\
-$R_{J/\psi}$ (L0H) 	& $ 0.94276  \pm  0.02315 $ \\
-$R_{J/\psi}$ (L0I) 	& $ 1.14471  \pm  0.01758 $ \\
-  \end{tabular}
  \caption{Fully corrected measured values of the ratio
  $\BR(\Bz\to\Kstar\jpsi\to \mu\mu) / \BR(\Bz\to\Kstar\jpsi\to ee)$
  in the three electron trigger categories. }
+\begin{tabular}{c|c}
+$R_{J/\psi}$ (L0E) 	& $ 1.01618  \pm  0.00896 $ \\
+$R_{J/\psi}$ (L0H) 	& $ 0.94276  \pm  0.02315 $ \\
+%$R_{J/\psi}$ (L0I) 	& $ 1.14471  \pm  0.01758 $ \\
+  \end{tabular}
  \label{tab:Rjpsi}
 \end{table}
 
@@ -65,10 +64,8 @@ R_{\Kstar} = \frac{R_{ee}}{R_{\mu\mu}}
 = \frac{N_{ee}}{N_{\jpsi(ee)}} 
 \cdot \frac{N_{\jpsi(\mu\mu)}}{N_{\mu\mu}}
 \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{ee}} 
-\cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}},
+\cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}}.
 \end{equation}
-
-where $\Bz\to\Kstar$ has been neglected for brevity.
 
 As the electron ratio $R_{ee}$ is a shared parameter in the simultaneous fit to the
 three electron categories its value is already a combination of the three samples.
@@ -76,6 +73,7 @@ Results are shown in Tab.~\ref{tab:RKst_results}.
 
 \begin{table}
 \centering
+ \caption{Measured values of $R_{ee}$, $R_{\mu\mu}$ and $R_{\Kstar}$ ratios.}
 \begin{tabular}{|c|c|c|}
 \hline
  Ratio 			& 1--6 GeV$^2/c^4$ & 15--20 GeV$^2/c^4$\\ \hline
@@ -84,7 +82,6 @@ Results are shown in Tab.~\ref{tab:RKst_results}.
 \hline $R_{K^*}$ 	& $ 0.61756  \pm  0.08950 $ 	& $ 0.45980  \pm  0.09919 $ \\
 \hline 
  \end{tabular}
- \caption{Measured values of $R_{ee}$, $R_{\mu\mu}$ and $R_{\Kstar}$ ratios.}
  \label{tab:RKst_results}
 \end{table}
 
@@ -92,7 +89,7 @@ Results are shown in Tab.~\ref{tab:RKst_results}.
 
 Multiplying the ratios $R_{ee}$ and $R_{\mu\mu}$ by the measured $\Bz\to\Kstar (\jpsi\to\ell^+\ell^-)$~\cite{PDG2014}
 branching ratios one can obtain absolute branching ratios for the rare channes:
-
+%
 \begin{equation}
 \begin{split}
 &\BR(\decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)}) = \BR(\decay{\Bz}{\Kstar\jpsi}) \times \BR(\decay{\Bz}{\ell\ell}) \\
@@ -102,9 +99,11 @@ branching ratios one can obtain absolute branching ratios for the rare channes:
 
 Table~\ref{tab:RKst_abs_BR} reports absolute branching ratio values for the rare channels in the considered 
 \qsq intervals, where the errors are statistical only.
-
-\begin{table}
+%
+\begin{table}[h]
 \centering
+\caption{Measured absolute branching ratio of the rare $\mu\mu$ and $ee$ channels in
+the central and high \qsq regions. Errors shown are statistical only. }
 \begin{tabular}{|c|c|c|}
 \hline
  Channel 			& 1--6 GeV$^2/c^4$ & 15--20 GeV$^2/c^4$\\ \hline
@@ -112,8 +111,7 @@ $ee$ 	& $( 2.37  \pm  0.34 )\times 10^{-7}$ 	& $( 3.09  \pm  0.67 )\times 10^{-7
  $\mu\mu$ 	& $( 1.47  \pm  0.10 )\times 10^{-7}$ 	& $( 1.42  \pm  0.09 )\times 10^{-7}$ \\
 \hline 
  \end{tabular}
-\caption{Measured absolute branching ratio of the rare $\mu\mu$ and $ee$ channels in
-the central and high \qsq regions. Errors shown are statistical only. }
+
 \label{tab:RKst_abs_BR}
 \end{table}
 
@@ -130,8 +128,9 @@ and the expected ones are obtained using the predicted rare channel branching ra
 the measured \decay{\Bz}{\Kstar(\jpsi\to\ell^+\ell^-)} branching ratio, rescaled by the
 relative efficiencies in Tab.~\ref{tab:RKst_releff}.  
 
-\begin{table}
+\begin{table}[h]
 \centering
+ \caption{Expected and observed ratios of raw event yields, $N_{\ell\ell} / N_{J/\psi}$. }
 \begin{tabular}{|c|c|c|c|}
 \hline
  Sample 			& Expected 			& Observed 			& Obs / exp ratio \\ \hline
@@ -145,7 +144,6 @@ $ee$ (L0I) 	& $ 0.0037  \pm  0.0005 $ 	& $ 0.0038  \pm  0.0005 $ 	& $ 1.0220  \p
 
 \hline 
  \end{tabular}
- \caption{Expected and observed ratios of raw event yields, $N_{\ell\ell} / N_{J/\psi}$. }
  \label{tab:RKst_expectations}
 \end{table}
 

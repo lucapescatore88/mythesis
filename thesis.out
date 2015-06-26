@@ -75,46 +75,49 @@
 \BOOKMARK [1][-]{section.11.2}{J/ cross-check}{chapter.11}% 75
 \BOOKMARK [1][-]{section.11.3}{Results}{chapter.11}% 76
 \BOOKMARK [-1][-]{part.2}{II The RK *0 analysis}{}% 77
-\BOOKMARK [0][-]{chapter.12}{Towards new physics: RH}{part.2}% 78
-\BOOKMARK [1][-]{subsection.12.0.1}{Experimental status}{chapter.12}% 79
-\BOOKMARK [1][-]{section.12.1}{The RK \040* analysis}{chapter.12}% 80
-\BOOKMARK [0][-]{chapter.13}{Selection}{part.2}% 81
-\BOOKMARK [1][-]{section.13.1}{Choice of q2 intervals and signal windows}{chapter.13}% 82
-\BOOKMARK [1][-]{section.13.2}{Trigger and Stripping }{chapter.13}% 83
-\BOOKMARK [1][-]{section.13.3}{PID}{chapter.13}% 84
-\BOOKMARK [1][-]{section.13.4}{Peaking backgrounds }{chapter.13}% 85
-\BOOKMARK [2][-]{subsection.13.4.1}{Charmonium vetoes}{section.13.4}% 86
-\BOOKMARK [2][-]{subsection.13.4.2}{Cascade b c, c \040decays}{section.13.4}% 87
-\BOOKMARK [2][-]{subsection.13.4.3}{ veto}{section.13.4}% 88
-\BOOKMARK [2][-]{subsection.13.4.4}{B \040+ \040K+ +- plus a random pion}{section.13.4}% 89
-\BOOKMARK [2][-]{subsection.13.4.5}{b decays}{section.13.4}% 90
-\BOOKMARK [3][-]{subsubsection.13.4.5.1}{Other peaking backgrounds}{subsection.13.4.5}% 91
-\BOOKMARK [1][-]{section.13.5}{Multivariate analysis}{chapter.13}% 92
-\BOOKMARK [1][-]{section.13.6}{MVA optimization}{chapter.13}% 93
-\BOOKMARK [0][-]{chapter.14}{Mass fits}{part.2}% 94
-\BOOKMARK [1][-]{section.14.1}{Mass fits: muonic channels}{chapter.14}% 95
-\BOOKMARK [1][-]{section.14.2}{Mass fits: electronic channels}{chapter.14}% 96
-\BOOKMARK [2][-]{subsection.14.2.1}{Signal PDFs for the electronic channels in the central q2 interval}{section.14.2}% 97
-\BOOKMARK [2][-]{subsection.14.2.2}{Background PDFs for the electronic channels in the central q2 interval}{section.14.2}% 98
-\BOOKMARK [2][-]{subsection.14.2.3}{Summary of the fit to electronic channels in the central q2 interval}{section.14.2}% 99
-\BOOKMARK [2][-]{subsection.14.2.4}{Electron channels fits in the high q2 interval}{section.14.2}% 100
-\BOOKMARK [1][-]{section.14.3}{Fit summary}{chapter.14}% 101
-\BOOKMARK [0][-]{chapter.15}{Efficiency}{part.2}% 102
-\BOOKMARK [1][-]{section.15.1}{Data-simulation discrepancies}{chapter.15}% 103
-\BOOKMARK [1][-]{section.15.2}{Geometric efficiency}{chapter.15}% 104
-\BOOKMARK [1][-]{section.15.3}{Reconstruction efficiency and bin migration}{chapter.15}% 105
-\BOOKMARK [1][-]{section.15.4}{PID efficiency}{chapter.15}% 106
-\BOOKMARK [1][-]{section.15.5}{Trigger efficiency}{chapter.15}% 107
-\BOOKMARK [2][-]{subsection.15.5.1}{Muonic channels}{section.15.5}% 108
-\BOOKMARK [2][-]{subsection.15.5.2}{Electronic channels}{section.15.5}% 109
-\BOOKMARK [1][-]{section.15.6}{Neural Networks efficiency}{chapter.15}% 110
-\BOOKMARK [0][-]{chapter.16}{Systematic uncertainties}{part.2}% 111
-\BOOKMARK [0][-]{chapter.17}{Result extraction}{part.2}% 112
-\BOOKMARK [1][-]{section.17.1}{RJ-3mu/-2mu 2mu sanity check}{chapter.17}% 113
-\BOOKMARK [1][-]{section.17.2}{RK \040* result summary}{chapter.17}% 114
-\BOOKMARK [1][-]{section.17.3}{Branching ratios and expectations}{chapter.17}% 115
-\BOOKMARK [0][-]{chapter.1}{Decay models}{part.2}% 116
-\BOOKMARK [1][-]{section.1.1}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 117
-\BOOKMARK [1][-]{section.1.2}{ 0b \040 \040 \040+- distribution}{chapter.1}% 118
-\BOOKMARK [0][-]{chapter.2}{Monte Carlo and data comparison}{part.2}% 119
-\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{part.2}% 120
+\BOOKMARK [0][-]{chapter.12}{Testing lepton flavour universality with RH}{part.2}% 78
+\BOOKMARK [1][-]{subsection.12.0.1}{Combining ratios}{chapter.12}% 79
+\BOOKMARK [2][-]{subsection.12.0.2}{Experimental status}{subsection.12.0.1}% 80
+\BOOKMARK [1][-]{section.12.1}{Analysis strategy}{chapter.12}% 81
+\BOOKMARK [1][-]{section.12.2}{Choice of q2 intervals}{chapter.12}% 82
+\BOOKMARK [1][-]{section.12.3}{Data samples and simulation}{chapter.12}% 83
+\BOOKMARK [2][-]{subsection.12.3.1}{Data-simulation corrections}{section.12.3}% 84
+\BOOKMARK [0][-]{chapter.13}{Selection}{part.2}% 85
+\BOOKMARK [1][-]{section.13.1}{Trigger and Stripping }{chapter.13}% 86
+\BOOKMARK [1][-]{section.13.2}{PID}{chapter.13}% 87
+\BOOKMARK [1][-]{section.13.3}{Peaking backgrounds }{chapter.13}% 88
+\BOOKMARK [2][-]{subsection.13.3.1}{Charmonium vetoes}{section.13.3}% 89
+\BOOKMARK [2][-]{subsection.13.3.2}{ veto}{section.13.3}% 90
+\BOOKMARK [2][-]{subsection.13.3.3}{B \040+ \040K+ + - plus a random pion}{section.13.3}% 91
+\BOOKMARK [2][-]{subsection.13.3.4}{b decays}{section.13.3}% 92
+\BOOKMARK [3][-]{subsubsection.13.3.4.1}{Other peaking backgrounds}{subsection.13.3.4}% 93
+\BOOKMARK [2][-]{subsection.13.3.5}{Mis-reconstructed background}{section.13.3}% 94
+\BOOKMARK [1][-]{section.13.4}{Multivariate analysis}{chapter.13}% 95
+\BOOKMARK [1][-]{section.13.5}{MVA optimisation}{chapter.13}% 96
+\BOOKMARK [0][-]{chapter.14}{Mass fits}{part.2}% 97
+\BOOKMARK [1][-]{section.14.1}{Muonic channels}{chapter.14}% 98
+\BOOKMARK [1][-]{section.14.2}{Electron channels}{chapter.14}% 99
+\BOOKMARK [2][-]{subsection.14.2.1}{Signal PDFs for the electron channels in the central q2 interval}{section.14.2}% 100
+\BOOKMARK [2][-]{subsection.14.2.2}{Background PDFs for the electron channels in the central q2 interval}{section.14.2}% 101
+\BOOKMARK [2][-]{subsection.14.2.3}{Summary of the fit to electron channels in the central q2 interval}{section.14.2}% 102
+\BOOKMARK [2][-]{subsection.14.2.4}{Electron channels fits in the high q2 interval}{section.14.2}% 103
+\BOOKMARK [1][-]{section.14.3}{Fit summary}{chapter.14}% 104
+\BOOKMARK [0][-]{chapter.15}{Efficiency}{part.2}% 105
+\BOOKMARK [1][-]{section.15.1}{Geometric efficiency}{chapter.15}% 106
+\BOOKMARK [1][-]{section.15.2}{Reconstruction efficiency and bin migration}{chapter.15}% 107
+\BOOKMARK [1][-]{section.15.3}{PID efficiency}{chapter.15}% 108
+\BOOKMARK [1][-]{section.15.4}{Trigger efficiency}{chapter.15}% 109
+\BOOKMARK [2][-]{subsection.15.4.1}{muon channels}{section.15.4}% 110
+\BOOKMARK [2][-]{subsection.15.4.2}{Electron channels}{section.15.4}% 111
+\BOOKMARK [1][-]{section.15.5}{Neural Networks efficiency}{chapter.15}% 112
+\BOOKMARK [0][-]{chapter.16}{Systematic uncertainties}{part.2}% 113
+\BOOKMARK [0][-]{chapter.17}{Result extraction}{part.2}% 114
+\BOOKMARK [1][-]{section.17.1}{RJ-3mu/-2mu 2mu sanity check}{chapter.17}% 115
+\BOOKMARK [1][-]{section.17.2}{RK \040* result summary}{chapter.17}% 116
+\BOOKMARK [1][-]{section.17.3}{Branching ratios and expectations}{chapter.17}% 117
+\BOOKMARK [0][-]{chapter.1}{Decay models}{part.2}% 118
+\BOOKMARK [1][-]{section.1.1}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 119
+\BOOKMARK [1][-]{section.1.2}{ 0b \040 \040 \040+- distribution}{chapter.1}% 120
+\BOOKMARK [0][-]{chapter.2}{Monte Carlo and data comparison}{part.2}% 121
+\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{part.2}% 122
+\BOOKMARK [0][-]{chapter.4}{Invariant mass fits to B \0400 \040K *0 e+ e- simulated candidates}{part.2}% 123
