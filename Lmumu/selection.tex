@@ -1,7 +1,7 @@
 \chapter{Selection}
 \label{sec:Lb_selection}
 
-The reconstruction of \Lb\to\Lz\mm and \Lb\to\jpsi\Lz candidates begins with the application of
+The reconstruction of $\Lb\to\Lz\mm$ and $\Lb\to\jpsi\Lz$ candidates begins with the application of
 requirements on basic kinematic properties as \pt of the final particles and quality requirements
 for the track and vertices from which the particles are derived.
 This selection aims to first form a dimuon candidate from two oppositely changed muons. 
@@ -11,6 +11,7 @@ from all primary vertices. In the final step, dimuon candidates are combined wit
 baryons and requirements are set on the properties of this combination. 
 The full list of cuts is reported in Tab.~\ref{tab:Lb_stripping}.
 %
+ \begin{verbbox}hasRICH\end{verbbox}
 \begin{table}
 \centering
       \begin{tabular}{lcc}\hline
@@ -18,7 +19,7 @@ Particle    & Variable   					 	& Requirement          \\ \hline
             & $m(K\pi\mu\mu)$       		 	& $4.6 < m < 7.0$ \gevcc \\
             & DIRA      					 	& $>0.9999$          \\
 \Lb 		& \chisqip 	 	 				    & $<16.0$               \\
-            & $\chi^2_{FD}$					 	& $>121.0$             \\
+            & $\chi^2_{\rm FD}$					 	& $>121.0$             \\
             & $\chi^2_{vtx}$/ndf				& $<8.0$          \\ \hline
      		& $\chi^2_{vtx}$/ndf				& $<30.0(25.0)$              \\
 \Lz         & Decay time					  	& $>2$ ps              \\
@@ -26,7 +27,7 @@ Particle    & Variable   					 	& Requirement          \\ \hline
 		    & $p$      						  	& $>2$ \gevc           \\ 
 $p$/$\pi$	& \pt    		 			 	  	& $>250$ \mevc           \\  
             & \chisqip 							& $>9(4)$              \\ \hline
-$p$ (only long tracks)  & \multicolumn{2}{c}{ hasRich }     \\
+$p$ (only long tracks)  &  \multicolumn{2}{c}{ \theverbbox }     \\
 			&	\verb!PID!p 					& $> -5$  \\  \hline
             &		\multicolumn{2}{c}{ isMuon }     \\
 			& $\chi^2_{trk}$/ndf				& $< 5$ 		\\
@@ -49,6 +50,7 @@ defined as the angle between the direction of the particle momentum and
 the flight direction from its mother vertex, called DIRA.
 Graphical representation of the \chisqip and DIRA variables are shown in Fig.~\ref{fig:IPandDIRA}.
 This allows the selection of particles with well-defined primary vertices.
+The variable $\chi^2_{FD}$ represents the flight distance with respect to the origin vertex divided by its error. 
 The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ from the
 fit to tracks and vertices, which are used to quantify their quality.
 The {\verb GhostProb } quantity describes the probability of a track being fake.
@@ -56,16 +58,17 @@ By construction, cutting at 0.4, removes $(1 - 0.4)\cdot 100 = 60\%$ of fake tra
 The {\verb hasRich }, {\verb hasCalo } and {\verb isMuon } variables are binary indicators that
 the information from the RICH/calorimeter/muon detector is available for the track.
 Loose Particle Identification (PID) cuts are also applied in pre-selection to limit the size of the samples.
-To quantify the probability of particular particle identity a combined likelihood is calculated
-combining information from the calorimeters, the RICH and the Muon detectors.
-The pion hypothesis is used as a reference point and the probability of a specific ID is given
-in terms of the difference between the Log-Likelihood of the given hypothesis and the pion.
-This variable is called is called Delta Log-Likelihood (DLL) and denoted with \verb!PID!.
-For example:
-\begin{equation}
-\verb!PID!_K = \text{DLL}_{K-\pi} = \log(\mathcal{L}_K) - \log(\mathcal{L}_\pi)
-\end{equation}
-quantifies the probability of a particle being a kaon rather than a pion.
+Details about the quantification of the PID quality are given in Sec.~\ref{sec:PID_perf}.
+%To quantify the probability of particular particle identity a combined likelihood is calculated
+%combining information from the calorimeters, the RICH and the Muon detectors.
+%The pion hypothesis is used as a reference point and the probability of a specific ID is given
+%in terms of the difference between the Log-Likelihood of the given hypothesis and the pion.
+%This variable is called is called Delta Log-Likelihood (DLL) and denoted with \verb!PID!.
+%For example:
+%\begin{equation}
+%\verb!PID!_K = \text{DLL}_{K-\pi} = \log(\mathcal{L}_K) - \log(\mathcal{L}_\pi)
+%\end{equation}
+%quantifies the probability of a particle being a kaon rather than a pion.
 %For details about the definition of the variables used see Ref. \cite{Loki_twiki}.
 A large mass window is kept around the \Lb peak in order to be able
 to fit the sideband, to train the multivariate analysis and better constrain backgrounds.
@@ -84,16 +87,16 @@ in a 100 \mevcc interval around the known \jpsi mass.
 \section{Neural Networks}
 \label{sec:Lb_mva}
 
-The final selection is performed using neural network (NN) based on NeuroBayes package \cite{Feindt:2006pm,feindt-2004}.
+The final selection is performed using neural network (NN) based on NeuroBayes package~\cite{Feindt:2006pm,feindt-2004}.
 The input to the neural network consists of 14 variables carrying information about the kinematics of the decay,
 the quality of tracks and vertices and the PID of the muons.
-The list of inputs to the neural network is in table \ref{tab:Lb_nnInputs}. Together with it we give
+The list of inputs to the neural network is in Tab.~\ref{tab:Lb_nnInputs}. Together with it we give
 ranking and information on the importance of inputs.
 %
 %In appendix \ref{app:MC_data_comp} we report comparisons between the variable used in data and Monte Carlo.
 %On data we extract the signal distribution using the sideband subtraction technique.
 %
-%Under ``adds" is shown how much discrimintating power a variable adds with respect to the previous ones.
+%Under ``adds" is shown how much discriminating power a variable adds with respect to the previous ones.
 %Under ``only this" is shown how much power each single input has independently of all others. Under ``loss" 
 %is provided information about how much power is lost if each single input is removed.
 %
@@ -103,38 +106,39 @@ training for the two categories. Further details on the definition and calculati
 variables importance is available in Ref.~\cite{LHCb-ANA-2011-094}.
 The graphical representation of the correlation matrix is shown in Fig.~\ref{fig:Lb_nnCorrelation},
 where the variable with $ID = 1$ is the NN output and the IDs of the other variables can be found
-in Tab.\ref{tab:Lb_nnInputs}.
+in Tab.~\ref{tab:Lb_nnInputs}.
 
 The single most important variable used for downstream candidates is the transverse momentum of
 \Lz, which allows to reject random combination of tracks as these have preferentially low \pt.
-For LL events instead the best variable is the $\chi^2$ from a kinematic fit that constrains
-the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices.
+For long candidates instead the best variable is the $\chi^2$ from a kinematic fit that constrains
+the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices
+performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
 Other variables that contribute significantly are the \chisqip of \Lb, \Lz and muons,
-the saparation between \Lb and \Lz vertices and finally the muon PID.
+the separation between \Lb and \Lz vertices and finally the muon PID.
 
 The NN is trained using representative samples for signal and background. 
 For the signal a sample of simulated \Lb\to\Lz\mm events is used. For the background a representative sample
 is given by candidates in the upper $m(K\pi\mu\mu)$ invariant mass sideband. Only the upper sideband,
 $m_{K\pi\mu\mu} > 6 \gevcc$, is used since it contains only combinatorial background,
-while the lower sideband may contain partially reconstructed and misreconstructed events.
+while the lower sideband may contain partially reconstructed and misreconstructed candidates.
 In the background samples are still present \jpsi and \psitwos peaks indicating that charmonium resonances
 can be combined with other random tracks. These candidates do not give a good description of purely
 combinatorial background and, in order to avoid biases, they are removed from the background training
 sample by rejecting events in a 100 \mevcc  interval around the nominal \jpsi and \psitwos masses~\cite{PDG2014}.
 %The events above $6 \gevcc$ used for training are not used in the subsequent analysis. 
-For the signal, the training is done combining simulated $\Lb\to\Lz\mumu$ events corresponding to beam
-conditions in the two years respectively. %Only triggered events are used for training.
-A total of 30000 total events was used for the taining. This corresponds $\sim 50\%$ of the available
-sideband data sample and $\sim 20\%$ of our full MC sample. The full simulated sample is not used
+For the signal the training is performed combining simulated $\Lb\to\Lz\mumu$ events corresponding 
+to the beam conditions in both years. %Only triggered events are used for training.
+A total of 30000 total events is used for the training. This corresponds $\sim 50\%$ of the available
+sideband data sample and $\sim 20\%$ of the simulated sample. The full simulated sample is not used
 as it will also be used to study efficiencies. Events are uniformly samples over full simulated sample.
 % based on the event number (for reproducibility).
 
 Figure \ref{fig:Lb_nnDist} shows distributions of neural network output for the signal and background samples.
-and purity ($P=N(\mathrm{signal})/N(\mathrm{background})$) as a function of neural network output.
-On this plot distributions from test samples are also overlaid in order to check for overtraining. 
+and purity ($P=N(\mathrm{signal})/N(\mathrm{background})$) as a function of the neural network output.
+On this plot the distributions from test samples are also overlaid in order to check for overtraining. 
 The distributions follow the same shape but with different fluctuations
-so we conclude that we have no significant overtraining. In general we conclude that the neural network
-is able to separate signal from background and that the training converged properly.
+indicating no significant overtraining. In general the neural network
+is able to separate signal from background and the training converged properly.
 %
 \begin{table}
 \centering
@@ -143,10 +147,10 @@ Under ``Id'' the indices used for the correlation matrix (see Fig.~\ref{fig:Lb_n
 Column ``adds'' gives correlation significance added by given input when adding it to list of those
 ranked above, ``only this'' provides power of given input alone and ``loss'' shows how much information
 is lost when removing only given input.}
-\begin{tabular}{lcccc}\hline\hline
+\begin{tabular}{lcccc}\hline
 Input                     		& Id  & adds 		& only this & loss \\ \hline
 \Lz$_{DD}$ \pt                  & 15 	& 143.11 	& 143.11 	& 29.20  \\
-$\chi^2$ DecayTreeFitter        & 2 	& 77.81 	& 134.00 	& 51.10  \\
+$\chi^2_{\rm DTF}$       & 2 	& 77.81 	& 134.00 	& 51.10  \\
 min(\chisqip $\mu$)             & 7 	& 61.31 	& 113.62 	& 29.76  \\
 \chisqip \Lb                    & 5 	& 52.94 	& 113.23 	& 40.98  \\
 \chisqip $\pi_{LL}$             & 16 	& 20.29 	& 60.72 	& 12.82  \\
@@ -165,7 +169,7 @@ $\pi_{LL}$ \pt                  & 18 	& 6.13 		& 47.03 	& 7.12 	 \\
 \Lz$_{LL}$ flight distance      & 11 	& 0.87 		& 52.52 	& 0.86 	 \\
 $p_{DD}$ \pt                    & 21 	& 0.74 		& 129.58 	& 0.75 	 \\
 \chisqip $\pi_{DD}$             & 19 	& 0.24 		& 70.43 	& 0.24 	 \\
-\hline\hline 
+\hline
 \end{tabular}
 \label{tab:Lb_nnInputs}
 \end{table}
@@ -175,8 +179,8 @@ $p_{DD}$ \pt                    & 21 	& 0.74 		& 129.58 	& 0.75 	 \\
 \includegraphics[width=0.8\textwidth]{Lmumu/figs/correlation.pdf}
 \caption{Graphical representation of correlation matrix between truth and neural network inputs.
 Column/row number 1 is correlation to the truth (whether candidate is signal or background). All
-others give correlation between inputs with numbering scheme corresponding to the id column of table
-\ref{tab:nnInputs}. Correlation is calculated using all events without distinguishing signal and
+others give correlation between inputs with numbering scheme corresponding to the id column 
+of Tab.~\ref{tab:Lb_nnInputs}. Correlation is calculated using all events without distinguishing signal and
 background.}
 \label{fig:Lb_nnCorrelation}
 \end{figure}
@@ -185,8 +189,8 @@ background.}
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/TrainAndTest.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/purity_NN.pdf}
-\caption{(right) NN output distribution for training (solid) and test (stripes) samples,
-for MC signal and sideband data events. (left) Purity as a function of neural network output.}
+\caption{(left) NN output distribution for training (points) and test (stripes) samples,
+for signal and background events. (right) Purity as a function of neural network output.}
 \label{fig:Lb_nnDist}
 \end{figure}
 
@@ -198,7 +202,7 @@ for correlations between the 4-body invariant mass and the NN output.
 Figure~\ref{fig:Lb_NNprofiles} reports the average NN output value as a function of
 4-body $m(K\pi\mu\mu)$ invariant mass for data and simulation. The distributions
 are flat indicating that no significant correlation is present.
-
+%
 \begin{figure}
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf}
@@ -207,23 +211,7 @@ are flat indicating that no significant correlation is present.
 \label{fig:Lb_NNprofiles}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/significance_Lmumu_lowQ2.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/significance_Lmumu_highQ2.pdf}
-\caption{Dependence of figure-of-merit on the requirement on neural network output in the low \qsq
-region (left) and high \qsq (right) regions. The vertical line corresponds to the chosen cut.}
-\label{fig:Lb_FOM}
-\end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{Lmumu/figs/ROC.pdf}
-%\includegraphics[width=0.48\textwidth]{Lmumu/figs/ROC_Lmumu_highQ2.pdf}
-\caption{Receiver operating characteristic (ROC) curves for low \qsq (black) and high \qsq (red).
-They show the signal efficiency versus the background rejection.}
-\label{fig:Lb_ROC}
-\end{figure}
 
 
 %As side note, we do not imply any particle identification on the \Lz daughters, nor we explicitly
@@ -278,6 +266,24 @@ which are randomly rejected to keep only one candidate per event.
 %
 To normalise the branching ratio measurement \jpsi events are selected using the low and high \qsq selection to normalise
 respectively low and high \qsq intervals. 
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/significance_Lmumu_lowQ2.pdf}
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/significance_Lmumu_highQ2.pdf}
+\caption{Dependence of figure-of-merit on the requirement on neural network output in the low \qsq
+region (left) and high \qsq (right) regions. The vertical line corresponds to the chosen cut.}
+\label{fig:Lb_FOM}
+\end{figure}
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Lmumu/figs/ROC.pdf}
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/ROC_Lmumu_highQ2.pdf}
+\caption{Receiver operating characteristic (ROC) curves for low \qsq (black) and high \qsq (red).
+They show the signal efficiency versus the background rejection.}
+\label{fig:Lb_ROC}
+\end{figure}
 
 %\begin{figure}
 %\centering
@@ -314,35 +320,37 @@ and lined in different levels.
 \centering
 \caption{Summary of trigger lines which candidates have to pass at various trigger levels.
 Trigger is always required to be due to tracks of the candidate itself.}
-\begin{tabular}{lc} \hline\hline
+\begin{tabular}{lc} \hline
 Trigger Level &  Lines   \\ \hline
 L0            & L0Muon  \\
-              & L0DiMuon \\ \hline
+                & L0DiMuon \\ \hline
 Hlt1          & Hlt1TrackAllL0 \\ 
-              & Hlt1DiMuonHighMass     \\
-              & Hlt1TrackMuon      \\ \hline
+ %               & Hlt1DiMuonHighMass     \\
+                & Hlt1TrackMuon      \\ \hline
 Hlt2          & Hlt2Topo[2-4]BodyBBDT  \\
               & Hlt2TopoMu[2-4]BodyBBDT\\
               & Hlt2SingleMuon     \\
-              & Hlt2DiMuonDetached \\ \hline\hline
+              & Hlt2DiMuonDetached \\ \hline
 \end{tabular}
 \label{tab:Lb_triggerLines}
 \end{table}
 %
-The L0Muon trigger required hits in the muon detector. The Hlt1TrackAllL0 performs a partial
-reconstruction of the events end triggers if the L0 decision is confirmed. Finally,
-at the Hlt2 level, a complete reconstruction is done ana a multivariate analysis is 
-used to identify decay structures. In Fig.~\ref{fig:trigContrib} is shown the single trigger
-efficiency, defined as if each line was alone.
-More information on trigger simulation and efficiencies are contained in Sec.~\ref{sec:Lb_trigger_eff}.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_highq2.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_lowq2.pdf}
-\caption{ Single trigger efficiency for high \qsq events (left) and low \qsq (right). }
-\label{fig:trigContrib}
-\end{figure}
+The L0Muon trigger requires hits in the muon detector and triggers if a muon with $\pt > 1.5 \gevc$ is identified.
+L0Dimuon imposes the same requirement on the sum of the transverse momenta of two tracks.
+The Hlt1TrackAllL0 performs a partial reconstruction of the events and applied basic requirements on the
+IP, $\chi^2$ and transverse momentum of tracks and triggers if the L0 decision is confirmed. Hlt1TrackMuon applies looser requirements 
+but in addition requires the \verb!isMuon! variable (see Sec.~\ref{sec:PID_perf}) to be true to limit the yield.
+Finally, at the Hlt2 level, a complete reconstruction is done and a multivariate analysis is used to identify decay structures. One of the main variables used at this stage is the distance of closest approach (DOCA), which is 
+required to be less than 0.2 mm to form a 2-body object.
+%
+%Figure~\ref{fig:trigContrib} shows the single trigger efficiency, defined as if each line was alone.
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_highq2.pdf}
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_lowq2.pdf}
+%\caption{ Single trigger efficiency for high \qsq events (left) and low \qsq (right). }
+%\label{fig:trigContrib}
+%\end{figure}
 
 
 \section{Background from specific decays}

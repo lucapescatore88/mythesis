@@ -32,19 +32,20 @@ On these plots horizontal bands can be seen at the \qsq corresponding to the \jp
 On the plot for muons it is also evident a vertical band which corresponds to rare decay of interest.
 
 \begin{figure}[t!]
-\label{fig:2D_q2_B0mass}
 \centering 
 \includegraphics[width=1.\textwidth]{RKst/figs/electron_B0jpsi2D_selected.pdf}
 \includegraphics[width=1.\textwidth]{RKst/figs/muon_B0jpsi2D_selected.pdf}
 \caption{Two-dimensional distributions of \qsq versus 4-body $m(K\pi\ell\ell)$
 invariant mass for the electron (top) and muonic (bottom) channels in 2012 data.}
+\label{fig:2D_q2_B0mass}
 \end{figure}
 
 
 \section{Trigger and Stripping }
+\label{sec:RKst_trigstripping}
 
 Events are triggered for the $\mu\mu$ and the $ee$ channels by the trigger lines
-reported in Tab.~\ref{triglines}, where the logical $and$ of L0, Hlt1 and Hlt2
+reported in Tab.~\ref{tab:RKst_triglines}, where the logical $and$ of L0, Hlt1 and Hlt2
 lines is required and the logical $or$ of the lines on the same level. The candidates are
 required to be triggered-on-signal (TOS) for most of the stages, namely
 it is required for the particle which triggered to be one of the particles used to build the signal candidates.
@@ -52,17 +53,15 @@ Only for L0Global, used in the electron case, we require a trigger-independent-o
 this is aimed to collect all the possible statistics for the electron channels, which are the most challenging.
 The L0Muon trigger requires hits in the muon detector, while L0Electron and L0Hadron use information
 from the calorimeters; Hlt1TrackAllL0 adds information from the trackers to the L0 candidates and
-triggers if the L0 decision is confirmed;
-finally, Hlt2Topo[2,3]BodyBBDT uses a reconstruction of the event and a neural network
-trained on events with a specific topology in order to detect decays.
+triggers if the L0 decision is confirmed; finally, Hlt2Topo[2,3]BodyBBDT uses a reconstruction 
+of the event and a neural network trained on events with a specific topology in order to detect decays.
+%More information about the muon triggers can be found at Sec.~\ref{sec:Lb_trigger}.
 
 \begin{table}[h!]
-\label{triglines}
 \begin{center}
 \caption{Summary of the trigger lines used to select the $\mu\mu$ and the $ee$ channels.
 Where not explicitly indicated, the lines are required to be TOS.}
 \begin{tabular}{c|c}
-
 $\mu\mu$ candidates &  $ee$ candidates \\
 \hline
 	L0Muon		& L0Electron\\
@@ -76,15 +75,14 @@ $\mu\mu$ candidates &  $ee$ candidates \\
 	Hlt2TopoMu[2,4]BodyBBDT 	& Hlt2TopoE[2,4]BodyBBDT \\
 	Hlt2DiMuonDetachedDecision	&							\\
 \end{tabular}
+\label{tab:RKst_triglines}
 \end{center}
 \end{table}
 
-For the electron channels the L0 lines
-%are important and, as they
-have different properties, therefore the analysis is performed separately for three categories
-of events, depending on the L0 trigger that fired them. These categories are defined,
-to be exclusive, in the following way:
-
+For the electron channels the L0 lines have different properties, therefore the analysis 
+is performed separately for three categories of events, depending on the L0 trigger that fired 
+them. These categories are defined to be exclusive in the following way:
+%
 \begin{itemize}
 \item Events triggered by at least one of the electrons in the signal candidate (L0E): \\
 {\centering \verb!L0Electron_TOS! }
@@ -97,8 +95,8 @@ to be exclusive, in the following way:
 The majority of the selected events falls in the L0Electron category.
 The L0Hadron category is more efficient at low \qsq were the \Kstarz has more momentum.
 
-Candidates are then required to pass the kinematic and quality cuts summarised in Tab.~\ref{rab:RKstripping}. 
-The meaning of variables in the table was already explained in Sec.~\ref{sec:Lb_stripping}.
+Candidates are then required to pass the kinematic and quality cuts summarised in Tab.~\ref{tab:RKstripping}. 
+The meaning of variables in the table was already explained in Sec.~\ref{sec:Lb_selection}.
 Loose PID cuts are applied in preselection to limit the size of the samples, while tighter cuts are applied
 in a second stage. A large mass window is kept around the \Bz peak in order to be able
 to fit the sideband and to train the multivariate analysis and constrain backgrounds.
@@ -258,7 +256,7 @@ bremsstrahlung photons, resulting in shorter radiative tails.
 The electronic channels are instead  characterised by
 a worse resolution and at the same time electrons can radiate 
 several bremsstrahlung photons, yielding long tails at low \qsq.
-Analysing Monte Carlo events it was found that 1.3 - 2\% (depending on
+Analysing Monte Carlo events it was found that 1.3--2\% (depending on
 the trigger category) of $\Bz\to\Kstar(\jpsi\to\ee)$ candidates leak into the $1.1 < \qsq < 6$
 \gevgevcccc interval and 1.8\% of \psitwos events leak above 15 \gevgevcccc.
 The contribution from these candidates is modelled in the fit. 
@@ -269,8 +267,8 @@ The contribution from these candidates is modelled in the fit.
 It can happen that a kaon from the decay $B_s \rightarrow \phi \ell^+\ell^-$, where the $\phi$ decays in two kaons,
 is mis-identified as a pion and therefore causes the $\phi$ to be reconstructed as a $\Kstarz$. This results in
 a candidate with a value of $m_{K\pi}$ that is less than $m_{\Kstarz}$ but still high enough to
-pass the selection requirements. In Fig.~\ref{fig:phiplots} is reported the plot of $m_{K\pi}$ versus
-$m_{K\pi \ell\ell}$, where kaon mass hypothesis is assigned to the pion. A peak can clearly be seen
+pass the selection requirements. In Fig.~\ref{fig:phiplots} is reported the plot of $m(K\pi)$ versus
+$m(K\pi \ell\ell)$, where kaon mass hypothesis is assigned to the pion. A peak can clearly be seen
 around the $\phi$ mass (1020 \mevcc).
 To remove this background only candidates with $m_{K(\pi\rightarrow K)} > 1040$ \mevcc) are selected.
 This results in a 98\% background rejection while keeping a 99\% signal efficiency.
@@ -339,7 +337,7 @@ followed by $D^{-} \to \Kstarz \ell^- \nu_\ell$. The candidates built from these
 %This is in general true for any partially reconstructed background from $B$ decays.
 
 In order to remove this background in the muonic channels, the 4-body $m(K\pi\mumu)$ invariant mass is recalculated
-with a kinematical fit using \verb!DecayTreeFitter!~\cite{DTF_twiki}. In the resonant case this includes a constraint of the dilepton
+with a kinematical fit using the \verb!DecayTreeFitter! package. In the resonant case this includes a constraint of the dilepton
 mass to be the \jpsi nominal mass and in both rare and resonant cases each particles is constrained to point to 
 its origin vertex. This constraint has the effect of pushing the misreconstructed events far from the \Bz peak.
 Therefore, to avoid this background, it is sufficient to limit the analysis to 4-body invariant masses
@@ -363,7 +361,7 @@ Representative samples of the signal and background are needed to train the clas
 For the signal, fully reconstructed \BdToKstmm and \BdKstee simulated events can be used.
 %The simulation is corrected improve the data-simulation agreement as described in (see Sec. \ref{sec:RKst_mc_weighting}).
 A sample representative of the background can be obtained taking real data events
-in the upper \Bz sideband: ($m_{K\pi\mumu} > 5400$ \mevcc and $m_{K\pi\ee} > 5600$ \mevcc). The lower sideband is not
+in the upper \Bz sideband: ($m(K\pi\mumu) > 5400$ \mevcc and $m(K\pi\ee) > 5600$ \mevcc). The lower sideband is not
 used in the training as it contains a significant fraction of mis-reconstructed background.
 All pre-selection cuts are applied to the background samples used for the training.
 As L0 and PID variables are not well described these cuts are not applied in the Monte Carlo
@@ -459,11 +457,10 @@ background.}
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_wNB_TrainAndTest.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_wNB_TrainAndTest.pdf}
-
-\caption{NN output distributions for training (solid) and test (stripes) samples, for MC signal and data sideband events.
-For the muon training (left) and the electron one (right).}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/EE_wNB_TrainAndTest.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/MM_wNB_TrainAndTest.pdf}
+\caption{NN output distributions for training (solid) and test (stripes) samples, for simulated 
+signal and data sideband events. For the electron (left) and muon (right) training.}
 \label{fig:RKst_nnDist}
 \end{figure}
 
@@ -478,35 +475,6 @@ calculate the invariant mass of the candidates from its inputs. This could gener
 important to check for correlations between the \Bz mass and the NN output.  Fig \ref{fig:RKst_NNprofiles} reports
 plots of the average NN output as a function of the \Bz mass on sideband data and simulated signal events.
 The distributions are flat showing that no significant correlation is present.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf}
-\includegraphics[width=0.4\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf}
-\includegraphics[width=0.4\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf}
-\includegraphics[width=0.4\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf}
-\caption{Average value of NN output as a function of \Bz mass for data
-sideband (left) and MC signal (right) events for the electron (top) and muon (bottom) training.}
-\label{fig:RKst_NNprofiles}
-\end{figure}
-%
-\begin{figure}
-\centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_FoM.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_FoM.pdf}
-\caption{Dependence of figure-of-merit on the requirement on neural network output
-for electrons (left) and muons (right). The vertical lines corresponds to the chosen cuts.}
-\label{fig:RKst_FOM}
-\end{figure}
-%
-\begin{figure}
-\centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/EE_ROC.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/Training/MM_ROC.pdf}
-\caption{Receiver operating characteristic (ROC) curves for electrons (left) and muons (right).
-They show the signal efficiency versus the background rejection.}
-\label{fig:RKst_ROC}
-\end{figure}
 
 
 \section{MVA optimisation}
@@ -524,14 +492,37 @@ background in the sideband with an exponential function and extrapolating the fi
 
 The dependence of the figure-of-merit for both the electron and muon trainings
 are shown in Fig.\ref{fig:RKst_FOM}, where the red line indicate the chosen cut: 0.75 for both samples.
-Curves of signal efficiency versus background rejection are shown in Fig.~\ref{fig:RKst_ROC}.
+Curves of signal efficiency versus background rejection are shown in Fig.~\ref{fig:RKst_FOM}.
 Using the described MVA cuts the signal efficiency is $\sim 91\%$ for the muon channels
-and $\sim 84\%$ for the electron channels (for more details see Sec.~\ref{sec:Rkst_efficiency}),
+and $\sim 84\%$ for the electron channels (for more details see Sec.~\ref{sec:RKst_efficiency}),
 while the background rejections is $\sim 98\%$ on both samples.
 
 After full selection about $\sim 3\%$ of events still contain multiple candidates
 which are removed at random keeping only a single candidate per event.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf}
+\caption{Average value of NN output as a function of \Bz mass for data
+sideband (top) and simulated signal (bottom) events for the electron (left) and muon (right) training.}
+\label{fig:RKst_NNprofiles}
+\end{figure}
+%
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_FoM.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_FoM.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_ROC.pdf}
+\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_ROC.pdf}
+\caption{(top) Dependence of figure-of-merit on the requirement on neural network output.
+Vertical lines corresponds to the chosen cuts. (bottom) Signal efficiency versus the 
+background rejection. Plots correspond to the electron (left) and muons (right) samples.}
+\label{fig:RKst_FOM}
+\end{figure}
 
 
 

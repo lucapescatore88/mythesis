@@ -1,5 +1,5 @@
 \chapter{The LHCb detector at the Large Hadron Collider}
-\label{sec:Detector}
+\label{ch:detector}
 
 \section{The Large Hadron Collider}
 
@@ -7,17 +7,18 @@ The Large Hadron Collider (LHC)~\cite{Evans:2009zzc} is a circular particle acce
 in the surroundings of Geneva, Switzerland. Two proton beams circulate in opposite directions around the ring and cross each
 other at several points, in which particle detectors are placed. These include two general-purpose detectors, ATLAS and CMS,
 siting on opposites sides of the ring and the two smaller specialty detectors, ALICE and LHCb, are at the interaction points
-to either side of ATLAS (see fig. \ref{lhc}).
+to either side of ATLAS (see Fig.~\ref{fig:lhc}).
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{Detector/figs/LHC_scheme.png}
-\caption{Scheme of CERN accelerators.} \label{lhc}
+\caption{Scheme of CERN accelerators.} 
+\label{fig:lhc}
 \end{figure}
 
 Each beam consists of a series of proton bunches, up to a maximum of 2835. Each bunch consists of about $10^{11}$
 protons and the bunch spacing is such that the nominal bunch crossing rate is 40 MHz. The beams are injected into
-pre-accelerators and then led into LHC through the CERN acceleration system shown in Fig.~\ref{lhc}. Protons are
+pre-accelerators and then led into LHC through the CERN acceleration system shown in Fig.~\ref{fig:lhc}. Protons are
 produced from hydrogen gas and are initially accelerated to the energy of 50 MeV in a linear accelerator (LINAC).
 Then they are injected into the Proton Synchrotron Booster (PSB), where they are boosted to an energy of 1.4 \gev,
 into the Proton Synchrotron (PS) to 25 GeV and into the Super Proton Synchrotron (SPS) to 450 GeV. Finally, protons
@@ -53,9 +54,9 @@ the centre of the accelerator and $y$ is directed upward. Then we define $\theta
 direction and $\phi$ as the position around the beam in the $xy$ plane, taking $\phi = 0$ on the $x$ axis.}.
 
 \begin{figure}[h]
-\label{lhcb}
-\includegraphics[width=0.95\linewidth]{Detector/figs/LHCb_official.png}
+\includegraphics[width=1.\linewidth]{Detector/figs/LHCb_official.png}
 \caption{A side view of the LHCb detector~\cite{Alves:2008zz}.}
+\label{fig:lhcb}
 \end{figure}
 
 At the collision point of LHCb the luminosity can be adjusted by displacing the beams from head on collisions
@@ -82,8 +83,8 @@ from 0.4\% at 5 $\mbox{GeV/c}^{2}$ to 0.6\% at 100 $\mbox{GeV/c}^{2}$. Charged h
 Ring-Imaging Cherenkov detectors (RICH)~\cite{LHCb-DP-2012-003}. Photon, electron and hadron candidates are
 identified by a calorimeter system consisting of scintillating-pad and pre-shower detectors, an electromagnetic
 calorimeter and a hadronic calorimeter. Muons are identified by a system composed of alternating layers of iron
-and multiwire proportional chambers~\cite{LHCb-DP-2012-002}. A schematic view of the detector is shown in Fig.~\ref{lhcb}
-and more details on each subdetector are given in the following sections.
+and multi-wire proportional chambers~\cite{LHCb-DP-2012-002}. A schematic view of the detector is shown in Fig.~\ref{fig:lhcb}
+and more details on each sub-detector are given in the following sections.
 
 \section{The magnet}
 
@@ -151,32 +152,27 @@ are of IT plot OT but it contains about 20\% of the tracks. Each ST station has 
 the first and last being vertical, measuring the track position in x. The second 
 and third layer are rotated by a stereo angle of +5 and -5 degrees, which allows the y-coordinate to be measured. 
 The TT is placed upstream of the magnet, which allows reconstruction of the tracks from low-momentum particles
-which are swept out of the downstream acceptance. Overall the tracking system provides a measurement of momentum, $p$, 
-with a relative uncertainty that varies from 0.5\% at low momentum to 1.0\% at 200 \gevc. The impact parameter (IP),
-namely the minimum distance of a track to a primary vertex, is measured with a resolution of $(15 + 29/\pt)$ $\mu m$,
-where \pt is the component of the momentum transverse to the beam, in \gevc.
+which are swept out of the downstream acceptance. Overall the tracking system provides a measurement of momentum, $p$,  with a relative uncertainty that varies from 0.5\% at low momentum to 1.0\% at 200 \gevc. 
+The impact parameter (IP), namely the minimum distance of a track to a primary vertex, is measured 
+with a resolution of $(15 + 29/\pt)$ $\mu m$, where \pt is the component of the momentum transverse to the 
+beam, in \gevc. The z-axis position of a PV reconstructed with 35-40 tracks can be measured to a precision of roughly 50--60 $\mu m$. Accurate IP and vertex displacement measurements allow LHCb to effectively distinguish 
+between $B$ meson decays and background processes. In fact $B$ mesons typically travel $\sim 1$ cm in
+the detector before decaying into lighter particles, which tend to have high IP as the B decay imparts
+transverse momentum to them.
 
 
-\section{Particle identification}
-
-Particle identification is an important feature in LHCb and it is performed in various ways.
-The electromagnetic calorimeters can distinguish between pions and electron, the muon chambers
-identify muons and the Ring Imaging Cherenkov (RICH) detectors can be used to identify 
-heavier charged particles as protons and kaons.
-
-\subsection{Calorimeters}
+\section{Calorimeters}
 \label{sec:calorimeters}
 
 The main purpose of the calorimeter system is to determine the energy of particles traversing the detector. 
 A calorimeter is composed by layers of absorber and active material. The absorber makes particles
 interact and produces a cascade of secondaries, which multiply quickly and are detected by the active part.
 In LHCb the sensitive material consists of scintillating layers, where the light detected is approximately proportional 
-to the number of deposited particles. Calibration is then used to traslate the signal into a measurement of deposited
-energy. 
-%The calorimeter system is essential for flavour tagging because it identifies electrons. In addition, it
-%is required for accurately reconstructing $\pi^0$ particles and prompt photons, which are both needed for the study of B-meson decays.
-The LHCb calorimeter system consists of the Scintillator Pad Detector (SPD), the Pre-Shower Detector (PS) as well as
-the Electromagnetic Calorimeter (ECAL) and the Hadronic Calorimeter (HCAL).
+to the number of deposited particles. Calibration is then used to translate the signal into a measurement 
+of deposited energy. 
+The LHCb calorimeter system consists of the Scintillator Pad Detector (SPD), the Pre-Shower Detector (PS)
+as well as the Electromagnetic Calorimeter (ECAL) and the Hadronic Calorimeter (HCAL).
+A sketch of the LHCb calorimeters is shown in Fig.~\ref{fig:pi0_e_pid_perf}
 The most difficult identification is that of electrons. First of all the rejection of a high background
 of charged pions requires a longitudinal segmentation of the electromagnetic calorimeters. This is provided by
 the PS detector added in front of the main electromagnetic calorimeter, ECAL. Electrons also have to be 
@@ -187,13 +183,15 @@ All four detectors transmit scintillation light via
 wavelength-shifting fibres to photo-multiplier tubes (PMTs). The SPD/PS cells are read out with MAPMTs 
 (Multi-anode PMTs) located outside the LHCb acceptance. Instead the ECAL and HCAL have individual MAPMTs
 located on the modules. All four detectors are segmented, which allows to achieve to associate the energy
-deposits to tracks in the tracking system. The segmentation of the cells vaies according to the distance from the beam pipe.
+deposits to tracks in the tracking system. The segmentation of the cells varies according 
+to the distance from the beam pipe.
 %The purpose of the SPD and PS is to separate the electrons from a high background of neutral and charged pions 
 %produced in the collisions. 
 
 \begin{figure}[t!]
 \centering
-\includegraphics[width=0.5\textwidth]{Detector/figs/pi0_e_pid_perf.png}
+\includegraphics[width=0.4\textwidth,height=5.3cm]{Detector/figs/pi0_e_pid_perf.png}
+\includegraphics[width=0.59\textwidth]{Detector/figs/calo_layout.png}
 \caption{The ratio of the energy deposited in the ECAL and the particle momentum, which allows
 the separation between electrons and hadrons. }
 \label{fig:pi0_e_pid_perf}
@@ -215,18 +213,18 @@ as for the ECAL, so due to a limited space, its thickness is only 5.6 interactio
  \frac{\sigma_{HCAL}(E)}{E} = \frac{69\%}{\sqrt{E(GeV)}} + 9\%.
  \end{equation}
 
-\subsubsection{Breamsstrahlung recovery for electrons}
+\subsection{Bremsstrahlung recovery for electrons}
 
 Bremsstrahlung is an electromagnetic radiation produced by particles, that decelerate or deviate because of
 the presence other charged particles. Typically electrons produce Bremsstrahlung when deflected by atomic nuclei.
-The probability of emitting breamsstrahlung radiation is proportional to the inverse of the squared mass of the
+The probability of emitting bremsstrahlung radiation is proportional to the inverse of the squared mass of the
 particle ($1/m^2$) and therefore is relevant only for electrons.
 %
 \begin{figure}[h!]
-\label{bremreco}
 \centering
 \includegraphics[width=0.55\textwidth]{RKst/figs/brem_recovery.png}
-\caption{Schematic view of the Breamsstrahlung recovery. }
+\caption{Schematic view of the bremsstrahlung recovery. }
+\label{fig:bremreco}
 \end{figure}
 %
 At these energies, if electrons radiate after
@@ -237,10 +235,10 @@ part of the calorimeter. Missing this energy results in a poorer reconstructed \
 desirable to recover these bremsstrahlung photons, when possible. A tool for bremsstrahlung recovery is available
 in the LHCb analysis software. This tool looks for other clusters in the calorimeter and reconstructing the trajectory
 of the electron checks if they may have been emitted by that. Then the photon energy is added to the electron and its
-momentum recalculated. Figure~\ref{bremreco} shows a schematic view of the process. For more information see
-Ref.~\cite{LHCb:2003ab}.
+momentum recalculated. Figure~\ref{fig:bremreco} displays a schematic view of the process. 
+For more information see Ref.~\cite{LHCb:2003ab}.
 
-\subsection{RICH}
+\section{RICH}
 
 The two RICH detectors are a special feature of LHCb, as it is the only experiment at LHC including them. 
 These detectors take advantage of the Cherenkov radiation produced by particles passing in a medium with velocity 
@@ -285,9 +283,10 @@ the particles have to traverse. Pattern recognition algorithms are then used to 
 
 It is essential for many of the key physics analyses to be able to identify muons in the final state.
 Muons are the most penetrating particles that can be detected at LHC experiments, so the muon chambers
-are the farthest subdetectors from the interaction point. The muon system is formed by five stations (M1 - M5),
+are the farthest sub-detectors from the interaction point. The muon system is formed by five stations (M1 - M5),
 the first one being located before the calorimeters in order to improve \pt measurements. A scheme of the muon
-system is shown in Fig.~\ref{muonsystem}. The remaining four stations lay behind the HCAL and are separated by 1.2~m
+system is shown in Fig.~\ref{fig:muonsystem}. The remaining four stations lay behind the HCAL
+and are separated by 1.2~m
 from each other, interleaved with iron 80~cm thick blocks, which absorb hadrons, electrons and photons to ensure
 that only muons reach the final muon station. Only muons with a minimum momentum of 10 \gevc traverse all of the
 five stations and for positive identification of a muon the trigger requires a signal in each of them.
@@ -305,43 +304,118 @@ though all of the GEM foils and multiply. They then drift into the anode inducin
 of Argon, $CO_2$ and $CF_4$, is used to give a time resolution better than 3~ns.
 %
 \begin{figure}[h!]
-\label{muonsystem}
-\centering \includegraphics[width=0.65\linewidth]{Detector/figs/muonsystem.png}
+\centering \includegraphics[width=1.0\textwidth]{Detector/figs/muon.png}
 \caption{The LHCb muon system~\cite{Alves:2008zz}.}
+\label{fig:muonsystem}
 \end{figure}
 
+\section{Particle identification}
+\label{sec:PID_perf}
+
+Particle identification (PID) is an important feature in LHCb and it is performed in various ways.
+The electromagnetic calorimeters can distinguish between pions and electron, the muon chambers
+identify muons and the Ring Imaging Cherenkov (RICH) detectors can be used to identify 
+heavier charged particles as protons and kaons.
+
+%The RICH assigns an ID to a track using a `global pattern recognition? algorithm [47].
+The RICH assigns an ID to a track calculating the global likelihood for the observed distribution 
+of HPD hits being consistent with an expected distribution being consistent with various ID hypothesis.
+The algorithm iterates through each track and recalculates the likelihood when the track PID hypothesis
+is changed to that of an electron, muon, kaon or proton. For electrons and muons additional information
+from the calorimeter and muon systems is also used. The hypothesis which maximises the likelihood
+is assigned to the track.
+
+%pion ID is used, as the pions are the most abundant particles.
+To quantify the quality of the ID the pion hypothesis is used as a reference point and the probability
+of a specific ID is given in terms of  Log-Likelihood difference between the given ID hypothesis and the pion one.
+This variable is called is called Delta Log-Likelihood (DLL) and denoted with \verb!PID!.
+For example:
+\begin{equation}
+\verb!PID!_K = \text{DLL}_{K-\pi} = \log(\mathcal{L}_K) - \log(\mathcal{L}_\pi)
+\end{equation}
+quantifies the probability of a particle being a kaon rather than a pion.
+Figure~\ref{fig:pid_perf} shows the efficiency of correctly identifying and mis-identifying kaons and protons
+as a function of the measured momentum of the particle. For kaons the efficiency drops at momenta below
+10 \gev, where the kaon falls below threshold for the gas radiators. 
+The DLL cuts enable LHCb physics analyses to distinguish between kinematically similar decays 
+with different final states, such as \Bz and \Bs mesons decaying into two hadrons.
+Figure~\ref{fig:pid_peaks} illustrated the power of particle identification,  showing how the application
+of DLL cuts can be used to isolate $\Bz\to pi^+\pi^-$ decays from the other two-body $B$ decays.
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.49\textwidth]{Detector/figs/kaon_pid_perf.png}
+\includegraphics[width=0.49\textwidth]{Detector/figs/proton_pid_perf.png}
+\caption{Particle Identification performances for kaons (left) and protons (right) as a function of the measured momentum of the particles. }
+\label{fig:pid_perf}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.\textwidth,height=5.5cm]{Detector/figs/pid_peaks.png}
+\caption{Invariant mass peak of the $\Bz\to\pi^+\pi^-$ decay before (left) and
+after (right) the application of PID requirements. }
+\label{fig:pid_peaks}
+\end{figure}
+%
+Particularly important in LHCb is the identification of muons, which is quantified using two different the DLL$\mu$
+and in addition the \verb!isMuon! variable. This is a boolean variable determined by defining a `field of interest' around 
+an extrapolated track trajectory through the muon chambers. The variable is set to true if hits in multiple muon stations are found in the field of interest.
+%Tracks with higher momenta require hits in more muon stations.
+%muDLL is the difference in the logarithm of the likelihood that the pattern of hits in the muon system is consistent with the extrapolated track being either a muon or a non-muon particle. The larger the value for muDLL the more ?muon-like? the track is.
+
+\subsection{PID calibration}
+\label{sec:PID_calib}
+
+In order to be able to calculate efficiencies a data-driven method was developed.
+The calibration software is referred to as \verb!PIDCalib! package~\cite{Aaij:1978280}. 
+This tool uses decays where final  particles can be identified thanks to their kinematic properties.
+For example the $\KS\to\pi^+\pi^-$ decay has a clear signature with a displaced vertex
+and can be easily singled out from other decays and used to test pion PID efficiency.
+The narrow peaks of the $\jpsi\to\mumu$ and $\jpsi\to\ee$ decays allow to calibrate
+muon and electron efficiencies. A ``tag-and-probe" method is used where only one 
+of the two leptonic tracks is reconstructed requiring the correct identity and the other one
+is used to probe the PID efficiency. Finally,  $\phi\to KK$ samples and 
+$D^{*+}\to D(\to K^-\pi^+)\pi^+$ decays, where the $D^{*+}$ is used to tag the decay,
+are used to test the kaon efficiency. Residual background in this decays is subtracted using
+the $_s\mathcal{P}$lot technique~\cite{sPlot}.
 
 
 \section{Trigger and software}
+\label{sec:det_trigger}
 
-The LHCb trigger system~\cite{LHCb-DP-2012-004} consists of a hardware stage (L0), based on information from the calorimeters
-and muon system, followed by a software stage, the High-Level Trigger (HLT), which applies a full event reconstruction.
-To increase performances the HLT is split again into stages (HLT1 and HLT2). The HLT1 phase happens in real time and saves
-data in local disks while the HLT2 phases uses the resources available during periods with no beam. The event selected by
-the HLT2 stage are then saved for offline analysis. The bunch crossing frequency is 40~$\mbox{MHz}$, which corresponds to
-an instantaneous luminosity of $2 \cdot 10^{32} ~\mbox{cm}^{-2} \mbox{s}^{-1}$ for LHCb. About 15\% of the total number of
-$\bquark\bquarkbar$ pairs produced will contain at least one $B$ meson with all of its decay products within the detector acceptance. This rate needs to be
-reduced down to about 2~kHz so that the events can be written to disk. Fig.~\ref{triggerscheme}
-shows a scheme of the trigger system.
-
+The LHCb trigger system~\cite{LHCb-DP-2012-004} consists of a hardware stage (L0), based on information
+from the calorimeters and muon system, followed by a software stage, the High-Level Trigger (HLT), which applies 
+a full event reconstruction. To increase performances the HLT is split again into stages (HLT1 and HLT2). The 
+HLT1 phase happens in real time and saves data in local disks while the HLT2 phases uses the resources
+available during periods with no beam. The event selected by the HLT2 stage are then saved for offline analysis. 
+The bunch crossing frequency is 40~$\mbox{MHz}$, which corresponds to an instantaneous luminosity of 
+$2 \cdot 10^{32} ~\mbox{cm}^{-2} \mbox{s}^{-1}$ for LHCb. About 15\% of the total number of
+$\bquark\bquarkbar$ pairs produced will contain at least one $B$ meson with all of its decay products 
+within the detector acceptance. This rate needs to be reduced down to about 2~kHz so that the events can be 
+written to disk. Fig.~\ref{fig:triggerscheme} shows a scheme of the trigger system.
+%
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=0.9\linewidth]{Detector/figs/triggerscheme.png}
 \caption{Scheme of the LHCb trigger system~\cite{Alves:2008zz}.}
-\label{triggerscheme}
+\label{fig:triggerscheme}
 \end{figure}
 
 The L0 trigger reduces the rate of visible interactions from 10~MHz to 1~MHz.
 Due to the heavy mass of $B$ mesons, they often produce particles with high \pt or $E_{\rm T}$.
 Therefore the trigger selects events with large $E_{\rm T}$ deposits in the calorimeter
-of high \pt muons. The events is classified as \verb!L0Muon! it was triggered due to information
+of high \pt muons. The event is classified as \verb!L0Muon! it was triggered due to information
 for the muon detector, while the information from the calorimeters is combined to divide the
-events in the 5 categories: \verb!L0Photon!, \verb!L0Electron!, \verb!L0LocalPion!, \verb!L0GlobalPio!n, \verb!L0Hadron!. 
-The label ``local" refers to $\pi^0$ reconstructed though their $\gamma\gamma$ decay, where the two photons
-fall in the same ECAL element, they are labelled ``global" otherwise.
-The HLT1 uses information from the VELO and trackers performing a partial reconstruction
-of the event and reduces the rate to 2~kHz. Finally, the HLT2 involves a full reconstruction of the
-event and includes many ``lines" designed to trigger specific decays.
+events in the 5 categories: \verb!L0Photon!, \verb!L0Electron!, \verb!L0LocalPion!, 
+\verb!L0GlobalPion!, \verb!L0Hadron!. The PS detector information is converted to a photon flag 
+(\verb|PS && !SPD|) or an electron flag (\verb|PS && SPD|). The ``local" flag of the \verb!L0Pion! trigger 
+refers to $\pi^0$ reconstructed though their $\gamma\gamma$ decay, where the two photons fall in the 
+same ECAL element, they are labelled ``global" otherwise. The first four calorimeter triggers require 
+energy clusters in the ECAL, while \verb!L0Hadron! requires clusters in the HCAL. 
+The HLT1 uses information from the VELO and trackers performing a partial reconstruction 
+of the event and reduces the rate to 2~kHz by adding requirements of the IP and \chisq of tracks.
+Finally, the HLT2 involves a full reconstruction of the event and includes many ``lines" designed 
+to trigger specific decay structures.
 
 LHCb also developed an extended simulation software in order to reconstruct efficiencies and signal shapes.
 In the simulation, $pp$ collisions are generated using $\textsc{Pythia}8$~\cite{Sjostrand:2006za} with a specific
@@ -352,9 +426,27 @@ as described in Ref.~\cite{LHCb-PROC-2011-006}. For this analysis in this thesis
 used to analyse data and the RooFit package to perform maximum likelihood fits. A multivariate analysis is also used
 based on the NeuroBayes package~\cite{Feindt:2006pm,feindt-2004} which provides a framework for neural network training.
 
+\section{Kinematical fits}
+\label{sec:DTF}
 
-
-
-
-
+The resolution of key variables, such as the measured invariant mass of decaying particles,
+can be improved by imposing constraints to the measured quantities to remove redundant degrees of freedom.
+The four-momentum conservation can be ensured at each vertex and the origin and decay vertices of a particle are related via the momentum of the particle. Furthermore, additional constraints can be imposed due to a particular
+decay hypothesis such as invariant masses of final and intermediate particles.
+In order to do this the \verb!DecayTreeFitter! tool was developed in LHCb~\cite{Hulsbergen:2005pu}. The algorithm takes a complete decay chain and  parameterises it in terms of vertex positions, decay lengths and momentum parameters.
+Then these parameters are fit simultaneously, taking into account the relevant constraints, including the information
+from photons. To perform the fit efficiently a Kalman filter is used. Figure~\ref{fig:DTFeffect} illustrates the effect of
+the application of the kinematical fit on the 4-body invariant mass of the final daughters of the $\Lb\to\jpsi\Lz$ decay.
+The resolution in this case improves by over a factor of 2. Furthermore, the $\chi^2$ from the fit
+can be used to quantify the likelihood of the decay, which helps to separate candidates where random particles
+from the event have been added to the decay tree or where one or more particles is not reconstructed.
+%
+\begin{verbbox}DecayTreeFitter \end{verbbox}
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=0.7\textwidth]{Detector/figs/DTF_performance.pdf}
+\caption{Invariant mass of the final daughters of simulated $\Lb\to\jpsi\Lz$ decays calculated
+with and without constraints using the \theverbbox  tool. }
+\label{fig:DTFeffect}
+\end{figure}
 

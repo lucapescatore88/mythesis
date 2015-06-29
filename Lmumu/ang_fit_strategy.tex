@@ -3,16 +3,16 @@
 In this chapter is described the fitting technique applied to extract the angular observables.
 There are physical limits to the values of the parameters of interests:
 $A_{\rm FB}^h$ is limited in the [-0.5,0.5] interval and for the $f_{\rm L}$ and 
-$A_{\rm FB}^\ell$ parameters the physical region, given by $|A_{\rm FB}^\ell| < 3/4(f_L-1)$,
+$A_{\rm FB}^\ell$ parameters the physical region, given by $|A_{\rm FB}^\ell| < 3/4(f_{\rm L}-1)$,
 is the triangle shown in Fig.~\ref{fig:pdfscan}.
-If the minimum is close to the border minuit does not always converge. For this reason
+If the minimum is close to the border the fit does not always converge. For this reason
 a "brute force" fitting technique is applied. For this purpose fit parameters are
 divided into two categories: parameters of interest (PoIs), $A_{\rm FB}^\ell$,
 $A_{\rm FB}^h$ and $f_{\rm L}$ and all other parameters referred to as nuisances.
 The Log-Likelihood, $log\mathcal{L}$, of the fit model with respect of data is calculated.
 The full PoIs allowed area is scanned looking for the minimum of the Log-Likelihood.
 A first coarse scan finds a candidate minimum and then the procedure is reiterated two
-more times in finer intervals around it. For each point all the niusances are fitted
+more times in finer intervals around it. For each point all the nuisances are fitted
 using a maximum likelihood fit. The fit is therefore constrained inside the physical
 region, if the best log-likelihood is found to be outside it, the point at the boundary
 is chosen as the best fit. %More details are given in Sec.~\ref{sec:FeldmanCousin}.
@@ -21,7 +21,7 @@ is chosen as the best fit. %More details are given in Sec.~\ref{sec:FeldmanCousi
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{Lmumu/figs/scan.pdf}
-\caption{The plot shows the physical $A_{FB}^\ell$ vs $f_L$ parameter space. The dark region corresponds to points where the pdf is positive in the whole $[-1,1]$ interval. }
+\caption{The plot shows the physical $A_{\rm FB}^\ell$ vs $f_{\rm L}$ parameter space. The dark region corresponds to points where the pdf is positive in the whole $[-1,1]$ interval. }
 \label{fig:pdfscan}
 \end{figure}
 
@@ -31,13 +31,13 @@ is chosen as the best fit. %More details are given in Sec.~\ref{sec:FeldmanCousi
 Since physical boundaries of the parameter space could result in a wrong estimation of the uncertainties,
 especially if the measured value is close to the border, in this analysis the likelihood-ordering
 method~\cite{Feldman:1997qc} is used. Nuisance parameters are accounted for using the
-plug-in method~\cite{woodroofe,Karbach:2011uz}. This is a unified method to calculate confidence
+plug-in method~\cite{Karbach:2011uz}. This is a unified method to calculate confidence
 intervals and upper/lower limits, based on simulated experiments and has the advantage
 of having a well defined frequentist coverage.
 
 %One defines two classes of parameters: Parameters of Interest (PoI), which are those for which
 %one wants to construct confidence intervals, and nuisance parameters, which are all the secondary
-%parameters in a model. In our analysis the baryon side has one parameter only, $A_{FB}^h$, 
+%parameters in a model. In our analysis the baryon side has one parameter only, $A_{\rm FB}^h$, 
 %which we consider PoI and the lepton side has two which we alternatively consider PoI and nuisance. 
 
 The method is constituted by the following steps:
@@ -62,8 +62,8 @@ which gives two-dimensional confidence regions.
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/pvalue_fL_1500_2000.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/pvalue_afbB_1500_2000.pdf}
-\caption{ Distribution of measured values of angular observables $f_{L}$ (left) 
-and $A_{FB}^h$ (right)in simulated experiments. The red lines mark the points
+\caption{ Distribution of measured values of angular observables $f_{\rm L}$ (left) 
+and $A_{\rm FB}^h$ (right) in simulated experiments. The red lines mark the points
 at p-value 32\% corresponding to a 68\% CL.}
 \label{fig:FCexample}
 \end{figure}
@@ -77,8 +77,8 @@ The observables are extracted from fits to one-dimensional angular distributions
 %given by (for details, see appendix \ref{ap:angObservables})
 %\begin{align}
 %\frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d\cos\theta_\ell}=
-%\frac{d\Gamma}{dq^2}&\left[  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-f_L)+A_{FB}^\ell\cos\theta_\ell +
-%   \frac{3}{4}f_L \sin^2\theta_\ell \right], 
+%\frac{d\Gamma}{dq^2}&\left[  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-f_{\rm L})+A_{\rm FB}^\ell\cos\theta_\ell +
+%   \frac{3}{4}f_{\rm L} \sin^2\theta_\ell \right], 
 %\label{eq:afbLTh}
 %\end{align}
 %where $f_{\rm L}$ is fraction of longitudinally polarised dimuons.
@@ -88,20 +88,19 @@ The observables are extracted from fits to one-dimensional angular distributions
 %     {dq^2\,d\cos\theta_\Lambda} 
 %={\rm Br}(\Lambda \to p\pi^{-})
 % \frac{d\Gamma(\Lambda_b \to \Lambda\, \ell^{+}\ell^{-})}{d q^2}\frac{1}{2}
-%\Big(1+2A_{FB}^h\cos\theta_\Lambda\Big) \,. 
+%\Big(1+2A_{\rm FB}^h\cos\theta_\Lambda\Big) \,. 
 %\label{eq:afbBTh}
 %\end{equation}
 %
 The PDFs used to model the data is defined as
 %
 \begin{equation}
-P^k(\cos\theta_{\ell/h}) = f_b P_S(\cos\theta_{\ell/h}) \times \varepsilon^k(\cos_{\theta_{\ell/h}}) + 
+P^k(\cos\theta_{\ell/h}) = f_b P_S(\cos\theta_{\ell/h}) \times \varepsilon^k(\cos \theta_{\ell/h}) + 
 		(1-f_b)P_B^k(\cos\theta_{\ell/h}),
 \end{equation}
 %
-where $k=$(LL,DD), $P_S$ is the signal function composed by a theoretical shape given by Eq.~\ref{eq:afbBTh} and
-\ref{eq:afbLTh} multiplied by an acceptance function $\varepsilon$ described in Sec.~\ref{sec:AngEff}
-and $P_B$ is a background component. To limit systemaitc effects due to the background parameterisation, 
+where $k=$(LL,DD), $P_S$ is the signal function composed by a theoretical shape given by Eq.~\ref{eq:afbBTh} and~\ref{eq:afbLTh} multiplied by an acceptance function $\varepsilon$ described in Sec.~\ref{sec:AngEff}
+and $P_B$ is a background component. To limit systematic effects due to the background parameterisation, 
 the fit is performed in a restricted mass region around the peak:
 $5580 < m(\Lz\mumu) < 5660 $ \mevcc ~(``signal region"), which is dominated by the signal.
 %In this way in most of the \qsq bins we have $\sim 20\%$ of background events.
@@ -109,34 +108,34 @@ The background fraction, $f_b$, is obtained by looking at the invariant mass dis
 in a wider interval and fitting it to extract the fraction of background in the signal region.
 In the fit to the angular distributions this is then gaussian constrained to to obtained value.
 The background shape is parameterised with a linear function times the efficiency shape.
-A different efficiency shape is used for downstream and long events and for each q2 bin.
+A different efficiency shape is used for downstream and long events and for each \qsq interval.
 The free parameter of this model is fitted on sideband candidates which contain only background
-and fixed for the fit to the signal region. In Figs. \ref{fig:cosThetaLbkg} and \ref{fig:cosThetaBbkg} 
-are reported the background distributions in the sideband ($m(\Lz\mumu) > 5700$ \mevcc)
-for the high and low \qsq integrated intervals with overlaid the background functions alone.
+and fixed for the fit to the signal region. Figure~\ref{fig:cosThetaLbkg}
+reports the background distributions in the sideband ($m(\Lz\mumu) > 5700$ \mevcc)
+for the high \qsq integrated interval with overlaid the background function.
 In summary the only fit parameter in the total fit function is the forward-backward asymmetry.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_lowq2_DD.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_lowq2_LL.pdf}
-\caption{Background distribution as a function of $\cos\theta_\ell$ for downstream (left) and long (right)
-events in the 15-20 \gevgevcccc (top) and 1.1-6 \gevgevcccc (bottom) \qsq bins.  }
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf}
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf}
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf}
+\includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf}
+\caption{Background distribution as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom)
+for downstream (left) and long (right) candidates in the 15-20 \gevgevcccc ~\qsq interval.  }
 \label{fig:cosThetaLbkg}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_lowq2_DD.pdf}
-\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_lowq2_LL.pdf}
-\caption{Background distribution as a function of $\cos\theta_\Lambda$ for downstream (left) and long (right)
-events in the 15-20 \gevgevcccc (top) and 1.1-6 \gevgevcccc (bottom) \qsq bins. }
-\label{fig:cosThetaBbkg}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_lowq2_DD.pdf}
+%\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_lowq2_LL.pdf}
+%\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_lowq2_DD.pdf}
+%\includegraphics[width=0.45\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_lowq2_LL.pdf}
+%\caption{Background distribution as a function of $\cos\theta_\Lambda$ for downstream (left) and long (right)
+%events in the 15-20 \gevgevcccc (top) and 1.1-6 \gevgevcccc (bottom) \qsq bins. }
+%\label{fig:cosThetaBbkg}
+%\end{figure}
 
 
 \section{Angular acceptance}
@@ -150,11 +149,10 @@ by an additional weight, to minimise the distortion of the uncertainties estimat
 the efficiency function is incorporated in the fit model. The angular efficiency is
 parametrised using a second-order polynomial and determined separately for downstream and
 long candidates by fitting simulated events, with an independent set of parameters obtained
-for each \qsq interval. These parameters are fixed in the fits to data.
+for each \qsq interval. These parameters are fixed for the fits to data.
 Using polynomial functions allows to calculate the PDF normalisation analytically.
-In Figs.~\ref{fig:cosThetaLeff} and \ref{fig:cosThetaBeffLow} efficiencies are reported,
-as a function of $\cos\theta_h$ and $\cos\theta_\ell$ using $\Lb\to\Lz\mumu$ simulated events
-in the 15.0--20.0 and 1.1--6.0 \gevgevcccc integrated \qsq intervals.
+Figure~\ref{fig:angular_eff} shows total efficiency as a function of $\cos\theta_h$ and 
+$\cos\theta_\ell$ in the 15.0--20.0 integrated \qsq interval obtained using a $\Lb\to\Lz\mumu$ simulated sample.
 %$\ref{fig:cosThetaLeffJpsi} and \ref{fig:cosThetaBeffJpsi} $J/\psi\Lz$ MC and $\Lz\mumu$ 
 %
 For the lepton side, even though the efficiency is symmetric by construction,
@@ -168,19 +166,19 @@ all parameters floating in the fit, namely it is not constrained to be symmetric
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000.pdf}
 \caption{Efficiency as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom) for
 downstream (left) and long (right) candidates in the 15--20 \gevgevcccc ~\qsq interval.  }
-\label{fig:cosThetaBeff}
+\label{fig:angular_eff}
 \end{figure}
 %
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/DDeffFit_q2_110_600.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/LLeffFit_q2_110_600.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/DDeffFitB_q2_110_600.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/LLeffFitB_q2_110_600.pdf}
-\caption{Efficiency as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom) for
-downstream (left) and long (right) candidates in the 1.1--6.0 \gevgevcccc ~\qsq interval.  }
-\label{fig:cosThetaBeffLow}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/DDeffFit_q2_110_600.pdf}
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/LLeffFit_q2_110_600.pdf}
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/DDeffFitB_q2_110_600.pdf}
+%\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/angular/LLeffFitB_q2_110_600.pdf}
+%\caption{Efficiency as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom) for
+%downstream (left) and long (right) candidates in the 1.1--6.0 \gevgevcccc ~\qsq interval.  }
+%\label{fig:cosThetaBeffLow}
+%\end{figure}
 %
 %\begin{figure}[h]
 %\centering
@@ -219,8 +217,8 @@ An high number of free parameters is difficult to constrain with the very limite
 %
 To check which method gives the best sensitivity 500 pseudo-experiments are generated.
 Events are generated in 3D using shapes taken from the fit on real data.
-The generated values of the parameters of interest are $A_{FB}^\ell = 0$, $f_L = 0.7$ 
-and $A_{FB}^h = -0.37$. These are data-like values inspired to what is measured in the highest
+The generated values of the parameters of interest are $A_{\rm FB}^\ell = 0$, $f_{\rm L} = 0.7$ 
+and $A_{\rm FB}^h = -0.37$. These are data-like values inspired to what is measured in the highest
 statistics interval. The overall statistics and the fraction of bacgkround events in the mass
 window are constrained to what obtained from the fit on real data.
 %This is done using the statistics of our highest statistics bin, $15-20$ $GeV^2/c^2$ in \qsq, 
@@ -264,13 +262,13 @@ and statistics corresponding to what we observe in the 11--12.5 \qsq interval. }
 \caption{RMS values for toy experiments on the extraction of the three parameters
 of inetersts with the 1D or 3D fitting methods.}
 \begin{tabular}{lcccc} \hline
-\qsq [\gevgevcccc]         &   Fit type 	 & $A_{FB}^h$  &  $A_{FB}^\ell$ &   $f_L$ 	 \\
+\qsq [\gevgevcccc]         &   Fit type 	 & $A_{\rm FB}^h$  &  $A_{\rm FB}^\ell$ &   $f_{\rm L}$ 	 \\
 \hline
 
-\multirow{2}{*}{15.0-20.0} & 1D           &  0.070    &  0.055       &   0.099  \\
+\multirow{2}{*}{15.0--20.0} & 1D           &  0.070    &  0.055       &   0.099  \\
 			    	       & 3D           &  0.092    &  0.095       &   0.153  \\
 \hline
-\multirow{2}{*}{11.0-12.5} & 1D           &  0.142    &  0.128       &   0.198  \\
+\multirow{2}{*}{11.0--12.5} & 1D           &  0.142    &  0.128       &   0.198  \\
 					       & 3D           &  0.249    &  0.254       &   0.303  \\
 
 \hline
@@ -285,7 +283,7 @@ of inetersts with the 1D or 3D fitting methods.}
 %\begin{table}
 %\centering
 %\begin{tabular}{lcccc} \hline\hline
-%\qsq bin    &   $A_{FB}^\ell$			&  		 $f_L$ 	 			 &		 $A_{FB}^h$  		 \\
+%\qsq bin    &   $A_{\rm FB}^\ell$			&  		 $f_{\rm L}$ 	 			 &		 $A_{\rm FB}^h$  		 \\
 %\hline
 %0.1-2.0		&	$-0.01126 \pm 0.01272$  &  $-0.14299 \pm 0.01551$    &  $0.04002 \pm 0.00950$    \\
 %11.0-12.5	&	$0.00123 \pm 0.00574$	&  $-0.03601 \pm 0.00885$	 &  $0.02030 \pm 0.00634$  	\\

@@ -27,6 +27,8 @@
 \usepackage{ifthen}
 \newboolean{uprightparticles}
 \setboolean{uprightparticles}{false}
+\usepackage{cprotect}
+\usepackage{verbatimbox}
 \usepackage[Sonny]{fncychap} %Styles: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, and Bjornstrup.
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
@@ -230,7 +232,7 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 
 %%%%%%%%%%%%%%%%%%%%
 
-%\include{conclusions}
+\include{conclusions}
 
 \setstretch{1}
 \cleardoublepage

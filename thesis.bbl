@@ -1,16 +1,20 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Aaij:2015xza}
 R.~Aaij {\em et~al.}, ``{Differential branching fraction and angular analysis
   of $\Lambda^{0}_{b} \rightarrow \Lambda \mu^+\mu^-$ decays},'' 2015.
 
-\bibitem{Glashow:1961tr}
-S.~Glashow, ``{Partial Symmetries of Weak Interactions},'' {\em Nucl.Phys.},
-  vol.~22, pp.~579--588, 1961.
-
 \bibitem{PDG2014}
 K.~Olive {\em et~al.}, ``{Review of Particle Physics},'' {\em Chin.Phys.},
   vol.~C38, p.~090001, 2014.
+
+\bibitem{Susskind:1978ms}
+L.~Susskind, ``{Dynamics of Spontaneous Symmetry Breaking in the Weinberg-Salam
+  Theory},'' {\em Phys.Rev.}, vol.~D20, pp.~2619--2625, 1979.
+
+\bibitem{Glashow:1961tr}
+S.~Glashow, ``{Partial Symmetries of Weak Interactions},'' {\em Nucl.Phys.},
+  vol.~22, pp.~579--588, 1961.
 
 \bibitem{Strocchi:1977za}
 F.~Strocchi, ``{Spontaneous Symmetry Breaking in Local Gauge Quantum Field
@@ -56,6 +60,10 @@ L.~Randall and R.~Sundrum, ``{A Large mass hierarchy from a small extra
 G.~Isidori and D.~M. Straub, ``{Minimal Flavour Violation and Beyond},'' {\em
   Eur.Phys.J.}, vol.~C72, p.~2103, 2012.
 
+\bibitem{Buras:2003jf}
+A.~J. Buras, ``{Minimal flavor violation},'' {\em Acta Phys.Polon.}, vol.~B34,
+  pp.~5615--5668, 2003.
+
 \bibitem{TomRDreview}
 T.~Blake, T.~Gershon, and G.~Hiller, ``{Rare b hadron decays at the LHC},''
   2015.
@@ -81,6 +89,21 @@ G.~Buchalla, A.~J. Buras, and M.~E. Lautenbacher, ``{Weak decays beyond leading
 \bibitem{Buras:1998raa}
 A.~J. Buras, ``{Weak Hamiltonian, CP violation and rare decays},''
   pp.~281--539, 1998.
+
+\bibitem{DellaMorte:2015yda}
+M.~Della~Morte, J.~Heitger, H.~Simma, and R.~Sommer, ``{Non-perturbative Heavy
+  Quark Effective Theory: An application to semi-leptonic B-decays},'' {\em
+  Nucl.Part.Phys.Proc.}, vol.~261-262, pp.~368--377, 2015.
+
+\bibitem{Bauer:2000yr}
+C.~W. Bauer, S.~Fleming, D.~Pirjol, and I.~W. Stewart, ``{An Effective field
+  theory for collinear and soft gluons: Heavy to light decays},'' {\em
+  Phys.Rev.}, vol.~D63, p.~114020, 2001.
+
+\bibitem{Khodjamirian:2010vf}
+A.~Khodjamirian, T.~Mannel, A.~Pivovarov, and Y.-M. Wang, ``{Charm-loop effect
+  in $B \to K^{(*)} \ell^{+} \ell^{-}$ and $B\to K^*\gamma$},'' {\em JHEP},
+  vol.~1009, p.~089, 2010.
 
 \bibitem{LHCB-PAPER-2013-039}
 R.~Aaij {\em et~al.}, ``{Observation of a resonance in $B^+\to K^+\mu^+\mu^-$
@@ -131,6 +154,16 @@ R.~Aaij {\em et~al.}, ``{Measurement of $A_{\rm CP}$ and $\Delta A_{\rm FB}$ in
   $B^0\to K^\ast\mu^+\mu^-$ and $B^+\to K^+\mu^+\mu^-$ decays},'' 2014.
 \newblock {in preparation}.
 
+\bibitem{LHCB-PAPER-2013-005}
+R.~Aaij {\em et~al.}, ``{Measurement of the $B^0 \to K^{*0}e^+e^-$ branching
+  fraction at low dilepton mass},'' {\em JHEP}, vol.~05, p.~159, 2013.
+
+\bibitem{Aaij:1981106}
+R.~Aaij {\em et~al.}, ``{Angular analysis of the $B^0 \rightarrow K^{*0} e^+
+  e^-$ decay in the low-$q^2$ region},'' {\em J. High Energy Phys.}, vol.~04,
+  p.~064. 18 p, Jan 2015.
+\newblock Comments: 18 pages, 5 figures.
+
 \bibitem{Ahmed:2001eh}
 M.~Ahmed {\em et~al.}, ``{Search for the lepton family number nonconserving
   decay mu+ ---> e+ gamma},'' {\em Phys.Rev.}, vol.~D65, p.~112002, 2002.
@@ -160,6 +193,11 @@ L.~Evans, ``{The LHC machine},'' {\em PoS}, vol.~EPS-HEP2009, p.~004, 2009.
 A.~A. Alves~Jr. {\em et~al.}, ``{The \lhcb detector at the LHC},'' {\em JINST},
   vol.~3, p.~S08005, 2008.
 
+\bibitem{Aaij:2010gn}
+R.~Aaij {\em et~al.}, ``{Measurement of $\sigma(pp \to b \bar{b} X)$ at
+  $\sqrt{s}=7~\rm{TeV}$ in the forward region},'' {\em Phys.Lett.}, vol.~B694,
+  pp.~209--216, 2010.
+
 \bibitem{LHCb-DP-2012-003}
 M.~Adinolfi {\em et~al.}, ``{Performance of the \lhcb RICH detector at the
   LHC},'' {\em Eur. Phys. J.}, vol.~C73, p.~2431, 2013.
@@ -171,6 +209,14 @@ A.~A. Alves~Jr. {\em et~al.}, ``{Performance of the LHCb muon system},'' {\em
 \bibitem{LHCb:2003ab}
 ``{LHCb technical design report: Reoptimized detector design and
   performance},'' 2003.
+
+\bibitem{Aaij:1978280}
+R.~e.~a. Aaij, ``{LHCb Detector Performance},'' {\em Int. J. Mod. Phys. A},
+  vol.~30, p.~1530022. 82 p, Dec 2014.
+
+\bibitem{sPlot}
+M.~Pivk and F.~R. Le~Diberder, ``{SPlot: A Statistical tool to unfold data
+  distributions},'' {\em Nucl.Instrum.Meth.}, vol.~A555, pp.~356--369, 2005.
 
 \bibitem{LHCb-DP-2012-004}
 R.~Aaij {\em et~al.}, ``{The \lhcb trigger and its performance in 2011},'' {\em
@@ -215,6 +261,10 @@ M.~Feindt and U.~Kerzel, ``{The NeuroBayes neural network package},'' {\em
 \bibitem{feindt-2004}
 M.~Feindt, ``{A Neural Bayesian Estimator for Conditional Probability
   Densities},'' 2004.
+
+\bibitem{Hulsbergen:2005pu}
+W.~D. Hulsbergen, ``{Decay chain fitting with a Kalman filter},'' {\em
+  Nucl.Instrum.Meth.}, vol.~A552, pp.~566--575, 2005.
 
 \bibitem{Hiller:2007ur}
 G.~Hiller, M.~Knecht, F.~Legger, and T.~Schietinger, ``{Photon polarization
@@ -337,8 +387,17 @@ R.~Aaij {\em et~al.}, ``{Measurements of the $\Lambda_b^0 \to J/\psi \Lambda$
   decay amplitudes and the $\Lambda_b^0$ polarisation in $pp$ collisions at
   $\sqrt{s} = 7$ TeV},'' {\em Phys. Lett.}, vol.~B724, p.~27, 2013.
 
+\bibitem{Feldman:1997qc}
+G.~J. Feldman and R.~D. Cousins, ``{A Unified approach to the classical
+  statistical analysis of small signals},'' {\em Phys.Rev.}, vol.~D57,
+  pp.~3873--3889, 1998.
+
 \bibitem{Karbach:2011uz}
 T.~M. Karbach, ``{Feldman-Cousins Confidence Levels - Toy MC Method},'' 2011.
+
+\bibitem{Meinel:2014wua}
+S.~Meinel, ``{Flavor physics with $\Lambda_b$ baryons},'' {\em PoS},
+  vol.~LATTICE2013, p.~024, 2014.
 
 \bibitem{Hiller:2003js}
 G.~Hiller and F.~Kruger, ``{More model independent analysis of $b \to s$
@@ -363,10 +422,6 @@ R.~Aaij {\em et~al.}, ``{Test of lepton universality using $B^+\to
   K^+\ell^+\ell^-$ decays},'' 2014.
 \newblock {to appear in Phys. Rev. Lett.}
 
-\bibitem{sPlot}
-M.~Pivk and F.~R. Le~Diberder, ``{SPlot: A Statistical tool to unfold data
-  distributions},'' {\em Nucl.Instrum.Meth.}, vol.~A555, pp.~356--369, 2005.
-
 \bibitem{Loki_twiki}
 ``Lhcb loki twiki.''
   \url{https://twiki.cern.ch/twiki/bin/view/LHCb/LoKiHybridFilters}.
@@ -380,10 +435,6 @@ M.~Pivk and F.~R. Le~Diberder, ``{SPlot: A Statistical tool to unfold data
 \bibitem{Verkerke:2003ir}
 W.~Verkerke and D.~P. Kirkby, ``{The RooFit toolkit for data modeling},'' {\em
   eConf}, vol.~C0303241, p.~MOLT007, 2003.
-
-\bibitem{Aaij:1978280}
-R.~e.~a. Aaij, ``{LHCb Detector Performance},'' {\em Int. J. Mod. Phys. A},
-  vol.~30, p.~1530022. 82 p, Dec 2014.
 
 \bibitem{Ali:2002jg}
 A.~Ali, E.~Lunghi, C.~Greub, and G.~Hiller, ``{Improved model independent

@@ -4,7 +4,8 @@ In the following sections are described the five main sources of systematic unce
 that are considered for the angular observables measurement and, finally, results are
 reported in Sec.\ref{sec:afb_results}. Results are shown only for \qsq intervals
 where the signal significance, shown in Tab.~\ref{tab:Lb_rawYield} is more than 3 standard
-deviations. This includes all of the \qsq intervals above the \jpsi resonance and the lowest \qsq bin.
+deviations. This includes all of the \qsq intervals above the \jpsi resonance and the lowest 
+\qsq interval, where an increased yield is due to the presence of the photon pole.
 
 
 
@@ -13,7 +14,7 @@ deviations. This includes all of the \qsq intervals above the \jpsi resonance an
 The angular efficiency is non-flat as a function of $\cos\theta_\ell$ and $\cos \theta_h$.
 Therefore, while integrating the full angular distribution, terms that cancel with perfect efficiency
 may remain and generate a bias in the final result. In order to deal with this effect simulated events are
-generated in a two-dimensional ($\cos\theta_\ell$,$\cos \theta_\Lambda$) space according to the
+generated in a two-dimensional ($\cos\theta_\ell$,$\cos \theta_h$) space according to the
 theoretical distribution described by Eq.~\ref{eq:2DcosThetaLandB} multiplied by the two-dimensional efficiency
 histograms obtained from simulation and reported in Fig.~\ref{fig:2DcosThetaLandBeff}.
 Then one-dimensional projections are taken and fit using the default 1D efficiency functions.
@@ -43,7 +44,7 @@ downstream (right) candidates, integrated over the full available \qsq range.}
 
 
 
-\subsection{Resolution}
+\section{Resolution}
 
 The angular resolution could bias the observables measurement 
 %If the angular distribution is asymmetric, a non-zero resolution may yield to
@@ -77,7 +78,7 @@ the finite resolution in bins of \qsq.}
 \end{table}
 
 
-\subsection{Angular efficiency}
+\section{Efficiency description}
 
 An imprecise determination of the reconstruction and selection efficiency can introduce extra oddity
 and therefore bias the measurement. To asses this effect the kinematic re-weighting described in \ref{sec:kinWeight}
@@ -136,10 +137,10 @@ samples on the three angular observables in bins of \qsq.}
 \end{table}
 
 
-\subsection{Background parameterisation}
+\section{Background parameterisation}
 \label{sec:bkgShapeSys}
 
-There is a certain degree of arbirariety in the choice of a parameterisation for the background,
+There is a certain degree of arbitrariety in the choice of a parameterisation for the background,
 especially in bins with low statistics. To asses possible biases due to this simulated experiments
 are generated using the shapes from real data fits and the same statistics observed in data for each \qsq bin.
 Each toy is fit with two models: the default one, a ``line times efficiency" function and
@@ -174,13 +175,13 @@ Results are reported in Tab.~\ref{tab:bkgParamSys}.
 
 
 
-\subsection{Polarisation}
+\section{Polarisation}
 
 To study the effect of a non-zero \Lb production polarisation simulated events are generated 
 using the distributions~\ref{eq:lepton2D} and \ref{eq:hadron2D} as a function of our angular
 observable and $\cos\theta$, which is sensitive to polarisation.
 Similarly to the procedure used for the branching ratio measurement, events are generated using
-values of the polarisation corresponding to $\pm \sigma$ from the LHCb measurement~\cite{Aaij:2013oxa}).
+values of the polarisation corresponding to $\pm \sigma$ from the LHCb measurement~\cite{Aaij:2013oxa}.
 In the theoretical distributions $\cos \theta$ is always odd therefore with perfect efficiency it always
 drops out by integrating over $\cos\theta$. Therefore the generated distributions must also contain
 the information of the two-dimensional efficiency. No significant bias is found.
@@ -295,6 +296,7 @@ single considered sources. The SM predictions on the plots are obtained from Ref
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf}
 \caption{Fitted angular distributions as a function of $\cos\theta_h$ for downstream
  (left) and long (right) candidates in the 15--20 \gevgevcccc ~\qsq interval.  }
+ \label{fig:AngFitB}
 \end{figure}
 
 
