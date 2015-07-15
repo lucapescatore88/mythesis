@@ -29,6 +29,7 @@
 \setboolean{uprightparticles}{false}
 \usepackage{cprotect}
 \usepackage{verbatimbox}
+\usepackage{feynmp}
 \usepackage[Sonny]{fncychap} %Styles: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, and Bjornstrup.
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
@@ -43,7 +44,7 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 \newcommand{\thesisauthor}{L. Pescatore} %Fill in your name
 \newcommand{\thesisemail}{luca.pescatore@cern.ch} %Fill in your email
 %Choose your front page crest. crest_1 (photograph) or crest_2 (logo)
-\newcommand{\thesiscrest}{crest_2}
+\newcommand{\thesiscrest}{crest_1}
 
 \hypersetup{pdfpagelayout=TwoColumnRight,
             colorlinks,
@@ -182,7 +183,7 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 %%%%%%%%%% Abstract %%%%%%%%%%
 
 \tableofcontents
-\clearpage
+\clearpage\null\newpage
 
 %\listoftables
 %\clearpage
@@ -200,28 +201,34 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 \setstretch{1.5} %Officially should be line spacing 2. But I think it looks too ugly
 \linenumbers %Uncomment for line numbering
 
-%%%%%%%%%% Main Body Text %%%%%%%%%%
+%%%%%%%%%% Main Body Text %%%%%%%%%
 
 \include{Introduction/introduction}
 
 \include{Detector/detector}
 
 %%%%%%%%%%%%%  Lb->Lmumu
+
+\cleardoublepage
 \part{Differential branching fraction and angular analysis of the rare \Lb\to\Lz\mumu decay}
 \label{par:Lmumu}
+\cleardoublepage
 \include{Lmumu/introduction}
 \include{Lmumu/selection}
 \include{Lmumu/fit}
 \include{Lmumu/efficiency}
 \include{Lmumu/systematics}
-\include{Lmumu/summaryBR}
+%\include{Lmumu/summaryBR}
 \include{Lmumu/afbmethod}
 \include{Lmumu/ang_fit_strategy}
 \include{Lmumu/ang_sys_and_results}
 
+
 %%%%%%%%%%%%%  RKst
 
+\cleardoublepage
 \part{The $R_{\Kstarz}$ analysis}
+\cleardoublepage
 \label{par:RKst}
 \include{RKst/introduction}
 \include{RKst/selection}
@@ -234,12 +241,14 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 
 \include{conclusions}
 
+
 \setstretch{1}
 \cleardoublepage
 \renewcommand{\bibname}{REFERENCES}
-\bibliographystyle{ieeetr}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{JHEP}
 \bibliography{main,lmumu,LHCb-PAPER,LHCb-TDR,LHCb-CONF,LHCb-DP}
-\clearpage
+\cleardoublepage
 
 %%%%%%%%%% Appendix %%%%%%%%%%
 \appendix
@@ -249,6 +258,7 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 \include{Lmumu/appMCdataComp}
 \include{Lmumu/appendix_Lb_sys}
 \include{RKst/app_MC_fits}
+\include{RKst/app_extra}
 
 
 \end{document} 

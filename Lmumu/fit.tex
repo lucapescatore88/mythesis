@@ -3,30 +3,31 @@
 \section{Fit description}
 \label{sec:Lb_fit}
 
-To extract the yields of the rare and resonant channels, an extended unbinned maximum likelihood fits are used.
+Extended unbinned maximum likelihood fits are used to extract the yields of the rare and resonant channels.
 %These are done simultaneously on the long and downstream samples.
 The likelihood has the form:
 
 \begin{equation}
-\mathcal{L}=e^{-(N_\mathrm{S}+N_\mathrm{B}+N_{\mathrm{phsbg}})}\times\prod_{i=1}^{N}\left[
-N_\mathrm{S}P_{\mathrm{S}}(m_i)+N_\mathrm{B}P_\mathrm{B}(m_i)+N_{\mathrm{phsbg}}P_{\mathrm{phsbg}}(m_i)\right]
+\mathcal{L}=e^{-(N_\mathrm{S}+N_\mathrm{C}+N_{\mathrm{B}})}\times\prod_{i=1}^{N}\left[
+N_\mathrm{S}P_{\mathrm{S}}(m_i)+N_\mathrm{C}P_\mathrm{C}(m_i)+N_{\mathrm{B}}P_{\mathrm{B}}(m_i)\right]
 \end{equation}
 \noindent
-where $N_\mathrm{S}$, $N_\mathrm{C}$ and $N_\mathrm{B}$ are number of signal, combinatorial and
-\KS background events and $P_i(m_i)$ is the corresponding probability density function (PDF).
-From now on when we refer to the invariant mass of the \Lb system we use the value obtained from
+where $N_\mathrm{S}$, $N_\mathrm{C}$ and $N_\mathrm{B}$ are respectively the numbers of signal, 
+combinatorial and \KS background events and the $P_i(m_i)$ are the corresponding probability density functions (PDF).
+The fit variable is the 4-body $m(p\pi\mu\mu)$ invariant mass obtained from
 a kinematical fit of the full decay chain in which each particle is constrained to point to its
 assigned origin vertex and the invariant mass of the $p\pi$ system is constrained to be equal to
-the world average \Lz mass. In the resonant channel case a further constrain is used on the dimuon
+the world average for the \Lz baryon mass. In the resonant case a further constrain is used on the dimuon
 mass to be equal to the known \jpsi mass. This method allows to improve the mass resolution giving
-better defined peaks and therefore a more stable fit.
+better defined peaks and therefore a more stable fit. For brevity, in the following these variables are
+simply referred to as ``invariant mass".
 
-For the resonant channel the signal is described as a sum of two Crystal Ball functions (CB) with
-common mean ($m_0$) and tail slope ($n$). A Crystal Ball function \cite{Skwarnicki:1986xj} is a probability
+For the resonant channel the signal is described as the sum of two Crystal Ball functions (CB) with
+common mean ($m_0$) and tail slope ($n$). This is also known as Double Crystal Ball (DCB) function.
+A single Crystal Ball~\cite{Skwarnicki:1986xj} is a probability
 density function commonly used to model various processes involving energy loss. In particular it is used
-to model the radiative tail which can be seen in many resonances' peaks. This function 
-consists of a Gaussian core and a power-law tail, below a certain threshold. The function itself 
-and its first derivative are both continuous and has form
+to model the radiative tail, which can be seen in many resonances' peaks. This function 
+consists of a Gaussian core and a power-law tail, below a certain threshold and has form
 %
 \begin{equation}
 C(x;\alpha,n,\bar{x},\sigma) = N \cdot
@@ -54,9 +55,9 @@ P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \text{CB}(m;m_0,\sigma_1,\alpha_1,
 %
 where $f$ is the relative fraction of candidates falling into the first CB function.
 
-As a first step simulated $\Lb\to\Lz\mumu$ and \Lb\to\jpsi\Lz distributions are fitted using the signal PDF
-separately for long and downstream candidates. Figure~\ref{fig:Lb_jpsiMCfit} shows simulated distributions
-of resonant events with the fit function overlaid.
+As a first step simulated $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ distributions are fitted using the signal PDF alone
+separately for long and downstream candidates. Figure~\ref{fig:Lb_jpsiMCfit} shows distributions
+of candidates selected in the resonant sample with the fit function overlaid.
 
 \begin{figure}
 \centering
@@ -68,20 +69,20 @@ The points show simulated data and the blue line is the signal fit function.}
 \end{figure}
 
 In a second step the fit to the resonant channel data sample is performed.
-For the fit on data the tail slope parameter, ``$n$", which is highly correlated
-with the $\alpha$s, is fixed it to the value found in the fit to simulated data.
+For this fit the tail slope parameter, ``$n$", which is highly correlated
+with $\alpha_1$ and $\alpha_2$ , is fixed to the value found in the fit to simulated data.
 In this fit two background components are modelled: the combinatorial background,
 parameterized by an exponential and the background from $\Bz\ra\jpsi\KS$ decays.
 The \KS background is described using the shape obtained using a $\Bz\ra\jpsi\KS$ simulated
 sample and applying to it the full selection. The invariant distribution of these events
-is fit with a Double Crystal Ball function, which is then used to model the \KS background
+is fit with a DCBall function, which is then used to model the \KS background
 in the \Lb\to\jpsi\Lz fit. The fit to the simulated misreconstructed $\Bz\ra\jpsi\KS$ events
-is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the final fit all
-parameters are fixed. This is particularly important when fitting long-long events, where the \KS
+is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the fit to the data all
+parameters are fixed. This is particularly important when fitting long candidates, where the \KS
 peak is less evident, which does not allow to constrain many parameters. On the other hand, in order
 to take in account possible data-simulation differences, an horizontal shift is added and left
 floating (by adding a constant to the central value, $m_0$ of the DCB).
-In summary, the free parameters in the fit to the resonant \Lb\to\jpsi\Lz sample
+In summary, the free parameters in the fit to the resonant $\Lb\to\jpsi\Lz$ sample
 are the yields of the signal and the combinatorial and \KS backgrounds, the slope
 of the exponential and the horizontal shift of the \KS shape. Notice that all parameters
 of the fit to the long and downstream samples are independent.
@@ -94,49 +95,51 @@ full selection fitted a Double Crystal Ball function. }
 \label{fig:KSbkgFit}
 \end{figure}
 
-Finally, the rare $\Lb\to\Lz\mumu$ sample is fit. In this case a simultaneous fit to the long
+Finally, the rare $\Lb\to\Lz\mumu$ data sample is fit. In this case a simultaneous fit to the long
 and downstream samples is performed to obtain a more stable convergence. 
 In this fit the signal is modelled with the same shape used in the resonant case as there is no physical
 reason why they should be different. This method is also useful to limit systematic uncertainties.
 In fact the result will be given as a ratio between rare and resonant quantities.
-However, the low statistics for the rare sample does not allow to constrain many parameters,
-especially when dividing data in \qsq bins. Therefore, all parameters of the signal shape are fixed to
+However, the low statistics for the rare sample does not allow to constrain many parameters.
+%,especially when dividing data in \qsq bins.
+Therefore, all parameters of the signal shape are fixed to
 the ones derived from the fit on the normalisation channel. To account for possible differences, arising
-for example from a different resolution in different \qsq regions, a scale factor is multiplied
+from a different resolution in different \qsq regions, a scale factor is multiplied
 to the width of the two gaussians cores at the signal DCB: $\sigma_1 \rightarrow c\cdot \sigma_1$
 and $\sigma_2 \rightarrow c\cdot \sigma_2$, where the two scale factors are the same. This factors
-are fixed in the fit on data by fitting a \Lz\mumu simulated sample in each \qsq bin and comparing
-its widths with the ones found on the fit to the resonant simulated sample, namely
+are fixed in the fit to data by fitting the rare $\Lb\to\Lz\mumu$ simulated sample in each \qsq bin and comparing
+the widths with the ones found on the fit to the resonant simulated sample, namely
 \begin{equation}
-c = \sigma_{\mumu}^{MC} / \sigma_{jpsi}^{MC}.
+c = \sigma_{\mumu}^{MC} / \sigma_{\jpsi}^{MC}.
 \end{equation}
 Values obtained are $\sim 1.9$ for downstream candidates and $\sim 2.3$ for long candidates,
 corresponding to the fact that in the resonant case a further constrain on the dimuon mass
-is used, which improves the resolution by a factor of 2. The of the scaling factor on \qsq is found to be small.
-For fits on the DD and LL samples the parameters are always fixed to the corresponding \jpsi fit;
-in this analysis parameters are never shared between DD and LL fits.
+is used, which improves the resolution by a factor of 2. The dependence of the scaling factor on \qsq 
+is found to be small. For fits on the DD and LL samples the parameters are always fixed to the corresponding 
+\jpsi fit; in this analysis shape parameters are never shared between DD and LL fits.
 
-The background components modelled are also in this case
-the combinatorial background, described with an exponential function. The slope of the background
-is visibly different depending on the \qsq interval. This is partly due to the fact that,
-at high \qsq, the combinatorial changes slope due to the kinematical limit at low masses.
-The exponential slopes are therefore left floating independently in each \qsq bins 
-and also independently of the resonant channel and for the in DD and LL samples.
+The modelled background components are also in the rare case
+the combinatorial background, described with an exponential function and the \KS background. 
+The slope of the background is visibly different depending on the \qsq interval. This is partly due to the 
+fact that, at high \qsq, the combinatorial changes slope because of the kinematical limit at low 4-body masses
+imposed by the \qsq requirements.
+The exponential slopes are therefore left as independent parameters in each \qsq interval
+and for the downstream and long samples.
 The background component from \Bz\to\KS\mumu decays is modelled using the same shapes used
 for the resonant channel. However, in this case the horizontal shift is fixed to what found
 for the resonant channel. The expected amount of misreconstructed $\Bz\ra\KS\mumu$
-events is small and does not allow to determine reliably the yield. Therefore, in the default
-fit, this is fixed to the the yield of $\Bz\ra\jpsi\KS$ decays, rescaling it by the expected ratio
+events is small and does not allow to determine reliably the yield. Therefore
+this is fixed to the the yield of $\Bz\ra\jpsi\KS$ decays, rescaling it by the expected ratio
 of branching fractions between the resonant and rare channels.
 The \qsq distribution of $\Bz\ra\KS\mumu$ simulated events is then used to predict the yield as a function of \qsq.
-In Tab.~\ref{tab:KSprediction} is reported the number of predicted $\Bz\ra\KS\mumu$ events in each \qsq bin 
+Table~\ref{tab:KSprediction} reports the number of predicted $\Bz\ra\KS\mumu$ events in each \qsq interval
 obtained with the following formula:
 \begin{equation}
 N_{\KS\mumu}(\qsq) = N_{\jpsi\KS}\frac{B(\Bz\ra\KS\mumu)}{B(\Bz\ra\KS\jpsi)}\cdot \frac{1}{\epsilon_{rel}} \cdot B(\jpsi\ra\mumu) \frac{N(\qsq)_{MC}}{N^{tot}_{MC}} 
 \end{equation}
-where $N(\qsq)_{MC}$ is the number of simulated events in a \qsq bin after full selection and $N^{tot}_{MC}$ 
+where $N(\qsq)_{MC}$ is the number of simulated rare candidates falling in a \qsq interval after full selection and $N^{tot}_{MC}$ 
 is the total number of simulated events. The \KS\mumu contribution is then completely taken out to study systematic
-uncertainties as described in Sec.~\ref{sec:Lb_sys}
+uncertainties as described in Sec.~\ref{sec:Lb_sys}.
 %Only for the 6-8 \gevgevcccc bin, a background component coming from the residual of the \jpsi radiative tail is
 %added, modelled using a the shape obtained studying simulated events and smoothed using the \verb!RooKeysPdf! method of \verb!RooFit!.
 %This is then removed from the final fit becuase it returns zero yield.
@@ -161,20 +164,22 @@ uncertainties as described in Sec.~\ref{sec:Lb_sys}
 \end{table}
 
 The fit on the rare sample is performed simultaneously on the LL and DD candidate categories.
-Therefore the two separate yields are not separately floating but are but are parameterised
-ad a function of the branching ratio with the following formula:
+Therefore the two separate yields are not separately floating but are parameterised
+as a function of a common branching fraction using the following formula:
 %
 \begin{equation}
 N(\Lz\mumu)_{k}  = \left[ \frac{\mathrm{d}\mathcal{B}(\Lz\mumu)/\mathrm{d}\qsq}{\mathcal{B}(\jpsi\Lz)} \right]  \cdot
-N(\jpsi\Lz)_{k} \cdot \epsilon^{\mathrm{rel}}_{k} \cdot \frac {\Delta\qsq} { \mathcal{B}(\jpsi\to\mumu) },
+N(\jpsi\Lz)_{k} \cdot \varepsilon^{\mathrm{rel}}_{k} \cdot \frac {\Delta\qsq} { \mathcal{B}(\jpsi\to\mumu) },
 \label{eq:relYield}
 \end{equation}
 %
-where $k = $LL,DD, $\Delta\qsq$ is width of the \qsq bin and the only free paramater is the branching 
-fraction ratio rare over \jpsi. For the \jpsi\to\mumu the value reported in the PDG book~\cite{PDG2014}, 
-$\mathcal{B}(\jpsi\to\mumu) = (5.93 \pm 0.06)\cdot 10^{-2}$. In this formula the efficiencies and the normalisation 
-yield appear as constants. These constants are then varied in order to obtain systemaitcs on the final result 
-as described in Sec.~\ref{sec:Lb_sys}.
+where $k = $(LL,DD), $\Delta\qsq$ is width of the \qsq bin and the only free parameter is the relative branching 
+fraction ratio of the rare over \jpsi channels. For the branching fraction of the \jpsi\to\mumu decay the value 
+reported in the PDG book, $(5.93 \pm 0.06)\cdot 10^{-2}$~\cite{PDG2014} is used and $\varepsilon^{rel}$ corresponds to
+the relative efficiency between the rare and resonant channels obtained in Sec.~\ref{sec:Lb_eff}. 
+In this formula the efficiencies and the normalisation yield appear as constants, namely 
+$N(\Lz\mumu)_{k} = C_k \cdot \mathcal{B}^{rel}$. These constants are then varied in order to obtain 
+systematic uncertainties on the final result as described in Sec.~\ref{sec:Lb_sys}.
 
 
 \section{Fit results}
@@ -187,27 +192,28 @@ as described in Sec.~\ref{sec:Lb_sys}.
 \includegraphics[width=0.75\textwidth]{Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf}
-\caption{Invariant mass distribution of $\Lb\ra\jpsi\Lz$ downstream (top) and long (middle) candidates.
+\caption{Invariant mass distributions of $\Lb\ra\jpsi\Lz$ downstream (top) and long (middle) candidates
+selected with high \qsq requirements.
 Bottom plots are the same as the upper ones but shown in logarithmic scale. Black points show data.
 The blue solid line represents the total fit function, the black dashed line the signal, the red dashed line
 the combinatorial background and the green dashed line the $\Bz\ra\KS\mumu$ background.}
 \label{fig:Lb_totalFit}
 \end{figure}
 %
-In Fig.~\ref{fig:Lb_totalFit} are shown fitted invariant mass distributions for the normalisation channel,
-selected with the high \qsq requirements and in Fig.~\ref{fig:Lb_totalFit_low} for low \qsq requirements.
+Figures~\ref{fig:Lb_totalFit} and~\ref{fig:Lb_totalFit_low} show fitted invariant mass distributions for the normalisation channel,
+selected with the high \qsq and low \qsq requirements respectively.
 %The $\chi^2$ value of the fit is $126$ for LL and $112$ for DD both with 140 degrees of freedom, which corresponds to probability of 80\% and 95\%.
-Table~\ref{tab:Lb_rawYieldJpsi} reports measured yields of $\Lb\ra\jpsi\Lz$ candidates found using the low and high \qsq selections.
-Values for the signal shape parameters are shown on Fig.~\ref{fig:Lb_totalFit}.
-Results of the fit to the rare $\Lb\ra\Lz\mumu$ sample are shown in Fig.~\ref{fig:Lb_Lmumu} for the integrated
-$15 < \qsq < 20$ and $1.1 < \qsq < 6.0$ \gevgevcccc ~\qsq intervals.
+Table~\ref{tab:Lb_rawYieldJpsi} reports measured yields of $\Lb\ra\jpsi\Lz$ candidates found using the low 
+and high \qsq selections. Values for the signal shape parameters are shown on Fig.~\ref{fig:Lb_totalFit}.
+Fits to the rare $\Lb\ra\Lz\mumu$ samples are shown in Fig.~\ref{fig:Lb_Lmumu} for the integrated
+$15 < \qsq < 20$ and $1.1 < \qsq < 6.0$~\gevgevcccc ~\qsq intervals, while
 %The exponential slopes, the scale factors multiplied to the widths and the number of combinatorial events
 %found from these fits are reported in Tab.~\ref{tab:Lb_rareParam}.
-Fitted invariant mass distribution in all other considered \qsq intervals are in Fig.~\ref{fig:Lb_differentialFitDD}
-for downstream candidates and Fig.~\ref{fig:Lb_differentialFitLL} for long candidates together with their significances.
-The yields of rare events obtained from the fit are reported in Tab.~\ref{tab:Lb_rawYield}.
+fitted invariant mass distribution in all other considered \qsq intervals are in Figs.~\ref{fig:Lb_differentialFitDD}
+and~\ref{fig:Lb_differentialFitLL} for downstream and long candidates respectively.
+The yields of rare candidates obtained from the fit are reported in Tab.~\ref{tab:Lb_rawYield} together with their significances.
 Most candidates are found in the downstream sample comprising $\sim 80\,\%$ of the total yield.
-Notice that, since the fit is simultaneous on DD and LL candidates, the yields in the two categories yields
+Note that, since the fit is simultaneous on DD and LL candidates, the yields in the two categories yields
 are not parameters free to float independently in the fit but are correlated via the branching ratio.
 The statistical significance of the observed signal yields is evaluated as $\sqrt{2\Delta\ln{\mathcal{L}}}$, where
 $\Delta\ln{\mathcal{L}}$ is the change in the logarithm of the likelihood function when the signal component
@@ -215,11 +221,11 @@ is excluded from the fit, relative to the nominal fit in which it is present.
 
 \begin{table}
 \centering
-\caption{Number of \decay{\Lb}{\jpsi\Lz} decays in the long and
-  downstream categories found using the selection for low- and
-  high-\qsq regions. Uncertainties shown are statistical only.}
+\caption{Number of \decay{\Lb}{\jpsi\Lz} candidates in the long and
+  downstream categories found using the for low- and
+  high-\qsq requirements. Uncertainties shown are statistical only.}
 \begin{tabular}{lcc}
-Selection & $N_{\rm S}$ (long) & $N_{\rm S}$ (downstream)\\ \hline
+Selection & Long & Downstream					\\ \hline
 high-\qsq	& $4313 \pm 70$	 	&  $11\,497 \pm 123$ \\
 low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
  \hline
@@ -231,7 +237,7 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
 
 \begin{table}
 \centering
-\caption{Signal decay yields ($N_\mathrm{S}$) obtained from the
+\caption{Signal yields ($N_\mathrm{S}$) obtained from the
   mass fit to \decay{\Lb}{\Lz\mumu} candidates in each \qsq interval
   together with their statistical significances. 
   The $8-11$ and $12.5-15$ \gevgevcccc ~\qsq intervals are excluded
@@ -257,7 +263,7 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
 \centering
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf}
-\caption{Invariant mass distribution of $\Lb\ra\Lz\jpsi$ for downstream (left) and long (right) candidates
+\caption{Invariant mass distribution of $\Lb\ra\jpsi\Lz$ for downstream (left) and long (right) candidates
  selected with low \qsq requirements.}
 \label{fig:Lb_totalFit_low}
 \end{figure}
@@ -265,10 +271,10 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{Lmumu/figs/paper/figure13.pdf}
-\includegraphics[width=0.8\textwidth]{Lmumu/figs/paper/figure2.pdf}
-\caption{Invariant mass distribution of $\Lb\ra\Lz\mumu$ candidates in the integrated 0.1--6.0 \gevgevcccc(top)
-and 15--20 \gevgevcccc (bottom) ~\qsq intervals. Points show data.
+\includegraphics[width=0.7\textwidth]{Lmumu/figs/paper/figure13.pdf}
+\includegraphics[width=0.7\textwidth]{Lmumu/figs/paper/figure2.pdf}
+\caption{Invariant mass distributions of $\Lb\ra\Lz\mumu$ candidates in the integrated 0.1--6.0 \gevgevcccc(top)
+and 15--20 \gevgevcccc (bottom) ~\qsq intervals. Points show data combining downstream and long candidates together.
 The blue solid line represents the total fit function and the dashed red line the combinatorial background.}
 %\includegraphics[width=0.54\textwidth]{Lmumu/figs/MassFits/Lb2Lmumu_DD_lowQ2_fitAndRes.pdf}
 %\includegraphics[width=0.54\textwidth]{Lmumu/figs/MassFits/Lb2Lmumu_LL_lowQ2_fitAndRes.pdf}

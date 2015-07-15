@@ -117,10 +117,10 @@ to fit the sideband and to train the multivariate analysis and constrain backgro
 %
 \begin{table}[]
 \begin{center}
-\caption{Summary of stripping cuts used for the central and high \qsq regions. }
+\caption{Summary of stripping requirements used for the central and high \qsq regions. }
 \begin{tabular}{|c|c|}
 \hline
-Particle &  Cuts \\
+Particle &  Requirements \\
 \hline
 %\multirow{2}{*}{ All final}
 %       			&   track $\chi_2/\text{ndf} < 3$ \\
@@ -257,20 +257,20 @@ The electronic channels are instead  characterised by
 a worse resolution and at the same time electrons can radiate 
 several bremsstrahlung photons, yielding long tails at low \qsq.
 Analysing Monte Carlo events it was found that 1.3--2\% (depending on
-the trigger category) of $\Bz\to\Kstar(\jpsi\to\ee)$ candidates leak into the $1.1 < \qsq < 6$
-\gevgevcccc interval and 1.8\% of \psitwos events leak above 15 \gevgevcccc.
-The contribution from these candidates is modelled in the fit. 
+the trigger category) of \mbox{$\Bz\to\Kstar(\jpsi\to\ee)$} candidates leak into the 
+$1.1 < \qsq < 6$~\gevgevcccc interval and 1.8\% of \psitwos events leak above 
+15~\gevgevcccc. The contribution from these candidates is modelled in the fit. 
 
 
 \subsection{$\phi$ veto}
 
-It can happen that a kaon from the decay $B_s \rightarrow \phi \ell^+\ell^-$, where the $\phi$ decays in two kaons,
+It can happen that a kaon from the decay $B_s \rightarrow \phi \ll$, where the $\phi$ decays in two kaons,
 is mis-identified as a pion and therefore causes the $\phi$ to be reconstructed as a $\Kstarz$. This results in
-a candidate with a value of $m_{K\pi}$ that is less than $m_{\Kstarz}$ but still high enough to
+a candidate with a value of $m(K\pi)$ that is less than the nominal \Kstarz mass but still high enough to
 pass the selection requirements. In Fig.~\ref{fig:phiplots} is reported the plot of $m(K\pi)$ versus
 $m(K\pi \ell\ell)$, where kaon mass hypothesis is assigned to the pion. A peak can clearly be seen
-around the $\phi$ mass (1020 \mevcc).
-To remove this background only candidates with $m_{K(\pi\rightarrow K)} > 1040$ \mevcc) are selected.
+around the $\phi$ mass (1020~\mevcc).
+To remove this background only candidates with $m_{K(\pi\rightarrow K)} > 1040$~\mevcc) are selected.
 This results in a 98\% background rejection while keeping a 99\% signal efficiency.
 %This cut could be further optimised using PID information. On the other hand LHCb simulation 
 %struggles modelling the PID variables correctly. Therefore using PID in these cuts would
@@ -284,10 +284,10 @@ contribution is taken into account by the choice of the \qsq intervals.
 \centering 
 \includegraphics[width=0.48\textwidth]{RKst/figs/RKst/phi.pdf}
 \includegraphics[width=0.48\textwidth]{RKst/figs/RKst/Kmumu.pdf}
-\caption{ On the left the distribution of 2011 data events on the variables $(m_{K(\pi\rightarrow K)})$ 
+\caption{ (left) Distribution of 2011 data events as a function of the variables $(m_{K(\pi\rightarrow K)})$ 
 and $(m_{K(\pi\rightarrow K)\mu\mu})$, where $\pi\rightarrow K$ means that the kaon mass is given 
-to the pions too. On the right the mass of the three-body system $(m_{K\mu\mu})$
-where the peak due to the $B^+ \rightarrow K^+ \mu\mu$ decay is visible. }
+to the pions too. (right) The invariant mass distribution of the three-body system $(K\mu\mu)$,
+where the peak due to the $B^+ \to K^+ \mumu$ decay is visible. }
 \label{fig:phiplots}
 \end{figure}
 \end{center}
@@ -295,19 +295,19 @@ where the peak due to the $B^+ \rightarrow K^+ \mu\mu$ decay is visible. }
 
 \subsection{$\Bu \to K^+ \ll$ plus a random pion}
 
-Some $\Bu \to K^+ \ell^+\ell^-$ decays can contaminate the upper \Bz mass sideband if they are combined
+Some $\Bu \to K^+ \ll$ decays can contaminate the upper \Bz mass sideband if they are combined
 with a soft pion from somewhere else in the event and therefore reconstructed as a \Bz decay.
 The same can also happen with a kaon misidentified as a pion combined with an other kaon in the event.
-In Fig.~\ref{fig:phiplots} the invariant mass distribution of the three-body $K\mumu$ system, $m_{K\mu\mu}$, is shown.
+In Fig.~\ref{fig:phiplots} the invariant mass distribution of the three-body $K\mumu$ system, $m(K\mu\mu)$, is shown.
 This is characterised by a narrow peak at the $\Bu$ mass. Since these
-candidates have $m_{K\pi\ell\ell} > 5380$ \mevcc  there is no contribution under the \Bz peak,
+candidates have $m(K\pi\ell\ell) > 5380$~\mevcc~there is no contribution under the \Bz peak,
 but they can cause problems when using sidebands events to train the neural network.
-An effective veto for this decay was found to be max$(m_{K\ell\ell},m_{K\to\pi\ell\ell}) < 5100 ~\mbox{MeV/c}^2$,
+An effective veto for this decay was found to be max$(m_{K\ell\ell},m_{(K\to\pi)\ell\ell}) < 5100$~\mevcc,
 which results in 95\% background rejection while keeping 99\% signal efficiency.
 
 \subsection{$\Lambda_b$ decays}
 
-\Lb\to\Lz\jpsi decays are unlikely to be reconstructed as $\Bz \to \Kstarz \ll$ because
+$\Lb\to\jpsi\Lz$ decays are unlikely to be reconstructed as $\Bz \to \Kstarz \ll$ because
 the \Lz is long-lived and decays further in the detector with a separate vertex.
 Simulated events were used to check how many candidates fall into the \Bz samples, which results to be negligible. 
 The $\Lb\to\jpsi pK$ decay can instead contribute more easily since the $m(pK)$ is above the \Lz threshold
@@ -316,11 +316,11 @@ reduced using PID but a non-negligible contribution is still expected in the $\m
 
 \subsubsection{Other peaking backgrounds}
 
-A possible background could come from $\Bz \to\Kstar\gamma$ decays where the photon converts
+A possible background could come from $\Bz \to\Kstarz\gamma$ decays where the photon converts
 into two electrons while traversing the detector. In LHCb, around 40\% of photons convert before the calorimeter,
 but only a small fraction of these, $\sim 10\%$, are reconstructed. Furthermore these events fall
 into a \qsq region well below the intervals considered in these analysis and their contribution is therefore negligible.
-Similar decays are also $\Bz \to\Kstar\eta$ and $\Bz \to\Kstar\pi^0$ where $\eta$ and the pion decay into
+Similar decays are also $\Bz \to\Kstarz\eta$ and $\Bz \to\Kstarz\pi^0$ where $\eta$ and the pion decay into
 two photons. Once again the contribution from these decays falls well below the considered \qsq intervals.
 Finally, a potentially dangerous background could come from events where the
 identity of the kaon and the pion are swapped as these candidates peak under the signal.
@@ -341,7 +341,7 @@ with a kinematical fit using the \verb!DecayTreeFitter! package. In the resonant
 mass to be the \jpsi nominal mass and in both rare and resonant cases each particles is constrained to point to 
 its origin vertex. This constraint has the effect of pushing the misreconstructed events far from the \Bz peak.
 Therefore, to avoid this background, it is sufficient to limit the analysis to 4-body invariant masses
-above 5150 \mevcc.
+above 5150~\mevcc.
 
 In the electron case it is instead important to fit a wider mass window to correctly constrain the background
 therefore one cannot eliminate this mis-reconstructed background which is then modelled in the fit
@@ -361,7 +361,7 @@ Representative samples of the signal and background are needed to train the clas
 For the signal, fully reconstructed \BdToKstmm and \BdKstee simulated events can be used.
 %The simulation is corrected improve the data-simulation agreement as described in (see Sec. \ref{sec:RKst_mc_weighting}).
 A sample representative of the background can be obtained taking real data events
-in the upper \Bz sideband: ($m(K\pi\mumu) > 5400$ \mevcc and $m(K\pi\ee) > 5600$ \mevcc). The lower sideband is not
+in the upper \Bz sideband: $m(K\pi\mumu) > 5400$~\mevcc~ and $m(K\pi\ee) > 5600$~\mevcc. The lower sideband is not
 used in the training as it contains a significant fraction of mis-reconstructed background.
 All pre-selection cuts are applied to the background samples used for the training.
 As L0 and PID variables are not well described these cuts are not applied in the Monte Carlo
@@ -376,8 +376,8 @@ The graphical representation of the correlation matrices are shown in Fig.~\ref{
 in these figures the variable with ID = 1 is the NN output and the other IDs are reported in Tab.~\ref{tab:RKst_mva_vars}.
 %
 The single most discriminating variable used is the $\chi^2$ of a kinematic fit
-that constrains the decay product of the \Bz, the \Kstar and the dimuon, to originate from their respective vertices.
-Other variables that contribute significantly are the $\chi^2_{IP}$ of \jpsi and \Kstar, the transverse momentum
+that constrains the decay product of the \Bz, the \Kstarz and the dimuon, to originate from their respective vertices.
+Other variables that contribute significantly are the $\chi^2_{IP}$ of \jpsi and \Kstarz, the transverse momentum
 of the \Bz and the pointing direction (DIRA) of the reconstructed \Bz to the primary vertex.
 The list the 10 most important variables is reported in Tab.~\ref{tab:RKst_nnInputs}, together
 with information on the relative importance of each input. The meaning of the column headings

@@ -1,0 +1,52 @@
+\chapter{Extra}
+
+\subsection{Quantum Electrodynamics: an example of gauge field theory }
+
+{\em Possible addition around Sec.~\ref{sec:EMandEW}.}
+
+
+
+The EM theory results from requiring the fermion Lagrangian to be invariant under local gauge transformations.
+The electron and positron free fermionic fields are defined as $\psi(x)$ and $\bar{\psi(x)}$, where x is a relativistic four vector.
+A local gauge transformation can always be written as:
+
+\begin{align}
+\psi(x) \rightarrow \psi(x') = e^i{\alpha(x)}\psi(x)
+\end{align}
+
+where $\alpha(x)$ can be any function of space and/or time. The free fermion Lagrangian, given by
+
+\begin{equation}
+\mathcal{L} = -i \bar{\psi(x)} \gamma^mu \partial_\mu \psi(x) - m\bar{\psi(x)} \psi
+\end{equation}
+
+is not invariant under such transformations. Greek indices denote space-time directions and imply summation and $\gamma^i$ are the Dirac matrices. If we apply the local gauge transformation and we subtract the initial Lagrangian we get a remaining term
+
+\begin{equation}
+\Delta \mathcal{L} = \mathcal{L}' - \mathcal{L} = -i \bar{\psi}  \gamma^mu \psi \partial_\mu \alpha(x)
+\end{equation}
+
+In order to make the Lagrangian invariant we can introduce a vector field $A$, which transforms as described by Eq. \ref{gauge invariance},  to %compensate for the remaining term: this is the photon field.
+
+\begin{equation}
+\label{gauge invariance}
+A'_\mu = A_\mu -\frac{1}{e}\partial_\mu \alpha(x)
+\end{equation}
+
+Redefining then the field derivative $D_\mu = \partial_\mu - ieA_\mu$, we obtain the invariant Lagrangian:
+
+\begin{equation}
+\mathcal{L} = -i \bar{\psi(x)} \gamma^mu D_\mu \psi(x)  - m\bar{\psi(x)} \psi = -i \bar{\psi(x)} (\gamma^mu \partial_\mu  - m)\psi(x) + e\bar{\psi}  \gamma^mu \psi A_\mu
+\end{equation}
+
+
+\section{Anomalies}
+
+{\em Possible addition around Sec.~\ref{sec:exp_status}.}
+
+
+
+
+
+
+

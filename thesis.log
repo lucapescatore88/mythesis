@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.6.23)  29 JUN 2015 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.6.23)  16 JUL 2015 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -546,6 +546,12 @@ Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 \boxtop@sep=\skip102
 \boxbottom@sep=\skip103
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/feynmf/feynmp.sty
+Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
+\@outfmf=\write7
+\fmfbuf@=\toks28
+\c@fmfgraph=\count161
+)
 (./fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip104
@@ -556,83 +562,83 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip109
 \pxx=\skip110
 ) (./lhcb-symbols-def.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+Package hyperref Info: Option `colorlinks' set `true' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 57.
+(hyperref)                removing `\\' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 57.
+(hyperref)                removing `\rightarrow' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 57.
+(hyperref)                removing `\ell' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 57.
+(hyperref)                removing `superscript' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 57.
+(hyperref)                removing `\ell' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 57.
+(hyperref)                removing `superscript' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 57.
+(hyperref)                removing `\\' on input line 58.
 
 (./thesis.aux (./abstract.aux) (./Introduction/introduction.aux)
 (./Detector/detector.aux) (./Lmumu/introduction.aux) (./Lmumu/selection.aux)
 (./Lmumu/fit.aux) (./Lmumu/efficiency.aux) (./Lmumu/systematics.aux)
-(./Lmumu/summaryBR.aux) (./Lmumu/afbmethod.aux) (./Lmumu/ang_fit_strategy.aux)
+(./Lmumu/afbmethod.aux) (./Lmumu/ang_fit_strategy.aux)
 (./Lmumu/ang_sys_and_results.aux) (./RKst/introduction.aux)
 (./RKst/selection.aux) (./RKst/fit.aux) (./RKst/efficiency.aux)
 (./RKst/systematics.aux) (./RKst/result.aux) (./conclusions.aux)
 (./Lmumu/angularAppendix.aux) (./Lmumu/appMCdataComp.aux)
-(./Lmumu/appendix_Lb_sys.aux) (./RKst/app_MC_fits.aux))
+(./Lmumu/appendix_Lb_sys.aux) (./RKst/app_MC_fits.aux) (./RKst/app_extra.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count161
+\scratchcounter=\count162
 \scratchdimen=\dimen163
 \scratchbox=\box37
-\nofMPsegments=\count162
-\nofMParguments=\count163
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count164
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count165
 \MPscratchDim=\dimen164
-\MPnumerator=\count165
-\makeMPintoPDFobject=\count166
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -649,7 +655,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring ON on input line 116.
+Package hyperref Info: Link coloring ON on input line 117.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -657,40 +663,44 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count167
+\c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 116.
-LaTeX Info: Redefining \pageref on input line 116.
-LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write7
-\openout7 = `thesis.out'.
+\@outlinefile=\write8
+\openout8 = `thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 120.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 121.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<fig/crest_2.pdf, id=504, 342.27875pt x 342.27875pt>
-File: fig/crest_2.pdf Graphic file (type pdf)
- <use fig/crest_2.pdf>
-Package pdftex.def Info: fig/crest_2.pdf used on input line 132.
-(pdftex.def)             Requested size: 342.2779pt x 342.2779pt.
+<fig/crest_1.pdf, id=508, 1029.8475pt x 1225.57875pt>
+File: fig/crest_1.pdf Graphic file (type pdf)
+ <use fig/crest_1.pdf>
+Package pdftex.def Info: fig/crest_1.pdf used on input line 133.
+(pdftex.def)             Requested size: 1029.845pt x 1225.57578pt.
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig/c
-rest_2.pdf>] [2] [3]
+rest_1.pdf>] [2] [3]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex [1
+ (./abstract.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-] [2
+]
+[2
 
 
 ] [3
@@ -700,17 +710,19 @@ rest_2.pdf>] [2] [3]
 
 ] [5] [6
 
-]) (./thesis.toc
-[7
+]) (./thesis.toc [7
 
 ] [8] [9])
-\tf@toc=\write8
-\openout8 = `thesis.toc'.
+\tf@toc=\write9
+\openout9 = `thesis.toc'.
 
- [10]
+ [10] [11
+
+]
 \openout2 = `Introduction/introduction.aux'.
 
- (./Introduction/introduction.tex
+
+(./Introduction/introduction.tex
 Chapter 1.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -729,27 +741,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 
+l.40 
       [1
 
 
-
 ]
-Overfull \hbox (10.78894pt too wide) in paragraph at lines 49--61
+Overfull \hbox (10.78894pt too wide) in paragraph at lines 50--62
 [][]
  []
 
-<Introduction/figs/SM.png, id=738, 1018.80624pt x 767.86874pt>
+<Introduction/figs/SM.png, id=748, 1018.80624pt x 767.86874pt>
 File: Introduction/figs/SM.png Graphic file (type png)
 
 <use Introduction/figs/SM.png>
-Package pdftex.def Info: Introduction/figs/SM.png used on input line 76.
+Package pdftex.def Info: Introduction/figs/SM.png used on input line 78.
 (pdftex.def)             Requested size: 341.43436pt x 257.33429pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 
+l.90 
       [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -757,227 +768,242 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 
+l.97 
       [3 <./Introduction/figs/SM.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
 
-[5] <Introduction/figs/ch_currents_ckm.png, id=767, 812.03375pt x 406.51875pt>
+[5] <Introduction/figs/ch_currents_ckm.png, id=777, 812.03375pt x 406.51875pt>
 File: Introduction/figs/ch_currents_ckm.png Graphic file (type png)
 
 <use Introduction/figs/ch_currents_ckm.png>
 Package pdftex.def Info: Introduction/figs/ch_currents_ckm.png used on input li
-ne 219.
+ne 189.
 (pdftex.def)             Requested size: 256.0774pt x 128.19675pt.
- [6 <./Introduction/figs/ch_currents_ckm.png>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [6 <./Introduction/figs/ch_currents_ckm.png>]
 <Introduction/figs/Unitarity_triangle.png, id=793, 1623.06375pt x 1198.4775pt>
 File: Introduction/figs/Unitarity_triangle.png Graphic file (type png)
 
 <use Introduction/figs/Unitarity_triangle.png>
 Package pdftex.def Info: Introduction/figs/Unitarity_triangle.png used on input
- line 281.
-(pdftex.def)             Requested size: 234.73653pt x 173.32675pt.
+ line 252.
+(pdftex.def)             Requested size: 213.39566pt x 157.56311pt.
 
-<Introduction/figs/Unitarity_triangle_HFAG.png, id=794, 569.12625pt x 284.06125
-pt>
-File: Introduction/figs/Unitarity_triangle_HFAG.png Graphic file (type png)
- <use Introduction/figs/Unitarity_triangle_HFAG.png>
-Package pdftex.def Info: Introduction/figs/Unitarity_triangle_HFAG.png used on 
-input line 282.
-(pdftex.def)             Requested size: 341.43436pt x 170.42505pt.
+<Introduction/figs/Unitarity_triangle_HFAG.pdf, id=794, 569.12625pt x 570.13pt>
+File: Introduction/figs/Unitarity_triangle_HFAG.pdf Graphic file (type pdf)
+<use Introduction/figs/Unitarity_triangle_HFAG.pdf>
+Package pdftex.def Info: Introduction/figs/Unitarity_triangle_HFAG.pdf used on 
+input line 253.
+(pdftex.def)             Requested size: 298.75262pt x 299.28793pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [8 <./Introduction/figs/Unitarity_triangle.png (PNG copy)> <./Introduction/fig
-s/Unitarity_triangle_HFAG.png>] [9]
-<Introduction/figs/neutral_current_proc.png, id=817, 705.63625pt x 371.3875pt>
+s/Unitarity_triangle_HFAG.pdf>] [9]
+<Introduction/figs/neutral_current_proc.png, id=839, 705.63625pt x 371.3875pt>
 File: Introduction/figs/neutral_current_proc.png Graphic file (type png)
 
 <use Introduction/figs/neutral_current_proc.png>
 Package pdftex.def Info: Introduction/figs/neutral_current_proc.png used on inp
-ut line 348.
+ut line 320.
 (pdftex.def)             Requested size: 256.0774pt x 134.77611pt.
  [10 <./Introduction/figs/neutral_current_proc.png>] [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-<Introduction/figs/penguin_general.png, id=849, 729.72626pt x 225.84375pt>
+<Introduction/figs/penguin_general.png, id=871, 729.72626pt x 225.84375pt>
 File: Introduction/figs/penguin_general.png Graphic file (type png)
 
 <use Introduction/figs/penguin_general.png>
 Package pdftex.def Info: Introduction/figs/penguin_general.png used on input li
-ne 436.
+ne 408.
 (pdftex.def)             Requested size: 341.43436pt x 105.671pt.
-
-<Introduction/figs/fermi_theory.png, id=851, 643.40375pt x 212.795pt>
+ [13 <./Introduction/figs/penguin_general.png (PNG copy)>]
+<Introduction/figs/fermi_theory.png, id=879, 643.40375pt x 212.795pt>
 File: Introduction/figs/fermi_theory.png Graphic file (type png)
 
 <use Introduction/figs/fermi_theory.png>
 Package pdftex.def Info: Introduction/figs/fermi_theory.png used on input line 
-463.
+436.
 (pdftex.def)             Requested size: 341.43436pt x 112.92691pt.
-
-Underfull \vbox (badness 4096) has occurred while \output is active []
-
- [13 <./Introduction/figs/penguin_general.png (PNG copy)>] [14 <./Introduction/
-figs/fermi_theory.png>]
+ [14 <./Introduction/figs/fermi_theory.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Overfull \hbox (2.27504pt too wide) in paragraph at lines 541--547
-\OT1/cmr/m/n/12 The op-er-a-tors are that are rel-e-vant for ra-dia-tive tran-s
-i-tions and lep-tonic and hadronic
- []
-
-<Introduction/figs/vtx_operators.png, id=882, 832.10875pt x 355.3275pt>
+<Introduction/figs/vtx_operators.png, id=905, 832.10875pt x 355.3275pt>
 File: Introduction/figs/vtx_operators.png Graphic file (type png)
 
 <use Introduction/figs/vtx_operators.png>
 Package pdftex.def Info: Introduction/figs/vtx_operators.png used on input line
- 575.
+ 548.
 (pdftex.def)             Requested size: 256.0774pt x 109.34795pt.
+
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
  [16]
-Underfull \vbox (badness 3148) has occurred while \output is active []
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ell' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ell' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 582.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 582.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <./Introduction/figs/vtx_operators.png>]
+Overfull \hbox (15.53703pt too wide) in paragraph at lines 601--607
+[][]
+ []
+
+<Introduction/figs/q2spectrum.pdf, id=925, 569.12625pt x 385.44pt>
+File: Introduction/figs/q2spectrum.pdf Graphic file (type pdf)
+
+<use Introduction/figs/q2spectrum.pdf>
+Package pdftex.def Info: Introduction/figs/q2spectrum.pdf used on input line 62
+0.
+(pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 606.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 606.
-
-<fig/q2spectrum.png, id=900, 975.645pt x 657.45625pt>
-File: fig/q2spectrum.png Graphic file (type png)
- <use fig/q2spectrum.png>
-Package pdftex.def Info: fig/q2spectrum.png used on input line 633.
-(pdftex.def)             Requested size: 341.43436pt x 230.08304pt.
-
-[18 <./fig/q2spectrum.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 653.
+(hyperref)                removing `math shift' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 653.
+(hyperref)                removing `\rightarrow' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 653.
+(hyperref)                removing `\ell' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 653.
+(hyperref)                removing `superscript' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 653.
+(hyperref)                removing `\ell' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 653.
+(hyperref)                removing `superscript' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 653.
+(hyperref)                removing `math shift' on input line 640.
 
-[19] [20]
-<Introduction/figs/CMSLHCb_EDfig2.pdf, id=931, 569.12625pt x 337.26pt>
+[19 <./Introduction/figs/q2spectrum.pdf, page is rotated 90 degrees>] [20]
+<Introduction/figs/CMSLHCb_EDfig2.pdf, id=999, 569.12625pt x 337.26pt>
 File: Introduction/figs/CMSLHCb_EDfig2.pdf Graphic file (type pdf)
 
 <use Introduction/figs/CMSLHCb_EDfig2.pdf>
 Package pdftex.def Info: Introduction/figs/CMSLHCb_EDfig2.pdf used on input lin
-e 722.
+e 710.
 (pdftex.def)             Requested size: 256.0774pt x 151.7553pt.
+ [21 <./Introduction/figs/CMSLHCb_EDfig2.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 729.
+(hyperref)                removing `\rightarrow' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 729.
+(hyperref)                removing `\ell' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 729.
+(hyperref)                removing `superscript' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 729.
+(hyperref)                removing `\ell' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 729.
+(hyperref)                removing `superscript' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 729.
+(hyperref)                removing `math shift' on input line 717.
+
+<Introduction/figs/P5prime.pdf, id=1065, 569.12625pt x 385.44pt>
+File: Introduction/figs/P5prime.pdf Graphic file (type pdf)
+
+<use Introduction/figs/P5prime.pdf>
+Package pdftex.def Info: Introduction/figs/P5prime.pdf used on input line 743.
+(pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 729.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./Introduction/figs/CMSLHCb_EDfig2.pdf, page is rotated 90 degrees>]
-<Introduction/figs/P5prime.png, id=995, 582.175pt x 410.53375pt>
-File: Introduction/figs/P5prime.png Graphic file (type png)
 
-<use Introduction/figs/P5prime.png>
-Package pdftex.def Info: Introduction/figs/P5prime.png used on input line 754.
-(pdftex.def)             Requested size: 256.0774pt x 180.57903pt.
-
-Overfull \hbox (22.88344pt too wide) in paragraph at lines 773--780
+Overfull \hbox (22.88344pt too wide) in paragraph at lines 761--768
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--780
+Underfull \hbox (badness 10000) in paragraph at lines 761--768
 
  []
 
-[22 <./Introduction/figs/P5prime.png>] [23]
-<Introduction/figs/LFV.png, id=1028, 820.06375pt x 578.16pt>
-File: Introduction/figs/LFV.png Graphic file (type png)
+[22] [23 <./Introduction/figs/P5prime.pdf, page is rotated 90 degrees>]
+<Introduction/figs/LFV.pdf, id=1140, 933.4875pt x 694.595pt>
+File: Introduction/figs/LFV.pdf Graphic file (type pdf)
 
-<use Introduction/figs/LFV.png>
-Package pdftex.def Info: Introduction/figs/LFV.png used on input line 813.
-(pdftex.def)             Requested size: 341.43436pt x 240.7259pt.
-) [24 <./Introduction/figs/LFV.png>]
+<use Introduction/figs/LFV.pdf>
+Package pdftex.def Info: Introduction/figs/LFV.pdf used on input line 802.
+(pdftex.def)             Requested size: 341.43436pt x 254.0603pt.
+) [24 <./Introduction/figs/LFV.pdf>]
 \openout2 = `Detector/detector.aux'.
 
 
 (./Detector/detector.tex
 Chapter 2.
-<Detector/figs/LHC_scheme.png, id=1045, 890.32625pt x 593.21625pt>
+<Detector/figs/LHC_scheme.png, id=1163, 890.32625pt x 593.21625pt>
 File: Detector/figs/LHC_scheme.png Graphic file (type png)
 
 <use Detector/figs/LHC_scheme.png>
-Package pdftex.def Info: Detector/figs/LHC_scheme.png used on input line 14.
+Package pdftex.def Info: Detector/figs/LHC_scheme.png used on input line 15.
 (pdftex.def)             Requested size: 426.79134pt x 284.36945pt.
 
 
@@ -992,11 +1018,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [26 <./Detector/figs/LHC_scheme.png (PNG copy)>]
-<Detector/figs/LHCb_official.png, id=1061, 1125.20375pt x 789.95125pt>
+<Detector/figs/LHCb_official.png, id=1178, 1125.20375pt x 789.95125pt>
 File: Detector/figs/LHCb_official.png Graphic file (type png)
 
 <use Detector/figs/LHCb_official.png>
-Package pdftex.def Info: Detector/figs/LHCb_official.png used on input line 57.
+Package pdftex.def Info: Detector/figs/LHCb_official.png used on input line 58.
 
 (pdftex.def)             Requested size: 426.79134pt x 299.63011pt.
 
@@ -1007,123 +1033,128 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 2384) has occurred while \output is active []
 
  [28 <./Detector/figs/LHCb_official.png>] [29]
-<Detector/figs/detector/VELO.png, id=1087, 563.10374pt x 382.42876pt>
+<Detector/figs/detector/VELO.png, id=1205, 563.10374pt x 382.42876pt>
 File: Detector/figs/detector/VELO.png Graphic file (type png)
 
 <use Detector/figs/detector/VELO.png>
-Package pdftex.def Info: Detector/figs/detector/VELO.png used on input line 118
+Package pdftex.def Info: Detector/figs/detector/VELO.png used on input line 122
 .
 (pdftex.def)             Requested size: 209.1301pt x 142.02744pt.
 
-<Detector/figs/detector/VELO_scheme.png, id=1088, 271.0125pt x 209.28188pt>
+<Detector/figs/detector/VELO_scheme.png, id=1206, 271.0125pt x 209.28188pt>
 File: Detector/figs/detector/VELO_scheme.png Graphic file (type png)
 
 <use Detector/figs/detector/VELO_scheme.png>
 Package pdftex.def Info: Detector/figs/detector/VELO_scheme.png used on input l
-ine 119.
+ine 123.
 (pdftex.def)             Requested size: 209.1301pt x 161.4988pt.
  [30 <./Detector/figs/detector/VELO.png> <./Detector/figs/detector/VELO_scheme.
 png>]
-<Detector/figs/straw_tubes.png, id=1099, 741.77126pt x 599.23875pt>
+<Detector/figs/straw_tubes.png, id=1216, 741.77126pt x 599.23875pt>
 File: Detector/figs/straw_tubes.png Graphic file (type png)
 
 <use Detector/figs/straw_tubes.png>
-Package pdftex.def Info: Detector/figs/straw_tubes.png used on input line 142.
+Package pdftex.def Info: Detector/figs/straw_tubes.png used on input line 146.
 (pdftex.def)             Requested size: 341.43436pt x 275.8269pt.
  [31 <./Detector/figs/straw_tubes.png>]
-[32] <Detector/figs/pi0_e_pid_perf.png, id=1116, 626.34pt x 604.2575pt>
+[32] <Detector/figs/pi0_e_pid_perf.png, id=1233, 626.34pt x 604.2575pt>
 File: Detector/figs/pi0_e_pid_perf.png Graphic file (type png)
 
 <use Detector/figs/pi0_e_pid_perf.png>
-Package pdftex.def Info: Detector/figs/pi0_e_pid_perf.png used on input line 19
-3.
+Package pdftex.def Info: Detector/figs/pi0_e_pid_perf.png used on input line 20
+0.
 (pdftex.def)             Requested size: 170.7101pt x 150.79662pt.
 
-<Detector/figs/calo_layout.png, id=1117, 817.0525pt x 474.77374pt>
+<Detector/figs/calo_layout.png, id=1234, 817.0525pt x 474.77374pt>
 File: Detector/figs/calo_layout.png Graphic file (type png)
 
 <use Detector/figs/calo_layout.png>
-Package pdftex.def Info: Detector/figs/calo_layout.png used on input line 194.
+Package pdftex.def Info: Detector/figs/calo_layout.png used on input line 201.
 (pdftex.def)             Requested size: 251.80531pt x 146.31624pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [33 <./Detector/figs/pi0_e_pid_perf.png> <./Detector/figs/calo_layout.png>]
-<RKst/figs/brem_recovery.png, id=1128, 693.792pt x 452.10768pt>
+<RKst/figs/brem_recovery.png, id=1244, 693.792pt x 452.10768pt>
 File: RKst/figs/brem_recovery.png Graphic file (type png)
 
 <use RKst/figs/brem_recovery.png>
-Package pdftex.def Info: RKst/figs/brem_recovery.png used on input line 225.
+Package pdftex.def Info: RKst/figs/brem_recovery.png used on input line 233.
 (pdftex.def)             Requested size: 234.73653pt x 152.96262pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34 <./RKst/figs/brem_recovery.png>]
-<Detector/figs/detector/Cherenkov.png, id=1138, 303.534pt x 280.94963pt>
+<Detector/figs/detector/Cherenkov.png, id=1254, 303.534pt x 280.94963pt>
 File: Detector/figs/detector/Cherenkov.png Graphic file (type png)
 
 <use Detector/figs/detector/Cherenkov.png>
 Package pdftex.def Info: Detector/figs/detector/Cherenkov.png used on input lin
-e 257.
+e 265.
 (pdftex.def)             Requested size: 192.05183pt x 156.49477pt.
 
-<Detector/figs/changle_vs_momentum.png, id=1139, 927.465pt x 653.44125pt>
+<Detector/figs/changle_vs_momentum.png, id=1255, 927.465pt x 653.44125pt>
 File: Detector/figs/changle_vs_momentum.png Graphic file (type png)
 
 <use Detector/figs/changle_vs_momentum.png>
 Package pdftex.def Info: Detector/figs/changle_vs_momentum.png used on input li
-ne 258.
+ne 266.
 (pdftex.def)             Requested size: 192.05621pt x 156.4901pt.
  [35 <./Detector/figs/detector/Cherenkov.png> <./Detector/figs/changle_vs_momen
 tum.png>]
-<Detector/figs/muon.png, id=1148, 1114.1625pt x 620.3175pt>
+<Detector/figs/muon.png, id=1265, 1114.1625pt x 620.3175pt>
 File: Detector/figs/muon.png Graphic file (type png)
 
 <use Detector/figs/muon.png>
-Package pdftex.def Info: Detector/figs/muon.png used on input line 307.
+Package pdftex.def Info: Detector/figs/muon.png used on input line 314.
 (pdftex.def)             Requested size: 426.79134pt x 237.61615pt.
  [36] [37 <./Detector/figs/muon.png>]
-<Detector/figs/kaon_pid_perf.png, id=1164, 1006.76125pt x 683.55376pt>
+<Detector/figs/kaon_pid_perf.png, id=1280, 1006.76125pt x 683.55376pt>
 File: Detector/figs/kaon_pid_perf.png Graphic file (type png)
 
 <use Detector/figs/kaon_pid_perf.png>
-Package pdftex.def Info: Detector/figs/kaon_pid_perf.png used on input line 347
+Package pdftex.def Info: Detector/figs/kaon_pid_perf.png used on input line 354
 .
 (pdftex.def)             Requested size: 209.1301pt x 141.986pt.
 
-<Detector/figs/proton_pid_perf.png, id=1165, 981.6675pt x 679.53876pt>
+<Detector/figs/proton_pid_perf.png, id=1281, 981.6675pt x 679.53876pt>
 File: Detector/figs/proton_pid_perf.png Graphic file (type png)
 
 <use Detector/figs/proton_pid_perf.png>
 Package pdftex.def Info: Detector/figs/proton_pid_perf.png used on input line 3
-48.
+55.
 (pdftex.def)             Requested size: 209.1301pt x 144.76039pt.
 
-<Detector/figs/pid_peaks.png, id=1166, 1185.42876pt x 413.545pt>
+<Detector/figs/pid_peaks.png, id=1282, 1185.42876pt x 413.545pt>
 File: Detector/figs/pid_peaks.png Graphic file (type png)
 
 <use Detector/figs/pid_peaks.png>
-Package pdftex.def Info: Detector/figs/pid_peaks.png used on input line 354.
+Package pdftex.def Info: Detector/figs/pid_peaks.png used on input line 361.
 (pdftex.def)             Requested size: 426.7902pt x 156.49246pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./Detector/figs/kaon_pid_perf.png> <./Detector/figs/proton_pid_perf.png>]
-<Detector/figs/triggerscheme.png, id=1181, 417.7206pt x 264.5082pt>
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [38 <./Detector/figs/kaon_pid_perf.png> <./Detector/figs/proton_pid_perf.png>]
+
+<Detector/figs/triggerscheme.png, id=1297, 417.7206pt x 264.5082pt>
 File: Detector/figs/triggerscheme.png Graphic file (type png)
 
 <use Detector/figs/triggerscheme.png>
-Package pdftex.def Info: Detector/figs/triggerscheme.png used on input line 399
+Package pdftex.def Info: Detector/figs/triggerscheme.png used on input line 406
 .
 (pdftex.def)             Requested size: 384.10959pt x 243.22536pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39 <./Detector/figs/pid_peaks.png>] [40 <./Detector/figs/triggerscheme.png>]
-<Detector/figs/DTF_performance.pdf, id=1209, 569.12625pt x 387.4475pt>
+ [39 <./Detector/figs/pid_peaks.png>]
+[40 <./Detector/figs/triggerscheme.png>]
+<Detector/figs/DTF_performance.pdf, id=1327, 569.12625pt x 387.4475pt>
 File: Detector/figs/DTF_performance.pdf Graphic file (type pdf)
 
 <use Detector/figs/DTF_performance.pdf>
 Package pdftex.def Info: Detector/figs/DTF_performance.pdf used on input line 4
-47.
+56.
 (pdftex.def)             Requested size: 298.75262pt x 203.38933pt.
 
 Underfull \vbox (badness 1127) has occurred while \output is active []
@@ -1132,42 +1163,45 @@ Underfull \vbox (badness 1127) has occurred while \output is active []
 [42 <./Detector/figs/DTF_performance.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\PLambda' on input line 210.
+(hyperref)                removing `\PLambda' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 210.
+(hyperref)                removing `superscript' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 210.
+(hyperref)                removing `subscript' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 210.
+(hyperref)                removing `\rightarrow' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\PLambda' on input line 210.
+(hyperref)                removing `\PLambda' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mu' on input line 210.
+(hyperref)                removing `\mu' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 210.
+(hyperref)                removing `superscript' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mu' on input line 210.
+(hyperref)                removing `\mu' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 210.
+(hyperref)                removing `superscript' on input line 213.
 
 [43
 
+
+
+] [44
 
 ]
 \openout2 = `Lmumu/introduction.aux'.
@@ -1175,8 +1209,52 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
  (./Lmumu/introduction.tex
 Chapter 3.
 
-Overfull \hbox (2.89685pt too wide) in paragraph at lines 24--30
-[]\OT1/cmr/m/n/12 With re-spect of $\OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 de-ca
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\PLambda' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\PLambda' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Overfull \hbox (3.876pt too wide) in paragraph at lines 24--30
+[]\OT1/cmr/m/n/12 With re-spect to $\OML/cmm/m/it/12 B[]$ \OT1/cmr/m/n/12 de-ca
 ys go-ing though the same tran-si-tions, such as $\OML/cmm/m/it/12 B[]  \OMS/cm
 sy/m/n/12 ! \OML/cmm/m/it/12 K[]^^V[]^^V[]$\OT1/cmr/m/n/12 ,
  []
@@ -1184,180 +1262,177 @@ sy/m/n/12 ! \OML/cmm/m/it/12 K[]^^V[]^^V[]$\OT1/cmr/m/n/12 ,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44
+ [45
 
 
 ]
-Overfull \hbox (1.42154pt too wide) detected at line 50
-\OMS/cmsy/m/n/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^C[] \OMS/cmsy/m/n/12 ! \O
-ML/cmm/m/it/12 ^^C^^V[]^^V[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =\OMS/cmsy/m/n/12
- B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^C[] \OMS/cmsy/m/n/12 ! []\OML/cmm/m/it/12
- ^^C\OT1/cmr/m/n/12 ) = [1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 54 \OMS/cmsy/m/n/12
- ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 30([]) \OMS/cmsy/m/n/12
- ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 20([]) \OMS/cmsy/m/n/12
- ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 02([])] \OMS/cmsy/m/n/1
-2 ^^B \OT1/cmr/m/n/12 10[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
+ [46]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 61.
+(hyperref)                removing `superscript' on input line 62.
 
-[46] [47] <Lmumu/figs/track_types.png, id=1333, 1055.945pt x 526.96875pt>
+[47]
+Overfull \hbox (18.95044pt too wide) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 This anal-y-sis deals with $\OML/cmm/m/it/12 ^^C$ \OT1/cmr/m/n/
+12 baryons, which have a life-time of [].
+ []
+
+[48] <Lmumu/figs/track_types.png, id=1457, 1055.945pt x 526.96875pt>
 File: Lmumu/figs/track_types.png Graphic file (type png)
 
 <use Lmumu/figs/track_types.png>
-Package pdftex.def Info: Lmumu/figs/track_types.png used on input line 121.
+Package pdftex.def Info: Lmumu/figs/track_types.png used on input line 123.
 (pdftex.def)             Requested size: 341.43436pt x 165.7865pt.
- [48 <./Lmumu/figs/track_types.png>]
-<Lmumu/figs/Q2_beforemodel.pdf, id=1349, 569.12625pt x 385.44pt>
+ [49 <./Lmumu/figs/track_types.png>]
+<Lmumu/figs/Q2_beforemodel.pdf, id=1472, 569.12625pt x 385.44pt>
 File: Lmumu/figs/Q2_beforemodel.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/Q2_beforemodel.pdf>
-Package pdftex.def Info: Lmumu/figs/Q2_beforemodel.pdf used on input line 164.
+Package pdftex.def Info: Lmumu/figs/Q2_beforemodel.pdf used on input line 168.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/Q2_aftermodel.pdf, id=1350, 569.12625pt x 385.44pt>
+<Lmumu/figs/Q2_aftermodel.pdf, id=1473, 569.12625pt x 385.44pt>
 File: Lmumu/figs/Q2_aftermodel.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/Q2_aftermodel.pdf>
-Package pdftex.def Info: Lmumu/figs/Q2_aftermodel.pdf used on input line 165.
+Package pdftex.def Info: Lmumu/figs/Q2_aftermodel.pdf used on input line 169.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
+Underfull \vbox (badness 1590) has occurred while \output is active []
+
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./Lmumu/figs/Q2_beforemodel.pdf, page is rotated 90 degrees> <./Lmumu/fig
+ [51 <./Lmumu/figs/Q2_beforemodel.pdf, page is rotated 90 degrees> <./Lmumu/fig
 s/Q2_aftermodel.pdf, page is rotated 90 degrees>]
-<Lmumu/figs/ratio_Lb_p_pt.pdf, id=1454, 569.12625pt x 385.44pt>
+<Lmumu/figs/ratio_Lb_p_pt.pdf, id=1577, 569.12625pt x 385.44pt>
 File: Lmumu/figs/ratio_Lb_p_pt.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/ratio_Lb_p_pt.pdf>
-Package pdftex.def Info: Lmumu/figs/ratio_Lb_p_pt.pdf used on input line 207.
+Package pdftex.def Info: Lmumu/figs/ratio_Lb_p_pt.pdf used on input line 211.
 (pdftex.def)             Requested size: 384.10959pt x 260.149pt.
- [51 <./Lmumu/figs/ratio_Lb_p_pt.pdf, page is rotated 90 degrees>]) [52]
+ [52 <./Lmumu/figs/ratio_Lb_p_pt.pdf, page is rotated 90 degrees>]) [53]
 \openout2 = `Lmumu/selection.aux'.
 
  (./Lmumu/selection.tex
 Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53
-
-
-
-]
-[54] <Lmumu/figs/IPandDIRA.png, id=1522, 682.73894pt x 321.01326pt>
+<Lmumu/figs/IPandDIRA.png, id=1633, 682.73894pt x 321.01326pt>
 File: Lmumu/figs/IPandDIRA.png Graphic file (type png)
 
 <use Lmumu/figs/IPandDIRA.png>
-Package pdftex.def Info: Lmumu/figs/IPandDIRA.png used on input line 81.
+Package pdftex.def Info: Lmumu/figs/IPandDIRA.png used on input line 29.
 (pdftex.def)             Requested size: 341.43436pt x 160.54051pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <./Lmumu/figs/IPandDIRA.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [54
 
- [56]
-<Lmumu/figs/correlation.pdf, id=1546, 569.12625pt x 385.44pt>
+
+
+]
+[55 <./Lmumu/figs/IPandDIRA.png>] [56]
+<Lmumu/figs/correlation.pdf, id=1663, 569.12625pt x 385.44pt>
 File: Lmumu/figs/correlation.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/correlation.pdf>
-Package pdftex.def Info: Lmumu/figs/correlation.pdf used on input line 179.
+Package pdftex.def Info: Lmumu/figs/correlation.pdf used on input line 184.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
-<Lmumu/figs/TrainAndTest.pdf, id=1549, 569.12625pt x 385.44pt>
+<Lmumu/figs/TrainAndTest.pdf, id=1666, 569.12625pt x 385.44pt>
 File: Lmumu/figs/TrainAndTest.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/TrainAndTest.pdf>
-Package pdftex.def Info: Lmumu/figs/TrainAndTest.pdf used on input line 190.
+Package pdftex.def Info: Lmumu/figs/TrainAndTest.pdf used on input line 195.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/purity_NN.pdf, id=1550, 569.12625pt x 385.44pt>
+<Lmumu/figs/purity_NN.pdf, id=1667, 569.12625pt x 385.44pt>
 File: Lmumu/figs/purity_NN.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/purity_NN.pdf>
-Package pdftex.def Info: Lmumu/figs/purity_NN.pdf used on input line 191.
+Package pdftex.def Info: Lmumu/figs/purity_NN.pdf used on input line 196.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf, id=1552, 569.12625pt x 385.44pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+<Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf, id=1675, 569.12625pt x 385.44pt>
 File: Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf Graphic file (type pdf)
 <use Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf>
 Package pdftex.def Info: Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf used on i
-nput line 208.
+nput line 213.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf, id=1553, 569.12625pt x 385.44pt
+<Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf, id=1676, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf Graphic file (type pdf)
  <use Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf>
 Package pdftex.def Info: Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf used on 
-input line 209.
+input line 214.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57 <./Lmumu/figs/correlation.pdf, page is rotated 90 degrees>] [58 <./Lmumu/f
-igs/TrainAndTest.pdf, page is rotated 90 degrees> <./Lmumu/figs/purity_NN.pdf, 
-page is rotated 90 degrees>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [58]
+[59 <./Lmumu/figs/correlation.pdf, page is rotated 90 degrees> <./Lmumu/figs/Tr
+ainAndTest.pdf, page is rotated 90 degrees> <./Lmumu/figs/purity_NN.pdf, page i
+s rotated 90 degrees>]
+Underfull \vbox (badness 1515) has occurred while \output is active []
 
- [59 <./Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf, page is rotated 90 degree
+ [60 <./Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf, page is rotated 90 degree
 s> <./Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf, page is rotated 90 degrees
 >]
-<Lmumu/figs/significance_Lmumu_lowQ2.pdf, id=1787, 569.12625pt x 385.44pt>
-File: Lmumu/figs/significance_Lmumu_lowQ2.pdf Graphic file (type pdf)
+<Lmumu/figs/Lmumu_lowQ2_FoM.pdf, id=1913, 569.12625pt x 387.4475pt>
+File: Lmumu/figs/Lmumu_lowQ2_FoM.pdf Graphic file (type pdf)
 
-<use Lmumu/figs/significance_Lmumu_lowQ2.pdf>
-Package pdftex.def Info: Lmumu/figs/significance_Lmumu_lowQ2.pdf used on input 
-line 272.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+<use Lmumu/figs/Lmumu_lowQ2_FoM.pdf>
+Package pdftex.def Info: Lmumu/figs/Lmumu_lowQ2_FoM.pdf used on input line 277.
 
-<Lmumu/figs/significance_Lmumu_highQ2.pdf, id=1788, 569.12625pt x 385.44pt>
-File: Lmumu/figs/significance_Lmumu_highQ2.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 209.1301pt x 142.37193pt.
 
-<use Lmumu/figs/significance_Lmumu_highQ2.pdf>
-Package pdftex.def Info: Lmumu/figs/significance_Lmumu_highQ2.pdf used on input
- line 273.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+<Lmumu/figs/Lmumu_highQ2_FoM.pdf, id=1914, 569.12625pt x 385.44pt>
+File: Lmumu/figs/Lmumu_highQ2_FoM.pdf Graphic file (type pdf)
 
-<Lmumu/figs/ROC.pdf, id=1789, 569.12625pt x 385.44pt>
+<use Lmumu/figs/Lmumu_highQ2_FoM.pdf>
+Package pdftex.def Info: Lmumu/figs/Lmumu_highQ2_FoM.pdf used on input line 278
+.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+
+<Lmumu/figs/ROC.pdf, id=1915, 569.12625pt x 385.44pt>
 File: Lmumu/figs/ROC.pdf Graphic file (type pdf)
  <use Lmumu/figs/ROC.pdf>
-Package pdftex.def Info: Lmumu/figs/ROC.pdf used on input line 281.
+Package pdftex.def Info: Lmumu/figs/ROC.pdf used on input line 286.
 (pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
-[61 <./Lmumu/figs/significance_Lmumu_lowQ2.pdf, page is rotated 90 degrees> <./
-Lmumu/figs/significance_Lmumu_highQ2.pdf, page is rotated 90 degrees> <./Lmumu/
-figs/ROC.pdf, page is rotated 90 degrees>]
-<Lmumu/figs/Bu2Kstplus_mass.pdf, id=1940, 569.12625pt x 385.44pt>
+ [61 <./Lmumu/figs/Lmumu_lowQ2_FoM.pdf, page is rotated 90 degrees> <./Lmumu/fi
+gs/Lmumu_highQ2_FoM.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62 <./Lmumu/figs/ROC.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/Bu2Kstplus_mass.pdf, id=2062, 569.12625pt x 385.44pt>
 File: Lmumu/figs/Bu2Kstplus_mass.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/Bu2Kstplus_mass.pdf>
-Package pdftex.def Info: Lmumu/figs/Bu2Kstplus_mass.pdf used on input line 389.
+Package pdftex.def Info: Lmumu/figs/Bu2Kstplus_mass.pdf used on input line 397.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/JpsiL_leakage_mass.pdf, id=1941, 569.12625pt x 385.44pt>
+<Lmumu/figs/JpsiL_leakage_mass.pdf, id=2063, 569.12625pt x 385.44pt>
 File: Lmumu/figs/JpsiL_leakage_mass.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/JpsiL_leakage_mass.pdf>
 Package pdftex.def Info: Lmumu/figs/JpsiL_leakage_mass.pdf used on input line 3
-90.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
- [62]) [63] [64 <./Lmumu/figs/Bu2Kstplus_mass.pdf, page is rotated 90 degrees> 
-<./Lmumu/figs/JpsiL_leakage_mass.pdf, page is rotated 90 degrees>]
+98.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+ [63]) [64 <./Lmumu/figs/Bu2Kstplus_mass.pdf, page is rotated 90 degrees> <./Lm
+umu/figs/JpsiL_leakage_mass.pdf, page is rotated 90 degrees>]
 \openout2 = `Lmumu/fit.aux'.
 
  (./Lmumu/fit.tex
@@ -1370,31 +1445,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf, id=2052, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf, id=2171, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf used on inpu
-t line 63.
+t line 64.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf, id=2053, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf, id=2172, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf used on inpu
-t line 64.
+t line 65.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66]
-<Lmumu/figs/MassFits/fitKS_bkg.pdf, id=2065, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/fitKS_bkg.pdf, id=2183, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/fitKS_bkg.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/fitKS_bkg.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/fitKS_bkg.pdf used on input line 9
-1.
+2.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1403,118 +1478,118 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf, page is rotated 90 degrees>]
 Underfull \vbox (badness 3354) has occurred while \output is active []
 
- [68 <./Lmumu/figs/MassFits/fitKS_bkg.pdf, page is rotated 90 degrees>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69]
-<Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf, id=2215, 569.12625pt x 385.44pt>
+ [68 <./Lmumu/figs/MassFits/fitKS_bkg.pdf, page is rotated 90 degrees>] [69]
+<Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf, id=2334, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf used on inpu
-t line 186.
+t line 191.
 (pdftex.def)             Requested size: 320.09349pt x 216.79182pt.
 
-<Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf, id=2216, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf, id=2335, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf used on inpu
-t line 187.
+t line 192.
 (pdftex.def)             Requested size: 320.09349pt x 216.79182pt.
 
-<Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf, id=2217, 569.12625pt x
+<Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf, id=2336, 569.12625pt x
  385.44pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf Graphic file (type
  pdf)
  <use Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf
- used on input line 188.
+ used on input line 193.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf, id=2218, 569.12625pt x
+<Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf, id=2337, 569.12625pt x
  385.44pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf Graphic file (type
  pdf)
  <use Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf
- used on input line 189.
+ used on input line 194.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf, id=2227, 569.12625pt x 385.4
+
+LaTeX Warning: Float too large for page by 5.57814pt on input line 201.
+
+[70] [71 <./Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf, page is rotated 90 degre
+es> <./Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf, page is rotated 90 degrees> <
+./Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf, page is rotated 90 de
+grees> <./Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf, page is rotat
+ed 90 degrees>]
+<Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf, id=2536, 569.12625pt x 385.4
 4pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf Graphic file (type pdf)
  <use Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf used 
-on input line 258.
+on input line 264.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf, id=2228, 569.12625pt x 385.4
+<Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf, id=2537, 569.12625pt x 385.4
 4pt>
 File: Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf Graphic file (type pdf)
  <use Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf used 
-on input line 259.
+on input line 265.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure13.pdf, id=2229, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure13.pdf, id=2538, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure13.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure13.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure13.pdf used on input line 268.
-(pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
+Package pdftex.def Info: Lmumu/figs/paper/figure13.pdf used on input line 274.
+(pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
 
-<Lmumu/figs/paper/figure2.pdf, id=2230, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure2.pdf, id=2539, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure2.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure2.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure2.pdf used on input line 269.
-(pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
+Package pdftex.def Info: Lmumu/figs/paper/figure2.pdf used on input line 275.
+(pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
 
-<Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf, id=2231, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf, id=2540, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf used on input
- line 286.
+ line 292.
 (pdftex.def)             Requested size: 426.79134pt x 289.05576pt.
 
-<Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf, id=2232, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf, id=2541, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf used on input
- line 287.
+ line 293.
 (pdftex.def)             Requested size: 426.79134pt x 289.05576pt.
 
-<Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf, id=2233, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf, id=2542, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf used on input
- line 296.
+ line 302.
 (pdftex.def)             Requested size: 426.79134pt x 289.05576pt.
 
-<Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf, id=2234, 569.12625pt x 385.44pt>
+<Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf, id=2543, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf>
 Package pdftex.def Info: Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf used on input
- line 297.
+ line 303.
 (pdftex.def)             Requested size: 426.79134pt x 289.05576pt.
- [70] [71 <./Lmumu/figs/MassFits/Lb2JpsiL__DD_data.pdf, page is rotated 90 degr
-ees> <./Lmumu/figs/MassFits/Lb2JpsiL__LL_data.pdf, page is rotated 90 degrees> 
-<./Lmumu/figs/MassFits/Lb2JpsiL_DD_data_log_fitAndRes.pdf, page is rotated 90 d
-egrees> <./Lmumu/figs/MassFits/Lb2JpsiL_LL_data_log_fitAndRes.pdf, page is rota
-ted 90 degrees>] [72 <./Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf, page 
-is rotated 90 degrees> <./Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf, pag
-e is rotated 90 degrees>]
-[73 <./Lmumu/figs/paper/figure13.pdf, page is rotated 90 degrees> <./Lmumu/figs
-/paper/figure2.pdf, page is rotated 90 degrees>] [74 <./Lmumu/figs/MassFits/q2_
-fits_DD_plot2.pdf, page is rotated 90 degrees> <./Lmumu/figs/MassFits/q2_fits_D
-D_plot1.pdf, page is rotated 90 degrees>] [75 <./Lmumu/figs/MassFits/q2_fits_LL
-_plot2.pdf, page is rotated 90 degrees> <./Lmumu/figs/MassFits/q2_fits_LL_plot1
-.pdf, page is rotated 90 degrees>])
+ [72] [73 <./Lmumu/figs/MassFits/Lb2JpsiL__lowSel_DD_data.pdf, page is rotated 
+90 degrees> <./Lmumu/figs/MassFits/Lb2JpsiL__lowSel_LL_data.pdf, page is rotate
+d 90 degrees> <./Lmumu/figs/paper/figure13.pdf, page is rotated 90 degrees> <./
+Lmumu/figs/paper/figure2.pdf, page is rotated 90 degrees>] [74 <./Lmumu/figs/Ma
+ssFits/q2_fits_DD_plot2.pdf, page is rotated 90 degrees> <./Lmumu/figs/MassFits
+/q2_fits_DD_plot1.pdf, page is rotated 90 degrees>] [75 <./Lmumu/figs/MassFits/
+q2_fits_LL_plot2.pdf, page is rotated 90 degrees> <./Lmumu/figs/MassFits/q2_fit
+s_LL_plot1.pdf, page is rotated 90 degrees>])
 \openout2 = `Lmumu/efficiency.aux'.
 
  (./Lmumu/efficiency.tex
@@ -1531,75 +1606,83 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[78]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [80]
-<Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf, id=2831, 569.12625pt x 385.44p
+<Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf, id=2950, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf used on
- input line 373.
+ input line 390.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf, id=2832, 569.12625pt x 385.44pt
+<Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf, id=2951, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf used on 
-input line 374.
+input line 391.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf, id=2833, 569.12625pt x 385.44p
+<Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf, id=2952, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf used on
- input line 375.
+ input line 392.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf, id=2834, 569.12625pt x 385.44p
+<Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf, id=2953, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf used on
- input line 376.
+ input line 393.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf, id=2835, 569.12625pt x 385.44pt
+<Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf, id=2954, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf used on 
-input line 377.
+input line 394.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf, id=2836, 569.12625pt x 385.44pt
+<Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf, id=2955, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf used on 
-input line 378.
+input line 395.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf, id=2837, 569.12625pt x 385.44p
+<Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf, id=2956, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf used on
- input line 379.
+ input line 396.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf, id=2838, 569.12625pt x 385.44p
+<Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf, id=2957, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf Graphic file (type pdf)
  <use Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf used on
- input line 380.
+ input line 397.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
  [81] [82] [83 <./Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf, page is rotat
 ed 90 degrees> <./Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf, page is rotate
@@ -1609,213 +1692,227 @@ d 90 degrees> <./Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf, page is rotated
  90 degrees> <./Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf, page is rotated 
 90 degrees> <./Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf, page is rotated 
 90 degrees> <./Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf, page is rotated 
-90 degrees>] [84])
+90 degrees>])
 \openout2 = `Lmumu/systematics.aux'.
 
 
 (./Lmumu/systematics.tex
 Chapter 7.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [85
+[84
 
 
 
 
-]
+] [85]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-[86] [87] <Lmumu/figs/wilson_q2.pdf, id=3228, 569.12625pt x 385.44pt>
+[86] <Lmumu/figs/wilson_q2.pdf, id=3342, 569.12625pt x 385.44pt>
 File: Lmumu/figs/wilson_q2.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/wilson_q2.pdf>
-Package pdftex.def Info: Lmumu/figs/wilson_q2.pdf used on input line 146.
+Package pdftex.def Info: Lmumu/figs/wilson_q2.pdf used on input line 149.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88 <./Lmumu/figs/wilson_q2.pdf, page is rotated 90 degrees>]
+ [87 <./Lmumu/figs/wilson_q2.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\PLambda' on input line 189.
+(hyperref)                removing `\PLambda' on input line 192.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 189.
+(hyperref)                removing `superscript' on input line 192.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 189.
+(hyperref)                removing `subscript' on input line 192.
 
-[89] <Lmumu/figs/DDvtx_eff_POwen.pdf, id=3289, 569.12625pt x 344.28625pt>
+
+Overfull \hbox (1.77922pt too wide) in paragraph at lines 215--221
+\OT1/cmr/m/n/12 Other anal-y-sis in LHCb us-ing par-ti-cles re-con-structed wit
+h down-stream tracks showed
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88] <Lmumu/figs/DDvtx_eff_POwen.pdf, id=3404, 569.12625pt x 344.28625pt>
 File: Lmumu/figs/DDvtx_eff_POwen.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/DDvtx_eff_POwen.pdf>
-Package pdftex.def Info: Lmumu/figs/DDvtx_eff_POwen.pdf used on input line 221.
+Package pdftex.def Info: Lmumu/figs/DDvtx_eff_POwen.pdf used on input line 224.
 
 (pdftex.def)             Requested size: 256.0774pt x 154.91687pt.
- [90 <./Lmumu/figs/DDvtx_eff_POwen.pdf, page is rotated 90 degrees>]) [91]
-\openout2 = `Lmumu/summaryBR.aux'.
-
- (./Lmumu/summaryBR.tex
-Chapter 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [92
-
-
-
-]
-<Lmumu/figs/q2result_both.pdf, id=3357, 569.12625pt x 385.44pt>
+ [89 <./Lmumu/figs/DDvtx_eff_POwen.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/q2result_both.pdf, id=3462, 569.12625pt x 385.44pt>
 File: Lmumu/figs/q2result_both.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/q2result_both.pdf>
-Package pdftex.def Info: Lmumu/figs/q2result_both.pdf used on input line 58.
+Package pdftex.def Info: Lmumu/figs/q2result_both.pdf used on input line 320.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
-
-<Lmumu/figs/combined_result_2err.pdf, id=3360, 569.12625pt x 387.4475pt>
+ [90] [91 <./Lmumu/figs/q2result_both.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/combined_result_2err.pdf, id=3520, 569.12625pt x 387.4475pt>
 File: Lmumu/figs/combined_result_2err.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/combined_result_2err.pdf>
 Package pdftex.def Info: Lmumu/figs/combined_result_2err.pdf used on input line
- 146.
+ 409.
 (pdftex.def)             Requested size: 341.43436pt x 232.45255pt.
-
-Underfull \vbox (badness 4353) has occurred while \output is active []
-
- [93]
-[94 <./Lmumu/figs/q2result_both.pdf, page is rotated 90 degrees> <./Lmumu/figs/
-combined_result_2err.pdf, page is rotated 90 degrees>]
-<Lmumu/figs/paper/figure5.pdf, id=3464, 569.12625pt x 385.44pt>
+ [92 <./Lmumu/figs/combined_result_2err.pdf, page is rotated 90 degrees>]
+<Lmumu/figs/paper/figure5.pdf, id=3575, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure5.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure5.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure5.pdf used on input line 195.
+Package pdftex.def Info: Lmumu/figs/paper/figure5.pdf used on input line 459.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
- [95] [96 <./Lmumu/figs/paper/figure5.pdf, page is rotated 90 degrees>])
+ [93] [94 <./Lmumu/figs/paper/figure5.pdf, page is rotated 90 degrees>])
 \openout2 = `Lmumu/afbmethod.aux'.
 
  (./Lmumu/afbmethod.tex
-Chapter 9.
-<Lmumu/figs/angles.jpeg, id=3520, 321.2pt x 183.68625pt>
-File: Lmumu/figs/angles.jpeg Graphic file (type jpg)
-
-<use Lmumu/figs/angles.jpeg>
-Package pdftex.def Info: Lmumu/figs/angles.jpeg used on input line 22.
-(pdftex.def)             Requested size: 213.39566pt x 122.03769pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Chapter 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97
+ [95
 
 
 
 
 ]
-[98 <./Lmumu/figs/angles.jpeg>]
+<Lmumu/figs/angles.jpeg, id=3637, 321.2pt x 183.68625pt>
+File: Lmumu/figs/angles.jpeg Graphic file (type jpg)
+
+<use Lmumu/figs/angles.jpeg>
+Package pdftex.def Info: Lmumu/figs/angles.jpeg used on input line 24.
+(pdftex.def)             Requested size: 213.39566pt x 122.03769pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96 <./Lmumu/figs/angles.jpeg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101]
-[102]
-<Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf, id=3587, 569.12625pt x 385.44pt
+<Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf, id=3699, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf Graphic file (type pdf)
  <use Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf used on 
-input line 459.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+input line 465.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf, id=3588, 569.12625pt x 385.44pt
+<Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf, id=3700, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf Graphic file (type pdf)
  <use Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf used on 
-input line 460.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+input line 466.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf, id=3589, 569.12625pt x 385.44
-pt>
-File: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf Graphic file (type pdf)
- <use Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf>
-Package pdftex.def Info: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf used o
-n input line 461.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+<Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf, id=3701, 569.12625pt x 385.44pt
+>
+File: Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf Graphic file (type pdf)
+ <use Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf>
+Package pdftex.def Info: Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf used on 
+input line 467.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf, id=3590, 569.12625pt x 385.44
+<Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf, id=3702, 569.12625pt x 385.44pt
+>
+File: Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf Graphic file (type pdf)
+ <use Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf>
+Package pdftex.def Info: Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf used on 
+input line 468.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+
+<Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf, id=3703, 569.12625pt x 385.44
 pt>
 File: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf Graphic file (type pdf)
  <use Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf used o
-n input line 462.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+n input line 469.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf, id=3591, 569.12625pt x 38
+<Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf, id=3704, 569.12625pt x 385.44
+pt>
+File: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf Graphic file (type pdf)
+ <use Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf>
+Package pdftex.def Info: Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf used o
+n input line 470.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+
+<Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf, id=3705, 569.12625pt x 38
 5.44pt>
 File: Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf Graphic file (type pd
 f)
  <use Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf us
-ed on input line 471.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+ed on input line 482.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf, id=3592, 569.12625pt x 38
+<Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf, id=3706, 569.12625pt x 38
 5.44pt>
 File: Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf Graphic file (type pd
 f)
  <use Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf us
-ed on input line 472.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+ed on input line 483.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf, id=3593, 569.12625pt x 38
+<Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf, id=3707, 569.12625pt x 38
 5.44pt>
 File: Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf Graphic file (type pd
 f)
  <use Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf us
-ed on input line 473.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+ed on input line 484.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf, id=3594, 569.12625pt x 38
+<Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf, id=3708, 569.12625pt x 38
 5.44pt>
 File: Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf Graphic file (type pd
 f)
  <use Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf us
-ed on input line 474.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
-) [103 <./Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf, page is rotated 90 deg
-rees> <./Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf, page is rotated 90 degr
-ees> <./Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf, page is rotated 90 deg
-rees> <./Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf, page is rotated 90 de
-grees>]
-[104 <./Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf, page is rotated 90
- degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf, page is rotat
-ed 90 degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf, page is 
-rotated 90 degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf, pag
-e is rotated 90 degrees>]
+ed on input line 485.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+) [101]
+[102 <./Lmumu/figs/resolution/RmT_vs_cosThetaL_LL.pdf, page is rotated 90 degre
+es> <./Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf, page is rotated 90 degree
+s> <./Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf, page is rotated 90 degrees
+> <./Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf, page is rotated 90 degrees>
+ <./Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf, page is rotated 90 degrees
+> <./Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf, page is rotated 90 degree
+s>] [103 <./Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf, page is rotate
+d 90 degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf, page is r
+otated 90 degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf, page
+ is rotated 90 degrees> <./Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf,
+ page is rotated 90 degrees>]
 \openout2 = `Lmumu/ang_fit_strategy.aux'.
 
  (./Lmumu/ang_fit_strategy.tex
-Chapter 10.
-<Lmumu/figs/scan.pdf, id=3952, 569.12625pt x 385.44pt>
+Chapter 9.
+<Lmumu/figs/scan.pdf, id=4157, 569.12625pt x 385.44pt>
 File: Lmumu/figs/scan.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/scan.pdf>
-Package pdftex.def Info: Lmumu/figs/scan.pdf used on input line 23.
+Package pdftex.def Info: Lmumu/figs/scan.pdf used on input line 22.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
 
@@ -1824,110 +1921,110 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105
+ [104
 
 
 
 ]
-[106 <./Lmumu/figs/scan.pdf, page is rotated 90 degrees>]
-Overfull \hbox (1.17984pt too wide) in paragraph at lines 51--53
-[]\OT1/cmr/m/n/12 calculate the per-cent-age of times in which the ra-tio $\OML
-/cmm/m/it/12 log\OMS/cmsy/m/n/12 L[]\OML/cmm/m/it/12 =log\OMS/cmsy/m/n/12 L[]$ 
-\OT1/cmr/m/n/12 is smaller
+[105 <./Lmumu/figs/scan.pdf, page is rotated 90 degrees>]
+Overfull \hbox (43.08493pt too wide) in paragraph at lines 52--54
+[]\OT1/cmr/m/n/12 calculate the per-cent-age of sim-u-lated ex-per-i-ments in w
+hich the ra-tio $[] \OMS/cmsy/m/n/12 L[]\OML/cmm/m/it/12 = [] \OMS/cmsy/m/n/12 
+L[]$
  []
 
-<Lmumu/figs/pvalue_fL_1500_2000.pdf, id=4013, 569.12625pt x 385.44pt>
+<Lmumu/figs/pvalue_fL_1500_2000.pdf, id=4219, 569.12625pt x 385.44pt>
 File: Lmumu/figs/pvalue_fL_1500_2000.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/pvalue_fL_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/pvalue_fL_1500_2000.pdf used on input line 
-63.
+64.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/pvalue_afbB_1500_2000.pdf, id=4014, 569.12625pt x 385.44pt>
+<Lmumu/figs/pvalue_afbB_1500_2000.pdf, id=4220, 569.12625pt x 385.44pt>
 File: Lmumu/figs/pvalue_afbB_1500_2000.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/pvalue_afbB_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/pvalue_afbB_1500_2000.pdf used on input lin
-e 64.
+e 65.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4441) has occurred while \output is active []
 
- [107 <./Lmumu/figs/pvalue_fL_1500_2000.pdf, page is rotated 90 degrees> <./Lmu
+ [106 <./Lmumu/figs/pvalue_fL_1500_2000.pdf, page is rotated 90 degrees> <./Lmu
 mu/figs/pvalue_afbB_1500_2000.pdf, page is rotated 90 degrees>]
-<Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf, id=4114, 569.12625pt x 385.44p
+<Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf, id=4320, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf Graphic file (type pdf)
  <use Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf used on
- input line 120.
+ input line 123.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf, id=4115, 569.12625pt x 385.44p
+<Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf, id=4321, 569.12625pt x 385.44p
 t>
 File: Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf Graphic file (type pdf)
  <use Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf used on
- input line 121.
+ input line 124.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf, id=4116, 569.12625pt x 385.44
+<Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf, id=4322, 569.12625pt x 385.44
 pt>
 File: Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf Graphic file (type pdf)
  <use Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf used o
-n input line 122.
+n input line 125.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf, id=4117, 569.12625pt x 385.44
+<Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf, id=4323, 569.12625pt x 385.44
 pt>
 File: Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf Graphic file (type pdf)
  <use Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf used o
-n input line 123.
+n input line 126.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[108]
-<Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf, id=4126, 569.12625p
+[107]
+<Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf, id=4332, 569.12625p
 t x 385.44pt>
 File: Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf Graphic file (t
 ype pdf)
  <use Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.
-pdf used on input line 163.
+pdf used on input line 166.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.pdf, id=4127, 569.12625p
+<Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.pdf, id=4333, 569.12625p
 t x 385.44pt>
 File: Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.pdf Graphic file (t
 ype pdf)
  <use Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.
-pdf used on input line 164.
+pdf used on input line 167.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/angular/DDeffFitB_q2_1500_2000.pdf, id=4128, 569.12625
+<Lmumu/figs/efficiencies/angular/DDeffFitB_q2_1500_2000.pdf, id=4334, 569.12625
 pt x 385.44pt>
 File: Lmumu/figs/efficiencies/angular/DDeffFitB_q2_1500_2000.pdf Graphic file (
 type pdf)
 
 <use Lmumu/figs/efficiencies/angular/DDeffFitB_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/angular/DDeffFitB_q2_1500_2000
-.pdf used on input line 165.
+.pdf used on input line 168.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000.pdf, id=4129, 569.12625
+<Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000.pdf, id=4335, 569.12625
 pt x 385.44pt>
 File: Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000.pdf Graphic file (
 type pdf)
 
 <use Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/angular/LLeffFitB_q2_1500_2000
-.pdf used on input line 166.
+.pdf used on input line 169.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
@@ -1936,188 +2033,190 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [109 <./Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf, page is rotated 90 deg
+ [108 <./Lmumu/figs/AngularBkgFits/BkgFit_highq2_DD.pdf, page is rotated 90 deg
 rees> <./Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf, page is rotated 90 deg
 rees> <./Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf, page is rotated 90 de
 grees> <./Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf, page is rotated 90 d
 egrees>]
 Underfull \vbox (badness 7030) has occurred while \output is active []
 
- [110 <./Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf, page is rot
+ [109 <./Lmumu/figs/efficiencies/angular/DDeffFit_q2_1500_2000.pdf, page is rot
 ated 90 degrees> <./Lmumu/figs/efficiencies/angular/LLeffFit_q2_1500_2000.pdf, 
 page is rotated 90 degrees> <./Lmumu/figs/efficiencies/angular/DDeffFitB_q2_150
 0_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/efficiencies/angular/LLef
 fFitB_q2_1500_2000.pdf, page is rotated 90 degrees>]
-<Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf, id=4487, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf, id=4693, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf used on input 
-line 234.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+line 258.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf, id=4488, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf, id=4694, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf used on input l
-ine 235.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ine 259.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf, id=4489, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf, id=4695, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/1D/toys3D_fL.pdf used on input li
-ne 236.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ne 260.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf, id=4490, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf, id=4696, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/3D/toys3D_afbB.pdf used on input 
-line 237.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+line 261.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf, id=4491, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf, id=4697, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf used on input l
-ine 238.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ine 262.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf, id=4492, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf, id=4698, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B1/3D/toys3D_fL.pdf used on input li
-ne 239.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ne 263.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf, id=4493, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf, id=4699, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pdf used on input 
-line 248.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+line 272.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf, id=4494, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf, id=4700, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf used on input l
-ine 249.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ine 273.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf, id=4495, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf, id=4701, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf used on input li
-ne 250.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ne 274.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf, id=4496, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf, id=4702, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf used on input 
-line 251.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+line 275.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf, id=4497, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf, id=4703, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf used on input l
-ine 252.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
+ine 276.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
 
-<Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf, id=4498, 569.12625pt x 385.44pt>
+<Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf, id=4704, 569.12625pt x 385.44pt>
 File: Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf>
 Package pdftex.def Info: Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf used on input li
-ne 253.
-(pdftex.def)             Requested size: 128.0387pt x 86.71437pt.
-) [111 <./Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf, page is rotated 90 degrees> 
+ne 277.
+(pdftex.def)             Requested size: 136.57634pt x 92.49573pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [110 <./Lmumu/figs/toys3D/B1/1D/toys3D_afbB.pdf, page is rotated 90 degrees> 
 <./Lmumu/figs/toys3D/B1/1D/toys3D_afb.pdf, page is rotated 90 degrees> <./Lmumu
 /figs/toys3D/B1/1D/toys3D_fL.pdf, page is rotated 90 degrees> <./Lmumu/figs/toy
 s3D/B1/3D/toys3D_afbB.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/
 3D/toys3D_afb.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B1/3D/toys3
-D_fL.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/1D/toys3D_afbB.pd
-f, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf, page 
-is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf, page is rotate
-d 90 degrees> <./Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf, page is rotated 90 de
-grees> <./Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf, page is rotated 90 degrees> <
-./Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf, page is rotated 90 degrees>] [112]
+D_fL.pdf, page is rotated 90 degrees>] [111 <./Lmumu/figs/toys3D/B2/1D/toys3D_a
+fbB.pdf, page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf,
+ page is rotated 90 degrees> <./Lmumu/figs/toys3D/B2/1D/toys3D_fL.pdf, page is 
+rotated 90 degrees> <./Lmumu/figs/toys3D/B2/3D/toys3D_afbB.pdf, page is rotated
+ 90 degrees> <./Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf, page is rotated 90 degr
+ees> <./Lmumu/figs/toys3D/B2/3D/toys3D_fL.pdf, page is rotated 90 degrees>]
 \openout2 = `Lmumu/ang_sys_and_results.aux'.
 
- (./Lmumu/ang_sys_and_results.tex
-Chapter 11.
-[113
+
+(./Lmumu/ang_sys_and_results.tex
+Chapter 10.
+[112
 
 
 
 ]
-<Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf, id=5037,
+<Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf, id=5243,
  569.12625pt x 385.44pt>
 File: Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf Grap
 hic file (type pdf)
 
 <use Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_co
-sThetaL_DD.pdf used on input line 25.
+sThetaL_DD.pdf used on input line 27.
 (pdftex.def)             Requested size: 384.10959pt x 260.149pt.
 
-<Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf, id=5038,
+<Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf, id=5244,
  569.12625pt x 385.44pt>
 File: Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf Grap
 hic file (type pdf)
 
 <use Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf>
 Package pdftex.def Info: Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_co
-sThetaL_LL.pdf used on input line 26.
+sThetaL_LL.pdf used on input line 28.
 (pdftex.def)             Requested size: 384.10959pt x 260.149pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 [][]
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lmumu/figs/fLsys_efficiency.pdf, id=5039, 569.12625pt x 385.44pt>
+<Lmumu/figs/fLsys_efficiency.pdf, id=5245, 569.12625pt x 385.44pt>
 File: Lmumu/figs/fLsys_efficiency.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/fLsys_efficiency.pdf>
-Package pdftex.def Info: Lmumu/figs/fLsys_efficiency.pdf used on input line 34.
+Package pdftex.def Info: Lmumu/figs/fLsys_efficiency.pdf used on input line 36.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/afbsys_efficiency.pdf, id=5040, 569.12625pt x 385.44pt>
+<Lmumu/figs/afbsys_efficiency.pdf, id=5246, 569.12625pt x 385.44pt>
 File: Lmumu/figs/afbsys_efficiency.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/afbsys_efficiency.pdf>
-Package pdftex.def Info: Lmumu/figs/afbsys_efficiency.pdf used on input line 35
+Package pdftex.def Info: Lmumu/figs/afbsys_efficiency.pdf used on input line 37
 .
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/afbBsys_efficiency.pdf, id=5041, 569.12625pt x 385.44pt>
+<Lmumu/figs/afbBsys_efficiency.pdf, id=5247, 569.12625pt x 385.44pt>
 File: Lmumu/figs/afbBsys_efficiency.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/afbBsys_efficiency.pdf>
 Package pdftex.def Info: Lmumu/figs/afbBsys_efficiency.pdf used on input line 3
-6.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+8.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114]
-Underfull \vbox (badness 2573) has occurred while \output is active []
 
 
 
@@ -2126,12 +2225,37 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[115 <./Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf, p
-age is rotated 90 degrees> <./Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_
-vs_cosThetaL_LL.pdf, page is rotated 90 degrees>] [116 <./Lmumu/figs/fLsys_effi
-ciency.pdf, page is rotated 90 degrees> <./Lmumu/figs/afbsys_efficiency.pdf, pa
-ge is rotated 90 degrees> <./Lmumu/figs/afbBsys_efficiency.pdf, page is rotated
- 90 degrees>]
+[113]
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
+ [114 <./Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf, 
+page is rotated 90 degrees> <./Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB
+_vs_cosThetaL_LL.pdf, page is rotated 90 degrees>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[115 <./Lmumu/figs/fLsys_efficiency.pdf, page is rotated 90 degrees> <./Lmumu/f
+igs/afbsys_efficiency.pdf, page is rotated 90 degrees> <./Lmumu/figs/afbBsys_ef
+ficiency.pdf, page is rotated 90 degrees>] [116]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\psii' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 214.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 27.18335pt.
@@ -2139,34 +2263,21 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [117]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 213.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\psii' on input line 213.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 213.
-
-[118]
-<Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, id=5299, 569.12625pt x 385.44pt>
+<Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, id=5505, 569.12625pt x 385.44pt>
 File: Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf Graphic file (type pdf)
 <use Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf>
 Package pdftex.def Info: Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf used on i
 nput line 236.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, id=5300, 569.12625pt x 385.44pt>
+<Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, id=5506, 569.12625pt x 385.44pt>
 File: Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf Graphic file (type pdf)
 <use Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf>
 Package pdftex.def Info: Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf used on i
 nput line 237.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf, id=5301, 569.12625pt x 385.
+<Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf, id=5507, 569.12625pt x 385.
 44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf Graphic file (type pdf)
 
@@ -2175,7 +2286,7 @@ Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf used
  on input line 245.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf, id=5302, 569.12625pt x 385.
+<Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf, id=5508, 569.12625pt x 385.
 44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf Graphic file (type pdf)
 
@@ -2188,7 +2299,7 @@ Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf used
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf, id=5303, 569.12625pt x 385
+<Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf, id=5509, 569.12625pt x 385
 .44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf Graphic file (type pdf
 )
@@ -2197,7 +2308,7 @@ Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf use
 d on input line 254.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_jpsi.pdf, id=5304, 569.12625pt x 385
+<Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_jpsi.pdf, id=5510, 569.12625pt x 385
 .44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_jpsi.pdf Graphic file (type pdf
 )
@@ -2210,187 +2321,181 @@ d on input line 255.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (7.90512pt too wide) in paragraph at lines 270--283
-\OT1/cmr/m/n/12 In Figs. [][]11.6[][] and [][]11.7[][] are re-ported fits to an
--gu-lar dis-tri-bu-tions for the 15-20 $[]$ $\OML/cmm/m/it/12 q[]$
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[119 <./Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, page is rotated 90 degree
-s> <./Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, page is rotated 90 degrees>
-]
-<Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf, id=5409, 569.12625p
+ [118 <./Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf, page is rotated 90 degre
+es> <./Lmumu/figs/Jpsi_default_DD_log_fitAndRes.pdf, page is rotated 90 degrees
+>]
+<Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf, id=5611, 569.12625p
 t x 385.44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf Graphic file (t
 ype pdf)
  <use Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.
-pdf used on input line 286.
+pdf used on input line 287.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf, id=5410, 569.12625p
+<Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf, id=5612, 569.12625p
 t x 385.44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf Graphic file (t
 ype pdf)
  <use Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.
-pdf used on input line 287.
+pdf used on input line 288.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000.pdf, id=5411, 569.12625
+<Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000.pdf, id=5613, 569.12625
 pt x 385.44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000.pdf Graphic file (
 type pdf)
 
 <use Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000
-.pdf used on input line 295.
+.pdf used on input line 296.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf, id=5412, 569.12625
+<Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf, id=5614, 569.12625
 pt x 385.44pt>
 File: Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf Graphic file (
 type pdf)
 
 <use Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf>
 Package pdftex.def Info: Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_q2_1500_2000
-.pdf used on input line 296.
+.pdf used on input line 297.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (21.47572pt too wide) in paragraph at lines 311--321
+Overfull \hbox (21.47572pt too wide) in paragraph at lines 312--322
  [][] 
  []
 
-<Lmumu/figs/paper/figure8a.pdf, id=5413, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure8a.pdf, id=5615, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure8a.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure8a.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure8a.pdf used on input line 325.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+Package pdftex.def Info: Lmumu/figs/paper/figure8a.pdf used on input line 326.
+(pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
-<Lmumu/figs/paper/figure8b.pdf, id=5414, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure8b.pdf, id=5616, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure8b.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure8b.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure8b.pdf used on input line 326.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+Package pdftex.def Info: Lmumu/figs/paper/figure8b.pdf used on input line 327.
+(pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
-<Lmumu/figs/paper/figure9.pdf, id=5417, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure9.pdf, id=5619, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure9.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure9.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure9.pdf used on input line 340.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+Package pdftex.def Info: Lmumu/figs/paper/figure9.pdf used on input line 341.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure10a.pdf, id=5418, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure10a.pdf, id=5620, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure10a.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure10a.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure10a.pdf used on input line 341.
+Package pdftex.def Info: Lmumu/figs/paper/figure10a.pdf used on input line 342.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure10b.pdf, id=5419, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure10b.pdf, id=5621, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure10b.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure10b.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure10b.pdf used on input line 342.
+Package pdftex.def Info: Lmumu/figs/paper/figure10b.pdf used on input line 343.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure10c.pdf, id=5420, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure10c.pdf, id=5622, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure10c.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure10c.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure10c.pdf used on input line 343.
+Package pdftex.def Info: Lmumu/figs/paper/figure10c.pdf used on input line 344.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure10d.pdf, id=5421, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure10d.pdf, id=5623, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure10d.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure10d.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure10d.pdf used on input line 344.
+Package pdftex.def Info: Lmumu/figs/paper/figure10d.pdf used on input line 345.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<Lmumu/figs/paper/figure10e.pdf, id=5422, 569.12625pt x 385.44pt>
+<Lmumu/figs/paper/figure10e.pdf, id=5624, 569.12625pt x 385.44pt>
 File: Lmumu/figs/paper/figure10e.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/paper/figure10e.pdf>
-Package pdftex.def Info: Lmumu/figs/paper/figure10e.pdf used on input line 345.
+Package pdftex.def Info: Lmumu/figs/paper/figure10e.pdf used on input line 346.
 
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [120 <./Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf, page is rotated 90
- degrees> <./Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf, page is rotated
- 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf, page is rot
-ated 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_jpsi.pdf, page is
- rotated 90 degrees>]
+)
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[121 <./Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf, page is rota
-ted 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf, p
-age is rotated 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500
-_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/Afb
-B_LL_q2_1500_2000.pdf, page is rotated 90 degrees>] [122 <./Lmumu/figs/paper/fi
-gure8a.pdf, page is rotated 90 degrees> <./Lmumu/figs/paper/figure8b.pdf, page 
-is rotated 90 degrees>]
+[119 <./Lmumu/figs/AngularDistribs/Fitted/Afb_DD_jpsi.pdf, page is rotated 90 d
+egrees> <./Lmumu/figs/AngularDistribs/Fitted/Afb_LL_jpsi.pdf, page is rotated 9
+0 degrees> <./Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_jpsi.pdf, page is rotat
+ed 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/AfbB_LL_jpsi.pdf, page is r
+otated 90 degrees>] [120 <./Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_20
+00.pdf, page is rotated 90 degrees> <./Lmumu/figs/AngularDistribs/Fitted/Afb_LL
+_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/AngularDistribs/Fi
+tted/AfbB_DD_q2_1500_2000.pdf, page is rotated 90 degrees> <./Lmumu/figs/Angula
+rDistribs/Fitted/AfbB_LL_q2_1500_2000.pdf, page is rotated 90 degrees>]
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[123 <./Lmumu/figs/paper/figure9.pdf, page is rotated 90 degrees> <./Lmumu/figs
-/paper/figure10a.pdf, page is rotated 90 degrees> <./Lmumu/figs/paper/figure10b
-.pdf, page is rotated 90 degrees> <./Lmumu/figs/paper/figure10c.pdf, page is ro
-tated 90 degrees> <./Lmumu/figs/paper/figure10d.pdf, page is rotated 90 degrees
-> <./Lmumu/figs/paper/figure10e.pdf, page is rotated 90 degrees>]
+[121 <./Lmumu/figs/paper/figure8a.pdf, page is rotated 90 degrees> <./Lmumu/fig
+s/paper/figure8b.pdf, page is rotated 90 degrees>] [122 <./Lmumu/figs/paper/fig
+ure9.pdf, page is rotated 90 degrees> <./Lmumu/figs/paper/figure10a.pdf, page i
+s rotated 90 degrees> <./Lmumu/figs/paper/figure10b.pdf, page is rotated 90 deg
+rees> <./Lmumu/figs/paper/figure10c.pdf, page is rotated 90 degrees> <./Lmumu/f
+igs/paper/figure10d.pdf, page is rotated 90 degrees> <./Lmumu/figs/paper/figure
+10e.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 224.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 224.
+(hyperref)                removing `math shift' on input line 230.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 224.
+(hyperref)                removing `subscript' on input line 230.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 224.
+(hyperref)                removing `superscript' on input line 230.
 
-[124
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 230.
+
+[123
+
+
+
+] [124
 
 ]
 \openout2 = `RKst/introduction.aux'.
 
  (./RKst/introduction.tex
-Chapter 12.
+Chapter 11.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -2403,11 +2508,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<RKst/figs/penguins3.png, id=6140, 870.64095pt x 448.74628pt>
+<RKst/figs/penguins3.png, id=6350, 870.64095pt x 448.74628pt>
 File: RKst/figs/penguins3.png Graphic file (type png)
 
 <use RKst/figs/penguins3.png>
-Package pdftex.def Info: RKst/figs/penguins3.png used on input line 21.
+Package pdftex.def Info: RKst/figs/penguins3.png used on input line 20.
 (pdftex.def)             Requested size: 341.43436pt x 175.98265pt.
 
 
@@ -2420,11 +2525,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<RKst/figs/penguins.png, id=6149, 931.85788pt x 452.10768pt>
+<RKst/figs/penguins.png, id=6362, 931.85788pt x 452.10768pt>
 File: RKst/figs/penguins.png Graphic file (type png)
 
 <use RKst/figs/penguins.png>
-Package pdftex.def Info: RKst/figs/penguins.png used on input line 50.
+Package pdftex.def Info: RKst/figs/penguins.png used on input line 48.
 (pdftex.def)             Requested size: 341.43436pt x 165.64914pt.
 
 
@@ -2436,78 +2541,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [126 <./RKst/figs/penguins3.png>] [127 <./RKst/figs/penguins.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 93.
-
-[128]
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
- [129]
-[130]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 198.
+(hyperref)                than one, level fixed on input line 91.
 
 
+Underfull \vbox (badness 7308) has occurred while \output is active []
+
+ [128]
+[129]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [131]
-[132]
-<RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, id=6225, 569.12625pt x 385.44pt>
+ [130]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 197.
+
+[131] [132]
+<RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, id=6435, 569.12625pt x 385.44pt>
 File: RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf Graphic file (type pdf)
 
 <use RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf>
 Package pdftex.def Info: RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf used on input 
-line 281.
+line 280.
 (pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<RKst/figs/nspd_12.pdf, id=6226, 569.12625pt x 385.44pt>
+<RKst/figs/nspd_12.pdf, id=6436, 569.12625pt x 385.44pt>
 File: RKst/figs/nspd_12.pdf Graphic file (type pdf)
 
 <use RKst/figs/nspd_12.pdf>
-Package pdftex.def Info: RKst/figs/nspd_12.pdf used on input line 288.
+Package pdftex.def Info: RKst/figs/nspd_12.pdf used on input line 287.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<RKst/figs/bpt.pdf, id=6227, 569.12625pt x 385.44pt>
+<RKst/figs/bpt.pdf, id=6437, 569.12625pt x 385.44pt>
 File: RKst/figs/bpt.pdf Graphic file (type pdf)
  <use RKst/figs/bpt.pdf>
-Package pdftex.def Info: RKst/figs/bpt.pdf used on input line 289.
+Package pdftex.def Info: RKst/figs/bpt.pdf used on input line 288.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<RKst/figs/nspd_w.pdf, id=6228, 569.12625pt x 385.44pt>
+<RKst/figs/nspd_w.pdf, id=6438, 569.12625pt x 385.44pt>
 File: RKst/figs/nspd_w.pdf Graphic file (type pdf)
 
 <use RKst/figs/nspd_w.pdf>
-Package pdftex.def Info: RKst/figs/nspd_w.pdf used on input line 296.
+Package pdftex.def Info: RKst/figs/nspd_w.pdf used on input line 295.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<RKst/figs/bpt_w.pdf, id=6229, 569.12625pt x 385.44pt>
+<RKst/figs/bpt_w.pdf, id=6439, 569.12625pt x 385.44pt>
 File: RKst/figs/bpt_w.pdf Graphic file (type pdf)
 
 <use RKst/figs/bpt_w.pdf>
-Package pdftex.def Info: RKst/figs/bpt_w.pdf used on input line 297.
+Package pdftex.def Info: RKst/figs/bpt_w.pdf used on input line 296.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [133]
-
-LaTeX Warning: Text page 134 contains only floats.
-
-[134 <./RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, page is rotated 90 degrees> <.
-/RKst/figs/nspd_12.pdf, page is rotated 90 degrees> <./RKst/figs/bpt.pdf, page 
-is rotated 90 degrees> <./RKst/figs/nspd_w.pdf, page is rotated 90 degrees> <./
-RKst/figs/bpt_w.pdf, page is rotated 90 degrees>]
+) [133 <./RKst/figs/sW/KstJPsMM_log_fitAndRes.pdf, page is rotated 90 degrees>]
+[134 <./RKst/figs/nspd_12.pdf, page is rotated 90 degrees> <./RKst/figs/bpt.pdf
+, page is rotated 90 degrees> <./RKst/figs/nspd_w.pdf, page is rotated 90 degre
+es> <./RKst/figs/bpt_w.pdf, page is rotated 90 degrees>]
 \openout2 = `RKst/selection.aux'.
 
  (./RKst/selection.tex
-Chapter 13.
+Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2516,7 +2613,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<RKst/figs/electron_B0jpsi2D_selected.pdf, id=6463, 569.12625pt x 385.44pt>
+<RKst/figs/electron_B0jpsi2D_selected.pdf, id=6673, 569.12625pt x 385.44pt>
 File: RKst/figs/electron_B0jpsi2D_selected.pdf Graphic file (type pdf)
 
 <use RKst/figs/electron_B0jpsi2D_selected.pdf>
@@ -2524,7 +2621,7 @@ Package pdftex.def Info: RKst/figs/electron_B0jpsi2D_selected.pdf used on input
  line 36.
 (pdftex.def)             Requested size: 426.79134pt x 289.05576pt.
 
-<RKst/figs/muon_B0jpsi2D_selected.pdf, id=6464, 569.12625pt x 385.44pt>
+<RKst/figs/muon_B0jpsi2D_selected.pdf, id=6674, 569.12625pt x 385.44pt>
 File: RKst/figs/muon_B0jpsi2D_selected.pdf Graphic file (type pdf)
 
 <use RKst/figs/muon_B0jpsi2D_selected.pdf>
@@ -2551,28 +2648,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 118.
 
-[138] [139] <RKst/figs/muon_PID.pdf, id=6577, 569.12625pt x 385.44pt>
+[138] [139] <RKst/figs/muon_PID.pdf, id=6787, 569.12625pt x 385.44pt>
 File: RKst/figs/muon_PID.pdf Graphic file (type pdf)
 
 <use RKst/figs/muon_PID.pdf>
 Package pdftex.def Info: RKst/figs/muon_PID.pdf used on input line 196.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<RKst/figs/electron_PID.pdf, id=6578, 569.12625pt x 385.44pt>
+<RKst/figs/electron_PID.pdf, id=6788, 569.12625pt x 385.44pt>
 File: RKst/figs/electron_PID.pdf Graphic file (type pdf)
 
 <use RKst/figs/electron_PID.pdf>
 Package pdftex.def Info: RKst/figs/electron_PID.pdf used on input line 197.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<RKst/figs/kaon_PID.pdf, id=6579, 569.12625pt x 385.44pt>
+<RKst/figs/kaon_PID.pdf, id=6789, 569.12625pt x 385.44pt>
 File: RKst/figs/kaon_PID.pdf Graphic file (type pdf)
 
 <use RKst/figs/kaon_PID.pdf>
 Package pdftex.def Info: RKst/figs/kaon_PID.pdf used on input line 205.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<RKst/figs/pion_PID.pdf, id=6580, 569.12625pt x 385.44pt>
+<RKst/figs/pion_PID.pdf, id=6790, 569.12625pt x 385.44pt>
 File: RKst/figs/pion_PID.pdf Graphic file (type pdf)
 
 <use RKst/figs/pion_PID.pdf>
@@ -2600,14 +2697,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 265.
 
-[142] <RKst/figs/RKst/phi.pdf, id=6774, 569.12625pt x 426.59375pt>
+[142] <RKst/figs/RKst/phi.pdf, id=6984, 569.12625pt x 426.59375pt>
 File: RKst/figs/RKst/phi.pdf Graphic file (type pdf)
 
 <use RKst/figs/RKst/phi.pdf>
 Package pdftex.def Info: RKst/figs/RKst/phi.pdf used on input line 285.
 (pdftex.def)             Requested size: 204.85802pt x 153.5541pt.
 
-<RKst/figs/RKst/Kmumu.pdf, id=6775, 569.12625pt x 426.59375pt>
+<RKst/figs/RKst/Kmumu.pdf, id=6985, 569.12625pt x 426.59375pt>
 File: RKst/figs/RKst/Kmumu.pdf Graphic file (type pdf)
 
 <use RKst/figs/RKst/Kmumu.pdf>
@@ -2668,17 +2765,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 308.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [144]
-[145]
+[144] [145]
 Overfull \hbox (5.03085pt too wide) in paragraph at lines 413--444
  [][] 
  []
 
 
-<RKst/figs/Training/electrons/correlation.pdf, id=6889, 569.12625pt x 387.4475p
+<RKst/figs/Training/electrons/correlation.pdf, id=7099, 569.12625pt x 387.4475p
 t>
 File: RKst/figs/Training/electrons/correlation.pdf Graphic file (type pdf)
  <use RKst/figs/Training/electrons/correlation.pdf>
@@ -2686,7 +2779,7 @@ Package pdftex.def Info: RKst/figs/Training/electrons/correlation.pdf used on i
 nput line 448.
 (pdftex.def)             Requested size: 341.43436pt x 232.45255pt.
 
-<RKst/figs/Training/muons/correlation.pdf, id=6890, 569.12625pt x 387.4475pt>
+<RKst/figs/Training/muons/correlation.pdf, id=7100, 569.12625pt x 387.4475pt>
 File: RKst/figs/Training/muons/correlation.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/muons/correlation.pdf>
@@ -2694,7 +2787,7 @@ Package pdftex.def Info: RKst/figs/Training/muons/correlation.pdf used on input
  line 449.
 (pdftex.def)             Requested size: 341.43436pt x 232.45255pt.
 
-<RKst/figs/Training/EE_wNB_TrainAndTest.pdf, id=6893, 569.12625pt x 385.44pt>
+<RKst/figs/Training/EE_wNB_TrainAndTest.pdf, id=7103, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/EE_wNB_TrainAndTest.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/EE_wNB_TrainAndTest.pdf>
@@ -2702,7 +2795,7 @@ Package pdftex.def Info: RKst/figs/Training/EE_wNB_TrainAndTest.pdf used on inp
 ut line 460.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<RKst/figs/Training/MM_wNB_TrainAndTest.pdf, id=6894, 569.12625pt x 385.44pt>
+<RKst/figs/Training/MM_wNB_TrainAndTest.pdf, id=7104, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/MM_wNB_TrainAndTest.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/MM_wNB_TrainAndTest.pdf>
@@ -2710,14 +2803,14 @@ Package pdftex.def Info: RKst/figs/Training/MM_wNB_TrainAndTest.pdf used on inp
 ut line 461.
 (pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5787) has occurred while \output is active []
 
  [146]
 [147 <./RKst/figs/Training/electrons/correlation.pdf> <./RKst/figs/Training/muo
 ns/correlation.pdf>] [148 <./RKst/figs/Training/EE_wNB_TrainAndTest.pdf, page i
 s rotated 90 degrees> <./RKst/figs/Training/MM_wNB_TrainAndTest.pdf, page is ro
 tated 90 degrees>] [149]
-<RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf, id=7017, 569.12625pt x 385.44pt>
+<RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf, id=7228, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf>
@@ -2725,7 +2818,7 @@ Package pdftex.def Info: RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf used on input
  line 505.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf, id=7018, 569.12625pt x 385.44pt>
+<RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf, id=7229, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf>
@@ -2733,7 +2826,7 @@ Package pdftex.def Info: RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf used on input
  line 506.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf, id=7019, 569.12625pt x 385.44pt>
+<RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf, id=7230, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf>
@@ -2741,7 +2834,7 @@ Package pdftex.def Info: RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf used on input
  line 507.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf, id=7020, 569.12625pt x 385.44pt>
+<RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf, id=7231, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf>
@@ -2749,28 +2842,28 @@ Package pdftex.def Info: RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf used on input
  line 508.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/EE_FoM.pdf, id=7021, 569.12625pt x 385.44pt>
+<RKst/figs/Training/EE_FoM.pdf, id=7232, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/EE_FoM.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/EE_FoM.pdf>
 Package pdftex.def Info: RKst/figs/Training/EE_FoM.pdf used on input line 517.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/MM_FoM.pdf, id=7022, 569.12625pt x 385.44pt>
+<RKst/figs/Training/MM_FoM.pdf, id=7233, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/MM_FoM.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/MM_FoM.pdf>
 Package pdftex.def Info: RKst/figs/Training/MM_FoM.pdf used on input line 518.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/EE_ROC.pdf, id=7023, 569.12625pt x 385.44pt>
+<RKst/figs/Training/EE_ROC.pdf, id=7234, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/EE_ROC.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/EE_ROC.pdf>
 Package pdftex.def Info: RKst/figs/Training/EE_ROC.pdf used on input line 519.
 (pdftex.def)             Requested size: 196.32687pt x 132.96518pt.
 
-<RKst/figs/Training/MM_ROC.pdf, id=7024, 569.12625pt x 385.44pt>
+<RKst/figs/Training/MM_ROC.pdf, id=7235, 569.12625pt x 385.44pt>
 File: RKst/figs/Training/MM_ROC.pdf Graphic file (type pdf)
 
 <use RKst/figs/Training/MM_ROC.pdf>
@@ -2786,7 +2879,7 @@ ated 90 degrees> <./RKst/figs/Training/MM_ROC.pdf, page is rotated 90 degrees>]
 \openout2 = `RKst/fit.aux'.
 
  (./RKst/fit.tex
-Chapter 14.
+Chapter 13.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2796,7 +2889,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [153]
-<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log.pdf, id=7398, 569.12625pt
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log.pdf, id=7608, 569.12625pt
  x 385.44pt>
 File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log.pdf Graphic file (ty
 pe pdf)
@@ -2805,7 +2898,7 @@ Package pdftex.def Info: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log.p
 df used on input line 118.
 (pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
 
-<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log.pdf, id=7399, 569.12625pt x 
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log.pdf, id=7609, 569.12625pt x 
 385.44pt>
 File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log.pdf Graphic file (type 
 pdf)
@@ -2814,7 +2907,7 @@ Package pdftex.def Info: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log.pdf
 used on input line 126.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf, id=7400, 569.12625pt
+<RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf, id=7610, 569.12625pt
  x 385.44pt>
 File: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf Graphic file (ty
 pe pdf)
@@ -2823,7 +2916,7 @@ Package pdftex.def Info: RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.p
 df used on input line 127.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf, id=7401, 569.12625pt x 
+<RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf, id=7611, 569.12625pt x 
 385.44pt>
 File: RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf Graphic file (type 
 pdf)
@@ -2873,7 +2966,7 @@ OML/cmm/m/it/12 c; m[]\OT1/cmr/m/n/12 ) + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `superscript' on input line 234.
 
-[158] <RKst/figs/misreco/part_had_jpsi.pdf, id=7605, 569.12625pt x 387.4475pt>
+[158] <RKst/figs/misreco/part_had_jpsi.pdf, id=7815, 569.12625pt x 387.4475pt>
 File: RKst/figs/misreco/part_had_jpsi.pdf Graphic file (type pdf)
 
 <use RKst/figs/misreco/part_had_jpsi.pdf>
@@ -2881,7 +2974,7 @@ Package pdftex.def Info: RKst/figs/misreco/part_had_jpsi.pdf used on input line
  255.
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
-<RKst/figs/misreco/part_lpt_jpsi.pdf, id=7606, 569.12625pt x 387.4475pt>
+<RKst/figs/misreco/part_lpt_jpsi.pdf, id=7816, 569.12625pt x 387.4475pt>
 File: RKst/figs/misreco/part_lpt_jpsi.pdf Graphic file (type pdf)
 
 <use RKst/figs/misreco/part_lpt_jpsi.pdf>
@@ -2893,7 +2986,7 @@ Underfull \vbox (badness 6493) has occurred while \output is active []
 
  [159 <./RKst/figs/misreco/part_had_jpsi.pdf, page is rotated 90 degrees> <./RK
 st/figs/misreco/part_lpt_jpsi.pdf, page is rotated 90 degrees>]
-<RKst/figs/misreco/part_had.pdf, id=7700, 569.12625pt x 387.4475pt>
+<RKst/figs/misreco/part_had.pdf, id=7910, 569.12625pt x 387.4475pt>
 File: RKst/figs/misreco/part_had.pdf Graphic file (type pdf)
 
 <use RKst/figs/misreco/part_had.pdf>
@@ -2901,7 +2994,7 @@ Package pdftex.def Info: RKst/figs/misreco/part_had.pdf used on input line 291.
 
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
-<RKst/figs/misreco/jpsi_leakage.pdf, id=7701, 569.12625pt x 387.4475pt>
+<RKst/figs/misreco/jpsi_leakage.pdf, id=7911, 569.12625pt x 387.4475pt>
 File: RKst/figs/misreco/jpsi_leakage.pdf Graphic file (type pdf)
 
 <use RKst/figs/misreco/jpsi_leakage.pdf>
@@ -2915,7 +3008,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [160 <./RKst/figs/misreco/part_had.pdf, page is rotated 90 degrees> <./RKst/fig
 s/misreco/jpsi_leakage.pdf, page is rotated 90 degrees>]
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf, id=7798, 569.12625pt x 
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf, id=8008, 569.12625pt x 
 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf Graphic file (type 
 pdf)
@@ -2924,7 +3017,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf
 used on input line 313.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf, id=7799, 569.12625pt x 
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf, id=8009, 569.12625pt x 
 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf Graphic file (type 
 pdf)
@@ -2933,7 +3026,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf
 used on input line 314.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I.pdf, id=7800, 569.12625pt x 
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I.pdf, id=8010, 569.12625pt x 
 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I.pdf Graphic file (type 
 pdf)
@@ -2946,7 +3039,7 @@ used on input line 315.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf, id=7801, 569
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf, id=8011, 569
 .12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf Graphic 
 file (type pdf)
@@ -2956,7 +3049,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fit
 AndRes.pdf used on input line 323.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf, id=7802, 569
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf, id=8012, 569
 .12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf Graphic 
 file (type pdf)
@@ -2966,7 +3059,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fit
 AndRes.pdf used on input line 324.
 (pdftex.def)             Requested size: 277.41176pt x 187.88507pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf, id=7803, 569
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf, id=8013, 569
 .12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf Graphic 
 file (type pdf)
@@ -2996,38 +3089,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_f
 itAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-g
 mc/KstEE_L0I_log_fitAndRes.pdf, page is rotated 90 degrees>]
-<RKst/figs/high_central_mass_comparison.pdf, id=8086, 569.12625pt x 387.4475pt>
+<RKst/figs/high_central_mass_comparison.pdf, id=8296, 569.12625pt x 387.4475pt>
 File: RKst/figs/high_central_mass_comparison.pdf Graphic file (type pdf)
 <use RKst/figs/high_central_mass_comparison.pdf>
 Package pdftex.def Info: RKst/figs/high_central_mass_comparison.pdf used on inp
-ut line 379.
+ut line 380.
 (pdftex.def)             Requested size: 298.75262pt x 203.38933pt.
 
-<RKst/figs/highq2_comb.pdf, id=8087, 569.12625pt x 385.44pt>
+<RKst/figs/highq2_comb.pdf, id=8297, 569.12625pt x 385.44pt>
 File: RKst/figs/highq2_comb.pdf Graphic file (type pdf)
 
 <use RKst/figs/highq2_comb.pdf>
-Package pdftex.def Info: RKst/figs/highq2_comb.pdf used on input line 386.
+Package pdftex.def Info: RKst/figs/highq2_comb.pdf used on input line 387.
 (pdftex.def)             Requested size: 298.75262pt x 202.3355pt.
  [164 <./RKst/figs/high_central_mass_comparison.pdf, page is rotated 90 degrees
 > <./RKst/figs/highq2_comb.pdf, page is rotated 90 degrees>]
-<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf, id=8180, 569.126
+<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf, id=8390, 569.126
 25pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf Graphic file
  (type pdf)
 
 <use RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf>
 Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndR
-es.pdf used on input line 417.
+es.pdf used on input line 418.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
-<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf, id=8181, 569.12625p
+<RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf, id=8391, 569.12625p
 t x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf Graphic file (t
 ype pdf)
  <use RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf>
 Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.
-pdf used on input line 418.
+pdf used on input line 419.
 (pdftex.def)             Requested size: 341.43436pt x 231.24814pt.
 
 
@@ -3039,7 +3132,7 @@ es.pdf, page is rotated 90 degrees>])
 \openout2 = `RKst/efficiency.aux'.
 
  (./RKst/efficiency.tex
-Chapter 15.
+Chapter 14.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3050,7 +3143,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Overfull \hbox (0.83366pt too wide) in paragraph at lines 27--33
-[]\OT1/cmr/m/n/12 Tab. [][]15.3[][] re-ports rel-a-tive ef-fi-cien-cies be-twee
+[]\OT1/cmr/m/n/12 Tab. [][]14.3[][] re-ports rel-a-tive ef-fi-cien-cies be-twee
 n the rare and res-o-nant chan-nels, $\OML/cmm/m/it/12 "\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 B[] \OMS/cmsy/m/n/12 !
  []
@@ -3058,88 +3151,128 @@ mm/m/it/12 B[] \OMS/cmsy/m/n/12 !
 [168] [169] [170
 
 
-] <RKst/figs/bin_mig.pdf, id=8317, 569.12625pt x 387.4475pt>
+] <RKst/figs/bin_mig.pdf, id=8527, 569.12625pt x 387.4475pt>
 File: RKst/figs/bin_mig.pdf Graphic file (type pdf)
 
 <use RKst/figs/bin_mig.pdf>
-Package pdftex.def Info: RKst/figs/bin_mig.pdf used on input line 171.
+Package pdftex.def Info: RKst/figs/bin_mig.pdf used on input line 170.
 (pdftex.def)             Requested size: 362.77524pt x 246.97826pt.
  [171 <./RKst/figs/bin_mig.pdf, page is rotated 90 degrees>] <RKst/figs/pid_Pi.
-pdf, id=8368, 569.12625pt x 387.4475pt>
+pdf, id=8578, 569.12625pt x 387.4475pt>
 File: RKst/figs/pid_Pi.pdf Graphic file (type pdf)
 
 <use RKst/figs/pid_Pi.pdf>
-Package pdftex.def Info: RKst/figs/pid_Pi.pdf used on input line 221.
+Package pdftex.def Info: RKst/figs/pid_Pi.pdf used on input line 220.
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
-<RKst/figs/pid_K.pdf, id=8369, 569.12625pt x 387.4475pt>
+<RKst/figs/pid_K.pdf, id=8579, 569.12625pt x 387.4475pt>
 File: RKst/figs/pid_K.pdf Graphic file (type pdf)
 
 <use RKst/figs/pid_K.pdf>
-Package pdftex.def Info: RKst/figs/pid_K.pdf used on input line 222.
+Package pdftex.def Info: RKst/figs/pid_K.pdf used on input line 221.
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
-<RKst/figs/pid_Mu.pdf, id=8370, 569.12625pt x 387.4475pt>
+<RKst/figs/pid_Mu.pdf, id=8580, 569.12625pt x 387.4475pt>
 File: RKst/figs/pid_Mu.pdf Graphic file (type pdf)
 
 <use RKst/figs/pid_Mu.pdf>
-Package pdftex.def Info: RKst/figs/pid_Mu.pdf used on input line 223.
+Package pdftex.def Info: RKst/figs/pid_Mu.pdf used on input line 222.
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
-<RKst/figs/pid_e.pdf, id=8371, 569.12625pt x 387.4475pt>
+<RKst/figs/pid_e.pdf, id=8581, 569.12625pt x 387.4475pt>
 File: RKst/figs/pid_e.pdf Graphic file (type pdf)
 
 <use RKst/figs/pid_e.pdf>
-Package pdftex.def Info: RKst/figs/pid_e.pdf used on input line 224.
+Package pdftex.def Info: RKst/figs/pid_e.pdf used on input line 223.
 (pdftex.def)             Requested size: 204.85802pt x 139.46326pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 1082) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [172]
-Overfull \hbox (17.18463pt too wide) in paragraph at lines 266--268
+Overfull \hbox (17.18463pt too wide) in paragraph at lines 243--245
 \OT1/cmr/m/n/12 For the elec-tron chan-nels data is fit-ted sep-a-rately in thr
 ee trig-ger cat-e-gories: L0Electron,
  []
 
-[173 <./RKst/figs/pid_Pi.pdf, page is rotated 90 degrees> <./RKst/figs/pid_K.pd
-f, page is rotated 90 degrees> <./RKst/figs/pid_Mu.pdf, page is rotated 90 degr
-ees> <./RKst/figs/pid_e.pdf, page is rotated 90 degrees>]
-<RKst/figs/l0plots/l0E_Inner.pdf, id=8559, 569.12625pt x 385.44pt>
+<RKst/figs/l0plots/l0E_Inner.pdf, id=8590, 569.12625pt x 385.44pt>
 File: RKst/figs/l0plots/l0E_Inner.pdf Graphic file (type pdf)
 
 <use RKst/figs/l0plots/l0E_Inner.pdf>
-Package pdftex.def Info: RKst/figs/l0plots/l0E_Inner.pdf used on input line 286
+Package pdftex.def Info: RKst/figs/l0plots/l0E_Inner.pdf used on input line 263
 .
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<RKst/figs/l0plots/l0E_Middle.pdf, id=8560, 569.12625pt x 385.44pt>
+<RKst/figs/l0plots/l0E_Middle.pdf, id=8591, 569.12625pt x 385.44pt>
 File: RKst/figs/l0plots/l0E_Middle.pdf Graphic file (type pdf)
 
 <use RKst/figs/l0plots/l0E_Middle.pdf>
-Package pdftex.def Info: RKst/figs/l0plots/l0E_Middle.pdf used on input line 28
-7.
-(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+Package pdftex.def Info: RKst/figs/l0plots/l0E_Middle.pdf used on input line 26
+4.
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
 
-<RKst/figs/l0plots/l0E_Outer.pdf, id=8561, 569.12625pt x 385.44pt>
+<RKst/figs/l0plots/l0E_Outer.pdf, id=8592, 569.12625pt x 385.44pt>
 File: RKst/figs/l0plots/l0E_Outer.pdf Graphic file (type pdf)
 
 <use RKst/figs/l0plots/l0E_Outer.pdf>
-Package pdftex.def Info: RKst/figs/l0plots/l0E_Outer.pdf used on input line 288
+Package pdftex.def Info: RKst/figs/l0plots/l0E_Outer.pdf used on input line 265
 .
+(pdftex.def)             Requested size: 209.1301pt x 141.63426pt.
+
+Underfull \vbox (badness 7796) has occurred while \output is active []
+
+ [173 <./RKst/figs/pid_Pi.pdf, page is rotated 90 degrees> <./RKst/figs/pid_K.p
+df, page is rotated 90 degrees> <./RKst/figs/pid_Mu.pdf, page is rotated 90 deg
+rees> <./RKst/figs/pid_e.pdf, page is rotated 90 degrees>] [174 <./RKst/figs/l0
+plots/l0E_Inner.pdf, page is rotated 90 degrees> <./RKst/figs/l0plots/l0E_Middl
+e.pdf, page is rotated 90 degrees> <./RKst/figs/l0plots/l0E_Outer.pdf, page is 
+rotated 90 degrees>]
+
+LaTeX Warning: Reference `sec:trigee' on page 175 undefined on input line 319.
+
+
+LaTeX Warning: Reference `sec:jpsicheck' on page 175 undefined on input line 32
+5.
+
+[175] <RKst/figs/TisTos_vs_maxPTLL_L0E.pdf, id=8916, 569.12625pt x 385.44pt>
+File: RKst/figs/TisTos_vs_maxPTLL_L0E.pdf Graphic file (type pdf)
+
+<use RKst/figs/TisTos_vs_maxPTLL_L0E.pdf>
+Package pdftex.def Info: RKst/figs/TisTos_vs_maxPTLL_L0E.pdf used on input line
+ 360.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
- [174 <./RKst/figs/l0plots/l0E_Inner.pdf, page is rotated 90 degrees> <./RKst/f
-igs/l0plots/l0E_Middle.pdf, page is rotated 90 degrees> <./RKst/figs/l0plots/l0
-E_Outer.pdf, page is rotated 90 degrees>]
-[175] [176])
+
+<RKst/figs/TisTos_vs_maxPTHH_L0H.pdf, id=8917, 569.12625pt x 385.44pt>
+File: RKst/figs/TisTos_vs_maxPTHH_L0H.pdf Graphic file (type pdf)
+
+<use RKst/figs/TisTos_vs_maxPTHH_L0H.pdf>
+Package pdftex.def Info: RKst/figs/TisTos_vs_maxPTHH_L0H.pdf used on input line
+ 361.
+(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+
+<RKst/figs/TisTos_vs_maxPT_L0I.pdf, id=8918, 569.12625pt x 385.44pt>
+File: RKst/figs/TisTos_vs_maxPT_L0I.pdf Graphic file (type pdf)
+
+<use RKst/figs/TisTos_vs_maxPT_L0I.pdf>
+Package pdftex.def Info: RKst/figs/TisTos_vs_maxPT_L0I.pdf used on input line 3
+62.
+(pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[176] [177 <./RKst/figs/TisTos_vs_maxPTLL_L0E.pdf, page is rotated 90 degrees> 
+<./RKst/figs/TisTos_vs_maxPTHH_L0H.pdf, page is rotated 90 degrees> <./RKst/fig
+s/TisTos_vs_maxPT_L0I.pdf, page is rotated 90 degrees>])
 \openout2 = `RKst/systematics.aux'.
 
- (./RKst/systematics.tex
-Chapter 16.
-[177
+
+(./RKst/systematics.tex
+Chapter 15.
+[178
 
 
 
@@ -3148,7 +3281,7 @@ Chapter 16.
 \openout2 = `RKst/result.aux'.
 
  (./RKst/result.tex
-Chapter 17.
+Chapter 16.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 8.
@@ -3177,7 +3310,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 8.
 
-[178
+[179
 
 
 
@@ -3199,56 +3332,27 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 50.
 
-[179] [180] [181])
+[180] [181] [182])
 \openout2 = `conclusions.aux'.
 
  (./conclusions.tex
-Chapter 18.
-) [182
+Chapter 17.
+) [183
 
 
 
 
-] (./thesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-[]\OT1/cmr/m/n/12 J. L. Feng, ``Nat-u-ral-ness and the Sta-tus of Su-per-sym-me
--try,''
- []
-
-[183
+] [184
 
 
+] (./thesis.bbl [185
 
-] [184] [185]
-Underfull \hbox (badness 1019) in paragraph at lines 258--260
-[]\OT1/cmr/m/n/12 M. Feindt and U. Kerzel, ``The Neu-roBayes neu-ral net-work p
-ack-age,''
- []
-
-
-Underfull \hbox (badness 7151) in paragraph at lines 266--268
-[]\OT1/cmr/m/n/12 W. D. Huls-ber-gen, ``De-cay chain fit-ting with a Kalman fil
--ter,''
- []
-
-[186] [187]
-Underfull \hbox (badness 2384) in paragraph at lines 376--378
-[]\OT1/cmr/m/n/12 R. Aaij \OT1/cmr/m/it/12 et al.\OT1/cmr/m/n/12 , ``Pre-ci-sio
-n mea-sure-ment of the $\OML/cmm/m/it/12 ^^C[]$ \OT1/cmr/m/n/12 baryon life-tim
-e,''
- []
-
-[188]
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
-[]\OT1/cmr/m/n/12 ``Lhcb loki twiki.'' [][]$\OT1/cmtt/m/n/12 https : / / twiki 
-. cern . ch / twiki / bin / view / LHCb /
- []
-
-) [189]
+] [186] [187] [188] [189] [190] [191]) [192]
 \openout2 = `Lmumu/angularAppendix.aux'.
 
- (./Lmumu/angularAppendix.texpdfTeX warning (ext4): destination with the same i
-dentifier (name{chapter.1}) has been already used, duplicate ignored
+
+(./Lmumu/angularAppendix.texpdfTeX warning (ext4): destination with the same id
+entifier (name{chapter.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter{Decay models}
@@ -3258,7 +3362,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.1.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 \section{$\Lb\ra\jpsi\Lz$ distribution}
+l.3 \section{$\Lb\ra\Lz\mumu$ distribution}
                                            
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -3282,224 +3386,98 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mskip' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mskip' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\psii' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mskip' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\PLambda' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 3.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
 
-Overfull \hbox (2.26004pt too wide) in paragraph at lines 14--99
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{section.1.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.135 \section{$\Lb\ra\Lz\mumu$ distribution}
-                                             
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [190
+ [193
 
 
 
 ]
-[191]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\PLambda' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\PLambda' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mu' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mu' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.228 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.228 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.228 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.228 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.265 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.265 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.265 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.265 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.293 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.293 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.293 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.293 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.1.2.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \begin{equation}
-                      
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [192]pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.1.2.8}) has been already used, duplicate ignored
+ [194]pdfTeX warning (ext4): destination with the same identifier (name{section
+.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.328 \end{align}
-                 
+l.237 \section{$\Lb\ra\jpsi\Lz$ distribution}
+                                             
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\PLambda' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mskip' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mskip' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\psii' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mskip' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\PLambda' on input line 237.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 237.
+
+
+Overfull \hbox (2.26004pt too wide) in paragraph at lines 248--333
+[][] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [193])
-[194]
+ [195]
+[196]) [197]
 \openout2 = `Lmumu/appMCdataComp.aux'.
 
  (./Lmumu/appMCdataComp.texpdfTeX warning (ext4): destination with the same ide
@@ -3511,7 +3489,7 @@ l.1 \chapter{Data-simulation comparison}
 Appendix B.
 
 <Lmumu/figs/MC_data_comp/Lb_MassConsLambda_chi20Lb_MassConsLambda_nDOF0_plotLL.
-pdf, id=8838, 569.12625pt x 385.44pt>
+pdf, id=9273, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Lb_MassConsLambda_chi20Lb_MassConsLambda_nDOF0_pl
 otLL.pdf Graphic file (type pdf)
 
@@ -3522,7 +3500,7 @@ ConsLambda_nDOF0_plotLL.pdf used on input line 20.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 <Lmumu/figs/MC_data_comp/Lb_MassConsLambda_chi20Lb_MassConsLambda_nDOF0_plotDD.
-pdf, id=8839, 569.12625pt x 385.44pt>
+pdf, id=9274, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Lb_MassConsLambda_chi20Lb_MassConsLambda_nDOF0_pl
 otDD.pdf Graphic file (type pdf)
 
@@ -3533,7 +3511,7 @@ ConsLambda_nDOF0_plotDD.pdf used on input line 21.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 <Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plotLL.pdf,
- id=8840, 569.12625pt x 385.44pt>
+ id=9275, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plotLL
 .pdf Graphic file (type pdf)
 
@@ -3544,7 +3522,7 @@ IPCHI2_OWNPV_plotLL.pdf used on input line 28.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
 <Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plotDD.pdf,
- id=8841, 569.12625pt x 385.44pt>
+ id=9276, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plotDD
 .pdf Graphic file (type pdf)
 
@@ -3557,7 +3535,7 @@ IPCHI2_OWNPV_plotDD.pdf used on input line 29.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lmumu/figs/MC_data_comp/Lb_P_plotLL.pdf, id=8842, 569.12625pt x 385.44pt>
+<Lmumu/figs/MC_data_comp/Lb_P_plotLL.pdf, id=9277, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Lb_P_plotLL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MC_data_comp/Lb_P_plotLL.pdf>
@@ -3565,7 +3543,7 @@ Package pdftex.def Info: Lmumu/figs/MC_data_comp/Lb_P_plotLL.pdf used on input
 line 60.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/MC_data_comp/Lb_P_plotDD.pdf, id=8843, 569.12625pt x 385.44pt>
+<Lmumu/figs/MC_data_comp/Lb_P_plotDD.pdf, id=9278, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/Lb_P_plotDD.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MC_data_comp/Lb_P_plotDD.pdf>
@@ -3577,7 +3555,7 @@ line 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<Lmumu/figs/MC_data_comp/Lambda0_PT_plotLL.pdf, id=8844, 569.12625pt x 385.44pt
+<Lmumu/figs/MC_data_comp/Lambda0_PT_plotLL.pdf, id=9279, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/MC_data_comp/Lambda0_PT_plotLL.pdf Graphic file (type pdf)
  <use Lmumu/figs/MC_data_comp/Lambda0_PT_plotLL.pdf>
@@ -3585,7 +3563,7 @@ Package pdftex.def Info: Lmumu/figs/MC_data_comp/Lambda0_PT_plotLL.pdf used on
 input line 81.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/MC_data_comp/Lambda0_PT_plotDD.pdf, id=8845, 569.12625pt x 385.44pt
+<Lmumu/figs/MC_data_comp/Lambda0_PT_plotDD.pdf, id=9280, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/MC_data_comp/Lambda0_PT_plotDD.pdf Graphic file (type pdf)
  <use Lmumu/figs/MC_data_comp/Lambda0_PT_plotDD.pdf>
@@ -3597,7 +3575,7 @@ input line 82.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<Lmumu/figs/MC_data_comp/piminus_PT_plotLL.pdf, id=8846, 569.12625pt x 385.44pt
+<Lmumu/figs/MC_data_comp/piminus_PT_plotLL.pdf, id=9281, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/MC_data_comp/piminus_PT_plotLL.pdf Graphic file (type pdf)
  <use Lmumu/figs/MC_data_comp/piminus_PT_plotLL.pdf>
@@ -3605,7 +3583,7 @@ Package pdftex.def Info: Lmumu/figs/MC_data_comp/piminus_PT_plotLL.pdf used on
 input line 115.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/MC_data_comp/piminus_PT_plotDD.pdf, id=8847, 569.12625pt x 385.44pt
+<Lmumu/figs/MC_data_comp/piminus_PT_plotDD.pdf, id=9282, 569.12625pt x 385.44pt
 >
 File: Lmumu/figs/MC_data_comp/piminus_PT_plotDD.pdf Graphic file (type pdf)
  <use Lmumu/figs/MC_data_comp/piminus_PT_plotDD.pdf>
@@ -3617,7 +3595,7 @@ input line 116.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<Lmumu/figs/MC_data_comp/pplus_PT_plotLL.pdf, id=8848, 569.12625pt x 385.44pt>
+<Lmumu/figs/MC_data_comp/pplus_PT_plotLL.pdf, id=9283, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/pplus_PT_plotLL.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MC_data_comp/pplus_PT_plotLL.pdf>
@@ -3625,7 +3603,7 @@ Package pdftex.def Info: Lmumu/figs/MC_data_comp/pplus_PT_plotLL.pdf used on in
 put line 131.
 (pdftex.def)             Requested size: 204.85802pt x 138.74065pt.
 
-<Lmumu/figs/MC_data_comp/pplus_PT_plotDD.pdf, id=8849, 569.12625pt x 385.44pt>
+<Lmumu/figs/MC_data_comp/pplus_PT_plotDD.pdf, id=9284, 569.12625pt x 385.44pt>
 File: Lmumu/figs/MC_data_comp/pplus_PT_plotDD.pdf Graphic file (type pdf)
 
 <use Lmumu/figs/MC_data_comp/pplus_PT_plotDD.pdf>
@@ -3636,20 +3614,20 @@ put line 132.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[195
+[198
 
 
 
  <./Lmumu/figs/MC_data_comp/Lb_MassConsLambda_chi20Lb_MassConsLambda_nDOF0_plot
 LL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_comp/Lb_MassConsLambd
 a_chi20Lb_MassConsLambda_nDOF0_plotDD.pdf, page is rotated 90 degrees>]
-[196 <./Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plot
+[199 <./Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2_OWNPVmuminus_IPCHI2_OWNPV_plot
 LL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_comp/Maxmuplus_IPCHI2
 _OWNPVmuminus_IPCHI2_OWNPV_plotDD.pdf, page is rotated 90 degrees> <./Lmumu/fig
 s/MC_data_comp/Lb_P_plotLL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_da
 ta_comp/Lb_P_plotDD.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_comp
 /Lambda0_PT_plotLL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_comp/
-Lambda0_PT_plotDD.pdf, page is rotated 90 degrees>] [197 <./Lmumu/figs/MC_data_
+Lambda0_PT_plotDD.pdf, page is rotated 90 degrees>] [200 <./Lmumu/figs/MC_data_
 comp/piminus_PT_plotLL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_c
 omp/piminus_PT_plotDD.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_co
 mp/pplus_PT_plotLL.pdf, page is rotated 90 degrees> <./Lmumu/figs/MC_data_comp/
@@ -3714,19 +3692,19 @@ Overfull \hbox (4.79079pt too wide) in paragraph at lines 96--112
  [][] 
  []
 
-) [198
+) [201
 
 
 
 
-]
+] [202]
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[199] [200]
+[203]
 \openout2 = `RKst/app_MC_fits.aux'.
 
  (./RKst/app_MC_fits.texpdfTeX warning (ext4): destination with the same identi
@@ -3765,7 +3743,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, id=9405, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, id=9841, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3775,7 +3753,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_f
 itAndRes.pdf used on input line 9.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf, id=9406, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf, id=9842, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3785,7 +3763,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0H_f
 itAndRes.pdf used on input line 10.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, id=9407, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, id=9843, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3799,7 +3777,7 @@ itAndRes.pdf used on input line 11.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, id=9408, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, id=9844, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3809,7 +3787,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_f
 itAndRes.pdf used on input line 20.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf, id=9409, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf, id=9845, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3819,7 +3797,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_f
 itAndRes.pdf used on input line 21.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf, id=9410, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf, id=9846, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3833,7 +3811,7 @@ itAndRes.pdf used on input line 22.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, id=9411, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, id=9847, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3843,7 +3821,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_f
 itAndRes.pdf used on input line 30.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf, id=9412, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf, id=9848, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3853,7 +3831,7 @@ Package pdftex.def Info: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_f
 itAndRes.pdf used on input line 31.
 (pdftex.def)             Requested size: 256.0774pt x 173.43463pt.
 
-<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf, id=9413, 5
+<RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf, id=9849, 5
 69.12625pt x 385.44pt>
 File: RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf Graphi
 c file (type pdf)
@@ -3866,54 +3844,68 @@ itAndRes.pdf used on input line 32.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [201
+) [204
 
 
 
-] [202 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, p
-age is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_
-L0H_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2cent
-ral-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, page is rotated 90 degrees>]
+]
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 28.3603pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[203 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, pag
-e is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0
+[205 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0E_fitAndRes.pdf, pag
+e is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_0g_L0
 H_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2centra
-l-gmc/KstJPsEE_1g_L0I_fitAndRes.pdf, page is rotated 90 degrees>] [204 <./RKst/
-figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, page is rotated 
-90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0H_fitAndRes.p
+l-gmc/KstJPsEE_0g_L0I_fitAndRes.pdf, page is rotated 90 degrees>] [206 <./RKst/
+figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0E_fitAndRes.pdf, page is rotated 
+90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_1g_L0H_fitAndRes.p
 df, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsE
-E_2g_L0I_fitAndRes.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
- (./thesis.aux
-(./abstract.aux) (./Introduction/introduction.aux) (./Detector/detector.aux)
-(./Lmumu/introduction.aux) (./Lmumu/selection.aux) (./Lmumu/fit.aux)
-(./Lmumu/efficiency.aux) (./Lmumu/systematics.aux) (./Lmumu/summaryBR.aux)
+E_1g_L0I_fitAndRes.pdf, page is rotated 90 degrees>]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 28.3603pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[207 <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0E_fitAndRes.pdf, pag
+e is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_2g_L0
+H_fitAndRes.pdf, page is rotated 90 degrees> <./RKst/figs/fit_EEs_0_EE-q2centra
+l-gmc/KstJPsEE_2g_L0I_fitAndRes.pdf, page is rotated 90 degrees>]
+\openout2 = `RKst/app_extra.aux'.
+
+
+No file RKst/app_extra.tex.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+(./thesis.aux (./abstract.aux) (./Introduction/introduction.aux)
+(./Detector/detector.aux) (./Lmumu/introduction.aux) (./Lmumu/selection.aux)
+(./Lmumu/fit.aux) (./Lmumu/efficiency.aux) (./Lmumu/systematics.aux)
 (./Lmumu/afbmethod.aux) (./Lmumu/ang_fit_strategy.aux)
 (./Lmumu/ang_sys_and_results.aux) (./RKst/introduction.aux)
 (./RKst/selection.aux) (./RKst/fit.aux) (./RKst/efficiency.aux)
 (./RKst/systematics.aux) (./RKst/result.aux) (./conclusions.aux)
 (./Lmumu/angularAppendix.aux) (./Lmumu/appMCdataComp.aux)
-(./Lmumu/appendix_Lb_sys.aux) (./RKst/app_MC_fits.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+(./Lmumu/appendix_Lb_sys.aux) (./RKst/app_MC_fits.aux) (./RKst/app_extra.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E6CA14964A545587428103799D6C7909;9328.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+(rerunfilecheck)             Checksum: D2A12BD0951A65C13A278E2112556E24;9495.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 13338 strings out of 493089
- 216349 string characters out of 6134842
- 328589 words of memory out of 5000000
- 15561 multiletter control sequences out of 15000+600000
+ 13529 strings out of 493089
+ 219025 string characters out of 6134842
+ 332627 words of memory out of 5000000
+ 15736 multiletter control sequences out of 15000+600000
  28834 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,15n,43p,1347b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,15n,43p,1347b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -3923,30 +3915,33 @@ st, replaced by a fixed one
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (217 pages, 8848516 bytes).
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (221 pages, 11162710 bytes).
 PDF statistics:
- 10059 PDF objects out of 10688 (max. 8388607)
- 5341 compressed objects within 54 object streams
- 686 named destinations out of 1000 (max. 500000)
- 2020 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10503 PDF objects out of 10688 (max. 8388607)
+ 5594 compressed objects within 56 object streams
+ 695 named destinations out of 1000 (max. 500000)
+ 2053 words of extra memory for PDF output out of 10000 (max. 10000000)
 

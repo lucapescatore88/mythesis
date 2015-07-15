@@ -1,34 +1,37 @@
-\chapter{Systematic uncertainties}
+\chapter{Systematic uncertainties and results}
 \label{sec:Lb_sys}
 
-\section{Yields}
+In this chapter the main sources of systematic uncertainty considered are described,
+and finally the results of the angular analysis are reported.
+
+\section{Systematic uncertainty on the yields}
 \label{sec:Lb_yield_sys}
 
-The choice of a specific PDF to model the invariant mass distribution coule result
-in a bias. In order to asses the effect of the signal PDF choice a number of models
-are tried on the \Lb\to\jpsi\Lz data sample in order to understand which ones are plausible.
-In Tab.~\ref{PDFsys} are reported the $\chi^2$ relative probabilities obtained using different
-models including: the default model, a Double Crystal Ball function, a simple Gaussian function,
-a simple Crystal Ball function and the sum of two Gaussians. The only two models that
+The choice of a specific PDF to model the invariant mass distribution could result
+in a bias. To asses the effect of the signal PDF choice a number of models
+are tried on the $\Lb\to\jpsi\Lz$ data sample in order to understand which ones are plausible.
+Table~\ref{PDFsys} reports the $\chi^2$ and relative probabilities obtained using different
+models including: the default model (a DCB function), a simple Gaussian function,
+a single Crystal Ball function and the sum of two Gaussians. The only two models that
 give a reasonable p-value are the default DCB and the sum of two Gaussian functions (DG).
-As a second step simulated experiments are generated and fit the two chosen functions.
+As a second step simulated experiments are generated and fit with the two chosen models.
 Events are generated according to a density function given by the default model fitted
 on data separately for each \qsq interval. In this way, for each \qsq interval, a specific
 shape is reproduced including the background level and slope. Furthermore, a number 
-of events comparable to the one found in data is generated. For each experiment a per cent bias
-is calculated as
+of events comparable to the one found in data is generated. For each experiment a normalised
+bias is calculated as
 %
 \begin{equation}
 b = \left(\frac{N^{DCB}_{\ell\ell}}{N^{DCB}_{\jpsi}} - \frac{N^{DG}_{\ell\ell}}{N^{DG}_{\jpsi}}\right) / \frac{N^{DCB}_{\ell\ell}}{N^{DCB}_{\jpsi}}
 \end{equation}
 %
-where $N^{model}_{\ell\ell}$ and $N^{model}_{\jpsi}$ are the numbers of rare and resonant events
+where $N^{model}_{\ell\ell}$ and $N^{model}_{\jpsi}$ are the numbers of rare and resonant candidates
 observed using a specific model. The distribution of biases have approximately gaussian shape.
 Finally, the average bias over 1000 pseudo-experiments is taken
-as systematic uncertainty. Notice that in each case the rare and normalisation channels are fit
+as systematic uncertainty. Note that in each case the rare and normalisation channels are fit
 with the same signal model and, while for the default case the rare parameters are fixed to what found
-for the resonant channel, they are left free to float with the second model in order to asses
-at the same time the systematic due to the parameters contraint.
+for the resonant channel, they are left free to float in the second model in order to asses
+at the same time the systematic due to the parameters constraint.
 
 \begin{center}
 \begin{table}[h]
@@ -60,7 +63,7 @@ CB  			&    1.5   &   191   &    $\sim 0$  & 9802.4 \\
 \end{table}
 \end{center}
 
-For the background PDF systematic the rare channel is refit leaving the yield of \KS component floating,
+For the background PDF systematic the rare channel is re-fit leaving the yield of \KS component floating,
 which is fixed to the predicted value in the default fit. The same procedure as for the signal PDF is applied.
 Results are reported in Tab.~\ref{tab:pdfsys}. The most affected bin is the one in the middle of the charmonium
 resonances, where a combination of lower statistics and higher background leaves more freedom to the signal shape.
@@ -88,7 +91,7 @@ the distribution of simulated events after full selection. No significant bias i
 15.0--20.0		&    1.0   &  0.2   &    1.1	\\
 \hline
 \end{tabular}
-\caption{ Values of systematics due to the choice of signal and background shapes in bins of \qsq. }
+\caption{Values of systematic uncertainties due to the choice of signal and background shapes in bins of \qsq. }
 \label{tab:pdfsys}
 \end{table}
 \end{center}
@@ -96,7 +99,7 @@ the distribution of simulated events after full selection. No significant bias i
 
 
 
-\section{Efficiencies}
+\section{Systematic uncertainties on the efficiency determination}
 
 %As we study \qsq dependence of the differential branching fraction, one of the challenges is to properly account for
 %correlations. There are three types of correlations we need to handle, one is correlation between
@@ -109,12 +112,12 @@ the distribution of simulated events after full selection. No significant bias i
 %significant and neglect correlations amongst \qsq bins when uncertainty for given source is small
 %compared to dominant sources.
 %
-Systematic uncertainties in the efficiency determination are due to limited knowledge
+Systematic uncertainties in the efficiency determination are due to the limited knowledge
 of the decay properties such as the \Lb lifetime and production polarisation.
 The uncertainties are directly calculated on the relative efficiencies as these are the ones that
 are actually used in the analysis. It should be noted that not all sources contribute to each part
-of the efficiency. For brevity in this section are only reported estimates of the systematic
-uncertainties obtained while the full information is contained in App.~\ref{app:Lb_systematics}.
+of the efficiency. For brevity, this section only reports estimates of the systematic
+uncertainties obtained while the full information is contained in Appendix~\ref{app:Lb_systematics}.
 %Numerical values of systematic uncertainties on relative efficiencies are in
 %table \ref{tab:relativeGeomSys} and for \ref{tab:relativeDetSys} for geometrical and detection efficiency;
 %\ref{tab:relativeRecoSys}, \ref{tab:relativeTrigSys} and \ref{tab:relativeMVAsys} for reconstruction, trigger and neural
@@ -131,15 +134,15 @@ New physics could affect the decay model modifying the Wilson Coefficients by ad
 contributions to the $C_7$ and $C_9$ coefficients. This would result in a modification
 of the \qsq spectrum and therefore of the efficiency.
 To asses this systematic Wilson Coefficients are modified by adding a NP component
-($C_i \rightarrow C_i + C_i^{ \rm NP}$). In Fig.~\ref{fig:wilson_q2} are reported \qsq spectra
+($C_i \rightarrow C_i + C_i^{ \rm NP}$). Figure~\ref{fig:wilson_q2} shows \qsq spectra
 obtained weighting the simulation for a model embedding the default and 3 modified sets
 of wilson coefficients. Used values used are reported on top of each plot and are inspired
 to maintain compatibility with the recent LHCb result for the $P'_5$ observable~\cite{Descotes-Genon:2013wba}.
-The biggest effect is in the very low \qsq, belo 2 \gevgevcccc the efficiency can change
-up to 7\%, 3-4 \% between 3 and 4 \gevgevcccc and 2-3 \% in the resto of the spectrum.
-This values are given in order to provide the full information but are not added as systematic
-uncertainties. In fact the hypothesis of this analysis is that the decays are described
-by a the SM.
+The biggest effect is observed in the very low \qsq, below 2~\gevgevcccc, where the efficiency can change
+up to 7\%, while it changes 3-4 \% between 3 and 4~\gevgevcccc~and 2-3 \% in the rest of the spectrum.
+This analysis is performed under the hypothesis that the decays are described by a the SM.
+Therefore, this values are given in order to provide the full information but are not added 
+as systematic uncertainties. 
 
 \begin{figure}
 \centering
@@ -160,8 +163,8 @@ The black distribution corresponds to the weighting used to calculate efficienci
 
 \subsection{Simulation statistics}
 
-The limited statistics of the simulated samples used to determine efficiencies is considered a source of systematic uncertainty.
-While it is not the dominant source of systematics, its size does not allow to completely neglect this uncertainty.
+The limited statistics of the simulated samples used to determine efficiencies is considered as a source of systematic uncertainty.
+While it is not the dominant source, its size does not allow to completely neglect it.
 When reporting relative efficiency values the statistical uncertainty due to the  rare and resonant channels
 is always considered. 
 %While it would be useful to treat part from normalisation channel separately due to the correlation 
@@ -170,17 +173,17 @@ is always considered.
 \subsection{Production polarisation and decay structure}
 \label{sec:BRpolsys}
 
-One of the main unknown which affects the determination of the efficiencies is the angular structure of
-the decays. And connected to it also the production polarisation, which is a parameter of the model.
+One of the main unknown, which affects the determination of the efficiencies, is the angular structure of
+the decays. And, connected to it, also the production polarisation, which is a parameter of the model.
 %The normalisation decay $\Lb\to\jpsi\Lz$ is also re-weighted and $\Lb\to\Lz\mumu$ is
 %distributed according to the model described in appendix \ref{ap:LbLmumuAngular}.
 %
 To assess the systematic uncertainty due to the knowledge of the production polarisation for $\Lb\to\Lz\mumu$ decays
-the polarisation parameter in the model is varied within one standard deviation of the
-most recent LHCb measurement $P = 0.06 \pm 0.09$\cite{Aaij:2013oxa}. The full difference observed is
-taken as systematic uncertainty. To assess systematic uncertainty due to decay structure
+the polarisation parameter in the model is varied within one standard deviation from the central value of the
+most recent LHCb measurement, $P_b = 0.06 \pm 0.09$~\cite{Aaij:2013oxa}. The full difference observed is
+taken as systematic uncertainty. To assess systematic uncertainty due to the decay structure
 an alternative set of form factors is used based on lattice QCD calculation~\cite{Detmold:2012vy}.
-Details of this are explained in \ref{ap:LbLmumuAngular}. The two models are compared and the full difference
+Details of this are explained in Appendix~\ref{ap:LbLmumuAngular}. The two models are compared and the full difference
 is taken as systematic uncertainty.
 %
 In total this results in an uncertainty of $\sim 1.3\%$ for long candidates and $\sim 0.6\%$ for downstream
@@ -190,8 +193,8 @@ candidates, mostly coming from the knowledge of the production polarisation.
 
 The \Lb lifetime is known only with limited precision. For evaluation of the efficiencies the
 world average value, 1.482 ps$^{-1}$~\cite{Aaij:2013oha} is used. To evaluate the systematic uncertainty,
-this values is varied within one standard deviation from the measured value.
-Only cases where both signal and normalisation channel are varied in same direction are considered.
+this is varied within one standard deviation from the measured value.
+Only the case where both signal and normalisation channel are varied in same direction are considered.
 The larger difference with the default lifetime case is taken as systematic uncertainty,
 which is found to range from $\sim 0.4\%$ at low \qsq to $\sim 0.1\%$ at high \qsq.
 %We do not attempt to separate out part correlated amongst \qsq bins. This source does not affect
@@ -209,11 +212,11 @@ which is found to range from $\sim 0.4\%$ at low \qsq to $\sim 0.1\%$ at high \q
 %(integrated over \qsq). From this we conclude that this ratio is expected to be similar in the two samples and
 %that simulation does not fully match data.
 
-Other analysis in LHCb, using particles reconstructed with downstream tracks, showed that
-the efficiency for these events is not well simulated in the Monte Carlo.
-For example in Fig.~\ref{KS_vtxeff} the ratio between the reconstruction efficiency for downstream candidates
-in data and simulation found analysing \KS events~\cite{Blake:1631348} is shown. This effect is not
-yet fully understood and is currently under study. The main effect seems to be due to a poor simulation
+Other analysis in LHCb using particles reconstructed with downstream tracks showed that
+the efficiency for these candidates is not well simulated.
+For example, Fig.~\ref{KS_vtxeff} shows the ratio between the reconstruction efficiency for downstream candidates
+in data and simulation found analysing \KS events~\cite{Blake:1631348}. This effect is not
+yet fully understood and is currently under study. It seems to be mainly due to a poor simulation
 of the vertexing efficiency for downstream tracks.
 
 \begin{figure}
@@ -223,20 +226,20 @@ of the vertexing efficiency for downstream tracks.
 \label{KS_vtxeff}
 \end{figure}
 
-This effect is dealt with in two steps. Firstly, the analysis separately for downstream and long candidates.
+This effect is dealt with in two steps. Firstly, the analysis is performed separately for downstream and long candidates.
 Since efficiencies are also calculated separately, the effect should mostly cancel in the ratio between the
-rare and resonant channels. In a second step a systematic uncertainty is assigned for down-down events only.
+rare and resonant channels. In a second step a systematic uncertainty is assigned for downstream candidates only.
 To do this the simulation is re-weighed by the efficiency ratio between data and simulation
-found for $K_S$ as a function of momentum and shown in Fig.~\ref{KS_vtxeff}. Then corrected and uncorrected
-efficiencies are compared and the full difference is taken as systematic uncertainty. Dependencies due to
-the different momentum distributions of \Lz and \KS are assumed to be negligible since 
-the discrepancy shows little dependence on momentum. This results in an extra 0.4\% systematic at low \qsq
-and 1.2 \% at high \qsq, only for downstream candidates.
+found for $K_S$ as a function of momentum shown in Fig.~\ref{KS_vtxeff}. Then efficiencies obtained using
+the weighted and unweighted simulation are compared and the full difference is taken as systematic uncertainty. 
+As the discrepancy shows little dependence on momentum, dependencies due to the different momentum 
+distributions of \Lz and \KS are assumed to be negligible. This results in an extra 0.4\% systematic uncertainty
+at low \qsq and 1.2\% at high \qsq, only for downstream candidates.
 
 \subsection{Data-simulation discrepancies}
 
-The simulation used to extract efficiency is re-weighted as described in sec.\ref{sec:kinWeight}.
-The influence on this procedure on the efficiencies was checked by comparing values obtained with
+The simulation used to extract efficiency is re-weighted as described in Sec.~\ref{sec:kinWeight}.
+The influence of this procedure on the efficiency determination is checked by comparing values obtained with
 and without re-weighting. The effect is negligible with respect to other systematics considered.
 %After the kinematical re-weighting there could still be some data-simulation discrepancies.
 %In particular the PID variables, used in the Neural Networks, are not perfectly described in the MC.
@@ -255,6 +258,246 @@ and without re-weighting. The effect is negligible with respect to other systema
 %\end{figure}
 
 
+\section{Differential branching ratio extraction}
+\label{sec:Lb_BRsummary}
+
+In this chapter the differential branching fraction of the $\Lb\to\Lz\mumu$ decay is calculated 
+relative to the $\Lb\ra\jpsi\Lz$ channel as a function of \qsq.
+The values are directly obtained from the fit to the rare sample by parameterising
+the downstream and long yields with the following formula:
+%
+\begin{equation}
+N(\Lz\mumu)_{k}  = \left[ \frac{\mathrm{d}\mathcal{B}(\Lz\mumu)/\mathrm{d}\qsq}{\mathcal{B}(\jpsi\Lz)} \right]  \cdot
+N(\jpsi\Lz)_{k} \cdot \varepsilon^{\mathrm{rel}}_{k} \cdot \frac {\Delta\qsq} { \mathcal{B}(\jpsi\to\mumu) },
+\label{eq:ield_from_BR}
+\end{equation}
+\noindent
+where $k = $(LL,DD), $\Delta\qsq$ is width of the \qsq bin and the only free parameter is the relative
+branching fraction ratio. % over the \jpsi channel.
+%To move from relative differential rate to absolute one, we again multiply by the $\Lb\to\jpsi\Lz$ branching fraction.
+For the \jpsi\to\mumu branching ratio the value reported in the PDG book,
+$\mathcal{B}(\jpsi\to\mumu) = (5.93 \pm 0.06)\cdot 10^{-2}$~\cite{PDG2014}, is used.
+%
+Table~\ref{tab:Lb_effSummary} summarises the total relative efficiencies, $\varepsilon^{rel}$, for downstream and long candidates
+together with their correlated and uncorrelated uncertainties, where the correlation is intended between the downstream and long 
+samples. %In the table is reported the absolute value of the total relative efficiency and the absolute value of the
+%uncorrelated error.
+On the table the uncorrelated uncertainty corresponds to the total systematic uncertainty on the efficiency determination.
+The correlated uncertainty is given in percent form since it can be applied to either downstream, long candidates 
+or their combination. This includes the PDF systematic described in Sec.~\ref{sec:Lb_yield_sys} and the systematic 
+due to the uncertainty on the $\jpsi\to\mumu$ branching fraction.
+
+\begin{table}
+\centering
+\caption{Absolute values of the total relative efficiency and the absolute value of the 
+uncorrelated uncertainty, together with relative values of the correlated uncertainty. }
+\begin{tabular}{lccccc} \hline\hline
+\qsq interval [\gevgevcccc] 	 & Eff. (DD) 	 &  $\sigma_{uncorr}^{DD}$	 & Eff. (LL) 	 & $\sigma_{uncorr}^{LL}$ 	 & Correlated err. \\
+\hline
+
+0.1--2.0    &  0.694  &  0.058  &  1.136  &  0.066  &  1.012\%    \\
+2.0--4.0    &  0.693  &  0.027  &  0.907  &  0.047  &  2.697\%    \\
+4.0--6.0    &  0.699  &  0.018  &  0.964  &  0.044  &  2.697\%    \\
+6.0--8.0    &  0.733  &  0.020  &  0.953  &  0.048  &  2.697\%    \\
+
+11.0--12.5  &  1.254  &  0.032  &  1.140  &  0.057  &  3.356\%    \\
+15.0--16.0  &  1.260  &  0.035  &  1.035  &  0.060  &  2.977\%    \\
+16.0--18.0  &  1.163  &  0.029  &  0.997  &  0.048  &  1.727\%    \\
+18.0--20.0  &  1.023  &  0.027  &  0.782  &  0.040  &  2.697\%    \\
+\hline
+1.1--6.0    &  0.696  &  0.032  &  0.950  &  0.058  &  1.012\%    \\
+15.0--20.0  &  1.132  &  0.014  &  0.927  &  0.031  &  1.423\%    \\
+\hline
+\end{tabular}
+\label{tab:Lb_effSummary}
+\end{table}
+
+Figure~\ref{fig:corrDDLLplots} shows the branching fraction obtained by fitting 
+the downstream and long samples independently, while
+%
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Lmumu/figs/q2result_both.pdf}
+\caption{Measured values of the $\Lb\ra\Lz\mumu$ branching fraction relative
+to the \Lb\to\jpsi\Lz decay as a function of \qsq
+obtained fitting the downstream and long samples independently.
+Error bars represent the total statistical and systematic uncertainty.}
+\label{fig:corrDDLLplots}
+\end{figure}
+%
+%We performed $\chi^2$ consistency test to verify consistency between DD and LL results. We evaluate $\chi^2$ as
+%
+%\begin{equation}
+%\chi^2 = \sum \frac{(Y(DD)_i - Y(LL)_i)^2}{(\sigma_{uncorr}^{LL})^2_i + (\sigma_{uncorr}^{DD})^2_i}
+%\end{equation}
+%
+%where $Y(DD)_i$ and $Y(LL)_i$ are corrected yields for DD and LL events in each bin and $\sigma_{uncorr}^{LL}$($\sigma_{uncorr}^{DD}$) their uncorrelated error,
+%including statistical on rare and normalisation channels and uncorrelated systematic error. 
+%The result is a $\chi^2$ of 7.0 with 4 degrees of freedom corresponding to a p-value of 0.14.
+%
+%
+%\begin{table}
+%\centering
+%\renewcommand{\arraystretch}{1.3}
+%\begin{tabular}{lc} \hline\hline
+%\qsq bin 	 &  $\mathrm{d}\mathcal{B}(\Lz\mumu)/\mathrm{d}\qsq / \mathcal{B}(\jpsi\Lz)$ ($10^{-3}$)\\
+%\hline
+%\multicolumn{2}{c}{Down-down events} \\ \hline 
+%\hline
+%
+%0.1-2.0  & $    0.0676^{+0.0323}_{-0.0279} \text{(stat)} ^{+0.0055}_{-0.0064} \text{(sys)} ^{+0.0008}_{-0.0008} \text{(norm)} $ \\
+%2.0-4.0  & $    0.0447^{+0.0324}_{-0.0275} \text{(stat)} ^{+0.0021}_{-0.0022} \text{(sys)} ^{+0.0005}_{-0.0006} \text{(norm)} $ \\
+%4.0-6.0  & $    0.0000^{+0.0155}_{0.0000} \text{(stat)} ^{+0.0000}_{-0.0000} \text{(sys)} ^{+0.0000}_{-0.0000} \text{(norm)} $ \\
+%6.0-8.0  & $    0.0530^{+0.0287}_{-0.0248} \text{(stat)} ^{+0.0020}_{-0.0021} \text{(sys)} ^{+0.0007}_{-0.0007} \text{(norm)} $ \\
+%11.0-12.5  & $    0.1211^{+0.0300}_{-0.0273} \text{(stat)} ^{+0.0049}_{-0.0053} \text{(sys)} ^{+0.0010}_{-0.0014} \text{(norm)} $ \\
+%15.0-16.0  & $    0.2042^{+0.0369}_{-0.0338} \text{(stat)} ^{+0.0082}_{-0.0084} \text{(sys)} ^{+0.0022}_{-0.0022} \text{(norm)} $ \\
+%16.0-18.0  & $    0.2196^{+0.0276}_{-0.0260} \text{(stat)} ^{+0.0066}_{-0.0068} \text{(sys)} ^{+0.0023}_{-0.0024} \text{(norm)} $ \\
+%18.0-20.0  & $    0.1882^{+0.0259}_{-0.0241} \text{(stat)} ^{+0.0070}_{-0.0071} \text{(sys)} ^{+0.0020}_{-0.0020} \text{(norm)} $ \\
+%
+%\hline
+%1.1-6.0  & $    0.0192^{+0.0157}_{-0.0138} \text{(stat)} ^{+0.0010}_{-0.0011} \text{(sys)} ^{+0.0002}_{-0.0002} \text{(norm)} $ \\
+%15.0-20.0  & $    0.2054^{+0.0168}_{-0.0161} \text{(stat)} ^{+0.0039}_{-0.0040} \text{(sys)} ^{+0.0022}_{-0.0022} \text{(norm)} $ \\
+%
+%\hline
+%\multicolumn{2}{c}{Long-long events} \\ \hline
+%\hline
+%0.1-2.0  & $    0.0493^{+0.0258}_{-0.0200} \text{(stat)} ^{+0.0030}_{-0.0033} \text{(sys)} ^{+0.0009}_{-0.0010} \text{(norm)} $ \\
+%2.0-4.0  & $    0.0027^{+0.0186}_{0.0000} \text{(stat)} ^{+0.0002}_{-0.0002} \text{(sys)} ^{+0.0001}_{-0.0001} \text{(norm)} $ \\
+%4.0-6.0  & $    0.0107^{+0.0234}_{0.0000} \text{(stat)} ^{+0.0005}_{-0.0006} \text{(sys)} ^{+0.0002}_{-0.0002} \text{(norm)} $ \\
+%6.0-8.0  & $    0.0253^{+0.0271}_{-0.0198} \text{(stat)} ^{+0.0014}_{-0.0015} \text{(sys)} ^{+0.0005}_{-0.0005} \text{(norm)} $ \\
+%
+%11.0-12.5  & $    0.1228^{+0.0451}_{-0.0391} \text{(stat)} ^{+0.0071}_{-0.0076} \text{(sys)} ^{+0.0020}_{-0.0020} \text{(norm)} $ \\
+%15.0-16.0  & $    0.1009^{+0.0513}_{-0.0413} \text{(stat)} ^{+0.0063}_{-0.0069} \text{(sys)} ^{+0.0016}_{-0.0017} \text{(norm)} $ \\
+%16.0-18.0  & $    0.1356^{+0.0397}_{-0.0348} \text{(stat)} ^{+0.0066}_{-0.0072} \text{(sys)} ^{+0.0022}_{-0.0022} \text{(norm)} $ \\
+%18.0-20.0  & $    0.2157^{+0.0497}_{-0.0438} \text{(stat)} ^{+0.0120}_{-0.0129} \text{(sys)} ^{+0.0035}_{-0.0035} \text{(norm)} $ \\
+%\hline
+%1.1-6.0  & $    0.0101^{+0.0127}_{-0.0099} \text{(stat)} ^{+0.0006}_{-0.0007} \text{(sys)} ^{+0.0002}_{-0.0002} \text{(norm)} $ \\
+%15.0-20.0  & $    0.1551^{+0.0260}_{-0.0239} \text{(stat)} ^{+0.0055}_{-0.0058} \text{(sys)} ^{+0.0025}_{-0.0026} \text{(norm)} $ \\
+%\hline
+%\end{tabular}
+%\caption{Values of corrected relative branching fraction for DD and LL events with statistical, correlated and uncorrelated error shown separately. }
+%\label{tab:corrDDLL}
+%\end{table}
+%
+%Finally, we combine DD and LL results by a weighted average of the two using the uncorrelated errors as weight, $w_i = 1/(\sigma_i^{uncorr})^2$.
+%Using weighted average for each bin the combined result is
+%
+%\begin{equation}
+%y_{combined} = \sum {w_i \cdot Y_i} / \sum {w_i}
+%\end{equation}
+%
+%and its error
+%
+%\begin{equation}
+%\sigma_{combined} = \sqrt{1 / \sum { \sigma_i^{-2} }}.
+%\end{equation}
+%
+%The correlated error is then calculated on the combined yield using the relative values in table \ref{tab:effSummary}.
+%
+the combined result, obtained fitting both samples simultaneously, is shown in Fig.~\ref{fig:Lb_combBR}.
+Values are also listed in Tab.~\ref{tab:Lb_combBR}, where the statistical
+uncertainty on the rare channel (stat) and the total systematic uncertainty (stat) are shown separately.
+The statistical uncertainty is calculated using the MINOS tool, which returns an asymmetric interval.
+The normalisation and systematic uncertainties are evaluated by pushing the efficiencies and normalisation yields
+up and down by one standard deviation and re-performing the fit. %DD and LL errors are different so each one is taken in accout properly.
+The different efficiencies used traslate into a different branching fraction and the full difference with respect 
+to the default  fit is taken as systematic uncertainty in each direction.
+
+
+ \begin{figure}[tbph]
+ \centering
+\includegraphics[width=0.8\textwidth]{Lmumu/figs/combined_result_2err.pdf}
+\caption{Branching fraction of the \decay{\Lb}{\Lz\mumu} decay
+  normalised to the \decay{\Lb}{\jpsi\Lz} mode. The inner error bar
+  represents the systematic uncertainty and the outer error bar includes
+  the statistical uncertainty.} 
+   \protect\label{fig:Lb_combBR}
+ \end{figure}
+
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Differential branching fraction of the \decay{\Lb}{\Lz\mumu}
+  decay relative to \decay{\Lb}{\jpsi\Lz} decays,
+ where the uncertainties are statistical and systematic, respectively.}
+\begin{tabular}{cccccc}
+  \qsq interval  [\gevgevcccc] & &\multicolumn{4}{c}{ $\frac{\deriv\BF(\decay{\Lb}{\Lz\mumu})/\deriv\qsq}{\BF(\decay{\Lb}{\jpsi\Lz})} \cdot 10^{-3} [(\gevgevcccc)^{-1}]$} \\
+\hline
+0.1 -- 2.0   & &0.56 & $^{+0.20}_{-0.17}$ & $^{+0.03}_{-0.03}$ & \\
+2.0 -- 4.0   & &0.18 & $^{+0.18}_{-0.15}$ & $^{+0.01}_{-0.01}$ & \\
+4.0 -- 6.0   & &0.04 & $^{+0.14}_{-0.04}$ & $^{+0.01}_{-0.01}$ & \\
+6.0 -- 8.0   & &0.40 & $^{+0.20}_{-0.17}$ & $^{+0.01}_{-0.02}$ &\\
+                                                 
+11.0 -- 12.5 & &1.19 & $^{+0.24}_{-0.23}$ & $^{+0.04}_{-0.07}$& \\
+15.0 -- 16.0 & &1.78 & $^{+0.31}_{-0.28}$ & $^{+0.08}_{-0.08}$&\\
+16.0 -- 18.0 & &1.94 & $^{+0.23}_{-0.22}$ & $^{+0.04}_{-0.09}$&\\
+18.0 -- 20.0 & &1.97 & $^{+0.23}_{-0.22}$ & $^{+0.10}_{-0.07}$&\\
+              
+\hline        
+1.1--6.0   & &0.14 & $ ^{+0.10}_{-0.09}$& $^{+0.01}_{-0.01}$&\\
+15.0--20.0 & &1.90 & $ ^{+0.14}_{-0.14}$& $^{+0.04}_{-0.06}$&\\
+\end{tabular}
+\label{tab:Lb_combBR}
+\end{table}
+
+Finally, values for the absolute branching fraction of the \decay{\Lb}{\Lz\mumu} decay are obtained by multiplying 
+the relative branching fraction by the absolute branching fraction of the normalisation channel,
+$\BF(\decay{\Lb}{\jpsi\Lz})=(6.3\pm1.3)\times10^{-4}$~\cite{PDG2014}.
+Values are shown in Fig.~\ref{fig:Lb_absBR} and summarised in Tab.~\ref{tab:Lb_absBR}, where the uncertainty
+due to the knowledge of the normalisation channel (norm), which is correlated across \qsq, is shown separately.
+The SM predictions on the plot are obtained from Ref.~\cite{Detmold:2012vy}.  
+
+Evidence for the signal is found for the first time in the \qsq region between the charmonium 
+resonances and in the interval \mbox{$0.1 < \qsq < 2.0$~\gevgevcccc}, where an increased 
+yield is expected due to the proximity of the photon pole. The uncertainty on the absolute branching
+fraction is dominated by the precision with which of the branching fraction for the normalisation channel is known,
+while the uncertainty on the relative branching fraction it is dominated by the size of the data sample available. 
+The data are consistent with the theoretical predictions in the high-\qsq region but lie below the predictions in the low-\qsq region.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Lmumu/figs/paper/figure5.pdf}
+\caption{Measured \protect\decay{\Lb}{\Lz\mumu} branching
+   fraction as a function of \qsq with the SM predictions
+   \cite{Detmold:2012vy} superimposed.  The inner error bars on data
+   points represent the total uncertainty on the relative branching
+   fraction (statistical and systematic); the outer error bar also
+   includes the uncertainties from the branching fraction of the
+   normalisation mode.}  
+\label{fig:Lb_absBR}
+\end{figure}
+
+\begin{table}[tbph]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Measured differential branching fraction of the
+  \decay{\Lb}{\Lz\mumu} decay, where the uncertainties are statistical, systematic and
+ due to the uncertainty on the normalisation mode, \decay{\Lb}{\jpsi\Lz}, respectively.}
+\begin{tabular}{ccccccc}
+  \qsq interval  [\gevgevcccc] & &\multicolumn{5}{c}{$\deriv \BF(\decay{\Lb}{\Lz\mumu})/\deriv\qsq \cdot 10^{-7} [(\gevgevcccc)^{-1}]$} \\
+\hline
+0.1 -- 2.0    &    &0.36  &  $^{+\,0.12}_{-\,0.11}$   & $^{+\,0.02}_{-\,0.02}$ & $\pm\,0.07$ \\
+2.0 -- 4.0    &    &0.11  &  $^{+\,0.12}_{-\,0.09}$   & $^{+\,0.01}_{-\,0.01}$ & $\pm\,0.02$ \\
+4.0 -- 6.0    &    &0.02  &  $^{+\,0.09}_{-\,0.00}$   & $^{+\,0.01}_{-\,0.01}$ & $\pm\,0.01$ \\
+6.0 -- 8.0    &    &0.25  &  $^{+\,0.12}_{-\,0.11}$   & $^{+\,0.01}_{-\,0.01}$ & $\pm\,0.05$ \\
+
+11.0 -- 12.5  &    &0.75  &  $^{+\,0.15}_{-\,0.14}$   & $^{+\,0.03}_{-\,0.05}$ & $\pm\,0.15$ \\
+15.0 -- 16.0  &    &1.12  &  $^{+\,0.19}_{-\,0.18}$   & $^{+\,0.05}_{-\,0.05}$ & $\pm\,0.23$ \\
+16.0 -- 18.0  &    &1.22  &  $^{+\,0.14}_{-\,0.14}$   & $^{+\,0.03}_{-\,0.06}$ & $\pm\,0.25$ \\
+18.0 -- 20.0  &    &1.24  &  $^{+\,0.14}_{-\,0.14}$   & $^{+\,0.06}_{-\,0.05}$ & $\pm\,0.26$ \\
+
+\hline
+1.1 -- 6.0    &    &0.09  &  $^{+\,0.06}_{-\,0.05}$   & $^{+\,0.01}_{-\,0.01}$ & $\pm\,0.02$ \\
+15.0 -- 20.0  &    &1.20  &  $^{+\,0.09}_{-\,0.09}$   & $^{+\,0.02}_{-\,0.04}$ & $\pm\,0.25$ \\
+ \end{tabular}
+\label{tab:Lb_absBR}
+\end{table}
+
+
+
+
+
+\clearpage
 
 
 

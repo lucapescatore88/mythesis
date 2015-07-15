@@ -9,7 +9,6 @@ A level-1 auxiliary file: Lmumu/selection.aux
 A level-1 auxiliary file: Lmumu/fit.aux
 A level-1 auxiliary file: Lmumu/efficiency.aux
 A level-1 auxiliary file: Lmumu/systematics.aux
-A level-1 auxiliary file: Lmumu/summaryBR.aux
 A level-1 auxiliary file: Lmumu/afbmethod.aux
 A level-1 auxiliary file: Lmumu/ang_fit_strategy.aux
 A level-1 auxiliary file: Lmumu/ang_sys_and_results.aux
@@ -19,74 +18,57 @@ A level-1 auxiliary file: RKst/fit.aux
 A level-1 auxiliary file: RKst/efficiency.aux
 A level-1 auxiliary file: RKst/systematics.aux
 A level-1 auxiliary file: RKst/result.aux
-The style file: ieeetr.bst
+A level-1 auxiliary file: conclusions.aux
+The style file: JHEP.bst
 A level-1 auxiliary file: Lmumu/angularAppendix.aux
 A level-1 auxiliary file: Lmumu/appMCdataComp.aux
 A level-1 auxiliary file: Lmumu/appendix_Lb_sys.aux
+A level-1 auxiliary file: RKst/app_MC_fits.aux
+A level-1 auxiliary file: RKst/app_extra.aux
 Database file #1: main.bib
 Database file #2: lmumu.bib
-Warning--entry type for "LHCb-ANA-2011-094" isn't style-file defined
---line 413 of file lmumu.bib
-Warning--entry type for "CDF:10894" isn't style-file defined
---line 647 of file lmumu.bib
 Database file #3: LHCb-PAPER.bib
 Database file #4: LHCb-TDR.bib
 Database file #5: LHCb-CONF.bib
 Database file #6: LHCb-DP.bib
-Warning--I didn't find a database entry for "SMimage"
-Warning--I didn't find a database entry for "Buras:2003jf"
-Warning--I didn't find a database entry for "Aaij:2010gn"
-Warning--I didn't find a database entry for "Agashe:2014kda"
-Warning--I didn't find a database entry for "Feldman:1997qc"
-Warning--I didn't find a database entry for "woodroofe"
-Warning--I didn't find a database entry for "Meinel:2014wua"
-Warning--empty journal in Aaij:2015xza
-Warning--empty journal in TomRDreview
-Warning--empty journal in Buras:1998raa
-Warning--empty journal in LHCB-PAPER-2014-032
-Warning--empty author in LHCb:2003ab
-Warning--empty journal in LHCb:2003ab
-Warning--empty journal in Karbach:2011uz
-Warning--empty journal in LHCb-PAPER-2014-024
-You've used 88 entries,
-            1876 wiz_defined-function locations,
-            1058 strings with 16943 characters,
-and the built_in function-call counts, 23316 in all, are:
-= -- 2416
-> -- 774
+You've used 99 entries,
+            2195 wiz_defined-function locations,
+            1236 strings with 19468 characters,
+and the built_in function-call counts, 32025 in all, are:
+= -- 3393
+> -- 863
 < -- 1
-+ -- 292
-- -- 204
-* -- 1300
-:= -- 3095
-add.period$ -- 93
-call.type$ -- 88
-change.case$ -- 87
++ -- 327
+- -- 228
+* -- 2396
+:= -- 4202
+add.period$ -- 105
+call.type$ -- 99
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 96
-duplicate$ -- 1454
-empty$ -- 2104
-format.name$ -- 204
-if$ -- 6024
+cite$ -- 99
+duplicate$ -- 1845
+empty$ -- 2998
+format.name$ -- 228
+if$ -- 8408
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 81
-newline$ -- 274
-num.names$ -- 87
-pop$ -- 276
+int.to.str$ -- 99
+missing$ -- 371
+newline$ -- 305
+num.names$ -- 99
+pop$ -- 396
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1214
+skip$ -- 1426
 stack$ -- 0
-substring$ -- 1163
-swap$ -- 764
+substring$ -- 1743
+swap$ -- 899
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 183
-width$ -- 90
-write$ -- 854
-(There were 17 warnings)
+warning$ -- 0
+while$ -- 218
+width$ -- 101
+write$ -- 1076

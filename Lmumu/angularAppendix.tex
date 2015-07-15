@@ -1,5 +1,239 @@
 \chapter{Decay models}
 
+\section{$\Lb\ra\Lz\mumu$ distribution}
+\label{ap:LbLmumuAngular}
+
+%Our more realistic model is based on Ref.~\cite{Aliev:2005np}, which is for standard model same
+%model as is implemented in EvtGen. We start from expressions for amplitudes for given helicity state,
+%which are given as
+%%
+%% 
+%\begin{eqnarray}
+%%1{++}
+%{\mathcal{M}}_{+1/2}^{++} &=& 2 m_{\mu} \sin\theta \Big( H_{+1/2,+1}^{(1)} +
+%H_{+1/2,+1}^{(2)}\Big) + 2 m_{\mu} \cos\theta \Big( H_{+1/2,0}^{(1)} +
+%H_{+1/2,0}^{(2)}\Big) \nonumber \\
+%&+& 2 m_{\mu} \Big( H_{+1/2,t}^{(1)} -
+%H_{+1/2,t}^{(2)}\Big)~, \nonumber \\
+%%2{+-}
+%{\cal M}_{+1/2}^{+-} &=& - \sqrt{q^2} (1-\cos\theta) \Big[
+%(1-v) H_{+1/2,+1}^{(1)} + (1+v) H_{+1/2,+1}^{(2)}\Big] -
+%\sqrt{q^2} \sin\theta  \Big[(1-v) H_{+1/2,0}^{(1)} \nonumber \\
+%&+& (1+v) H_{+1/2,0}^{(2)}\Big]~, \nonumber \\
+%%3{-+}
+%{\cal M}_{+1/2}^{-+} &=& \sqrt{q^2} (1+\cos\theta) \Big[
+%(1+v) H_{+1/2,+1}^{(1)} + (1-v) H_{+1/2,+1}^{(2)}\Big] -
+%\sqrt{q^2} \sin\theta  \Big[(1+v) H_{+1/2,0}^{(1)} \nonumber \\
+%&+& (1-v) H_{+1/2,0}^{(2)}\Big]~, \nonumber \\
+%%4{--}
+%{\cal M}_{+1/2}^{--} &=& - 2 m_{\mu} \sin\theta \Big(
+%H_{+1/2,+1}^{(1)} +
+%H_{+1/2,+1}^{(2)}\Big) - 2 m_{\mu} \cos\theta \Big( H_{+1/2,0}^{(1)} +
+%H_{+1/2,0}^{(2)}\Big) \nonumber \\
+%&+& 2 m_{\mu} \Big( H_{+1/2,t}^{(1)} -
+%H_{+1/2,t}^{(2)}\Big)~, \nonumber \\
+%%5{++}
+%{\cal M}_{-1/2}^{++} &=& - 2 m_{\mu} \sin\theta \Big(
+%H_{-1/2,-1}^{(1)} +
+%H_{-1/2,-1}^{(2)}\Big) + 2 m_{\mu} \cos\theta \Big( H_{-1/2,0}^{(1)} +
+%H_{-1/2,0}^{(2)}\Big) \nonumber \\
+%&+& 2 m_{\mu} \Big( H_{-1/2,t}^{(1)} -
+%H_{-1/2,t}^{(2)}\Big)~, \nonumber \\
+%%6{+-}
+%{\cal M}_{-1/2}^{+-} &=& - \sqrt{q^2} (1+\cos\theta) \Big[
+%(1-v) H_{-1/2,-1}^{(1)} + (1+v) H_{-1/2,-1}^{(2)}\Big] -
+%\sqrt{q^2} \sin\theta  \Big[(1-v) H_{-1/2,0}^{(1)} \nonumber \\
+%&+& (1+v) H_{-1/2,0}^{(2)}\Big]~, \nonumber \\
+%%7{-+}
+%{\cal M}_{-1/2}^{-+} &=& \sqrt{q^2} (1-\cos\theta) \Big[
+%(1+v) H_{-1/2,-1}^{(1)} + (1-v) H_{-1/2,-1}^{(2)}\Big] -
+%\sqrt{q^2} \sin\theta  \Big[(1+v) H_{-1/2,0}^{(1)} \nonumber \\
+%&+& (1-v) H_{-1/2,0}^{(2)}\Big]~, \nonumber \\
+%%8{--}
+%{\cal M}_{-1/2}^{--} &=& 2 m_{\mu} \sin\theta \Big( H_{-1/2,-1}^{(1)} +
+%H_{-1/2,-1}^{(2)}\Big) - 2 m_{\mu} \cos\theta \Big( H_{-1/2,0}^{(1)} +
+%H_{-1/2,0}^{(2)}\Big) \nonumber \\
+%&+& 2 m_{\mu} \Big( H_{-1/2,t}^{(1)} -
+%H_{-1/2,t}^{(2)}\Big)~.
+%\label{eq:LbLmumuHelicity}
+%\end{eqnarray}
+%%
+%Here $M^{\lambda_1\lambda_2}_{\lambda_{\Lb}}$ is amplitude for muon helicities $\lambda_1$ and
+%$\lambda_2$ and \Lb helicity $\lambda_{\Lb}$, $H_{\lambda_{\Lb},\lambda}$ contains dependence on
+%form factors and Wilson coefficients with $\lambda$ being helicity of "virtual boson" ($\pm1$ and
+%$0$ for spin-1 and $t$ for spin-0). The angle $\theta$ is helicity angle of the muon and
+%$v=\sqrt{1-4m^2_\mu/\qsq}$.
+%In order to obtain full angular distribution, each of the terms
+%in each expression above is multiplied by appropriate Wigner function to take into account proton
+%helicity angle and angle between \mumu and \Lz decay planes. To obtain angular and \qsq
+%distribution, we need to square amplitudes of eq.~\ref{eq:LbLmumuHelicity} with incoherent sum over
+%muon helicities. The sum over \Lb helicities is coherent and each term is multiplied by appropriate
+%term of spin density matrix in order to take into account production polarization. Spin density
+%matrix has form
+%%
+%\begin{equation}
+%P_s=\frac{1}{2}\left(\begin{array}{cc} P_b^{++} & P_b^{+-} \\ P_b^{-+} & P_b^{--}\end{array}\right)=
+%\frac{1}{2}\left(\begin{array}{cc} 1+P_b\cos\theta & P_b\sin\theta \\ P_b\sin\theta &
+%1-P_b\cos\theta \end{array}\right),
+%\end{equation}
+%%
+%where $P_b$ is production polarization and $\theta$ is angle with same definition as for
+%\Lb\ra\jpsi\Lz decay.
+%So the full rate can be expressed as
+%\begin{equation}
+%  |M|^2=\sum_{\lambda_p,\lambda_1,\lambda_2}\left|\sum_{\lambda_{\Lb},\lambda^{'}_{\Lb}}
+%M^{\lambda_1\lambda_2}_{\lambda_{\Lb}}P_b^{\lambda_{\Lb}\lambda^{'}_{\Lb}}M^{\lambda_1\lambda_2}_{\lambda^{'}_{\Lb}}\right|^2.
+%\end{equation}
+%For $H_{\lambda_{\Lb},\lambda}$ expression we refer reader to the Ref.~\cite{Aliev:2005np}.
+%For calculation, we use Wilson coefficients used in EvtGen decay model Lb2Lll,
+%which are based on Refs.~\cite{Buras:1994dj,Buras:1993xp} with input values corresponding to world
+%averages in 2004 \cite{PDBook2004}. Original HQET form factors of Ref.~\cite{Aliev:2005np} are used
+%in our evaluations.
+
+The \qsq and angular dependancies of the $\Lb\to\Lz\mumu$ decays are modelled based on
+Ref.~\cite{Gutsche:2013pp}, where the angular distribution for unpolarised \Lb production
+is defined as
+\begin{eqnarray}
+W(\theta\ell,\theta_{B},\chi)  &\propto& 
+\sum_{\lambda_1,\lambda_{2},\lambda_j,\lambda'_j,J,J',m,m',\lambda_{\Lambda},
+\lambda'_{\Lambda},\lambda_{p}} 
+h^{m}_{\lambda_1\lambda_2}(J)h^{m'}_{\lambda_1\lambda_2}(J')
+e^{i(\lambda_{j}-\lambda'_{j})\chi}
+\nonumber\\ 
+&\times&
+\delta_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}
+\delta_{JJ'}
+d^J_{\lambda_j,\lambda_1-\lambda_{2}}(\theta\ell)
+d^{J'}_{\lambda'_j,\lambda_1-\lambda_{2}}(\theta\ell)
+H^{m}_{\lambda_{\Lambda}\lambda_{j}}(J)
+H^{m'\dagger}_{\lambda'_{\Lambda}\lambda'_{j}}(J')
+\nonumber \\
+&\times& 
+d^{1/2}_{\lambda_{\Lambda}\lambda_{p}}(\theta_{B})
+d^{1/2}_{\lambda'_{\Lambda}\lambda_{p}}(\theta_{B})
+h^{B}_{\lambda_{p}0}h^{B\,\dagger}_{\lambda_{p}0}\,.
+\end{eqnarray}
+In this formula $\theta_\ell$ and $\theta_B$ correspond to the lepton and proton helicity angles, $\chi$ is angle between
+dimuon and \Lz decay planes (for unpolarised production we are sensitive only to difference in
+azimuthal angles), $d^J_{i,j}$ are Wigner d-functions and $h$, $h^B$ and $H$ are helicity amplitudes
+for virtual dimuon, \Lz and \Lb decays. The sum runs over all possible helicities with the dimuon being
+allowed in spin 0 and 1 states ($J$ and $J'$). The $m$ and $m'$ indices run over the vector %($1$ in following)
+and axial-vector %($2$)
+current contributions.
+
+The production polarisation is introduced by removing
+$e^{i(\lambda_{j}-\lambda'_{j})\chi}$ from the expression, swapping small Wigner d-functions
+$d^J_{i,j}$ to the corresponding capital ones $D^J_{i,j}$ which are related as
+\begin{equation}
+D^J_{i,j}(\theta,\phi)=d^J_{i,j}(\theta)e^{i\phi(i-j)}
+\end{equation}
+and substitute spin density matrix for
+$\delta_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}\delta_{JJ'}$. The spin density matrix
+itself is given by
+\begin{equation}
+\label{eq:spinDensity}
+\rho_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}=
+\frac{1}{2}\left(\begin{array}{cc} 1+P_b\cos\theta & P_b\sin\theta \\ P_b\sin\theta &
+1-P_b\cos\theta \end{array}\right).
+\end{equation}
+Those changes lead to the formula
+\begin{eqnarray}
+W(\theta\ell,\theta_{B},\chi)  &\propto& 
+\sum_{\lambda_1,\lambda_{2},\lambda_j,\lambda'_j,J,J',m,m',\lambda_{\Lambda},
+\lambda'_{\Lambda},\lambda_{p}} 
+h^{m}_{\lambda_1\lambda_2}(J)h^{m'}_{\lambda_1\lambda_2}(J')
+\nonumber\\ 
+&\times&
+\rho_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}
+D^J_{\lambda_j,\lambda_1-\lambda_{2}}(\theta\ell,\phi_L)
+D^{J'}_{\lambda'_j,\lambda_1-\lambda_{2}}(\theta\ell,\phi_L)
+H^{m}_{\lambda_{\Lambda}\lambda_{j}}(J)
+H^{m'\dagger}_{\lambda'_{\Lambda}\lambda'_{j}}(J')
+\nonumber \\
+&\times& 
+D^{1/2}_{\lambda_{\Lambda}\lambda_{p}}(\theta_{B},\phi_B)
+D^{1/2}_{\lambda'_{\Lambda}\lambda_{p}}(\theta_{B},\phi_B)
+h^{B}_{\lambda_{p}0}h^{B\,\dagger}_{\lambda_{p}0}\,.
+\end{eqnarray}
+The lepton amplitudes come directly from Ref.~\cite{Gutsche:2013pp}, eq.~3.
+%and we refer interested reader directly to source.
+The \Lz decay amplitudes are related to the \Lz decay asymmetry parameter as
+\begin{equation}
+\alpha_{\Lz}\,=\,\frac{|h^{B}_{{\frac{1}{2}}0}|^{2}-
+|h^{B}_{-{\frac{1}{2}}0}|^{2}}
+{|h^{B}_{{\frac{1}{2}}0}|^{2}
++|h^{B}_{-{\frac{1}{2}}0}|^{2}}\,.
+\end{equation}
+Finally, the \Lb decay amplitudes receive contributions from vector and axial-vector currents
+ and can be written as
+\begin{equation}
+H^m_{\lambda_2,\lambda_j} = H^{Vm}_{\lambda_2,\lambda_j}
+                          - H^{Am}_{\lambda_2,\lambda_j}\,.
+\end{equation}
+%Amplitudes for some helicities combinations can be related as
+%\begin{align}
+% &H^{Vm}_{-\lambda_2,-\lambda_j} = H^{Vm}_{\lambda_2,\lambda_j}\,,
+%\nonumber\\
+% &H^{Am}_{-\lambda_2,-\lambda_j} = - H^{Am}_{\lambda_2,\lambda_j}\,.
+%\end{align}
+Finally, the remaining amplitudes are expressed in terms of form factors
+(Ref.~\cite{Gutsche:2013pp}, eq.~C6) as
+\begin{align}
+H^{Vm}_{\frac{1}{2} t} &=&
+\sqrt{\frac{Q_+}{q^2}} \,
+\biggl( M_- \, F_1^{Vm} + \frac{q^2}{M_1} \, F_3^{Vm} \biggr)\,, \nonumber\\
+H^{Vm}_{\frac{1}{2} 1} &=& \sqrt{2 Q_-} \,
+\biggl( F_1^{Vm} + \frac{M_+}{M_1} \, F_2^{Vm} \biggr)\,, \nonumber\\
+H^{Vm}_{\frac{1}{2} 0} &=& \sqrt{\frac{Q_-}{q^2}} \,
+\biggl( M_+ \, F_1^{Vm} + \frac{q^2}{M_1} \, F_2^{Vm} \biggr)\,, \nonumber\\
+&&\\
+H^{Am}_{\frac{1}{2} t} &=& \sqrt{\frac{Q_-}{q^2}} \,
+\biggl( M_+ \, F_1^{Am} - \frac{q^2}{M_1} \, F_3^{Am} \biggr)\,, \nonumber\\
+H^{Am}_{\frac{1}{2} 1} &=& \sqrt{2 Q_+} \,
+\biggl( F_1^{Am} - \frac{M_-}{M_1} \, F_2^{Am} \biggr)\,, \nonumber\\
+H^{Am}_{\frac{1}{2} 0} &=& \sqrt{\frac{Q_+}{q^2}} \,
+\biggl( M_- \, F_1^{Am}  - \frac{q^2}{M_1} \, F_2^{Am} \biggr)\,, \nonumber
+\end{align}
+where $M_\pm = M_1 \pm M_2$, $Q_\pm = M_\pm^2 - q^2$. %They contain both Wilson coefficients as well as $q^2$ dependence.
+The form factors $F$ are expressed in terms of dimensioneless quantities in
+eqs.~C8 and C9 in Ref.~\cite{Gutsche:2013pp}. In our actual implementation form factors calculated in the covariant
+quark model~\cite{Gutsche:2013pp} are used and for the numerical values of the Wilson coefficients
+Ref.~\cite{Gutsche:2013pp} is used. 
+
+To assess effect of different form factors on efficiency calculations, an alternative set of form 
+factors is implemented, based on the LQCD calculation from Ref.~\cite{Detmold:2012vy}.
+%We keep same implementation and numerical values of various parameters
+%as for Ref.~\cite{Gutsche:2013pp}, just exchange form factors.
+The form factors relations are found by comparing eqs.~66 and $68$ in Ref.~\cite{Gutsche:2013pp} to eq.~$51$ in
+Ref.~\cite{Detmold:2012vy}. Denoting LQCD form factors by $F_i^L$ and dimensionless covariant quark model ones by
+$f_i^{XX}$ we have
+\begin{align}
+  f_1^V&=c_\gamma(F_1^L+F_2^L), \nonumber \\
+  f_2^V&=-2c_\gamma F_2^L, \nonumber \\
+  f_3^V&=c_v(F_1^L+F_2^L), \nonumber \\
+  f_1^A&=c_\gamma(F_1^L-F_2^L), \nonumber \\
+  f_2^A&=-2c_\gamma F_2^L, \nonumber \\
+  f_3^A&=-c_v(F_1^L-F_2^L), \nonumber \\
+  f_1^{TV}&=c_\sigma F_2^L, \nonumber \\
+  f_2^{TV}&=-c_\sigma F_1^L, \nonumber \\
+  f_1^{TA}&=c_\sigma F_2^L, \nonumber \\
+  f_2^{TA}&=-c_\sigma F_1^L, \nonumber 
+\end{align} 
+where
+\begin{align}
+c_\gamma&=1-\frac{\alpha_s(\mu^2)}{\pi}\left[\frac{4}{3}+\ln\left(\frac{\mu}{m_b}\right)\right],\nonumber \\
+c_v&=\frac{2}{3}\frac{\alpha_s(\mu^2)}{\pi}, \nonumber \\
+c_\sigma&=1-\frac{\alpha_s(\mu^2)}{\pi}\left[\frac{4}{3}+\frac{5}{3}\ln\left(\frac{\mu}{m_b}\right)\right].
+\end{align}
+In the calculations $\mu=m_b$ is used. For the strong coupling constant, we start from the world average value at
+the $Z$ mass, $\alpha_s(m_Z^2)=0.1185 \pm 0.0006$~\cite{PDG2014}, and we translate it to the scale $m_b^2$ by
+\begin{equation}
+\alpha_s(\mu^2)=\frac{\alpha_s(m_Z^2)}{1+\frac{\alpha_s(m_Z^2)}{12\pi}
+\left(33-2n_f\right)\ln\left(\frac{\mu^2}{m_Z^2}\right)},
+\end{equation}
+where $n_f=5$. The LQCD form factors $F_1^L$ and $F_2^L$ can be then taken directly from Ref.~\cite{Detmold:2012vy} and
+plugged into the code implementing the calculation from Ref.~\cite{Gutsche:2013pp}.
+
 \section{$\Lb\ra\jpsi\Lz$ distribution}
 \label{ap:LbJpsiLAngular}
 
@@ -95,7 +329,7 @@ $\sin\theta\sin\theta_{2}\cos\theta_{2}\sin\phi_{2}$
        \\
              \hline\hline
              \end{tabular}
-\caption{Different terms desribing angular distributions of \Lb\ra\jpsi\Lz decays by
+\caption{Different terms describing angular distributions of \Lb\ra\jpsi\Lz decays by
 eq.~\ref{eq:jpsiLambdaRate}.}
 \label{tab:LbJpsiLAngular}
 \end{table}
@@ -123,246 +357,12 @@ with axes defined as
     $z_{2}\uparrow\uparrow\vec{p}_{\jpsi}$,
     $y_{2}\uparrow\uparrow\vec{n}\times\vec{p}_{\jpsi}$.
 
-The distribution depends on the \Lz decay asymmetry parameter, $\alpha_\Lz$, the production polarization
+The distribution depends on the \Lz decay asymmetry parameter, $\alpha_\Lz$, the production polarisation
 $P_b$ and four complex amplitudes. The $\alpha_\Lz$ is measured to be $0.642 \pm 0.013$ for \Lz.
 % but for $\bar\Lz$ the precision is worse and we use up to the sign same value as for \Lz.
-The production polarization $P_b$ and magnitudes of $a_+$, $a_-$, $b_+$ and $b_-$ are measured in
+The production polarisation $P_b$ and magnitudes of $a_+$, $a_-$, $b_+$ and $b_-$ are measured in
 Ref.~\cite{LHCb-PAPER-2012-057}. Phases are not measured therefore, as default all phases are set to
 zero and then they are randomly varied to calculate the systematic uncertainty.
 
 
-
-\section{$\Lb\ra\Lz\mumu$ distribution}
-\label{ap:LbLmumuAngular}
-
-%Our more realistic model is based on Ref.~\cite{Aliev:2005np}, which is for standard model same
-%model as is implemented in EvtGen. We start from expressions for amplitudes for given helicity state,
-%which are given as
-%%
-%% 
-%\begin{eqnarray}
-%%1{++}
-%{\mathcal{M}}_{+1/2}^{++} &=& 2 m_{\mu} \sin\theta \Big( H_{+1/2,+1}^{(1)} +
-%H_{+1/2,+1}^{(2)}\Big) + 2 m_{\mu} \cos\theta \Big( H_{+1/2,0}^{(1)} +
-%H_{+1/2,0}^{(2)}\Big) \nonumber \\
-%&+& 2 m_{\mu} \Big( H_{+1/2,t}^{(1)} -
-%H_{+1/2,t}^{(2)}\Big)~, \nonumber \\
-%%2{+-}
-%{\cal M}_{+1/2}^{+-} &=& - \sqrt{q^2} (1-\cos\theta) \Big[
-%(1-v) H_{+1/2,+1}^{(1)} + (1+v) H_{+1/2,+1}^{(2)}\Big] -
-%\sqrt{q^2} \sin\theta  \Big[(1-v) H_{+1/2,0}^{(1)} \nonumber \\
-%&+& (1+v) H_{+1/2,0}^{(2)}\Big]~, \nonumber \\
-%%3{-+}
-%{\cal M}_{+1/2}^{-+} &=& \sqrt{q^2} (1+\cos\theta) \Big[
-%(1+v) H_{+1/2,+1}^{(1)} + (1-v) H_{+1/2,+1}^{(2)}\Big] -
-%\sqrt{q^2} \sin\theta  \Big[(1+v) H_{+1/2,0}^{(1)} \nonumber \\
-%&+& (1-v) H_{+1/2,0}^{(2)}\Big]~, \nonumber \\
-%%4{--}
-%{\cal M}_{+1/2}^{--} &=& - 2 m_{\mu} \sin\theta \Big(
-%H_{+1/2,+1}^{(1)} +
-%H_{+1/2,+1}^{(2)}\Big) - 2 m_{\mu} \cos\theta \Big( H_{+1/2,0}^{(1)} +
-%H_{+1/2,0}^{(2)}\Big) \nonumber \\
-%&+& 2 m_{\mu} \Big( H_{+1/2,t}^{(1)} -
-%H_{+1/2,t}^{(2)}\Big)~, \nonumber \\
-%%5{++}
-%{\cal M}_{-1/2}^{++} &=& - 2 m_{\mu} \sin\theta \Big(
-%H_{-1/2,-1}^{(1)} +
-%H_{-1/2,-1}^{(2)}\Big) + 2 m_{\mu} \cos\theta \Big( H_{-1/2,0}^{(1)} +
-%H_{-1/2,0}^{(2)}\Big) \nonumber \\
-%&+& 2 m_{\mu} \Big( H_{-1/2,t}^{(1)} -
-%H_{-1/2,t}^{(2)}\Big)~, \nonumber \\
-%%6{+-}
-%{\cal M}_{-1/2}^{+-} &=& - \sqrt{q^2} (1+\cos\theta) \Big[
-%(1-v) H_{-1/2,-1}^{(1)} + (1+v) H_{-1/2,-1}^{(2)}\Big] -
-%\sqrt{q^2} \sin\theta  \Big[(1-v) H_{-1/2,0}^{(1)} \nonumber \\
-%&+& (1+v) H_{-1/2,0}^{(2)}\Big]~, \nonumber \\
-%%7{-+}
-%{\cal M}_{-1/2}^{-+} &=& \sqrt{q^2} (1-\cos\theta) \Big[
-%(1+v) H_{-1/2,-1}^{(1)} + (1-v) H_{-1/2,-1}^{(2)}\Big] -
-%\sqrt{q^2} \sin\theta  \Big[(1+v) H_{-1/2,0}^{(1)} \nonumber \\
-%&+& (1-v) H_{-1/2,0}^{(2)}\Big]~, \nonumber \\
-%%8{--}
-%{\cal M}_{-1/2}^{--} &=& 2 m_{\mu} \sin\theta \Big( H_{-1/2,-1}^{(1)} +
-%H_{-1/2,-1}^{(2)}\Big) - 2 m_{\mu} \cos\theta \Big( H_{-1/2,0}^{(1)} +
-%H_{-1/2,0}^{(2)}\Big) \nonumber \\
-%&+& 2 m_{\mu} \Big( H_{-1/2,t}^{(1)} -
-%H_{-1/2,t}^{(2)}\Big)~.
-%\label{eq:LbLmumuHelicity}
-%\end{eqnarray}
-%%
-%Here $M^{\lambda_1\lambda_2}_{\lambda_{\Lb}}$ is amplitude for muon helicities $\lambda_1$ and
-%$\lambda_2$ and \Lb helicity $\lambda_{\Lb}$, $H_{\lambda_{\Lb},\lambda}$ contains dependence on
-%form factors and Wilson coefficients with $\lambda$ being helicity of "virtual boson" ($\pm1$ and
-%$0$ for spin-1 and $t$ for spin-0). The angle $\theta$ is helicity angle of the muon and
-%$v=\sqrt{1-4m^2_\mu/\qsq}$.
-%In order to obtain full angular distribution, each of the terms
-%in each expression above is multiplied by appropriate Wigner function to take into account proton
-%helicity angle and angle between \mumu and \Lz decay planes. To obtain angular and \qsq
-%distribution, we need to square amplitudes of eq.~\ref{eq:LbLmumuHelicity} with incoherent sum over
-%muon helicities. The sum over \Lb helicities is coherent and each term is multiplied by appropriate
-%term of spin density matrix in order to take into account production polarization. Spin density
-%matrix has form
-%%
-%\begin{equation}
-%P_s=\frac{1}{2}\left(\begin{array}{cc} P_b^{++} & P_b^{+-} \\ P_b^{-+} & P_b^{--}\end{array}\right)=
-%\frac{1}{2}\left(\begin{array}{cc} 1+P_b\cos\theta & P_b\sin\theta \\ P_b\sin\theta &
-%1-P_b\cos\theta \end{array}\right),
-%\end{equation}
-%%
-%where $P_b$ is production polarization and $\theta$ is angle with same definition as for
-%\Lb\ra\jpsi\Lz decay.
-%So the full rate can be expressed as
-%\begin{equation}
-%  |M|^2=\sum_{\lambda_p,\lambda_1,\lambda_2}\left|\sum_{\lambda_{\Lb},\lambda^{'}_{\Lb}}
-%M^{\lambda_1\lambda_2}_{\lambda_{\Lb}}P_b^{\lambda_{\Lb}\lambda^{'}_{\Lb}}M^{\lambda_1\lambda_2}_{\lambda^{'}_{\Lb}}\right|^2.
-%\end{equation}
-%For $H_{\lambda_{\Lb},\lambda}$ expression we refer reader to the Ref.~\cite{Aliev:2005np}.
-%For calculation, we use Wilson coefficients used in EvtGen decay model Lb2Lll,
-%which are based on Refs.~\cite{Buras:1994dj,Buras:1993xp} with input values corresponding to world
-%averages in 2004 \cite{PDBook2004}. Original HQET form factors of Ref.~\cite{Aliev:2005np} are used
-%in our evaluations.
-
-The \qsq and angular dependances of the $\Lb\to\Lz\mumu$ decays are modelled based on
-Ref.~\cite{Gutsche:2013pp}, where the angular distribution for unpolarized \Lb production
-is defined as
-\begin{eqnarray}
-W(\theta\ell,\theta_{B},\chi)  &\propto& 
-\sum_{\lambda_1,\lambda_{2},\lambda_j,\lambda'_j,J,J',m,m',\lambda_{\Lambda},
-\lambda'_{\Lambda},\lambda_{p}} 
-h^{m}_{\lambda_1\lambda_2}(J)h^{m'}_{\lambda_1\lambda_2}(J')
-e^{i(\lambda_{j}-\lambda'_{j})\chi}
-\nonumber\\ 
-&\times&
-\delta_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}
-\delta_{JJ'}
-d^J_{\lambda_j,\lambda_1-\lambda_{2}}(\theta\ell)
-d^{J'}_{\lambda'_j,\lambda_1-\lambda_{2}}(\theta\ell)
-H^{m}_{\lambda_{\Lambda}\lambda_{j}}(J)
-H^{m'\dagger}_{\lambda'_{\Lambda}\lambda'_{j}}(J')
-\nonumber \\
-&\times& 
-d^{1/2}_{\lambda_{\Lambda}\lambda_{p}}(\theta_{B})
-d^{1/2}_{\lambda'_{\Lambda}\lambda_{p}}(\theta_{B})
-h^{B}_{\lambda_{p}0}h^{B\,\dagger}_{\lambda_{p}0}\,.
-\end{eqnarray}
-In this formula $\theta_\ell$ and $\theta_B$ correspond to the lepton and proton helicity angles, $\chi$ is angle between
-dimuon and \Lz decay planes (for unpolarized production we are sensitive only to difference in
-azimuthal angles), $d^J_{i,j}$ are Wigner d-functions and $h$, $h^B$ and $H$ are helicity amplitudes
-for virtual dimuon, \Lz and \Lb decays. The sum runs over all possible helicities with the dimuon being
-allowed in spin 0 and 1 states ($J$ and $J'$). The $m$ and $m'$ indices run over the vector %($1$ in following)
-and axial-vector %($2$)
-current contributions.
-
-The production polarization is introduced by removing
-$e^{i(\lambda_{j}-\lambda'_{j})\chi}$ from the expression, swapping small Wigner d-functions
-$d^J_{i,j}$ to the corresponding capital ones $D^J_{i,j}$ which are related as
-\begin{equation}
-D^J_{i,j}(\theta,\phi)=d^J_{i,j}(\theta)e^{i\phi(i-j)}
-\end{equation}
-and substitute spin density matrix for
-$\delta_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}\delta_{JJ'}$. The spin density matrix
-itself is given by
-\begin{equation}
-\label{eq:spinDensity}
-\rho_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}=
-\frac{1}{2}\left(\begin{array}{cc} 1+P_b\cos\theta & P_b\sin\theta \\ P_b\sin\theta &
-1-P_b\cos\theta \end{array}\right).
-\end{equation}
-Those changes lead to the formula
-\begin{eqnarray}
-W(\theta\ell,\theta_{B},\chi)  &\propto& 
-\sum_{\lambda_1,\lambda_{2},\lambda_j,\lambda'_j,J,J',m,m',\lambda_{\Lambda},
-\lambda'_{\Lambda},\lambda_{p}} 
-h^{m}_{\lambda_1\lambda_2}(J)h^{m'}_{\lambda_1\lambda_2}(J')
-\nonumber\\ 
-&\times&
-\rho_{\lambda_{j}-\lambda_{\Lambda},\lambda'_{j}-\lambda'_{\Lambda}}
-D^J_{\lambda_j,\lambda_1-\lambda_{2}}(\theta\ell,\phi_L)
-D^{J'}_{\lambda'_j,\lambda_1-\lambda_{2}}(\theta\ell,\phi_L)
-H^{m}_{\lambda_{\Lambda}\lambda_{j}}(J)
-H^{m'\dagger}_{\lambda'_{\Lambda}\lambda'_{j}}(J')
-\nonumber \\
-&\times& 
-D^{1/2}_{\lambda_{\Lambda}\lambda_{p}}(\theta_{B},\phi_B)
-D^{1/2}_{\lambda'_{\Lambda}\lambda_{p}}(\theta_{B},\phi_B)
-h^{B}_{\lambda_{p}0}h^{B\,\dagger}_{\lambda_{p}0}\,.
-\end{eqnarray}
-The lepton amplitudes come directly from Ref.~\cite{Gutsche:2013pp}, eq.~3.
-%and we refer interested reader directly to source.
-The \Lz decay amplitudes are related to the \Lz decay asymmetry parameter as
-\begin{equation}
-\alpha_{\Lz}\,=\,\frac{|h^{B}_{{\frac{1}{2}}0}|^{2}-
-|h^{B}_{-{\frac{1}{2}}0}|^{2}}
-{|h^{B}_{{\frac{1}{2}}0}|^{2}
-+|h^{B}_{-{\frac{1}{2}}0}|^{2}}\,.
-\end{equation}
-Finally, the \Lb decay amplitudes receive contributions from vector and axial-vector currents
- and can be written as
-\begin{equation}
-H^m_{\lambda_2,\lambda_j} = H^{Vm}_{\lambda_2,\lambda_j}
-                          - H^{Am}_{\lambda_2,\lambda_j}\,.
-\end{equation}
-%Amplitudes for some helicities combinations can be related as
-%\begin{align}
-% &H^{Vm}_{-\lambda_2,-\lambda_j} = H^{Vm}_{\lambda_2,\lambda_j}\,,
-%\nonumber\\
-% &H^{Am}_{-\lambda_2,-\lambda_j} = - H^{Am}_{\lambda_2,\lambda_j}\,.
-%\end{align}
-Finally, the remaining amplitudes are expressed in terms of form factors
-(Ref.~\cite{Gutsche:2013pp}, eq.~C6) as
-\begin{align}
-H^{Vm}_{\frac{1}{2} t} &=&
-\sqrt{\frac{Q_+}{q^2}} \,
-\biggl( M_- \, F_1^{Vm} + \frac{q^2}{M_1} \, F_3^{Vm} \biggr)\,, \nonumber\\
-H^{Vm}_{\frac{1}{2} 1} &=& \sqrt{2 Q_-} \,
-\biggl( F_1^{Vm} + \frac{M_+}{M_1} \, F_2^{Vm} \biggr)\,, \nonumber\\
-H^{Vm}_{\frac{1}{2} 0} &=& \sqrt{\frac{Q_-}{q^2}} \,
-\biggl( M_+ \, F_1^{Vm} + \frac{q^2}{M_1} \, F_2^{Vm} \biggr)\,, \nonumber\\
-&&\\
-H^{Am}_{\frac{1}{2} t} &=& \sqrt{\frac{Q_-}{q^2}} \,
-\biggl( M_+ \, F_1^{Am} - \frac{q^2}{M_1} \, F_3^{Am} \biggr)\,, \nonumber\\
-H^{Am}_{\frac{1}{2} 1} &=& \sqrt{2 Q_+} \,
-\biggl( F_1^{Am} - \frac{M_-}{M_1} \, F_2^{Am} \biggr)\,, \nonumber\\
-H^{Am}_{\frac{1}{2} 0} &=& \sqrt{\frac{Q_+}{q^2}} \,
-\biggl( M_- \, F_1^{Am}  - \frac{q^2}{M_1} \, F_2^{Am} \biggr)\,, \nonumber
-\end{align}
-where $M_\pm = M_1 \pm M_2$, $Q_\pm = M_\pm^2 - q^2$. %They contain both Wilson coefficients as well as $q^2$ dependence.
-The form factors $F$ are expressed in terms of dimensioneless quantities in
-eqs.~C8 and C9 in Ref.~\cite{Gutsche:2013pp}. In our actual implementation form factors calculated in the covariant
-quark model~\cite{Gutsche:2013pp} are used and for the numerical values of the Wilson coefficients
-Ref.~\cite{Gutsche:2013pp} is used. 
-
-To assess effect of different form factors on efficiency calculations, an alternative set of form 
-factors is implemented, based on the LQCD calculation from Ref.~\cite{Detmold:2012vy}.
-%We keep same implementation and numerical values of various parameters
-%as for Ref.~\cite{Gutsche:2013pp}, just exchange form factors.
-The form factors relations are found by comparing eqs.~66 and $68$ in Ref.~\cite{Gutsche:2013pp} to eq.~$51$ in
-Ref.~\cite{Detmold:2012vy}. Denoting LQCD form factors by $F_i^L$ and dimensionaless covariant quark model ones by
-$f_i^{XX}$ we have
-\begin{align}
-  f_1^V&=c_\gamma(F_1^L+F_2^L), \nonumber \\
-  f_2^V&=-2c_\gamma F_2^L, \nonumber \\
-  f_3^V&=c_v(F_1^L+F_2^L), \nonumber \\
-  f_1^A&=c_\gamma(F_1^L-F_2^L), \nonumber \\
-  f_2^A&=-2c_\gamma F_2^L, \nonumber \\
-  f_3^A&=-c_v(F_1^L-F_2^L), \nonumber \\
-  f_1^{TV}&=c_\sigma F_2^L, \nonumber \\
-  f_2^{TV}&=-c_\sigma F_1^L, \nonumber \\
-  f_1^{TA}&=c_\sigma F_2^L, \nonumber \\
-  f_2^{TA}&=-c_\sigma F_1^L, \nonumber 
-\end{align} 
-where
-\begin{align}
-c_\gamma&=1-\frac{\alpha_s(\mu^2)}{\pi}\left[\frac{4}{3}+\ln\left(\frac{\mu}{m_b}\right)\right],\nonumber \\
-c_v&=\frac{2}{3}\frac{\alpha_s(\mu^2)}{\pi}, \nonumber \\
-c_\sigma&=1-\frac{\alpha_s(\mu^2)}{\pi}\left[\frac{4}{3}+\frac{5}{3}\ln\left(\frac{\mu}{m_b}\right)\right].
-\end{align}
-In the calculations $\mu=m_b$ is used. For the strong coupling constant, we start from the world average value at
-the $Z$ mass, $\alpha_s(m_Z^2)=0.1185 \pm 0.0006$~\cite{PDG2012}, and we translate it to the scale $m_b^2$ by
-\begin{equation}
-\alpha_s(\mu^2)=\frac{\alpha_s(m_Z^2)}{1+\frac{\alpha_s(m_Z^2)}{12\pi}
-\left(33-2n_f\right)\ln\left(\frac{\mu^2}{m_Z^2}\right)},
-\end{equation}
-where $n_f=5$. The LQCD form factors $F_1^L$ and $F_2^L$ can be then taken directly from Ref.~\cite{Detmold:2012vy} and
-plugged into the code implementing the calculation from Ref.~\cite{Gutsche:2013pp}.
 

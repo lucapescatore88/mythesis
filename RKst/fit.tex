@@ -31,14 +31,14 @@ For the rare and resonant \mumu channels the fitted variable is the $m(K\pi \mu\
 from a kinematic fit where all vertices are required to point to their mother particle.
 In the resonant case it is beneficial to also constrain the the dimuon mass to the known \jpsi mass.
 The effect of the kinematical fit is to improve the mass resolution by roughly a factor of 2, which results
-a more stable fit. Furthermore, misreconstructed events are pushed away from the $\Bz$ peak, which allows to
+a more stable fit. Furthermore, misreconstructed events are pushed away from the \Bz peak, which allows to
 use a wider mass window to better constrain the combinatorial background slope.
-The mass spectrum is fitted in the range $5150 - 5800 ~\mbox{MeV/c}{^2}$ with the lower limit
+The mass spectrum is fitted in the range 5150--5800~\mevcc~ with the lower limit
 of the mass range chosen to exclude partially reconstructed background.
 As it is not needed to model misreconstructed backgrounds in the fit this also
 eliminates systematic uncertainties associated with the knowledge of its shape. 
 
-The PDF chosen to describe the signal in both the $\Bz \to\Kstar\mumu$ and its relative $J/\psi$ channel 
+The PDF chosen to describe the signal in both the $\Bz \to\Kstarz\mumu$ and its relative \jpsi channel 
 is a Double Crystal Ball function already described in Sec.~\ref{sec:Lb_fit} and also in this case
 the mean value ($m_0$) is kept in common:
 
@@ -99,17 +99,17 @@ The parameter $f^{*}$ in the formula is the relative fraction of candidates fall
 
 To model the combinatorial background an exponential function was used.
 This is the only background component for the rare channel.
-In the normalisation channel fit the $\Bs  \to \Kstar\jpsi$ background
+In the normalisation channel fit the $\Bs  \to \Kstarz\jpsi$ background
 is described using the same PDF used for the signal but a different central value, $m$,
 which is set at the $\Bs$ nominal mass~\cite{PDG2014}.
 Finally, a $\Lb\to\jpsi pK$ background component is modelled using simulated \mbox{$\Lb\to\jpsi pK$} events
-to which the full $\Bz \to \Kstar\jpsi$ selection is applied. The invariant mass distribution
+to which the full $\Bz \to \Kstarz\jpsi$ selection is applied. The invariant mass distribution
 of these candidates is a broad shape under the signal peak. The simulated distribution 
 is smoothed using a kernel estimation method (using the \verb!RooKeysPdf!  class of the \verb!RooFit! package~\cite{Verkerke:2003ir}).
 
 In summary the free parameters in the simultaneous fit to rare and resonant \mumu data samples are:
-the signal and background yields, the combinatorial background slopes, the widths scale $c$ and
-the the mass shift $m'$.
+the signal and background yields, the combinatorial background slopes, the widths scale, $c$, and
+the the mass shift, $m'$.
 
 Fig.~\ref{fig:mumu_data_fits} reports fits to real data distributions for the rare and resonant
 \mumu channels. Values of fitted parameters are reported on the plots.
@@ -146,8 +146,8 @@ and makes it is hard to model it. Furthermore, mis-reconstructed background ente
 its amount can be constrained by exploiting the higher statistics resonant channel, but this implies
 the usage of the same variable in both fits.
 In order to better constrain the parameters modelling the radiative tail and the misreconstructed
-backgrounds a wide mass window is used [4500,5800] \mevcc. The lower limit is given
-by the point in which the \qsq cut (at 6 \gevgevcccc to separate the rare and resonant channels)
+backgrounds a wide mass window is used [4500,5800]~\mevcc. The lower limit is given
+by the point in which the \qsq cut (at 6~\gevgevcccc to separate the rare and resonant channels)
 starts to affect the 4-body invariant mass distribution.
 
 In the electron case the invariant mass distributions are different depending on which hardware
@@ -255,7 +255,7 @@ Given the low statistics available, the same shape is used for the three trigger
 \includegraphics[width=0.48\textwidth]{RKst/figs/misreco/part_had_jpsi.pdf}
 \includegraphics[width=0.48\textwidth]{RKst/figs/misreco/part_lpt_jpsi.pdf}
 \caption{Simulated distributions of misreconstructed background events falling into
-the $\decay{\Bz}{\Kstar(\jpsi\to\ee)}$ sample coming from the
+the $\decay{\Bz}{\Kstarz(\jpsi\to\ee)}$ sample coming from the
 hadronic (left) and leptonic (right) systems.}
 \label{fig:RKst_misreco_distrib}
 \end{figure}
@@ -274,16 +274,16 @@ N_{\ell\ell}^{mis-reco} = N_{ee} \cdot k = N_{ee} \cdot \frac{N_{\jpsi}^{mis-rec
 Notice that, as the fit is simultaneous for the rare and resonant samples, this fraction
 is not fixed in the fit but floats using information from both samples.
 
-The shape to describe the \jpsi tail leakage is obtained using simulated $\Bz\to\jpsi\Kstar$ candidates
-and selecting those falling in \qsq below 6 \gevgevcccc. The 4-body invariant mass distribution
+The shape to describe the \jpsi tail leakage is obtained using simulated $\Bz\to\jpsi\Kstarz$ candidates
+and selecting those falling in \qsq below 6~\gevgevcccc. The 4-body invariant mass distribution
 of these events is reported in Fig.~\ref{fig:RKst_rare_misreco_distrib}. The yield of this component
 again is not floating independently but it is liked to the yield found in the resonant fit as follows
 \begin{equation}
 N_{\ell\ell}^{leak} = N_{\jpsi} \cdot k^{MC} = N_{\jpsi} \cdot \frac{N_{leak}^{MC}}{N_{\jpsi}^{MC}}
 \end{equation}
 where $k$ is the ratio between $N_{\jpsi}^{MC}$, the number of \jpsi events
-that fall into the \jpsi ~\qsq window (6-11 \gevgevcccc) in the simulation
-and $N_{leak}^{MC}$, the number of \jpsi events leaking below 6 \gevgevcccc in the simulation.
+that fall into the \jpsi ~\qsq window (6-11~\gevgevcccc) in the simulation
+and $N_{leak}^{MC}$, the number of \jpsi events leaking below 6~\gevgevcccc in the simulation.
 In this case $k$ is previously extracted from simulated events and fixed in the fit on data.
 
 \begin{figure}[h!]
@@ -292,7 +292,7 @@ In this case $k$ is previously extracted from simulated events and fixed in the 
 \includegraphics[width=0.48\textwidth]{RKst/figs/misreco/jpsi_leakage.pdf}
 \caption{(left) Simulated 4-body invariant mass distributions for events involving
 higher \Kstar states and passing out full selection. (right) Simulated invariant mass
-distribution of $\decay{\Bz}{\Kstar(\jpsi\to\ee)}$ events leaking into the central-\qsq interval.}
+distribution of $\decay{\Bz}{\Kstarz(\jpsi\to\ee)}$ events leaking into the central-\qsq interval.}
 \label{fig:RKst_rare_misreco_distrib}
 \end{figure}
 
@@ -305,7 +305,7 @@ one scale factor $c$, one mass shift $m_0$ and the combinatorial background slop
 
 Fits on simulated $\Bz\to\Kstarz(\jpsi\to\epem)$ candidates 
 are shown in Appendix~\ref{app:RKMCfits}. Figure~\ref{fig:FitJpsiEE_Data_inTrigCat} and \ref{fig:FitEE_Data_inTrigCat}
-present fits on real $\Bz\to\Kstarz(\jpsi\to\epem)$ and $\Bz\to\Kstarz \epem$ candidates (central-\qsq interval)
+present fits on real $\Bz\to\Kstarz(\jpsi\to\epem)$ and \mbox{\BdKstee} candidates (central-\qsq interval)
 in the three trigger categories. Values of fitted parameters are reported on the plots.
 
 \begin{figure}[h!]
@@ -313,7 +313,7 @@ in the three trigger categories. Values of fitted parameters are reported on the
 \includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf}
 \includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf}
 \includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I.pdf}
-\caption{Fit to the $m(K\pi ee)$ mass spectrum of $\Bz \to \Kstarz \jpsi(\rightarrow \ee)$
+\caption{Fit to the $m(K\pi ee)$ mass spectrum of $\Bz \to \Kstarz (\jpsi\to \ee)$
 real data events in the three trigger categories. From top to bottom L0E, L0H and L0I.}
 \label{fig:FitJpsiEE_Data_inTrigCat}
 \end{figure}
@@ -332,7 +332,7 @@ From top to bottom L0E, L0H and L0I.
 
 \subsection{Electron channels fits in the high-\qsq interval}
 
-In the high-\qsq interval, above 15 \gevgevcccc, the efficiency for the
+In the high-\qsq interval, above 15~\gevgevcccc, the efficiency for the
 L0Hadron trigger becomes very low as the \Kstar has very low momentum.
 In this region only 9 candidates are found spread in the interval
 $4500 < m(K\pi ee) < 6000$ \mevcc. In the L0TIS category,
@@ -353,7 +353,8 @@ are also in this case taken from simulated events are are reported in Tab.~\ref{
 \centering
 \caption{Percentages of events with 0, 1 and 2 emitted photons in the three
 trigger categories, extracted from simulated events.}
-\begin{tabular}{l|ccc}
+\begin{tabular}{|l|ccc|}
+\hline
 Sample 	&	$0 \gamma$	&	$1 \gamma$  &	 $2 \gamma$  \\ \hline
 \psitwos (L0E)			&	25.7 \%		&	52.1 \%		&	22.2 \%	 \\ \hline
 15--20 \gevgevcccc (L0E)			&	20.7 \%		&	51.7 \%		&	27.6 \%	 \\ \hline
@@ -377,7 +378,7 @@ The distribution is then smoothed using the \verb!RooKeysPdf! method.% of \verb!
  \begin{figure}[h!]
 \centering
 \includegraphics[width=0.70\textwidth]{RKst/figs/high_central_mass_comparison.pdf}
-\caption{Simulated invariant mass of the $K\pi ee$ system in the $1.1 < \qsq < 6$ and $\qsq > 15$ \gevgevcccc intervals.  }
+\caption{Simulated invariant mass of the $K\pi ee$ system in the $1.1 < \qsq < 6$ and $\qsq > 15$~\gevgevcccc intervals.  }
 \label{fig:high_central_mass_comparison}
 \end{figure}
 
@@ -416,7 +417,7 @@ N_{\ell\ell}^{leak} = N_{\psitwos} \cdot k^{MC} = N_{\psitwos} \cdot \frac{N_{le
 \centering
 \includegraphics[width=0.8\textwidth]{RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf}
 \includegraphics[width=0.8\textwidth]{RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf}
-\caption{Fitted $m(K\pi ee)$ invariant mass distribution in the \psitwos interval, $11 < \qsq < 15$ \gevgevcccc
+\caption{Fitted $m(K\pi ee)$ invariant mass distribution in the \psitwos interval, $11 < \qsq < 15$~\gevgevcccc
 and in the high-\qsq interval. }
 \label{fig:fit_ee_highq2}
 \end{figure}
@@ -434,7 +435,7 @@ in Tab.~\ref{tab:RKst_results}.
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
- Sample 			& 1--6 GeV$^2/c^4$ 				& 15--20$ GeV^2/c^4$ 				& $J/\psi$  \\ \hline
+ Sample 			& 1--6~\gevgevcccc 				& 15--20~\gevgevcccc 				& \jpsi  \\ \hline
 $\mu\mu$ 			& $ 625.38  \pm  29.60 $ & $ 606.87  \pm  27.56 $ & $ 333917.20  \pm  599.73 $ \\
 $ee$ L0E 	& $ 131.77  \pm  18.06 $ & $ 132.28  \pm  27.92 $ & $ 48103.10  \pm  329.77 $ \\
 $ee$ L0H 	& $ 32.50  \pm  4.50 $ & -- & $ 4439.51  \pm  98.38 $ \\
