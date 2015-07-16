@@ -1,0 +1,88 @@
+\chapter{Extra}
+
+\subsection{Quantum Electrodynamics: an example of gauge field theory }
+
+{\em Possible addition around Sec.~\ref{sec:EMandEW}.}
+
+
+
+The EM theory results from requiring the fermion Lagrangian to be invariant under local gauge transformations.
+The electron and positron free fermionic fields are defined as $\psi(x)$ and $\bar{\psi(x)}$, where x is a relativistic four vector.
+A local gauge transformation can always be written as:
+
+\begin{align}
+\psi(x) \rightarrow \psi(x') = e^i{\alpha(x)}\psi(x)
+\end{align}
+
+where $\alpha(x)$ can be any function of space and/or time. The free fermion Lagrangian, given by
+
+\begin{equation}
+\mathcal{L} = -i \bar{\psi(x)} \gamma^{\mu} \partial_\mu \psi(x) - m\bar{\psi(x)} \psi
+\end{equation}
+
+is not invariant under such transformations. Greek indices denote space-time directions and imply summation and $\gamma^i$ are the Dirac matrices. If we apply the local gauge transformation and we subtract the initial Lagrangian we get a remaining term
+
+\begin{equation}
+\Delta \mathcal{L} = \mathcal{L}' - \mathcal{L} = -i \bar{\psi}  \gamma^{\mu} \psi \partial_\mu \alpha(x)
+\end{equation}
+
+In order to make the Lagrangian invariant we can introduce a vector field $A$, which transforms as described by Eq. \ref{gauge invariance},  to %compensate for the remaining term: this is the photon field.
+
+\begin{equation}
+\label{gauge invariance}
+A'_\mu = A_\mu -\frac{1}{e}\partial_\mu \alpha(x)
+\end{equation}
+
+Redefining then the field derivative $D_\mu = \partial_\mu - ieA_\mu$, we obtain the invariant Lagrangian:
+
+\begin{equation}
+\mathcal{L} = -i \bar{\psi(x)} \gamma^{\mu} D_\mu \psi(x)  - m\bar{\psi(x)} \psi = -i \bar{\psi(x)} (\gamma^{\mu} \partial_\mu  - m)\psi(x) + e\bar{\psi}  \gamma^{\mu} \psi A_\mu
+\end{equation}
+
+In this Lagrangian the first term describes the behaviours of a free fermion and the second term,
+$\bar{\psi}  \gamma^{\mu} \psi A_\mu$, the electromagnetic interaction through the photon represented by $A_\mu$.
+
+
+\section{Anomalies}
+
+{\em Possible addition around Sec.~\ref{sec:exp_status}.}
+
+Various anomalies were observed in the past years with respect to SM predictions.
+This section reports a brief review of these anomalies, limiting to $B$ physics.
+
+The measurement of the CKM matrix elements $V_{ub}$ and $V_{cb}$
+is vital for analysis in the flavour sector. Both these quantities can be measured
+using tree level transitions, which are assumed to be free from NP.
+Decays such as $B\to D^{*}\ell\nu$ are used to measure $V_{cb}$
+and $B\to\pi\ell\nu$ for $V_{ub}$ as well as inclusive decays.
+several measurements, mainly from BaBar and LHCb~\cite{Aaij:2015bfa,}, observe a discrepancy
+at $2\sigma$ level between the values found using the exclusive and inclusive approaches.
+This has recently increased to $3\sigma$ level due to improvements in form factor calculations~\cite{Crivellin:2014zpa}.
+NP can modify the values of the CMK matrix elements as described in Ref.~\cite{}.
+
+Secondly a series of anomalies was found in recent LHCb measurements of semileptonic $B$ decays.
+The branching ratios of the $\decay{B}{K\mumu}$, $\decay{B}{\Kstarz\mumu}$
+and $\decay{\Bs}{\phi\mumu}$~\cite{LHCB-PAPER-2014-006,LHCB-PAPER-2013-017,LHCB-PAPER-2013-019}
+are all found to be slightly below the predicted values. Although taken by itself each measurements
+does not present relevant discrepancies, the systematic deviation seems to indicate a more general picture.
+Angular analysis were also performed for these decays and, while most observables are found
+to agree with SM predictions, the measurement of the $P'_5$ observable in $\decay{B}{\Kstarz\mumu}$
+resulted in a local $3.7\sigma$ deviation with respect to predictions~\cite{}.
+At the same time the measurement of the $R_K$ ratio, between the branching fractions
+of the \Bz\to\Kstarz\mumu and \Bz\to\Kstarz\ee decays, showed a $2.6\sigma$ deviation from unity,
+indicating the possibility of a violation of lepton flavour universality.
+Authors of Ref.~\cite{Altmannshofer:2014rta} performed a global fit taking into account of several measurements
+and found that a model with a NP component in $C_9$ is preferred with respect to the SM at $4.3\sigma$ level.
+Finally, one more discrepancy linked to this picture is the branching fraction of the $h\to\mu\tau$ decay,
+which is found to be different from zero at $2.4\sigma$ level.
+
+
+ 
+
+
+
+
+
+
+
+
