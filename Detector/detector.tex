@@ -459,3 +459,230 @@ with and without constraints using the \theverbbox  tool. }
 \label{fig:DTFeffect}
 \end{figure}
 
+\section{Validation of hadronic processes in the simulation}
+
+%As a service work for the experiment I have been working on the validation of the simulation of hadronic processes.
+Particle-antiparticle asymmetries are of major interest for LHCb and detection efficiencies are usually obtained from simulation.
+It is therefore important, in order to limit systematic uncertainties, to have a model that parametrises
+correctly the cross sections of particles and antiparticles or at least their ratio.
+
+The LHCb simulation software propagates particles though the detector using the $\textsc{Geant4}$ toolkit~\cite{Alves:2008zz}.
+This offers a variety of models for physics processes over a wide range of energies for both electromagnetic and strong interactions.
+Given a combination of projectile, target and energy there can be several models applicable with different reliability
+and computational costs. $\textsc{Geant4}$ provides a number of pre-packaged Reference Physics Lists each representing a complete
+and consistent collection of models chosen to be appropriate for a given use case. In LHCb mainly two hadronic physics
+lists are considered:
+
+\begin{itemize}
+\item {\bf LHEP} (Low and High Energy Parametrisation): based on a parametrised modelling of all hadronic interactions for all particles.
+This list combines the High Energy Parametrised model (HEP) and the low energy one (LEP). There is a sharp switch from the low to the
+high energy model at 25 GeV. The modelling of elastic scattering off a nucleus and of nuclear capture also proceeds via parametrised models.
+%
+\item { \bf FTFP$\_$BERT}: includes the following models:
+%
+\begin{itemize}
+%
+\item Bertini cascade model (BERT)~\cite{Bertini:1963zzc}, which simulates the intra-nuclear cascade, followed by pre-equilibrium 
+and evaporation phases of the residual nucleus, for protons, neutrons, pions and kaons interaction with 
+nuclei at kinetic energies below 9.9 GeV. The Bertini model produces more secondary neutrons and protons
+than the LEP model, yielding a better agreement with experiment data.
+%The Bertini-style cascade implements the inelastic scattering of hadrons by nuclei. Nucleons, pions, kaons and hyperons from 0 to 15 GeV may be used as projectiles in this model. Final state hadrons are produced by a classical cascade consisting of individual hadron-nucleon scatterings which use free-space partial cross sections, corrected for various nuclear medium effects. The target nucleus is modeled as a set of 1, 3 or 6 spherical shells, in which scattered hadrons travel in straight lines until they are reflected from or transmitted through shell boundaries.
+\item FTFP model, which implements high energy inelastic scattering of hadrons by nuclei using
+the FRITIOF model of B. Andersson et al~\cite{Andersson:1992iq}.
+%It forms QCD strings by pairing a parton from the projectile hadron with a parton from a target nucleon. The strings are then excited by momentum exchange which can result in diffraction of the target or projectile or both. String masses are sampled and then the strings are decayed using the LUND fragmentation model. Tuning of the model parameters allow strings to be sampled down to quite low masses, which make the FTF model applicable down to 3 GeV. After the initial collision, the highly excited remnant nucleus is de-excited using the G4Precompound model. The FTFP model may be applied to incident nucleons, pions, kaons and hyperons from 3 GeV to several TeV.
+%
+The change between the two models happens with a linear shift from BERT to FTF that starts at 4 GeV and ends at 5 GeV.
+%
+\end{itemize}
+%
+\end{itemize}
+
+Figure~\ref{fig:models} summarises the composition of the different models.
+%
+\begin{center}
+\begin{figure}[b]
+\centering \includegraphics[width=0.9\textwidth]{detector/figs/validation/models.png}
+\caption{Diagram of LHEP, FTFP$\_$BERT and QGSP$\_$BERT models composition as a function of energy.}
+\label{fig:models}
+\end{figure}
+\end{center}
+%
+When two models overlap in an energy interval the choice of the model
+for each interaction is made using a random number: the probability to select each model varies linearly
+from 0 to 100\% over the overlap range. Because of the differences of the two models in the overlap region,
+unphysical discontinuities can be produced as a function of energy.
+
+\subsection{Geometry and interaction probability}
+\label{GeomandPint}
+
+The results presented in the following sections are produced using the version v45r0 of the full LHCb framework
+for simulation, Gauss~\cite{LHCb-PROC-2011-006}, interfaced to $\textsc{Geant4}$ v95r2p1.
+A simple geometry setup is used in order to be able to calculate in a clean way the interaction cross sections in a specific material.
+This is constituted by a series of rectangular boxes filled with different materials (Aluminium, Silicon and Beryllium) placed on the projectile's trajectory.
+For each material three boxes are defined with different thicknesses (1mm, 10mm, 50mm). These thicknesses were chosen to
+represent a ballpark estimation of the LHCb detector interaction lenght.
+
+The simplest quantity available to extract the cross section is the interaction probability ($P_{int}$), defined as:
+%
+\begin{equation}
+P_{int} = \frac{N_{int}}{N_{tot}},
+\end{equation}
+%
+where $N_{int}$ is the number of particles which interacted in the material and $N_{tot}$ is the number of generated particles.
+%, usually set at 100k for this analysis.
+As $\textsc{Geant4}$ provides an ID for the end process of a particle (e.g. 121 for inelastic interaction, 111 for elastic) it is possible to distinguish
+the inelastic and elastic probabilities of interaction and therefore cross sections.
+
+To compare simulation and data the cross section and $P_{int}$ are linked by the following formula valid for thin layers:
+%
+\begin{equation}
+\label{sigmaPint}
+\sigma_{int} = \frac{A}{\rho N_A \Delta x} \cdot P_{int},
+\end{equation}
+%
+where $\rho$ is the density of the material and A is its mass number, $\Delta x$ is the thickness of the considered layer and $N_A$ is the Avogadro number.
+
+\subsection{PDG prediction}
+
+In the PDG book~\cite{PDG2014} cross sections of protons and neutrons are parametrised as:
+%
+\begin{align} 
+\sigma_{tot}^{ab} = Z^{ab} + B^{ab}log^2(s/s_M) + Y^{ab}_1(s_M/s)^{\eta_1} - Y^{ab}_2(s_M/s)^{\eta_2}, \\
+\sigma^{\bar{a}b}_{tot} = Z^{ab} + B^{ab}log^2(s/s_M) + Y^{ab}_1(s_M/s)^{\eta_1} + Y^{ab}_2(s_M/s)^{\eta_2},
+\end{align}
+%
+where $s_M = (m_a + m_b + M)^2$ and $B^{ab} = \lambda \pi ( \frac{\hbar c }{M}  )^2$. Some of the constants in these equations are universal
+and valid for any kind of collision: M = 2.15, $\eta_1$ = 0.462, $\eta_2$ = 0.551, $\lambda$ = 1 (for p, n and $\gamma$) and 1.63 (for $d$).
+The other ones are characteristic of each type of collision and are listed in Tab.~\ref{PDGvalues}. In these formulae the particle-antiparticle
+asymmetry is due to the last term which has opposite sign in the two equations. This term becomes less and less important with increasing energies.
+Therefore a net asymmetry is found at low energies, while the cross sections tend to a common point at high energy and continue increasing logarithmically.
+%
+\begin{center}
+\begin{table}[b]
+\centering
+\begin{tabular}{ c | c | c | c }
+Proj / Targ     &    $Z^{ab}$    &    $Y_1^{ab}$    &    $Y_2^{ab}$ \\
+\hline
+$\bar{p}$,$p$ / $p$     &    34.71   &     12.72     &    7.35 \\
+$\pi^\pm$ / $p$           &     19.02  &      9.22    &   1.75  \\
+$K^\pm$ / $p$             &     16.56  &      4.02      &    3.39 \\
+$K^\pm$ / $n$              &     16.49 &    3.44        &    1.82 \\
+$\bar{p}$,$p$ / $n$     &    35.00   &   12.19       & 6.62 \\
+\end{tabular}
+\caption{PDG values\cite{PDG2014} for the constants $Z^{ab}$, $Y^{ab}_1$ and $Y^{ab}_2$, 
+which parametrise hadronic cross sections. }
+\end{table}
+\label{PDGvalues}
+\end{center}
+
+
+\subsection{Results}
+
+This section reports antiparticle over particle cross sections and ratios
+compared where available with PDG predictions and with data from the COMPAS experiment.
+%
+Figure~\ref{fig:AllXsec} shows the probability of interaction for protons and anti-protons in 1mm of Aluminium
+using the FTFP$\_$BERT and LHEP models compared with COMPAS data.
+%In this plot the colour of the marker indicates the material and the shape indicates the projectile. 
+and Fig.~\ref{fig:ProtonsRatios} shows the ratios of $\sigma^{tot}_{\bar{p}} / \sigma^{tot}_{p}$
+together with the PDG prediction. 
+%
+A difference of 40\% is found between the two considered models for 1 GeV incoming anti-protons.
+This difference becomes negligible at higher energies. The discrepancies between the two physics lists
+for kaons and pions are of a few percents (2-3\%) and usually constant with the energy. From the comparison 
+with data and PDG predictions it can be qualitatively concluded that the FTFP$\_$BERT model gives a better
+description of hadronic interactions at low energies, while both models give good results at high energy, above ~10~\gev.
+
+The tool developed for this studied is not limited to cross-section but can also give information on other simulated quantities:
+as an example Fig.~\ref{fig:IDs_valdation} shows a composition between the types of particles generated in inelastic
+collisions of protons and anti-protons into Aluminium using different models. Different physics lists can give different results.
+For example the LHEP model does not produce photons in inelastic collisions. However, it is difficult to use these
+quantities for validation as there is no data available for comparison.
+
+
+%\begin{table}[h!]
+%\begin{center}
+%\label{XsecRatios}
+%\begin{tabular}{ | c | c | c | c | }
+%\hline
+%& $|p|$ (GeV) & LHEP & FTFP$\_$BERT \\ \hline
+%\multirow{5}{*}{ \begin{sideways} ratio $\bar{p}$/$p$ \end{sideways}}
+%& 1 GeV & $3.59 \pm 0.12$  & $1.82 \pm 0.06$  \\
+%& 5 GeV & $1.41 \pm 0.05$  & $1.19 \pm 0.04$  \\
+%& 10 GeV & $1.25 \pm 0.04$  & $1.15 \pm 0.04$  \\
+%& 50 GeV & $1.11 \pm 0.04$  & $1.07 \pm 0.04$  \\
+%& 100 GeV & $1.02 \pm 0.04$  & $1.07 \pm 0.04$  \\ \hline
+%\multirow{5}{*}{ \begin{sideways} ratio $\pi^{-}$/$\pi^{+}$ \end{sideways}}
+%& 1 GeV & $1.10 \pm 0.03$  & $0.98 \pm 0.03$  \\ 
+%& 5 GeV & $1.07 \pm 0.03$  & $1.00 \pm 0.03$  \\ 
+%& 10 GeV & $1.06 \pm 0.03$  & $0.95 \pm 0.03$  \\ 
+%& 50 GeV & $1.06 \pm 0.03$  & $0.97 \pm 0.03$  \\ 
+%& 100 GeV & $0.97 \pm 0.04$  & $1.02 \pm 0.03$  \\ \hline
+%\multirow{5}{*}{ \begin{sideways} ratio $K^{-}$/$K^{+}$ \end{sideways}}
+%& 1 GeV & $2.68 \pm 0.10$  & $1.61 \pm 0.05$  \\ 
+%& 5 GeV & $1.37 \pm 0.05$  & $1.21 \pm 0.04$  \\ 
+%& 10 GeV & $1.22 \pm 0.04$  & $1.16 \pm 0.04$  \\ 
+%& 50 GeV & $1.13 \pm 0.04$  & $0.99 \pm 0.03$  \\ 
+%& 100 GeV & $0.94 \pm 0.04$  & $1.05 \pm 0.04$  \\ \hline
+%\end{tabular}
+%\caption{Ratio of the total probability of interaction of antiparticle over particle for different energies and particles.}
+%\end{center}
+%\end{table}
+
+\begin{center}
+\begin{figure}[h]
+%\centering \includegraphics[width=0.8\textwidth]{Detector/figs/validation/Xsec_PosBERT1mm.pdf}
+%\caption{Cross sections for $p$, $K^+$ and $\pi^+$  in 1mm of Al, Si and Be as a function of energy.}
+\centering \includegraphics[width=0.8\textwidth]{Detector/figs/validation/General/pCompData_10mm.pdf}
+\caption{Probability of interaction for protons and anti-protons in Aluminium as a function of the projectile momentum.
+Two physics lists are used to generate events that can be compared with data from the COMPASS experiment.}
+\label{fig:AllXsec}
+\end{figure}
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.8\textwidth]{Detector/figs/validation/ProtonsRatio_2.pdf}
+\caption{Ratio of antiproton over proton total interaction cross section as a function of energy compared with PDG prediction.}
+\label{fig:ProtonsRatios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.9\textwidth]{Detector/figs/validation/perc_pbarcomp.pdf}
+\includegraphics[width=0.9\textwidth]{Detector/figs/validation/perc_pcomp.pdf}
+\caption{Composition of secondary particles produced in 100 GeV protons (left) and anti-protons (right) collisions in Al.}
+\end{figure}
+\label{fig:IDs_valdation}
+\end{center}
+
+\clearpage
+\section{Radiation length}
+
+It is important for many analysis to be aware of the material budget of the detector, for example to estimate
+the amount of multiple scattering. In \textsc{Geant4} particles are propagated in steps
+through the detector and for each step the framework analyses the geometry to understand in what material
+the particle is and modifies its trajectory accordingly. A tool was developed where neutrinos are
+used as probes to scan the detector summing the radiation length at each step up to a certain points.
+Neutrinos are used as they do not bend in magnetic field and do not interact with the detector.
+Thin air planes are inserted after each sub-detector. When these are traversed by the neurinos the information
+about the cumulated radiation and interaction length is saved. In this way it is possible to obtain maps of
+the detector as the one shown in Fig.~\ref{fig:radlmap}. Finally, Fig.~\ref{fig:cumradlZ} shows the average
+radiation length as a function of the distance from the interaction point.
+
+
+\begin{center}
+\begin{figure}[h]
+\centering \includegraphics[width=0.8\textwidth]{Detector/figs/validation/radlenght/radlgh_prof_ID1.pdf}
+\caption{Map of cumulative radiation length traversed by a particle starting from
+the interaction point up to the end of the VeLo.}
+\label{fig:radlmap}
+\end{figure}
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.8\textwidth]{Detector/figs/validation/radlenght/cuminterLength_vs_Z.pdf}
+\caption{Average cumulative radiation length as a function of the horizontal 
+distance from the interaction point.
+}
+\label{fig:cumradlZ}
+\end{figure}
+\end{center}
+
+
