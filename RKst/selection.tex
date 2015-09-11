@@ -1,7 +1,7 @@
-\chapter{Selection}
+\section{Selection}
 \label{sec:RKst_selection}
 
-The selection process, described in the following subsections,
+The selection process, described in the following subsubsections,
 is divided into several steps. 
 First of all events have to fall into the detector acceptance, produce hits and be selected
 on the basis of quality features, such as $\chi^2$ of tracks and vertices, this stage is
@@ -41,7 +41,7 @@ invariant mass for the electron (top) and muonic (bottom) channels in 2012 data.
 \end{figure}
 
 
-\section{Trigger and Stripping }
+\subsection{Trigger and Stripping }
 \label{sec:RKst_trigstripping}
 
 Events are triggered for the $\mu\mu$ and the $ee$ channels by the trigger lines
@@ -175,7 +175,7 @@ variables. The {\verb GhostProb } quantity describes the probability of a track 
 By construction cutting at 0.4 removes $(1 - 0.4)\cdot 100 = 60\%$ of fake tracks.
 For details about the definition of the variables used see Ref.~\cite{Loki_twiki}.
 
-\section{PID}
+\subsection{PID}
 \label{sec:PID}
 
 After preselection there still are high levels of misreconstructed background.
@@ -237,14 +237,14 @@ one can maximise the correct ID probability and minimise at the same time the mi
 %because this cut was found to be unacceptably inefficient.
 
 
-\section{Peaking backgrounds }
+\subsection{Peaking backgrounds }
 
 Cuts are applied in order to remove background sources due to specific decays.
 These types of backgrounds usually peak in some variable because of their mass
 or distinctive kinematic properties and therefore they can be removed without significant
-signal efficiency loss. In the following sections are described the main sources of peaking background.
+signal efficiency loss. In the following subsections are described the main sources of peaking background.
 
-\subsection{Charmonium vetoes}
+\subsubsection{Charmonium vetoes}
 
 Charmonium resonances such as \jpsi and \psitwos peak in \qsq.
 The choice of \qsq binning described in Sec.~\ref{sec:RKst_q2_choice}
@@ -262,7 +262,7 @@ $1.1 < \qsq < 6$~\gevgevcccc interval and 1.8\% of \psitwos events leak above
 15~\gevgevcccc. The contribution from these candidates is modelled in the fit. 
 
 
-\subsection{$\phi$ veto}
+\subsubsection{$\phi$ veto}
 
 It can happen that a kaon from the decay $B_s \rightarrow \phi \ll$, where the $\phi$ decays in two kaons,
 is mis-identified as a pion and therefore causes the $\phi$ to be reconstructed as a $\Kstarz$. This results in
@@ -293,7 +293,7 @@ where the peak due to the $B^+ \to K^+ \mumu$ decay is visible. }
 \end{center}
 
 
-\subsection{$\Bu \to K^+ \ll$ plus a random pion}
+\subsubsection{$\Bu \to K^+ \ll$ plus a random pion}
 
 Some $\Bu \to K^+ \ll$ decays can contaminate the upper \Bz mass sideband if they are combined
 with a soft pion from somewhere else in the event and therefore reconstructed as a \Bz decay.
@@ -305,7 +305,7 @@ but they can cause problems when using sidebands events to train the neural netw
 An effective veto for this decay was found to be max$(m_{K\ell\ell},m_{(K\to\pi)\ell\ell}) < 5100$~\mevcc,
 which results in 95\% background rejection while keeping 99\% signal efficiency.
 
-\subsection{$\Lambda_b$ decays}
+\subsubsection{$\Lambda_b$ decays}
 
 $\Lb\to\jpsi\Lz$ decays are unlikely to be reconstructed as $\Bz \to \Kstarz \ll$ because
 the \Lz is long-lived and decays further in the detector with a separate vertex.
@@ -348,7 +348,7 @@ therefore one cannot eliminate this mis-reconstructed background which is then m
 (for details see Sec.~\ref{sec:RKst_misreco_fit}).
 
 
-\section{Multivariate analysis}
+\subsection{Multivariate analysis}
 \label{sec:RKst_mva}
 
 The final selection is performed using a Neural Network classifier (NN) based on the NeuroBayes
@@ -477,7 +477,7 @@ plots of the average NN output as a function of the \Bz mass on sideband data an
 The distributions are flat showing that no significant correlation is present.
 
 
-\section{MVA optimisation}
+\subsection{MVA optimisation}
 
 In order to optimise the cut on our neural network output the expected signal significance,
 $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, was maximised.

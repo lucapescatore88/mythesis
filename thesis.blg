@@ -1,74 +1,53 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: abstract.aux
-A level-1 auxiliary file: Introduction/introduction.aux
-A level-1 auxiliary file: Detector/detector.aux
-A level-1 auxiliary file: Lmumu/introduction.aux
-A level-1 auxiliary file: Lmumu/selection.aux
-A level-1 auxiliary file: Lmumu/fit.aux
-A level-1 auxiliary file: Lmumu/efficiency.aux
-A level-1 auxiliary file: Lmumu/systematics.aux
-A level-1 auxiliary file: Lmumu/afbmethod.aux
-A level-1 auxiliary file: Lmumu/ang_fit_strategy.aux
-A level-1 auxiliary file: Lmumu/ang_sys_and_results.aux
-A level-1 auxiliary file: RKst/introduction.aux
-A level-1 auxiliary file: RKst/selection.aux
-A level-1 auxiliary file: RKst/fit.aux
-A level-1 auxiliary file: RKst/efficiency.aux
-A level-1 auxiliary file: RKst/systematics.aux
-A level-1 auxiliary file: RKst/result.aux
-A level-1 auxiliary file: conclusions.aux
 The style file: JHEP.bst
-A level-1 auxiliary file: Lmumu/angularAppendix.aux
-A level-1 auxiliary file: Lmumu/appMCdataComp.aux
-A level-1 auxiliary file: Lmumu/appendix_Lb_sys.aux
-A level-1 auxiliary file: RKst/app_MC_fits.aux
-A level-1 auxiliary file: RKst/app_extra.aux
 Database file #1: main.bib
 Database file #2: lmumu.bib
 Database file #3: LHCb-PAPER.bib
 Database file #4: LHCb-TDR.bib
 Database file #5: LHCb-CONF.bib
 Database file #6: LHCb-DP.bib
-You've used 99 entries,
+Warning--I didn't find a database entry for ""
+You've used 114 entries,
             2195 wiz_defined-function locations,
-            1236 strings with 19468 characters,
-and the built_in function-call counts, 32025 in all, are:
-= -- 3393
-> -- 863
+            1311 strings with 21318 characters,
+and the built_in function-call counts, 37099 in all, are:
+= -- 3930
+> -- 1006
 < -- 1
-+ -- 327
-- -- 228
-* -- 2396
-:= -- 4202
-add.period$ -- 105
-call.type$ -- 99
-change.case$ -- 98
++ -- 380
+- -- 266
+* -- 2771
+:= -- 4862
+add.period$ -- 119
+call.type$ -- 114
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 1845
-empty$ -- 2998
-format.name$ -- 228
-if$ -- 8408
+cite$ -- 114
+duplicate$ -- 2134
+empty$ -- 3461
+format.name$ -- 266
+if$ -- 9737
 int.to.chr$ -- 0
-int.to.str$ -- 99
-missing$ -- 371
-newline$ -- 305
-num.names$ -- 99
-pop$ -- 396
+int.to.str$ -- 114
+missing$ -- 429
+newline$ -- 350
+num.names$ -- 114
+pop$ -- 448
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1426
+skip$ -- 1667
 stack$ -- 0
-substring$ -- 1743
-swap$ -- 899
+substring$ -- 2048
+swap$ -- 1048
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 218
-width$ -- 101
-write$ -- 1076
+while$ -- 252
+width$ -- 117
+write$ -- 1236
+(There was 1 warning)

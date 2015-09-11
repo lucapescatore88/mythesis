@@ -146,9 +146,9 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 \setstretch{1} 
 \thispagestyle{empty}%BLANK PAGE
 ~
-\newpage
-\thispagestyle{empty}%BLANK PAGE
-~
+%\newpage
+%\thispagestyle{empty}%BLANK PAGE
+%~
 \newpage
 
 \pagenumbering{roman} %INTRO
@@ -179,11 +179,11 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 %%%%%%%%%%%%%%%%%%%%%% Preamble Formatting %%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%% Abstract %%%%%%%%%%
-\include{abstract}
+\input{abstract}
 %%%%%%%%%% Abstract %%%%%%%%%%
 
 \tableofcontents
-\clearpage\null\newpage
+%\clearpage\null\newpage
 
 %\listoftables
 %\clearpage
@@ -196,50 +196,50 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 %\chaptermark{DEFINITIONS OF ACRONYMS}
 %\input{acronym.tex}
 
-%\cleardoublepage
+\cleardoublepage
 \pagenumbering{arabic}
 \setstretch{1.5} %Officially should be line spacing 2. But I think it looks too ugly
 \linenumbers %Uncomment for line numbering
 
 %%%%%%%%%% Main Body Text %%%%%%%%%
 
-\include{Introduction/introduction}
+\input{Introduction/introduction}
 
-\include{Detector/detector}
+\input{Detector/detector}
 
 %%%%%%%%%%%%%  Lb->Lmumu
 
-\cleardoublepage
-\part{Differential branching fraction and angular analysis of the rare \Lb\to\Lz\mumu decay}
-\label{par:Lmumu}
-\cleardoublepage
-\include{Lmumu/introduction}
-\include{Lmumu/selection}
-\include{Lmumu/fit}
-\include{Lmumu/efficiency}
-\include{Lmumu/systematics}
-%\include{Lmumu/summaryBR}
-\include{Lmumu/afbmethod}
-\include{Lmumu/ang_fit_strategy}
-\include{Lmumu/ang_sys_and_results}
+%\cleardoublepage
+%\part{Differential branching fraction and angular analysis of the rare \Lb\to\Lz\mumu decay}
+%\label{par:Lmumu}
+%\cleardoublepage
+\input{Lmumu/introduction}
+\input{Lmumu/selection}
+\input{Lmumu/fit}
+\input{Lmumu/efficiency}
+\input{Lmumu/systematics}
+%\input{Lmumu/summaryBR}
+\input{Lmumu/afbmethod}
+\input{Lmumu/ang_fit_strategy}
+\input{Lmumu/ang_sys_and_results}
 
 
 %%%%%%%%%%%%%  RKst
 
-\cleardoublepage
-\part{The $R_{\Kstarz}$ analysis}
-\cleardoublepage
+%\cleardoublepage
+%\part{The $R_{\Kstarz}$ analysis}
+%\cleardoublepage
 \label{par:RKst}
-\include{RKst/introduction}
-\include{RKst/selection}
-\include{RKst/fit}
-\include{RKst/efficiency}
-\include{RKst/systematics}
-\include{RKst/result}
+\input{RKst/introduction}
+\input{RKst/selection}
+\input{RKst/fit}
+\input{RKst/efficiency}
+\input{RKst/systematics}
+\input{RKst/result}
 
 %%%%%%%%%%%%%%%%%%%%
 
-\include{conclusions}
+\input{conclusions}
 
 
 \setstretch{1}
@@ -253,12 +253,12 @@ in $\bquark\to\squark\ell^+\ell^-$ transitions \\
 %%%%%%%%%% Appendix %%%%%%%%%%
 \appendix
 %\part{Appendices}
-\include{Lmumu/angularAppendix}
-%\include{Lmumu/appendixNNImportance}
-\include{Lmumu/appMCdataComp}
-\include{Lmumu/appendix_Lb_sys}
-\include{RKst/app_MC_fits}
-\include{RKst/app_extra}
+\input{Lmumu/angularAppendix}
+%\input{Lmumu/appendixNNImportance}
+\input{Lmumu/appMCdataComp}
+\input{Lmumu/appendix_Lb_sys}
+\input{RKst/app_MC_fits}
+\input{app_extra}
 
 
 \end{document} 

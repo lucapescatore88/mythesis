@@ -1,0 +1,117 @@
+% $Id: title-LHCb-PAPER.tex 61931 2014-10-14 09:51:37Z roldeman $
+% ===============================================================================
+% Purpose: LHCb-PAPER journal paper title page template
+% Author: 
+% Created on: 2010-09-25
+% ===============================================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\pagenumbering{roman}
+
+% Header ---------------------------------------------------
+\vspace*{-1.5cm}
+\centerline{\large EUROPEAN ORGANIZATION FOR NUCLEAR RESEARCH (CERN)}
+\vspace*{1.5cm}
+\hspace*{-0.5cm}
+\begin{tabular*}{\linewidth}{lc@{\extracolsep{\fill}}r}
+\ifthenelse{\boolean{pdflatex}}% Logo format choice
+{\vspace*{-2.7cm}\mbox{\!\!\!\includegraphics[width=.14\textwidth]{lhcb-logo.pdf}} & &}%
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.12\textwidth]{lhcb-logo.eps}} & &}%
+\\
+ & & CERN-PH-EP-2015-078 \\  % ID 
+ & & LHCb-PAPER-2015-009 \\  % ID 
+ & & 23 March 2015  \\
+\end{tabular*}
+
+\vspace*{1.5cm}
+
+% Title --------------------------------------------------
+{\bf\boldmath\huge
+\begin{center}
+  Differential branching fraction
+  and angular analysis of
+  \decay{\Lb}{\Lz\mumu} decays
+\end{center}
+}
+
+
+\vspace*{0.7cm}
+
+% Authors -------------------------------------------------
+\begin{center}
+The LHCb collaboration\footnote{Authors are listed at the end of this paper.}
+\end{center}
+
+%\vspace{\fill}
+
+% Abstract -----------------------------------------------
+\begin{abstract}
+  \noindent
+  The differential branching fraction of the rare decay
+  \decay{\Lb}{\Lz\mumu} is measured as a function of \qsq, the square
+  of the dimuon invariant mass.  The analysis is performed using
+  proton-proton collision data, corresponding to an integrated
+  luminosity of 3.0\invfb, collected by the \lhcb experiment. 
+  Evidence of signal is observed in the \qsq region below the square
+  of the \jpsi mass. Integrating
+  over $15 < \qsq < 20$ \gevgevcccc 
+ the branching fraction
+ is measured as
+\begin{equation}
+\deriv\BF(\decay{\Lb}{\Lz\mumu})/\deriv\qsq = (1.18 \;^{+\,0.09}_{-\,0.08} \pm 0.03 \pm 0.27 )
+\times 10^{-7}\;(\gevgevcccc)^{-1},
+\nonumber
+\end{equation}
+ \noindent where the uncertainties are statistical, 
+ systematic and due to the normalisation mode,
+ \decay{\Lb}{\jpsi\Lz}, respectively.
+ In the \qsq\ intervals where the signal is observed, angular
+ distributions are studied and the forward-backward asymmetries
+ in the dimuon ($A_{\rm FB}^{\ell}$) and hadron ($A_{\rm FB}^{h})$ systems
+ are measured for the first time.
+ In the range $15 < \qsq < 20$ \gevgevcccc they are found to be
+\begin{equation}
+\begin{split}
+A_{\rm FB}^{\ell} & = -0.05 \; \pm 0.09 \; \text{(stat)} \; \pm  0.03 \; \text{(syst)} \text{\;and} \\
+A_{\rm FB}^{h} & = -0.29 \; \pm 0.07 \; \text{(stat)} \; \pm  0.03 \; \text{(syst)}.
+\end{split}
+\nonumber
+\end{equation}
+
+\end{abstract}
+
+\vspace*{1.0cm}
+
+\begin{center}
+  Submitted to JHEP
+\end{center}
+
+\vspace{\fill}
+
+{\footnotesize 
+\centerline{\copyright~CERN on behalf of the \lhcb collaboration, licence \href{http://creativecommons.org/licenses/by/4.0/}{CC-BY-4.0}.}}
+\vspace*{2mm}
+
+\end{titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  EOD OF TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  empty page follows the title page ----
+\newpage
+\setcounter{page}{2}
+\mbox{~}
+
+\cleardoublepage
+
+
+
+
+
+
+

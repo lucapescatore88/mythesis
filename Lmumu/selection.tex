@@ -1,27 +1,29 @@
-\chapter{Selection}
+\section{Selection}
 \label{sec:Lb_selection}
 
-The reconstruction of $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ candidates begins with the application of
-requirements on basic kinematic properties as the \pt of the final particles and quality requirements
-for the track and vertices. % from which the particles are derived.
-The selection described in this chapter aims to first form a dimuon candidate from two oppositely changed muons. 
+This section described the requirements applied to reconstruct $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ candidates 
+The selection procedure is divided into two steps: a pre-selection, where cuts are applied in order to be able to work
+with manageable datasets and a multivariate analysis (MVA) which combines information from several variables.
+At first good tracks are selected using requirements on basic kinematic properties, as the \pt of the final particles,
+and quality requirements, as the track \chisq.
+The selection then aims to first form a dimuon candidate from two oppositely changed muons. 
 Then, in events containing a dimuon candidate, two oppositely charged tracks are combined
-and retained as \Lz candidate, if they form a good vertex which is well separated
-from all primary vertices. In the final step, dimuon candidates are combined with \Lz candidates to form \Lb
+and retained as \Lz candidate if they form a good vertex which is well separated
+from all primary vertices. Finally the dimuon and \Lz candidates are combined to form \Lb
 baryons and requirements are set on the properties of this combination. 
-The selection procedure is divided in a pre-selection, where cuts are applied in order to be able to work
-with manageable samples and a multivariate analysis which combines information from several variables.
 
-\section{Pre-selection}
+
+\subsection{Pre-selection}
 \label{sec:Lb_stripping}
 
-The full list of pre.selection cuts is reported in Tab.~\ref{tab:Lb_stripping}.
+The full list of pre-selection cuts is reported in Tab.~\ref{tab:Lb_stripping}.
 In the table \chisqip is defined as the projected distance from a vertex
 divided by its uncertainty, for example the $\chisqip(primary) > n$ requirement on $\Lb$ means
-that the \Lb vertex is at least $\sqrt{n}$ standard deviations away from the primary vertex.
-Another useful quantity used to remove combinatorial background is a pointing variable
-defined as the angle between the direction of the particle momentum and
-the flight direction from its mother vertex, called DIRA. This allows the selection of particles with well-defined primary vertices.
+that the \Lb vertex must be at least $\sqrt{n}$ standard deviations away from the primary vertex.
+Another quantity, especially useful to remove combinatorial background, is a pointing variable called DIRA
+defined as the cosine of the angle between the direction of a particle's momentum and
+the flight direction from its mother vertex. Requiring a DIRA close to unity corresponds to 
+the selection of particles with well-defined origin vertices.
 Graphical representation of the \chisqip and DIRA variables are shown in Fig.~\ref{fig:IPandDIRA}.
 %
 \begin{figure}[hb]
@@ -31,14 +33,14 @@ Graphical representation of the \chisqip and DIRA variables are shown in Fig.~\r
 \label{fig:IPandDIRA}
 \end{figure}
 %
-The variable $\chi^2_{FD}$ represents the flight distance with respect to the origin vertex divided by its uncertainty. 
-The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ from the
-fit to tracks and vertices, which are used to quantify their quality.
-The {\verb GhostProb } quantity describes the probability of a track being fake.
+The variable $\chi^2_{FD}$ represents the flight distance of a particle from its origin vertex
+divided by its uncertainty. The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ 
+from the fit to tracks and vertices, which are used to quantify their quality.
+The \verb!GhostProb! quantity describes the probability of a track being fake.
 By construction, cutting at k, removes $(1 - k)\cdot 100 \%$ of fake tracks.
-The {\verb hasRich }, {\verb hasCalo } and {\verb isMuon } variables are binary indicators that
+The \verb!hasRich!, \verb!hasCalo! and \verb!isMuon! variables are binary indicators that
 the information from the RICH/calorimeter/muon detector is available for the track.
-Loose PID requirements are also applied in pre-selection to limit the size of the samples.
+Loose PID requirements on the proton are also applied in pre-selection.
 Details about the quantification of the PID quality are given in Sec.~\ref{sec:PID_perf}.
 %To quantify the probability of particular particle identity a combined likelihood is calculated
 %combining information from the calorimeters, the RICH and the Muon detectors.
@@ -52,7 +54,7 @@ Details about the quantification of the PID quality are given in Sec.~\ref{sec:P
 %quantifies the probability of a particle being a kaon rather than a pion.
 %For details about the definition of the variables used see Ref. \cite{Loki_twiki}.
 A large mass window is kept around the \Lb peak in order to be able
-to fit the sideband, to train the multivariate analysis and better constrain backgrounds.
+to fit the sideband, to train the multivariate analysis and to better constrain backgrounds.
 Rare candidates are selected by the \qsq region requirements described in Sec.~\ref{sec:Lb_q2choice},
 while resonant candidates are further constrained to have dimuon invariant mass
 in a 100~\mevcc~interval around the known \jpsi mass~\cite{PDG2014}.
@@ -88,14 +90,14 @@ the main one applies to long candidates and the one in parenthesis to downstream
 \end{table}
 
 
-\section{Neural Networks}
+\subsection{Neural Networks}
 \label{sec:Lb_mva}
 
 The final selection is performed using a neural network (NN) classifier based on the NeuroBayes 
 package~\cite{Feindt:2006pm,feindt-2004}. The input to the neural network consists of 14 variables carrying 
 information about the kinematics of the decay, the quality of tracks and vertices and the PID of the muons.
-The list of inputs to the neural network is reported in Tab.~\ref{tab:Lb_nnInputs}, together with information 
-about the importance of inputs.
+The list of inputs is reported in Tab.~\ref{tab:Lb_nnInputs}, together with information 
+about the importance of each input.
 %
 %In appendix \ref{app:MC_data_comp} we report comparisons between the variable used in data and Monte Carlo.
 %On data we extract the signal distribution using the sideband subtraction technique.
@@ -110,16 +112,8 @@ training for the two categories.
 %Further details on the definition and calculation of the
 %variables importance is available in Ref.~\cite{LHCb-ANA-2011-094}.
 The graphical representation of the correlation matrix is shown in Fig.~\ref{fig:Lb_nnCorrelation},
-where the variable with ID$ = 1$ is the NN output and the IDs of the other variables can be found
-in Tab.~\ref{tab:Lb_nnInputs}.
-
-The single most important variable used for downstream candidates is the transverse momentum of
-\Lz, which allows to reject random combination of tracks as these have preferentially low \pt.
-For long candidates instead the best variable is the $\chi^2$ from a kinematic fit that constrains
-the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices
-performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
-Other variables that contribute significantly are the \chisqip of \Lb, \Lz and muons,
-the separation between \Lb and \Lz vertices and, finally, the muon PID.
+where the variable with ID$ = 1$ is the neural network output and the IDs of the other variables are 
+listed in Tab.~\ref{tab:Lb_nnInputs}.
 
 The NN is trained using representative samples of signal and background.  A sample of simulated 
 $\Lb\to\Lz\mumu$ events is used as a proxy for the signal, while for the background a representative sample
@@ -135,8 +129,15 @@ sample by rejecting events in a 100~\mevcc~interval around the nominal \jpsi and
 %to the beam conditions in both years. %Only triggered events are used for training.
 A total of 30000 total events is used for the training from each sample. This corresponds $\sim 50\%$ of the available
 sideband data sample and $\sim 20\%$ of the simulated sample. The full simulated sample is not used
-as it will also be used to study efficiencies. For reproducibility the events are uniformly sampled over full simulated sample.
-% based on the event number (for reproducibility).
+as the same sample will also be used to study efficiencies. For reproducibility the events are sampled uniformly.
+
+The single most important variable used for downstream candidates is the transverse momentum of
+\Lz, which allows to reject random combination of tracks as these have preferentially low \pt.
+For long candidates instead the best variable is the $\chi^2$ from a kinematic fit that constrains
+the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices
+performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
+Other variables that contribute significantly are the \chisqip of \Lb, \Lz and muons,
+the separation between the \Lb and \Lz vertices and, finally, the muon PID.
 
 Figure~\ref{fig:Lb_nnDist} shows distributions of neural network output for the signal and background samples
 and purity, $P=N(\mathrm{signal})/N(\mathrm{background})$, as a function of the neural network output.
@@ -204,8 +205,8 @@ It can happen that too much information is given to the classifier, which become
 calculate the invariant mass of the candidates from the input variables.
 This can generate fake peaks and it is therefore important to check
 for correlations between the 4-body invariant mass and the NN output.
-Figure~\ref{fig:Lb_NNprofiles} reports the average NN output value as a function of
-4-body $m(K\pi\mu\mu)$ invariant mass for data and simulation. The distributions
+Figure~\ref{fig:Lb_NNprofiles} reports the average neural network output as a function of
+the 4-body $m(p\pi\mu\mu)$ invariant mass for data and simulation. The distributions
 are flat indicating that no significant correlation is present.
 %
 \begin{figure}
@@ -227,29 +228,29 @@ are flat indicating that no significant correlation is present.
 
 
 
-\section{MVA optimization}
+\subsection{MVA optimisation}
 \label{sec:Lb_mva_opt}
 
-In the high \qsq region, where the signal is already observed, the final requirement on the neural network output
+In the high \qsq region, where the signal is already observed, the requirement on the neural network output
 is chosen maximising the significance, $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, where
 $N_\mathrm{S}$ and $N_\mathrm{B}$ are the numbers of expected signal and background candidates respectively.
 $N_\mathrm{S}$ is derived from simulation but, as an arbitrary number of events can be generated, it
 needs to be normalised. To do this, the invariant mass distribution of real $\Lb\to\jpsi\Lz$ candidates
-is fit after preselection (including all requirements but MVA). This is possible as the peak of the resonant
-channel is already well visible after preselection. Then the resonant yield is scaled by the ratio
+is fit after pre-selection (including all requirements but MVA). This is possible as the peak of the resonant
+channel is already well visible before the MVA cut. The resonant yield is then scaled by the ratio
 of between the $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ branching fractions as measured 
 by LHCb on 2011 data 
 \begin{equation}
 \BR(\Lb\to\Lz\mumu) / \BR(\Lb\to\jpsi\Lz) =  1.54 \times 10^{-3}
 \end{equation}
 \noindent
-and the $\jpsi\to\mumu$ branching fraction. In summary:
+and by the $\jpsi\to\mumu$ branching fraction. In summary:
 \begin{equation}
 N_\mathrm{S} = N_\jpsi \cdot \frac{\BR(\Lb\to\Lz\mumu)}{\BR(\Lb\to\jpsi\Lz) \cdot \BR(\jpsi\to\mumu) }.
 \end{equation}
 %
 The number of expected background events instead is derived fitting the data
-sideband with an exponential and extrapolating under the singnal region.
+sideband with an exponential and extrapolating under the signal region.
 
 In the low \qsq region, where the signal is unobserved, the so called ``Punzi figure-of-merit",
 $N_{\mathrm{S}}/(n_\sigma/2+\sqrt{N_{\mathrm{B}}})$, is maximised~\cite{Punzi:2003bu}.
@@ -262,9 +263,9 @@ of signal efficiency versus background rejection are shown in Fig.~\ref{fig:Lb_R
 
 For final selection the neural network output is required to be larger than 0.76 for candidates in the high \qsq region
 and 0.97 for the low \qsq ones. Using these requirements the neural network retains approximately 96\% (66 \%)
-of downstream candidates and 97 \% (82 \%) of long candidates for the selection at high (low) \qsq, with respect to
+of downstream candidates and 97 \% (82 \%) of long candidates for the high (low) \qsq selection, with respect to
 the pre-selected samples. After full selection $\sim 0.5$\% of the events contain multiple candidates
-which are randomly rejected to keep only one candidate per event. 
+which are randomly rejected keeping only one candidate per event. 
 %
 %As reminder, in low \qsq region we start with much larger background than in high \qsq region.
 %Moreover, while background rejection looks similar at selected requirement, in terms of amount of background kept, there is huge difference. 
@@ -314,17 +315,17 @@ The optimal points on these curves are the closest ones to (1,1). }
 
 
 
-\section{Trigger}
+\subsection{Trigger}
 
-Finally, specific trigger lines are selected, corresponding to events triggered by the muons
-of the reconstructed candidate. This is denoted as Trigger On Signal (TOS).
-The trigger lines used in the analysis are shown in Tab.~\ref{tab:Lb_triggerLines}.
-The logical {\em or } of lines on the same lever is required and the logical {\em and }
-and lined in different levels.
-The L0Muon trigger requires hits in the muon detector and triggers if a muon with $\pt > 1.5 \gevc$ is identified.
-L0Dimuon imposes the same requirement on the sum of the transverse momenta of two tracks.
-The Hlt1TrackAllL0 performs a partial reconstruction of the events and applies basic requirements on the
-IP, $\chi^2$ and \pt of tracks; it triggers if the L0 decision is confirmed. Hlt1TrackMuon applies looser requirements 
+Finally, specific trigger lines are selected, corresponding to events triggered by muons
+which formed the reconstructed candidate. This is denoted as Trigger On Signal (TOS).
+The trigger lines used in the analysis are listed in Tab.~\ref{tab:Lb_triggerLines}.
+The logical {\em or } of the lines on the same lever is required and the logical {\em and }
+of those on different levels.
+The \verb!L0Muon! trigger requires hits in the muon detector and triggers if a muon with $\pt > 1.5 \gevc$ is identified.
+\verb!L0Dimuon! imposes the same requirement on the sum of the transverse momenta of two tracks.
+The \verb!Hlt1TrackAllL0! performs a partial reconstruction of the events and applies basic requirements on the
+IP, $\chi^2$ and \pt of tracks; it triggers if the L0 decision is confirmed. \verb!Hlt1TrackMuon! applies looser requirements 
 but in addition requires the \verb!isMuon! variable (see Sec.~\ref{sec:PID_perf}) to be true to limit the yield.
 Finally, at the Hlt2 level, a complete reconstruction is done and a multivariate analysis is used to identify decay 
 structures. One of the main variables used at this stage is the Distance Of Closest Approach (DOCA), which is 
@@ -336,15 +337,14 @@ required to be less than 0.2 mm to form a 2-body object.
 Trigger is always required to be due to tracks of the candidate itself.}
 \begin{tabular}{lc} \hline
 Trigger Level &  Lines   \\ \hline
-L0            & L0Muon  \\
-                & L0DiMuon \\ \hline
-Hlt1          & Hlt1TrackAllL0 \\ 
- %               & Hlt1DiMuonHighMass     \\
-                & Hlt1TrackMuon      \\ \hline
-Hlt2          & Hlt2Topo[2-4]BodyBBDT  \\
-              & Hlt2TopoMu[2-4]BodyBBDT\\
-              & Hlt2SingleMuon     \\
-              & Hlt2DiMuonDetached \\ \hline
+L0            & \verb!L0Muon!  \\
+                & \verb!L0DiMuon! \\ \hline
+Hlt1         & \verb!Hlt1TrackAllL0! \\ 
+               & \verb!Hlt1TrackMuon!      \\ \hline
+Hlt2        & \verb!Hlt2Topo[2-4]BodyBBDT!  \\
+              & \verb!Hlt2TopoMu[2-4]BodyBBDT!\\
+              & \verb!Hlt2SingleMuon!     \\
+              & \verb!Hlt2DiMuonDetached! \\ \hline
 \end{tabular}
 \label{tab:Lb_triggerLines}
 \end{table}
@@ -359,19 +359,21 @@ Hlt2          & Hlt2Topo[2-4]BodyBBDT  \\
 %\end{figure}
 
 
-\section{Background from specific decays}
+\subsection{Background from specific decays}
 
 Candidates from other decays can be reconstructed as the decays of interest if
 particles are not reconstructed of mis-identified.
 A survey of possible backgrounds concluded that the only physics background
-to take into account is coming from misreconstructed decays of \Bz to \KS with
-two muons, whether via \jpsi or not, where the \KS is reconstructed as a \Lz with a $p\rightarrow \pi$ identity
-swap and $m(p\pi)$ in the \Lz mass window. The lack of background from other decays is
+to take into account comes from misreconstructed decays of \Bz to \KS with
+two muons in the final state, whether via \jpsi or not, where the \KS is reconstructed 
+as a \Lz with a $p\rightarrow \pi$ identity swap.
+% and $m(p\pi)$ in the \Lz mass window. 
+The lack of background from other decays is
 mainly due to the particular topology of the \Lz decay, which is long-lived and decays at a displaced vertex.
 To study the effect of misreconstructed $\Bz\ra\jpsi\KS$ and $\Bz\ra\KS\mumu$ decays
 simulated samples are used. On data the $\Bz\ra\jpsi\KS$ contribution is clearly visible in the resonant channel mass distribution.
 This background is not suppressed with specific cuts in this analysis as its mass shape is sufficiently distinct
-the from \Lb signal, which allows to reliably model its contribution in the mass fits (see Sec.~\ref{sec:Lb_fit}).
+the from \Lb signal and its contribution can be reliably modelled in the mass fits (see Sec.~\ref{sec:Lb_fit}).
 For the rare case a rough estimate of the \KS background size is obtained using the yield in the resonant channel
 rescaled by the measured ratio between the rare and resonant branching fractions.
 Details are given in Sec.~\ref{sec:Lb_fit} and numbers of events predicted are reported in Tab.~\ref{tab:KSprediction}.
@@ -379,7 +381,7 @@ This contribution, although close to negligible is again considered in the fit.
 A possible pollution due to $B^{+} \ra\mumu K^{*+}$ decays, where the $K^{*+}$
 further decays into $\KS\pi$ is also investigated using a dedicated simulated sample and found to be negligible.
 Finally, \Lb\ra\jpsi\Lz events radiating photons from the final state, can escape the \jpsi veto
-and be reconstructed in the rare channel. Analysing simulated events it was found that the only
+and be reconstructed in the rare channel sample. Analysing simulated events it was found that the only
 contribution is in the closest \qsq interval to the \jpsi tail, $6 < \qsq < 8$~\gevgevcccc.
 In this interval 1.3\% of the $\Lb\to\jpsi\Lz$ candidates are reconstructed but only 0.06\%
 fall into the 4-body invariant mass window used for the fits. This corresponds to $\sim 6$
@@ -390,7 +392,7 @@ background is considered as absorbed in the combinatorial background.
 %not attempt to exclude this but it is again modelled in the fit.
 Figure~\ref{fig:peakingBkgs} shows the invariant mass distribution of simulated $\Lb\ra\jpsi\Lz$
 events falling into the rare \qsq region and the distribution of simulated $B^{+} \ra\mumu K^{*+}$
-events misreconstructed and $\Lb\ra\jpsi\Lz$ decays.
+events mis-reconstructed as $\Lb\ra\jpsi\Lz$ decays.
 %
 \begin{figure}
 \centering

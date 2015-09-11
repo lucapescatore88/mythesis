@@ -1,0 +1,89 @@
+\section{Candidate selection}
+
+ Candidate \decay{\Lb}{\Lz\mumu} (signal mode) and
+ \decay{\Lb}{\jpsi\Lz} (normalisation mode) decays are reconstructed
+ from a \Lz baryon candidate and either a dimuon or a \jpsi meson
+ candidate, respectively.  The \decay{\Lb}{\jpsi\Lz} mode, with the
+ \jpsi meson reconstructed via its dimuon decay, is a convenient
+ normalisation process because it has the same final-state particles
+ as the signal mode. 
+ Signal and normalisation channels are distinguished by the
+ \qsq interval in which they fall. 
+
+ The dimuon candidates are formed from two
+ well-reconstructed oppositely charged particles that are
+ significantly displaced from any PV, identified as muons and
+ consistent with originating from a common vertex.
+ 
+ Candidate \Lz decays are reconstructed in the
+ \decay{\Lz}{\proton\pim} mode from two oppositely charged tracks that
+ either both include information from the VELO (\textit{long}
+ candidates), or both do not include information from the VELO
+ (\textit{downstream} candidates). The \Lz candidates must also have a
+ vertex fit with a good \chisq, a decay time of at least 2\ps and an
+ invariant mass within 30\mevcc of the known \Lz
+ mass~\cite{Agashe:2014kda}.  For long candidates, charged particles
+ must have $\pt>0.25\gevc$ and a further requirement is imposed on the
+ particle identification (PID) of the proton using a likelihood
+ variable that combines information from the RICH detectors and the
+ calorimeters.
+
+ Candidate \Lb decays are formed from \Lz and dimuon candidates that
+ have a combined invariant mass in the interval 5.3--7.0\gevcc and
+ form a good-quality vertex that is well-separated from any PV.
+ Candidates pointing to the PV with which they are associated are
+ selected by requiring that the angle between the \Lb momentum vector
+ and the vector between the PV and the \Lb decay vertex, $\theta_D$,
+ is less than 14\mrad.  After the \Lb candidate is built, a kinematic
+ fit \cite{Hulsbergen:2005pu} of the complete decay chain is performed
+ in which the proton and pion are constrained such that the
+ $\proton\pim$ invariant mass corresponds to the known \Lz baryon
+ mass, and the \Lz and dimuon systems are constrained to originate
+ from their respective vertices. Furthermore, candidates falling in the
+ $8-11$ and $12.5-15$ \gevgevcccc ~\qsq intervals are excluded
+ from the rare sample as they are dominated by decays via
+ \jpsi and \psitwos resonances.
+
+ The final selection is based on a neural network classifier
+ \cite{Feindt:2006pm,feindt-2004}, exploiting 15 variables carrying
+ kinematic, candidate quality and particle identification information.
+ Both the track parameter resolutions and kinematic properties are different
+ for downstream and long \Lz decays and therefore a separate training is
+ performed for each category.  The signal sample used to train the neural
+ network consists of simulated \decay{\Lb}{\Lz\mumu} events, while the
+ background is taken from data in the upper sideband of the \Lb
+ candidate mass spectrum, between 6.0 and 7.0\gevcc. Candidates with a
+ dimuon mass in either the \jpsi or \psitwos regions ($\pm 100$\mevcc
+ intervals around their known masses)
+ are excluded from the training samples.  The variable that provides the greatest
+ discrimination in the case of long candidates is the \chisq from the
+ kinematic fit.  For downstream candidates, the \pt of the \Lz
+ candidate is the most powerful variable.  Other variables that
+ contribute significantly are: the PID information for muons; the
+ separation of the muons, the pion and the \Lb\ candidate from the PV;
+ the distance between the \Lz and \Lb decay vertices; and the pointing
+ angle, $\theta_D$.
+ 
+ The requirement on the response of the neural network classifier is
+ chosen separately for low- and high-\qsq candidates using two
+ different figures of merit.  In the low-\qsq region, where the signal
+ has not been previously established, the figure of merit $\varepsilon
+ /(\sqrt{N_{\mathrm{B}}} + a/2)$~\cite{Punzi:2003bu} is used, where
+ $\varepsilon$ and $N_{\mathrm{B}}$ are the signal efficiency and the
+ expected number of background decays and $a$ is the target
+ significance; a value of $a = 3$ is used.  In contrast, for the
+ high-\qsq region the figure of merit
+ $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$ is maximised,
+ where $N_{\mathrm{S}}$ is the expected number of signal candidates.
+ To ensure an appropriate normalisation of $N_{\mathrm{S}}$, the
+ number of \decay{\Lb}{\jpsi\Lz} candidates that satisfy the
+ preselection is scaled by the measured ratio of branching fractions
+ of \decay{\Lb}{\Lz\mumu} to \decay{\Lb}{\jpsi(\to\mumu)\Lz}
+ decays~\cite{LHCB-PAPER-2013-025}, and the \decay{\jpsi}{\mumu}
+ branching fraction~\cite{Agashe:2014kda}.  The value of
+ $N_\mathrm{B}$ is determined by extrapolating the number of candidate
+ decays found in the background training sample into the signal
+ region.  Relative to the preselected event sample, the neural network
+ retains approximately 96\,\% (66\,\%) of downstream candidates and
+ 97\,\% (82\,\%) of long candidates for the selection at high (low)
+ \qsq.

@@ -1,4 +1,4 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{Aaij:2015xza}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Differential branching fraction
@@ -18,14 +18,26 @@ L.~Susskind, {\it {Dynamics of Spontaneous Symmetry Breaking in the
 S.~Glashow, {\it {Partial Symmetries of Weak Interactions}},  {\em Nucl.Phys.}
   {\bf 22} (1961) 579--588.
 
-\bibitem{Strocchi:1977za}
-F.~Strocchi, {\it {Spontaneous Symmetry Breaking in Local Gauge Quantum Field
-  Theory: The Higgs Mechanism}},  {\em Commun.Math.Phys.} {\bf 56} (1977) 57.
+\bibitem{Aaij:2014jqa}
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Observation of the resonant
+  character of the $Z(4430)^-$ state}},  {\em Phys. Rev. Lett.} {\bf 112}
+  (2014), no.~22 222002, [\href{http://arxiv.org/abs/1404.1903}{{\tt
+  arXiv:1404.1903}}].
+
+\bibitem{Aaij:2015tga}
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Observation of $J/\psi p$
+  resonances consistent with pentaquark states in ${\Lambda\_b^0\to J/\psi
+  K^-p}$ decays}},  \href{http://arxiv.org/abs/1507.03414}{{\tt
+  arXiv:1507.03414}}.
 
 \bibitem{Wu:1957my}
 C.~Wu, E.~Ambler, R.~Hayward, D.~Hoppes, and R.~Hudson, {\it {Experimental Test
   of Parity Conservation in Beta Decay}},  {\em Phys.Rev.} {\bf 105} (1957)
   1413--1414.
+
+\bibitem{Strocchi:1977za}
+F.~Strocchi, {\it {Spontaneous Symmetry Breaking in Local Gauge Quantum Field
+  Theory: The Higgs Mechanism}},  {\em Commun.Math.Phys.} {\bf 56} (1977) 57.
 
 \bibitem{Charles:2015gya}
 J.~Charles, O.~Deschamps, S.~Descotes-Genon, H.~Lacker, A.~Menzel, et~al., {\it
@@ -45,6 +57,24 @@ M.~Gavela and Hernandez, {\it {Standard model CP violation and baryon
 \bibitem{Maltoni:2011zz}
 M.~Maltoni, {\it {Status of three-neutrino oscillations}},  {\em PoS} {\bf
   EPS-HEP2011} (2011) 090.
+
+\bibitem{Cleveland:1998nv}
+B.~T. Cleveland, T.~Daily, R.~Davis, Jr., J.~R. Distel, K.~Lande, C.~K. Lee,
+  P.~S. Wildenhain, and J.~Ullman, {\it {Measurement of the solar electron
+  neutrino flux with the Homestake chlorine detector}},  {\em Astrophys. J.}
+  {\bf 496} (1998) 505--526.
+
+\bibitem{Fukuda:1998mi}
+{\bf Super-Kamiokande} Collaboration, Y.~Fukuda et~al., {\it {Evidence for
+  oscillation of atmospheric neutrinos}},  {\em Phys. Rev. Lett.} {\bf 81}
+  (1998) 1562--1567, [\href{http://arxiv.org/abs/hep-ex/9807003}{{\tt
+  hep-ex/9807003}}].
+
+\bibitem{Eguchi:2002dm}
+{\bf KamLAND} Collaboration, K.~Eguchi et~al., {\it {First results from
+  KamLAND: Evidence for reactor anti-neutrino disappearance}},  {\em Phys. Rev.
+  Lett.} {\bf 90} (2003) 021802,
+  [\href{http://arxiv.org/abs/hep-ex/0212021}{{\tt hep-ex/0212021}}].
 
 \bibitem{Feng:2013pwa}
 J.~L. Feng, {\it {Naturalness and the Status of Supersymmetry}},  {\em
@@ -311,6 +341,19 @@ W.~D. Hulsbergen, {\it {Decay chain fitting with a Kalman filter}},  {\em
   Nucl.Instrum.Meth.} {\bf A552} (2005) 566--575,
   [\href{http://arxiv.org/abs/physics/0503191}{{\tt physics/0503191}}].
 
+\bibitem{Bertini:1963zzc}
+H.~W. Bertini, {\it {Low-Energy Intranuclear Cascade Calculation}},  {\em Phys.
+  Rev.} {\bf 131} (1963) 1801--1821.
+
+\bibitem{Andersson:1992iq}
+B.~Andersson, G.~Gustafson, and H.~Pi, {\it {The FRITIOF model for very
+  high-energy hadronic collisions}},  {\em Z. Phys.} {\bf C57} (1993) 485--494.
+
+\bibitem{Abbon:2007pq}
+{\bf COMPASS} Collaboration, P.~Abbon et~al., {\it {The COMPASS experiment at
+  CERN}},  {\em Nucl. Instrum. Meth.} {\bf A577} (2007) 455--518,
+  [\href{http://arxiv.org/abs/hep-ex/0703049}{{\tt hep-ex/0703049}}].
+
 \bibitem{Hiller:2007ur}
 G.~Hiller, M.~Knecht, F.~Legger, and T.~Schietinger, {\it {Photon polarization
   from helicity suppression in radiative decays of polarized Lambda(b) to
@@ -443,6 +486,11 @@ T.~Blake, S.~Coquereau, M.~Chrzaszcz, S.~Cunliffe, C.~Parkinson, K.~Petridis,
   of LHCb data}},  Tech. Rep. LHCb-INT-2013-058. CERN-LHCb-INT-2013-058, CERN,
   Geneva, Nov, 2013.
 
+\bibitem{James:1975dr}
+F.~James and M.~Roos, {\it {Minuit: A System for Function Minimization and
+  Analysis of the Parameter Errors and Correlations}},  {\em Comput. Phys.
+  Commun.} {\bf 10} (1975) 343--367.
+
 \bibitem{LHCb-PAPER-2012-057}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Measurements of the
   $\Lambda_b^0 \to J/\psi \Lambda$ decay amplitudes and the $\Lambda_b^0$
@@ -487,11 +535,11 @@ G.~Hiller and M.~Schmaltz, {\it {Diagnosing lepton-nonuniversality in $b \to s
   \rightarrow K^{(*)}l^+l^-$}},  {\em Phys.Rev.Lett.} {\bf 103} (2009) 171801,
   [\href{http://arxiv.org/abs/0904.0770}{{\tt arXiv:0904.0770}}].
 
-\bibitem{LHCb-PAPER-2014-024}
+\bibitem{Aaij:2014ora}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Test of lepton universality
-  using $B^+\to K^+\ell^+\ell^-$ decays}},
-  \href{http://arxiv.org/abs/1406.6482}{{\tt arXiv:1406.6482}}. {to appear in
-  Phys. Rev. Lett.}
+  using $B^{+}\rightarrow K^{+}\ell^{+}\ell^{-}$ decays}},  {\em Phys. Rev.
+  Lett.} {\bf 113} (2014) 151601, [\href{http://arxiv.org/abs/1406.6482}{{\tt
+  arXiv:1406.6482}}].
 
 \bibitem{Loki_twiki}
 ``Lhcb loki twiki.''
@@ -508,6 +556,22 @@ W.~Verkerke and D.~P. Kirkby, {\it {The RooFit toolkit for data modeling}},
   {\em eConf} {\bf C0303241} (2003) MOLT007,
   [\href{http://arxiv.org/abs/physics/0306116}{{\tt physics/0306116}}].
 
+\bibitem{Ball:2004ye}
+P.~Ball and R.~Zwicky, {\it {New results on $B \to \pi, K, \eta$ decay form
+  factors from light-cone sum rules}},  {\em Phys. Rev.} {\bf D71} (2005)
+  014015, [\href{http://arxiv.org/abs/hep-ph/0406232}{{\tt hep-ph/0406232}}].
+
+\bibitem{Melikhov:2000yu}
+D.~Melikhov and B.~Stech, {\it {Weak form-factors for heavy meson decays: An
+  Update}},  {\em Phys. Rev.} {\bf D62} (2000) 014006,
+  [\href{http://arxiv.org/abs/hep-ph/0001113}{{\tt hep-ph/0001113}}].
+
+\bibitem{Ali:1999mm}
+A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller, {\it {A Comparative study of the
+  decays $B \to$ ($K$, $K^{*)} \ell^+ \ell^-$ in standard model and
+  supersymmetric theories}},  {\em Phys. Rev.} {\bf D61} (2000) 074024,
+  [\href{http://arxiv.org/abs/hep-ph/9910221}{{\tt hep-ph/9910221}}].
+
 \bibitem{Ali:2002jg}
 A.~Ali, E.~Lunghi, C.~Greub, and G.~Hiller, {\it {Improved model independent
   analysis of semileptonic and radiative rare $B$ decays}},  {\em Phys.Rev.}
@@ -519,5 +583,21 @@ J.~Hrivnac, R.~Lednicky, and M.~Smizanska, {\it {Feasibility of beauty baryon
   polarization measurement in $\Lambda^0 J/\psi$ decay channel by ATLAS LHC}},
   {\em J.Phys.G} {\bf G21} (1995) 629--638,
   [\href{http://arxiv.org/abs/hep-ph/9405231}{{\tt hep-ph/9405231}}].
+
+\bibitem{Aaij:2015bfa}
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Determination of the quark
+  coupling strength $|V\_{ub}|$ using baryonic decays}},
+  \href{http://arxiv.org/abs/1504.01568}{{\tt arXiv:1504.01568}}.
+
+\bibitem{Crivellin:2014zpa}
+A.~Crivellin and S.~Pokorski, {\it {Can the differences in the determinations
+  of $V\_{ub}$ and $V\_{cb}$ be explained by New Physics?}},  {\em Phys. Rev.
+  Lett.} {\bf 114} (2015), no.~1 011802,
+  [\href{http://arxiv.org/abs/1407.1320}{{\tt arXiv:1407.1320}}].
+
+\bibitem{Altmannshofer:2014rta}
+W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\to s$ transitions
+  after LHC run 1}},  \href{http://arxiv.org/abs/1411.3161}{{\tt
+  arXiv:1411.3161}}.
 
 \end{thebibliography}\endgroup

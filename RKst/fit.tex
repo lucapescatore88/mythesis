@@ -1,9 +1,9 @@
-\chapter{Mass fits}
+\section{Mass fits}
 \label{sec:rkst_fits}
 
 In order to extract the signal yields a simultanous unbinned maximum likelihood fit
 to the 4-body invariant masses, $m(K\pi\ell\ell)$, is performed on the rare and resonant samples.
-The following subsections contain a description of the line shapes used to model
+The following subsubsections contain a description of the line shapes used to model
 the signal and background components in each sample.
 %These fits are performed simultaneously on the resonant and rare channels.
 The simultaneous fit allows to share parameters between the two e.g. those describing data-simulation differences.
@@ -25,7 +25,7 @@ The two ratios, $R_{ee}$ and $R_{\mu\mu}$, are then used to determine
 the $R_{\Kstarz}$ quantity, as described in Sec.~\ref{sec:RKst_result}.
 
 
-\section{Muon channels}
+\subsection{Muon channels}
 
 For the rare and resonant \mumu channels the fitted variable is the $m(K\pi \mu\mu)$ invariant mass coming
 from a kinematic fit where all vertices are required to point to their mother particle.
@@ -133,7 +133,7 @@ Dashed black lines represent the signal PDFs and filled shapes the background co
 \end{figure}
 
 
-\section{Electron channels}
+\subsection{Electron channels}
 \label{sec:RKst_fit_ee}
 
 In the electron case the variable we fit is the $m(K\pi\ee)$ invariant mass coming from the kinematic
@@ -168,11 +168,11 @@ gathers information from the three categories at the same time and is more stabl
 Furthermore using this method the results for the three categories are
 naturally combined in a single $R_{ee}$ ratio.
 
-The PDFs used to fit the invariant mass distributions are described in the next section.
+The PDFs used to fit the invariant mass distributions are described in the next subsection.
 
 
 
-\subsection{Signal PDFs for the electron channels in the central-\qsq interval}
+\subsubsection{Signal PDFs for the electron channels in the central-\qsq interval}
 \label{sec:fit_ee_central}
 
 As for the muonic channel simulated events are fitted at fist to constrain
@@ -231,7 +231,7 @@ P(m;c,m')^{\rm trg} = f^{\rm trg}_{0\gamma} \text{CB}^{\rm trg}_{0\gamma}(m;c,m'
 %
 where the free parameters are: $c$, the scaling factor for the widths, and $m'$, the mass shift.
 
-\subsection{Background PDFs for the electron channels in the central-\qsq interval}
+\subsubsection{Background PDFs for the electron channels in the central-\qsq interval}
 \label{sec:RKst_misreco_fit}
 
 In the fit to the resonant sample three background components are modelled:
@@ -297,7 +297,7 @@ distribution of $\decay{\Bz}{\Kstarz(\jpsi\to\ee)}$ events leaking into the cent
 \end{figure}
 
 
-\subsection{Summary of the fit to electron channels in the central-\qsq interval}
+\subsubsection{Summary: electron channels fit in the central-\qsq interval}
 
 In summary in the resonant fit on data the floating parameters are the yields of all the components
 in the resonant channel, a common $R_{ee}$ ratio, the combinatorial background yield in the rare sample,
@@ -330,7 +330,7 @@ From top to bottom L0E, L0H and L0I.
 \end{figure}
 
 
-\subsection{Electron channels fits in the high-\qsq interval}
+\subsubsection{Electron channels fits in the high-\qsq interval}
 
 In the high-\qsq interval, above 15~\gevgevcccc, the efficiency for the
 L0Hadron trigger becomes very low as the \Kstar has very low momentum.
@@ -422,10 +422,10 @@ and in the high-\qsq interval. }
 \label{fig:fit_ee_highq2}
 \end{figure}
 
-\section{Fit summary}
+\subsection{Fit summary}
 
 In Tab.~\ref{tab:RKst_yields} are reported raw yields obtained from the
-fits described in the previous sections. The values for the rare channels are not
+fits described in the previous subsections. The values for the rare channels are not
 directly floating in the fits but as described in Sec.~\ref{sec:rkst_fits} they are parameterised
 as a function of the number of resonant events found and the ratios $R_{ee}$ and $R_{\mu\mu}$
 between the resonant and rare branching fractions. Measured values of these ratios are reported 
@@ -435,12 +435,12 @@ in Tab.~\ref{tab:RKst_results}.
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
- Sample 			& 1--6~\gevgevcccc 				& 15--20~\gevgevcccc 				& \jpsi  \\ \hline
-$\mu\mu$ 			& $ 625.38  \pm  29.60 $ & $ 606.87  \pm  27.56 $ & $ 333917.20  \pm  599.73 $ \\
-$ee$ L0E 	& $ 131.77  \pm  18.06 $ & $ 132.28  \pm  27.92 $ & $ 48103.10  \pm  329.77 $ \\
-$ee$ L0H 	& $ 32.50  \pm  4.50 $ & -- & $ 4439.51  \pm  98.38 $ \\
-$ee$ L0I 	& $ 48.53  \pm  6.68 $ & -- & $ 12683.18  \pm  174.25 $ \\
-\hline 
+ Sample 			& 1--6~\gevgevcccc 			& 15--20~\gevgevcccc 		& \jpsi  \\ \hline
+$\mu\mu$ 		& $ 626.47  \pm 29.60  $ 		& $ 605.09  \pm 27.44 $ 		& $ 333112.99  \pm 603.77 $ \\
+$ee$ L0E 			& $ 131.62   \pm  17.11$   	& $ 136.69  \pm 27.34 $ 		& $ 48601.38  \pm 326.48 $ \\
+$ee$ L0H 			& $ 31.65   \pm  4.16$ 		& 			-- 			& $ 4323.62  \pm 94.49 $ \\
+$ee$ L0I 			& $ 49.59   \pm  6.48$ 		& 			-- 			& $ 12791.37  \pm 172.47 $ \\
+\hline
  \end{tabular}
 \caption{Raw yields of events found fitting invariant mass distributions of the rare and resonant events. }
 \label{tab:RKst_yields}

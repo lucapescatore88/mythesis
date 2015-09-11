@@ -1,0 +1,162 @@
+\section{Systematic uncertainties on the branching fraction}
+\label{sec:systemtics}
+\subsection{Yields}
+\label{sec:systematics_yields}
+ Three sources of systematic uncertainty on the measured yields are
+ considered for both the \decay{\Lb}{\jpsi\Lz} and the
+ \decay{\Lb}{\Lz\mumu} decay modes: the shape of the signal PDF, the
+ shape of the background PDF and the choice of the fixed parameters
+ used in the fits to data.
+
+ For both decays, the default signal PDF is replaced by the sum of two
+ Gaussian functions. All parameters of the Gaussian functions are
+ allowed to vary to take into account the effect of fixing
+ parameters. The shape of the background function is changed by
+ permitting the \KS\mumu peaking background yield, which is fixed to
+ the value obtained from simulation the nominal fit, to vary.  For the
+ resonant channel, the \jpsi\KS peaking background shape is changed by
+ fixing the global shift to zero.  Finally, simulated experiments are
+ performed using the default model, separately for each \qsq interval,
+ generating the same number of events as observed in data.  Each
+ distribution is fitted with the default model and the modified
+ PDFs. The average deviation over the ensemble of simulated
+ experiments is assigned as the systematic uncertainty.  The relative
+ change in signal yield due to the choice of signal PDF varies between
+ 0.6\,\% and 4.6\,\% depending on \qsq, while the change due to the
+ choice of background PDF is in the range between 1.1\,\% and
+ 2.5\,\%. The \qsq intervals that are most affected are those in which
+ a smaller number of candidates is observed and therefore there are
+ fewer constraints to restrict potentially different PDFs.  The
+ systematic uncertainties on the yield in each \qsq interval are
+ summarised in Table~\ref{tab:brsys}, where the total is the sum in
+ quadrature of the individual components.
+
+\subsection{Relative efficiencies}
+ \label{sec:systematics_eff}
+ The dominant systematic effect is that related to the current
+ knowledge of the angular structure and the \qsq dependence of the
+ decay channels.  The uncertainty due to the finite size of simulated
+ samples is comparable to that from other sources. The total
+ systematic uncertainties on the efficiencies, calculated as the sums
+ in quadrature of the individual components described below,
+ are summarised in Table~\ref{tab:brsys}.
+
+
+\subsubsection{Decay structure and production polarisation}
+ The main factors that affect the detection efficiencies are the
+ angular structure of the decays and the production polarisation
+ ($P_b$). Although these arise from different parts of the process,
+ the efficiencies are linked and are therefore treated together.
+
+ For the \decay{\Lb}{\Lz\mumu} decay, the impact of the limited
+ knowledge of the production polarisation, $P_b$, is estimated by
+ comparing the default efficiency, obtained in the unpolarised
+ scenario, with those in which the polarisation is varied within its
+ measured uncertainties, using the most recent LHCb measurement, $P_b
+ = 0.06 \pm 0.09$\cite{LHCb-PAPER-2012-057}.  The larger of these
+ differences is assigned as the systematic uncertainty from this
+ source. This yields a $\sim 0.5\,\%$ uncertainty on the efficiency of
+ downstream candidates and $\sim 1.2\,\%$ for long candidates.  No
+ significant \qsq dependence is found.
+
+ To assess the systematic uncertainty due to the limited knowledge of
+ the decay structure, the efficiency corresponding to the default
+ model \cite{Gutsche:2013pp,Aliev:2005np,Buras:1994dj} is compared to
+ that of a model containing an alternative set of form factors based
+ on a lattice QCD calculation \cite{Detmold:2012vy}. The larger of the
+ full difference or the statistical precision is assigned as the
+ systematic uncertainty.
+ 
+ For the \decay{\Lb}{\jpsi\Lz} mode, the default angular distribution
+ is based on that observed in Ref.  \cite{LHCb-PAPER-2012-057}. The
+ angular distribution is determined by the production polarisation and
+ four complex decay amplitudes. The central values from
+ Ref.~\cite{LHCb-PAPER-2012-057} are used for the nominal result. To
+ assess the sensitivity of the \decay{\Lb}{\jpsi\Lz} mode to the
+ choice of decay model, the production polarisation and decay
+ amplitudes are varied within their uncertainties, taking into account
+ correlations.
+
+ To assess the potential impact that physics beyond the SM might have
+ on the detection efficiency, the $C_7$ and $C_9$ Wilson coefficients
+ are modified by adding a non-SM contribution ($C_i \rightarrow C_i +
+ C_i^{'}$). The $C_i^{'}$ added are inspired to maintain compatibility
+ with the recent LHCb result for the $P'_5$ observable
+ \cite{Descotes-Genon:2013wba} and indicate a change at the level of
+ $\sim 7$\,\% in the 0.1--2.0 \qsq interval, and 2--3\,\% in other
+ regions.  No systematic is assigned as a result of this study.
+
+ \subsubsection{Reconstruction efficiency for the \Lz baryon}
+ The \Lz baryon is reconstructed from either long or downstream
+ tracks, and their relative proportions differ in data and simulation.
+ This proportion does not depend significantly on \qsq and therefore
+ possible effects cancel in the ratio with the normalisation channel.
+ Furthermore, since the analysis is performed separately for long and
+ downstream candidates, it is not necessary to assign a systematic
+ uncertainty to account for a potential effect due to the different
+ fractions of candidates of the two categories observed in data and
+ simulation.  To allow for residual differences between data and
+ simulation that do not cancel completely in the ratio between signal
+ and normalisation modes, systematic uncertainties of 0.8\,\% and
+ 1.2\,\% are estimated for the low-\qsq and high-\qsq regions,
+ respectively, using the same data-driven method as in
+ Ref.~\cite{LHCb-PAPER-2014-006}.
+
+
+ \subsubsection{Production kinematics and lifetime of the \Lb baryon}
+  In \decay{\Lb}{\jpsi\Lz} decays a small difference is observed
+  between data and simulation in the momentum and transverse momentum
+  distributions of the \Lb baryon produced. Simulated data are
+  reweighted to reproduce these distributions in data and the relative
+  efficiencies are compared to those obtained using events that are
+  not reweighted.  This effect is less than 0.1\,\%, which is
+  negligible with respect to other sources.
+
+  Finally, the \Lb baryon lifetime used throughout corresponds to the
+  most recent \lhcb measurement, $1.479\pm0.019$\ps
+  \cite{LHCb-PAPER-2014-003}.  The associated systematic uncertainty
+  is estimated by varying the lifetime value by one standard deviation
+  and negligible differences are found.
+
+
+ \begin{table}[tbp]
+ \centering
+ \caption{Systematic uncertainties as a function of \qsq, assigned for
+   yields and efficiencies. Values reported are the sums in quadrature
+   of all contributions evaluated within each category. }
+ \label{tab:brsys}
+ \renewcommand{\arraystretch}{1.3}
+ \begin{tabular}{ccc}
+  %%Nigel Watson 20150212 $q^2$ interval [\gevgevcccc] & \multicolumn{2}{c}{\text{ } Syst. on
+  %%Nigel Watson 20150212    eff. [\%] \text{ }} & Syst. on yields [\%] \\ \hline
+ $q^2$ interval [\gevgevcccc]  & Syst.\ on yields [\%] & Syst.\ on
+  eff. [\%] \\ \hline
+
+0.1 -- 2.0  	 	& 3.4  &	 $_{-3.6}^{+2.2}$ 	  \\
+2.0 -- 4.0  	 	& 3.8  &	 $_{-4.1}^{+2.2}$ 	  \\
+4.0 -- 6.0  	 	& 6.6  &	 $_{-14.3}^{+17.2}$   \\
+6.0 -- 8.0  	 	& 2.0  &	 $_{-3.1}^{+2.1}$ 	  \\
+11.0 -- 12.5  	 	& 3.2  &	 $_{-5.2}^{+3.7}$ 	  \\
+15.0 -- 16.0  	 	& 2.8  &	 $_{-2.8}^{+3.1}$ 	  \\
+16.0 -- 18.0  	 	& 1.4  &	 $_{-4.1}^{+3.0}$ 	  \\
+18.0 -- 20.0  	 	& 2.5  &	 $_{-2.3}^{+3.9}$ 	  \\
+\hline
+1.1 -- 6.0  	 	& 4.2  &	 $_{-4.6}^{+2.2}$ 	  \\
+15.0 -- 20.0       	& 1.0  &    $_{-2.9}^{+2.0}$      \\
+
+%%%%% Old table with no WC systematics
+%0.1 -- 2.0       & 3.4 & $^{+6.4}_{-7.3}$\\
+%2.0 -- 4.0       & 3.8 & $^{+4.9}_{-5.4}$\\
+%4.0 -- 6.0       & 6.6 & $^{+1.9}_{-2.0}$\\
+%6.0 -- 8.0       & 2.0 & $^{+3.8}_{-4.1}$\\
+%11.0 -- 12.5     & 3.2 & $^{+3.2}_{-3.4}$\\
+%15.0 -- 16.0     & 2.8 & $^{+3.5}_{-3.8}$\\
+%16.0 -- 18.0     & 1.4 & $^{+3.1}_{-3.3}$\\
+%18.0 -- 20.0     & 2.5 & $^{+3.1}_{-3.3}$\\
+%\hline                                 
+%1.1 --  6.0      & 4.2 & $^{+5.3}_{-6.0}$\\
+%15.0 -- 20.0     & 1.0 & $^{+1.8}_{-1.9}$\\
+\end{tabular}
+\end{table}
+
+

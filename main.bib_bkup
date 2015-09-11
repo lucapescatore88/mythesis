@@ -1,0 +1,397 @@
+@article{PDG2014,
+	author         = "Olive, K.A. and others",
+	title          = "{Review of Particle Physics}",
+	collaboration  = "Particle Data Group",
+	journal        = "Chin.Phys.",
+	volume         = "C38",
+	pages          = "090001",
+	doi            = "10.1088/1674-1137/38/9/090001",
+	year           = "2014",
+	SLACcitation   = "%%CITATION = CHPHD,C38,090001;%%",
+}
+
+@article{TomRDreview,
+	author         = "Blake, T. and Gershon, T. and Hiller, G.",
+	title          = "{Rare b hadron decays at the LHC}",
+	year           = "2015",
+	eprint         = "1501.03309",
+	archivePrefix  = "arXiv",
+	primaryClass   = "hep-ex",
+	reportNumber   = "DO-TH-14-30",
+	SLACcitation   = "%%CITATION = ARXIV:1501.03309;%%",
+}
+
+@article{Hiller:2003js,
+	author         = "Hiller, Gudrun and Kruger, Frank",
+	title          = "{More model independent analysis of $b \to s$ processes}",
+	journal        = "Phys.Rev.",
+	volume         = "D69",
+	pages          = "074020",
+	doi            = "10.1103/PhysRevD.69.074020",
+	year           = "2004",
+	eprint         = "hep-ph/0310219",
+	archivePrefix  = "arXiv",
+	primaryClass   = "hep-ph",
+	reportNumber   = "LMU-18-03, TUM-HEP-519-03",
+	SLACcitation   = "%%CITATION = HEP-PH/0310219;%%",
+}
+
+@article{CMS:2014xfa,
+	author         = "Khachatryan, Vardan and others",
+	title          = "{Observation of the rare $B^0_s\to\mu^+\mu^-$ decay from
+		the combined analysis of CMS and LHCb data}",
+collaboration  = "CMS, LHCb",
+journal        = "Nature",
+doi            = "10.1038/nature14474",
+year           = "2015",
+eprint         = "1411.4413",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CERN-PH-EP-2014-220, CMS-BPH-13-007, LHCB-PAPER-2014-049",
+SLACcitation   = "%%CITATION = ARXIV:1411.4413;%%",
+}
+
+
+@article{Wei:2009zv,
+	author         = "Wei, J.-T. and others",
+	title          = "{Measurement of the Differential Branching Fraction and Forward-Backword Asymmetry for $B \rightarrow K^{(*)}l^+l^-$}",
+	collaboration  = "BELLE Collaboration",
+	journal        = "Phys.Rev.Lett.",
+	volume         = "103",
+	pages          = "171801",
+	doi            = "10.1103/PhysRevLett.103.171801",
+	year           = "2009",
+	eprint         = "0904.0770",
+	archivePrefix  = "arXiv",
+	primaryClass   = "hep-ex",
+	reportNumber   = "BELLE-PREPRINT-2009-7, KEK-PREPRINT-2008-56",
+	SLACcitation   = "%%CITATION = ARXIV:0904.0770;%%",
+}
+
+
+
+@article{Lees:2012tva,
+	author         = "Lees, J.P. and others",
+	title          = "{Measurement of Branching Fractions and Rate Asymmetries in the Rare Decays $B \rightarrow K^{(*)} l^+ l^-$}",
+	collaboration  = "BaBar Collaboration",
+	journal        = "Phys.Rev.",
+	volume         = "D86",
+	pages          = "032012",
+	doi            = "10.1103/PhysRevD.86.032012",
+	year           = "2012",
+	eprint         = "1204.3933",
+	archivePrefix  = "arXiv",
+	primaryClass   = "hep-ex",
+	reportNumber   = "SLAC-PUB-14957, BABAR-PUB-12-002",
+	SLACcitation   = "%%CITATION = ARXIV:1204.3933;%%",
+}
+
+
+@misc{Loki_twiki,
+	title = {LHCb Loki twiki},
+	howpublished = {\url{https://twiki.cern.ch/twiki/bin/view/LHCb/LoKiHybridFilters}},
+	note = {Accessed: 2015-09-30}
+}
+
+@misc{ProbNNs_pres,
+	title = {ProbNN presentation at PPTS meeting},
+	howpublished = {\url{https://indico.cern.ch/event/226062/contribution/1/material/slides/0.pdf}},
+	note = {Accessed: 2015-09-30}
+}
+
+@article{Verkerke:2003ir,
+	author         = "Verkerke, Wouter and Kirkby, David P.",
+	title          = "{The RooFit toolkit for data modeling}",
+	journal        = "eConf",
+	volume         = "C0303241",
+	pages          = "MOLT007",
+	year           = "2003",
+	eprint         = "physics/0306116",
+	archivePrefix  = "arXiv",
+	primaryClass   = "physics",
+	reportNumber   = "CHEP-2003-MOLT007",
+	SLACcitation   = "%%CITATION = PHYSICS/0306116;%%",
+}
+
+
+@article{LHCb:2003ab,
+	key            = "629958",
+	title          = "{LHCb technical design report: Reoptimized detector
+		design and performance}",
+collaboration  = "LHCb collaboration",
+year           = "2003",
+reportNumber   = "CERN-LHCC-2003-030",
+SLACcitation   = "%%CITATION = CERN-LHCC-2003-030 ETC.;%%",
+}
+
+@article{sPlot,
+	author         = "Pivk, Muriel and Le Diberder, Francois R.",
+	title          = "{SPlot: A Statistical tool to unfold data distributions}",
+	journal        = "Nucl.Instrum.Meth.",
+	volume         = "A555",
+	pages          = "356-369",
+	doi            = "10.1016/j.nima.2005.08.106",
+	year           = "2005",
+	eprint         = "physics/0402083",
+	archivePrefix  = "arXiv",
+	primaryClass   = "physics.data-an",
+	reportNumber   = "LAL-04-07",
+	SLACcitation   = "%%CITATION = PHYSICS/0402083;%%",
+}
+
+
+@article{Aaij:1978280,
+	author        = "Aaij, R. et all",
+	title         = "{LHCb Detector Performance}",
+	journal       = "Int. J. Mod. Phys. A",
+	collaboration = "LHCb collaboration",
+	number        = "arXiv:1412.6352. CERN-PH-EP-2014-290. LHCB-DP-2014-002.
+		CERN-LHCB-DP-2014-002",
+	volume        = "30",
+	pages         = "1530022. 82 p",
+	month         = "Dec",
+	year          = "2014",
+	reportNumber  = "arXiv:1412.6352",
+	url           = "http://cds.cern.ch/record/1978280",
+}
+
+
+@article{Ali:2002jg,
+	author         = "Ali, A. and Lunghi, E. and Greub, C. and Hiller, G.",
+	title          = "{Improved model independent analysis of semileptonic and
+		radiative rare $B$ decays}",
+journal        = "Phys.Rev.",
+volume         = "D66",
+pages          = "034002",
+doi            = "10.1103/PhysRevD.66.034002",
+year           = "2002",
+eprint         = "hep-ph/0112300",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ph",
+reportNumber   = "SLAC-PUB-9076, DESY-01-217, BUTP-01-21",
+SLACcitation   = "%%CITATION = HEP-PH/0112300;%%",
+}
+
+
+@article{Evans:2009zzc,
+	author         = "Evans, Lyndon",
+	title          = "{The LHC machine}",
+	journal        = "PoS",
+	volume         = "EPS-HEP2009",
+	pages          = "004",
+	year           = "2009",
+	SLACcitation   = "%%CITATION = POSCI,EPS-HEP2009,004;%%",
+}
+
+@article{Brun:2000es,
+	author         = "Brun, R. and Rademakers, F. and Panacek, S.",
+	title          = "{ROOT, an object oriented data analysis framework}",
+	journal        = "Conf.Proc.",
+	volume         = "C000917",
+	pages          = "11-42",
+	year           = "2000",
+	SLACcitation   = "%%CITATION = CONFP,C000917,11;%%",
+}
+
+@article{Glashow:1961tr,
+	author         = "Glashow, S.L.",
+	title          = "{Partial Symmetries of Weak Interactions}",
+	journal        = "Nucl.Phys.",
+	volume         = "22",
+	pages          = "579-588",
+	doi            = "10.1016/0029-5582(61)90469-2",
+	year           = "1961",
+	SLACcitation   = "%%CITATION = NUPHA,22,579;%%",
+}
+
+
+@article{Strocchi:1977za,
+	author         = "Strocchi, F.",
+	title          = "{Spontaneous Symmetry Breaking in Local Gauge Quantum
+		Field Theory: The Higgs Mechanism}",
+journal        = "Commun.Math.Phys.",
+volume         = "56",
+pages          = "57",
+doi            = "10.1007/BF01611117",
+year           = "1977",
+reportNumber   = "Print-77-0197 (PRINCETON)",
+SLACcitation   = "%%CITATION = CMPHA,56,57;%%",
+}
+
+
+@article{Wu:1957my,
+	author         = "Wu, C.S. and Ambler, E. and Hayward, R.W. and Hoppes,
+	D.D. and Hudson, R.P.",
+	title          = "{Experimental Test of Parity Conservation in Beta Decay}",
+	journal        = "Phys.Rev.",
+	volume         = "105",
+	pages          = "1413-1414",
+	doi            = "10.1103/PhysRev.105.1413",
+	year           = "1957",
+	SLACcitation   = "%%CITATION = PHRVA,105,1413;%%",
+}
+
+
+@article{Charles:2015gya,
+	author         = "Charles, J. and Deschamps, O. and Descotes-Genon, S. and Lacker, H. and Menzel, A. and others",
+	title          = "{Current status of the Standard Model CKM fit and constraints on $\Delta F=2$ New Physics}",
+	journal        = "Phys.Rev.",
+	number         = "7",
+	volume         = "D91",
+	pages          = "073007",
+	doi            = "10.1103/PhysRevD.91.073007",
+	year           = "2015",
+	eprint         = "1501.05013",
+	archivePrefix  = "arXiv",
+	primaryClass   = "hep-ph",
+	reportNumber   = "LPT-ORSAY-15-04",
+	SLACcitation   = "%%CITATION = ARXIV:1501.05013;%%",
+}
+
+
+@article{Zwicky:1933gu,
+      author         = "Zwicky, F.",
+      title          = "{Spectral displacement of extra galactic nebulae}",
+      journal        = "Helv.Phys.Acta",
+      volume         = "6",
+      pages          = "110-127",
+      year           = "1933",
+      SLACcitation   = "%%CITATION = HPACA,6,110;%%",
+}
+
+@article{Dunkley:2008ie,
+      author         = "Dunkley, J. and others",
+      title          = "{Five-Year Wilkinson Microwave Anisotropy Probe (WMAP)
+                        Observations: Likelihoods and Parameters from the WMAP
+                        data}",
+      collaboration  = "WMAP Collaboration",
+      journal        = "Astrophys.J.Suppl.",
+      volume         = "180",
+      pages          = "306-329",
+      doi            = "10.1088/0067-0049/180/2/306",
+      year           = "2009",
+      eprint         = "0803.0586",
+      archivePrefix  = "arXiv",
+      primaryClass   = "astro-ph",
+      SLACcitation   = "%%CITATION = ARXIV:0803.0586;%%",
+}
+
+
+@article{Gavela:1993ts,
+      author         = "Gavela, M.B. and Hernandez",
+      title          = "{Standard model CP violation and baryon asymmetry}",
+      journal        = "Mod.Phys.Lett.",
+      volume         = "A9",
+      pages          = "795-810",
+      doi            = "10.1142/S0217732394000629",
+      year           = "1994",
+      eprint         = "hep-ph/9312215",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "CERN-TH-7081-93, LPTHE-ORSAY-93-48, HUTP-93-A036,
+                        HD-THEP-93-45",
+      SLACcitation   = "%%CITATION = HEP-PH/9312215;%%",
+}
+
+
+
+
+@article{Maltoni:2011zz,
+      author         = "Maltoni, Michele",
+      title          = "{Status of three-neutrino oscillations}",
+      journal        = "PoS",
+      volume         = "EPS-HEP2011",
+      pages          = "090",
+      year           = "2011",
+      SLACcitation   = "%%CITATION = POSCI,EPS-HEP2011,090;%%",
+}
+
+
+@article{Fayet:1976cr,
+      author         = "Fayet, Pierre and Ferrara, S.",
+      title          = "{Supersymmetry}",
+      journal        = "Phys.Rept.",
+      volume         = "32",
+      pages          = "249-334",
+      doi            = "10.1016/0370-1573(77)90066-7",
+      year           = "1977",
+      reportNumber   = "LPTENS-76-11",
+      SLACcitation   = "%%CITATION = PRPLC,32,249;%%",
+}
+
+
+
+@article{Susskind:1978ms,
+      author         = "Susskind, Leonard",
+      title          = "{Dynamics of Spontaneous Symmetry Breaking in the
+                        Weinberg-Salam Theory}",
+      journal        = "Phys.Rev.",
+      volume         = "D20",
+      pages          = "2619-2625",
+      doi            = "10.1103/PhysRevD.20.2619",
+      year           = "1979",
+      reportNumber   = "SLAC-PUB-2142",
+      SLACcitation   = "%%CITATION = PHRVA,D20,2619;%%",
+}
+
+
+
+
+
+
+
+@article{ArkaniHamed:2001nc,
+      author         = "Arkani-Hamed, Nima and Cohen, Andrew G. and Georgi,
+                        Howard",
+      title          = "{Electroweak symmetry breaking from dimensional
+                        deconstruction}",
+      journal        = "Phys.Lett.",
+      volume         = "B513",
+      pages          = "232-240",
+      doi            = "10.1016/S0370-2693(01)00741-9",
+      year           = "2001",
+      eprint         = "hep-ph/0105239",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "HUTP-01-A024, BUHEP-01-06, UCB-PTH-01-15",
+      SLACcitation   = "%%CITATION = HEP-PH/0105239;%%",
+}
+
+
+@article{Randall:1999ee,
+      author         = "Randall, Lisa and Sundrum, Raman",
+      title          = "{A Large mass hierarchy from a small extra dimension}",
+      journal        = "Phys.Rev.Lett.",
+      volume         = "83",
+      pages          = "3370-3373",
+      doi            = "10.1103/PhysRevLett.83.3370",
+      year           = "1999",
+      eprint         = "hep-ph/9905221",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "MIT-CTP-2860, PUPT-1860, BUHEP-99-9",
+      SLACcitation   = "%%CITATION = HEP-PH/9905221;%%",
+}
+
+
+
+
+@article{Isidori:2012ts,
+      author         = "Isidori, Gino and Straub, David M.",
+      title          = "{Minimal Flavour Violation and Beyond}",
+      journal        = "Eur.Phys.J.",
+      volume         = "C72",
+      pages          = "2103",
+      doi            = "10.1140/epjc/s10052-012-2103-1",
+      year           = "2012",
+      eprint         = "1202.0464",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = ARXIV:1202.0464;%%",
+}
+
+
+
+
+
+

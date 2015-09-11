@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis-done.aux
+The style file: JHEP.bst
+Database file #1: main.bib
+Database file #2: lmumu.bib
+Database file #3: LHCb-PAPER.bib
+Database file #4: LHCb-TDR.bib
+Database file #5: LHCb-CONF.bib
+Database file #6: LHCb-DP.bib
+Warning--I didn't find a database entry for ""
+You've used 73 entries,
+            2195 wiz_defined-function locations,
+            1037 strings with 14563 characters,
+and the built_in function-call counts, 23883 in all, are:
+= -- 2523
+> -- 638
+< -- 0
++ -- 242
+- -- 169
+* -- 1783
+:= -- 3163
+add.period$ -- 73
+call.type$ -- 73
+change.case$ -- 73
+chr.to.int$ -- 0
+cite$ -- 73
+duplicate$ -- 1361
+empty$ -- 2231
+format.name$ -- 169
+if$ -- 6261
+int.to.chr$ -- 0
+int.to.str$ -- 73
+missing$ -- 286
+newline$ -- 222
+num.names$ -- 73
+pop$ -- 274
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1053
+stack$ -- 0
+substring$ -- 1373
+swap$ -- 663
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 168
+width$ -- 75
+write$ -- 790
+(There was 1 warning)
