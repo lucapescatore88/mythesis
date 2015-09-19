@@ -1,7 +1,7 @@
-\section{Systematics uncertainties on angular observables and results}
+\section{Systematics uncertainties on angular observables}
 \label{sec:ang_results}
 
-The following subsections describe the five main sources of systematic uncertainties
+The following section describes the five main sources of systematic uncertainties
 that are considered for the angular observables measurement and, finally, results are
 reported in Sec.~\ref{sec:afb_results}. Results are derived only for \qsq intervals
 where the signal significance, shown in Tab.~\ref{tab:Lb_rawYield}, is above 3 standard
@@ -12,17 +12,17 @@ deviations. This includes all \qsq intervals above the \jpsi resonance and the l
 
 \subsection{Angular correlations}
 
-The angular efficiency is non-flat as a function of $\cos\theta_\ell$ and $\cos \theta_h$.
+The angular acceptance is non-flat as a function of $\cos\theta_\ell$ and $\cos \theta_h$.
 Therefore, while integrating the full angular distribution, terms that cancel with perfect efficiency
 may remain and generate a bias in the final result. In order to deal with this effect simulated events are
 generated in a two-dimensional ($\cos\theta_\ell$,$\cos \theta_h$) space according to the
-theoretical distribution described by Eq.~\ref{eq:2DcosThetaLandB} multiplied by two-dimensional efficiency
-histograms obtained from simulation and reported in Fig.~\ref{fig:2DcosThetaLandBeff}.
+theoretical distribution described by Eq.~\ref{eq:2DcosThetaLandB} multiplied by the two-dimensional
+efficiency function obtained from simulation and reported in Fig.~\ref{fig:2DcosThetaLandBeff}.
 Then, one-dimensional projections are taken and fit using the default one-dimensional efficiency functions.
 Figure~\ref{fig:effBias} shows the distribution of observed deviations from the generated 
 value, $\Delta x = x_{true} - x_{measured}$.
 Since the mean of these distributions is non-zero by more then 3$\sigma$, they are taken as a systematic uncertainties.
-
+%
 \begin{figure}[h!]
 \includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf}
 \includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf}
@@ -30,8 +30,8 @@ Since the mean of these distributions is non-zero by more then 3$\sigma$, they a
 downstream (bottom) candidates, integrated over the full available \qsq range.}
 \label{fig:2DcosThetaLandBeff}
 \end{figure}
-
-\begin{figure}
+%
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/fLsys_efficiency.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/afbsys_efficiency.pdf}
@@ -51,16 +51,16 @@ downstream (bottom) candidates, integrated over the full available \qsq range.}
 The angular resolution could bias the observables measurement 
 %If the angular distribution is asymmetric, a non-zero resolution may yield to
 generating an asymmetric migration of events.
-This is especially important in the $\cos \theta_h$ case, because this has worse resolution
+This is especially important in the $\cos \theta_h$ case, because it has worse resolution
 and a considerably asymmetric distribution. Simulated experiments are used to asses this systematic.
-Events are generated according to the measured distributions (including efficiencies).
+Events are generated according to the measured distributions including efficiencies.
 The generated events are then smeared by the angular resolution (gaussian smearing).
-To be conservative the case with biggest angular resolution (downstream candidates), is always used.
+To be conservative the case with biggest angular resolution, downstream candidates, is always used.
 %downstream events, as reported in table \ref{tab:resolutions}.
-Finally, the smeared and not-smeared distributions are fitted with the same PDF.  
+Finally, the smeared and not-smeared distributions are fit with the same PDF.  
 The average deviation from the default values are reported in Tab.~\ref{tab:resolSys}
 as a function of \qsq and assigned as systematic uncertainties.
-
+%
 \begin{table}[h]
 \centering
 \caption{Values of simulated $\cos\theta_\ell$ and $\cos\theta_\Lambda$ 
@@ -83,12 +83,12 @@ the finite resolution in bins of \qsq.}
 \subsection{Efficiency description}
 
 An imprecise determination of the reconstruction and selection efficiency can introduce an extra oddity
-and therefore bias the measurement. To asses this effect the kinematic re-weighting described in Se.~\ref{sec:kinWeight}
+and therefore bias the measurement. To asses this effect the kinematic re-weighting described in Sec.~\ref{sec:kinWeight}
 is removed from the simulation and the efficiency is determined again.
-Simulated events are then fit using the same theoretical PDF and multiplied by the efficiency
+Simulated events are then fit using the same theoretical PDF but multiplied by the efficiency
 function obtained with and without kinematical weights. As in the previous cases the average bias 
-is taken as systematic uncertainty. Results are shown in Tab.~\ref{tab:AfbeffSys}.
-Furthermore, for the effect of the limited simulated statistics is taken into account and 
+is taken as systematic uncertainty; results are shown in Tab.~\ref{tab:AfbeffSys}.
+Furthermore, the effect of the limited simulated statistics is taken into account and 
 added to the systematic uncertainty.
 %This is not already taken in account
 %by the Feldman-Cousins plug-in method ( see \ref{sec:FeldmanCousins}) since the efficiency parameters are always fixed
@@ -102,6 +102,7 @@ added to the systematic uncertainty.
 %from $- \sigma$ to $+ \sigma$ for the central measured value, as done for the branching ratio analysis \ref{sec:BRpolsys}. 
 %Then again simulated experiments are generated and fit using efficiency models obtained with different values
 %of the polarisation. No significant effect is found. 
+%
 \begin{table}[h]
 \centering
 \caption{Values systematic uncertainties due to limited knowledge of the efficiency
@@ -140,19 +141,19 @@ samples on the three angular observables in bins of \qsq.}
 \label{sec:bkgShapeSys}
 
 There is a certain degree of arbitrariety in the choice of a parameterisation for the background,
-especially in \qsq intervals with low statistics. To asses possible biases due to the PDF choice, simulated experiments
+especially for \qsq intervals with low statistics. To asses possible biases due to the PDF choice, simulated experiments
 are generated using the shapes from data fits and the same statistics as observed in data for each \qsq interval.
 Each pseudo-experiment is fit with two models: the default one, a ``line times efficiency" function and
 the efficiency function alone, corresponding to the assumption that background distributions
 are originally flat and only modified by the interaction with the detector. 
-The average bias with respect to the default model is taken as systematic uncertainty.
-Results are reported in Tab.~\ref{tab:bkgParamSys}.
-
+The average bias with respect to the default model is taken as systematic uncertainty;
+results are reported in Tab.~\ref{tab:bkgParamSys}.
+%
 %Finally, we consider also the bias which may be cause by fixing the background fraction in the fit by fitting the same toys with
 %a model where the background fraction is fixed to a random value normally distributed around the measured one. This systematic is negligible
 %compared to the previous one but we add it anyway to the final systematic.
 %The total result calculated as the square root sum of the 2 compoents is reported in table \ref{tab:bkgParamSys}.
-
+%
 \begin{center}
 \begin{table}[h]
 \centering
@@ -184,7 +185,7 @@ which is sensitive to polarisation.
 Similarly to the procedure used for the branching ratio measurement, events are generated using
 values of the polarisation corresponding to $\pm \sigma$ from the LHCb measurement~\cite{Aaij:2013oxa}.
 In the theoretical functions $\cos \theta$ is always odd therefore with perfect efficiency it always
-drops out by integrating over $\cos\theta$. Therefore the generated distributions are multiplied by
+drops out by integrating over $\cos\theta$. Therefore the generated distributions are also multiplied by
 the two-dimensional efficiency function. No significant bias is found.
 %In Fig.~\ref{fig:2Deffs} are reported 2D efficiencies
 %as a function of $\cos \theta_\ell$ and $\cos \theta_\Lambda$ versus $\cos \theta$. and in Fig.~\ref{fig:Afbpolsys} are reported distributions of the absolute difference between the observable value obtained fitting generated events with the two polarisation values. 
@@ -211,7 +212,7 @@ the two-dimensional efficiency function. No significant bias is found.
 
 
 
-\subsection{$J/\psi$ cross-check}
+\section{$J/\psi$ cross-check}
 
 To cross-check the fitting procedure this is applied on the high statistics $\Lb\to\jpsi\Lz$ sample.
 For this purpose events are selected with an additional requirement on the proton PID, \verb!PID!p$ > 10$.
@@ -221,16 +222,16 @@ Figure~\ref{fig:Jpsimass_angular} shows the invariant mass distributions after t
 can be compared with the ones in Fig.~\ref{fig:Lb_totalFit}. %One can see that the \KS background is reduced.
 After the PID cut there are 0.2\% of \KS events left in the downstream sample and a fraction
 compatible with zero in the long sample.
-The signal model is the same used for the rare case and described in Sec.~\ref{sec:angfit}.
+The signal model used for this fit is the same used for the rare case and described in Sec.~\ref{sec:angfit}.
 For the background instead the higher statistics allows to leave more freedom to the fit.
 Therefore a second-order Chebyschev polynomial is used, where the two parameters are
-free to float. As for the rare case the background fractions are gaussian-constrained
-to what found in the invariant mass fit. Figures~\ref{fig:AngFitJpsi} and~\ref{fig:AngFitBJpsi} show
+free to vary. As for the rare case the background fractions are gaussian-constrained
+to what found from the invariant mass fit. Figures~\ref{fig:AngFitJpsi} and~\ref{fig:AngFitBJpsi} show
 fitted angular distributions for the \jpsi channel. The measured values of the observables
 are $A_{\rm FB}^\ell = -0.002^{+0.011}_{-0.011}$, $A_{\rm FB}^h = -0.402^{+0.010}_{-0.009}$
 and $f_{\rm L} = 0.485^{+0.019}_{-0.020}$, where the uncertainties are 68\% Feldman Cousins 
 confidence intervals. The lepton side asymmetry as expected is measured to be zero.
-
+%
 \begin{figure}
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/Jpsi_default_LL_log_fitAndRes.pdf}
@@ -264,7 +265,7 @@ reconstructed using downstream (left) and long (right) tracks.  }
 
 
 
-\subsection{Results}
+\section{Results}
 \label{sec:afb_results}
 
 Figures~\ref{fig:AngFit} and~\ref{fig:AngFitB} show fits to the angular distributions
@@ -275,14 +276,14 @@ for the 15-20 \gevgevcccc ~\qsq interval and
 Tab.~\ref{tab:angresults} reports measured values of $A_{\rm FB}^\ell$, $A_{\rm FB}^h$ and $f_{\rm L}$.
 The asymmetries are also shown in Fig.~\ref{fig:Afb_results} together with SM predictions obtained from 
 Ref.~\cite{Detmold:2012vy}. The statistical uncertainties on these tables 
-are obtained using the likelihood-ratio ordering method described in Sec.~\ref{sec:FeldmanCousins}, where only one of the two
-observables at a time is treated as the parameter of interest. In Fig.~\ref{fig:contours} the statistical uncertainties
-on $A_{\rm FB}^\ell$ and $f_{\rm L}$ are also reported as two-dimensional 68\;\% confidence level (CL) regions,
+are obtained using the likelihood-ratio ordering method described in Sec.~\ref{sec:FeldmanCousins}, where only
+one of the two observables is treated as the PoI at a time. The statistical uncertainties
+on $A_{\rm FB}^\ell$ and $f_{\rm L}$ are also reported in Fig.~\ref{fig:contours} as two-dimensional 68\;\% confidence level (CL) regions,
 where the likelihood-ratio ordering method is applied by varying both observables and therefore taking
 correlations into account. Total systematic uncertainties correspond to the square root sum of the
 single considered sources.
-
-\begin{figure}[h]
+\clearpage
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularDistribs/Fitted/Afb_LL_q2_1500_2000.pdf}
@@ -290,7 +291,7 @@ single considered sources.
  (left) and long (right) candidates in the 15--20 \gevgevcccc ~\qsq interval.  }
 \label{fig:AngFit}
 \end{figure}
-
+%
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularDistribs/Fitted/AfbB_DD_q2_1500_2000.pdf}
@@ -299,10 +300,8 @@ single considered sources.
  (left) and long (right) candidates in the 15--20 \gevgevcccc ~\qsq interval.  }
  \label{fig:AngFitB}
 \end{figure}
-
-
-
-\begin{table}[tbp]
+%
+\begin{table}[h!]
 \centering
 \caption{Measured values of leptonic and hadronic angular observables,
   where the first uncertainties are statistical and the second
@@ -333,8 +332,6 @@ single considered sources.
   interval. Standard Model predictions are obtained from Ref.~\cite{Meinel:2014wua}.}
 \label{fig:Afb_results}
 \end{figure}
-
-
 
 \begin{figure}[h]
 \centering
