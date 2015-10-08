@@ -1,12 +1,9 @@
 \section{Mass fits}
 \label{sec:rkst_fits}
 
-In order to extract the signal yields a simultanous unbinned maximum likelihood fit
-to the 4-body invariant masses, $m(K\pi\ell\ell)$, is performed on the rare and resonant samples.
-The following subsubsections contain a description of the line shapes used to model
-the signal and background components in each sample.
-%These fits are performed simultaneously on the resonant and rare channels.
-The simultaneous fit allows to share parameters between the two e.g. those describing data-simulation differences.
+The signal yields are extracted using a simultaneous unbinned maximum likelihood fit
+to the 4-body invariant mass, $m(K\pi\ell\ell)$, of the rare and resonant samples.
+The simultaneous fit allows to share parameters e.g. those describing data-simulation differences.
 The yields of the rare channels are parameterised as a function of the corresponding \jpsi yields as
 %
 \begin{equation}
@@ -14,33 +11,34 @@ N_{\ell\ell} = N_{\jpsi} \cdot \varepsilon^{\rm rel} \cdot R_{\ell\ell},
 \end{equation}
 %
 where $\varepsilon^{\rm rel}$ is the relative efficiency between the rare and resonant channels
-given in Tab.~\ref{tab:RKst_releff} and
-$R_{\ell\ell}$ corresponds to the efficiency corrected ratio of the raw rare and resonant yields:
-
+(given in Tab.~\ref{tab:RKst_releff}). Consequently, $R_{\ell\ell}$ corresponds to the efficiency corrected
+ratio of the raw rare and resonant yields:
+%
 \begin{equation}
-R_{\ell\ell} = \frac{N_{\ell\ell} / \varepsilon^{\ell\ell}}{N_{\jpsi} / \varepsilon^{\jpsi}}.
+R_{\ell\ell} = \frac{N_{\ell\ell} / \varepsilon^{\ell\ell}}{N_{\jpsi} / \varepsilon^{\jpsi(\ell\ell)}}.
 \end{equation}
-
+%
 The two ratios, $R_{ee}$ and $R_{\mu\mu}$, are then used to determine
 the $R_{\Kstarz}$ quantity, as described in Sec.~\ref{sec:RKst_result}.
-
+The following subsections contain a description of the line shapes used to model
+the signal and background components in each sample.
 
 \subsection{Muon channels}
 
-For the rare and resonant \mumu channels the fitted variable is the $m(K\pi \mu\mu)$ invariant mass coming
+For the rare and resonant $\mu\mu$ channels the fitted variable is the $m(K\pi \mu\mu)$ invariant mass coming
 from a kinematic fit where all vertices are required to point to their mother particle.
 In the resonant case it is beneficial to also constrain the the dimuon mass to the known \jpsi mass.
 The effect of the kinematical fit is to improve the mass resolution by roughly a factor of 2, which results
-a more stable fit. Furthermore, misreconstructed events are pushed away from the \Bz peak, which allows to
-use a wider mass window to better constrain the combinatorial background slope.
+in a more stable fit. Furthermore, mis-reconstructed background candidates are pushed away from
+the \Bz peak, which allows to use a wider mass window to better constrain the combinatorial background slope.
 The mass spectrum is fitted in the range 5150--5800~\mevcc~ with the lower limit
-of the mass range chosen to exclude partially reconstructed background.
-As it is not needed to model misreconstructed backgrounds in the fit this also
-eliminates systematic uncertainties associated with the knowledge of its shape. 
+of the mass range chosen to totally exclude partially reconstructed background.
+As it is not needed to model mis-reconstructed backgrounds in the fit this also
+eliminates the systematic uncertainties associated with the knowledge of their shape. 
 
-The PDF chosen to describe the signal in both the $\Bz \to\Kstarz\mumu$ and its relative \jpsi channel 
-is a Double Crystal Ball function already described in Sec.~\ref{sec:Lb_fit} and also in this case
-the mean value ($m_0$) is kept in common:
+The PDF chosen to describe the signal in both the $\Bz \to\Kstarz\mumu$ and the corresponding
+\jpsi channel is a Double Crystal Ball function already described in Sec.~\ref{sec:Lb_fit} and also
+in this case the mean value ($m_0$) is kept in common:
 
 %A Crystal Ball function
 %(Eq. \ref{CB})\cite{Skwarnicki:1986xj} is a probability density function commonly used to model various processes involving energy loss at low energy.
@@ -73,49 +71,57 @@ the mean value ($m_0$) is kept in common:
 %D(x;\alpha,n,\bar{x},\sigma_1, \sigma_2, f) = f \cdot C(x;\alpha,n,\bar{x},\sigma_1) + (1 - f) \cdot C(x;\alpha,n,\bar{x},\sigma_2)
 %\end{equation}
 
-As a first step simulated distributions are fit using the signal model to extract parameters to be
-constrained in the fit to data.
+As a first step, simulated distributions are fit using the signal model in order to extract shape parameters
+that are then constrained in the fit to data.
 %Independent fits are preformed to the simulated resonant sample and the rare samples in each \qsq bin.
-The fitted MC distribution for the resonant channel is reported in Fig.~\ref{fig:mumu_MC_fits}.
+The fitted Monte Carlo distribution for the resonant channel is shown in Fig.~\ref{fig:mumu_MC_fits}.
 %where it is evident that the tail parameters depend on \qsq. This is due mainly to bin migration
 %effects that cause the bremsstrahlung tail to be reduced at high-\qsq.
 
 For the fit to real data the signal parameters are fixed to the ones found for the simulated samples.
-In order to account for possible data-simulation discrepancies a scale factor is multiplied to the widths
-and a shift is added to the masses. In summary the PDFs used for the signal fits on data are defined as
-
+However, in order to account for possible data-simulation discrepancies a scale factor is multiplied to the widths
+and a shift is added to the masses and these are left free to vary. In summary the PDFs used for the signal 
+in the fits to data are defined as
+%
 \begin{equation}
 \label{eq:DCB_RKst}
 \begin{array} {ll}
-P(m;c,m') = & f^{*} \cdot C(m;\alpha_1^{*},n_1^{*},c \cdot \sigma_1^{*}, m_0^{*} + m') \\
-&+ (1 - f^{*}) \cdot C(m;\alpha_2^{*},n_2^{*},c \cdot \sigma_2^{*}, m_0^{*} + m')
+DCB(m;c,m') = & f^{*} \cdot CB(m;\alpha_1^{*},n_1^{*},c \cdot \sigma_1^{*}, m_0^{*} + m') \\
+&+ (1 - f^{*}) \cdot CB(m;\alpha_2^{*},n_2^{*},c \cdot \sigma_2^{*}, m_0^{*} + m')
 \end{array}
 \end{equation}  
-\noindent
-where the free parameters are the width scale factor, $c$, and the mass shift, $m'$, which are common between the rare
-and resonant samples. The other parameters, denoted with $*$, are taken from the fit to simulated events, 
-separately for the rare and resonant samples and are fixed in the fit on data.
-The parameter $f^{*}$ in the formula is the relative fraction of candidates falling in the first Crystal Ball function.
+%
+where $f^{*}$ is the relative fraction of candidates falling in the first Crystal Ball function.
+The free parameters are the width scale factor, $c$, and the mass shift, $m'$, which are common between
+the rare and resonant samples. All the other parameters, denoted with $``^*"$, are taken from the fit to the
+simulated candidates 
+%, separately for the rare and resonant samples
+and are fixed when fitting data.
 
-To model the combinatorial background an exponential function was used.
-This is the only background component for the rare channel.
-In the normalisation channel fit the $\Bs  \to \Kstarz\jpsi$ background
-is described using the same PDF used for the signal but a different central value, $m$,
-which is set at the $\Bs$ nominal mass~\cite{PDG2014}.
-Finally, a $\Lb\to\jpsi pK$ background component is modelled using simulated \mbox{$\Lb\to\jpsi pK$} events
-to which the full $\Bz \to \Kstarz\jpsi$ selection is applied. The invariant mass distribution
+The background components considered for this fit are the following:
+\begin{itemize}
+\item the combinatorial background modelled with an exponential function,
+which is the only background component for the rare channel;
+\item 
+%In the normalisation channel fit 
+the $\Bs\to\Kstarz\jpsi$ background described using the same PDF used for the signal but a different
+central value, $m_{0}$, which is set at the $\Bs$ nominal mass~\cite{PDG2014};
+\item the $\Lb\to\jpsi pK$ background modelled using simulated \mbox{$\Lb\to\jpsi pK$} decays
+to which the full selection is applied. The invariant mass distribution
 of these candidates is a broad shape under the signal peak. The simulated distribution 
-is smoothed using a kernel estimation method (using the \verb!RooKeysPdf!  class of the \verb!RooFit! package~\cite{Verkerke:2003ir}).
+is smoothed using a kernel estimation method (using the \verb!RooKeysPdf! class of
+the \textsc{RooFit} package~\cite{Verkerke:2003ir}).
+\end{itemize}
 
-In summary the free parameters in the simultaneous fit to rare and resonant \mumu data samples are:
-the signal and background yields, the combinatorial background slopes, the widths scale, $c$, and
+In summary the free parameters in the simultaneous fit to rare and resonant $\mu\mu$ data samples are:
+the signal and background yields, the combinatorial background slopes, the widths scale factor, $c$, and
 the the mass shift, $m'$.
-
-Fig.~\ref{fig:mumu_data_fits} reports fits to real data distributions for the rare and resonant
-\mumu channels. Values of fitted parameters are reported on the plots.
+%
+Figure~\ref{fig:mumu_data_fits} shows the results of the fit to the rare and resonant
+$\mu\mu$ candidates. Values of the fitted parameters are reported on the plots.
 %
 \begin{figure}[h!]
-\centering \includegraphics[width=0.7\textwidth]{RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_MC_log.pdf}
+\centering \includegraphics[width=0.7\textwidth]{RKst/figs/Fit/fit_MM/KstJPsMM_MC_log.pdf}
 %\includegraphics[width=0.48\textwidth]{figs/Fit/KstMM_MC_log_fitAndRes.pdf}
 %\includegraphics[width=0.48\textwidth]{figs/Fit/KstMM_MC_log_fitAndRes.pdf}
 \caption{Fitted $m(K\pi \mu\mu)$ mass spectrum for $\Kstarz\jpsi$ simulated events. }
@@ -123,11 +129,15 @@ Fig.~\ref{fig:mumu_data_fits} reports fits to real data distributions for the ra
 \end{figure}
 %
 \begin{figure}[h!]
-\centering \includegraphics[width=0.65\textwidth]{RKst/figs/fit_MMs_0_MM-q2central-gmc/KstJPsMM_log.pdf} \\
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_MMs_0_MM-q2central-gmc/KstMM_fitAndRes.pdf}
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_MMs_0_MM-q2high-gmc/KstMM_fitAndRes.pdf}
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstJPsMM.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstJPsMM_log.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstMM_central.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstMM_central_log.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstMM_high.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_MM/KstMM_high_log.pdf}
 \caption{Fitted $m(K\pi \mu\mu)$ invariant mass distribution for $\Kstarz\jpsi$ candidates (top)
-and for rare candidates in the central (bottom left) and high (bottom right) \qsq intervals.
+and for rare candidates in the central (central) and high (bottom) \qsq intervals.
 Dashed black lines represent the signal PDFs and filled shapes the background components. }
 \label{fig:mumu_data_fits}
 \end{figure}
@@ -136,245 +146,67 @@ Dashed black lines represent the signal PDFs and filled shapes the background co
 \subsection{Electron channels}
 \label{sec:RKst_fit_ee}
 
-In the electron case the variable we fit is the $m(K\pi\ee)$ invariant mass coming from the kinematic
+In the electron case the fit variable is the \mKpiee invariant mass coming from the kinematic
 fit where all vertices are required to point to their mother particle. 
 In contrast to the muon channel,
 %a further constraint is used for the resonant fit, constraining 
-the constraint to the dilepton mass to the nominal \jpsi nominal value is not applied.
-In fact, due to the longer bremsstrahlung tail, the \jpsi mass constraint distorts the invariant mass distribution
-and makes it is hard to model it. Furthermore, mis-reconstructed background enters in the rare channel sample and
-its amount can be constrained by exploiting the higher statistics resonant channel, but this implies
-the usage of the same variable in both fits.
-In order to better constrain the parameters modelling the radiative tail and the misreconstructed
+the constraint to the dilepton mass to the \jpsi nominal value is not applied.
+In fact, due to the longer bremsstrahlung tail, the \jpsi mass constraint distorts the 4-body invariant mass
+distribution and makes it hard to model. Furthermore, mis-reconstructed background enters in the rare channel
+sample and its amount can be constrained by exploiting the higher statistics resonant channel, but this implies
+the usage of the same variable for both fits.
+In order to better constrain the parameters modelling the radiative tail and the mis-reconstructed
 backgrounds a wide mass window is used [4500,5800]~\mevcc. The lower limit is given
 by the point in which the \qsq cut (at 6~\gevgevcccc to separate the rare and resonant channels)
 starts to affect the 4-body invariant mass distribution.
+To be able to constrain background yields, as explained later, a sample of $\Bd\to\Kstarz(\psitwos\to\ee)$
+candidates, selected in the \qsq interval [11,15]~\gevgevcccc, is also added to the simultaneous fit.
 
-In the electron case the invariant mass distributions are different depending on which hardware
-trigger was used and especially how many bremsstrhalung photons were recovered.
+In the electron case the invariant mass distributions are different depending on the
+trigger category and the number of bremsstrahlung photons recovered.
 %Furthermore the efficiencies can be more easily treated if divided in trigger categories.
-Therefore our sample is divided in 3 trigger categories, as described in
-Sec.~\ref{sec:RKst_trigstripping}, and 3 bremsstrahlung categories defined as:
+Therefore, our sample is divided in three trigger categories, as described in
+Sec.~\ref{sec:RKst_trigstripping}, and three bremsstrahlung categories defined as:
 %
 \begin{itemize}
-\item $0\gamma$: events with no photon emitted
-\item $1\gamma$: events with one photon by either of the electrons
-\item $2\gamma$: events with ono photon emitted by each electron
+\item $0\gamma$: candidates with no photon emitted
+\item $1\gamma$: candidates with one photon by either of the electrons
+\item $2\gamma$: candidates with ono photon emitted by each electron
 \end{itemize}
 %
 The three samples, divided by trigger, are fitted simultaneously.
-This allows a better use of statistics as the simultaneous fit
+This allows a better use of the available statistics as the simultaneous fit
 gathers information from the three categories at the same time and is more stable.
-Furthermore using this method the results for the three categories are
+Furthermore, using this method the results for the three categories are
 naturally combined in a single $R_{ee}$ ratio.
+%
+The PDFs used to fit the invariant mass distributions are described in the next subsections.
 
-The PDFs used to fit the invariant mass distributions are described in the next subsection.
 
 
-
-\subsubsection{Signal PDFs for the electron channels in the central-\qsq interval}
+\subsubsection{Signal PDFs for the electron channels}
 \label{sec:fit_ee_central}
 
-As for the muonic channel simulated events are fitted at fist to constrain
-the shapes for the subsequent fit on data. The signal PDFs are built using the following method:
+As for the muonic channel, simulated events are fitted fist to constrain
+the shape parameters for the subsequent fit to data. The signal PDFs are built using the following method:
 %
 \begin{itemize}
 \item Simulated $\Bz\to\Kstarz\jpsi(ee)$ and $\Bz\to\Kstarz ee$ events are divided
 in each trigger and bremsstrahlung category and an independent fit is performed to each sample.
-\item For each trigger category a PDF is built as the sum of the three PDFs for each bremsstrahlung category.
+A different fit is also performed for the central, \jpsi and high \qsq intervals. In the case of the high-\qsq 
+interval it is particularly important to keep signal tail parameters independent from \jpsi channel ones
+because, as can be seen in Fig.~\ref{fig:high_central_mass_comparison}, the invariant mass
+distributions are significantly different for the two intervals.
+\item For each trigger category a PDF is built as the sum of the three PDFs of the bremsstrahlung categories:
 \begin{equation}
-P(m)^{\rm trg} = f^{\rm trg}_{0\gamma} P^{\rm trg}_{0\gamma}(m) + f^{\rm trg}_{1\gamma} P^{\rm trg}_{1\gamma}(m) + (1 - f^{\rm trg}_{0\gamma} - f^{\rm trg}_{1\gamma}) P^{\rm trg}_{2\gamma}(m).
+P(m)^{\rm trg} = f^{\rm trg}_{0\gamma} P^{\rm trg}_{0\gamma}(m) + f^{\rm trg}_{1\gamma} P^{\rm trg}_{1\gamma}(m) + (1 - f^{\rm trg}_{0\gamma} - f^{\rm trg}_{1\gamma}) P^{\rm trg}_{2\gamma}(m),
 \end{equation}
-where the $P(x)^{trg}_{n\gamma}$ functions are the chosen PDFs for each trigger and bremsstrahlung category
+where the $P(m)^{trg}_{n\gamma}$ functions are the chosen PDFs for the trigger and bremsstrahlung categories
 and the $f^{trg}_{n\gamma}$ parameters are the relative fractions of events falling in each category.
 \item Most parameters are fixed (details later) and the combined PDF, $P(m)$,
 is used to fit real data divided only in trigger categories.
 \end{itemize}
-
-The $0\gamma$ category is characterised by a better resolution and a sharp tail on the righthand
-side and it is fitted with a simple Crystal Ball function (CB). Instead the $1\gamma$ and $2\gamma$
-samples are modelled using the sum of a Crystal Ball and a Gaussian functions (CBG) with all parameters independent.
-When the combined PDF, $P(m)^{\rm trg}$, is built all parameters are fixed leaving one global mass shift 
-and one scale factor for the widths free to vary, as done for the muonic samples.
-
-Finally, combining the three bremsstrahlung PDFs one needs to specify in which fractions they
-contribute to the total. These fractions have been shown to be in good agreement between 
-resonant data and Monte Carlo
-and therefore they are fixed to the values found on simulation, separately for the normalisation
-channel and each \qsq bin. In Tab.~\ref{tab:brem_frac} are reported percentages of events
-with 0, 1 and 2 recovered photons in the three trigger categories.
-
-\begin{table}
-\centering
-\caption{Percentages of events with 0, 1 and 2 emitted photons in the three
-trigger categories, extracted from simulated events.}
-\begin{tabular}{|l|ccc|}
-\hline
-Trigger 	&	$0 \gamma$	&	$1 \gamma$  &	 $2 \gamma$  \\ \hline
-\multicolumn{4}{|c|}{\jpsi} \\ \hline
-L0E			&	28.3 \%		&	50.5 \%		&	21.2 \%	 \\
-L0H			&	18.1 \%		&	51.0 \%		&	30.9 \%	 \\
-L0I			&	25.1 \% 	&	52.0 \%		&	22.9 \%	 \\ \hline
-\multicolumn{4}{|c|}{1--6 \gevgevcccc} \\ \hline
-L0E			&	30.1 \%		&	50.2 \%		&	19.7 \%	 \\
-L0H			&	23.1 \%		&	51.7 \%		&	25.2 \%	 \\
-L0I			&	28.5 \% 	&	50.8 \%		&	20.7 \%	 \\ \hline
-\end{tabular}
-\label{tab:brem_frac}
-\end{table}
-
-In summary the signal PDF for the fit on data is defined as:
 %
-\begin{equation}
-P(m;c,m')^{\rm trg} = f^{\rm trg}_{0\gamma} \text{CB}^{\rm trg}_{0\gamma}(m;c,m')  + f^{\rm trg}_{1\gamma} \text{CBG}^{\rm trg}_{1\gamma}(m;c,m') + (1 - f^{\rm trg}_{0\gamma} - f^{\rm trg}_{1\gamma}) \text{CBG}^{\rm trg}_{2\gamma}(m;c,m')
-\end{equation}
-%
-where the free parameters are: $c$, the scaling factor for the widths, and $m'$, the mass shift.
-
-\subsubsection{Background PDFs for the electron channels in the central-\qsq interval}
-\label{sec:RKst_misreco_fit}
-
-In the fit to the resonant sample three background components are modelled:
-combinatorial background, and misreconstructed background coming
-from the hadronic and the leptonic systems. The combinatorial is described
-with an exponential function.
-
-The misreconstructed background is split in two categories,
-that involving higher hadronic resonances and that coming from higher $\cquark\cquarkbar$ resonances.
-%The first component also includes decays from
-%$D$ chains described in Sec.~\ref{sec:RKst_peaking_Dchains}.
-These backgrounds are modelled using inclusive \decay{\Bz}{\jpsi X} simulated samples to which the full
-selection is applied. The distributions for the hadronic (leptonic) background are defined selecting
-candidates where the \Kstarz (dimuon) is not a direct daughter of the \Bz.
-The invariant mass distributions of these events, shown in Fig.~\ref{fig:RKst_misreco_distrib},
-are smoothed using a kernel estimation method and their yields are left floating in the fit.
-Given the low statistics available, the same shape is used for the three trigger categories.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/part_had_jpsi.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/part_lpt_jpsi.pdf}
-\caption{Simulated distributions of misreconstructed background events falling into
-the $\decay{\Bz}{\Kstarz(\jpsi\to\ee)}$ sample coming from the
-hadronic (left) and leptonic (right) systems.}
-\label{fig:RKst_misreco_distrib}
-\end{figure}
-
-In the fit for the rare sample in the central-\qsq interval the modelled
-backgrounds are: combinatorial background, again modelled with an exponential; misreconstructed background
-coming from the hadronic system and the leakage of the \jpsi radiative tail into the lower \qsq interval.
-The shape for the misreconstructed component is obtained from simulated distributions similarly to what described
-for the resonant channel. However, as there are no inclusive samples for the rare case,
-a sample including higher \Kstar resonances is generated, including $K_1^+(1400)$ and $K_2^+(1460)$.
-The yield of this component is not floating independently but its relative proportion
-with respect to the signal yield is constrained to be the same as in the resonant sample, namely:
-\begin{equation}
-N_{\ell\ell}^{mis-reco} = N_{ee} \cdot k = N_{ee} \cdot \frac{N_{\jpsi}^{mis-reco}}{N_{\jpsi}}.
-\end{equation}
-Notice that, as the fit is simultaneous for the rare and resonant samples, this fraction
-is not fixed in the fit but floats using information from both samples.
-
-The shape to describe the \jpsi tail leakage is obtained using simulated $\Bz\to\jpsi\Kstarz$ candidates
-and selecting those falling in \qsq below 6~\gevgevcccc. The 4-body invariant mass distribution
-of these events is reported in Fig.~\ref{fig:RKst_rare_misreco_distrib}. The yield of this component
-again is not floating independently but it is liked to the yield found in the resonant fit as follows
-\begin{equation}
-N_{\ell\ell}^{leak} = N_{\jpsi} \cdot k^{MC} = N_{\jpsi} \cdot \frac{N_{leak}^{MC}}{N_{\jpsi}^{MC}}
-\end{equation}
-where $k$ is the ratio between $N_{\jpsi}^{MC}$, the number of \jpsi events
-that fall into the \jpsi ~\qsq window (6-11~\gevgevcccc) in the simulation
-and $N_{leak}^{MC}$, the number of \jpsi events leaking below 6~\gevgevcccc in the simulation.
-In this case $k$ is previously extracted from simulated events and fixed in the fit on data.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/part_had.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/jpsi_leakage.pdf}
-\caption{(left) Simulated 4-body invariant mass distributions for events involving
-higher \Kstar states and passing out full selection. (right) Simulated invariant mass
-distribution of $\decay{\Bz}{\Kstarz(\jpsi\to\ee)}$ events leaking into the central-\qsq interval.}
-\label{fig:RKst_rare_misreco_distrib}
-\end{figure}
-
-
-\subsubsection{Summary: electron channels fit in the central-\qsq interval}
-
-In summary in the resonant fit on data the floating parameters are the yields of all the components
-in the resonant channel, a common $R_{ee}$ ratio, the combinatorial background yield in the rare sample,
-one scale factor $c$, one mass shift $m_0$ and the combinatorial background slopes.
-
-Fits on simulated $\Bz\to\Kstarz(\jpsi\to\epem)$ candidates 
-are shown in Appendix~\ref{app:RKMCfits}. Figure~\ref{fig:FitJpsiEE_Data_inTrigCat} and \ref{fig:FitEE_Data_inTrigCat}
-present fits on real $\Bz\to\Kstarz(\jpsi\to\epem)$ and \mbox{\BdKstee} candidates (central-\qsq interval)
-in the three trigger categories. Values of fitted parameters are reported on the plots.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0E.pdf}
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0H.pdf}
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstJPsEE_L0I.pdf}
-\caption{Fit to the $m(K\pi ee)$ mass spectrum of $\Bz \to \Kstarz (\jpsi\to \ee)$
-real data events in the three trigger categories. From top to bottom L0E, L0H and L0I.}
-\label{fig:FitJpsiEE_Data_inTrigCat}
-\end{figure}
-%
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0E_log_fitAndRes.pdf}
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0H_log_fitAndRes.pdf}
-\includegraphics[width=0.65\textwidth]{RKst/figs/fit_EEs_0_EE-q2central-gmc/KstEE_L0I_log_fitAndRes.pdf}
-\caption{Fit to the $m(K\pi ee)$ mass spectrum of \BdKstee real data events in the three trigger categories.
-From top to bottom L0E, L0H and L0I.
-}
-\label{fig:FitEE_Data_inTrigCat}
-\end{figure}
-
-
-\subsubsection{Electron channels fits in the high-\qsq interval}
-
-In the high-\qsq interval, above 15~\gevgevcccc, the efficiency for the
-L0Hadron trigger becomes very low as the \Kstar has very low momentum.
-In this region only 9 candidates are found spread in the interval
-$4500 < m(K\pi ee) < 6000$ \mevcc. In the L0TIS category,
-even if the yield is bigger a clear peak cannot be seen, therefore
-only L0Electron triggered events are used in this region.
-
-The signal PDF is described in the same way as for the central bin.
-Simulated events are divided in three bremsstrahlung categories and fitted
-using the same PDFs described in Sec.~\ref{sec:fit_ee_central}.
-While the signal tail parameters are similar for the \jpsi and central-\qsq samples
-in the case of the high-\qsq interval it is particularly important to keep them independent.
-In fact, as can be seen in Fig.~\ref{fig:high_central_mass_comparison}, the invariant mass
-distributions are significantly different for the two intervals.
-The fractions of 0, 1 and 2 $\gamma$ components used to build the total PDF
-are also in this case taken from simulated events are are reported in Tab.~\ref{tab:brem_frac_highq2}.
-
-\begin{table}
-\centering
-\caption{Percentages of events with 0, 1 and 2 emitted photons in the three
-trigger categories, extracted from simulated events.}
-\begin{tabular}{|l|ccc|}
-\hline
-Sample 	&	$0 \gamma$	&	$1 \gamma$  &	 $2 \gamma$  \\ \hline
-\psitwos (L0E)			&	25.7 \%		&	52.1 \%		&	22.2 \%	 \\ \hline
-15--20 \gevgevcccc (L0E)			&	20.7 \%		&	51.7 \%		&	27.6 \%	 \\ \hline
-\end{tabular}
-\label{tab:brem_frac_highq2}
-\end{table}
-
-The background components, as for the central-\qsq interval, include a combinatorial background
-and a misreconstructed background coming from the hadronic system. Furthermore there is a leakage
-due to the \psitwos resonance, that is wide enough to contribute in \qsq above 15 \gevgevcccc.
-The combinatorial background is modelled using the shape obtained by reversing the NN output cut.
-In Fig.~\ref{fig:highq2_comb} are shown invariant mass distributions for different
-NN output cuts using the electron and muon high-\qsq samples.
-The shapes are normalised to the same integral. This plot shows that the shape
-is similar for the two samples and as a function of the NN output cut, which supports the
-hypothesis that these distributions contain mostly combinatorial background and that its
-shape has no strong dependency on the NN output cut. The shape is therefore obtained
-from the muon sample, which has higher statistics, selecting events with NN output $ < 0.1$.
-The distribution is then smoothed using the \verb!RooKeysPdf! method.% of \verb!RooFit!.
-
  \begin{figure}[h!]
 \centering
 \includegraphics[width=0.70\textwidth]{RKst/figs/high_central_mass_comparison.pdf}
@@ -382,51 +214,237 @@ The distribution is then smoothed using the \verb!RooKeysPdf! method.% of \verb!
 \label{fig:high_central_mass_comparison}
 \end{figure}
 
- \begin{figure}[hb!]
+The $0\gamma$ category is characterised by a better resolution and a sharp tail on the righthand
+side and it is fitted with a simple Crystal Ball function (CB). Instead the $1\gamma$ and $2\gamma$
+samples are modelled using the sum of a Crystal Ball and a Gaussian functions (CBG) with all parameters independent.
+When the combined PDF, $P(m)^{\rm trg}$, is built all parameters are fixed leaving one global mass shift 
+and one scale factor for the widths free to vary, as done for the muonic samples.
+
+%Finally, combining the three bremsstrahlung PDFs one needs to specify in which fractions they contribute to the total.
+
+The $f^{trg}_{n\gamma}$ fractions have been shown to be in good agreement between 
+resonant data and simulation and therefore they are fixed to the simulated values, separately
+for the normalisation channel and each \qsq iterval. Table~\ref{tab:brem_frac} lists the percentages
+of candidates with 0, 1 and 2 recovered photons for each trigger category.
+
+\begin{table}
 \centering
-\includegraphics[width=0.70\textwidth]{RKst/figs/highq2_comb.pdf}
-\caption{Invariant mass distribution of candidates selected by reversed NN output cuts.}
+\caption{Percentages of events with 0, 1 and 2 emitted photons in the three
+trigger categories, extracted from simulated events.}
+\begin{tabular}{|c|c|ccc|}
+\hline
+\qsq interval 		& Trigger 	&	$0 \gamma$	&	$1 \gamma$  &	 $2 \gamma$  \\ \hline
+\multirow{3}{*}{1--6 \gevgevcccc}
+ & L0E			&	30.1 \%		&	50.2 \%		&	19.7 \%	 \\
+ & L0H			&	23.1 \%		&	51.7 \%		&	25.2 \%	 \\
+ & L0I			&	28.5 \% 	        &	50.8 \%		&	20.7 \%	 \\ \hline
+\multirow{3}{*}{\jpsi} 
+ & L0E			&	28.3 \%		&	50.5 \%		&	21.2 \%	 \\
+ & L0H			&	18.1 \%		&	51.0 \%		&	30.9 \%	 \\ 
+ & L0I			&	25.1 \% 	        &	52.0 \%		&	22.9 \%	 \\ \hline
+\multirow{3}{*}{\psitwos}
+ &      L0E			&	25.7 \%		&	52.1 \%		&	22.2 \% \\
+ &      L0H			&	17.5 \% 		& 	51.4  \%		& 	31.1 \% \\
+ &      L0I			&	22.4 \% 		& 	54.7  \%		& 	22.9 \% \\  \hline
+\multirow{2}{*}{15--20 \gevgevcccc }
+ & L0E			&	20.7 \%		&	51.7 \%		&	27.6 \%	 \\
+ & L0I			&	15.0 \%		& 	51.4  \%		& 	33.6  \%	 \\ \hline		
+\end{tabular}
+\label{tab:brem_frac}
+\end{table}
+
+In summary the signal PDF for the fit on data is defined as:
+%
+\begin{equation}
+\begin{array} {ll}
+P(m;c,m')^{\rm trg} & = f^{\rm trg}_{0\gamma} \text{CB}^{\rm trg}_{0\gamma}(m;c,m')  \\
+& + f^{\rm trg}_{1\gamma} \text{CBG}^{\rm trg}_{1\gamma}(m;c,m') + (1 - f^{\rm trg}_{0\gamma} - f^{\rm trg}_{1\gamma}) \text{CBG}^{\rm trg}_{2\gamma}(m;c,m')
+\end{array} 
+\end{equation}
+%
+where the free parameters are: $c$, the scaling factor for the widths, and $m'$, the mass shift,
+which are common between the rare and resonant samples.
+
+\subsubsection{Background PDFs for the electron channels}
+\label{sec:RKst_misreco_fit}
+
+The following backgrounds to $\Bd\to\Kstarz(\jpsi\to\ee)$ are considered:
+%
+\begin{itemize}
+
+\item \textit{Combinatorial}: described using an exponential function. The yield and slope parameters are free to vary in the fit;
+
+\item \textit{Mis-reconstructed}: this background is split in an hadronic component, involving higher hadronic resonances, and a leptonic one, coming from higher \ccbar resonances. Both categories are modelled using inclusive \decay{\Bz}{\jpsi X} simulated events to which the full selection is applied. The distribution for the hadronic (leptonic) category is defined by selecting candidates where the \Kstarz (\jpsi) is not a direct daughter of the \Bz. The invariant mass distributions of these candidates, shown in Fig.~\ref{fig:misreco}, are smoothed using a kernel estimation method and their yields are left free to vary in the fit. Given the little statistics available, the same shape is used for all the trigger categories;
+
+\item $\Bz\to\Kstarz(\psitwos\to\ee)$: the leakage from the \psitwos radiative tail into the \jpsi interval is modelled by selecting simulated $\psitwos\to\ee$ events falling into the \jpsi mass window (6--11\gevgevcccc). The normalisation is fixed to the $\Bd\to\Kstarz(\psitwos\to\ee)$ yield, $N_{\psitwos(ee)}$, as:
+%
+$$N_{\jpsi(ee)}^{\rm leak} = N_{\psitwos(ee)} \cdot f_{\psitwos(ee)}^{\rm leak, \,MC},$$
+%\frac{N_{\psitwos(ee)}^{\rm leak, \,MC}}{N_{\psitwos(ee)}^{\rm MC}},$$
+%
+where $f_{\psitwos(ee)}^{\rm leak, \,MC}$ is the fraction of $\Bd\to\Kstarz(\psitwos\to\ee)$ simulated events reconstructed
+in the \jpsi interval.
+
+\item $\Lb\to pK(\jpsi\to\ee)$: described using simulated events to which the full selection is applied. This distribution has a broad shape under the signal peak and is smoothed using a \texttt{RooKeysPdf}. The normalisation is constrained to the $\Lb\to pK(\jpsi\to\mumu)$ yield returned by the $\mu\mu$ fit after correcting for efficiency differences between final states with muons and electrons.
+
+\item $\Bs\to\Kstarz(\jpsi\to\ee)$: described using the same PDF adopted for the signal, but a different central value, $m_0$, which is set at the \Bs nominal mass. The normalisation is constrained to the $\Bd\to\Kstarz(\jpsi\to\mumu)$ yield returned by the $\mu\mu$ fit after correcting for efficiency differences between final states with muons and electrons.
+
+\end{itemize}
+
+
+The backgrounds to \BdToKstee in the central-\qsq region are:
+%
+\begin{itemize}
+
+\item \textit{Combinatorial}: described using an exponential function; the yield and slope parameters are free to vary in the fit.
+
+\item \textit{Mis-reconstructed} (hadronic): the shape is obtained from simulation similarly to the $\jpsi(ee)$ mode. 
+However, as there are no inclusive samples for the rare channel, a sample including higher \Kstarz resonances, 
+such as $K_1^+(1400)$ and $K_2^+(1460)$, is used. The normalisation is fixed with respect to the signal yield, $N_{\ee}$, as:
+%
+$$N_{\ee}^{\rm mis-reco} = N_{\ee} \cdot \frac{N_{\jpsi(ee)}^{\rm mis-reco (hadronic)}}{N_{\jpsi(ee)}},$$
+%
+where $N_{\jpsi(ee)}^{\rm mis-reco (hadronic)}/N_{\jpsi(ee)}$ is the fraction of hadronic mis-reconstructed background relative
+to the signal yield in the $\Bd\to\Kstarz(\jpsi\to\ee)$ channel. Note that the leptonic mis-reconstructed background is not modelled
+because it does not contribute in the rare samples.
+
+\item $\Bs\to\Kstarz(\jpsi\to\ee)$: the leakage from the \jpsi radiative tail into the central-\qsq interval is modelled by selecting 
+simulated $\Bs\to\Kstarz(\jpsi\to\ee)$ events with the central-\qsq requirements and smoothing the distributions
+with kernel estimation method. The normalisation is fixed to the $\Bs\to\Kstarz(\jpsi\to\ee)$ yield, 
+$N_{\jpsi ee}$, as:
+%
+$$N_{\ee, \, {\rm central}}^{\rm leak} = N_{\jpsi(ee)} \cdot f_{\jpsi(ee)}^{\rm leak, \,MC},$$
+%\frac{N_{\jpsi(ee)}^{\rm leak, \,MC}}{N_{\jpsi(ee)}^{\rm MC}},$$
+%
+%where $N_{\jpsi ee}^{\rm MC}$ is the number of \jpsi(ee) simulated events reconstructed in the \jpsi mass window (6--11\gevgevcccc), and $N_{\jpsi ee}^{\rm leak, \,MC}$ is the number of $\Bs\to\Kstarz(\jpsi\to\ee)$ simulated events leaking in the central-\qsq region.
+where $f_{\jpsi(ee)}^{\rm leak, \,MC}$ is the fraction of $\Bd\to\Kstarz(\jpsi\to\ee)$ simulated events reconstructed
+in the central-\qsq interval.
+
+\end{itemize}
+
+The backgrounds to \BdToKstee in the high-\qsq region are:
+%
+\begin{itemize}
+
+\item \textit{Combinatorial}: modelled using a shape obtained by reversing the NN output cut on data. 
+Figure~\ref{fig:highq2_comb} shows the invariant mass distributions for different anti-cuts on the electron 
+and muon samples at high-\qsq. The shapes are very similar between the two samples and as a function 
+of the cut value. In order to have a larger statistics, the shape is taken from the muon sample with a tight
+NN output anti-cut at 0.1 and smoothed with a \texttt{RooKeysPdf}.
+
+\item \textit{Mis-reconstructed} (hadronic): the hadronic mis-reconstructed background is modelled in 
+the same way as in the central-\qsq interval but the normalisation is left free to vary in the fit;
+
+\item $\Bd\to\Kstarz(\psitwos\to\ee)$: the leakage from the \psitwos radiative tail is modelled using simulated 
+$\Bd\to\Kstarz(\psitwos\to\ee)$ events in the high-\qsq region. The normalisation is fixed to 
+the $\Bd\to\Kstarz(\psitwos\to\ee)$ yield, $N_{\psitwos(ee)}$ as:
+%
+$$N_{\ee, \, {\rm high}}^{\rm leak} = N_{\psitwos(ee)} \cdot f_{\psitwos(ee)}^{\rm leak, \,MC},$$
+%
+where $f_{\psitwos(ee)}^{\rm leak, \,MC}$ is the fraction of $\Bd\to\Kstarz(\psitwos\to\ee)$ simulated candidates
+leaking in the high-\qsq interval.
+
+\end{itemize}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_Bd2XJPsMRH_noprint_KstJPsEE_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_Bd2XJPsMRL_noprint_KstJPsEE_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_misReco_KstEE_central_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_misReco_KstEE_high_L0E.pdf}
+\caption{Distributions of the \mKpiee invariant mass for the (top left) hadronic and (top right) leptonic mis-reconstructed background to \BdToKstJPsee. Distributions of the \mKpiee invariant mass for decays involving
+higher \Kstarz resonances in the (bottom left) central- and (bottom right) high-\qsq interval.}
+\label{fig:misreco}
+%\end{figure}
+
+\vspace{1cm}
+
+%\begin{figure}[t!]
+\centering
+\includegraphics[width=0.6\textwidth]{RKst/figs/Background/highq2_comb.pdf}
+\caption{Distributions of the \mKpill invariant mass for \BdToKstll candidates selected with a reversed cuts on the NN output.}
 \label{fig:highq2_comb}
 \end{figure}
 
-The misreconstructed component is modelled in the same way described for the central-\qsq interval.
-However, in this case, its yield is not constrained to the resonant channel.
-%as it is not guaranteed
-%that the same fraction of misreconstructed background will be present in the \jpsi
-%and high-\qsq intervals. %On the other hand the misreconstructed background shape is better
-%defined at high-\qsq and therefore its yield can be left floating in the fit.
+For the fit to $\Bd\to\Kstarz(\psitwos\to\ee)$ candidates the \psitwos mass constraint completely removes the mis-reconstructed 
+background form the fit mass window and therefore only the combinatorial background is considered and described using an exponential function.
 
-The \psitwos leakage component is modelled from $\decay{\Bz}{\Kstar(\psitwos\to\ee)}$
-simulated events with the same method used for the \jpsi leakage in the central-\qsq interval.
-The yield of this component is fixed to the yield of \psitwos as
-\begin{equation}
-N_{\ell\ell}^{leak} = N_{\psitwos} \cdot k^{MC} = N_{\psitwos} \cdot \frac{N_{leak}^{MC}}{N_{\psitwos}^{MC}}.
-\end{equation}
- In order to do this the \psitwos yield, $N_{\psitwos}$, is obtained from a fit to the \psitwos invariant
- mass peak. Since we are only interested in the \psitwos yield we fit the $m(K\pi ee)$ obtained from
- a kinematic fit where the dimuon mass is constrained to the known \psitwos mass.
- This allows to eliminate the misreconstructed background form the fit mass window and
- use a simple model composed by a signal component and a combinatorial background component.
- The signal is described with a Double Crystal Ball function with opposite tails
- already described the \Lb fits (see Sec.~\ref{sec:Lb_fit}), and the combinatorial
- background is described with an exponential.
- The fit to the \psitwos peak is reported in Fig.~\ref{fig:fit_ee_highq2}
- together with the fit to the $\decay{\Bz}{\Kstar \ee}$ candidates in the high-\qsq interval.
- 
+
+\subsubsection{Summary of the fit to the electron samples}
+
+In summary, the free parameters in the fit to data are:
+%
+\begin{itemize}
+\item the $\Bz\to\Kstarz(\jpsi\to\ee)$ and $\Bz\to\Kstarz(\psitwos\to\ee)$ yield in each trigger category;
+\item the $R_{ee}$ ratio common to all trigger categories; one for the central- and one for the high-\qsq region;
+\item one mass shift, $m'$, and one width scale factor, $c$, for the signal PDF common between $\Bd\to\Kstarz(\jpsi\to\ee)$ and \BdToKstee, but different for the three trigger categories and for $\Bd\to\Kstarz(\psitwos\to\ee)$ due to the \psitwos mass constraint;
+\item the yield and slope, when applicable (e.g. no slope at high-\qsq), of the combinatorial background in each trigger category and for each channel;
+\item the yield of the mis-reconstructed background in each trigger category for $\Bd\to\Kstarz(\jpsi\to\ee)$ and \BdToKstee at high-\qsq.
+\end{itemize}
+
+Fits to simulated $\Bz\to\Kstarz(\jpsi\to\epem)$ candidates are shown in Appendix~\ref{app:RKMCfits}, while
+fits to real candidates are shown in Figs.~\ref{fig:fitJPsEE}, \ref{fig:fitPsiEE}, \ref{fig:fitEE_central}
+and \ref{fig:fitEE_high} and fitted parameters are reported on the plots. 
+
+In the high-\qsq interval, above 15~\gevgevcccc, the efficiency for the
+L0Hadron trigger becomes very low as the \Kstar has very low momentum.
+In this region only 9 candidates are found spread in the interval
+$4500 < m(K\pi ee) < 6000$ \mevcc. Therefore
+only L0E and L0I triggered events are fitted in this region.
+%
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.8\textwidth]{RKst/figs/fit_EEs_0_EE-q2high-gmc/KstPsiEE_L0E_fitAndRes.pdf}
-\includegraphics[width=0.8\textwidth]{RKst/figs/fit_EEs_0_EE-q2high-gmc/KstEE_L0E_fitAndRes.pdf}
-\caption{Fitted $m(K\pi ee)$ invariant mass distribution in the \psitwos interval, $11 < \qsq < 15$~\gevgevcccc
-and in the high-\qsq interval. }
-\label{fig:fit_ee_highq2}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstJPsEE_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstJPsEE_L0H.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstJPsEE_L0I.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/fit_JPs.pdf}
+\caption{Fit to the \mKpiee invariant mass of \BdToKstJPsee candidates in the three trigger categories (L0E, L0H and L0I) separately, and (bottom right) combined. The dashed black line (shaded shapes) represents the signal (background) PDF.}
+\label{fig:fitJPsEE}
+\end{figure}
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstPsiEE_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstPsiEE_L0H.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstPsiEE_L0I.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/fit_Psi.pdf}
+\caption{Fit to the \mKpiee invariant mass of $\Bd\to\Kstarz(\psitwos\to\ee)$ candidates in the three trigger categories (L0E, L0H and L0I) separately, and (bottom right) combined. The dashed black line (shaded shapes) represents the signal (background) PDF.}
+\label{fig:fitPsiEE}
+\end{figure}
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0H.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0I.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/fit_EEc.pdf}
+\caption{Fit to the \mKpiee invariant mass of \BdToKstee candidates at central-\qsq in the three trigger categories (L0E, L0H and L0I) separately, and (bottom right) combined. The dashed black line (shaded shapes) represents the signal (background) PDF.}
+\label{fig:fitEE_central}
+\end{figure}
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0E_log.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0H_log.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_central_L0I_log.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/fit_EEc_log.pdf}
+\caption{Fit to the \mKpiee invariant mass of \BdToKstee candidates at central-\qsq in the three trigger categories (L0E, L0H and L0I) separately, and (bottom right) combined. The dashed black line (shaded shapes) represents the signal (background) PDF.}
+\label{fig:fitEE_central}
+\end{figure}
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_high_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/KstEE_high_L0I.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/fit_EEh.pdf}
+\caption{Fit to the \mKpiee invariant mass of \BdToKstee candidates at high-\qsq in the L0E and L0I trigger categories (top) separately, and (bottom) combined. The dashed black line (shaded shapes) represents the signal (background) PDF.}
+\label{fig:fitEE_high}
 \end{figure}
 
-\subsection{Fit summary}
+\subsection{Event yields}
 
-In Tab.~\ref{tab:RKst_yields} are reported raw yields obtained from the
+Table~\ref{tab:RKst_yields} reports raw yields obtained from the
 fits described in the previous subsections. The values for the rare channels are not
-directly floating in the fits but as described in Sec.~\ref{sec:rkst_fits} they are parameterised
+directly floating in the fits but, as described in Sec.~\ref{sec:rkst_fits}, they are parameterised
 as a function of the number of resonant events found and the ratios $R_{ee}$ and $R_{\mu\mu}$
 between the resonant and rare branching fractions. Measured values of these ratios are reported 
 in Tab.~\ref{tab:RKst_results}.

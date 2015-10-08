@@ -2,32 +2,32 @@
 \label{sec:RKst_efficiency}
 
 The efficiency for each of the decay channels is calculated according to the formula
-\begin{equation}
-\varepsilon^{tot}=\varepsilon(geom)\varepsilon(reco|geom)\varepsilon(PID|reco)\varepsilon(trig|PID)\varepsilon(MVA|trig).
-\end{equation}
-In this expression the first term is the efficiency to have final state particles in the LHCb detector 
-acceptance. The second term carries information on reconstruction and stripping efficiency
-(we keep these together given that boundaries between them are completely artificial).
-The third part corresponds to the efficiency of the PID requirements.
-The fourth term handles the trigger efficiency for those events which are selected by the preselection process.
-Finally, the latter term deals with the efficiency of the NN classifier.
-Reconstruction, trigger and MVA efficiencies are evaluated on simulated data with the trigger efficiency
+%
+$$\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm reco|geom} \cdot \varepsilon^{\rm PID|reco} \cdot \varepsilon^{\rm trig|PID} \cdot \varepsilon^{\rm MVA|trig},$$
+%
+where the first term is the efficiency to have final state particles in the LHCb detector 
+acceptance; the second term ($\varepsilon^{\rm reco|geom}$) carries information on reconstruction and stripping efficiency;
+%(we keep these together given that boundaries between them are completely artificial).
+the third ($\varepsilon^{\rm PID|reco}$) corresponds to the efficiency of the PID requirements;
+the fourth ($\varepsilon^{\rm trig|PID}$) handles the trigger efficiency for those events which
+are selected by the pre-selection process; and, finally, the latter term deals with the efficiency of the neural network classifier.
+Reconstruction, trigger and MVA efficiencies are evaluated using simulated data samples with the trigger efficiency
 for $\Bz\to\Kstar\jpsi$ being cross-checked using the data-driven TISTOS method as described in Sec.~\ref{sec:Lb_trigger_eff}.
 The PID efficiency is calculated with a data-driven method as described in Sec.~\ref{sec:RKst_pid_eff}.
 
 All absolute efficiencies for the muon and electron rare channels are separately listed in Tab.~\ref{tab:RKst_AbsEff}
 for the central and high \qsq intervals and in Tab.~\ref{tab:AbsEff_jpsi} for the resonant channels.
-However for the analysis itself only efficiencies relative to the resonant channels are used in order
-to limit systematic uncertainties.
+However, for the analysis itself only relative efficiencies between rare and resonant channels, 
+$\varepsilon(\ell\ell)/\varepsilon(\jpsi(\ell\ell))$, are used in order to limit the systematic uncertainties;
+these are listed in Tab.~\ref{tab:RKst_AbsEff}.
+%
 %($\varepsilon(\Bz\to\Kstar ee)/\varepsilon(\Bz\to\Kstar(\jpsi\to ee))$)/($\varepsilon(\Bz\to\Kstar \mumu)/\varepsilon(\Bz\to\Kstar(\jpsi\to \mumu))$).
 %Systematic uncertainties for relative efficiencies take into account that some effects are correlated between two decays.
 %In table \ref{tab:AbsEffs} are reported absolute efficiencies
 %for the electron and muon channels in the \qsq bin $1 < q^2 < 6$ \gevgevcccc.
-
-Tab.~\ref{tab:RKst_AbsEff} reports relative efficiencies between the rare and resonant channels,
-$\varepsilon(\Bz\to\Kstarz \ll)/\varepsilon(\Bz\to\Kstarz(\jpsi\to \ll))$.
-Finally, in Tab.~\ref{tab:double_rel_eff} are listed ratios of relative efficiencies
-for the $ee$ and $\mu\mu$ channels, $[ee/(\jpsi \to ee)] / [\mu\mu/(\jpsi\to \mu\mu)]$.
+%
+Finally, Tab.~\ref{tab:double_rel_eff} reports double-ratios of the efficiencies
+for the $ee$ and $\mu\mu$ channels, $[\varepsilon(ee)/\varepsilon(\jpsi (ee))] / [\varepsilon(\mu\mu)/\varepsilon(\jpsi(\mu\mu))]$.
 %In particular the latter table contains the total double-relative
 %efficiency, $\varepsilon_tot^{drel} = \pm $, which is used for the final result extraction.
 
@@ -48,29 +48,6 @@ Tot  & $ 0.0083  \pm  0.0000 $ & $ 0.0013  \pm  0.0000 $ & $ 0.0001  \pm  0.0000
 \hline
 \end{tabular}
 \label{tab:AbsEff_jpsi}
-\end{table}
-
-\begin{table}[h!]
-\centering
-\caption{Double ratios of efficiencies 
-$(\varepsilon^{ee} / \varepsilon^{\jpsi\to ee}) / (\varepsilon^{\mumu} / \varepsilon^{\jpsi\to\mumu})$
-in the central and high \qsq intervals.}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multirow{2}{*}{$\varepsilon$}  &  \multicolumn{3}{c|}{ 1--6~\gevgevcccc} &  \multicolumn{1}{c|}{ 15--20~\gevgevcccc } \\
-\cline{2-5} &   L0E 	& L0H 	& L0I &  L0E 	\\ \hline
-$q^2$  & \multicolumn{3}{c|}{$ 0.697 \pm 0.007 $} &  \multicolumn{1}{c|}{$ 0.770 \pm 0.010 $} \\
-Geom  & \multicolumn{3}{c|}{$ 1.022 \pm 0.012 $} &  \multicolumn{1}{c|}{$ 1.022 \pm 0.012 $} \\
-Reco  & \multicolumn{3}{c|}{$ 0.931 \pm 0.006 $} &  \multicolumn{1}{c|}{$ 0.443 \pm 0.443 $} \\
-PID  & \multicolumn{3}{c|}{$ 0.982 \pm 0.000 $} &  \multicolumn{1}{c|}{$ 0.970 \pm 0.000 $} \\
-\hline
-Trig  & $ 0.882 \pm 0.008 $ & $ 2.459 \pm 0.050 $ & $ 1.257 \pm 0.016 $ & $ 1.416 \pm 0.014 $  \\ 
-MVA  & $ 0.970 \pm 0.003 $ & $ 0.936 \pm 0.003 $ & $ 0.970 \pm 0.006 $ & $ 1.064 \pm 0.006 $  \\  
-\hline
-Tot  & $ 1.146 \pm 0.023 $ & $ 3.084 \pm 0.084 $ & $ 1.633 \pm 0.037 $ & $ 0.858 \pm 0.020 $  \\  
-\hline
-\end{tabular}
-\label{tab:double_rel_eff}
 \end{table}
 
 \begin{landscape}
@@ -119,12 +96,36 @@ Tot  & $ 0.7773 \pm 0.0108 $ & $ 0.8912 \pm 0.0131 $ & $ 2.3973 \pm 0.0558 $ & $
 
 \end{landscape}
 
+\begin{table}[h!]
+\centering
+\caption{Double ratios of efficiencies 
+$(\varepsilon^{ee} / \varepsilon^{\jpsi\to ee}) / (\varepsilon^{\mumu} / \varepsilon^{\jpsi\to\mumu})$
+in the central and high \qsq intervals.}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{$\varepsilon$}  &  \multicolumn{3}{c|}{ 1--6~\gevgevcccc} &  \multicolumn{1}{c|}{ 15--20~\gevgevcccc } \\
+\cline{2-5} &   L0E 	& L0H 	& L0I &  L0E 	\\ \hline
+$q^2$  & \multicolumn{3}{c|}{$ 0.697 \pm 0.007 $} &  \multicolumn{1}{c|}{$ 0.770 \pm 0.010 $} \\
+Geom  & \multicolumn{3}{c|}{$ 1.022 \pm 0.012 $} &  \multicolumn{1}{c|}{$ 1.022 \pm 0.012 $} \\
+Reco  & \multicolumn{3}{c|}{$ 0.931 \pm 0.006 $} &  \multicolumn{1}{c|}{$ 0.443 \pm 0.443 $} \\
+PID  & \multicolumn{3}{c|}{$ 0.982 \pm 0.000 $} &  \multicolumn{1}{c|}{$ 0.970 \pm 0.000 $} \\
+\hline
+Trig  & $ 0.882 \pm 0.008 $ & $ 2.459 \pm 0.050 $ & $ 1.257 \pm 0.016 $ & $ 1.416 \pm 0.014 $  \\ 
+MVA  & $ 0.970 \pm 0.003 $ & $ 0.936 \pm 0.003 $ & $ 0.970 \pm 0.006 $ & $ 1.064 \pm 0.006 $  \\  
+\hline
+Tot  & $ 1.146 \pm 0.023 $ & $ 3.084 \pm 0.084 $ & $ 1.633 \pm 0.037 $ & $ 0.858 \pm 0.020 $  \\  
+\hline
+\end{tabular}
+\label{tab:double_rel_eff}
+\end{table}
+
 
 \subsection{Geometric efficiency}
 
 
-The simulated samples used contain the requirement that daughters are in the LHCb
-detector acceptance. This corresponds to the requirement for each of the final particles
+In order to save disk space, simulated samples only contain decays with final daughters
+in the LHCb detector acceptance, which can therefore be reconstructed. 
+This corresponds to the requirement for each of the final particles
 to have polar angle $\theta$ between 10 and 400 mrad. The efficiency of this
 cuts is obtained using a generator level simulated sample.
 
@@ -133,27 +134,29 @@ cuts is obtained using a generator level simulated sample.
 
 The reconstruction efficiency is here defined as the efficiency to reconstruct
 each decay channel given that its daughters are into the geometrical acceptance
-of the detector. This includes both the probability that a particle generates
-observable signatures and the efficiency of all the preselection cuts described in Sec.~\ref{sec:RKst_selection},
-including those done to remove peaking backgrounds. 
+of the detector. This includes both the probability that the final particles generate
+observable signatures and the efficiency of all the pre-selection requirements described
+in Sec.~\ref{sec:RKst_selection}, including those done to remove peaking backgrounds. 
 %This efficiency is evaluated on simulated events
 %to which the full list of weights described in Sec.~\ref{sec:RKst_weights} is applied.
 The efficiency of the PID cuts is kept separate as it is known to be not well simulated
 and there are reliable data-driven methods which can be used to extract it (see Sec.~\ref{sec:RKst_pid_eff}).
 
+\subsubsection{Bin migration}
+
 It can happen that events generated in a \qsq interval are reconstructed in a different one,
-this is referred to as ``bin migration''. Two different effects can cause bin migration.
+this is referred to as ``bin migration'' and can be due to two different effects.
 First of all, as the resolution of real detectors is not perfect, events close to the edges
 of the considered intervals can fall on the wrong side of the edge. This effect is only important
 in case of non-flat true distributions, as the amount of bin migration in the two directions is different.
 The second possible source of bin migration are systematic effects due, for example,
 to the presence of bremsstrahlung photons that cannot be recovered.
 It is particularly important to take into account the bin migration in the electron channels case 
-because more photons are radiated from the final state.
-Figure~\ref{fig:ee_bin_mig} reports the response matrix for simulated $\decay{\Bz}{\Kstarz\ee}$ events,
-which shows the correlation between reconstructed and generated \qsq. In the ideal case of
+because more photons are radiated from the final state and the mass resolution is worse.
+Figure~\ref{fig:ee_bin_mig} shows the response matrix for simulated $\decay{\Bz}{\Kstarz\ee}$ events,
+which represents the correlation between reconstructed and generated \qsq. In the ideal case of
 perfect resolution this plot would look like a diagonal line and in case no bias is present
-its slope would be 1. Table~\ref{tab:bin_mig} reports net amounts of bin migration, $M_{net}$, 
+its slope would be 1. Table~\ref{tab:bin_mig} lists the net amounts of bin migration, $M_{net}$, 
 in the considered \qsq intervals defined as:
 %
 \begin{equation}
@@ -165,14 +168,17 @@ where $N(\text{in} \to \text{in})$ is the number of candidates that are generate
 reconstructed inside the considered interval, $N(\text{out} \to \text{in})$ the number of 
 candidates that are generated outside the interval but reconstructed inside and
 $N(\text{in} \to \text{out})$ the number of candidates generated inside that fall outside.
-
+The reconstruction efficiency is calculated comparing generated to reconstructed samples
+and therefore already includes bin migration effects. Nevertheless, it is useful to single
+out this component to better asses the corresponding systematic uncertainty.
+%
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.85\textwidth]{RKst/figs/bin_mig.pdf}
 \caption{Generated versus reconstructed \qsq in simulated $\decay{\Bz}{\Kstar\ee}$ events.}
 \label{fig:ee_bin_mig}
 \end{figure}
-
+%
 \begin{table}[bh]
 \centering
 \caption{Net bin migration amounts ($M_{net}$) in the considered \qsq intervals.
@@ -187,35 +193,28 @@ $ee$ 	& $ 0.0834  \pm  0.0013 $ & $ -0.4469  \pm  0.0091 $ & $ -0.0258  \pm  0.0
  \label{tab:bin_mig}
 \end{table}
 
-The reconstruction efficiency is calculated comparing generated to reconstructed samples
-and therefore already includes bin migration effects. Nevertheless, it is useful to single
-out this component to better asses the corresponding systematic uncertainties.
-
-
 
 \subsection{PID efficiency}
 \label{sec:RKst_pid_eff}
 
-The Monte Carlo is known not to reliably describe particle ID variables
+The simulation is known not to reliably describe particle ID variables
 and therefore a data-driven method is used to obtain this efficiency component.
-This is done using the \verb!PIDCalib! described in Sec.~\ref{sec:PID_calib}.
-Furthermore, the same method is used to weight the MC in order to extract MVA
-and trigger efficiencies.
-The package \verb!PIDCalib!  allows to divide the phase-space in bins and obtain a data-driven
-efficiency for each bin. For this analysis the phase-space is divided in equi-populated bins of momentum
-and pseudorapidity of the particle under study. Figure~\ref{fig:pid_perf_hist} shows performance
-tables for pions, kaons, muons and electrons.
-
-The decay channel under study genrally has different kinematical distributions than the calibration sample.
-Therefore, once the efficiency table is obtained for each particle, the total efficiency for each candidate
-is calculated as the product of the four final particles efficiencies.
+This is done using the \verb!PIDCalib! package described in Sec.~\ref{sec:PID_calib}.
+Furthermore, the same method is used to weight the simulation in order to calculate the MVA and trigger efficiencies.
+The package \verb!PIDCalib! allows to divide the phase-space in intervals of quantities relevant for the determination 
+of the PID efficiency and obtain a data-driven efficiency for each interval. For this analysis the phase-space
+is divided in equi-populated bins of momentum and pseudorapidity of the particle under study.
+Figure~\ref{fig:pid_perf_hist} shows performance tables for pions, kaons, muons and electrons.
+Once the efficiency tables are obtained for each particle, the total efficiency
+is calculated for each candidate as the product of the four final particles efficiencies.
 $\varepsilon^{ev} = \varepsilon_K\cdot\varepsilon_\pi\cdot\varepsilon_{\ell_1}\cdot\varepsilon_{\ell_2}$.
-Finally, the total efficiency is found by averaging over all simulated events.
-
+Finally, as the decay channel under study generally has different kinematical distributions than the calibration sample,
+the total efficiency is found by averaging over simulated events.
+%
 \begin{equation}
 \varepsilon_{PID} = \frac{1}{N} \sum_i^N \varepsilon_K(p_K^i,\eta_K^i) \cdot \varepsilon_\pi(p_\pi^i,\eta_\pi^i) \cdot \varepsilon_\ell(p_{\ell_1}^i,\eta_{\ell_1}^i) \cdot \varepsilon_K(p_{\ell_2}^i,\eta_{\ell_2}^i)
 \end{equation}
-
+%
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.48\textwidth]{RKst/figs/pid_Pi.pdf}
@@ -231,33 +230,32 @@ for pions (top left), kaons (top right), muons (bottom left) and electrons (bott
 \subsection{Trigger efficiency}
 \label{sec:RKst_trigger_eff}
 
-While the muon channels the trigger efficiency is calculated using simulated events,
+While the trigger efficiency for the muon channels is calculated using simulated events,
 for the electron channels a combination of simulation and data-driven methods is used.
 The efficiency of the software stage, HLT, is always obtained from simulation,
 while the efficiency of the hardware stage, L0, is obtained using a data-driven method
 as described in the next subsection.
-For both muon and electron channels it is possible to use the resonant sample to crosscheck
-the efficiency obtained using the simulation as explained in Sec.~\ref{sec:tistos}.
+For both muon and electron channels it is possible to use the resonant sample to cross-check
+the efficiency obtained using the simulation, as explained in Sec.~\ref{sec:tistos}.
 
-\subsubsection{Electron channels}
+\subsubsection{Electron triggers}
 \label{sec:RKst_trigee}
 
-For the electron channels data is fitted separately in three trigger categories: L0Electron, L0Hadon and L0TIS.
-Therefore we need to extract the efficiency separately for each category.
+For the electron channels data is fitted separately in three trigger categories: L0E, L0H and L0I.
+Therefore the efficiency is calculated separately for each category.
+While the HLT (1 and 2) efficiency is always derived using simulated events,
+the L0Electron and L0Hadron efficiencies cannot be reliably modelled in simulation.
+In fact data-simulation discrepancies are caused by the ageing of the 
+calorimeters, which is not simulated in the Monte Carlo. The ageing modifies the response
+of the calorimeters with time, which affects the L0 trigger efficiency.
+Therefore this must be calibrated using data driven-methods.
 
-While the Hlt (1 and 2) efficiency is still computed using simulated events,
-the L0Electron and L0Hadron efficiencies cannot be modelled with the Monte Carlo.
-The discrepancy between data and simulation is mainly due to the ageing of the 
-calorimeters, on which the decision of these triggers relies. The ageing is not simulated
-in the Monte Carlo and affects the L0 trigger efficiency which, therefore, must
-be calibrated using data driven-methods. Tables of efficiencies are obtained
-applying the TIS-TOS method to a calibration sample.
-
-For each trigger category these tables contain efficiency as a function of
+Tables of efficiencies are obtained applying the TISTOS method to a calibration sample.
+For each trigger category these tables contain the efficiency as a function of
 \pt of the considered particle and are given for different calorimeter regions
 as these have different properties (e.g. cell size) due to the different position
-with respect to the beam line. Regions considered are inner and outer HCAL, 
-and inner, middle and outer ECAL. Figure~\ref{sec:L0eff_tables} shows data-driven 
+with respect to the beam line. The considered regions are the inner and outer HCAL, 
+and the inner, middle and outer ECAL. Figure~\ref{sec:L0eff_tables} shows data-driven 
 efficiencies for the L0Electron trigger in the three ECAL regions.
 %
 \begin{figure}[h!]
@@ -270,10 +268,12 @@ of the electrons for the three ECAL regions.}
 \label{sec:L0eff_tables}
 \end{figure}
 
-The probability of L0Electron trigger is calculated for each event as $P_{L0E} = \varepsilon(e^+) + \varepsilon(e^-) - \varepsilon(e^+)\varepsilon(e^-)$.
-Similarly, the L0Hadron trigger probability is $P_{L0H} = \varepsilon(\pi) + \varepsilon(K) - \varepsilon(\pi)\varepsilon(K)$.
-For L0TIS a probability $P_{L0I} = (1-P_{L0E})\cdot(1-P_{L0H})$ is calculated.
-Note that the probability of TIS trigger is defined to be independent of the signal and therefore must
+The probabilities of an event being triggered by L0Electron or L0Hadron are calculated for each candidate as:
+%
+$$P_{L0E} = \varepsilon(e^+) + \varepsilon(e^-) - \varepsilon(e^+)\varepsilon(e^-) \text{ and }  
+ P_{L0H} = \varepsilon(\pi) + \varepsilon(K) - \varepsilon(\pi)\varepsilon(K).$$
+%
+The probability of TIS trigger is defined to be independent of the signal and therefore must
 be the same in the rare and resonant channels and cancel in their ratio.
 
 Then event by event efficiencies for the three trigger categories are defined to be exclusive in the following way:
@@ -281,12 +281,12 @@ Then event by event efficiencies for the three trigger categories are defined to
 \begin{itemize}
 \item L0E: $\varepsilon^{L0E} = P_{L0E}$, namely the probability that at least one electron triggered;
 \item L0H: $\varepsilon^{L0H} = P_{L0H}\cdot(1 - P_{L0E})$, namely the probability that at least one hadron triggered but none of the electrons;
-\item L0I: $\varepsilon^{L0I} = (1-P_{L0H})\cdot(1 - P_{L0E})$, namely the probability that neither the hadrons or the electrons in the event triggered. Note that in this case $\varepsilon^{L0I} $ does not correspond to the efficiency of L0TIS trigger.
+\item L0I: $\varepsilon^{L0I} = (1-P_{L0H})\cdot(1 - P_{L0E})$, namely the probability that neither the hadrons or the electrons in the candidate triggered. Note that in this case $\varepsilon^{L0I} $ does not correspond to the efficiency of TIS trigger but to the probability that the event does not fall into the L0E or L0H categories.
 \end{itemize}
 %
 %The total efficiency for each category is then found by using the kinematic distribution from MC events,
 %weighted for PID efficiencies, SPD and \Bz $p_T$ as described in \ref{sec:MCweighting}.
-As in the PID case, the total efficiency is found averaging over all events of a simulated sample:
+Finally, as in the PID case, the total efficiency is found averaging over all events of a simulated sample:
 %
 \begin{equation}
 \varepsilon^{\rm trg} = \frac{1}{N} \sum_i^N \varepsilon^{\rm trg}(\pt^i)
@@ -297,8 +297,8 @@ where ``trg" is a label indicating the trigger category under consideration.
 \subsubsection{TISTOS cross-check}
 \label{sec:tistos}
 
-The efficiency obtained using the simulation
-is crosschecked on resonant data using the TISTOS method already described in Sec.~\ref{sec:Lb_trigger_eff}.
+The efficiency obtained using the simulation is cross-checked applying the TISTOS method, 
+already described in Sec.~\ref{sec:Lb_trigger_eff}, to resonant data.
 %
 %In LHCb triggered events can fall in two categories: events triggered by a track which is part
 %of the candidate decay of interest, Trigger On Signal (TOS), or by other tracks in the event,
@@ -309,10 +309,10 @@ is crosschecked on resonant data using the TISTOS method already described in Se
 %\varepsilon_{TOS} = \frac{TOS \mbox{ and } TIS}{TIS}
 %\end{equation}
 %
-For this purpose the logical $and$ of \verb!L0Global_TIS!, \verb!Hlt1Phys_TIS! and \verb!Hlt2Phys_TIS!
-are used as control sample (TIS). As data also contains non negligible amounts of background
-the \verb!DecayTreeFitter! tool is used to constrain the \jpsi mass to its known value
-and a narrow interval around the peak, dominated by the signal, is selected.
+For this purpose a sample of events triggered independent-of-signal (TIS) is used as control sample.
+As data also contains non negligible amounts of background 
+%the \verb!DecayTreeFitter! tool is used to constrain the \jpsi mass to its known value and 
+a narrow interval around the peak, dominated by the signal, is selected.
 Finally, the $_{s}\mathcal{P}lot$ method is used to remove residual background in the data sample. 
 Results are shown in Tab.~\ref{tab:tistos}, where the
 efficiency obtained using the TISTOS method is compared between data and simulation.
@@ -322,24 +322,24 @@ for the L0I category, for which the procedure explained in Sec.~\ref{sec:RKst_tr
 a correct calibration. The table also reports a correction factor
 obtained according to the formula
 \begin{equation}
-f = 1 + \frac{\varepsilon_{date}^{TISTOS} - \varepsilon_{MC}^{TISTOS}}{\varepsilon_{MC}^{TISTOS}},
+f = 1 + \frac{\varepsilon_{data}^{\rm TISTOS} - \varepsilon_{MC}^{\rm  TISTOS}}{\varepsilon_{MC}^{\rm  TISTOS}},
 \end{equation}
-which is used to correct the resonant yields described in Sec.~\ref{sec:Rjpsi}.
+which can be used to correct the absolute resonant yields.
 %
 To check the effect of this correction on the ratios between rare and resonant channels,
 the efficiency obtained using the TISTOS method is plot as a function of the kinematic
 quantity relevant for each trigger category:
-the maximum \pt of the electrons for L0E, the maximum \pt of $p$ and $\pi$ for L0H,
-and the maximum \pt of all the final particles for L0I. Results are shown in Fig.~\ref{fig:tistos_vs_pt}.
+the maximum \pt of the electrons for L0E, the maximum \pt of $K$ and $\pi$ for L0H,
+and the maximum \pt of all the final particles for L0I; results are shown in Fig.~\ref{fig:tistos_vs_pt}.
 The \pt distributions of the rare and resonant simulated samples are then used to find
 the average efficiency in the two cases. This corresponds to making an average of the efficiency
 weighted by the kinematical distributions in the two samples. 
 %
 The ratios $\varepsilon^{tistos}_{\ell\ell} / \varepsilon^{tistos}_{\jpsi}$ obtained on
-data and simulation are then compared and found to be fully compatible. This means that even though
-the TISTOS correction has an effect on the absolute efficiency, this becomes negligible
-on the ratio between the rare and resonant channels. Therefore, no correction is applied
-for the extraction of the $R_{\Kstarz}$ ratio.
+data and simulation are then compared and found to be fully compatible. This means that, even though
+the TISTOS correction has an effect on the absolute efficiency, this is almost the same
+on the rare and resonant channels and becomes negligible in their ratio.
+Therefore, no correction due to this effect is applied for the calculation of the $R_{\Kstarz}$ ratio.
 %
 \begin{table}[hb!]
 \begin{center}
@@ -374,20 +374,19 @@ of $p$ and $\pi$ for L0H (top right) and the maximum \pt of all the final partic
 \subsection{Neural Networks efficiency}
 \label{sec:Rkst_mva_eff}
 
-The NN efficiency is again evaluated from fully weighted Monte Carlo samples. 
+The neural network efficiency is again evaluated using simulated samples. 
 For the electron channels it is obtained separately for each trigger category.
 %, because the yield is extracted independently for each of the three trigger categories
 %and therefore these have to be independently corrected.
-
-In order to cross check that this efficiency component is extracted correctly
-one can compare the efficiency obtained using $\decay{\Bz}{\Kstarz(\jpsi\to\ll)}$ events
-and rare $\decay{\Bz}{\Kstarz \ll}$ events in the same \qsq region selected
-for the resonant case. The ratio between the two should be close to 1 with
-small deviations due the fact that the bin width is finite and the events are distributed
-differently inside the bin. This ratio is found to be $ 0.997  \pm  0.004 $ for the
+%
+In order to check for biases one can compare the efficiency obtained using
+$\decay{\Bz}{\Kstarz(\jpsi\to\ll)}$ events and rare $\decay{\Bz}{\Kstarz \ll}$ events
+in the same \qsq region selected for the resonant case. The ratio between the two should
+be close to unity with small deviations due the fact that the \qsq interval width is finite and the events
+are distributed differently inside the interval. This ratio is found to be $ 0.997  \pm  0.004 $ for the
 $\mu\mu$ channels and on average $0.981  \pm  0.005$ for the $ee$ channels.
 Values for the electron channels show a small deviation from one due to the very large
-\qsq interval used to select the resonant channel ([6,11]~\gevgevcccc).
+\qsq interval used to select the resonant channel (6--11~\gevgevcccc).
 
 %\begin{table}[h!]
 %\begin{tabular}{|c|c|c|c|c|}
@@ -405,7 +404,7 @@ Values for the electron channels show a small deviation from one due to the very
 %\end{table}
 
 
-\clearpage
+%\clearpage
 
 
 

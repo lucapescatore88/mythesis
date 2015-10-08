@@ -103,35 +103,33 @@
 \BOOKMARK [1][-]{section.5.7}{Mass fits}{chapter.5}% 103
 \BOOKMARK [2][-]{subsection.5.7.1}{Muon channels}{section.5.7}% 104
 \BOOKMARK [2][-]{subsection.5.7.2}{Electron channels}{section.5.7}% 105
-\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Signal PDFs for the electron channels in the central-q2 interval}{subsection.5.7.2}% 106
-\BOOKMARK [3][-]{subsubsection.5.7.2.2}{Background PDFs for the electron channels in the central-q2 interval}{subsection.5.7.2}% 107
-\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Summary: electron channels fit in the central-q2 interval}{subsection.5.7.2}% 108
-\BOOKMARK [3][-]{subsubsection.5.7.2.4}{Electron channels fits in the high-q2 interval}{subsection.5.7.2}% 109
-\BOOKMARK [2][-]{subsection.5.7.3}{Fit summary}{section.5.7}% 110
-\BOOKMARK [1][-]{section.5.8}{Efficiency}{chapter.5}% 111
-\BOOKMARK [2][-]{subsection.5.8.1}{Geometric efficiency}{section.5.8}% 112
-\BOOKMARK [2][-]{subsection.5.8.2}{Reconstruction efficiency and bin migration}{section.5.8}% 113
+\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Signal PDFs for the electron channels}{subsection.5.7.2}% 106
+\BOOKMARK [3][-]{subsubsection.5.7.2.2}{Background PDFs for the electron channels}{subsection.5.7.2}% 107
+\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Summary of the fit to the electron samples}{subsection.5.7.2}% 108
+\BOOKMARK [2][-]{subsection.5.7.3}{Event yields}{section.5.7}% 109
+\BOOKMARK [1][-]{section.5.8}{Efficiency}{chapter.5}% 110
+\BOOKMARK [2][-]{subsection.5.8.1}{Geometric efficiency}{section.5.8}% 111
+\BOOKMARK [2][-]{subsection.5.8.2}{Reconstruction efficiency and bin migration}{section.5.8}% 112
+\BOOKMARK [3][-]{subsubsection.5.8.2.1}{Bin migration}{subsection.5.8.2}% 113
 \BOOKMARK [2][-]{subsection.5.8.3}{PID efficiency}{section.5.8}% 114
 \BOOKMARK [2][-]{subsection.5.8.4}{Trigger efficiency}{section.5.8}% 115
-\BOOKMARK [3][-]{subsubsection.5.8.4.1}{Electron channels}{subsection.5.8.4}% 116
+\BOOKMARK [3][-]{subsubsection.5.8.4.1}{Electron triggers}{subsection.5.8.4}% 116
 \BOOKMARK [3][-]{subsubsection.5.8.4.2}{TISTOS cross-check}{subsection.5.8.4}% 117
 \BOOKMARK [2][-]{subsection.5.8.5}{Neural Networks efficiency}{section.5.8}% 118
 \BOOKMARK [1][-]{section.5.9}{Systematic uncertainties}{chapter.5}% 119
-\BOOKMARK [2][-]{subsection.5.9.1}{Choice of PDF}{section.5.9}% 120
-\BOOKMARK [2][-]{subsection.5.9.2}{Statistical error on the efficiency determination}{section.5.9}% 121
-\BOOKMARK [2][-]{subsection.5.9.3}{TISTOS}{section.5.9}% 122
-\BOOKMARK [2][-]{subsection.5.9.4}{Bin migration}{section.5.9}% 123
-\BOOKMARK [1][-]{section.5.10}{Result extraction}{chapter.5}% 124
-\BOOKMARK [2][-]{subsection.5.10.1}{RJ-3mu/-2mu 2mu sanity check}{section.5.10}% 125
-\BOOKMARK [2][-]{subsection.5.10.2}{RK \040* result summary}{section.5.10}% 126
-\BOOKMARK [2][-]{subsection.5.10.3}{Branching ratios and expectations}{section.5.10}% 127
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 128
-\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 129
-\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 130
-\BOOKMARK [1][-]{section.1.2}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 131
-\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 132
-\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 133
-\BOOKMARK [0][-]{chapter.4}{Invariant mass fits to B \0400 \040K *0 e+ e- simulated candidates}{}% 134
-\BOOKMARK [0][-]{chapter.5}{Extra}{}% 135
-\BOOKMARK [1][-]{subsection.5.0.1}{Quantum Electrodynamics: an example of gauge field theory }{chapter.5}% 136
-\BOOKMARK [1][-]{section.5.1}{Anomalies}{chapter.5}% 137
+\BOOKMARK [2][-]{subsection.5.9.1}{Choice of signal and background PDFs}{section.5.9}% 120
+\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determinations}{section.5.9}% 121
+\BOOKMARK [2][-]{subsection.5.9.3}{Bin migration}{section.5.9}% 122
+\BOOKMARK [1][-]{section.5.10}{Result extraction}{chapter.5}% 123
+\BOOKMARK [2][-]{subsection.5.10.1}{RJ-3mu/-2mu 2mu sanity check}{section.5.10}% 124
+\BOOKMARK [2][-]{subsection.5.10.2}{RK *0 result summary}{section.5.10}% 125
+\BOOKMARK [2][-]{subsection.5.10.3}{Branching ratios and expectations}{section.5.10}% 126
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 127
+\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 128
+\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 129
+\BOOKMARK [1][-]{section.1.2}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 130
+\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 131
+\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 132
+\BOOKMARK [0][-]{chapter.4}{Invariant mass fits to B \0400 \040K *0 e+ e- simulated candidates}{}% 133
+\BOOKMARK [0][-]{chapter.5}{Extra}{}% 134
+\BOOKMARK [1][-]{section.5.1}{Anomalies}{chapter.5}% 135
