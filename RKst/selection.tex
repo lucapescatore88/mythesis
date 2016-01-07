@@ -312,6 +312,41 @@ reduced by the PID requirements but a non-negligible contribution is still expec
 %in the $\mu\mu$ sample
 which is modelled in the fit.
 
+%\subsubsection{\BdToDee}
+
+%A specific requirement is applied to remove the background coming from the \decay{\Bd}{\Dm\ep\nu} decay in which the \Dm in turn decays semileptonically to $\Kstarz\en\nu$. 
+%This decay has a branching ratio four orders of magnitude larger than \BdToKstee in the low-\qsq region and it may pass the selection requirements when the two neutrinos carry a very low momentum. 
+%This cut, developed for the angular analysis, uses the angle $\theta_\ell$ which is defined as the angle between the direction of the \ep (\en) in the di-electron rest frame and the direction of the di-electron in the \Bd (\Bdb) rest frame.  
+%Low momentum neutrinos demand the \Dm and the \ep to be almost back-to-back in the \Bd rest frame giving the \ep a relatively large energy compared to the \en. 
+%As a consequence, the direction of the \ep is close to the direction of the di-electron pair, thus the $\theta_\ell$ angle is close to 0. 
+%This explains why the distribution of background selected in data with an invariant mass cut of $m(\Kstarz\epem) < 4800~\mevcc$ is asymmetric towards higher $ \cos (\theta_\ell)$ values as it can be seen in Fig.~\ref{fig:Denu_background} (\emph{left}). 
+%The cut is chosen to be $|\cos (\theta_\ell) |< 0.8$, and is not applied in the high-\qsq bin.
+%The percentage of \BdToeeKst signal events lost applying this cut is quite low, about $10\%$ according to MC. 
+
+%\begin{figure}[t!]
+%\centering
+%\includegraphics[width=0.48\textwidth]{figs/Background/CosThetaL_background.pdf}
+%\includegraphics[width=0.48\textwidth]{figs/Background/KstareMass_background.pdf}
+%\caption{Distribution of (left) $\cos (\theta_\ell)$ and of (right) the $m(\Kstarz e)$ invariant mass, where the \BdToDee background is selected by requiring $m(\Kstarz\epem) < 4800\mevcc$. The red distribution corresponds to events with $| \cos ( \theta_\ell ) | > 0.8$.}
+%\label{fig:Denu_background}
+%\end{figure}
+
+%In the muon channels the background from \BdToDmm decays is suppressed by the choice of the fitting range.
+
+
+%\subsubsection{\BdToKstGee}
+%For the low-\qsq region, a potentially dangerous peaking background is due to the \BdKstGam decay followed by a conversion of the photon in the detector. 
+%The branching fraction of \BdKstGam has been measured to be \BF = $(4.33 \pm 0.15)\times 10^{-5}$, and in the case where the photon converts to an electron and a positron, it will have similar characteristics to \BdKstee. 
+%In \lhcb, around 40\% of the photons convert before the calorimeter, and although only a small fraction of these, of the order of 10\%, converts in the VELO and are reconstructed as long tracks, the resulting \Bd mass should peak under that of the signal. 
+%It is thus important to veto this signal-like background. 
+%The first effective veto is in the reconstructed invariant mass window for the \epem pair that was chosen above 20~\mevcc. Furthermore, the \epem pair from \BdKstGam has a vertex at the point of conversion of the photon, but it may still be reconstructed as originating from the \Bd decay when the \epem vertex is determined with a large error. 
+%Indeed, a cut was applied on the error on the reconstructed z-coordinate of the \epem pair at $\sigma_Z(\epem) < 30\rm{mm}$. 
+%The contamination from the background is estimated in the following way : a quasi pure sample of \BdToKstGee is selected requiring that the 
+%reconstructed invariant mass window for the \epem pair is smaller than 5~\mevcc. The event yield obtained on data ($881 \pm 39$ events) is used to rescale the prediction of the LHCb MC to get rid of problems related to an absolute prediction. 
+%The LHCb MC is then used to predict the contamination from \BdKstGam events in the signal region ( \epem pair is larger than 20~\mevcc and $\sigma_Z(\epem) < 30\rm{mm}$), one obtains a 1.6 \% contamination. Finally as pointed out in ~\cite{LHCb-ANA-2014-009}, a conservative correction to take into account the mis-modelling of the Bethe-Heitler process in Geant4 is further applied. The contamination is estimated to amount to  $(3.2\pm1.6)\%$ of the signal yield. 
+
+
+
 \subsubsection{Other peaking backgrounds}
 
 A possible background could come from $\Bz \to\Kstarz\gamma$ decays where the photon converts
@@ -363,13 +398,97 @@ mis-reconstructed background is modelled in the fit (for details see Sec.~\ref{s
 %therefore one cannot eliminate this mis-reconstructed background which is then modelled in the fit
 %(for details see Sec.~\ref{sec:RKst_misreco_fit}).
 
+\subsection{Bremsstrahlung corrected mass}
+\label{sec:BCM}
+
+An additional handle against backgrounds that contaminate the $ee$ channels is provided the analysis of the kinematics of the decay.
+%\cite{LHCb-INT-2015-000}.
+In fact for the \Bz daughters the momentum component orthogonal to the flight direction of the \Bz meson should cancel out.
+The flight direction is defined using the primary and the decay vertices and sketch is shown in Fig.~\ref{fig:schemaHOP}. 
+\begin{figure}[tb]
+  \begin{center}
+    \includegraphics[width=1.0\linewidth]{RKst/figs/HOP/schemaHOP.pdf}
+    \vspace*{-1.0cm}
+  \end{center}
+  \caption{ Schema of the kinematic of a $B \to Y_h X_e$ decay, highlighting the quantities relevant for the 
+  definition of the bremsstrahlung correction factor, $\alpha$.}
+  \label{fig:schemaHOP}
+\end{figure}
+
+The ratio between the \pt of the \Kstarz and the di-electron pair can be used to check this hypothesis
+%
+$$\alpha = \frac{\pt(\Kstar)}{\pt(\ee)} \, .$$
+
+When $\alpha$ deviates from one, some energy is missing in the final state. 
+For signal events, the missing energy is most likely carried away by bremsstrahlung photons emitted
+by the electrons. Therefore we can use $\alpha$ to correct the electron momentum as
+%
+$$\ptot_{\textrm{corr}}(\ee) = \alpha \times \ptot(\ee) \, .$$
+
+Since bremsstrahlung photons are emitted in the same direction of the electron, the same $\alpha$ correction can
+be applied to the longitudinal component of the di-electron momentum.
+In contrast, the missing particles in partially-reconstructed background candidates are not necessarily emitted in the
+direction of the electrons, and therefore the $\alpha$ correction does not work properly.
+A similar argument applies to the combinatorial background. 
+
+The corrected momenta can be used to re-calculate the invariant mass of the \Bz candidate, which in the following will be
+called Bremsstrahlung Corrected Mass (\mbcm). The resolution of \mbcm depends on the quality of the vertex reconstruction
+and on the \Bz lifetime, and degrades as a function of \qsq. Figure~\ref{fig:hop} shows the dependence of the \Bz $\chi^2_{\rm FD}$ 
+(flight distance $\chisq$) as a function of \mbcm in the considered \qsq regions. 
+
+As the correction does not work properly for backgrounds this leads the candidates to spread out making \mbcm 
+a discriminating variable between signal and background shapes. A two-dimensional cut is adopted
+%
+$$\mbcm > a_{\rm BCM} + b_{\rm BCM} \cdot log(\chi^2_{\rm FD})$$
+%
+where the $a_{\rm BCM}$ and $b_{\rm BCM}$ coefficients are optimised as described in Sec.~\ref{sec:optimisation}.
+
+No cut is applied at high-\qsq nor on the muon channels for which the bremsstrahlung radiation is negligible.
+
+%Figure~\ref{fig:hop2} shows the dependence of \mKpiee as a function of \mbcm in the considered \qsq regions. 
+
+%The efficiency of the cut in the different bins of \qsq and for the different signal and background components is shown
+%in Fig.~\ref{}. The cut efficiency is almost flat for the signal while it's rejection power is higher for low $B$ mass. 
+
+%It should be noted that \mbcm has also a dependence on \qsq, as for high-\qsq the transverse momentum of the \Kstar, and consequently \hop, is less precisely determined.
+%As a consequence, the cut turns out to be inefficient for the high-\qsq bin, where therefore it is not applied.
+%No \hop requirement is used for the muon channels for which the bremsstrahlung is negligible. 
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_sig_low.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_bkg_low.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_sig_central.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_bkg_central.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_sig_high.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOP_bkg_high.pdf}
+\caption{Two-dimensional distribution of $\chi^2_{\rm FD}$ \vs \mbcm for (left) \BdToKstee signal and (right) partially-reconstructed background.
+From top to bottom the low-, central- and high-\qsq intervals.}
+\label{fig:hop}
+
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_sig_low.pdf}
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_bkg_low.pdf}
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_sig_central.pdf}
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_bkg_central.pdf}
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_sig_high.pdf}
+%\includegraphics[width=0.48\textwidth]{RKst/figs/HOP/HOPvsM_bkg_high.pdf}
+%\caption{Two-dimensional distribution of $m(K\pi ee) \vs \mbcm for (left) \BdToKstee signal and (right) partially-reconstructed background.
+%From top to bottom the low-, central- and high-\qsq intervals.}
+%\label{fig:hop2}
+\end{figure}
+
 
 \subsection{Multivariate analysis}
 \label{sec:RKst_mva}
 
 The final selection is performed using a Neural Network classifier (NN) based on the \textsc{NeuroBayes}
 package~\cite{Feindt:2006pm,feindt-2004}. The multivariate analysis is intended to remove
-some combinatorial background and obtain a clearer signal peak.
+some combinatorial background and obtain a clearer signal peak. In order to avoid biases, a $k$-fold
+approach is adopted to train and optimise the classifier, using $k=10$. This method consists in dividing the samples
+in $k$ equally sized subsamples; $k$ classifiers are then trained and optimised each on $(k-1)$ samples 
+and applied to the $k$th one. This approach ensures that a classifier is never applied to the events used for its training.
+Each classifier is trained on half of the events included in the $(k-1)$ samples and optimised using the other half,
+which ensures that events used for training are not used for optimisation.
 \\
 
 {\bf Samples}
@@ -384,8 +503,10 @@ The lower sideband is not used in the training as it contains a significant frac
 All pre-selection cuts are applied to the background samples used for the training.
 As L0 and PID variables are not well described in simulation these cuts are not applied to the simulation
 but their effect is taken into account by the event weight.
-To train the classifier 50\% of the sideband events was used, keeping the other 50\% for testing.
-A number of simulated signal events approximately equal to the background ones is used for the training.
+%To train the classifier 50\% of the sideband events was used, keeping the other 50\% for testing.
+An approximately equal number of signal and background vents is used for the training.
+This corresponds to about 1000 events for the electron case and 10,000 for the muon one, which
+is driven by the amount of background available.
 \\
 
 {\bf Training}
@@ -498,11 +619,16 @@ plots of the average NN output as a function of the \Bz mass on sideband data an
 The distributions are flat showing that no significant correlation is present.
 
 
-\subsection{MVA optimisation}
+\subsection{Optimisation}
+\label{sec:optimisation}
 
-In order to optimise the cut on our neural network output the expected signal significance,
-$N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, is maximised,
+In order to optimise the requirements on the \mbcm and the neural network output the expected
+signal significance, $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, is maximised,
 where $N_\mathrm{S}$ ($N_\mathrm{B}$) is number of rare signal (background) candidates.
+When the BCM requirement is applied, the optimisation is performed in a three-dimensional space
+($t_{MVA}$, $a_{\rm BCM}$, $b_{\rm BCM}$) where $t_{MVA}$ is the NN output threshold below which
+a candidate is considered background, and $a_{\rm BCM}$ and $b_{\rm BCM}$ are the parameters of the BCM
+cut described in Sec.~\ref{sec:HOP}. Otherwise, only the MVA cut is optimised (for all muons samples and the high-\qsq electron sample).
 %
 The number of signal events accepted for a given NN output cut is determined with a data-driven method
 with exploits the resonant channel. First, as an arbitrary number of events can be simulated, this has to be rescaled
@@ -510,14 +636,15 @@ to the expected yield. This is done by fitting \decay{\Bz}{\Kstarz(\jpsi\to\ll)}
 including all requirements except MVA. The resonant yield is then scaled down by the expected ratio between
 the rare and the resonant channels. The number of background events is instead derived by fitting the combinatorial
 background in the sideband with an exponential function and extrapolating the fit function below the signal peak.
-
+%
 The dependence of the figure-of-merit for both the electron and muon trainings
 are shown in Fig.~\ref{fig:RKst_FOM}, where the red line indicate the chosen cut: 0.70 for both samples.
 Curves of signal efficiency versus background rejection are shown in Fig.~\ref{fig:RKst_FOM}.
-Using the described MVA cuts the signal efficiency is $\sim 95\%$ for the muon channels
-and $\sim 93\%$ for the electron channels (for more details see Sec.~\ref{sec:RKst_efficiency}),
-while the background rejections is $\sim 97\%$ on both samples.
-
+%
+%Using the described MVA cuts the signal efficiency is $\sim 95\%$ for the muon channels
+%and $\sim 93\%$ for the electron channels (for more details see Sec.~\ref{sec:RKst_efficiency}),
+%while the background rejections is $\sim 97\%$ on both samples.
+%
 After full selection about $\sim 3\%$ of events still contain multiple candidates
 which are removed at random keeping only a single candidate per event.
 %

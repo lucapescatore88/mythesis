@@ -26,110 +26,112 @@
 \BOOKMARK [1][-]{section.2.8}{Particle identification}{chapter.2}% 26
 \BOOKMARK [2][-]{subsection.2.8.1}{PID calibration}{section.2.8}% 27
 \BOOKMARK [1][-]{section.2.9}{Trigger and software}{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.10}{Kinematical fits}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.10}{Constrained kinematic fits}{chapter.2}% 29
 \BOOKMARK [1][-]{section.2.11}{Validation of hadronic processes in the simulation}{chapter.2}% 30
 \BOOKMARK [2][-]{subsection.2.11.1}{Geometry and interaction probability}{section.2.11}% 31
 \BOOKMARK [2][-]{subsection.2.11.2}{PDG prediction}{section.2.11}% 32
 \BOOKMARK [2][-]{subsection.2.11.3}{Validation results}{section.2.11}% 33
 \BOOKMARK [1][-]{section.2.12}{Material budget studies}{chapter.2}% 34
-\BOOKMARK [0][-]{chapter.3}{Differential branching fraction of \0400b \040 \040 \040+-}{}% 35
-\BOOKMARK [1][-]{section.3.1}{Analysis strategy and q2 regions}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.2}{Candidate types}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.3}{Simulation}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.1}{Decay Model}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.2}{Kinematic re-weighting}{section.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.3}{Event type}{section.3.3}% 41
-\BOOKMARK [1][-]{section.3.4}{Selection}{chapter.3}% 42
-\BOOKMARK [2][-]{subsection.3.4.1}{Pre-selection}{section.3.4}% 43
-\BOOKMARK [2][-]{subsection.3.4.2}{Neural Networks}{section.3.4}% 44
-\BOOKMARK [2][-]{subsection.3.4.3}{MVA optimisation}{section.3.4}% 45
-\BOOKMARK [2][-]{subsection.3.4.4}{Trigger}{section.3.4}% 46
-\BOOKMARK [2][-]{subsection.3.4.5}{Background from specific decays}{section.3.4}% 47
-\BOOKMARK [1][-]{section.3.5}{Yield extraction}{chapter.3}% 48
-\BOOKMARK [2][-]{subsection.3.5.1}{Fit description}{section.3.5}% 49
-\BOOKMARK [2][-]{subsection.3.5.2}{Fit results}{section.3.5}% 50
-\BOOKMARK [1][-]{section.3.6}{Efficiency}{chapter.3}% 51
-\BOOKMARK [2][-]{subsection.3.6.1}{Geometric acceptance}{section.3.6}% 52
-\BOOKMARK [2][-]{subsection.3.6.2}{Reconstruction and neural network efficiencies}{section.3.6}% 53
-\BOOKMARK [2][-]{subsection.3.6.3}{Trigger efficiency}{section.3.6}% 54
-\BOOKMARK [2][-]{subsection.3.6.4}{PID efficiency}{section.3.6}% 55
-\BOOKMARK [2][-]{subsection.3.6.5}{Relative efficiencies}{section.3.6}% 56
-\BOOKMARK [1][-]{section.3.7}{Systematic uncertainties}{chapter.3}% 57
-\BOOKMARK [2][-]{subsection.3.7.1}{Systematic uncertainty on the yields}{section.3.7}% 58
-\BOOKMARK [2][-]{subsection.3.7.2}{Systematic uncertainties on the efficiency determination}{section.3.7}% 59
-\BOOKMARK [3][-]{subsubsection.3.7.2.1}{Effect of new physics on the decay model}{subsection.3.7.2}% 60
-\BOOKMARK [3][-]{subsubsection.3.7.2.2}{Simulation statistics}{subsection.3.7.2}% 61
-\BOOKMARK [3][-]{subsubsection.3.7.2.3}{Production polarisation and decay structure}{subsection.3.7.2}% 62
-\BOOKMARK [3][-]{subsubsection.3.7.2.4}{ 0b \040 lifetime}{subsection.3.7.2}% 63
-\BOOKMARK [3][-]{subsubsection.3.7.2.5}{Downstream candidates reconstruction efficiency}{subsection.3.7.2}% 64
-\BOOKMARK [3][-]{subsubsection.3.7.2.6}{Data-simulation discrepancies}{subsection.3.7.2}% 65
-\BOOKMARK [1][-]{section.3.8}{Differential branching ratio extraction}{chapter.3}% 66
-\BOOKMARK [0][-]{chapter.4}{Angular analysis of \0400b \040 \040 \040+- decays}{}% 67
-\BOOKMARK [1][-]{section.4.1}{One-dimensional angular distributions}{chapter.4}% 68
-\BOOKMARK [1][-]{section.4.2}{Multi-dimensional angular distributions}{chapter.4}% 69
-\BOOKMARK [1][-]{section.4.3}{Angular resolution}{chapter.4}% 70
-\BOOKMARK [1][-]{section.4.4}{Fit strategy}{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.4.1}{Feldman-cousins plug-in method}{section.4.4}% 72
-\BOOKMARK [2][-]{subsection.4.4.2}{Modelling the angular distributions}{section.4.4}% 73
-\BOOKMARK [2][-]{subsection.4.4.3}{Angular acceptance}{section.4.4}% 74
-\BOOKMARK [2][-]{subsection.4.4.4}{Studies on a three-dimensional fit}{section.4.4}% 75
-\BOOKMARK [1][-]{section.4.5}{Systematics uncertainties on angular observables}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.5.1}{Angular correlations}{section.4.5}% 77
-\BOOKMARK [2][-]{subsection.4.5.2}{Resolution}{section.4.5}% 78
-\BOOKMARK [2][-]{subsection.4.5.3}{Efficiency description}{section.4.5}% 79
-\BOOKMARK [2][-]{subsection.4.5.4}{Background parameterisation}{section.4.5}% 80
-\BOOKMARK [2][-]{subsection.4.5.5}{Polarisation}{section.4.5}% 81
-\BOOKMARK [1][-]{section.4.6}{J/ cross-check}{chapter.4}% 82
-\BOOKMARK [1][-]{section.4.7}{Results}{chapter.4}% 83
-\BOOKMARK [0][-]{chapter.5}{Testing lepton flavour universality with RK *0}{}% 84
-\BOOKMARK [1][-]{section.5.1}{Combining ratios}{chapter.5}% 85
-\BOOKMARK [1][-]{section.5.2}{Experimental status}{chapter.5}% 86
-\BOOKMARK [1][-]{section.5.3}{Analysis strategy}{chapter.5}% 87
-\BOOKMARK [1][-]{section.5.4}{Choice of q2 intervals}{chapter.5}% 88
-\BOOKMARK [1][-]{section.5.5}{Data samples and simulation}{chapter.5}% 89
-\BOOKMARK [2][-]{subsection.5.5.1}{Data-simulation corrections}{section.5.5}% 90
-\BOOKMARK [1][-]{section.5.6}{Selection}{chapter.5}% 91
-\BOOKMARK [2][-]{subsection.5.6.1}{Trigger and Stripping }{section.5.6}% 92
-\BOOKMARK [2][-]{subsection.5.6.2}{PID}{section.5.6}% 93
-\BOOKMARK [2][-]{subsection.5.6.3}{Peaking backgrounds }{section.5.6}% 94
-\BOOKMARK [3][-]{subsubsection.5.6.3.1}{Charmonium vetoes}{subsection.5.6.3}% 95
-\BOOKMARK [3][-]{subsubsection.5.6.3.2}{ veto}{subsection.5.6.3}% 96
-\BOOKMARK [3][-]{subsubsection.5.6.3.3}{B \040+ \040K+ + - plus a random pion}{subsection.5.6.3}% 97
-\BOOKMARK [3][-]{subsubsection.5.6.3.4}{b decays}{subsection.5.6.3}% 98
-\BOOKMARK [3][-]{subsubsection.5.6.3.5}{Other peaking backgrounds}{subsection.5.6.3}% 99
-\BOOKMARK [2][-]{subsection.5.6.4}{Mis-reconstructed background}{section.5.6}% 100
-\BOOKMARK [2][-]{subsection.5.6.5}{Multivariate analysis}{section.5.6}% 101
-\BOOKMARK [2][-]{subsection.5.6.6}{MVA optimisation}{section.5.6}% 102
-\BOOKMARK [1][-]{section.5.7}{Mass fits}{chapter.5}% 103
-\BOOKMARK [2][-]{subsection.5.7.1}{Muon channels}{section.5.7}% 104
-\BOOKMARK [2][-]{subsection.5.7.2}{Electron channels}{section.5.7}% 105
-\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Signal PDFs for the electron channels}{subsection.5.7.2}% 106
-\BOOKMARK [3][-]{subsubsection.5.7.2.2}{Background PDFs for the electron channels}{subsection.5.7.2}% 107
-\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Summary of the fit to the electron samples}{subsection.5.7.2}% 108
-\BOOKMARK [2][-]{subsection.5.7.3}{Event yields}{section.5.7}% 109
-\BOOKMARK [1][-]{section.5.8}{Efficiency}{chapter.5}% 110
-\BOOKMARK [2][-]{subsection.5.8.1}{Geometric efficiency}{section.5.8}% 111
-\BOOKMARK [2][-]{subsection.5.8.2}{Reconstruction efficiency and bin migration}{section.5.8}% 112
-\BOOKMARK [3][-]{subsubsection.5.8.2.1}{Bin migration}{subsection.5.8.2}% 113
-\BOOKMARK [2][-]{subsection.5.8.3}{PID efficiency}{section.5.8}% 114
-\BOOKMARK [2][-]{subsection.5.8.4}{Trigger efficiency}{section.5.8}% 115
-\BOOKMARK [3][-]{subsubsection.5.8.4.1}{Electron triggers}{subsection.5.8.4}% 116
-\BOOKMARK [3][-]{subsubsection.5.8.4.2}{TISTOS cross-check}{subsection.5.8.4}% 117
-\BOOKMARK [2][-]{subsection.5.8.5}{Neural Networks efficiency}{section.5.8}% 118
-\BOOKMARK [1][-]{section.5.9}{Systematic uncertainties}{chapter.5}% 119
-\BOOKMARK [2][-]{subsection.5.9.1}{Choice of signal and background PDFs}{section.5.9}% 120
-\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determinations}{section.5.9}% 121
-\BOOKMARK [2][-]{subsection.5.9.3}{Bin migration}{section.5.9}% 122
-\BOOKMARK [1][-]{section.5.10}{Result extraction}{chapter.5}% 123
-\BOOKMARK [2][-]{subsection.5.10.1}{RJ-3mu/-2mu 2mu sanity check}{section.5.10}% 124
-\BOOKMARK [2][-]{subsection.5.10.2}{RK *0 result summary}{section.5.10}% 125
-\BOOKMARK [2][-]{subsection.5.10.3}{Branching ratios and expectations}{section.5.10}% 126
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 127
-\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 128
-\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 129
-\BOOKMARK [1][-]{section.1.2}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 130
-\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 131
-\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 132
-\BOOKMARK [0][-]{chapter.4}{Invariant mass fits to B \0400 \040K *0 e+ e- simulated candidates}{}% 133
-\BOOKMARK [0][-]{chapter.5}{Extra}{}% 134
-\BOOKMARK [1][-]{section.5.1}{Anomalies}{chapter.5}% 135
+\BOOKMARK [1][-]{section.2.13}{Validation and material budget studies conclusions}{chapter.2}% 35
+\BOOKMARK [0][-]{chapter.3}{Differential branching fraction of \0400b \040 \040 \040+-}{}% 36
+\BOOKMARK [1][-]{section.3.1}{Analysis strategy and q2 regions}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{Candidate types}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{Simulation}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{Decay Model}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{Kinematic re-weighting}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.3}{Event type}{section.3.3}% 42
+\BOOKMARK [1][-]{section.3.4}{Selection}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.4.1}{Pre-selection}{section.3.4}% 44
+\BOOKMARK [2][-]{subsection.3.4.2}{Neural Networks}{section.3.4}% 45
+\BOOKMARK [2][-]{subsection.3.4.3}{MVA optimisation}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.4}{Trigger}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.5}{Background from specific decays}{section.3.4}% 48
+\BOOKMARK [1][-]{section.3.5}{Yield extraction}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.5.1}{Fit description}{section.3.5}% 50
+\BOOKMARK [2][-]{subsection.3.5.2}{Fit results}{section.3.5}% 51
+\BOOKMARK [1][-]{section.3.6}{Efficiency}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.6.1}{Geometric acceptance}{section.3.6}% 53
+\BOOKMARK [2][-]{subsection.3.6.2}{Reconstruction and neural network efficiencies}{section.3.6}% 54
+\BOOKMARK [2][-]{subsection.3.6.3}{Trigger efficiency}{section.3.6}% 55
+\BOOKMARK [2][-]{subsection.3.6.4}{PID efficiency}{section.3.6}% 56
+\BOOKMARK [2][-]{subsection.3.6.5}{Relative efficiencies}{section.3.6}% 57
+\BOOKMARK [1][-]{section.3.7}{Systematic uncertainties}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.7.1}{Systematic uncertainty on the yields}{section.3.7}% 59
+\BOOKMARK [2][-]{subsection.3.7.2}{Systematic uncertainties on the efficiency determination}{section.3.7}% 60
+\BOOKMARK [3][-]{subsubsection.3.7.2.1}{Effect of new physics on the decay model}{subsection.3.7.2}% 61
+\BOOKMARK [3][-]{subsubsection.3.7.2.2}{Simulation statistics}{subsection.3.7.2}% 62
+\BOOKMARK [3][-]{subsubsection.3.7.2.3}{Production polarisation and decay structure}{subsection.3.7.2}% 63
+\BOOKMARK [3][-]{subsubsection.3.7.2.4}{ 0b \040 lifetime}{subsection.3.7.2}% 64
+\BOOKMARK [3][-]{subsubsection.3.7.2.5}{Downstream candidates reconstruction efficiency}{subsection.3.7.2}% 65
+\BOOKMARK [3][-]{subsubsection.3.7.2.6}{Data-simulation discrepancies}{subsection.3.7.2}% 66
+\BOOKMARK [1][-]{section.3.8}{Differential branching ratio extraction}{chapter.3}% 67
+\BOOKMARK [0][-]{chapter.4}{Angular analysis of \0400b \040 \040 \040+- decays}{}% 68
+\BOOKMARK [1][-]{section.4.1}{One-dimensional angular distributions}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.2}{Multi-dimensional angular distributions}{chapter.4}% 70
+\BOOKMARK [1][-]{section.4.3}{Angular resolution}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.4}{Fit strategy}{chapter.4}% 72
+\BOOKMARK [2][-]{subsection.4.4.1}{Feldman-cousins plug-in method}{section.4.4}% 73
+\BOOKMARK [2][-]{subsection.4.4.2}{Modelling the angular distributions}{section.4.4}% 74
+\BOOKMARK [2][-]{subsection.4.4.3}{Angular acceptance}{section.4.4}% 75
+\BOOKMARK [2][-]{subsection.4.4.4}{Studies on a three-dimensional fit}{section.4.4}% 76
+\BOOKMARK [1][-]{section.4.5}{Systematics uncertainties on angular observables}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.5.1}{Angular correlations}{section.4.5}% 78
+\BOOKMARK [2][-]{subsection.4.5.2}{Resolution}{section.4.5}% 79
+\BOOKMARK [2][-]{subsection.4.5.3}{Efficiency description}{section.4.5}% 80
+\BOOKMARK [2][-]{subsection.4.5.4}{Background parameterisation}{section.4.5}% 81
+\BOOKMARK [2][-]{subsection.4.5.5}{Polarisation}{section.4.5}% 82
+\BOOKMARK [1][-]{section.4.6}{J/ cross-check}{chapter.4}% 83
+\BOOKMARK [1][-]{section.4.7}{Results}{chapter.4}% 84
+\BOOKMARK [0][-]{chapter.5}{Testing lepton flavour universality with RK *0}{}% 85
+\BOOKMARK [1][-]{section.5.1}{Combining ratios}{chapter.5}% 86
+\BOOKMARK [1][-]{section.5.2}{Experimental status}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.3}{Analysis strategy}{chapter.5}% 88
+\BOOKMARK [1][-]{section.5.4}{Choice of q2 intervals}{chapter.5}% 89
+\BOOKMARK [1][-]{section.5.5}{Data samples and simulation}{chapter.5}% 90
+\BOOKMARK [2][-]{subsection.5.5.1}{Data-simulation corrections}{section.5.5}% 91
+\BOOKMARK [1][-]{section.5.6}{Selection}{chapter.5}% 92
+\BOOKMARK [2][-]{subsection.5.6.1}{Trigger and Stripping }{section.5.6}% 93
+\BOOKMARK [2][-]{subsection.5.6.2}{PID}{section.5.6}% 94
+\BOOKMARK [2][-]{subsection.5.6.3}{Peaking backgrounds }{section.5.6}% 95
+\BOOKMARK [3][-]{subsubsection.5.6.3.1}{Charmonium vetoes}{subsection.5.6.3}% 96
+\BOOKMARK [3][-]{subsubsection.5.6.3.2}{ veto}{subsection.5.6.3}% 97
+\BOOKMARK [3][-]{subsubsection.5.6.3.3}{B \040+ \040K+ + - plus a random pion}{subsection.5.6.3}% 98
+\BOOKMARK [3][-]{subsubsection.5.6.3.4}{b decays}{subsection.5.6.3}% 99
+\BOOKMARK [3][-]{subsubsection.5.6.3.5}{Other peaking backgrounds}{subsection.5.6.3}% 100
+\BOOKMARK [2][-]{subsection.5.6.4}{Mis-reconstructed background}{section.5.6}% 101
+\BOOKMARK [2][-]{subsection.5.6.5}{Bremsstrahlung corrected mass}{section.5.6}% 102
+\BOOKMARK [2][-]{subsection.5.6.6}{Multivariate analysis}{section.5.6}% 103
+\BOOKMARK [2][-]{subsection.5.6.7}{Optimisation}{section.5.6}% 104
+\BOOKMARK [1][-]{section.5.7}{Mass fits}{chapter.5}% 105
+\BOOKMARK [2][-]{subsection.5.7.1}{Muon channels}{section.5.7}% 106
+\BOOKMARK [2][-]{subsection.5.7.2}{Electron channels}{section.5.7}% 107
+\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Signal PDFs for the electron channels}{subsection.5.7.2}% 108
+\BOOKMARK [3][-]{subsubsection.5.7.2.2}{Background PDFs for the electron channels}{subsection.5.7.2}% 109
+\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Summary of the fit to the electron samples}{subsection.5.7.2}% 110
+\BOOKMARK [2][-]{subsection.5.7.3}{Event yields}{section.5.7}% 111
+\BOOKMARK [1][-]{section.5.8}{Efficiency}{chapter.5}% 112
+\BOOKMARK [2][-]{subsection.5.8.1}{Geometric efficiency}{section.5.8}% 113
+\BOOKMARK [2][-]{subsection.5.8.2}{Reconstruction efficiency and bin migration}{section.5.8}% 114
+\BOOKMARK [3][-]{subsubsection.5.8.2.1}{Bin migration}{subsection.5.8.2}% 115
+\BOOKMARK [2][-]{subsection.5.8.3}{PID efficiency}{section.5.8}% 116
+\BOOKMARK [2][-]{subsection.5.8.4}{Trigger efficiency}{section.5.8}% 117
+\BOOKMARK [3][-]{subsubsection.5.8.4.1}{Electron triggers}{subsection.5.8.4}% 118
+\BOOKMARK [3][-]{subsubsection.5.8.4.2}{TISTOS cross-check}{subsection.5.8.4}% 119
+\BOOKMARK [2][-]{subsection.5.8.5}{Neural Networks efficiency}{section.5.8}% 120
+\BOOKMARK [1][-]{section.5.9}{Systematic uncertainties}{chapter.5}% 121
+\BOOKMARK [2][-]{subsection.5.9.1}{Choice of signal and background PDFs}{section.5.9}% 122
+\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determinations}{section.5.9}% 123
+\BOOKMARK [2][-]{subsection.5.9.3}{Bin migration}{section.5.9}% 124
+\BOOKMARK [1][-]{section.5.10}{Result extraction}{chapter.5}% 125
+\BOOKMARK [2][-]{subsection.5.10.1}{RJ-3mu/-2mu 2mu sanity check}{section.5.10}% 126
+\BOOKMARK [2][-]{subsection.5.10.2}{RK *0 result summary}{section.5.10}% 127
+\BOOKMARK [2][-]{subsection.5.10.3}{Branching ratios and expectations}{section.5.10}% 128
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 129
+\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 130
+\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 131
+\BOOKMARK [1][-]{section.1.2}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 132
+\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 133
+\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 134
+\BOOKMARK [0][-]{chapter.4}{Invariant mass fits to B \0400 \040K *0 e+ e- simulated candidates}{}% 135
+\BOOKMARK [0][-]{chapter.5}{Extra}{}% 136
+\BOOKMARK [1][-]{section.5.1}{Anomalies}{chapter.5}% 137

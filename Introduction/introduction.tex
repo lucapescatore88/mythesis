@@ -20,7 +20,7 @@ Therefore this motivates the search for New Physics (NP).
 %
 \begin{table}[h!]
 \centering
-\caption{Predicted and measured values of the decay widths of the \Z and \W bosons.
+\caption{Predicted and measured values of the decay widths of the \Z and \W bosons~\cite{PDG2014}.
  %and the anomalous magnetic moment of the muon $(g-2)$.
  }
 \begin{tabular}{|c|c|c|}
@@ -38,7 +38,7 @@ $\Gamma_\W$		& $2.0915 \pm 0.0005$ \gev		& $2.085 \pm 0.042$ \gev		\\
 The SM is based on the symmetry groups of strong, $SU(3)_C$, and electroweak, $SU(2)_W \times U(1)_Y$, interactions.
 The subscripts C, W and Y stand for colour charge, weak isospin and hyper-charge respectively. The Lagrangian describing the
 SM results from the application of the principle of invariance under the unitary group given by the product
-$SU(3)_C €‰\times ‰SU(2)_{W} €‰\times €‰U(1)_Y$, which reflects conservation laws such as the conservation 
+$SU(3)_C €‰\otimes ‰SU(2)_{W} €‰\otimes €‰U(1)_Y$, which reflects conservation laws such as the conservation 
 of electric and strong charge. The model has then 26 free parameters, which are experimentally measured.
 
 Particles included in the SM can be grouped under a few categories depending on their properties and ability 
@@ -144,8 +144,9 @@ with a fermion and its anti-fermion.
 was motivated in order to explain why some decays, although kinematically allowed, had never been observed. To all leptons is
 assigned a quantum number $L_\ell = 1$ (where $\ell = e,\mu,\tau$), which in the SM is conserved by all interactions.
 This conservation is experimentally well established; for example decays like $\mu^- \rightarrow e^- \gamma $ have never
-been observed. This is explained by the fact that the lepton number in the initial
-and final state are different and the decay would violate lepton flavour.
+been observed.
+%This is explained by the fact that the lepton number in the initial
+%and final state are different and the decay would violate lepton flavour.
 %
 In the hadronic sector particles carry flavour numbers described as follow:
 %
@@ -163,8 +164,8 @@ when mediated by $W^\pm$ bosons.
 Measuring branching fractions of weak decays like $\pi \to \mu \nu_\mu$ and $K \to \mu \nu_\mu$, corresponding
 respectively to $ud\to\mu\nu_\mu$ and $us\to\mu\nu_\mu$ processes, suggested the existence of more than one
 coupling constant for different quarks. Nicola Cabibbo~\cite{PDG2014}, in order to preserve the universality
-of weak interactions, suggested that the branching fraction differences could arise from the fact that
-the doublets participating in the weak interactions are an admixture of the flavour eigenstates. 
+of weak interactions, suggested that the differences could arise from the fact that
+the doublets participating in the weak interactions are an admixture of the mass eigenstates. 
 He therefore introduced the Cabibbo angle, $\theta_c$, considering that eigenstates participating 
 to the weak interaction are rotated with respect of the flavour eigenstates.
 %
@@ -189,9 +190,14 @@ Considering a 6 quark system one angle is not enough to describe a rotation but 
 using a $3 \times 3$ unitary matrix, which is called CKM matrix, from the names of Cabibbo, Kobayashi and Maskawa.
 The unitarity of the matrix is required to preserve the universality of the weak interaction. Theoretically, a $N \times N$ complex
 matrix depends on $2 \cdot N^2$ real parameters. Requiring unitarity ($AA^\dagger = A(A^*)^T = I$), the number
-of independent parameters left is $(N - 1)^2$. Therefore a $3 \times 3$ matrix depends then on 4 real parameters, which
+of independent parameters left is 
+\begin{equation}
+(N - 1)^2 = \underbrace{\frac{1}{2}N(N-1)}_\text{Number of mixing angles} + \underbrace{\frac{1}{2}(N-1)(N-2)}_\text{Number of complex phases}.
+\end{equation}  
+Therefore a $3 \times 3$ matrix depends then on 4 real parameters, which
 can be divided in 3 real constants and one imaginary phase. The imaginary phase generates the \mbox{CP-violation} which was
-observed in weak interactions. 
+observed in weak interactions.
+Figure~\ref{fig:ch_currents_ckm} displays examples of CC processes together with the CKM elements associated with their vertices.
 %
 \begin{figure}[h!]
 \centering 
@@ -200,21 +206,25 @@ observed in weak interactions.
 \label{fig:ch_currents_ckm}
 \end{figure}
 %
-Equation~\ref{CKM} reports a parametrisation of the CKM matrix together with the most
-recent measured values of its elements~\cite{PDG2014}. In this parametrisation $\rho$, $A$, and $\lambda$
-are the real constants and $\eta$ the imaginary phase and Eq.~\ref{params} shows their relations with the 3 mixing angles.
+Equation~\ref{CKM} reports the most recent measured values of its elements~\cite{PDG2014}
+together with the Wolfenstein parametrisation which highlights the hierarchical structure of the matrix.
+In fact elements on the diagonal, corresponding to transitions between quarks of the same generation,
+are approximately 1 and become smaller and smaller going farther from the diagonal.
+In the formula $\rho$, $A$, and $\lambda$ are the real constants and $\eta$ the imaginary phase 
+and Eq.~\ref{params} shows their relations with the 3 mixing angles; terms further from the diagonal 
+are proportional to higher powers of $\lambda$.
 %
 \begin{multline}
 V_{CKM} = \left( \begin{array}{ccc}
+0.97427 \pm 0.00015 & 0.22534 \pm 0.00065 & 0.00351^{+0.00015}_{-0.0014} \\
+ 0.22520 \pm 0.00065 & 0.97344 \pm 0.00016 & 0.00412^{+0.0011}_{-0.0005} \\
+ 0.00867^{+0.00029}_{-0.00031} & 0.0404^{+0.0011}_{-0.0005} & 0.999146^{+0.000021}_{-0.000046} 
+ \end{array} \right) = \\
+ = \left( \begin{array}{ccc}
 1 - \lambda^2/2 & \lambda  & A \lambda^3(\rho -i\eta) \\
 -\lambda & 1 - \lambda^2/2 & A\lambda^2 \\
 A \lambda^3(1 - \rho -i\eta) & A\lambda^2 & 1 
-\end{array} \right) + O(\lambda^3)= \\
-= \left( \begin{array}{ccc}
-0.97427 \pm 0.00015 & 0.22534 \pm 0.00065 & 0.00351^{+0.00015}_{-0.0014} \\
- 0.22520 \pm 0.00065 & 0.97344 \pm 0.00016 & 0.00412^{+0.0011}_{-0.0005} \\
- 0.00867^{+0.00029}_{-0.00031} & 0.0404^{+0.0011}_{-0.0005} & 0.999146^{+0.000021}_{-0.000046} \\
-\end{array} \right)
+\end{array} \right) + O(\lambda^4) \\
 \label{CKM}
 \end{multline}
 %
@@ -227,18 +237,18 @@ A\lambda^3(\rho - i\eta) & = \sin(\theta_{13})e^{i\delta}
 \label{params}
 \end{equation}
 %
-Figure~\ref{fig:ch_currents_ckm} displays examples of CC processes together with the CKM elements associated with their vertices.
 %
-It is interesting to note that the CKM matrix has a hierarchical form, namely elements on the diagonal are approximately
-1 and become smaller and smaller going farther from the diagonal. This structure is not explained in the SM.
-Another feature to note is that, due to the unitarity of the matrix, the transformation has no effect on neutral interactions.
-In fact defining $q' = Vq$:
+%Another feature to note is that, due to the unitarity of the matrix, the transformation has no effect on neutral interactions.
 %
-\begin{equation}
-\bar{q}'q' = \bar{q}V^{*}Vq = \bar{q}q.
-\end{equation}
+%In fact defining $q' = Vq$:
+%
+%\begin{equation}
+%\bar{q}'q' = \bar{q}V^{*}Vq = \bar{q}q.
+%\end{equation}
 %
 %As a result flavour-changing neutral currents are forbidden at tree level in the SM.
+%
+
 The unitarity of the CKM matrix imposes constraints to its elements of the form:
 \begin{equation}
 \sum_i |V_{ik}|^2 = 1 \text{ and } \sum_k V_{ik} V^{*}_{jk} = 0.
@@ -251,6 +261,9 @@ The most commonly used unitarity triangle arises from $V_{ud}V^*_{ub} + V_{cd}V^
 %\end{equation}
 Figure~\ref{fig:unitarity_triangle} shows a representation of such triangle together with
 a plot summarising the most up to date experimental constraints to its parameters~\cite{Charles:2015gya}.
+Due to these unitarity constraints flavour-changing neutral currents
+are forbidden at tree level in the SM.
+
 The precise measurement of the parameters of the CKM matrix
 is a powerful stability test of the SM and sets a solid base for new physics
 searches in the flavour sector. One of the main goals of the LHCb experiment is to precisely
@@ -320,57 +333,67 @@ or only to be valid up to a certain energy scale. %Many theoretical models expec
 
 %As mentioned in Sec.~\ref{sec:flavour}, flavour conservation is well experimentally established but it does not
 %have a strong theoretical otivation in the Standard Model.
-Flavour Changing Charged Currents (FCCC) that are mediated by the $W^\pm$ bosons are the only sources of flavour changing interaction in the SM and, in particular, of generation changing interactions, where a quark or a lepton of a family transforms
+Flavour Changing Charged Currents (FCCC) that are mediated by the $W^\pm$ bosons are the only sources of flavour changing interaction 
+in the SM and, in particular, of generation changing interactions, where a quark or a lepton of a family transforms
 into one of an other family. Another class of processes is the Flavour Changing Neutral Currents (FCNCs), e.g. transitions from a
 \bquark quark with a charge of -1/3 to a \squark or \dquark quark with the same charge. Examples of FCNC transitions in the quark
 and lepton sector are shown in Fig.~\ref{fig:neutr_curr}.
 %
 \begin{figure}[h!]
 \centering 
+\includegraphics[width=0.25\textwidth]{Introduction/figs/Z2ffbar.png}
 \includegraphics[width=0.6\textwidth]{Introduction/figs/neutral_current_proc.png}
-\caption{Feynman diagrams of FCNCs processes forbidden in the SM.}
+\caption{Feynman diagrams of (left) neutral current allowed in the SM, where$f$ represents any fermion,
+and (center-right) FCNCs processes forbidden in the SM.}
 \label{fig:neutr_curr}
 \end{figure}
 %
-In the SM there is no fundamental reason why
-there cannot be FCNCs and, yet, they are experimentally  observed to be highly suppressed.
-On the other hand the observation of neutrino oscillation proves that flavour is not an exact symmetry and is not always
-conserved. Furthermore, the values of the terms of the CKM matrix and the PMNS matrix,
-which the mixing-matrix, equivalent to the CKM, in the lepton sector, are not explained in the SM
-and have to be measured experimentally. These open problems motivate searches for flavour symmetries and 
-deeper motivations for flavour conservation. 
+FCNCs are experimentally observed to be highly suppressed which derives from the unitarity of the CKM matrix,
+however there is no fundamental reason why there cannot be FCNCs at tree level. In fact the CKM matrix
+could be part of a larger matrix involving for example quark-lepton terms. This would introduce
+new sources of FCNCs but also allow for natural explanations of the equality of the proton and electron charges.
+On the other hand the observation of neutrino oscillation proves that flavour is not always conserved
+suggesting flavour structures beyond the SM. Furthermore, the values of the terms of the CKM matrix and the PMNS
+matrix~\cite{Pontecorvo:1967fh,Maki:1962mu}, which is the mixing-matrix equivalent to the CKM in the lepton sector,
+are not explained in the SM but have to be measured experimentally. These open problems motivate searches for flavour
+symmetries and deeper motivations for flavour conservation. 
 
 \section{Beyond the Standard Model}
 
-From the last sections it is evident that, despite the great success of the SM, there is a need to explore theories Beyond
-the SM (BSM). Among the most promising approaches there are those involving Super-Symmetry and extra-dimensions. 
+From the previous sections it is evident that, despite the great success of the SM, there is a need to explore theories Beyond the SM (BSM).
+Among the most promising approaches there are those involving Super-Symmetry (SUSY)~\cite{Fayet:1976cr} and extra-dimensions~\cite{Randall:1999ee}. 
 %
-In Super-Symmetry new degrees of freedom are introduced to suppress the diverging terms of the scalar mass. This theory
+In SUSY new degrees of freedom are introduced to suppress the diverging terms of the Higgs mass. This theory
 assumes that for each fermion there is a corresponding boson and, since bosons and fermions contribute with opposite
-sign to the mass term, these would naturally cancel out~\cite{Fayet:1976cr}. Supersymmetry also provides a candidate for dark
-matter, the neutralino, which is a weakly interacting stable particle.
+sign to the mass term, these would naturally cancel out. Supersymmetry also provides a candidate for dark
+matter. In fact the lightest Super-Simmetric particle, the neutralino, which in R-parity~\cite{Ellis:1984gi} conserving variants
+of the theory must be stable, is a weakly interacting potentially heavy particle.
 %
-The idea to introduce extra-dimensions was triggered by the fact that, normally, gravity is not relevant
-in particle physics but it would be natural if all forces had similar strength. By adding extra dimensions to the normal 3 spatial dimensions, one can restore the strength of gravity, as this could be dispersed by the wider space available~\cite{Randall:1999ee}.
+The idea to introduce extra-dimensions was triggered by the fact that, normally, gravity is not relevant in particle physics but it would 
+be natural if all forces had similar strength. By adding extra dimensions to the normal three spatial dimensions, one can restore 
+the strength of gravity, as this could be dispersed by the wider space available.
 %
-In all these approaches severe constraints to masses and couplings must be imposed to maintain
-compatibility with the SM at the electroweak scale.
+In all these approaches constraints to masses and couplings must be imposed to maintain
+compatibility with the SM at the electroweak scale and the existing experimental observations.
 
 \subsection{Flavour and BSM theories}
 
 Most BSM theories predict processes violating flavour conservation. Therefore, the observation or
 non-observation of these processes can give important information about new physics.
 BSM theories can be classified according to the amount of flavour violation they introduce.
-The first class of models to consider is those with Minimal Flavour Violation (MFV).
+The first class of models to consider is that with Minimal Flavour Violation (MFV).
 These are models in which the only sources of flavour changing transitions are governed by the
 CKM matrix and the CKM phase is the only source of CP violation.
-These features can be assured by symmetry principles, which makes these types of models
-naturally compatible with the SM. Examples of such models include the MSSM
+This definition is driven by the fact that usually a solution of the hierarchy problem is expected
+at the TeV scale, while the very small amount of flavour violation observed in measurements
+seems to indicate that the SM would remain valid up to much higher energy scales.
+It is therefore assumed that new physics must respect flavour symmetry principles, which also makes these
+types of models naturally compatible with the SM. Examples of such models include the MSSM
 with minimal flavour violation and the SM with one extra-dimension. Reviews of MFV models
 are presented in Refs.~\cite{Isidori:2012ts,Buras:2003jf}.
 %
-The MFV paradigm provides a way to resolve the tension between expectation, driven by naturalness arguments,
-that NP should be at the \tev~scale and limits on FCNC processes that point to much higher scales.
+%The MFV hypothesis provides a way to resolve the tension between expectation, driven by naturalness arguments,
+%that NP should be at the \tev~scale and limits on FCNC processes that point to much higher scales.
 %
 A powerful test of MFV is provided by the study of ratios between $\bquark\to\dquark$ and $\bquark\to\squark$
 transitions, because their hamiltonians share the same structure. One particularly important example is the ratio of
@@ -379,39 +402,41 @@ In the SM such ratios are approximately equal to $|V_{td}/V_{td}| \sim 1/25$, on
 matrix elements, while they can take very different values in non-MFV models.
 
 In the quest for new physics an important role is also played by simplified models
-as an intermediate model building step. Instead of constructing models valid up to the GUT scale
-one can consider simplified models, where the SM is extended incorporating a new sector
+as an intermediate model building step. Instead of constructing thories valid up to the GUT scale
+one can consider simplified models, where the SM is extended by the addition of a new sector
 with a limited number of parameters. Such models are easier to constrain but can nevertheless point
 in the right direction to build more complete theories. The choice of the new sector to add can be driven 
-by the need to explain existing tensions between data and SM predictions or by theoretical prejudice.
+by the need to explain existing tensions between measurements and SM predictions or by theoretical prejudice.
 %
 Two models especially relevant when studying rare decays, which are the main topic of this thesis, are 
-Z'-penguins and leptoquarks. A Z'-penguin is a FCNC process involving a neutral field arising from an extra 
-U(1) gauge symmetry. As for the SM penguins, this field contributes in loops causing modifications of the 
-effective couplings with respect to the SM. A survey of Z' models can be found in Ref.~\cite{Buras:2014zga}.
+$Z'$-penguins and leptoquarks. A $Z'$-penguin is a FCNC process involving a neutral field arising from an extra 
+U(1) gauge symmetry, for example U(1)$_{B-L}$, where B and L are the baryon and lepton numbers. 
+As for the SM penguins, the $Z'$ field contributes in loops causing modifications of the 
+effective couplings with respect to the SM. A survey of $Z'$ models can be found in Ref.~\cite{Buras:2014zga}.
 %
-Leptoquarks are bosonic particles that carry both quark and lepton flavour quantum numbers.
-For simplicity they are commonly assumed to be scalar particles.
+Leptoquarks are bosonic particles that carry both quark and lepton flavour quantum numbers, which
+for simplicity are commonly assumed to be scalar particles.
 A tree level exchange of a leptoquark induces processes such as $\bquark \to (\squark,\dquark)\ell^+\ell^-$,
 and therefore can result in an enhancement of their decay rates with respect to the SM~\cite{Hiller:2014yaa}.
 Leptoquarks would also provide a natural explanation for non-universal couplings to leptons.
 
 
 \section{Rare decays: a tool to search for new physics}
+\label{sec:RD_theory}
 
 In the Standard Model FCNC processes are forbidden at tree level but
-can occur trough loop diagrams such as penguin or \W box diagrams (see Fig.~\ref{fig:penguins}).
+can occur through loop diagrams such as penguin or \W box diagrams (see Fig.~\ref{fig:penguins}).
 The branching fractions of decays going through these processes are small, typically $\sim10^{-6}$ 
 or lower, and therefore they are called ``rare decays". Additional contributions to the virtual loops
 are not necessarily suppressed with respect to the SM component and this makes these decays
 very sensitive to new physics. This approach to new physics searches is interesting as
-new particles could be at high mass scales not accessible at colliders but their effect
-could be observed in loops.
+new particles could be at high mass scales that are not accessible via direct production at colliders
+but their effect could be observed in loops.
 Radiative and penguin decays are particularly interesting because they are theoretically
 well understood, which allows precise comparisons with measurements. Furthermore, they provide
-a great quantity of observables that can be affected by new physics, not only decay rates, but also 
+a large quantity of observables that can be affected by new physics, not only decay rates, but also 
 CP asymmetries and angular observables such as forward-backward asymmetries. The joint
-analysis of different observables can help building a consistent picture and rule out specific models.
+analysis of different observables can help to build a consistent picture and rule out specific models.
 %
 \begin{figure}[h!]
 \centering
@@ -432,7 +457,7 @@ and strong interactions.
 %in an effective low-energy theory with five quarks.
 %The QCD corrections that arise from hard gluon exchange bring large contributions
 %large logarithms of the form $\alpha_s^n(m_b)\log^m(m_b/M)$, where $M = m_t$ or $M = m_W$.
-The large masses of W, Z and top quark compared to that of the \bquark quark allow
+The large masses of the W and Z bosons and top quark compared to that of the \bquark quark allow
 the construction of an effective theory that divides the problem of calculating
 weak decay amplitudes into two parts: ``short-distance" and ``long-distance" effects separated
 at an energy scale $\mu$. The first part, dealing with short distance physics, handles
@@ -440,7 +465,7 @@ perturbative contributions due to energy scales above the \bquark mass. The seco
 typically deals with non-perturbative contributions. 
 A classic example of an effective theory is the Fermi theory of weak interactions
 which describes the $\beta$ decay in terms of a four-fermion interaction,
-where the short distance physics is hidden into a point like vertex as illustrated in Fig.~\ref{fig:fermi_theory}.
+where the short distance physics is hidden into a point-like vertex as illustrated in Fig.~\ref{fig:fermi_theory}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{Introduction/figs/fermi_theory.png}
@@ -460,33 +485,35 @@ transitions can be written as:
 %
 where $G_F$ denotes the Fermi coupling constant and the $\lambda$ constants are the CKM factors,  
 $\lambda^t_q = V_{tb}V_{tq}^*$ and  $\lambda^u_q = V_{ub}V_{uq}^*$. In $\bquark\to\squark$ quark transitions, 
-which are the main topic of this thesis, the doubly Cabibbo-suppressed contributions proportional to $\lambda^u_s$ 
-can be neglected. To obtain this formula the Operator Product Expansion (OPE)~\cite{Buchalla:1995vs} method
+which are the main topic of this thesis, the doubly Cabibbo-suppressed contributions can be neglected as 
+$\lambda^u_s << \lambda^t_s$. To obtain this formula the Operator Product Expansion (OPE)~\cite{Buchalla:1995vs} method
 is used, which implements a summation over all contributing operators weighted by corresponding constants
 called Wilson coefficients. In this Hamiltonian the long-distance contributions are described by the 
 operators, $\mathcal{O}_i$, while the short-distance physics is encoded in the Wilson 
-Coefficients, $C_i$. Operators and coefficients are evaluated at the renormalization scale $\mu$.
+Coefficients, $C_i$. Operators and coefficients are evaluated at the renormalisation scale $\mu$.
 Any particle that contributes to the decay and has a mass greater than the scale $\mu$ will affect the value 
 of at least one of the Wilson coefficients, including SM particles as the top quark.
 
 In order to describe SM processes the effective theory must be matched with the SM by requiring 
 the equality between each term in effective theory and the full theoretical calculation at a matching 
 scale, typically the EW scale ($\mu_W$). Then, using the scale independence of the
-effective Hamiltonian, one can derive a renormalization group equation for the Wilson Coefficients
+effective Hamiltonian, one can derive a renormalisation group equation for the Wilson Coefficients~\cite{Buras:1998raa}.
 %
-\begin{equation}
-\mu \frac{\deriv}{\deriv \mu} C_i(\mu) = \gamma_{ij}C_j(\mu),
-\end{equation}
 %
-where the matrix $\gamma$ is the anomalous dimensions matrix of the operators $\mathcal{O}_i$.
-At leading order the solution is given by~\cite{Buras:1998raa}:
+%\begin{equation}
+%\mu \frac{\deriv}{\deriv \mu} C_i(\mu) = \gamma_{ij}C_j(\mu),
+%\end{equation}
 %
-\begin{equation}
-C_i(\mu) = \left[ \frac{\alpha_s(\mu_W)}{\alpha_s(\mu)}\right]^{\frac{\gamma^0_{ii}}{2\beta_0}} C_i(\mu_W) = \left[ \frac{1}{1 + \beta_0\frac{\alpha_s(\mu)}{4\pi}ln\frac{\mu_W^2}{\mu^2}} \right]^{\frac{\gamma^0_{ii}}{2\beta_0}} C_i(\mu_W),
-\end{equation}
+%where the matrix $\gamma$ is the anomalous dimensions matrix of the operators $\mathcal{O}_i$.
+%At leading order the solution is given by~\cite{Buras:1998raa}:
 %
-where $\alpha_s$ is the strong coupling constant. In the SM, using $\mu_W = m_b$,
-the Wilson Coefficients have values:
+%\begin{equation}
+%C_i(\mu) = \left[ \frac{\alpha_s(\mu_W)}{\alpha_s(\mu)}\right]^{\frac{\gamma^0_{ii}}{2\beta_0}} C_i(\mu_W) = \left[ \frac{1}{1 + \beta_0\frac{\alpha_s(\mu)}{4\pi}ln\frac{\mu_W^2}{\mu^2}} \right]^{\frac{\gamma^0_{ii}}{2\beta_0}} C_i(\mu_W),
+%\end{equation}
+%
+%where $\alpha_s$ is the strong coupling constant.
+%
+Taking into account only SM contributions and using $\mu_W = m_b$, the Wilson Coefficients have values:
 %
 \begin{equation}
 \begin{array}{ccc}
@@ -504,8 +531,10 @@ values of the effective Hamiltonian. Given an initial state $I$ and a final stat
 \mbox{(e.g. $I = B$ and $F=\Kstarz\mumu$)} the decay amplitude can be calculated as
 %
 \begin{equation}
-A(I\to F)= \langle I | \mathcal{H}_{eff} | F \rangle = 
-= \frac{G_F}{\sqrt{2}} \sum V_{CKM}^i C_i(\mu) \langle I | \mathcal{O}_i(\mu) | F \rangle,
+\begin{array}{rl}
+A(I\to F) &= \langle I | \mathcal{H}_{eff} | F \rangle = \\
+&= \frac{G_F}{\sqrt{2}} \sum V_{CKM}^i \underbrace{C_i(\mu)}_{\shortstack{Perturbative \\ Includes new physics}} \cdot  \underbrace{\langle I | \mathcal{O}_i(\mu) | F \rangle}_{\shortstack{Non-preturbative \\ Known physics}},
+\end{array}
 \end{equation}
 where $\langle I | \mathcal{O}_i(\mu) | F \rangle$ are the hadronic matrix elements also called  ``form factors".
 These can be evaluated using non perturbative methods such as lattice calculations.
@@ -537,7 +566,7 @@ that are relevant for radiative and leptonic penguin processes are defined as~\c
 \end{array}
 \end{equation}
 %
-where $P_{L/R} = (1 \mp \gamma_5)/2$ denote the left/right handed chiral projection,
+where $P_{L/R} = (1 \mp \gamma_5)/2$ denote the left- and right-handed chiral projections,
 $T^a$ are the QCD generators and $F_{\mu\nu}$ is the electromagnetic field tensor.
 %
 The $\mathcal{O}'$ operators correspond to right-handed coupling obtained by swapping
@@ -607,17 +636,30 @@ only via `soft' hadronic processes and an OPE in $1/m_b$ is valid.
 %. A heavy-quark expansion in terms of The QCD Factori- sation (QCDF) technique separates the parton-level and %hadronic contributions at the energy scale ??mb, accounting for the ?soft? non-perturbative processes using hadronic %form factors [25].
 %
 %
+%\begin{table}[b]
+%\caption{A scheme of the \qsq spectrum.}
+%\begin{tabular}{llcrr}
+%{\footnotesize $\qsq = 0$ }   &  {\footnotesize  $E_{\Kstarz}  >> \Lambda_{QCD}$	}&  {\footnotesize $\qsq \sim m_{\jpsi,\psitwos}^2$ } & {\footnotesize $E_{\Kstarz}  \sim \Lambda_{QCD}$ } & {\footnotesize $\qsq = (m_B - m_\Kstarz)^2$ } \\
+%\hline
+%{\footnotesize max. recoil } & {\footnotesize large recoil (SCET) } & {\footnotesize $\cquark\cquarkbar$ resonances } & {\footnotesize low recoil (HQET) } & {\footnotesize zero recoil} \\
+%\end{tabular}
+%\label{tab:q2scheme}
+%\end{table}
 \begin{table}[b]
 \caption{A scheme of the \qsq spectrum.}
-\begin{tabular}{llcrr}
-{\footnotesize $\qsq = 0$ }   &  {\footnotesize  $E_{\Kstarz}  >> \Lambda_{QCD}$	}&  {\footnotesize $\qsq \sim m_{\jpsi,\psitwos}^2$ } & {\footnotesize $E_{\Kstarz}  \sim \Lambda_{QCD}$ } & {\footnotesize $\qsq = (m_B - m_\Kstarz)^2$ } \\
-\hline
-{\footnotesize max. recoil } & {\footnotesize large recoil (SCET) } & {\footnotesize $\cquark\cquarkbar$ resonances } & {\footnotesize low recoil (HQET) } & {\footnotesize zero recoil} \\
+\centering
+\begin{tabular}{c|c|c|c}
+ \qsq							& $E_{\Kstarz}$	   	&  	Regime 			& 	Valid theory \\ \hline
+ $\sim 0$ \gevgevcccc			& $\sim m_B$			&   Max. recoil			&	\multirow{ 2}{*}{SCET}\\ 
+ $< 6$	\gevgevcccc			& $>> \Lambda_{QCD}$	&	Large recoil		&		   		\\ \hline
+ $\qsq \sim m_{\jpsi,\psitwos}^2$ 	& $\sim 3$ \gev			& 	$\cquark\cquarkbar$ resonances	&  -- 		\\ \hline
+ $\qsq > 15$ \gevgevcccc 			& $E_{\Kstarz}  \sim \Lambda_{QCD}$ 			&	Low recoil	&	\multirow{ 2}{*}{HQET}\\
+ $\qsq = (m_B - m_\Kstarz)^2$ 		& $E_{\Kstarz} \sim 0$  	&	Zero recoil		&			\\
 \end{tabular}
 \label{tab:q2scheme}
 \end{table}
 %
-The \mbox{``low $q^2$"} is instead the region where the light spectator quark is energetic and cannot be neglected.
+The \mbox{``low $q^2$"} region is where the light spectator quark is energetic and cannot be neglected.
 Furthermore, the light quark interacts not only via `soft' hadronic processes, as in HQET, but also via the 
 so-called `collinear' hadronic processes.
 The boundary of this region can be set at $\sim 7$~\gevgevcccc~ which corresponds to the threshold for 
@@ -631,7 +673,7 @@ Effective Theory (SCET)~\cite{Bauer:2000yr}.
 \includegraphics[width=0.8\textwidth]{Introduction/figs/q2spectrum.pdf}
 \caption{A typical $q^2$ spectrum of $\bquark\to\squark\ell^+\ell^-$ process characterised by the pho
 ton pole
-at very low \qsq, charmonium resonances at central \qsq and broad resonances at high \qsq.}
+at very low \qsq, charmonium resonances at central \qsq and broad resonances at high \qsq~\cite{TomRDreview}.}
 \label{fig:q2spectrum}
 \end{figure}
 %
@@ -640,9 +682,9 @@ the biggest uncertainties come from the limited knowledge of hadronic transition
 The intermediate region is characterised by the presence of charmonium resonances, produced though tree 
 level $b\to\cbar c s$ transitions and no precise theoretical calculation is available~\cite{Khodjamirian:2010vf}.
 
-As can be seen in Fig.~\ref{fig:q2spectrum} the very low \qsq is characterised by a peak due
+As can be seen in Fig.~\ref{fig:q2spectrum} the very low \qsq region is characterised by a peak due
 to the virtual photon contribution, associated with $C_7$. In the region $1-6$~\gevgevcccc the 
-interference between $C_7$ and $C_9$ becomes large, yielding sensitivity to NP in $C_9$.
+interference between $C_7$ and $C_9$ becomes large, yielding sensitivity to new physics in $C_9$.
 The $7-15$~\gevgevcccc interval is dominated by the charmonium resonances, \jpsi and \psitwos. 
 Although these decays can be experimentally vetoed in
 principle charmonia affect the entire \qsq space. Finally, at high \qsq broad charmonium resonances 
@@ -652,9 +694,9 @@ can contribute, like those observed by LHCb in $\decay{B^+}{K^+\mumu}$ decays~\c
 \label{sec:observables}
 
 Rare decays and especially semileptonic $\bquark\to\squark\ell^+\ell^-$ processes offer a number
-of observables which can be used to benchmark BSM models.
+of observables which can be used to study BSM models.
 The most direct effects appear in decay rates that can be enhanced by new physics but the precision on
-these measurements is often limited by the uncertainty on form factor calculations.
+these measurements is often limited by uncertainties on the perturbative part of the calculations.
 Therefore, it is important to also look for different observables.
 One important class of observables are angular quantities that can often carry complementary 
 information with respect to branching ratio measurements. The most basic of these
@@ -662,15 +704,15 @@ observable are forward-backward asymmetries that characterise the angular distri
 For the $\Bz\to\Kstar\mumu$ decay combinations of observables have been proposed
 that are independent of form factor uncertainties at leading order order~\cite{TomRDreview}.
 
-An other way to build safe observables is to construct ratios between similar
-decays, in which uncertainties due to the hadronization process cancel out.
+Another way to build safe observables is to construct ratios between similar
+decays, in which uncertainties due to the hadronisation process cancel out.
 These observables include the $R_H$ ratios, between \Bz decays into electrons and muons,
 that are described in detail in Ch.~\ref{sec:RKst_theory}.
-It is also interesting to compare decays which go though the same fundamental process but
+It is also interesting to compare decays which proceed via the same fundamental process but
 where the spectator quark has a different flavour. This is the case of $\Bu\to K^+\mumu$ and $\Bz\to\KS\mumu$
 decays, which are both $\bquark\to\squark$ transitions where the spectator quark is an \uquark quark
-in the first case and a \dquark quark in the second. The ratio of the branching fractions of these
-decays is called isospin asymmetry.
+in the first case and a \dquark quark in the second. The normalised difference of the branching fractions
+of these decays is called isospin asymmetry.
 
 
 \section{Experimental status}
@@ -684,12 +726,12 @@ with respect to the SM that have the potential to yield to BSM scenarios.
 
 \subsection{Dimuon decays of \bquark hadrons}
 
-Decays of $B$ mesons into a dimuon are two-body decays where the two muons are back to
+Decays of $B$ mesons into a pair of muons are two-body decays where the two muons are back to
 back in the hadron rest frame. The simple signatures of these decays makes them easy to study
 and the fact that they are unaffected by hadronic physics in the final state makes predictions very
 clean and precise. Therefore these are essential tests of the SM.
-The $\decay{\Bz}{\mumu}$ and $\decay{\Bs}{\mumu}$ decays are exceedingly rare in the SM.
-First of all they are FCNCs that can only happen in loops and furthermore they are CKM-suppressed.
+The $\decay{\Bz}{\mumu}$ and $\decay{\Bs}{\mumu}$ decays are FCNCs that can only happen 
+via loops and furthermore they are CKM-suppressed, which makes them particularly rare.
 In addition to that the decay of a pseudo-scalar $B$ meson into two muons has a significant helicity
 suppression. The latest SM predictions for these decay rates are~\cite{Bobeth:2013uxa}:
 %
@@ -698,7 +740,7 @@ suppression. The latest SM predictions for these decay rates are~\cite{Bobeth:20
 \mathcal{B}(\decay{\Bz}{\mumu}) &= (1.06 \pm 0.09) \times 10^{-10}.
 \end{align}
 %
-The uncertainties on these values mainly come from the knowledge of the decay constants and 
+The uncertainties on these values are dominated by the knowledge of the decay constants and 
 CKM-elements. BSM models can produce significant enhancement to these decay rates.
 Furthermore, the measurement of their ratio is a stringent test of the MFV hypothesis.
 A combination of the \lhcb and \cms results measured the values~\cite{CMS:2014xfa}:
@@ -708,13 +750,6 @@ A combination of the \lhcb and \cms results measured the values~\cite{CMS:2014xf
 \mathcal{B}(\decay{\Bz}{\mumu}) &= (3.9^{+1.6}_{-1.4}) \times 10^{-10}.
 \end{align}
 %
-Both decays were previously unobserved, while now the $\Bs$ decay is observed
-with a significance of $6\sigma$ and evidence for the $\Bz$ decay is found
-at $3\sigma$ significance level. The measured branching fractions are compatible 
-with SM predictions within $2\sigma$ and put strong constraints to the available 
-parameter-space for BSM theories. Figure~\ref{fig:bsmumu} shows the fit the dimuon 
-invariant mass of $B$ meson candidates where the peaks of the two decays are visible.
-
 %
 \begin{figure}[h!]
 \centering
@@ -723,19 +758,25 @@ invariant mass of $B$ meson candidates where the peaks of the two decays are vis
 $\Bs\to\mumu$ and $\Bz\to\mumu$ decays~\cite{CMS:2014xfa}.}
 \label{fig:bsmumu}
 \end{figure}
-
+%
+Neither decay had been previously observed, while now the $\Bs$ decay is observed
+with a significance of $6\sigma$ and evidence for the $\Bz$ decay is found
+at $3\sigma$ significance level. The measured branching fractions are compatible 
+with SM predictions within $2\sigma$ and put strong constraints on the available 
+parameter-space for BSM theories. Figure~\ref{fig:bsmumu} shows the fit the dimuon 
+invariant mass of $B$ meson candidates where the peaks of the two decays are visible.
 
 \subsection{Semileptonic $\bquark\to\squark\ell^+\ell^-$ decays of \bquark hadrons}
 \label{sec:exp_btosll}
 
-At the LHC energies is now possible to collect large data samples of semileptonic 
+At the LHC energies is possible to collect large data samples of semileptonic 
 decays, especially those with muons in the final state.
 Many branching fractions of semileptonic $B$ meson decays were recently measured at
 the \lhcb experiment, including $\decay{B}{K\mumu}$, $\decay{B}{\Kstarz\mumu}$
 and $\decay{\Bs}{\phi\mumu}$~\cite{LHCB-PAPER-2014-006,LHCB-PAPER-2013-017,LHCB-PAPER-2013-019}. 
 Baryon decays were also studied at \lhcb: including 
 the rare $\decay{\Lambda_b}{\Lz\mumu}$ decay~\cite{Aaij:2015xza}, whose analysis is described in this thesis.
-Unlike for pure leptonic decays, SM predictions for semileptonic decays are affected by the
+In contrast to purely leptonic decays, SM predictions for semileptonic decays are affected by the
 knowledge of hadronic form factors, which results in relatively large uncertainties,
 $\mathcal{O}(30\%)$. As a result measurements are now typically more precise than predictions.
 
@@ -753,20 +794,20 @@ are found to be compatible with SM predictions~\cite{LHCB-PAPER-2014-007}.
 \centering
 \includegraphics[width=0.6\textwidth]{Introduction/figs/P5prime.pdf}
 \caption{Measurement of the observable as a function of \qsq, showing a tension with
-SM predictions in the 2--6 \gevgevcccc region.}
+SM predictions in the 2--6 \gevgevcccc region~\cite{LHCB-PAPER-2013-037}.}
 \label{fig:P5prime}
 \end{figure}
-
+%
 Other observables for which the sensitivity to form factors effects is reduced are the CP asymmetry between
-$B$ and $\bar{B}$ decays, $\mathcal{A}_{CP}$, and the isospin asymmetry between \Bz ad \Bu decays, $\mathcal{A}_{CP}$.
-Due to the small size of the corresponding CKM elements CP asymmetries of $\Bz\to K^{(*)}\mumu$
+$B$ and $\bar{B}$ decays, $\mathcal{A}_{CP}$, and the isospin asymmetry between \Bz and \Bu decays, $\mathcal{A}_{CP}$.
+Due to the small size of the corresponding CKM elements, CP asymmetries of $\Bz\to K^{(*)}\mumu$
 decays are tiny in the SM, $O(10^{-3})$. In BSM models new sources of CP violation can arise and therefore
 $\mathcal{A}_{CP}$ measurements are a powerful null test of the SM. 
 The isospin asymmetry is not zero in the SM due to isospin breaking effects in the form factors.
 This is expected to be $\sim1$\% at low \qsq and increase to $\sim10$\% as \qsq tends to zero.
 The LHCb experiment, using the full dataset collected in Run I, corresponding to an integrated luminosity of
-3~\invfb, measured both these asymmetries to be consistent with zero~\cite{LHCB-PAPER-2014-006,Aaij:2014bsa},
-as reported in Tab.~\ref{tab:AcpAI}. 
+3~\invfb and $\sim 10^9$ B decays, measured both of these asymmetries to be consistent with
+zero~\cite{LHCB-PAPER-2014-006,Aaij:2014bsa}, as reported in Tab.~\ref{tab:AcpAI}. 
 %
 \begin{table}
 \begin{small}
@@ -777,24 +818,24 @@ $\mathcal{A}_{CP}$  & $0.004 \pm 0.028$	 				& $-0.005 \pm 0.030$		&	$0.094 \pm 
 $\mathcal{A}_{I}$	& $-0.10^{+0.08}_{-0.09} \pm 0.02$	& $-0.09 \pm 0.08 \pm 0.02$	&	$0.00^{+0.12}_{-0.10} \pm 0.02$  &	$0.06^{+0.10}_{-0.09} \pm 0.02$ \\
 \end{tabular}
 \end{small}
-\caption{Measurement of CP and isospin asymmetry in $\Bz\to K^{(*)}\mumu$ decays from the LHCb experiment.  }
+\caption{Measurement of CP and isospin asymmetry in $\Bz\to K^{(*)}\mumu$ decays from the LHCb experiment~\cite{TomRDreview}.  }
 \label{tab:AcpAI}
 \end{table}
-
-Recently, progress was made measuring also electron channels.
+%
+Recently, progress was also made measuring also electron channels.
 The branching fraction of the $\Bz\to\Kstarz\ee$ decay was measured to be $(3.1\pm1.3)\times10^{-7}$ in the dilepton mass interval 30--1000 \mevcc~\cite{LHCB-PAPER-2013-005}. Furthermore, for the first time
 angular observables were measured for this decay and found to be consistent with SM predictions~\cite{Aaij:1981106}.
 
 \subsection{Lepton Flavour Violation searches}
 
 Several Lepton Flavour Violation (LFV) searches are linked to rare decays as they involve small branching
-ratios in the SM that can be enhances by new physics. They are therefore a natural place to look for new physics.
-Lepton flavour conservation is well experimentally established measuring the branching ratios of
-decays of muons into electrons and no neutrinos but has no strong theoretical
+ratios in the SM that can be enhanced by BSM physics. %They are therefore a natural place to look for new physics.
+Lepton flavour conservation is experimentally well-established measuring the branching ratios of
+decays of muons into electrons and no neutrinos, but has no strong theoretical
 explanation in the context of the SM. In fact it is already observed that flavour
 is not conserved in neutrino oscillations. 
 %This section reports a short review of LFV searches. 
-
+%
 The best-studied decays violating lepton flavour 
 are rare muon decays including $\mu^+\to e^+\gamma$ and $\mu^+\to e^+e^-e^+$.
 Since muons can be abundantly produced and the final states are simple,

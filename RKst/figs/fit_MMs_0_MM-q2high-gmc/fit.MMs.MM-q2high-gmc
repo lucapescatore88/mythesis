@@ -1,8 +1,0 @@
-#!/bin/tcsh
-set PWD = `pwd`
-cd /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_MMs_5_MM-q2high-gmc
-rm -rf tmp*
-$LHCBBHAM/RKst/scripts/tmp.csh $PWD /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/jobs/jobs/fit_MMs_5_MM-q2high-gmc
-source /afs/cern.ch/work/s/simone/RD/Analysis/lhcbbham/RKst/scripts/SetupRKst.csh
-./fitMMs.out -MM-q2high-gmc
-rm -rf tmp*
