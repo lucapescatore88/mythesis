@@ -10,22 +10,26 @@ trigger lines and cuts are applied to remove backgrounds from specific decays.
 All these first three steps are referred to as ``pre-selection";
 \item secondly, particle identification requirements are applied to remove part of misreconstructed
 background and clear the way for the last step;
-\item in the final step a neural network is used to remove combinatorial background.
+\item in the final step a neural network is used to remove combinatorial background. Furthermore,
+for the electron channels, which are more challenging, the kinematic structure of the decays
+is also used to improve the samples purity.
 \end{itemize}
 %
-In order to minimise the systematic uncertainties the same selection requirements are used to select 
-the rare signal candidates and the relative charmonium channel, a part from the \qsq cuts which serve
-to distinguish them. To identify the $\Bz \to\Kstarz(\jpsi\to \mumu)$ channel a dilepton mass
+%In order to minimise the systematic uncertainties the same selection requirements are used to select 
+%the rare signal candidates and the relative charmonium channel, a part from the \qsq cuts which serve
+%to distinguish them. 
+To identify the $\Bz \to\Kstarz(\jpsi\to \mumu)$ candidates a dilepton mass
 interval of 100~\mevcc~around the nominal \jpsi peak~\cite{PDG2014} is selected.
-On the other hand it is not possible to use a narrow cut on the \qsq of $\jpsi(ee)$ channel as its
+On the other hand it is not possible to use a narrow interval around $\jpsi(ee)$ mass peak as the invariant mass
 distribution is characterised by a long radiative tail at low masses due to bremsstrahlung radiation.
-Furthermore, a cut in \qsq distorts the 4-body $m(K\pi ee)$ mass distribution and it is important to
-be able to fit a wide mass range to constrain the backgrounds. For these reasons the interval to select
-$\Bz \to\Kstarz(\jpsi\to \epem)$ candidates is chosen to go as low as possible without overlapping with
-the rare channel interval. The electron resonant channel is therefore selected in the interval
-$6-11~\gevgevcccc$. Figure~\ref{fig:2D_q2_B0mass} shows two-dimensional distributions
-of \qsq versus 4-body invariant mass for candidates passing the full selection.
-Horizontal bands can be clearly seen at \qsq values corresponding to the \jpsi and \psitwos resonances.
+Furthermore, a requirement in \qsq distorts the 4-body $m(K\pi ee)$ mass distribution which is not advisable as is
+important to be able to fit a wide mass range to constrain the backgrounds. For these reasons the interval to select
+$\Bz \to\Kstarz(\jpsi\to \ee)$ candidates is chosen to go as low as possible without overlapping with
+the rare channel interval. Candidates are therefore identified as $\jpsi(ee)$ if they fall in the \qsq interval
+$6 < \qsq < 11$~\gevgevcccc. Similarly, candidates are identified as $\psitwos(ee)$ is they fall into $11 < \qsq < 15$~\gevgevcccc
+and $\gamma(ee)$ if they fall into $\qsq < 0.004$~\gevgevcccc.
+Figure~\ref{fig:2D_q2_B0mass} shows two-dimensional distributions of \qsq versus the 4-body invariant mass 
+for candidates passing the full selection. Horizontal bands can be clearly seen at \qsq values corresponding to the \jpsi and \psitwos resonances.
 On the plot for muons it is also evident a vertical band which corresponds to rare decay of interest.
 
 \begin{figure}[t!]
@@ -184,9 +188,9 @@ of a neural network which takes as input information from the calorimeters, the 
 the muon system and the tracking system. Unlike the DLL variables (see Sec.~\ref{sec:PID_perf})
 the {\verb ProbNN } are bound from 0 to 1 and can be therefore directly be interpreted as probabilities.
 For example {\verb ProbNNk } is the probability for a reconstructed particle to be a kaon.
-Two tunes of the {\verb ProbNN } variables, labelled V2 and V3, are available.
-Tune V3 was shown to be optimal for positive ID, while tune V2 was found to be optimal
-for background rejection and therefore it is used to quantify the mis-ID probability.
+%Two tunes of the {\verb ProbNN } variables, labelled V2 and V3, are available.
+%Tune V3 was shown to be optimal for positive ID, while tune V2 was found to be optimal
+%for background rejection and therefore it is used to quantify the mis-ID probability.
 %
 \begin{figure}[h!]
 \centering 
@@ -218,10 +222,14 @@ and mis-ID are combined using the following cuts:
 %
 \begin{center}
 \begin{tabular}{lcl}
-$\pi$ &\to  & $\verb!ProbNNpi-V3! \times (1 - \verb!ProbNNk-V2!) \times (1 - \verb!ProbNNp-V2!) > 0.1$ \\
-$K$   &\to  & $\verb!ProbNNk-V3! \times (1 - \verb!ProbNNp-V2! ) > 0.05$ \\ 
-$\mu$ &\to  & $\text{min}(\verb! ProbNNmu-V3! , \verb! ProbNNmu-V3 !) > 0.2$  \\
-$e$   &\to  & $\text{min}(\verb! ProbNNe-V3! , \verb! ProbNNe-V3 !) > 0.2$ \\
+$\pi$     & \to  & $\verb!ProbNNpi! \times (1 - \verb!ProbNNk!) \times (1 - \verb!ProbNNp!) > 0.1$ \\
+$K$      & \to  & $\verb!ProbNNk! \times (1 - \verb!ProbNNp! ) > 0.05$ \\ 
+$\mu$  & \to  & $\text{min}(\verb! ProbNNmu! , \verb! ProbNNmu !) > 0.2$  \\
+$e$      & \to  & $\text{min}(\verb! ProbNNe! , \verb! ProbNNe !) > 0.2$ \\
+%$\pi$ &\to  & $\verb!ProbNNpi-V3! \times (1 - \verb!ProbNNk-V2!) \times (1 - \verb!ProbNNp-V2!) > 0.1$ \\
+%$K$   &\to  & $\verb!ProbNNk-V3! \times (1 - \verb!ProbNNp-V2! ) > 0.05$ \\ 
+%$\mu$ &\to  & $\text{min}(\verb! ProbNNmu-V3! , \verb! ProbNNmu-V3 !) > 0.2$  \\
+%$e$   &\to  & $\text{min}(\verb! ProbNNe-V3! , \verb! ProbNNe-V3 !) > 0.2$ \\
 \end{tabular}
 \end{center}
 %
@@ -312,53 +320,70 @@ reduced by the PID requirements but a non-negligible contribution is still expec
 %in the $\mu\mu$ sample
 which is modelled in the fit.
 
-%\subsubsection{\BdToDee}
+\subsubsection{\decay{\Bd}{(\Dm\to K \en \overline{\nu})\ep\nu} }
 
-%A specific requirement is applied to remove the background coming from the \decay{\Bd}{\Dm\ep\nu} decay in which the \Dm in turn decays semileptonically to $\Kstarz\en\nu$. 
-%This decay has a branching ratio four orders of magnitude larger than \BdToKstee in the low-\qsq region and it may pass the selection requirements when the two neutrinos carry a very low momentum. 
-%This cut, developed for the angular analysis, uses the angle $\theta_\ell$ which is defined as the angle between the direction of the \ep (\en) in the di-electron rest frame and the direction of the di-electron in the \Bd (\Bdb) rest frame.  
-%Low momentum neutrinos demand the \Dm and the \ep to be almost back-to-back in the \Bd rest frame giving the \ep a relatively large energy compared to the \en. 
-%As a consequence, the direction of the \ep is close to the direction of the di-electron pair, thus the $\theta_\ell$ angle is close to 0. 
-%This explains why the distribution of background selected in data with an invariant mass cut of $m(\Kstarz\epem) < 4800~\mevcc$ is asymmetric towards higher $ \cos (\theta_\ell)$ values as it can be seen in Fig.~\ref{fig:Denu_background} (\emph{left}). 
-%The cut is chosen to be $|\cos (\theta_\ell) |< 0.8$, and is not applied in the high-\qsq bin.
+The \decay{\Bd}{\Dm\ep\nu} decay, where the \Dm in turn decays semileptonically to $\Kstarz\en\nu$ has the same final particles
+as the \BdToKstee decay plus two neutrinos which are not reconstructed. This decay has a branching ratio four orders of magnitude
+larger than \BdToKstee in the low-\qsq region and it may pass the selection requirements when the two neutrinos carry a low momentum. 
+%This cut, developed for the angular analysis, 
+To lower the level of this background the angle $\theta_\ell$ is used, which is defined as the angle between the direction of the \ep (\en)
+in the di-electron rest frame and the direction of the di-electron in the \Bd (\Bdb) rest frame. 
+Low momentum neutrinos demand the \Dm and the \ep to be almost back-to-back in the \Bd rest frame giving the \ep a relatively
+large energy compared to the \en. As a consequence, the direction of the \ep is close to the direction of the di-electron pair, thus the
+$\theta_\ell$ angle is close to 0. This explains why the distribution of background selected in data with an invariant mass cut of
+$m(\Kstarz ee) < 4800$~\mevcc is asymmetric towards higher $ \cos (\theta_\ell)$ values as it can be seen in Fig.~\ref{fig:Denu_background}(\emph{left}). 
+The cut is chosen to be $|\cos (\theta_\ell) |< 0.8$, and is not applied in the high-\qsq bin as the variable looses its discriminating power.
 %The percentage of \BdToeeKst signal events lost applying this cut is quite low, about $10\%$ according to MC. 
 
-%\begin{figure}[t!]
-%\centering
-%\includegraphics[width=0.48\textwidth]{figs/Background/CosThetaL_background.pdf}
-%\includegraphics[width=0.48\textwidth]{figs/Background/KstareMass_background.pdf}
-%\caption{Distribution of (left) $\cos (\theta_\ell)$ and of (right) the $m(\Kstarz e)$ invariant mass, where the \BdToDee background is selected by requiring $m(\Kstarz\epem) < 4800\mevcc$. The red distribution corresponds to events with $| \cos ( \theta_\ell ) | > 0.8$.}
-%\label{fig:Denu_background}
-%\end{figure}
+\begin{figure}[t!]
+\centering
+\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/CosThetaL_background.pdf}
+\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/KstareMass_background.pdf}
+\caption{Distribution of (left) $\cos (\theta_\ell)$ and of (right) the $m(\Kstarz e)$ invariant mass, where the \decay{\Bd}{(\Dm\to K \en \overline{\nu})\ep\nu} background is selected by requiring $m(\Kstarz\epem) < 4800\mevcc$. The red distribution corresponds to events with $| \cos ( \theta_\ell ) | > 0.8$.}
+\label{fig:Denu_background}
+\end{figure}
 
-%In the muon channels the background from \BdToDmm decays is suppressed by the choice of the fitting range.
+In the muon channels the background from \decay{\Bd}{(\Dm\to K \mun \overline{\nu})\mup\nu} decays is suppressed by the choice of the fitting range.
 
 
-%\subsubsection{\BdToKstGee}
-%For the low-\qsq region, a potentially dangerous peaking background is due to the \BdKstGam decay followed by a conversion of the photon in the detector. 
-%The branching fraction of \BdKstGam has been measured to be \BF = $(4.33 \pm 0.15)\times 10^{-5}$, and in the case where the photon converts to an electron and a positron, it will have similar characteristics to \BdKstee. 
-%In \lhcb, around 40\% of the photons convert before the calorimeter, and although only a small fraction of these, of the order of 10\%, converts in the VELO and are reconstructed as long tracks, the resulting \Bd mass should peak under that of the signal. 
-%It is thus important to veto this signal-like background. 
-%The first effective veto is in the reconstructed invariant mass window for the \epem pair that was chosen above 20~\mevcc. Furthermore, the \epem pair from \BdKstGam has a vertex at the point of conversion of the photon, but it may still be reconstructed as originating from the \Bd decay when the \epem vertex is determined with a large error. 
-%Indeed, a cut was applied on the error on the reconstructed z-coordinate of the \epem pair at $\sigma_Z(\epem) < 30\rm{mm}$. 
-%The contamination from the background is estimated in the following way : a quasi pure sample of \BdToKstGee is selected requiring that the 
-%reconstructed invariant mass window for the \epem pair is smaller than 5~\mevcc. The event yield obtained on data ($881 \pm 39$ events) is used to rescale the prediction of the LHCb MC to get rid of problems related to an absolute prediction. 
-%The LHCb MC is then used to predict the contamination from \BdKstGam events in the signal region ( \epem pair is larger than 20~\mevcc and $\sigma_Z(\epem) < 30\rm{mm}$), one obtains a 1.6 \% contamination. Finally as pointed out in ~\cite{LHCb-ANA-2014-009}, a conservative correction to take into account the mis-modelling of the Bethe-Heitler process in Geant4 is further applied. The contamination is estimated to amount to  $(3.2\pm1.6)\%$ of the signal yield. 
+\subsubsection{\BdToKstGee}
+
+For the low-\qsq region, a potentially dangerous peaking background is due to the \BdToKstGee decay followed by a conversion
+of the photon in the detector. The branching fraction of \BdToKstGee has been measured to be \BF = $(4.33 \pm 0.15)\times 10^{-5}$ and 
+when the photon converts to an electron and a positron has similar characteristics to \BdKstee. 
+In \lhcb around 40\% of the photons convert before the calorimeter. Although only a small fraction of these, $\sim 10\%$, converts
+in the VELO and are reconstructed as long tracks, the resulting \Bd mass should peak under that of the signal, making it a dangerous background. 
+To veto this signal-like background an effective veto is in the reconstructed invariant mass window for the \ee pair that was chosen 
+above 20~\mevcc. Furthermore, the \ee pair from \BdToKstGee has a vertex at the point of conversion of the photon, but it may still be
+reconstructed as originating from the \Bd decay when the \ee vertex is determined with a large error. 
+Therefore a requirement is applied on the uncertainty of the reconstructed $z$-coordinate of the \ee pair: $\sigma_z(\ee) < 30\rm{mm}$.
+%The contamination from the background is estimated in the following way: a quasi pure sample of \BdToKstGee is selected requiring that the 
+%reconstructed invariant mass window for the \epem pair is smaller than 5~\mevcc. The event yield obtained on data ($881 \pm 39$ events)
+i%s used to rescale the prediction of the LHCb MC to get rid of problems related to an absolute prediction. 
+Simulation is used to predict the contamination from \BdToKstGee events in the signal region which is found to be $(3.2\pm1.6)\%$.
+%1.6 \%. 
+%Finally as pointed out in ~\cite{LHCb-ANA-2014-009}, a conservative correction to take into account the mis-modelling 
+%of the Bethe-Heitler process in Geant4 is further applied. The contamination is estimated to amount to  $(3.2\pm1.6)\%$ of the signal yield. 
 
 
 
 \subsubsection{Other peaking backgrounds}
 
-A possible background could come from $\Bz \to\Kstarz\gamma$ decays where the photon converts
-into two electrons while traversing the detector. In LHCb, around 40\% of photons convert before the calorimeter,
-but only a small fraction of these, $\sim 10\%$, are reconstructed. Furthermore these events fall
-into a \qsq region well below the intervals considered in this analysis and their contribution is therefore negligible.
-Similar decays are also $\Bz \to\Kstarz\eta$ and $\Bz \to\Kstarz\pi^0$ where $\eta$ and the pion decay into
-two photons. Once again the contribution from these decays falls well below the considered \qsq intervals.
-Finally, a potentially dangerous background could come from events where the
+%A possible background could come from $\Bz \to\Kstarz\gamma$ decays where the photon converts
+%into two electrons while traversing the detector. In LHCb, around 40\% of photons convert before the calorimeter,
+%but only a small fraction of these, $\sim 10\%$, are reconstructed. Furthermore these events fall
+%into a \qsq region well below the intervals considered in this analysis and their contribution is therefore negligible.
+
+Contamination from $\Bz \to\Kstarz\eta$ and $\Bz \to\Kstarz\pi^0$ where $\eta$ and the pion decay into
+two photons was considered and found to be small.
+Furthermore, a potentially dangerous background could come from events where the
 identity of the kaon and the pion are swapped as these candidates peak under the signal.
 Their contribution is found to be small, 0.5\%, however the effect of their modelling into the fit
 is taken into account in the systematic uncertainties.
+Finally, charmonium decays where the identity of the kaon, or the pion, and one of the muons are swapped
+is a potentially dangerous background. These decays are rejected by requiring that the hadron-$\mu$ invariant
+mass $m((h \to \mu)\mu)$, where the muon mass hypothesis is assigned to the hadron, is not compatible with
+a \jpsi (\psitwos) resonance: $|m((h\to \mu)\mu)?m_{\jpsi, (\psitwos)} | > 60$~\mevcc.
 
 \subsection{Mis-reconstructed background}
 \label{sec:RKst_peaking_Dchains}
@@ -399,7 +424,7 @@ mis-reconstructed background is modelled in the fit (for details see Sec.~\ref{s
 %(for details see Sec.~\ref{sec:RKst_misreco_fit}).
 
 \subsection{Bremsstrahlung corrected mass}
-\label{sec:BCM}
+\label{sec:HOP}
 
 An additional handle against backgrounds that contaminate the $ee$ channels is provided the analysis of the kinematics of the decay.
 %\cite{LHCb-INT-2015-000}.
@@ -439,7 +464,7 @@ and on the \Bz lifetime, and degrades as a function of \qsq. Figure~\ref{fig:hop
 As the correction does not work properly for backgrounds this leads the candidates to spread out making \mbcm 
 a discriminating variable between signal and background shapes. A two-dimensional cut is adopted
 %
-$$\mbcm > a_{\rm BCM} + b_{\rm BCM} \cdot log(\chi^2_{\rm FD})$$
+$$\mbcm > a_{\rm BCM} + b_{\rm BCM} \cdot \log(\chi^2_{\rm FD})$$
 %
 where the $a_{\rm BCM}$ and $b_{\rm BCM}$ coefficients are optimised as described in Sec.~\ref{sec:optimisation}.
 
@@ -672,5 +697,55 @@ background rejection. Plots correspond to the electron (left) and muons (right) 
 \label{fig:RKst_FOM}
 \end{figure}
 
+\section{Selection summary}
+
+Table~\ref{tab:sel_summary} summarises the requirements applied for each cut after stripping.
+
+\begin{table}[t!]
+\begin{center}
+\caption{Summary of the selection requirements.}
+\label{tab:sel_summary}
+\begin{footnotesize}
+\renewcommand\arraystretch{1.4}
+\begin{tabular}{c|c|c|c}
+\multicolumn{2}{c|}{\textbf{Type}} & \textbf{Requirement} & {\boldmath\qsq} \\
+\hline
+\multirow{2}{*}{Quality} & \multirow{2}{*}{All tracks}
+	& $\chisqndf < 3$ & all \\
+	&& {\verb GhostProb } $< 0.4$ & all \\
+\hline
+ID & \Kstarz & $|m(\kaon\pi) - m_{\Kstarz}^{PDG}| < 100\mevcc$ & all \\
+\hline
+ \multirow{4}{*}{PID}
+	& $K$	& $\texttt{ProbNNk} \cdot (1 - \texttt{ProbNNp}) > 0.05$ & all \\
+	& $\pi$	& $\texttt{ProbNNpi} \cdot (1 - \texttt{ProbNNk}) \cdot (1 - \texttt{ProbNNp}) > 0.1$ & all \\
+	& $\mu$	& $\texttt{ProbNNmu} > 0.2$ & all \mm \\
+	& $e$	& $\texttt{ProbNNe} > 0.2$ & all \ee \\
+	\hline
+	\multirow{15}{*}{BKG}
+	& Swap & $|m((\decay{h}{\mu})\mu) - m_{\jpsi, (\psitwos)}^{PDG}| > 60\mevcc$ & all \\
+	& \BuToKll & $max(m(K\ell\ell),m((\decay{\pi}{\kaon})\ell\ell)) < 5.1\gevcc$ & all \\
+	& \BsToPhill & $m(K(\decay{\pi}{K})) > 1040~\mevcc$ & all \\
+	& \decay{\Bd}{\Dm\ep\nu} & $|\ctl| < 0.8$ & except $ee$ high- \\
+%	& \BdToKstGee & $\sigma_{Z}(\epem) < 30~\rm{mm}$ & only low- \\
+	& \BdToKstGee & $\sigma_{z}(\ee) < 30~\rm{mm}$ & except $\gamma(ee)$ \\
+\cline{2-4}
+	& \multirow{8}{*}{Comb}	& $\texttt{NNout} > 0.75$ & $\mu\mu$ low- \\
+	&					& $\texttt{NNout} > 0.63$ & $ee$ low- \\
+	& 					& $\texttt{NNout} > 0.90$ & $\mu\mu$ central- \\
+	&					& $\texttt{NNout} > 0.93$ & $ee$ central- \\
+	& 					& $\texttt{NNout} > 0.69$ & $\mu\mu$ high- \\
+	&					& $\texttt{NNout} > 0.93$ & $ee$ high- \\
+\cline{3-4}
+	& 					& $\texttt{NNout} > 0.13$ & $\jpsi(\mu\mu)$ \\
+	&					& $\texttt{NNout} > 0.20$ & $\jpsi(ee)$\\
+\cline{2-4}
+	& \multirow{2}{*}{Comb and Part-reco}	& $\mbcm > 4374 + 65 \cdot \log(\chi^2_{FD})$ & $ee$ low- \\
+	&							& $\mbcm > 4291 + 72 \cdot \log(\chi^2_{FD})$ & $ee$ central- \\
+\hline
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{table}
 
 

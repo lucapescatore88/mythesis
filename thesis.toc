@@ -87,52 +87,57 @@
 \contentsline {section}{\numberline {5.1}Combining ratios}{127}{section.5.1}
 \contentsline {section}{\numberline {5.2}Experimental status}{128}{section.5.2}
 \contentsline {section}{\numberline {5.3}Analysis strategy}{129}{section.5.3}
-\contentsline {section}{\numberline {5.4}Choice of \ensuremath {q^2}\xspace intervals}{130}{section.5.4}
-\contentsline {section}{\numberline {5.5}Data samples and simulation}{130}{section.5.5}
+\contentsline {section}{\numberline {5.4}Dilepton invariant mass intervals}{130}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Control channels}{131}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Data samples and simulation}{131}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Data-simulation corrections}{131}{subsection.5.5.1}
-\contentsline {section}{\numberline {5.6}Selection}{132}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Trigger and Stripping }{134}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}PID}{138}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Peaking backgrounds }{139}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.6}Selection}{134}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Trigger and Stripping }{135}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}PID}{137}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Peaking backgrounds }{140}{subsection.5.6.3}
 \contentsline {subsubsection}{\numberline {5.6.3.1}Charmonium vetoes}{140}{subsubsection.5.6.3.1}
-\contentsline {subsubsection}{\numberline {5.6.3.2}$\phi $ veto}{140}{subsubsection.5.6.3.2}
-\contentsline {subsubsection}{\numberline {5.6.3.3}$\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^+}\xspace \ensuremath {\rightarrow }\xspace K^+ \ensuremath {\ell ^+ \ell ^-}$ plus a random pion}{141}{subsubsection.5.6.3.3}
-\contentsline {subsubsection}{\numberline {5.6.3.4}$\Lambda _b$ decays}{141}{subsubsection.5.6.3.4}
-\contentsline {subsubsection}{\numberline {5.6.3.5}Other peaking backgrounds}{142}{subsubsection.5.6.3.5}
-\contentsline {subsection}{\numberline {5.6.4}Mis-reconstructed background}{142}{subsection.5.6.4}
-\contentsline {subsection}{\numberline {5.6.5}Bremsstrahlung corrected mass}{143}{subsection.5.6.5}
-\contentsline {subsection}{\numberline {5.6.6}Multivariate analysis}{145}{subsection.5.6.6}
-\contentsline {subsection}{\numberline {5.6.7}Optimisation}{150}{subsection.5.6.7}
-\contentsline {section}{\numberline {5.7}Mass fits}{150}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Muon channels}{152}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Electron channels}{154}{subsection.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.2.1}Signal PDFs for the electron channels}{156}{subsubsection.5.7.2.1}
-\contentsline {subsubsection}{\numberline {5.7.2.2}Background PDFs for the electron channels}{158}{subsubsection.5.7.2.2}
-\contentsline {subsubsection}{\numberline {5.7.2.3}Summary of the fit to the electron samples}{161}{subsubsection.5.7.2.3}
-\contentsline {subsection}{\numberline {5.7.3}Event yields}{163}{subsection.5.7.3}
-\contentsline {section}{\numberline {5.8}Efficiency}{168}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Geometric efficiency}{170}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}Reconstruction efficiency and bin migration}{170}{subsection.5.8.2}
-\contentsline {subsubsection}{\numberline {5.8.2.1}Bin migration}{171}{subsubsection.5.8.2.1}
-\contentsline {subsection}{\numberline {5.8.3}PID efficiency}{172}{subsection.5.8.3}
-\contentsline {subsection}{\numberline {5.8.4}Trigger efficiency}{173}{subsection.5.8.4}
-\contentsline {subsubsection}{\numberline {5.8.4.1}Electron triggers}{174}{subsubsection.5.8.4.1}
-\contentsline {subsubsection}{\numberline {5.8.4.2}TISTOS cross-check}{176}{subsubsection.5.8.4.2}
-\contentsline {subsection}{\numberline {5.8.5}Neural Networks efficiency}{177}{subsection.5.8.5}
-\contentsline {section}{\numberline {5.9}Systematic uncertainties}{178}{section.5.9}
-\contentsline {subsection}{\numberline {5.9.1}Choice of signal and background PDFs}{178}{subsection.5.9.1}
-\contentsline {subsection}{\numberline {5.9.2}Efficiency determinations}{180}{subsection.5.9.2}
-\contentsline {subsection}{\numberline {5.9.3}Bin migration}{181}{subsection.5.9.3}
-\contentsline {section}{\numberline {5.10}Result extraction}{182}{section.5.10}
-\contentsline {subsection}{\numberline {5.10.1}$R_{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace }$ sanity check}{182}{subsection.5.10.1}
-\contentsline {subsection}{\numberline {5.10.2}\ensuremath {R_{\ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace }}\xspace result summary}{183}{subsection.5.10.2}
-\contentsline {subsection}{\numberline {5.10.3}Branching ratios and expectations}{184}{subsection.5.10.3}
-\contentsline {chapter}{\numberline {6}Conclusions}{185}{chapter.6}
-\contentsline {chapter}{\numberline {A}Decay models}{197}{chapter.1}
-\contentsline {section}{\numberline {A.1}$\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\PLambda }\xspace \ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}\xspace $ distribution}{197}{section.1.1}
-\contentsline {section}{\numberline {A.2}$\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace \ensuremath {\PLambda }\xspace $ distribution}{201}{section.1.2}
-\contentsline {chapter}{\numberline {B}Data-simulation comparison}{202}{chapter.2}
-\contentsline {chapter}{\numberline {C}Systematic uncertainties on the efficiency calculation for the $\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\PLambda }\xspace \ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}\xspace $ branching fraction analysis.}{205}{chapter.3}
-\contentsline {chapter}{\numberline {D}Invariant mass fits to $\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {e^+ e^-}$ simulated candidates}{208}{chapter.4}
-\contentsline {chapter}{\numberline {E}Extra}{212}{chapter.5}
-\contentsline {section}{\numberline {E.1}Anomalies}{212}{section.5.1}
+\contentsline {subsubsection}{\numberline {5.6.3.2}$\phi $ veto}{141}{subsubsection.5.6.3.2}
+\contentsline {subsubsection}{\numberline {5.6.3.3}$\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^+}\xspace \ensuremath {\rightarrow }\xspace K^+ \ensuremath {\ell ^+ \ell ^-}$ plus a random pion}{142}{subsubsection.5.6.3.3}
+\contentsline {subsubsection}{\numberline {5.6.3.4}$\Lambda _b$ decays}{142}{subsubsection.5.6.3.4}
+\contentsline {subsubsection}{\numberline {5.6.3.5}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace (\ensuremath {\ensuremath {\ensuremath {D}\xspace }\xspace ^-}\xspace \ensuremath {\rightarrow }\xspace K \ensuremath {\ensuremath {e}\xspace ^-}\xspace \overline {\nu })\ensuremath {\ensuremath {e}\xspace ^+}\xspace \nu }\xspace }{142}{subsubsection.5.6.3.5}
+\contentsline {subsubsection}{\numberline {5.6.3.6}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\gamma \ensuremath {\rightarrow }\xspace \ensuremath {e^+ e^-})}\xspace }{143}{subsubsection.5.6.3.6}
+\contentsline {subsubsection}{\numberline {5.6.3.7}Other peaking backgrounds}{144}{subsubsection.5.6.3.7}
+\contentsline {subsection}{\numberline {5.6.4}Mis-reconstructed background}{145}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}Bremsstrahlung corrected mass}{145}{subsection.5.6.5}
+\contentsline {subsection}{\numberline {5.6.6}Multivariate analysis}{147}{subsection.5.6.6}
+\contentsline {subsection}{\numberline {5.6.7}Optimisation}{152}{subsection.5.6.7}
+\contentsline {section}{\numberline {5.7}Selection summary}{153}{section.5.7}
+\contentsline {section}{\numberline {5.8}Mass fits}{153}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Muon channels}{155}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Electron channels}{159}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}Signal PDFs for the electron channels}{160}{subsubsection.5.8.2.1}
+\contentsline {subsubsection}{\numberline {5.8.2.2}Background PDFs for the electron channels}{162}{subsubsection.5.8.2.2}
+\contentsline {subsubsection}{\numberline {5.8.2.3}Summary of the fit to the electron samples}{167}{subsubsection.5.8.2.3}
+\contentsline {subsection}{\numberline {5.8.3}Event yields}{168}{subsection.5.8.3}
+\contentsline {section}{\numberline {5.9}Efficiency}{171}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Geometric efficiency}{173}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}Reconstruction efficiency and bin migration}{173}{subsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.2.1}Bin migration}{173}{subsubsection.5.9.2.1}
+\contentsline {subsection}{\numberline {5.9.3}PID efficiency}{175}{subsection.5.9.3}
+\contentsline {subsection}{\numberline {5.9.4}Trigger efficiency}{175}{subsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.4.1}Electron triggers}{176}{subsubsection.5.9.4.1}
+\contentsline {subsubsection}{\numberline {5.9.4.2}TISTOS cross-check}{178}{subsubsection.5.9.4.2}
+\contentsline {subsection}{\numberline {5.9.5}Neural networks and BCM efficiencies}{179}{subsection.5.9.5}
+\contentsline {section}{\numberline {5.10}Systematic uncertainties}{180}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Choice of signal and background PDFs}{181}{subsection.5.10.1}
+\contentsline {subsection}{\numberline {5.10.2}Efficiency determinations}{183}{subsection.5.10.2}
+\contentsline {subsection}{\numberline {5.10.3}Bin migration}{183}{subsection.5.10.3}
+\contentsline {section}{\numberline {5.11}Result extraction}{184}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}$R_{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace }$ sanity check}{185}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}{\ensuremath {\cal B}\xspace }(\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \gamma }\xspace ) sanity check}{185}{subsection.5.11.2}
+\contentsline {subsection}{\numberline {5.11.3}\ensuremath {R_{\ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace }}\xspace result summary}{186}{subsection.5.11.3}
+\contentsline {chapter}{\numberline {6}Conclusions}{187}{chapter.6}
+\contentsline {chapter}{\numberline {A}Decay models}{199}{chapter.1}
+\contentsline {section}{\numberline {A.1}$\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\PLambda }\xspace \ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}\xspace $ distribution}{199}{section.1.1}
+\contentsline {section}{\numberline {A.2}$\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace \ensuremath {\PLambda }\xspace $ distribution}{203}{section.1.2}
+\contentsline {chapter}{\numberline {B}Data-simulation comparison}{204}{chapter.2}
+\contentsline {chapter}{\numberline {C}Systematic uncertainties on the efficiency calculation for the $\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\PLambda }\xspace \ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}\xspace $ branching fraction analysis.}{207}{chapter.3}
+\contentsline {chapter}{\numberline {D}Invariant mass fits to $\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {\ell ^+ \ell ^-}$ simulated candidates}{210}{chapter.4}
+\contentsline {chapter}{\numberline {E}Invariant mass fits to $\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {e^+ e^-}$ candidates divided in trigger categories}{215}{chapter.5}
+\contentsline {chapter}{\numberline {F}Extra}{221}{chapter.6}
+\contentsline {section}{\numberline {F.1}Anomalies}{221}{section.6.1}

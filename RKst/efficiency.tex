@@ -3,7 +3,7 @@
 
 The efficiency for each of the decay channels is calculated according to the formula
 %
-$$\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm reco|geom} \cdot \varepsilon^{\rm PID|reco} \cdot \varepsilon^{\rm trig|PID} \cdot \varepsilon^{\rm MVA|trig},$$
+$$\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm reco|geom} \cdot \varepsilon^{\rm PID|reco} \cdot \varepsilon^{\rm trig|PID} \cdot \varepsilon^{\rm MVA|trig}\cdot \varepsilon^{\rm BCM|MVA}$$,
 %
 where the first term is the efficiency to have final state particles in the LHCb detector 
 acceptance; the second term ($\varepsilon^{\rm reco|geom}$) carries information on reconstruction and stripping efficiency;
@@ -11,113 +11,142 @@ acceptance; the second term ($\varepsilon^{\rm reco|geom}$) carries information 
 the third ($\varepsilon^{\rm PID|reco}$) corresponds to the efficiency of the PID requirements;
 the fourth ($\varepsilon^{\rm trig|PID}$) handles the trigger efficiency for those events which
 are selected by the pre-selection process; and, finally, the latter term deals with the efficiency of the neural network classifier.
-Reconstruction, trigger and MVA efficiencies are evaluated using simulated data samples with the trigger efficiency
+Reconstruction, trigger, MVA and BCM efficiencies are evaluated using simulated data samples with the trigger efficiency
 for $\Bz\to\Kstar\jpsi$ being cross-checked using the data-driven TISTOS method as described in Sec.~\ref{sec:Lb_trigger_eff}.
 The PID efficiency is calculated with a data-driven method as described in Sec.~\ref{sec:RKst_pid_eff}.
 
-All absolute efficiencies for the muon and electron rare channels are separately listed in Tab.~\ref{tab:RKst_AbsEff}
-for the central and high \qsq intervals and in Tab.~\ref{tab:AbsEff_jpsi} for the resonant channels.
-However, for the analysis itself only relative efficiencies between rare and resonant channels, 
-$\varepsilon(\ell\ell)/\varepsilon(\jpsi(\ell\ell))$, are used in order to limit the systematic uncertainties;
-these are listed in Tab.~\ref{tab:RKst_AbsEff}.
+%All absolute efficiencies for the muon and electron rare channels are separately listed in Tab.~\ref{tab:RKst_AbsEff}
+%for the central and high \qsq intervals and 
+Absolute efficiencies for the muon and electron normalisation channel are reported in Tab.~\ref{tab:AbsEff_jpsi}
+and relative efficiencies between rare and resonant channels, 
+$\varepsilon(\ell\ell)/\varepsilon(\jpsi(\ell\ell))$, these are listed in Tab.~\ref{tab:RKst_AbsEff};
+these are the efficiencies which are used in the fit.
+
 %
 %($\varepsilon(\Bz\to\Kstar ee)/\varepsilon(\Bz\to\Kstar(\jpsi\to ee))$)/($\varepsilon(\Bz\to\Kstar \mumu)/\varepsilon(\Bz\to\Kstar(\jpsi\to \mumu))$).
 %Systematic uncertainties for relative efficiencies take into account that some effects are correlated between two decays.
 %In table \ref{tab:AbsEffs} are reported absolute efficiencies
 %for the electron and muon channels in the \qsq bin $1 < q^2 < 6$ \gevgevcccc.
 %
-Finally, Tab.~\ref{tab:double_rel_eff} reports double-ratios of the efficiencies
-for the $ee$ and $\mu\mu$ channels, $[\varepsilon(ee)/\varepsilon(\jpsi (ee))] / [\varepsilon(\mu\mu)/\varepsilon(\jpsi(\mu\mu))]$.
+%
+%Finally, Tab.~\ref{tab:double_rel_eff} reports double-ratios of the efficiencies
+%for the $ee$ and $\mu\mu$ channels, $[\varepsilon(ee)/\varepsilon(\jpsi (ee))] / [\varepsilon(\mu\mu)/\varepsilon(\jpsi(\mu\mu))]$.
+%
 %In particular the latter table contains the total double-relative
 %efficiency, $\varepsilon_tot^{drel} = \pm $, which is used for the final result extraction.
 
 \begin{table}[h!]
 \centering
 \caption{Absolute efficiencies for the resonant $ee$ and $\mu\mu$ channels.}
-\begin{tabular}{|c|c|c|c|c|}
-\hline \multirow{2}{*}{$\varepsilon$} 	&  $\mu\mu$ 	& \multicolumn {3}{c|}{$ee$} \\ \cline{2-5}
+\begin{tabular}{c|c|c|c|c}
+\multirow{2}{*}{$\varepsilon$} 	&  $\mu\mu$ 	& \multicolumn {3}{c}{$ee$} \\ \cline{2-5}
 	  & &  L0E 	& L0H 	& L0I \\ \hline
-Geom  & $ 0.1598  \pm  0.0005 $ & \multicolumn{3}{c|}{$ 0.1589  \pm  0.0005 $} \\
-Reco  & $ 0.0947  \pm  0.0001 $ & \multicolumn{3}{c|}{$ 0.0603  \pm  0.0001 $} \\
-PID  & $ 0.8148  \pm  0.0000 $ & \multicolumn{3}{c|}{$ 0.8222  \pm  0.0000 $} \\
+$\varepsilon^{\rm geom}$  & $ 0.1598  \pm  0.0005 $ & \multicolumn{3}{c}{$ 0.1589  \pm  0.0005 $} \\
+$\varepsilon^{\rm reco|geom}$  & $ 0.0947  \pm  0.0001 $ & \multicolumn{3}{c}{$ 0.0603  \pm  0.0001 $} \\
+$\varepsilon^{\rm PID|reco}$  & $ 0.8148  \pm  0.0000 $ & \multicolumn{3}{c}{$ 0.8222  \pm  0.0000 $} \\
 \hline
-Trig  & $ 0.7511  \pm  0.0005 $ & $ 0.1939  \pm  0.0005 $ & $ 0.0163  \pm  0.0002 $ & $ 0.0707  \pm  0.0003 $ \\
-MVA  & $ 0.8944  \pm  0.0004 $ & $ 0.8597  \pm  0.0007 $ & $ 0.8983  \pm  0.0006 $ & $ 0.8276  \pm  0.0017 $ \\
+$\varepsilon^{\rm trig|PID}$  & $ 0.7511  \pm  0.0005 $ & $ 0.1939  \pm  0.0005 $ & $ 0.0163  \pm  0.0002 $ & $ 0.0707  \pm  0.0003 $ \\
+$\varepsilon^{\rm MVA|trig}$   & $ 0.8944  \pm  0.0004 $ & $ 0.8597  \pm  0.0007 $ & $ 0.8983  \pm  0.0006 $ & $ 0.8276  \pm  0.0017 $ \\
 \hline
-Tot  & $ 0.0083  \pm  0.0000 $ & $ 0.0013  \pm  0.0000 $ & $ 0.0001  \pm  0.0000 $ & $ 0.0005  \pm  0.0000 $ \\
-\hline
+$\varepsilon^{\rm Total}$   & $ 0.0083  \pm  0.0000 $ & $ 0.0013  \pm  0.0000 $ & $ 0.0001  \pm  0.0000 $ & $ 0.0005  \pm  0.0000 $ \\
 \end{tabular}
 \label{tab:AbsEff_jpsi}
 \end{table}
 
-\begin{landscape}
-
-\begin{table}
-\centering
-\caption{Absolute efficiencies for the rare $ee$ and $\mu\mu$ channels in the central and high \qsq intervals.}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline \multirow{3}{*}{$\varepsilon$} 			&  \multicolumn {2}{c|}{$\mu\mu$} 				& \multicolumn {4}{c|}{$ee$} \\ \cline{2-7}
-			 & 1--6~\gevgevcccc				& 15--20~\gevgevcccc  				& \multicolumn {3}{c|}{1--6~\gevgevcccc} 				& \multicolumn {1}{c|}{15--20~\gevgevcccc }\\ \cline{2-7}
-				&  \multicolumn {2}{c|}{} &  L0E 	& L0H 	& L0I 	& L0E 	\\ \hline
-$q^2$  & $ 0.2142  \pm  0.0015 $ & $ 0.1552  \pm  0.0013 $ &  \multicolumn{3}{c|}{$ 0.1493  \pm  0.0012 $} & \multicolumn{1}{c|}{$ 0.1196  \pm  0.0011 $} \\
-Geom  & $ 0.1630  \pm  0.0014 $ & $ 0.1630  \pm  0.0014 $ &  \multicolumn{3}{c|}{$ 0.1657  \pm  0.0012 $} & \multicolumn{1}{c|}{$ 0.1657  \pm  0.0012 $} \\
-Reco  & $ 0.0177  \pm  0.0001 $ & $ 0.0110  \pm  0.0001 $ &  \multicolumn{3}{c|}{$ 0.0105  \pm  0.0000 $} & \multicolumn{1}{c|}{$ 0.0031  \pm  0.0000 $} \\
-PID  & $ 0.7824  \pm  0.0002 $ & $ 0.8420  \pm  0.0001 $ &  \multicolumn{3}{c|}{$ 0.7750  \pm  0.0001 $} & \multicolumn{1}{c|}{$ 0.8239  \pm  0.0001 $} \\
-\hline
-Trig  & $ 0.6720  \pm  0.0029 $ & $ 0.8348  \pm  0.0029 $ & $ 0.1531  \pm  0.0012 $ & $ 0.0358  \pm  0.0006 $ & $ 0.0795  \pm  0.0009 $ & $ 0.3052  \pm  0.0028 $  \\
-MVA  & $ 0.9072  \pm  0.0022 $ & $ 0.8249  \pm  0.0032 $ & $ 0.8460  \pm  0.0021 $ & $ 0.8530  \pm  0.0020 $ & $ 0.8141  \pm  0.0047 $ & $ 0.8435  \pm  0.0033 $  \\
-\hline
-Tot  & $ 0.0064  \pm  0.0001 $ & $ 0.0067  \pm  0.0001 $ & $ 0.0012  \pm  0.0000 $ & $ 0.0003  \pm  0.0000 $ & $ 0.0006  \pm  0.0000 $ & $ 0.0009  \pm  0.0000 $  \\
-\hline
-\end{tabular}
-\label{tab:RKst_AbsEff}
-\end{table}
-
+%\begin{landscape}
 
 \begin{table}
 \centering
 \caption{Relative efficiencies, $\varepsilon^{rel} = \varepsilon^{\ell\ell} / \varepsilon^{\jpsi}$,
 for the $ee$ and $\mu\mu$ channels in the central and high \qsq intervals.}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline \multirow{3}{*}{$\varepsilon$}  			&  \multicolumn{4}{c|}{1--6~\gevgevcccc}  				& \multicolumn {2}{c|}{15--20~\gevgevcccc}  \\ \cline{2-7}
- 				&	  $\mu\mu$  				& \multicolumn {3}{c|}{$ee$} 			&  $\mu\mu$  				& \multicolumn {1}{c|}{$ee$} \\ \cline{2-7}
-				&   &  L0E 	& L0H 	& L0I    &  	& L0E 	\\ \hline
-Geom  & $ 1.0200 \pm 0.0091$ & \multicolumn{3}{c|}{$ 1.0429 \pm 0.0084$} & $ 1.0200 \pm 0.0091$ & \multicolumn{1}{c|}{$ 1.0429 \pm 0.0084$} \\
-Reco  & $ 0.1873 \pm 0.0011$ & \multicolumn{3}{c|}{$ 0.1743 \pm 0.0006$} & $ 0.1159 \pm 0.0009$ & \multicolumn{1}{c|}{$ 0.0513 \pm 0.0003$} \\
-PID  & $ 0.9602 \pm 0.0002$ & \multicolumn{3}{c|}{$ 0.9425 \pm 0.0001$} & $ 1.0334 \pm 0.0001$ & \multicolumn{1}{c|}{$ 1.0021 \pm 0.0001$} \\
-\hline
-Trig  & $ 0.8947 \pm 0.0039 $ & $ 0.7893 \pm 0.0065 $ & $ 2.2005 \pm 0.0438 $ & $ 1.1247 \pm 0.0138 $ & $ 1.1115 \pm 0.0039 $ & $ 1.5740 \pm 0.0148 $ \\ 
-MVA  & $ 1.0143 \pm 0.0025 $ & $ 0.9841 \pm 0.0025 $ & $ 0.9495 \pm 0.0023 $ & $ 0.9838 \pm 0.0060 $ & $ 0.9223 \pm 0.0036 $ & $ 0.9812 \pm 0.0039 $ \\  
-\hline
-Tot  & $ 0.7773 \pm 0.0108 $ & $ 0.8912 \pm 0.0131 $ & $ 2.3973 \pm 0.0558 $ & $ 1.2694 \pm 0.0230 $ & $ 0.8070 \pm 0.0126 $ & $ 0.6925 \pm 0.0118 $ \\  
-\hline
-\end{tabular}\label{tab:RKst_releff}
-\end{table}
+\begin{tabular}{c|c|c|c|c}
+\multirow{2}{*}{\textbf{$\varepsilon$}}
+ & $\mu\mu$ & \multicolumn {3}{c}{$ee$} \\ \cline{2-5}
+ & & L0E & L0H & L0I \\
 
-\end{landscape}
+\hline
+\multicolumn{5}{c}{\textbf{low-}{\boldmath\qsq}} \\ \hline
+$\varepsilon^{\rm geom}$  & $ 1.0200 \pm 0.0091$ & \multicolumn{3}{c}{$ 1.0429 \pm 0.0084$}  \\
+$\varepsilon^{\rm reco|geom}$  & $ 0.1309 \pm 0.0010$ & \multicolumn{3}{c}{$ 0.1961 \pm 0.0007$}  \\
+$\varepsilon^{\rm PID|reco}$  & $ 0.9861 \pm 0.0003$ & \multicolumn{3}{c}{$ 0.9718 \pm 0.0001$}  \\
+\hline
+$\varepsilon^{\rm trig|PID}$  & $ 0.8103 \pm 0.0048 $ & $ 0.6478 \pm 0.0058 $ & $ 2.5556 \pm 0.0455 $ & $ 1.2748 \pm 0.0139 $  \\ 
+$\varepsilon^{\rm MVA|trig}$  & $ 0.9528 \pm 0.0024 $ & $ 0.9568 \pm 0.0014 $ & $ 0.9570 \pm 0.0013 $ & $ 0.9463 \pm 0.0030 $ \\
+$\varepsilon^{\rm BCM|MVA}$  & -- & $ 0.9394 \pm 0.0014 $ & $ 0.9492 \pm 0.0013 $ & $ 0.9590 \pm 0.0023 $ \\
+\hline
+$\varepsilon^{tot}$  & $ 0.7810 \pm 0.0168 $ & $ 0.5809 \pm 0.0097 $ & $ 2.2685 \pm 0.0514 $ & $ 1.1073 \pm 0.0200 $ \\  
 
-\begin{table}[h!]
-\centering
-\caption{Double ratios of efficiencies 
-$(\varepsilon^{ee} / \varepsilon^{\jpsi\to ee}) / (\varepsilon^{\mumu} / \varepsilon^{\jpsi\to\mumu})$
-in the central and high \qsq intervals.}
-\begin{tabular}{|c|c|c|c|c|}
 \hline
-\multirow{2}{*}{$\varepsilon$}  &  \multicolumn{3}{c|}{ 1--6~\gevgevcccc} &  \multicolumn{1}{c|}{ 15--20~\gevgevcccc } \\
-\cline{2-5} &   L0E 	& L0H 	& L0I &  L0E 	\\ \hline
-$q^2$  & \multicolumn{3}{c|}{$ 0.697 \pm 0.007 $} &  \multicolumn{1}{c|}{$ 0.770 \pm 0.010 $} \\
-Geom  & \multicolumn{3}{c|}{$ 1.022 \pm 0.012 $} &  \multicolumn{1}{c|}{$ 1.022 \pm 0.012 $} \\
-Reco  & \multicolumn{3}{c|}{$ 0.931 \pm 0.006 $} &  \multicolumn{1}{c|}{$ 0.443 \pm 0.443 $} \\
-PID  & \multicolumn{3}{c|}{$ 0.982 \pm 0.000 $} &  \multicolumn{1}{c|}{$ 0.970 \pm 0.000 $} \\
+\multicolumn{5}{c}{\textbf{central-}{\boldmath\qsq}} \\ \hline
+ $\varepsilon^{\rm geom}$  & $ 1.0200 \pm 0.0091$ & \multicolumn{3}{c}{$ 1.0429 \pm 0.0084$}  \\
+$\varepsilon^{\rm reco|geom}$  & $ 0.1891 \pm 0.0012$ & \multicolumn{3}{c}{$ 0.1580 \pm 0.0006$}  \\
+$\varepsilon^{\rm PID|reco}$  & $ 0.9784 \pm 0.0002$ & \multicolumn{3}{c}{$ 0.9672 \pm 0.0001$}  \\
 \hline
-Trig  & $ 0.882 \pm 0.008 $ & $ 2.459 \pm 0.050 $ & $ 1.257 \pm 0.016 $ & $ 1.416 \pm 0.014 $  \\ 
-MVA  & $ 0.970 \pm 0.003 $ & $ 0.936 \pm 0.003 $ & $ 0.970 \pm 0.006 $ & $ 1.064 \pm 0.006 $  \\  
+$\varepsilon^{\rm trig|PID}$  & $ 0.8925 \pm 0.0038 $ & $ 0.7909 \pm 0.0069 $ & $ 2.1344 \pm 0.0439 $ & $ 1.1208 \pm 0.0141 $  \\ 
+$\varepsilon^{\rm MVA|trig}$  & $ 0.9068 \pm 0.0024 $ & $ 0.8397 \pm 0.0024 $ & $ 0.8512 \pm 0.0022 $ & $ 0.7946 \pm 0.0054 $ \\
+$\varepsilon^{\rm BCM|MVA}$  & -- & $ 0.8960 \pm 0.0020 $ & $ 0.8978 \pm 0.0020 $ & $ 0.9283 \pm 0.0037 $ \\
 \hline
-Tot  & $ 1.146 \pm 0.023 $ & $ 3.084 \pm 0.084 $ & $ 1.633 \pm 0.037 $ & $ 0.858 \pm 0.020 $  \\  
+$\varepsilon^{tot}$  & $ 0.7171 \pm 0.0124 $ & $ 0.8145 \pm 0.0157 $ & $ 2.2235 \pm 0.0595 $ & $ 1.0542 \pm 0.0236 $ \\  
+
 \hline
+\multicolumn{5}{c}{\textbf{high-}{\boldmath\qsq}} \\ \hline
+$\varepsilon^{\rm geom}$  & $ 1.0200 \pm 0.0091$ & \multicolumn{3}{c}{$ 1.0429 \pm 0.0084$}  \\
+$\varepsilon^{\rm reco|geom}$  & $ 0.1172 \pm 0.0009$ & \multicolumn{3}{c}{$ 0.0530 \pm 0.0003$}  \\
+$\varepsilon^{\rm PID|reco}$  & $ 1.0286 \pm 0.0001$ & \multicolumn{3}{c}{$ 1.0113 \pm 0.0002$}  \\
+\hline
+$\varepsilon^{\rm trig|PID}$  & $ 1.1122 \pm 0.0038 $ & $ 1.5639 \pm 0.0148 $ & -- & $ 0.8090 \pm 0.0195 $  \\ 
+$\varepsilon^{\rm MVA|trig}$  & $ 0.8986 \pm 0.0027 $ & $ 0.8228 \pm 0.0036 $ & -- & $ 0.7201 \pm 0.0115 $ \\
+\hline
+$\varepsilon^{tot}$  & $ 0.7843 \pm 0.0155 $ & $ 0.6063 \pm 0.0131 $ & -- & $ 0.2745 \pm 0.0095 $ \\  
 \end{tabular}
-\label{tab:double_rel_eff}
+\label{tab:RKst_RelEff}
 \end{table}
+
+
+%\begin{table}
+%\centering
+%\caption{Relative efficiencies, $\varepsilon^{rel} = \varepsilon^{\ell\ell} / \varepsilon^{\jpsi}$,
+%for the $ee$ and $\mu\mu$ channels in the central and high \qsq intervals.}
+%\begin{tabular}{|c|c|c|c|c|c|c|}
+%\hline \multirow{3}{*}{$\varepsilon$}  			&  \multicolumn{4}{c|}{1--6~\gevgevcccc}  				& \multicolumn {2}{c|}{15--20~\gevgevcccc}  \\ \cline{2-7}
+% 				&	  $\mu\mu$  				& \multicolumn {3}{c|}{$ee$} 			&  $\mu\mu$  				& \multicolumn {1}{c|}{$ee$} \\ \cline{2-7}
+%				&   &  L0E 	& L0H 	& L0I    &  	& L0E 	\\ \hline
+%Geom  & $ 1.0200 \pm 0.0091$ & \multicolumn{3}{c|}{$ 1.0429 \pm 0.0084$} & $ 1.0200 \pm 0.0091$ & \multicolumn{1}{c|}{$ 1.0429 \pm 0.0084$} \\
+%Reco  & $ 0.1873 \pm 0.0011$ & \multicolumn{3}{c|}{$ 0.1743 \pm 0.0006$} & $ 0.1159 \pm 0.0009$ & \multicolumn{1}{c|}{$ 0.0513 \pm 0.0003$} \\
+%PID  & $ 0.9602 \pm 0.0002$ & \multicolumn{3}{c|}{$ 0.9425 \pm 0.0001$} & $ 1.0334 \pm 0.0001$ & \multicolumn{1}{c|}{$ 1.0021 \pm 0.0001$} \\
+%\hline
+%Trig  & $ 0.8947 \pm 0.0039 $ & $ 0.7893 \pm 0.0065 $ & $ 2.2005 \pm 0.0438 $ & $ 1.1247 \pm 0.0138 $ & $ 1.1115 \pm 0.0039 $ & $ 1.5740 \pm 0.0148 $ \\ 
+%MVA  & $ 1.0143 \pm 0.0025 $ & $ 0.9841 \pm 0.0025 $ & $ 0.9495 \pm 0.0023 $ & $ 0.9838 \pm 0.0060 $ & $ 0.9223 \pm 0.0036 $ & $ 0.9812 \pm 0.0039 $ \\  
+%\hline
+%Tot  & $ 0.7773 \pm 0.0108 $ & $ 0.8912 \pm 0.0131 $ & $ 2.3973 \pm 0.0558 $ & $ 1.2694 \pm 0.0230 $ & $ 0.8070 \pm 0.0126 $ & $ 0.6925 \pm 0.0118 $ \\  
+%\hline
+%\end{tabular}\label{tab:RKst_releff}
+%\end{table}
+
+%\end{landscape}
+
+%\begin{table}[h!]
+%\centering
+%\caption{Double ratios of efficiencies 
+%$(\varepsilon^{ee} / \varepsilon^{\jpsi\to ee}) / (\varepsilon^{\mumu} / \varepsilon^{\jpsi\to\mumu})$
+%in the central and high \qsq intervals.}
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%\multirow{2}{*}{$\varepsilon$}  &  \multicolumn{3}{c|}{ 1--6~\gevgevcccc} &  \multicolumn{1}{c|}{ 15--20~\gevgevcccc } \\
+%\cline{2-5} &   L0E 	& L0H 	& L0I &  L0E 	\\ \hline
+%$q^2$  & \multicolumn{3}{c|}{$ 0.697 \pm 0.007 $} &  \multicolumn{1}{c|}{$ 0.770 \pm 0.010 $} \\
+%Geom  & \multicolumn{3}{c|}{$ 1.022 \pm 0.012 $} &  \multicolumn{1}{c|}{$ 1.022 \pm 0.012 $} \\
+%Reco  & \multicolumn{3}{c|}{$ 0.931 \pm 0.006 $} &  \multicolumn{1}{c|}{$ 0.443 \pm 0.443 $} \\
+%PID  & \multicolumn{3}{c|}{$ 0.982 \pm 0.000 $} &  \multicolumn{1}{c|}{$ 0.970 \pm 0.000 $} \\
+%\hline
+%Trig  & $ 0.882 \pm 0.008 $ & $ 2.459 \pm 0.050 $ & $ 1.257 \pm 0.016 $ & $ 1.416 \pm 0.014 $  \\ 
+%MVA  & $ 0.970 \pm 0.003 $ & $ 0.936 \pm 0.003 $ & $ 0.970 \pm 0.006 $ & $ 1.064 \pm 0.006 $  \\  
+%\hline
+%Tot  & $ 1.146 \pm 0.023 $ & $ 3.084 \pm 0.084 $ & $ 1.633 \pm 0.037 $ & $ 0.858 \pm 0.020 $  \\  
+%\hline
+%\end{tabular}
+%\label{tab:double_rel_eff}
+%\end{table}
 
 
 \subsection{Geometric efficiency}
@@ -183,11 +212,11 @@ out this component to better asses the corresponding systematic uncertainty.
 \centering
 \caption{Net bin migration amounts ($M_{net}$) in the considered \qsq intervals.
 Positive values indicate ``net in", negative values ``net out".}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
- Sample 			& 1--6 GeV$^2/c^4$ 				& 15--20 GeV$^2/c^4$ 				& $J/\psi$  \\ \hline
-$\mu\mu$ 	& $ -0.0018  \pm  0.0002 $ & $ 0.0042  \pm  0.0003 $ & $ -0.0012  \pm  0.0000 $ \\
-$ee$ 	& $ 0.0834  \pm  0.0013 $ & $ -0.4469  \pm  0.0091 $ & $ -0.0258  \pm  0.0003 $ \\
+ Sample 		& low-\qsq 		& central-\qsq		& \jpsi   & high-\qsq \\ \hline
+$\mu\mu$ 	& $ 0.0002 \pm 0.0001 $ & $ -0.0021 \pm 0.0003 $ & $ 0.0032 \pm 0.0004 $ & $ -0.0012 \pm 0.0000 $ \\
+$ee$ 		& $ 0.0268 \pm 0.0005 $ & $ 0.0663 \pm 0.0009 $ & $ -0.4277 \pm 0.0048 $ & $ -0.0445 \pm 0.0003 $ \\
 \hline 
  \end{tabular}
  \label{tab:bin_mig}
@@ -371,11 +400,11 @@ of $p$ and $\pi$ for L0H (top right) and the maximum \pt of all the final partic
 \end{figure}
 
 
-\subsection{Neural Networks efficiency}
+\subsection{Neural networks and BCM efficiencies}
 \label{sec:Rkst_mva_eff}
 
-The neural network efficiency is again evaluated using simulated samples. 
-For the electron channels it is obtained separately for each trigger category.
+The the neural network and BCM efficiencies are evaluated from fully weighted simulated samples,
+and separately for each trigger category for the electron channels.
 %, because the yield is extracted independently for each of the three trigger categories
 %and therefore these have to be independently corrected.
 %
