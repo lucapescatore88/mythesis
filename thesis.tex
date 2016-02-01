@@ -24,6 +24,7 @@
 \usepackage{url}
 \usepackage{xspace}
 \usepackage{upgreek}
+\usepackage{array}
 \usepackage{ifthen}
 \newboolean{uprightparticles}
 \setboolean{uprightparticles}{false}
@@ -118,14 +119,30 @@ in $\bquark\to\squark\ll$ transitions \\
 \newcommand{\mpKll}{\ensuremath{m(pK\ell\ell)}\xspace}
 \newcommand{\mKpill}{\ensuremath{m(K\pi\ell\ell)}\xspace}
 \newcommand{\mKpiee}{\ensuremath{m(K\pi ee)}\xspace}
+\newcommand{\BdToKstJPs}{\ensuremath{\Bz\to\Kstarz\jpsi}\xspace}
+\newcommand{\BdToKstPsi}{\ensuremath{\Bz\to\Kstarz\psitwos}\xspace}
 \newcommand{\BdToKstJPsee}{\ensuremath{\Bz\to\Kstarz(\jpsi\to\ee)}\xspace}
+\newcommand{\BdToKstJPsmm}{\ensuremath{\Bz\to\Kstarz(\jpsi\to\mu^+\mu^-)}\xspace}
+\newcommand{\BsToKstJPsmm}{\ensuremath{\Bs\to\Kstarz(\jpsi\to\mu^+\mu^-)}\xspace}
+\newcommand{\LbTopKJPsmm}{\ensuremath{\Lb\to pK(\jpsi\to\mu^+\mu^-)}\xspace}
+\newcommand{\BdToKstJPsll}{\ensuremath{\Bz\to\Kstarz(\jpsi\to\ll)}\xspace}
 \newcommand{\BdToKstGee}{\ensuremath{\Bz\to\Kstarz(\gamma\to\ee)}\xspace}
 \newcommand{\BdToKstG}{\ensuremath{\Bz\to\Kstarz\gamma}\xspace}
 \newcommand{\BdToKstPsiee}{\ensuremath{\Bz\to\Kstarz(\psitwos\to\ee)}\xspace}
 \newcommand{\RKst}{\ensuremath{R_{\Kstarz}}\xspace}
 \newcommand{\mbcm}{\ensuremath{m_{\rm BCM}}\xspace}
+\newcommand{\mcKpimm}{\ensuremath{m(K\pi\mu\mu)}\xspace}
+\newcommand{\mcKpiee}{\ensuremath{m(K\pi ee)}\xspace}
+\newcommand{\afbl}{\ensuremath{A_{\rm FB}^\ell}\xspace}
+\newcommand{\afbh}{\ensuremath{A_{\rm FB}^h}\xspace}
+\newcommand{\fl}{\ensuremath{f_{\rm L}}\xspace}
 %\newcommand{\sqs}{\ensuremath{\sqrt{s} = 7}~\TeV\xspace}
 
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
 
 \begin{document}
 
@@ -272,7 +289,7 @@ in $\bquark\to\squark\ll$ transitions \\
 \input{Lmumu/appMCdataComp}
 \input{Lmumu/appendix_Lb_sys}
 \input{RKst/app_MC_fits}
-\input{app_extra}
+%\input{app_extra}
 
 
 \end{document} 

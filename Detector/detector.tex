@@ -335,7 +335,7 @@ For example:
 quantifies the probability of a particle being a kaon rather than a pion.
 Figure~\ref{fig:pid_perf} shows the efficiency for correctly identifying and mis-identifying kaons and protons
 as a function of the measured momentum of the particle. For kaons the efficiency drops at momenta below
-10 \gev, where they fall below threshold for the gas radiators. 
+10~\gev, where they fall below threshold for the gas radiators. 
 The DLL cuts enable LHCb physics analyses to distinguish between kinematically similar decays 
 with different final states, such as \Bz and \Bs mesons decaying into two hadrons.
 Figure~\ref{fig:pid_peaks} illustrates the power of particle identification,  showing how the application
@@ -345,14 +345,15 @@ of DLL cuts can be used to isolate $\Bz\to \pi^+\pi^-$ decays from other two-bod
 \centering
 \includegraphics[width=0.49\textwidth]{Detector/figs/kaon_pid_perf.png}
 \includegraphics[width=0.49\textwidth]{Detector/figs/proton_pid_perf.png}
-\caption{Particle Identification performances for kaons (left) and protons (right) as a function of the measured momentum of the particles. }
+\caption{Particle Identification performances for kaons (left) and protons (right) as a function
+of the measured momentum of the particles~\cite{Alves:2008zz}. }
 \label{fig:pid_perf}
 \end{figure}
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.\textwidth,height=5.5cm]{Detector/figs/pid_peaks.png}
 \caption{Invariant mass peak of the $\Bz\to\pi^+\pi^-$ decay before (left) and
-after (right) the application of PID requirements. }
+after (right) the application of PID requirements~\cite{Aaij:1978280}. }
 \label{fig:pid_peaks}
 \end{figure}
 %
@@ -455,6 +456,7 @@ with and without constraints using the \theverbbox  tool. }
 \end{figure}
 
 \section{Validation of hadronic processes in the simulation}
+\label{sec:validation}
 
 %As a service work for the experiment I have been working on the validation of the simulation of hadronic processes.
 Particle-antiparticle asymmetries are of major interest for LHCb and detection efficiencies are usually obtained from simulation.
@@ -557,7 +559,8 @@ is found at low energies, while the cross-sections tend to a common point at hig
 \begin{center}
 \begin{table}[b]
 \centering
-\begin{tabular}{ c | c | c | c }
+\begin{tabular}{ $c | ^c | ^c | ^c }
+\rowstyle{\bfseries}
 Proj / Targ     &    $Z^{ab}$    &    $Y_1^{ab}$    &    $Y_2^{ab}$ \\
 \hline
 $\bar{p}$,$p$ / $p$     &    34.71   &     12.72     &    7.35 \\
@@ -689,7 +692,7 @@ VeLo, RICH1, RICH2, tracking stations, ECAL and HCAL and muon detector.
 \end{center}
 
 \section{Validation and material budget studies conclusions}
-
+\label{sec:radlength_conlsusions}
 The studies outlined in the previous two sections are based on tools which are now officially 
 part of the LHCb simulation framework. These tools were used to validate the framework when 
 passing from \textsc{Geant4} version 95 to version 96 and will continue to be used in the future.

@@ -18,8 +18,8 @@ The PID efficiency is calculated with a data-driven method as described in Sec.~
 %All absolute efficiencies for the muon and electron rare channels are separately listed in Tab.~\ref{tab:RKst_AbsEff}
 %for the central and high \qsq intervals and 
 Absolute efficiencies for the muon and electron normalisation channel are reported in Tab.~\ref{tab:AbsEff_jpsi}
-and relative efficiencies between rare and resonant channels, 
-$\varepsilon(\ell\ell)/\varepsilon(\jpsi(\ell\ell))$, these are listed in Tab.~\ref{tab:RKst_AbsEff};
+and relative efficiencies between the rare and resonant channel, 
+$\varepsilon(\ell\ell)/\varepsilon(\jpsi(\ell\ell))$, are listed in Tab.~\ref{tab:RKst_RelEff};
 these are the efficiencies which are used in the fit.
 
 %
@@ -38,8 +38,9 @@ these are the efficiencies which are used in the fit.
 \begin{table}[h!]
 \centering
 \caption{Absolute efficiencies for the resonant $ee$ and $\mu\mu$ channels.}
+\renewcommand\arraystretch{1.25}
 \begin{tabular}{c|c|c|c|c}
-\multirow{2}{*}{$\varepsilon$} 	&  $\mu\mu$ 	& \multicolumn {3}{c}{$ee$} \\ \cline{2-5}
+\multirow{2}{*}{\boldmath{$\varepsilon$}} 	&  \boldmath{$\mu\mu$} 	& \multicolumn {3}{c}{\boldmath{$ee$}} \\ \cline{2-5}
 	  & &  L0E 	& L0H 	& L0I \\ \hline
 $\varepsilon^{\rm geom}$  & $ 0.1598  \pm  0.0005 $ & \multicolumn{3}{c}{$ 0.1589  \pm  0.0005 $} \\
 $\varepsilon^{\rm reco|geom}$  & $ 0.0947  \pm  0.0001 $ & \multicolumn{3}{c}{$ 0.0603  \pm  0.0001 $} \\
@@ -59,9 +60,10 @@ $\varepsilon^{\rm Total}$   & $ 0.0083  \pm  0.0000 $ & $ 0.0013  \pm  0.0000 $ 
 \centering
 \caption{Relative efficiencies, $\varepsilon^{rel} = \varepsilon^{\ell\ell} / \varepsilon^{\jpsi}$,
 for the $ee$ and $\mu\mu$ channels in the central and high \qsq intervals.}
+\renewcommand\arraystretch{1.25}
 \begin{tabular}{c|c|c|c|c}
-\multirow{2}{*}{\textbf{$\varepsilon$}}
- & $\mu\mu$ & \multicolumn {3}{c}{$ee$} \\ \cline{2-5}
+\multirow{2}{*}{\textbf{\boldmath{$\varepsilon$}}}
+ & \boldmath{$\mu\mu$} & \multicolumn {3}{c}{\boldmath{$ee$}} \\ \cline{2-5}
  & & L0E & L0H & L0I \\
 
 \hline
@@ -212,12 +214,11 @@ out this component to better asses the corresponding systematic uncertainty.
 \centering
 \caption{Net bin migration amounts ($M_{net}$) in the considered \qsq intervals.
 Positive values indicate ``net in", negative values ``net out".}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
- Sample 		& low-\qsq 		& central-\qsq		& \jpsi   & high-\qsq \\ \hline
+\begin{tabular}{$c|^c|^c|^c|^c}
+\rowstyle{\bfseries}
+ Sample 		& \boldmath{low-\qsq} 		& \boldmath{central-\qsq}		& \boldmath{\jpsi}   & \boldmath{high-\qsq} \\ \hline
 $\mu\mu$ 	& $ 0.0002 \pm 0.0001 $ & $ -0.0021 \pm 0.0003 $ & $ 0.0032 \pm 0.0004 $ & $ -0.0012 \pm 0.0000 $ \\
 $ee$ 		& $ 0.0268 \pm 0.0005 $ & $ 0.0663 \pm 0.0009 $ & $ -0.4277 \pm 0.0048 $ & $ -0.0445 \pm 0.0003 $ \\
-\hline 
  \end{tabular}
  \label{tab:bin_mig}
 \end{table}
@@ -338,11 +339,11 @@ already described in Sec.~\ref{sec:Lb_trigger_eff}, to resonant data.
 %\varepsilon_{TOS} = \frac{TOS \mbox{ and } TIS}{TIS}
 %\end{equation}
 %
-For this purpose a sample of events triggered independent-of-signal (TIS) is used as control sample.
-As data also contains non negligible amounts of background 
+For this purpose a sample of \BdToKstJPsee candidates triggered independent-of-signal (TIS) is used
+as control sample. As data also contains non negligible amounts of background 
 %the \verb!DecayTreeFitter! tool is used to constrain the \jpsi mass to its known value and 
-a narrow interval around the peak, dominated by the signal, is selected.
-Finally, the $_{s}\mathcal{P}lot$ method is used to remove residual background in the data sample. 
+a narrow interval around the peak, dominated by the signal, is selected and the $_{s}\mathcal{P}lot$ method
+is used to remove residual background in the data sample. 
 Results are shown in Tab.~\ref{tab:tistos}, where the
 efficiency obtained using the TISTOS method is compared between data and simulation.
 These are found to be in agreement for the muon channel,
@@ -355,33 +356,41 @@ f = 1 + \frac{\varepsilon_{data}^{\rm TISTOS} - \varepsilon_{MC}^{\rm  TISTOS}}{
 \end{equation}
 which can be used to correct the absolute resonant yields.
 %
-To check the effect of this correction on the ratios between rare and resonant channels,
-the efficiency obtained using the TISTOS method is plot as a function of the kinematic
-quantity relevant for each trigger category:
-the maximum \pt of the electrons for L0E, the maximum \pt of $K$ and $\pi$ for L0H,
-and the maximum \pt of all the final particles for L0I; results are shown in Fig.~\ref{fig:tistos_vs_pt}.
-The \pt distributions of the rare and resonant simulated samples are then used to find
-the average efficiency in the two cases. This corresponds to making an average of the efficiency
-weighted by the kinematical distributions in the two samples. 
+On the other hand, even though discrepancies are present, they should cancel out in the ratio between the rare and \jpsi channels;
+only the residual discrepancy on this ratio is relevant for the measurement of \RKst.
+In order to check if discrepancies cancel out we need to obtain a data-driven efficiency
+also for the rare channels. To do this the TISTOS efficiency obtained on \BdToKstJPsll candidates 
+must be reweighted for the difference in the kinematics between the rare and resonant channels. This is done by determining
+the TISTOS efficiency as function of the maximum \pt of the particles that fired L0 (the leptons for \verb!L0Electron! and \verb!L0Muon!,
+the kaon and the pion for \verb!L0Hadron!, and all final state particles for \verb!L0Global!).
+Results are shown in Fig.~\ref{fig:tistos_vs_pt} and used to re-weight the distribution of rare
+simulated candidates.
 %
-The ratios $\varepsilon^{tistos}_{\ell\ell} / \varepsilon^{tistos}_{\jpsi}$ obtained on
-data and simulation are then compared and found to be fully compatible. This means that, even though
-the TISTOS correction has an effect on the absolute efficiency, this is almost the same
-on the rare and resonant channels and becomes negligible in their ratio.
-Therefore, no correction due to this effect is applied for the calculation of the $R_{\Kstarz}$ ratio.
+%To check the effect of this correction on the ratios between rare and resonant channels,
+%the efficiency obtained using the TISTOS method is plot as a function of the kinematic
+%quantity relevant for each trigger category:
+%the maximum \pt of the electrons for L0E, the maximum \pt of $K$ and $\pi$ for L0H,
+%and the maximum \pt of all the final particles for L0I; results are shown in Fig.~\ref{fig:tistos_vs_pt}.
+%The \pt distributions of the rare and resonant simulated samples are then used to find
+%the average efficiency in the two cases. This corresponds to making an average of the efficiency
+%weighted by the kinematical distributions in the two samples. 
 %
-\begin{table}[hb!]
+The ratios $\varepsilon^{tistos}_{\ell\ell} / \varepsilon^{tistos}_{\jpsi}$ obtained using the data-driven method
+and simulation are compared and found to be fully compatible. This means that, even though
+the TISTOS correction has an effect on the absolute efficiency of each channel, this becomes negligible on their ratio.
+Therefore, no correction due to this effect is applied for the calculation of the \RKst ratio.
+%
+\begin{table}[t]
 \begin{center}
  \caption{Trigger efficiencies obtained using the TISTOS method on
  simulated and real $\decay{\Bz}{\Kstarz\jpsi(\to\ell^+\ell^-)}$ decays.}
-\begin{tabular}{|c|c|c|c|}
-\hline
- Sample 							&  MC  		& Data 		& Correction factor		\\ \hline
-$ J/\psi \rightarrow \mu\mu$        & $ 0.797  \pm  0.002 $ & $ 0.803  \pm  0.004 $  &  1.0073  \\
-$J/\psi \rightarrow ee$ L0E     & $ 0.268  \pm  0.002 $ & $ 0.255  \pm  0.004 $  &  0.9536   \\
-$J/\psi \rightarrow ee$ L0H     & $ 0.028  \pm  0.001 $ & $ 0.026  \pm  0.002 $  &  0.9269   \\
-$J/\psi \rightarrow ee$ L0I     & $ 0.017  \pm  0.001 $ & $ 0.011  \pm  0.001 $  &  0.6760   \\
- \hline 
+\begin{tabular}{$c|^c^c^c}
+\rowstyle{\bfseries}
+ Sample 					&  MC  			     & Data 			   & Correction factor		\\ \hline
+$ J/\psi \rightarrow \mu\mu$      & $ 0.797  \pm  0.002 $ & $ 0.803  \pm  0.004 $   &  1.0073  \\
+$J/\psi \rightarrow ee$ L0E     	& $ 0.268  \pm  0.002 $ & $ 0.255  \pm  0.004 $   &  0.9536   \\
+$J/\psi \rightarrow ee$ L0H     	& $ 0.028  \pm  0.001 $ & $ 0.026  \pm  0.002 $   &  0.9269   \\
+$J/\psi \rightarrow ee$ L0I     	& $ 0.017  \pm  0.001 $ & $ 0.011  \pm  0.001 $   &  0.6760   \\
   \end{tabular}
 \label{tab:tistos}
 \end{center}
@@ -389,13 +398,13 @@ $J/\psi \rightarrow ee$ L0I     & $ 0.017  \pm  0.001 $ & $ 0.011  \pm  0.001 $ 
 %
 \begin{figure}[h!]
 \centering
-%\includegraphics[width=0.48\textwidth]{figs/TisTos_vs_maxPTLL_MM.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/TisTos_vs_maxPTLL_L0E.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/TisTos_vs_maxPTHH_L0H.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/TisTos_vs_maxPT_L0I.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Efficiencies/efficiencyTisTos_MM.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Efficiencies/efficiencyTisTos_EE_L0E.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Efficiencies/efficiencyTisTos_EE_L0H.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Efficiencies/efficiencyTisTos_EE_L0I.pdf}
 \caption{Trigger efficiency obtained applying the TISTOS method on $\Bz\to\jpsi\Kstar$ candidates
-as a function of the maximum \pt of the electrons for the L0E category (top left), the maximum \pt
-of $p$ and $\pi$ for L0H (top right) and the maximum \pt of all the final particles for L0I (bottom).}
+as a function of the maximum \pt of the two muons (top left) of the two electrons for the L0E category (top right), 
+the maximum \pt of $p$ and $\pi$ for L0H (bottom left) and the maximum \pt of all the final particles for L0I (bottom right).}
 \label{fig:tistos_vs_pt}
 \end{figure}
 

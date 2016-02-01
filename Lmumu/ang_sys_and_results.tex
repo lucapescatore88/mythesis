@@ -17,19 +17,19 @@ Therefore, while integrating the full angular distribution, terms that cancel wi
 may remain and generate a bias in the final result. In order to deal with this effect simulated events are
 generated in a two-dimensional ($\cos\theta_\ell$,$\cos \theta_h$) space according to the
 theoretical distribution described by Eq.~\ref{eq:2DcosThetaLandB} multiplied by the two-dimensional
-efficiency function obtained from simulation and reported in Fig.~\ref{fig:2DcosThetaLandBeff}.
+efficiency function obtained from simulation. % and reported in Fig.~\ref{fig:2DcosThetaLandBeff}.
 Then, one-dimensional projections are taken and fit using the default one-dimensional efficiency functions.
 Figure~\ref{fig:effBias} shows the distribution of observed deviations from the generated 
 value, $\Delta x = x_{true} - x_{measured}$.
 Since the mean of these distributions is non-zero by more then 3$\sigma$, they are taken as a systematic uncertainties.
 %
-\begin{figure}[h!]
-\includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf}
-\includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf}
-\caption{Angular acceptance as a function of $\cos\theta_\ell$ and $\cos\theta_h$ for long (top) and
-downstream (bottom) candidates, integrated over the full available \qsq range.}
-\label{fig:2DcosThetaLandBeff}
-\end{figure}
+%\begin{figure}[h!]
+%\includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_DD.pdf}
+%\includegraphics[width=0.9\textwidth]{Lmumu/figs/efficiencies/2D/2Deff_upper_cosThetaB_vs_cosThetaL_LL.pdf}
+%\caption{Angular acceptance as a function of $\cos\theta_\ell$ and $\cos\theta_h$ for long (top) and
+%downstream (bottom) candidates, integrated over the full available \qsq range.}
+%\label{fig:2DcosThetaLandBeff}
+%\end{figure}
 %
 \begin{figure}[h!]
 \centering
@@ -38,8 +38,8 @@ downstream (bottom) candidates, integrated over the full available \qsq range.}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/afbBsys_efficiency.pdf}
 \caption{Deviations of the observables' values obtained fitting simulated events
  generated with a 2D distribution multiplied by a 2D efficiency and fitting 1D projections
- with respect to generated values. For $f_{\rm L}$ (top left), 
- $A_{\rm FB}^\ell$ (top right) and $A_{\rm FB}^h$ (bottom). }
+ with respect to generated values. For $\fl$ (top left), 
+ $\afbl$ (top right) and $\afbh$ (bottom). }
 \label{fig:effBias}
 \end{figure}
 
@@ -66,15 +66,15 @@ as a function of \qsq and assigned as systematic uncertainties.
 \caption{Values of simulated $\cos\theta_\ell$ and $\cos\theta_\Lambda$ 
 resolutions and systematic uncertainties on angular observables due to
 the finite resolution in bins of \qsq.}
-\begin{tabular}{c|c|c|c|c|c}
- \qsq [\gevgevcccc] &  $\sigma_\ell$    &  $\sigma_\Lambda$   & $\Delta A_{\rm FB}^\ell$ &  $\Delta f_{\rm L}$ & $\Delta A_{\rm FB}^h$ \\ \hline
-0.1--2.0  & 0.0051 & 0.061 & 0.0011 & -0.0022 & -0.007 \\ 
-11.0--12.5 & 0.0055 & 0.067 & 0.0016 & -0.0051 & -0.013 \\
-15.0--16.0 & 0.0059 & 0.070 & 0.0006 & -0.0054 & -0.010 \\
-16.0--18.0 & 0.0064 & 0.070 & 0.0014 & -0.0077 & -0.010 \\
-18.0--20.0 & 0.0081 & 0.074 & 0.0014 & -0.0062 & -0.010 \\
+\begin{tabular}{c|ccccc}
+ \boldmath{ \qsq [\gevgevcccc] } &  \boldmath{ $\sigma_\ell$ }    &  \boldmath{ $\sigma_\Lambda$}   & \boldmath{ $\Delta \afbl$} &  \boldmath{ $\Delta \fl$} & \boldmath{ $\Delta \afbh$ } \\ \hline
+\phantom{x}0.1 -- 2.0\phantom{x}  & 0.0051 & 0.061 & 0.0011 & -0.0022 & -0.007 \\ 
+11.0 -- 12.5 & 0.0055 & 0.067 & 0.0016 & -0.0051 & -0.013 \\
+15.0 -- 16.0 & 0.0059 & 0.070 & 0.0006 & -0.0054 & -0.010 \\
+16.0 -- 18.0 & 0.0064 & 0.070 & 0.0014 & -0.0077 & -0.010 \\
+18.0 -- 20.0 & 0.0081 & 0.074 & 0.0014 & -0.0062 & -0.010 \\
 \hline
-15.0--20.0 & 0.0066 & 0.072 & 0.0013 & -0.0076 & -0.011 \\
+15.0 -- 20.0 & 0.0066 & 0.072 & 0.0013 & -0.0076 & -0.011 \\
 \end{tabular}
 \label{tab:resolSys}
 \end{table}
@@ -107,15 +107,15 @@ added to the systematic uncertainty.
 \centering
 \caption{Values systematic uncertainties due to limited knowledge of the efficiency
 function on the three angular observables in bins of \qsq}
-\begin{tabular}{c|c|c|c}
- \qsq [\gevgevcccc]  & $A_{\rm FB}^h$   & $A_{\rm FB}^\ell$ & $f_{\rm L}$ \\ \hline
-0.1--2.0    &  0.0093 & 0.0020  & 0.0440 \\ 
-11.0--12.5  &  0.0069 & 0.0069  & 0.0027 \\
-15.0--16.0  &  0.0109 & 0.0018  & 0.0046 \\
-16.0--18.0  &  0.0159 & 0.0012  & 0.0043 \\
-18.0--20.0  &  0.0148 & 0.0030  & 0.0017 \\
+\begin{tabular}{c|ccc}
+ \boldmath{ \qsq [\gevgevcccc] }  &  \boldmath{ \afbl }   &  \boldmath{ \fl} &  \boldmath{ \afbh} \\ \hline
+\phantom{x}0.1 -- 2.0\phantom{x}    	 & 0.0020  & 0.0440 &  0.0093\\ 
+11.0 -- 12.5  					 & 0.0069  & 0.0027 &  0.0069\\
+15.0 -- 16.0  					 & 0.0018  & 0.0046 &  0.0109\\
+16.0 -- 18.0  					 & 0.0012  & 0.0043 &  0.0159\\
+18.0 -- 20.0  					 & 0.0030  & 0.0017 &  0.0148\\
 \hline
-15.0-20.0  &  0.0138 & 0.0002  & 0.0046 \\
+15.0 -- 20.0  					 & 0.0002  & 0.0046 &  0.0138\\
 \end{tabular}
 \label{tab:AfbeffSys}
 \end{table}
@@ -123,15 +123,15 @@ function on the three angular observables in bins of \qsq}
 \centering
 \caption{Values of systematic uncertainties due to the statistics of the simulated
 samples on the three angular observables in bins of \qsq.}
-\begin{tabular}{c|c|c|c}
- \qsq [\gevgevcccc]  & $A_{FB}^\ell$   & $f_{L}$ & $A_{FB}^h$ \\ \hline
-0.1--2.0    &  0.00151 & 0.00170  & 0.00213 \\
-11.0--12.5  &  0.00121 & 0.00154  & 0.00196 \\
-15.0--16.0  &  0.00004 & 0.00017  & 0.00103 \\
-16.0--18.0  &  0.00065 & 0.00246  & 0.00417 \\
-18.0--20.0  &  0.00023 & 0.00372  & 0.00162 \\
+\begin{tabular}{c|ccc}
+\boldmath{ \qsq [\gevgevcccc] } &  \boldmath{ $\afbl$}   &  \boldmath{ \fl } &  \boldmath{ $\afbh$ } \\ \hline
+\phantom{x}0.1 -- 2.0\phantom{x}     &  0.00151 & 0.00170  & 0.00213 \\
+11.0 -- 12.5  &  0.00121 & 0.00154  & 0.00196 \\
+15.0 -- 16.0  &  0.00004 & 0.00017  & 0.00103 \\
+16.0 -- 18.0  &  0.00065 & 0.00246  & 0.00417 \\
+18.0 -- 20.0  &  0.00023 & 0.00372  & 0.00162 \\
 \hline
-15.0--20.0  &  0.00039 & 0.00091  & 0.00137 \\
+15.0 -- 20.0  &  0.00039 & 0.00091  & 0.00137 \\
 \end{tabular}
 \label{tab:stateffsys}
 \end{table}
@@ -158,15 +158,15 @@ results are reported in Tab.~\ref{tab:bkgParamSys}.
 \begin{table}[h]
 \centering
 \caption{ Values of systematic uncertainties due to the choice of background parameterisation in bins of \qsq. }
-\begin{tabular}{c|c|c|c}
-\qsq [\gevgevcccc] & $A_{FB}^\ell$     & $f_L$      & $A_{FB}^h$   \\ \hline
-0.1--2.0         &  0.003	 &   0.049	  &  0.053		\\
-11.0--12.5		&  0.045     &   0.034	  &  0.035     \\
-15.0--16.0 	&  0.010     &   0.038    &  0.026     \\
-16.0--18.0 	&  0.026     &   0.036    &  0.022     \\
-18.0--20.0 	&  0.011     &   0.031    &  0.025     \\
+\begin{tabular}{c|ccc}
+ \boldmath{ \qsq [\gevgevcccc] } &  \boldmath{ $\afbl$ }     &  \boldmath{  $\fl$ }      &  \boldmath{ $\afbh$   } \\ \hline
+\phantom{x}0.1 -- 2.0\phantom{x}         &  0.003	 &   0.049	  &  0.053		\\
+11.0 -- 12.5		&  0.045     &   0.034	  &  0.035     \\
+15.0 -- 16.0 	&  0.010     &   0.038    &  0.026     \\
+16.0 -- 18.0 	&  0.026     &   0.036    &  0.022     \\
+18.0 -- 20.0 	&  0.011     &   0.031    &  0.025     \\
 \hline
-15.0--20.0		&  0.007     &   0.014    &  0.017     \\
+15.0 -- 20.0		&  0.007     &   0.014    &  0.017     \\
 \end{tabular}
 \label{tab:bkgParamSys}
 \end{table}
@@ -190,7 +190,7 @@ the two-dimensional efficiency function. No significant bias is found.
 %In Fig.~\ref{fig:2Deffs} are reported 2D efficiencies
 %as a function of $\cos \theta_\ell$ and $\cos \theta_\Lambda$ versus $\cos \theta$. and in Fig.~\ref{fig:Afbpolsys} are reported distributions of the absolute difference between the observable value obtained fitting generated events with the two polarisation values. 
 %We then plot the the biggest difference between the plus or minus $\sigma$ case and the central value.
-%For the integrated high \qsq region we obtain the following average deviations: $\Delta f_L = 0.0016 \pm 0.0012$, $\Delta A_{FB}^\ell = 0.00048 \pm 0.00074$ and $\Delta A_{FB}^h = 0.00014 \pm 0.00075$.
+%For the integrated high \qsq region we obtain the following average deviations: $\Delta \fl = 0.0016 \pm 0.0012$, $\Delta \afbl = 0.00048 \pm 0.00074$ and $\Delta \afbh = 0.00014 \pm 0.00075$.
 %Since all average differences are consistent with zero within less than 1.5$\sigma$ we do not assign extra systematics for polarisation.
 
 %\begin{figure}
@@ -205,7 +205,7 @@ the two-dimensional efficiency function. No significant bias is found.
 %\includegraphics[width=0.45\textwidth]{Lmumu/figs/fLsys_polarisation.pdf}
 %\includegraphics[width=0.45\textwidth]{Lmumu/figs/afbsys_polarisation.pdf}
 %\includegraphics[width=0.45\textwidth]{Lmumu/figs/afbBsys_polarisation.pdf}
-%\caption{Plots show the absolute difference of the observables' values obtained fitting toy MC generated with polarisation set to $-0.03$ and $+0.15$. From left to right for $f_L$, $A_{FB}^\ell$ and $A_{FB}^h$. }
+%\caption{Plots show the absolute difference of the observables' values obtained fitting toy MC generated with polarisation set to $-0.03$ and $+0.15$. From left to right for $\fl$, $\afbl$ and $\afbh$. }
 %\label{fig:Afbpolsys}
 %\end{figure}
 
@@ -222,15 +222,6 @@ Figure~\ref{fig:Jpsimass_angular} shows the invariant mass distributions after t
 can be compared with the ones in Fig.~\ref{fig:Lb_totalFit}. %One can see that the \KS background is reduced.
 After the PID cut there are 0.2\% of \KS events left in the downstream sample and a fraction
 compatible with zero in the long sample.
-The signal model used for this fit is the same used for the rare case and described in Sec.~\ref{sec:angfit}.
-For the background instead the higher statistics allows to leave more freedom to the fit.
-Therefore a second-order Chebyschev polynomial is used, where the two parameters are
-free to vary. As for the rare case the background fractions are gaussian-constrained
-to what found from the invariant mass fit. Figures~\ref{fig:AngFitJpsi} and~\ref{fig:AngFitBJpsi} show
-fitted angular distributions for the \jpsi channel. The measured values of the observables
-are $A_{\rm FB}^\ell = -0.002^{+0.011}_{-0.011}$, $A_{\rm FB}^h = -0.402^{+0.010}_{-0.009}$
-and $f_{\rm L} = 0.485^{+0.019}_{-0.020}$, where the uncertainties are 68\% Feldman Cousins 
-confidence intervals. The lepton side asymmetry as expected is measured to be zero.
 %
 \begin{figure}
 \centering
@@ -258,7 +249,16 @@ reconstructed using downstream (left) and long (right) tracks. }
 reconstructed using downstream (left) and long (right) tracks.  }
 \label{fig:AngFitBJpsi}
 \end{figure}
-
+%
+The signal model used for this fit is the same used for the rare case and described in Sec.~\ref{sec:angfit}.
+For the background instead the higher statistics allows to leave more freedom to the fit.
+Therefore a second-order Chebyschev polynomial is used, where the two parameters are
+free to vary. As for the rare case the background fractions are gaussian-constrained
+to what found from the invariant mass fit. Figures~\ref{fig:AngFitJpsi} and~\ref{fig:AngFitBJpsi} show
+fitted angular distributions for the \jpsi channel. The measured values of the observables
+are $\afbl = -0.002^{+0.011}_{-0.011}$, $\afbh = -0.402^{+0.010}_{-0.009}$
+and $\fl = 0.485^{+0.019}_{-0.020}$, where the uncertainties are 68\% Feldman Cousins 
+confidence intervals. The lepton side asymmetry as expected is measured to be zero.
 
 
 
@@ -271,18 +271,18 @@ reconstructed using downstream (left) and long (right) tracks.  }
 Figures~\ref{fig:AngFit} and~\ref{fig:AngFitB} show fits to the angular distributions
 for the 15-20 \gevgevcccc ~\qsq interval and 
 %The LL and DD distributions are fitted simultaneously and therefore we only have two free parameters
-%in the fit, $f_L$ and $A_{FB}^\ell$, for the lepton side and one, $A_{FB}^h$, for the hadron one.
+%in the fit, $\fl$ and $\afbl$, for the lepton side and one, $\afbh$, for the hadron one.
 %
-Tab.~\ref{tab:angresults} reports measured values of $A_{\rm FB}^\ell$, $A_{\rm FB}^h$ and $f_{\rm L}$.
+Tab.~\ref{tab:angresults} reports measured values of $\afbl$, $\afbh$ and $\fl$.
 The asymmetries are also shown in Fig.~\ref{fig:Afb_results} together with SM predictions obtained from 
 Ref.~\cite{Detmold:2012vy}. The statistical uncertainties on these tables 
 are obtained using the likelihood-ratio ordering method described in Sec.~\ref{sec:FeldmanCousins}, where only
 one of the two observables is treated as the PoI at a time. The statistical uncertainties
-on $A_{\rm FB}^\ell$ and $f_{\rm L}$ are also reported in Fig.~\ref{fig:contours} as two-dimensional 68\;\% confidence level (CL) regions,
+on $\afbl$ and $\fl$ are also reported in Fig.~\ref{fig:contours} as two-dimensional 68\;\% confidence level (CL) regions,
 where the likelihood-ratio ordering method is applied by varying both observables and therefore taking
 correlations into account. Total systematic uncertainties correspond to the square root sum of the
 single considered sources.
-\clearpage
+
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularDistribs/Fitted/Afb_DD_q2_1500_2000.pdf}
@@ -308,8 +308,9 @@ single considered sources.
   systematic.}
 \label{tab:angresults}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{c|ccc}
- \qsq interval  [\gevgevcccc]   &            $A_{\rm FB}^\ell$      &       $f_{\rm L}$ 						&  $A_{\rm FB}^h$                    \\ \hline
+\begin{tabular}{$c|^c^c^c}
+\rowstyle{\bfseries}
+\boldmath{ \qsq interval  [\gevgevcccc]}   &            \boldmath{\afbl}      &   \boldmath{    \fl 	}			& \boldmath{ \afbh     }           \\ \hline
 
 0.1 -- 2.0   & $\phantom{-\,}0.37 \; ^{+\;0.37}_{-\;0.48} \,\pm\, 0.03$  	&   $0.56 \; ^{+\;0.23}_{-\;0.56}\,\pm\, 0.08$ 		& $-\;0.12 \; ^{+\;0.31}_{-\;0.28}\,\pm\, 0.15$	\\
 11.0 -- 12.5 & $\phantom{-\,}0.01 \; ^{+\;0.19}_{-\;0.18} \,\pm\, 0.06$  	&   $0.40 \; ^{+\;0.37}_{-\;0.36}\,\pm\, 0.06$		& $-\;0.50 \; ^{+\;0.10}_{-\;0.00}\,\pm\, 0.04$	 \\
@@ -342,7 +343,7 @@ single considered sources.
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/paper/figure10d.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/paper/figure10e.pdf}
 \caption{Two-dimensional 68\,\% CL regions (black) as a
-  function of $A_{\rm FB}^\ell$ and $f_{\rm L}$.  The shaded areas
+  function of $\afbl$ and $\fl$.  The shaded areas
   represent the regions in which the PDF is positive over the complete $\cos
   \theta_{\ell}$ range. The best fit points are indicated by the (blue) stars. }
 \label{fig:contours}

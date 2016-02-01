@@ -9,13 +9,14 @@ A list of the systematic uncertainties that are considered and their effect on t
 ratio is summarised in Tab.~\ref{tab:systematics}.
 The total uncertainty is evaluated by summing in quadrature the single components.
 
-\begin{table}[h!]
+\begin{table}[t!]
 \begin{center}
-\caption{Summary of the relative systematic uncertainties on \RKst (in percentage).}
-\renewcommand\arraystretch{1.4}
+\caption{Summary of the relative percent systematic uncertainties on \RKst.}
+\renewcommand\arraystretch{1.25}
 \label{tab:systematics}
-\begin{tabular}{c|c|c|c}
-\textbf{Source} & low-\qsq & central-\qsq & high-\qsq\\ \hline
+\begin{tabular}{$c|^c|^c|^c}
+\rowstyle{\bfseries}
+\textbf{Source} & low-\boldmath{\qsq} (\%) & central-\boldmath{\qsq} (\%) & high-\boldmath{\qsq} (\%)\\ \hline
 
 Signal shape		    & 1.65      & 1.10      & 2.92 \\
 Bremsstrahlung categories & 0.04  & 0.06  & 0.37 \\
@@ -32,8 +33,8 @@ Partially-reconstructed	    & 0.11     & 4.13     & 0.10 \\
 Combinatorial 		    & 0.00        & 0.02	      & 8.02 \\
 
 %\BdToKstGee leakage    &       &       &  \\
-\BdToKstJPsee leakage    & 0.06      & 0.01      & 0.10 \\
-\BdToKstPsiee leakage    & 0.03      & 0.01      & 2.00 \\
+\jpsi leakage    & 0.06      & 0.01      & 0.10 \\
+\psitwos leakage    & 0.03      & 0.01      & 2.00 \\
 
 \hline
 
@@ -61,14 +62,16 @@ Bin migration               & 0.69                & 1.43                      & 
 There is a certain arbitrariety in the choice of PDFs to model signal and background contributions in the
 invariant mass fits, which could translate in a bias on the final result. The systematic uncertainty due to the
 parameterisation of line shapes is studied in the following ways.
+\\
 
 For the signal PDF:
 %
 \begin{itemize}
 
 \item \textit{Shape}: in the electron channels the PDF is changed from a Crystal Ball and Gaussian to a Double Crystal Ball.
-Modifying the PDF has a negligible effect in the muon modes but it affects the electron ones resulting in a $\sim 0.1\%$
-variation on \RKst.
+Modifying the PDF has a negligible effect in the muon modes, while it affects the electron ones.
+ Furthermore the data-simulation discrepancy parameters ($m^{'}$ and $c$) are constrained using the
+\BdToKstGee sample instead of \BdToKstJPsee.
 
 \item \textit{Bremsstrahlung categories}: gaussian constraints are applied to the relative fractions of the bremsstrahlung
 categories, instead of fixing them to the values observed on simulation.
@@ -83,19 +86,19 @@ For the background PDFs:
 %
 \begin{itemize}
 
-\item \textit{ID swap}: a component that describes candidates where the particle identities are swapped
-is added both to the muon and electron resonant fits, and constrained to the number of candiates
+\item \textit{Swaps}: a component that describes candidates where the particle identities are swapped
+is added both to the muon and electron resonant fits, and constrained to the number of candidates
 expected from simulation. This amounts to a $\sim \%$ variation on \RKst in the central- and high-\qsq region.
 
 \item $\Lb\to pK\jpsi(\to \ee)$: the normalisation is left free to vary.
 This results in a $\sim \%$ variation on \RKst in the central- and high-\qsq region.
 
-\item $\Bs\to\Kstarz\jpsi(\to \ll)$: the $\Bs\to\Kstarz\jpsi(\to \mumu)$ shape is taken from simulation
-instead of using the same shape as for the signal. The normalisation is fixed
-to the branching ratio times the production fraction.
-This results in a $\sim \%$ variation on \RKst in the central- and high-\qsq region.
+%\item $\Bs\to\Kstarz\jpsi(\to \ll)$: the $\Bs\to\Kstarz\jpsi(\to \mumu)$ shape is taken from simulation
+%instead of using the same shape as for the signal. The normalisation is fixed
+%to the branching ratio times the production fraction.
+%This results in a $\sim \%$ variation on \RKst in the central- and high-\qsq region.
 
-\item \textit{Mis-reconstructed}: the yield of the mis-reconstructed background to \BdToKstee is left free to vary in the fit.
+\item \textit{Partially-reconstructed}: the yield of the mis-reconstructed background to \BdToKstee is left free to vary in the fit.
 This only applies to the central-\qsq interval as this contribution is already free to vary in the high-\qsq range.
 This yields a $\sim \%$ systematic on \RKst.
 
@@ -111,13 +114,15 @@ This results in a $\sim \%$ variation on \RKst in the central- and high-\qsq reg
 
 \end{itemize}
 
+Furthermore in all case where a simulated sample is used and smoothed to obtain a PDF
+the kernel of the density estimation is varied by $\pm 0.1$ from the value used in the nominal fit.
 
 \subsection{Efficiency determinations}
 
 The statistical uncertainty on the efficiency determinations is taken as the corresponding systematic uncertainty.
 The correlation among the electron trigger categories is taken into account (e.g. L0E and L0H are anti-correlated).
-This amounts to a $\sim \%$ ($\sim \%$) systematic uncertainty on \RKst for the central-\qsq (high-\qsq) interval.
-
+%This amounts to a $\sim \%$ ($\sim \%$) systematic uncertainty on \RKst for the central-\qsq (high-\qsq) interval.
+%
 A further source of systematic uncertainty associated to the trigger efficiency is estimated using the data-simulation
 differences observed in Sec.~\ref{sec:tistos}. Ratios of efficiencies for the rare to resonant decays are found to be 
 compatible between the electron and muon modes, indicating that the effect on \RKst is negligible, but the statistical 
@@ -158,14 +163,13 @@ factors models with respect to the default model. }
 \begin{table}[h!]
 \centering
 \caption{Percent variation on the bin migration amount obtained using different form factors models.}
-\begin{tabular}{|c|c|c|}
-\hline
-Model                   & 1--6 GeV$^2/c^4$  &  15--20 GeV$^2/c^4$ \\ \hline
-Ball-Zwicky (6)         & 1.8          & 0.2    \\
-%Melikhov-Stech          & -3.7          & 6.6    \\
-Colangelo QCD (3)   & 0.3           & 0.8    \\
-Melikhov lattice  (4)   & -0.5          & -0.4    \\
-\hline 
+\begin{tabular}{$c|^c^c^c}
+\rowstyle{\bfseries}
+Model                   		& low-\boldmath{\qsq} & central-\boldmath{\qsq}  &  central-\boldmath{\qsq} \\ \hline
+Ball-Zwicky (6)         & -0.3          & 1.0          & 0.2 \\
+%%Melikhov Stech  		& 4.8          & -3.2          & 6.8 \\
+Colangelo 2pt QCD (3)	& 0.4          & 0.4 	        & 0.8 \\
+Melikhov lattice  (4)   & 0.1          & -0.4          & -0.4 \\
 \end{tabular}
 \label{tab:sys_binmig}
 \end{table}

@@ -36,9 +36,9 @@ at the same time the systematic due to the parameters constraints.
 \begin{table}[h]
 \centering
 \caption{$\chi^2$, NDF, p-values and number of signal events obtained fitting \Lb\to\jpsi\Lz data using different models.}
-\begin{tabular}{lcccc}
-\hline
-Model   		& $\chi^2/NDF$  & $NDF$  & p-value  & $N_{evts}$ \\ \hline
+\begin{tabular}{$l^c^c^c^c}
+\rowstyle{\bfseries}
+Model   		& \boldmath{$\chi^2/ndf$}  & \boldmath{$NDF$}  & p-value  & \boldmath{$N_{evts}$} \\ \hline
 %\multicolumn{4}{c}{Rare channel} \\
 %DCB  (default)  &    1.1   &   47   &    0.34       &  279.8  \\
 %Gauss 		&    1.0   &   46   &    0.55       &  270.3  \\
@@ -56,7 +56,6 @@ CB  			&    1.5   &   191   &    $\sim 0$  & 9802.4 \\
 %\hline
 %Fixed $K_S$ shape &  1.6   &   188   &    $\sim 0$  & 9976.3  \\
 %With $K^{*0}$ bkg &    1.0   &   188   &    0.53      & 9976.4  \\
-\hline
 \end{tabular}
 \label{PDFsys}
 \end{table}
@@ -72,23 +71,22 @@ the distribution of simulated events after full selection. No significant bias i
 \begin{center}
 \begin{table}[h]
 \centering
-\begin{tabular}{lccc}
-\hline
-\qsq [\gevgevcccc] & Sig. PDF bias (\%)  & Bkg. PDF bias (\%)  & Tot. sys. (\%) \\ \hline
-0.1--2.0       &    3.2   &  1.1   &    3.4    \\
-2.0--4.0       &    2.9   &  2.4   &    3.8    \\
-4.0--6.0       &    4.6   &  4.8   &    6.6    \\
-6.0--8.0       &    1.2   &  1.7   &    2.0    \\
+\begin{tabular}{$l^c^c^c}
+\rowstyle{\bfseries}
+\boldmath{\qsq [\gevgevcccc]} & Sig. PDF bias (\%)  & Bkg. PDF bias (\%)  & Tot. sys. (\%) \\ \hline
+\phantom{x}0.1 -- 2.0\phantom{x}       &    3.2   &  1.1   &    3.4    \\
+\phantom{x}2.0 -- 4.0\phantom{x}       &    2.9   &  2.4   &    3.8    \\
+\phantom{x}4.0 -- 6.0\phantom{x}       &    4.6   &  4.8   &    6.6    \\
+\phantom{x}6.0 -- 8.0\phantom{x}       &    1.2   &  1.7   &    2.0    \\
 
-11.0--12.5		&    2.6   &  1.8   &    3.2	\\
-15.0--16.0 	&    1.3   &  2.5   &    2.8	\\
-16.0--18.0 	&    0.6   &  1.3   &    1.4	\\
-18.0--20.0 	&    1.7   &  1.8   &    2.5	\\
+11.0 -- 12.5		&    2.6   &  1.8   &    3.2	\\
+15.0 -- 16.0 	&    1.3   &  2.5   &    2.8	\\
+16.0 -- 18.0 	&    0.6   &  1.3   &    1.4	\\
+18.0 -- 20.0 	&    1.7   &  1.8   &    2.5	\\
 
 \hline
-1.1--6.0       &    0.1   &  4.2   &    4.2    \\
-15.0--20.0		&    1.0   &  0.2   &    1.1	\\
-\hline
+\phantom{x}1.1 -- 6.0\phantom{x}       &    0.1   &  4.2   &    4.2    \\
+15.0 -- 20.0		&    1.0   &  0.2   &    1.1	\\
 \end{tabular}
 \caption{Values of systematic uncertainties due to the choice of signal and background shapes in bins of \qsq. }
 \label{tab:pdfsys}
@@ -283,24 +281,24 @@ due to the uncertainty on the $\jpsi\to\mumu$ branching fraction.
 \begin{table}
 \centering
 \caption{Absolute values of the total relative efficiency and the absolute value of the 
-uncorrelated uncertainty, together with relative values of the correlated uncertainty. }
-\begin{tabular}{lccccc} \hline
-\qsq interval [\gevgevcccc] 	 & Eff. (DD) 	 &  $\sigma_{uncorr}^{DD}$	 & Eff. (LL) 	 & $\sigma_{uncorr}^{LL}$ 	 & Correlated err. \\
+uncorrelated uncertainty ($\sigma_{uncorr}^{k}$), together with relative values of the correlated uncertainty ($\sigma_{corr}$). }
+\begin{tabular}{$l^c^c^c^c^c}
+\rowstyle{\bfseries}
+\boldmath{\qsq [\gevgevcccc]}	 & Eff. (DD) 	 &  \boldmath{$\sigma_{uncorr}^{\rm DD}$}	 & Eff. (LL)  &	 \boldmath{$\sigma_{uncorr}^{\rm LL}$} 	 & \boldmath{$\sigma_{corr}$} \\
 \hline
+\phantom{x}0.1 -- 2.0\phantom{x}    &  0.694  &  0.058  &  1.136  &  0.066  &  1.0\%    \\
+\phantom{x}2.0 -- 4.0\phantom{x}    &  0.693  &  0.027  &  0.907  &  0.047  &  2.7\%    \\
+\phantom{x}4.0 -- 6.0\phantom{x}    &  0.699  &  0.018  &  0.964  &  0.044  &  2.7\%    \\
+\phantom{x}6.0 -- 8.0\phantom{x}    &  0.733  &  0.020  &  0.953  &  0.048  &  2.7\%    \\
 
-0.1--2.0    &  0.694  &  0.058  &  1.136  &  0.066  &  1.012\%    \\
-2.0--4.0    &  0.693  &  0.027  &  0.907  &  0.047  &  2.697\%    \\
-4.0--6.0    &  0.699  &  0.018  &  0.964  &  0.044  &  2.697\%    \\
-6.0--8.0    &  0.733  &  0.020  &  0.953  &  0.048  &  2.697\%    \\
+11.0 -- 12.5  &  1.254  &  0.032  &  1.140  &  0.057  &  3.4\%    \\
+15.0 -- 16.0  &  1.260  &  0.035  &  1.035  &  0.060  &  3.0\%    \\
+16.0 -- 18.0  &  1.163  &  0.029  &  0.997  &  0.048  &  1.7\%    \\
+18.0 -- 20.0  &  1.023  &  0.027  &  0.782  &  0.040  &  2.7\%    \\
+\hline
+\phantom{x}1.1 -- 6.0\phantom{x}    &  0.696  &  0.032  &  0.950  &  0.058  &  1.0\%    \\
+15.0 -- 20.0  &  1.132  &  0.014  &  0.927  &  0.031  &  1.4\%    \\
 
-11.0--12.5  &  1.254  &  0.032  &  1.140  &  0.057  &  3.356\%    \\
-15.0--16.0  &  1.260  &  0.035  &  1.035  &  0.060  &  2.977\%    \\
-16.0--18.0  &  1.163  &  0.029  &  0.997  &  0.048  &  1.727\%    \\
-18.0--20.0  &  1.023  &  0.027  &  0.782  &  0.040  &  2.697\%    \\
-\hline
-1.1--6.0    &  0.696  &  0.032  &  0.950  &  0.058  &  1.012\%    \\
-15.0--20.0  &  1.132  &  0.014  &  0.927  &  0.031  &  1.423\%    \\
-\hline
 \end{tabular}
 \label{tab:Lb_effSummary}
 \end{table}

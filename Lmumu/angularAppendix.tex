@@ -234,6 +234,33 @@ the $Z$ mass, $\alpha_s(m_Z^2)=0.1185 \pm 0.0006$~\cite{PDG2014}, and we transla
 where $n_f=5$. The LQCD form factors $F_1^L$ and $F_2^L$ can be then taken directly from Ref.~\cite{Detmold:2012vy} and
 plugged into the code implementing the calculation from Ref.~\cite{Gutsche:2013pp}.
 
+
+\section{Bi-dimensional distribution parameters}
+Expectations values for parameters in the bi-dimensional angular distribution for the \Lb\to\Lz\mumu decay
+ calculated using form factors and numerical inputs from Ref.~\cite{Gutsche:2013pp}.
+ 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{lcccccc}\hline
+\qsq [$GeV^2/c^2$]  & $A_{FB}^\ell$ & $P_z^\Lz$  & $f_L$   & $O_P$  & $O_{Lp}$ & $O_{UVA}$ \\ \hline
+0.1 -- 2.0          &  0.082     & -0.9998    & 0.537   & -0.463 & -0.537   &  0.055  \\ 
+2.0 -- 4.0          & -0.032     & -0.9996    & 0.858   & -0.142 & -0.857   & -0.021  \\ 
+4.0 -- 6.0          & -0.153     & -0.9991    & 0.752   & -0.247 & -0.752   & -0.102  \\ 
+V.0 -- VA.5        & -0.348     & -0.9834    & 0.508   & -0.478 & -0.505   & -0.239  \\ 
+15.0 -- 16.0        & -0.384     & -0.9374    & 0.428   & -0.524 & -0.413   & -0.280  \\ 
+16.0 -- 18.0        & -0.377     & -0.8807    & 0.399   & -0.513 & -0.368   & -0.294  \\ 
+18.0 -- 20.0        & -0.297     & -0.6640    & 0.361   & -0.404 & -0.260   & -0.314  \\ \hline 
+1.0 -- 6.0          & -0.040     & -0.9994    & 0.830   & -0.170 & -0.830   & -0.027  \\ 
+15.0 -- 20.0        & -0.339     & -0.7830    & 0.385   & -0.461 & -0.3A   & -0.302  \\ \hline
+\end{tabular}
+\end{center}
+\caption{Prediction for angular observables entering two-dimensional angular distributions.
+Prediction is based on covariant quark model form factors from Ref.~\cite{Gutsche:2013pp}.}
+\label{tab:obsGutsche1}
+\end{table}
+
+
+
 \section{$\Lb\ra\jpsi\Lz$ distribution}
 \label{ap:LbJpsiLAngular}
 
@@ -244,95 +271,96 @@ plugged into the code implementing the calculation from Ref.~\cite{Gutsche:2013p
 
 
 
-\begin{table}
-\begin{tabular}{lccc}
-             \hline\hline
-              i & $f_{1i}$
-           & $f_{2i}$                & $F_{i}$
-                             \\
-             \hline
-              0 & $a_{+}a_{+}^{*}+a_{-}a_{-}^{*}+b_{+}b_{+}^{*}+b_{-}b_{-}^{*}$
-           & 1                       & 1
-                                 \\
-             \hline
-              1 & $a_{+}a_{+}^{*}-a_{-}a_{-}^{*}+b_{+}b_{+}^{*}-b_{-}b_{-}^{*}$
-           & $P_{b}$                 & $\cos\theta$
-                               \\
-              2 & $a_{+}a_{+}^{*}-a_{-}a_{-}^{*}-b_{+}b_{+}^{*}+b_{-}b_{-}^{*}$
-           & $\alpha_{\Lambda}$      & $\cos\theta_{1}$
-                               \\
-              3 & $a_{+}a_{+}^{*}+a_{-}a_{-}^{*}-b_{+}b_{+}^{*}-b_{-}b_{-}^{*}$
-           & $P_{b}\alpha_{\Lambda}$ & $\cos\theta\cos\theta_{1}$
-                             \\
-              4 & $-a_{+}a_{+}^{*}-a_{-}a_{-}^{*}+{\frac{1}{2}} b_{+}b_{+}^{*}+{\frac{1}{2}}
- b_{-}b_{-}^{*}$ & 1                       & $d_{00}^{2}(\theta_{2})$
-                                       \\
-              5 & $-a_{+}a_{+}^{*}+a_{-}a_{-}^{*}+{\frac{1}{2}} b_{+}b_{+}^{*}-{\frac{1}{2}}
- b_{-}b_{-}^{*}$ & $P_{b}$                 & $d_{00}^{2}(\theta_{2})\cos\theta$
-                                 \\
-              6 & $-a_{+}a_{+}^{*}+a_{-}a_{-}^{*}-{\frac{1}{2}} b_{+}b_{+}^{*}+{\frac{1}{2}}
- b_{-}b_{-}^{*}$ & $\alpha_{\Lambda}$      &
- $d_{00}^{2}(\theta_{2})\cos\theta_{1}$                                  \\
-              7 & $-a_{+}a_{+}^{*}-a_{-}a_{-}^{*}-{\frac{1}{2}} b_{+}b_{+}^{*}-{\frac{1}{2}}
- b_{-}b_{-}^{*}$ & $P_{b}\alpha_{\Lambda}$ &
- $d_{00}^{2}(\theta_{2})\cos\theta\cos\theta_{1}$                      \\
-             \hline
-              8 & $-3Re(a_{+}a_{-}^{*})$
- & $P_{b}\alpha_{\Lambda}$ &
- $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}\cos\phi_{1}$
- \\
-              9 & $ 3Im(a_{+}a_{-}^{*})$
- & $P_{b}\alpha_{\Lambda}$ &
- $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}\sin\phi_{1}$
-  \\
-             10 & $-{\frac{3}{2}} Re(b_{-}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$ &
- $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}cos(\phi_{1}+2\phi_{2})$
-    \\
-             11 & $ {\frac{3}{2}} Im(b_{-}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$ &
- $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}sin(\phi_{1}+2\phi_{2})$
-    \\
-             \hline
-             12 & $-{\frac{3}{\sqrt{2}}}  Re(b_{-}a_{+}^{*}+a_{-}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$     &
- $\sin\theta\cos\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos\phi_{2}$
-       \\
-             13 & $ {\frac{3}{\sqrt{2}}}  Im(b_{-}a_{+}^{*}+a_{-}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$     &
- $\sin\theta\cos\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin\phi_{2}$
-        \\
-             14 & $-{\frac{3}{\sqrt{2}}}  Re(b_{-}a_{-}^{*}+a_{+}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$     &
- $\cos\theta\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos(\phi_{1}+\phi_{2})$
-                   \\
-             15 & $ {\frac{3}{\sqrt{2}}}  Im(b_{-}a_{-}^{*}+a_{+}b_{+}^{*})$
- & $P_{b}\alpha_{\Lambda}$     &
- $\cos\theta\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin(\phi_{1}+\phi_{2})$
-                   \\
-             \hline
-             16 & $ {\frac{3}{\sqrt{2}}}  Re(a_{-}b_{+}^{*}-b_{-}a_{+}^{*})$            &
- $P_{b}$                  &
-$\sin\theta\sin\theta_{2}\cos\theta_{2}\cos\phi_{2}$
-                   \\
-             17 & $-{\frac{3}{\sqrt{2}}}  Im(a_{-}b_{+}^{*}-b_{-}a_{+}^{*})$            &
- $P_{b}$                  &
-$\sin\theta\sin\theta_{2}\cos\theta_{2}\sin\phi_{2}$
-                   \\
-             18 & $ {\frac{3}{\sqrt{2}}}  Re(b_{-}a_{-}^{*}-a_{+}b_{+}^{*})$            &
- $\alpha_{\Lambda}$       &
- $\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos(\phi_{1}+\phi_{2})$
-       \\
-             19 & $-{\frac{3}{\sqrt{2}}}  Im(b_{-}a_{-}^{*}-a_{+}b_{+}^{*})$            &
- $\alpha_{\Lambda}$       &
- $\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin(\phi_{1}+\phi_{2})$
-       \\
-             \hline\hline
-             \end{tabular}
-\caption{Different terms describing angular distributions of \Lb\ra\jpsi\Lz decays by
-eq.~\ref{eq:jpsiLambdaRate}.}
-\label{tab:LbJpsiLAngular}
-\end{table}
+%\begin{table}
+%\begin{tabular}{lccc}
+%             \hline\hline
+%              i & $f_{1i}$
+%           & $f_{2i}$                & $F_{i}$
+%                             \\
+%             \hline
+%              0 & $a_{+}a_{+}^{*}+a_{-}a_{-}^{*}+b_{+}b_{+}^{*}+b_{-}b_{-}^{*}$
+%           & 1                       & 1
+%                                 \\
+%             \hline
+%              1 & $a_{+}a_{+}^{*}-a_{-}a_{-}^{*}+b_{+}b_{+}^{*}-b_{-}b_{-}^{*}$
+%           & $P_{b}$                 & $\cos\theta$
+%                               \\
+%              2 & $a_{+}a_{+}^{*}-a_{-}a_{-}^{*}-b_{+}b_{+}^{*}+b_{-}b_{-}^{*}$
+%           & $\alpha_{\Lambda}$      & $\cos\theta_{1}$
+%                               \\
+%              3 & $a_{+}a_{+}^{*}+a_{-}a_{-}^{*}-b_{+}b_{+}^{*}-b_{-}b_{-}^{*}$
+%           & $P_{b}\alpha_{\Lambda}$ & $\cos\theta\cos\theta_{1}$
+%                             \\
+%             4 & $-a_{+}a_{+}^{*}-a_{-}a_{-}^{*}+{\frac{1}{2}} b_{+}b_{+}^{*}+{\frac{1}{2}}
+% b_{-}b_{-}^{*}$ & 1                       & $d_{00}^{2}(\theta_{2})$
+%                                       \\
+%              5 & $-a_{+}a_{+}^{*}+a_{-}a_{-}^{*}+{\frac{1}{2}} b_{+}b_{+}^{*}-{\frac{1}{2}}
+% b_{-}b_{-}^{*}$ & $P_{b}$                 & $d_{00}^{2}(\theta_{2})\cos\theta$
+%                                 \\
+%              6 & $-a_{+}a_{+}^{*}+a_{-}a_{-}^{*}-{\frac{1}{2}} b_{+}b_{+}^{*}+{\frac{1}{2}}
+% b_{-}b_{-}^{*}$ & $\alpha_{\Lambda}$      &
+% $d_{00}^{2}(\theta_{2})\cos\theta_{1}$                                  \\
+%              7 & $-a_{+}a_{+}^{*}-a_{-}a_{-}^{*}-{\frac{1}{2}} b_{+}b_{+}^{*}-{\frac{1}{2}}
+% b_{-}b_{-}^{*}$ & $P_{b}\alpha_{\Lambda}$ &
+% $d_{00}^{2}(\theta_{2})\cos\theta\cos\theta_{1}$                      \\
+%             \hline
+%              8 & $-3Re(a_{+}a_{-}^{*})$
+% & $P_{b}\alpha_{\Lambda}$ &
+% $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}\cos\phi_{1}$
+% \\
+%              9 & $ 3Im(a_{+}a_{-}^{*})$
+% & $P_{b}\alpha_{\Lambda}$ &
+% $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}\sin\phi_{1}$
+%  \\
+%             10 & $-{\frac{3}{2}} Re(b_{-}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$ &
+% $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}cos(\phi_{1}+2\phi_{2})$
+%    \\
+%             11 & $ {\frac{3}{2}} Im(b_{-}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$ &
+% $\sin\theta\sin\theta_{1}\sin^{2}\theta_{2}sin(\phi_{1}+2\phi_{2})$
+%    \\
+%             \hline
+%             12 & $-{\frac{3}{\sqrt{2}}}  Re(b_{-}a_{+}^{*}+a_{-}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$     &
+% $\sin\theta\cos\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos\phi_{2}$
+%       \\
+%             13 & $ {\frac{3}{\sqrt{2}}}  Im(b_{-}a_{+}^{*}+a_{-}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$     &
+% $\sin\theta\cos\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin\phi_{2}$
+%        \\
+%             14 & $-{\frac{3}{\sqrt{2}}}  Re(b_{-}a_{-}^{*}+a_{+}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$     &
+% $\cos\theta\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos(\phi_{1}+\phi_{2})$
+%                   \\
+%             15 & $ {\frac{3}{\sqrt{2}}}  Im(b_{-}a_{-}^{*}+a_{+}b_{+}^{*})$
+% & $P_{b}\alpha_{\Lambda}$     &
+% $\cos\theta\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin(\phi_{1}+\phi_{2})$
+%                   \\
+%             \hline
+%             16 & $ {\frac{3}{\sqrt{2}}}  Re(a_{-}b_{+}^{*}-b_{-}a_{+}^{*})$            &
+% $P_{b}$                  &
+%$\sin\theta\sin\theta_{2}\cos\theta_{2}\cos\phi_{2}$
+%                   \\
+%             17 & $-{\frac{3}{\sqrt{2}}}  Im(a_{-}b_{+}^{*}-b_{-}a_{+}^{*})$            &
+% $P_{b}$                  &
+%$\sin\theta\sin\theta_{2}\cos\theta_{2}\sin\phi_{2}$
+ %                  \\
+%             18 & $ {\frac{3}{\sqrt{2}}}  Re(b_{-}a_{-}^{*}-a_{+}b_{+}^{*})$            &
+% $\alpha_{\Lambda}$       &
+% $\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\cos(\phi_{1}+\phi_{2})$
+%       \\
+%             19 & $-{\frac{3}{\sqrt{2}}}  Im(b_{-}a_{-}^{*}-a_{+}b_{+}^{*})$            &
+% $\alpha_{\Lambda}$       &
+% $\sin\theta_{1}\sin\theta_{2}\cos\theta_{2}\sin(\phi_{1}+\phi_{2})$
+%       \\
+%             \hline\hline
+%             \end{tabular}
+%\caption{Different terms describing angular distributions of \Lb\ra\jpsi\Lz decays by
+%eq.~\ref{eq:jpsiLambdaRate}.}
+%\label{tab:LbJpsiLAngular}
+%\end{table}
+%
 %
 The angular distribution of the \Lb\ra\jpsi\Lz decay is modelled using Ref.~\cite{Hrivnac:1994jx}.
 The differential rate is written as
@@ -363,6 +391,5 @@ $P_b$ and four complex amplitudes. The $\alpha_\Lz$ is measured to be $0.642 \pm
 The production polarisation $P_b$ and magnitudes of $a_+$, $a_-$, $b_+$ and $b_-$ are measured in
 Ref.~\cite{LHCb-PAPER-2012-057}. Phases are not measured therefore, as default all phases are set to
 zero and then they are randomly varied to calculate the systematic uncertainty.
-
 
 

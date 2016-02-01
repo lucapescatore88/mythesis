@@ -1,10 +1,11 @@
+
 \section{Selection}
 \label{sec:RKst_selection}
 
 The selection process, described in this section, is divided into several steps:
 \begin{itemize}
 \item first of all candidates have to fall into the detector acceptance, produce hits and be selected
-on the basis of quality features, such as $\chi^2$ of tracks and vertices and basic kinematic cuts.
+on the basis of quality features, such as \chisq of tracks and vertices and basic kinematic cuts.
 This stage is called ``stripping". Furthermore, it is required that the events are triggered by specific
 trigger lines and cuts are applied to remove backgrounds from specific decays.
 All these first three steps are referred to as ``pre-selection";
@@ -28,9 +29,40 @@ $\Bz \to\Kstarz(\jpsi\to \ee)$ candidates is chosen to go as low as possible wit
 the rare channel interval. Candidates are therefore identified as $\jpsi(ee)$ if they fall in the \qsq interval
 $6 < \qsq < 11$~\gevgevcccc. Similarly, candidates are identified as $\psitwos(ee)$ is they fall into $11 < \qsq < 15$~\gevgevcccc
 and $\gamma(ee)$ if they fall into $\qsq < 0.004$~\gevgevcccc.
+Table~\ref{tab:candidates} summarises the requirements to distinguish sample from different channels.
 Figure~\ref{fig:2D_q2_B0mass} shows two-dimensional distributions of \qsq versus the 4-body invariant mass 
 for candidates passing the full selection. Horizontal bands can be clearly seen at \qsq values corresponding to the \jpsi and \psitwos resonances.
 On the plot for muons it is also evident a vertical band which corresponds to rare decay of interest.
+
+\begin{table}[t!]
+\begin{center}
+\caption{Summary of the channel categories.}
+\label{tab:candidates}
+\begin{footnotesize}
+\renewcommand\arraystretch{1.4}
+\begin{tabular}{$c|^c|^c}
+\rowstyle{\bfseries}
+ Type & Sample & \boldmath{\qsq} \\
+\hline
+\multirow{4}{*}{$\mu\mu$}
+	& \BdToKstmm (low)			& $0.0004<\qsq<1.1\gevgevcccc$ \\
+	& \BdToKstmm (central)		& $1.1<\qsq<6\gevgevcccc$ \\
+	& \BdToKstmm (high)		& $\qsq>15\gevgevcccc$ \\
+	& \BdToKstJPsmm (\mcKpimm)	& $|m_{\mm} - m_{\jpsi}^{PDG}| < 100\mevcc$ \\ \hline
+\multirow{7}{*}{$ee$} 
+	&  \BdToKstee (low)			& $0.0004<\qsq<1.1\gevgevcccc$ \\
+	& \BdToKstee (central)		& $1.1<\qsq<6\gevgevcccc$ \\
+	& \BdToKstee (high)			& $\qsq>15\gevgevcccc$ \\
+	& \BdToKstJPsee (\mcKpiee)	& $6<\qsq<11\gevgevcccc$ \\
+\cline{2-3}
+	& \multicolumn{2}{c}{Control samples} \\ \cline{2-3}
+	& \BdToKstGee (\mKpiee)		& $\qsq<0.0004\gevgevcccc$ \\
+	& \BdToKstJPsee (\mKpiee)	& $6<\qsq<11\gevgevcccc$ \\
+	& \BdToKstPsiee (\mcKpiee)	& $11<\qsq<15\gevgevcccc$ \\
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{table}
 
 \begin{figure}[t!]
 \centering 
@@ -62,8 +94,9 @@ of the event and a neural network trained on events with a specific topology in 
 \begin{center}
 \caption{Summary of the trigger lines used to select the $\mu\mu$ and the $ee$ channels.
 Where not explicitly indicated, the lines are required to be TOS.}
-\begin{tabular}{c|c}
-$\mu\mu$ candidates &  $ee$ candidates \\
+\begin{tabular}{$c|^c}
+\rowstyle{\bfseries}
+\boldmath{$\mu\mu$} candidates &  \boldmath{$ee$} candidates \\
 \hline
 	L0Muon		& L0Electron\\
 				& L0Hadron\\
@@ -118,9 +151,9 @@ to use the sideband to train the multivariate analysis and to constrain the back
 %
 \begin{table}[]
 \begin{center}
-\caption{Summary of stripping requirements used for the central and high \qsq regions. }
-\begin{tabular}{|c|c|}
-\hline
+\caption{Summary of stripping requirements. }
+\begin{tabular}{$c^c}
+\rowstyle{\bfseries}
 Particle &  Requirements \\
 \hline
 %\multirow{2}{*}{ All final}
@@ -136,7 +169,7 @@ $\pi$			& $\chisqip(primary) > 9$ \\
  \hline
 \multirow{4}{*}{ \Kstarz }
        			& $\pt > 500$ \mevc \\
-       			& $|m - m_{\Kstarz}^{PDG}| < 300(????)$ \mevcc  \\ %300 in stripping but then we restrict it to 100
+       			& $|m - m_{\Kstarz}^{PDG}| < 300$ \mevcc  \\ %300 in stripping but then we restrict it to 100
        			& $\chisqip(primary) > 9$ \\
        			& Origin vertex $\chi_2/\text{ndf} < 25$ \\
 \hline
@@ -164,7 +197,6 @@ $\pi$			& $\chisqip(primary) > 9$ \\
        			& End vertex $\chi^2/\text{ndf} < 9$ \\
      			& $\chisqip(primary) < 25$ \\
      			& Primary vertex $\chi^2$ separation $> 100$ \\
-\hline
 \end{tabular}
 \label{tab:RKstripping}
 \end{center}
@@ -286,8 +318,8 @@ contribution is taken into account by the choice of the \qsq intervals (see Sec.
 \begin{center}
 \begin{figure}[h!]
 \centering 
-\includegraphics[width=0.48\textwidth]{RKst/figs/RKst/phi.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/RKst/Kmumu.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/RKst/phi.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/RKst/Kmumu.pdf}
 \caption{ (left) Distribution of 2011 data events as a function of the variables $(m_{K(\pi\rightarrow K)})$ 
 and $(m_{K(\pi\rightarrow K)\mu\mu})$, where $\pi\rightarrow K$ means that the kaon mass is given 
 to the pions too. (right) The invariant mass distribution of the three-body system $(K\mu\mu)$,
@@ -337,8 +369,8 @@ The cut is chosen to be $|\cos (\theta_\ell) |< 0.8$, and is not applied in the 
 
 \begin{figure}[t!]
 \centering
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/CosThetaL_background.pdf}
-\includegraphics[width=0.48\textwidth]{RKst/figs/misreco/KstareMass_background.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/misreco/CosThetaL_background.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/misreco/KstareMass_background.pdf}
 \caption{Distribution of (left) $\cos (\theta_\ell)$ and of (right) the $m(\Kstarz e)$ invariant mass, where the \decay{\Bd}{(\Dm\to K \en \overline{\nu})\ep\nu} background is selected by requiring $m(\Kstarz\epem) < 4800\mevcc$. The red distribution corresponds to events with $| \cos ( \theta_\ell ) | > 0.8$.}
 \label{fig:Denu_background}
 \end{figure}
@@ -432,7 +464,7 @@ In fact for the \Bz daughters the momentum component orthogonal to the flight di
 The flight direction is defined using the primary and the decay vertices and sketch is shown in Fig.~\ref{fig:schemaHOP}. 
 \begin{figure}[tb]
   \begin{center}
-    \includegraphics[width=1.0\linewidth]{RKst/figs/HOP/schemaHOP.pdf}
+    \includegraphics[width=0.9\linewidth]{RKst/figs/HOP/schemaHOP.pdf}
     \vspace*{-1.0cm}
   \end{center}
   \caption{ Schema of the kinematic of a $B \to Y_h X_e$ decay, highlighting the quantities relevant for the 
@@ -514,10 +546,8 @@ in $k$ equally sized subsamples; $k$ classifiers are then trained and optimised 
 and applied to the $k$th one. This approach ensures that a classifier is never applied to the events used for its training.
 Each classifier is trained on half of the events included in the $(k-1)$ samples and optimised using the other half,
 which ensures that events used for training are not used for optimisation.
-\\
 
-{\bf Samples}
-\\
+{\bf Samples:}
 
 Representative samples of the signal and background are needed to train the classifier.
 For the signal, fully reconstructed \BdToKstmm and \BdKstee simulated events can be used.
@@ -529,98 +559,102 @@ All pre-selection cuts are applied to the background samples used for the traini
 As L0 and PID variables are not well described in simulation these cuts are not applied to the simulation
 but their effect is taken into account by the event weight.
 %To train the classifier 50\% of the sideband events was used, keeping the other 50\% for testing.
-An approximately equal number of signal and background vents is used for the training.
-This corresponds to about 1000 events for the electron case and 10,000 for the muon one, which
-is driven by the amount of background available.
-\\
+An approximately equal number of signal and background events is used for the training
+which corresponds to about 1000 events for the electron case and 10,000 for the muon one.
+%, which
+%is driven by the amount of background available.
 
-{\bf Training}
-\\
+{\bf Training:}
 
-The the NN input consists of 24 variables containing information about the kinematic of the decays
-and the quality of tracks and vertices. All the variables used are listed in Tab.~\ref{tab:RKst_mva_vars} and
-their correlation is graphically represented in Fig.~\ref{fig:Rkst_nnCorrelation}.
-In these figures the variable with ID = 1 is the NN output and the other IDs are reported in Tab.~\ref{tab:RKst_mva_vars}.
+The the neural-network input consists of 24 variables containing information about the kinematic of the decays
+and the quality of tracks and vertices. All the variables used are listed in Tab.~\ref{tab:RKst_mva_vars}.
+% and their correlation is graphically represented in Fig.~\ref{fig:Rkst_nnCorrelation}.
+In these figures the variable with ID = 1 is the neural-network output and the other IDs are reported in Tab.~\ref{tab:RKst_mva_vars}.
 %
 The single most discriminating variable used is the $\chi^2$ of a kinematic fit
 that constrains the decay product of the \Bz, the \Kstarz and the dimuon, to originate from their respective vertices.
 Other variables that contribute significantly are the $\chi^2_{IP}$ of \jpsi and \Kstarz, the transverse momentum
-of the \Bz and the pointing direction (DIRA) of the reconstructed \Bz to the primary vertex.
-The list the 10 most important variables is reported in Tab.~\ref{tab:RKst_nnInputs}, together
-with information on the relative importance of each input. The meaning of the column headings
-in this table was already explained in Sec.~\ref{sec:Lb_mva}.
+of the \Bz and the pointing direction (\verb!DIRA!) of the reconstructed \Bz to the primary vertex.
+%The list the 5 most important variables is reported in Tab.~\ref{tab:RKst_nnInputs}, together
+%with information on the relative importance of each input. The meaning of the column headings
+%in this table was already explained in Sec.~\ref{sec:Lb_mva}.
 
 \begin{table}
 \centering
-\begin{tabular}{l|l}
-Particle 	& Variables \\ \hline
-\Bz			& $\chi^2_{DTF}/\text{ndf}$ [1], DIRA [19], $\chi^2_{FD}$ [15], $\chi^2_{vtx}/\text{ndf}$ [12], \chisqip [14], \pt [7] \\
-\Kstar		& $\chi^2_{FD}$ [21], $\chi^2_{vtx}/\text{ndf}$ [11], \chisqip [2], \pt [5] \\
-Dilepton	& $\chi^2_{FD}$ [17], $\chi^2_{vtx}/\text{ndf}$ [13], \chisqip [20], \pt [6] \\
-$e$			& \chisqip [3][4], \pt [9][10]\\
-$\mu$		& \chisqip [14][15], \pt [9][10]\\
-K			& \chisqip [18], \pt [16]\\
-$\pi$		& \chisqip [22], \pt [8]\\
-\end{tabular}
-\caption{Variables used as inputs for the NN training.
-Next to each variable the ID number in brackets provides the index
-reported in the correlation matrices shown in Fig.~\ref{fig:Rkst_nnCorrelation}.
+\caption{List of variables used as inputs for the neural-network training.
+%Next to each variable the ID number in brackets provides the index
+%reported in the correlation matrices shown in Fig.~\ref{fig:Rkst_nnCorrelation}.
 }
+\begin{tabular}{$l|^l}
+\rowstyle{\bfseries}
+Particle 	& Variables \\ \hline
+\Bz		& \pt, \quad \chisqip, \quad $\chisq_{\rm FD}$, \quad $\chisq_{vtx}/\text{ndf}$, \quad \texttt{DIRA}, \quad $\chisq_{\rm DTF}/\text{ndf}$ \\
+\Kstarz	& \pt, \quad \chisqip, \quad $\chisq_{\rm FD}$, \quad $\chisq_{vtx}/\text{ndf}$, \quad \texttt{DIRA} \\
+$h$		& $min,max(p_{\textrm{T}, \kaon},p_{\textrm{T}, \pi})$, \quad $min,max(\chi_{\textrm{IP}, \kaon}^{2},\chi_{\textrm{IP}, \pi}^{2})$ \\
+$\ell\ell$	& \pt, \quad \chisqip, \quad $\chisq_{\rm FD}$, \quad $\chisq_{vtx}/\text{ndf}$, \quad \texttt{DIRA} \\
+$\ell$	& $min,max(p_{\textrm{T}, \ell^+},p_{\textrm{T}, \ell^-})$, \quad $min,max(\chi_{\textrm{IP}, \ell^+}^{2},\chi_{\textrm{IP}, \ell^-}^{2})$ \\
+%\Bz			& $\chi^2_{\rm DTF}/\text{ndf}$ [1], DIRA [19], $\chi^2_{\rm FD}$ [15], $\chi^2_{vtx}/\text{ndf}$ [12], \chisqip [14], \pt [7] \\
+%\Kstar		& $\chi^2_{\rm FD}$ [21], $\chi^2_{vtx}/\text{ndf}$ [11], \chisqip [2], \pt [5] \\
+%Dilepton	& $\chi^2_{\rm FD}$ [17], $\chi^2_{vtx}/\text{ndf}$ [13], \chisqip [20], \pt [6] \\
+%$e$			& \chisqip [3][4], \pt [9][10]\\
+%$\mu$		& \chisqip [14][15], \pt [9][10]\\
+%K			& \chisqip [18], \pt [16]\\
+%$\pi$		& \chisqip [22], \pt [8]\\
+\end{tabular}
 \label{tab:RKst_mva_vars}
 \end{table}
 
-\begin{table}
-\centering
-\caption{Summary of inputs to the neural network in order of importance. The 10 most discriminating variables are shown.
-Column ``adds'' gives correlation significance added by given input when adding it to list of those
-ranked above, ``only this'' provides power of given input alone and ``loss'' shows how much information
-is lost when removing only given input. Decay Tree Fit is performed using DecayTreeFitter tool
-on whole decay chain with constraining tracks to appropriate vertex topology and the $m(p\pi)$
-invariant mass to the PDG value.}
-\begin{tabular}{|c|ccc|c|ccc|}\hline
-\multicolumn{4}{|c|}{Muons} 														& \multicolumn{4}{c|}{Electrons}						  \\ \hline   
-Input                   			& Adds 			& Only this 	& Loss 			& Input        							& Adds      & Only this & Loss    \\ \hline
-$ \Bz$ $\chi^2_{DTF}/\text{ndf} $		& 80.44 		& 80.44 		& 13.14  		&	$ \Bz$ $\chi^2_{DTF}/\text{ndf} $		& 28.70 		& 28.70 		& 3.94  \\
-$ \Kstar$ $\chisqip $		& 22.26 		& 67.58 		& 3.48  		&	$ \Kstar$ $\chisqip $		& 12.71 		& 25.11 		& 1.57  \\
-$ \Bz\text{DIRA} $		& 10.58 		& 71.24 		& 3.95  		&	$ e_{2}$ $\chisqip $		& 6.56 		& 20.19 		& 3.30  \\
-$ \Kstar$ $\pt $		& 9.16 		& 49.13 		& 2.07  		&	$ e_{1}$ $\chisqip $		& 5.54 		& 19.66 		& 2.60  \\
-$ \jpsi$ $\chisqip $		& 6.58 		& 56.15 		& 1.35  		&	$ \Kstar$ $\pt $		& 3.74 		& 15.35 		& 3.14  \\
-$ \Bz$ $\pt $		& 6.00 		& 41.42 		& 4.39  		&	$ \jpsi$ $\pt $		& 4.81 		& 5.55 		& 3.18  \\
-$ \mu_{1}$ $\pt $		& 2.96 		& 15.85 		& 3.79  		&	$ \Bz$ $\pt $		& 2.78 		& 13.01 		& 2.20  \\
-$ \mu_{2}$ $\pt $		& 2.73 		& 15.04 		& 3.46  		&	$ \pi$ $\pt $		& 3.08 		& 7.93 		& 1.83  \\
-$ \jpsi$ $\pt $		& 3.06 		& 16.41 		& 2.84  		&	$ e_{2}$ $\pt $		& 2.35 		& 9.81 		& 2.74  \\
-$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 2.41 		& 28.14 		& 2.38  		&	$ e_{1}$ $\pt $		& 2.15 		& 8.04 		& 2.28  \\
+%\begin{table}
+%\centering
+%\caption{Summary of inputs to the neural network in order of importance. The 5 most discriminating variables are shown.
+%Column ``adds'' gives correlation significance added by given input when adding it to list of those
+%ranked above, ``only this'' provides power of given input alone and ``loss'' shows how much information
+%is lost when removing only given input. Decay Tree Fit is performed using DecayTreeFitter tool
+%on whole decay chain with constraining tracks to appropriate vertex topology and the $m(p\pi)$
+%invariant mass to the PDG value.}
+%\begin{tabular}{c|ccc|c|ccc}
+%\multicolumn{4}{c|}{Muons} 														& \multicolumn{4}{c}{Electrons}				%		  \\ \hline   
+%Input                   			& Adds 			& Only this 	& Loss 			& Input        							& Adds      & Only this & Loss    \\ \hline
+%$ \Bz$ $\chi^2_{\rm DTF}/\text{ndf} $		& 80.44 		& 80.44 		& 13.14  		&	$ \Bz$ $\chi^2_{\rm DTF}/\text{ndf} $		& 28.70 		& 28.70 		& 3.94  \\
+%$ \Kstar$ $\chisqip $		& 22.26 		& 67.58 		& 3.48  		&	$ \Kstar$ $\chisqip $		& 12.71 		& 25.11 		& 1.57  \\
+%$ \Bz\text{DIRA} $		& 10.58 		& 71.24 		& 3.95  		&	$ e_{2}$ $\chisqip $		& 6.56 		& 20.19 		& 3.30  \\
+%$ \Kstar$ $\pt $		& 9.16 		& 49.13 		& 2.07  		&	$ e_{1}$ $\chisqip $		& 5.54 		& 19.66 		& 2.60  \\
+%$ \jpsi$ $\chisqip $		& 6.58 		& 56.15 		& 1.35  		&	$ \Kstar$ $\pt $		& 3.74 		& 15.35 		& 3.14  \\
+%$ \Bz$ $\pt $		& 6.00 		& 41.42 		& 4.39  		&	$ \jpsi$ $\pt $		& 4.81 		& 5.55 		& 3.18  \\
+%$ \mu_{1}$ $\pt $		& 2.96 		& 15.85 		& 3.79  		&	$ \Bz$ $\pt $		& 2.78 		& 13.01 		& 2.20  \\
+%$ \mu_{2}$ $\pt $		& 2.73 		& 15.04 		& 3.46  		&	$ \pi$ $\pt $		& 3.08 		& 7.93 		& 1.83  \\
+%$ \jpsi$ $\pt $		& 3.06 		& 16.41 		& 2.84  		&	$ e_{2}$ $\pt $		& 2.35 		& 9.81 		& 2.74  \\
+%$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 2.41 		& 28.14 		& 2.38  		&	$ e_{1}$ $\pt $		& 2.15 		& 8.04 		& 2.28  \\
 
-%$ \Bz$ $\chi^2_{FD} $		& 2.03 		& 63.73 		& 1.37  		&	$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 1.75 		& 7.45 		& 1.89  \\
+%$ \Bz$ $\chi^2_{\rm FD} $		& 2.03 		& 63.73 		& 1.37  		&	$ \Kstar$ $\chi^2_{vtx}/\text{ndf} $		& 1.75 		& 7.45 		& 1.89  \\
 %$ \mu_{1}$ $\chisqip $		& 1.45 		& 47.90 		& 1.75  		&	$ \Bz$ $\chi^2_{vtx}/\text{ndf} $		& 1.83 		& 27.54 		& 1.95  \\
 %$ \mu_{2}$ $\chisqip $		& 1.04 		& 43.24 		& 1.20  		&	$ \jpsi$ $\chi^2_{vtx}/\text{ndf} $		& 1.10 		& 11.28 		& 1.16  \\
 %$ K$ $\chisqip $		& 0.84 		& 62.99 		& 0.71  		&	$ \Bz$ $\chisqip $		& 1.11 		& 14.35 		& 1.24  \\
-%$ \jpsi$ $\chi^2_{FD} $		& 0.60 		& 55.41 		& 0.62  		&	$ \Bz$ $\chi^2_{FD} $		& 0.93 		& 25.65 		& 1.21  \\
+%$ \jpsi$ $\chi^2_{\rm FD} $		& 0.60 		& 55.41 		& 0.62  		&	$ \Bz$ $\chi^2_{\rm FD} $		& 0.93 		& 25.65 		& 1.21  \\
 %$ \Bz$ $\chi^2_{vtx}/\text{ndf} $		& 0.56 		& 74.60 		& 0.61  		&	$ K$ $\pt $		& 0.82 		& 14.26 		& 0.61  \\
-%$ \pi$ $\pt $		& 0.55 		& 34.94 		& 0.48  		&	$ \jpsi$ $\chi^2_{FD} $		& 0.69 		& 23.85 		& 0.63  \\
-%$ \Kstar$ $\chi^2_{FD} $		& 0.34 		& 64.88 		& 0.41  		&	$ K$ $\chisqip $		& 0.56 		& 23.59 		& 0.52  \\
+%$ \pi$ $\pt $		& 0.55 		& 34.94 		& 0.48  		&	$ \jpsi$ $\chi^2_{\rm FD} $		& 0.69 		& 23.85 		& 0.63  \\
+%$ \Kstar$ $\chi^2_{\rm FD} $		& 0.34 		& 64.88 		& 0.41  		&	$ K$ $\chisqip $		& 0.56 		& 23.59 		& 0.52  \\
 %$ \pi$ $\chisqip $		& 0.32 		& 56.92 		& 0.30  		&	$ \Bz\text{ $		& 0.53 		& 24.50 		& 0.52  \\
 %$ \Bz$ $\chisqip $		& 0.30 		& 52.17 		& 0.30  		&	$ \jpsi$ $\chisqip $		& 0.37 		& 23.54 		& 0.38  \\
-%$ \jpsi$ $\chi^2_{vtx}/\text{ndf} $		& 0.07 		& 18.35 		& 0.07  		&	$ \Kstar$ $\chi^2_{FD} $		& 0.09 		& 23.66 		& 0.07  \\
+%$ \jpsi$ $\chi^2_{vtx}/\text{ndf} $		& 0.07 		& 18.35 		& 0.07  		&	$ \Kstar$ $\chi^2_{\rm FD} $		& 0.09 		& 23.66 		& 0.07  \\
 %$ K$ $\pt $		& 0.03 		& 43.58 		& 0.03  		&	$ \pi$ $\chisqip $		& 0.01 		& 19.89 		& 0.01  \\
 
 
-\hline
-\end{tabular}
-\label{tab:RKst_nnInputs}
-\end{table}
+%\end{tabular}
+%\label{tab:RKst_nnInputs}
+%\end{table}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{RKst/figs/Training/electrons/correlation.pdf}
-\includegraphics[width=0.8\textwidth]{RKst/figs/Training/muons/correlation.pdf}
-\caption{Graphical representation of correlation matrix between truth and neural network inputs.
-Column/row number 1 is correlation to the truth (whether candidate is signal or background). All
-others give correlation between inputs with numbering scheme corresponding to the id column of
-Tab.~\ref{tab:RKst_nnInputs}. Correlation is calculated using all events without distinguishing signal and
-background.}
-\label{fig:Rkst_nnCorrelation}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.8\textwidth]{RKst/figs/Training/electrons/correlation.pdf}
+%\includegraphics[width=0.8\textwidth]{RKst/figs/Training/muons/correlation.pdf}
+%\caption{Graphical representation of correlation matrix between truth and neural network inputs.
+%Column/row number 1 is correlation to the truth (whether candidate is signal or background). All
+%others give correlation between inputs with numbering scheme corresponding to the id column of
+%Tab.~\ref{tab:RKst_nnInputs}. Correlation is calculated using all events without distinguishing signal and
+%background.}
+%\label{fig:Rkst_nnCorrelation}
+%\end{figure}
 %
 \begin{figure}
 \centering
@@ -639,47 +673,46 @@ from background and that the training converged properly.
 
 It can happen that too much information is given to the classifier, which becomes able to 
 calculate the invariant mass of the candidates from its inputs. This could generate fake peaks and it is therefore
-important to check for correlations between the \Bz mass and the NN output. Figure~\ref{fig:RKst_NNprofiles} reports
-plots of the average NN output as a function of the \Bz mass on sideband data and simulated signal events.
+important to check for correlations between the \Bz mass and the neural-network output. Figure~\ref{fig:RKst_NNprofiles} reports
+plots of the average neural-network output as a function of the \Bz mass on sideband data and simulated signal events.
 The distributions are flat showing that no significant correlation is present.
 
 
 \subsection{Optimisation}
 \label{sec:optimisation}
 
+\begin{figure}[t!]
+\centering
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_MM-q2central/fitB_MM_0.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_EE-q2central/fitB_EE_0.pdf}
+\caption{Fit to the data sidebands performed to estimate the amount of residual background in the
+signal mass window for (left) muons and (right) electrons. The region corresponding to the dashed line is excluded from the fit.}
+\label{fig:sideband_fit}
+\end{figure}
+
 In order to optimise the requirements on the \mbcm and the neural network output the expected
 signal significance, $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, is maximised,
 where $N_\mathrm{S}$ ($N_\mathrm{B}$) is number of rare signal (background) candidates.
 When the BCM requirement is applied, the optimisation is performed in a three-dimensional space
-($t_{MVA}$, $a_{\rm BCM}$, $b_{\rm BCM}$) where $t_{MVA}$ is the NN output threshold below which
+($t_{MVA}$, $a_{\rm BCM}$, $b_{\rm BCM}$) where $t_{MVA}$ is the neural-network output threshold below which
 a candidate is considered background, and $a_{\rm BCM}$ and $b_{\rm BCM}$ are the parameters of the BCM
-cut described in Sec.~\ref{sec:HOP}. Otherwise, only the MVA cut is optimised (for all muons samples and the high-\qsq electron sample).
-%
-The number of signal events accepted for a given NN output cut is determined with a data-driven method
-with exploits the resonant channel. First, as an arbitrary number of events can be simulated, this has to be rescaled
-to the expected yield. This is done by fitting \decay{\Bz}{\Kstarz(\jpsi\to\ll)} candidates after pre-selection,
-including all requirements except MVA. The resonant yield is then scaled down by the expected ratio between
-the rare and the resonant channels. The number of background events is instead derived by fitting the combinatorial
-background in the sideband with an exponential function and extrapolating the fit function below the signal peak.
-%
-The dependence of the figure-of-merit for both the electron and muon trainings
-are shown in Fig.~\ref{fig:RKst_FOM}, where the red line indicate the chosen cut: 0.70 for both samples.
-Curves of signal efficiency versus background rejection are shown in Fig.~\ref{fig:RKst_FOM}.
-%
-%Using the described MVA cuts the signal efficiency is $\sim 95\%$ for the muon channels
-%and $\sim 93\%$ for the electron channels (for more details see Sec.~\ref{sec:RKst_efficiency}),
-%while the background rejections is $\sim 97\%$ on both samples.
-%
-After full selection about $\sim 3\%$ of events still contain multiple candidates
-which are removed at random keeping only a single candidate per event.
-%
+cut described in Sec.~\ref{sec:HOP}. Otherwise, only the MVA cut is optimised 
+(for all muons samples and the high-\qsq electron sample).
+
+%The number of signal events accepted for a given neural-network output cut is determined with a data-driven method
+%with exploits the resonant channel. First, as an arbitrary number of events can be simulated, this has to be rescaled
+%to the expected yield. This is done by fitting \decay{\Bz}{\Kstarz(\jpsi\to\ll)} candidates after pre-selection,
+%including all requirements except MVA. The resonant yield is then scaled down by the expected ratio between
+%the rare and the resonant channels. The number of background events is instead derived by fitting the combinatorial
+%background in the sideband with an exponential function and extrapolating the fit function below the signal peak.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf}
-\caption{Average value of NN output as a function of \Bz mass for data
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_bkg.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/EE_wNB_vs_MPV_sgn.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Training/MM_wNB_vs_MPV_sgn.pdf}
+\caption{Average value of neural-network output as a function of \Bz mass for data
 sideband (top) and simulated signal (bottom) events for the electron (left) and muon (right) training.}
 \label{fig:RKst_NNprofiles}
 \end{figure}
@@ -687,23 +720,58 @@ sideband (top) and simulated signal (bottom) events for the electron (left) and 
 %
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_FoM.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_FoM.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/EE_ROC.pdf}
-\includegraphics[width=0.46\textwidth]{RKst/figs/Training/MM_ROC.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_EE-q2central/EE_Optimize_t_MVA.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_MM-q2central/MM_Optimize_t_MVA.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_EE-q2central/EE_ROC_t_MVA.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_MM-q2central/MM_ROC_t_MVA.pdf}
 \caption{(top) Dependence of figure-of-merit on the requirement on neural network output.
-Vertical lines corresponds to the chosen cuts. (bottom) Signal efficiency versus the 
-background rejection. Plots correspond to the electron (left) and muons (right) samples.}
+(bottom) Signal efficiency versus background rejection.
+Plots correspond to the electron (left) and muons (right) samples.}
 \label{fig:RKst_FOM}
 \end{figure}
+
+The number of signal events accepted by a given requirement is determined using a data-driven method.
+Firstly, \BdToKstJPsll candidates selected with all the requirements except for the MVA, and BCM when applicable,
+cut are fitted to determine the total yield. 
+% (see Fig.~\ref{fig:RKst_sW_mass}).
+This number is then scaled by the ratio of the signal to \BdToKstJPsll branching fractions and
+the efficiency ratio as a function of the cut
+%
+$$N_{\mathrm{S}} = N_{\jpsi(\ell\ell)} \cdot
+\frac{\BR(\mathrm{S})}{\BR(\BdToKstJPsll)} \cdot
+\frac{\varepsilon_{\mathrm{S}}}{\varepsilon_{\jpsi(\ell\ell)}} \, .$$
+
+The number of background events is also derived from data by fitting the background in the lower- and upper-mass sidebands with an exponential function, and extrapolating the residual yield in the signal region (Fig.~\ref{fig:sideband_fit}).
+Because the background shape changes as a function of the requirement that is being optimised, the sidebands are refitted for each considered cut value.
+%
+%$$N_{\mathrm{B}} \propto N_{\mKpill < 5000 \,||\, \mKpill > 5500} \, .$$
+
+The cut optimisation is performed in a signal mass window of $\pm100~\mevcc$ around the nominal \Bz mass for muons, and between 5000 and 5400~\mevcc~ for electrons.
+The average result of the k-fold optimisations is taken as the nominal requirement.
+%
+%
+%
+The variation of the signal and background efficiency, signal purity and figure-of-merit as a function of the neural-network output
+requirement for the central-\qsq is shown in Fig.~\ref{fig:RKst_FOM}
+together with curves of the background rejection as a function of the signal efficiency.
+%
+%Using the described MVA cuts the signal efficiency is $\sim 95\%$ for the muon channels
+%and $\sim 93\%$ for the electron channels (for more details see Sec.~\ref{sec:RKst_efficiency}),
+%while the background rejections is $\sim 97\%$ on both samples.
+%
+After full selection about $\sim 3\%$ of events still contain multiple candidates
+which are removed at random keeping only a single candidate per event.
+
+
 
 \section{Selection summary}
 
 Table~\ref{tab:sel_summary} summarises the requirements applied for each cut after stripping.
 
-\begin{table}[t!]
+\begin{table}[ht!]
 \begin{center}
-\caption{Summary of the selection requirements.}
+\caption{Summary of the selection requirements. The last column
+indicates to  which \qsq intervals the requirement is applied.}
 \label{tab:sel_summary}
 \begin{footnotesize}
 \renewcommand\arraystretch{1.4}
@@ -722,27 +790,34 @@ ID & \Kstarz & $|m(\kaon\pi) - m_{\Kstarz}^{PDG}| < 100\mevcc$ & all \\
 	& $\mu$	& $\texttt{ProbNNmu} > 0.2$ & all \mm \\
 	& $e$	& $\texttt{ProbNNe} > 0.2$ & all \ee \\
 	\hline
-	\multirow{15}{*}{BKG}
+	\multirow{19}{*}{BKG}
 	& Swap & $|m((\decay{h}{\mu})\mu) - m_{\jpsi, (\psitwos)}^{PDG}| > 60\mevcc$ & all \\
 	& \BuToKll & $max(m(K\ell\ell),m((\decay{\pi}{\kaon})\ell\ell)) < 5.1\gevcc$ & all \\
 	& \BsToPhill & $m(K(\decay{\pi}{K})) > 1040~\mevcc$ & all \\
 	& \decay{\Bd}{\Dm\ep\nu} & $|\ctl| < 0.8$ & except $ee$ high- \\
 %	& \BdToKstGee & $\sigma_{Z}(\epem) < 30~\rm{mm}$ & only low- \\
-	& \BdToKstGee & $\sigma_{z}(\ee) < 30~\rm{mm}$ & except $\gamma(ee)$ \\
+	& \BdToKstG & $\sigma_{z}(\ee) < 30~\rm{mm}$ & except $\gamma(ee)$ \\
 \cline{2-4}
-	& \multirow{8}{*}{Comb}	& $\texttt{NNout} > 0.75$ & $\mu\mu$ low- \\
-	&					& $\texttt{NNout} > 0.63$ & $ee$ low- \\
-	& 					& $\texttt{NNout} > 0.90$ & $\mu\mu$ central- \\
-	&					& $\texttt{NNout} > 0.93$ & $ee$ central- \\
-	& 					& $\texttt{NNout} > 0.69$ & $\mu\mu$ high- \\
+	& \multirow{10}{*}{Comb}	& $\texttt{NNout} > 0.68$ & $\mu\mu$ low- \\
+	&					& $\texttt{NNout} > 0.64$ & $ee$ low- \\
+	& 					& $\texttt{NNout} > 0.85$ & $\mu\mu$ central- \\
+	&					& $\texttt{NNout} > 0.97$ & $ee$ central- \\
+	& 					& $\texttt{NNout} > 0.40$ & $\mu\mu$ high- \\
 	&					& $\texttt{NNout} > 0.93$ & $ee$ high- \\
 \cline{3-4}
-	& 					& $\texttt{NNout} > 0.13$ & $\jpsi(\mu\mu)$ \\
+	& 					& $\texttt{NNout} > 0.06$ & $\jpsi(\mu\mu)$ \\
 	&					& $\texttt{NNout} > 0.20$ & $\jpsi(ee)$\\
+\cline{3-4}
+	&					& $\texttt{NNout} > 0.16$ & $\gamma(ee)$ \\
+%	&					& $\texttt{NNout} > 0.36$ & \JPsee \mKpiee \\
+	&					& $\texttt{NNout} > 0.68$ & $\psitwos(ee)$ \\
+	
 \cline{2-4}
-	& \multirow{2}{*}{Comb and Part-reco}	& $\mbcm > 4374 + 65 \cdot \log(\chi^2_{FD})$ & $ee$ low- \\
-	&							& $\mbcm > 4291 + 72 \cdot \log(\chi^2_{FD})$ & $ee$ central- \\
-\hline
+	& \multirow{3}{*}{Comb, part-reco}	& $\mbcm > 4680 + 31 \cdot \log(\chisq_{\rm FD})$ & $ee$ low- \\
+	&							& $\mbcm > 4437 + 64 \cdot \log(\chisq_{\rm FD})$ & $ee$ central- \\
+\cline{3-4}	
+	&							& $\mbcm > 3380 + 140 \cdot \log(\chisq_{\rm FD})$ & $\gamma(ee)$ \\
+%	&							& $\mbcm > 2714 + 164 \cdot \log(\chisq_{\rm FD})$ & $\jpsi(ee)$ \\	
 \end{tabular}
 \end{footnotesize}
 \end{center}

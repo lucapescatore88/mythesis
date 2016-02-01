@@ -9,7 +9,7 @@ and $\theta_h$ is defined as the angle between the proton and the \Lz baryon dir
 \Lb rest frame. The third angle is the angle between the dimuon and \Lz decay planes, which is integrated
 over in this analysis. % (for unpolarized production we are sensitive only to difference in azimuthal angles)
 This chapter describes a measurement of two forward-backward asymmetries in the leptonic
-($A_{\rm FB}^\ell$) and in the hadronic ($A_{\rm FB}^h$) systems. These forward-backward asymmetries
+($\afbl$) and in the hadronic ($\afbh$) systems. These forward-backward asymmetries
 are defined as
 \begin{align}
 A_{\rm FB}^i(\qsq)&=\frac{\int_0^1 \frac{\deriv^2\Gamma}{\deriv\qsq\,\deriv\!\cos\theta_i} \deriv\!\cos\theta_i-
@@ -26,9 +26,9 @@ $d\Gamma / d\qsq$ is rate integrated over the angles.
 \label{fig:Lb_angles}
 \end{figure}
 
-The $A_{\rm FB}^\ell$ observable was also measured by LHCb in $\Bz\ra\Kstarz\mumu$ decays
+The $\afbl$ observable was also measured by LHCb in $\Bz\ra\Kstarz\mumu$ decays
 which are going through the same quark level transition as $\Lb\to\Lz\mumu$ decays. Instead the hadronic
-asymmetry, $A_{\rm FB}^h$, is interesting only in the \Lb case as it is zero by definition
+asymmetry, $\afbh$, is interesting only in the \Lb case as it is zero by definition
 in \Bz decays, where \Kstarz decays strongly.
 
 \section{One-dimensional angular distributions}
@@ -148,7 +148,7 @@ A_{\rm FB}^{\ell}(q^{2})
 %\begin{align}
 %\frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d\cos\theta_\ell}=&
 %\frac{3}{8}\frac{d\Gamma}{dq^2}\left(1+\cos^2\theta_\ell\right)U^{V+A}+
-%\frac{d\Gamma}{dq^2}A_{\rm FB}^\ell\cos\theta_\ell+
+%\frac{d\Gamma}{dq^2}\afbl\cos\theta_\ell+
 %\frac{3}{8}\sin^2\theta_\ell v^2\left(L^{V+A}\right) \nonumber \\
 %&\left(U^{V}+L^{V}+S^{A}\right)\frac{3m_\ell^2}{q^2}\left(\frac{1}{8}-\frac{3}{8}\cos^2\theta_\ell\right)
 %\end{align}
@@ -166,7 +166,7 @@ and
 \begin{align}
 \frac{d\Gamma}{dq^2d\cos\theta_\ell}=&
 \frac{v^2}{2} \left[ \frac{3}{8}\left(1+\cos^2\theta_\ell\right)U^{V+A}+
-A_{FB}^\ell\cos\theta_\ell(U^{V+A} + L^{V+A})+
+\afbl\cos\theta_\ell(U^{V+A} + L^{V+A})+
 \frac{3}{4}\sin^2\theta_\ell \left(L^{V+A}\right) \right].
 \label{eq:differentialBR}
 \end{align}
@@ -177,20 +177,20 @@ Equations~\ref{eq:totalBR} and \ref{eq:differentialBR} can be then combined to a
 %\frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d\cos\theta_\ell}=
 \frac{d\Gamma}{dq^2d\cos\theta_\ell}=
 \frac{d\Gamma}{dq^2}&\left[
-\frac{3}{8}\left(1+\cos^2\theta_\ell\right)\frac{U^{V+A}}{U^{V+A}+L^{V+A}}+A_{\rm FB}^\ell\cos\theta_\ell\right . +
+\frac{3}{8}\left(1+\cos^2\theta_\ell\right)\frac{U^{V+A}}{U^{V+A}+L^{V+A}}+\afbl\cos\theta_\ell\right . +
  \nonumber \\
 & \left. \frac{3}{4}\sin^2\theta_\ell\frac{L^{V+A}}{U^{V+A}+L^{V+A}}\right].
 \end{align}
 The amplitude combination in the last term can be viewed as ratio between longitudinal and sum of
 longitudinal and unpolarised transverse contributions and therefore one can define the longitudinal fraction
 \begin{equation}
-f_{\rm L}=\frac{L^{V+A}}{U^{V+A}+L^{V+A}},
+\fl=\frac{L^{V+A}}{U^{V+A}+L^{V+A}},
 \end{equation}
 which leads to the functional form used in the analysis
 \begin{align}
 \frac{d\Gamma}{dq^2d\cos\theta_\ell}=
-\frac{d\Gamma}{dq^2}&\left[  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-f_L)+A_{\rm FB}^\ell\cos\theta_\ell +
-   \frac{3}{4}\sin^2\theta_\ell f_{\rm L}\right]. 
+\frac{d\Gamma}{dq^2}&\left[  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-\fl)+\afbl\cos\theta_\ell +
+   \frac{3}{4}\sin^2\theta_\ell \fl\right]. 
    \label{eq:afbLTh}
 \end{align}
 
@@ -200,12 +200,12 @@ Using the same steps the proton helicity distribution is given in Ref.~\cite{Gut
      {dq^2\,d\cos\theta_h} 
 ={\rm Br}(\Lambda \to p\pi^{-})
  \frac{d\Gamma(\Lambda_b \to \Lambda\, \ell^{+}\ell^{-})}{d q^2}
-\Big(\frac{1}{2}+A_{\rm FB}^h\cos\theta_h\Big) \,,
+\Big(\frac{1}{2}+\afbh\cos\theta_h\Big) \,,
 \label{eq:afbBTh}
 \end{equation}
-and $A_{\rm FB}^h$ is defined as
+and $\afbh$ is defined as
 \begin{equation}
-A_{\rm FB}^h=\frac{1}{2}\alpha_{\Lz}P_z^\Lz(q^2),
+\afbh=\frac{1}{2}\alpha_{\Lz}P_z^\Lz(q^2),
 \end{equation} 
 where $P_z^\Lz(q^2)$ is the polarisation of the daughter baryon, \Lz,
 and $\alpha_{\Lz} = 0.642 \pm 0.013$~\cite{PDG2014} is the \Lz decay asymmetry parameter.
@@ -247,7 +247,7 @@ and $\alpha_{\Lz} = 0.642 \pm 0.013$~\cite{PDG2014} is the \Lz decay asymmetry p
 %enter in addition to the ones we already discussed.
 
 %While lepton side observables are well known from meson decays, hadron side is unexplored. To get
-%feeling how sensitive $A_{FB}^h$ is to new physics, we plot together three different cases: first,
+%feeling how sensitive $\afbh$ is to new physics, we plot together three different cases: first,
 %SM using predictions and numerical values from Ref.~\cite{Gutsche:2013pp}, scenario in which Wilson
 %coefficients are same as in the SM, just sign of the $C_7$ is flipped and finally modifying $C_7$,
 %$C_9$ and $C_{10}$ by amount compatible with fit to meson data including $P_5'$ in
@@ -257,7 +257,7 @@ and $\alpha_{\Lz} = 0.642 \pm 0.013$~\cite{PDG2014} is the \Lz decay asymmetry p
 %\begin{figure}
 %\centering
 %\includegraphics[width=0.7\textwidth]{Lmumu/figs/AFBhPrediction}
-%\caption{Expectation for $P_z^\Lz$ which is proportional to $A_{FB}^h$ in the SM (black line), SM
+%\caption{Expectation for $P_z^\Lz$ which is proportional to $\afbh$ in the SM (black line), SM
 %like scenario with flipped sign on $C_7$ (red line) and scenario with all three Wilson coefficients
 %modified according to Ref.~\cite{Descotes-Genon:2013wba} (blue line). There is little difference
 %between those tree scenarious.}
@@ -314,15 +314,15 @@ through the spin-density matrix. % in Eq.~\ref{eq:spinDensity}.
 %, while the angle between the decay planes $\chi$ is changed to the polar angles of proton and positive muon.
 Integrating over all the angles but $\theta_\ell$ results in 
 the same distribution as in the unpolarised case (Eq.~\ref{costheta2}). Therefore, in the case of uniform
-efficiency, the lepton side forward-backward asymmetry, $A_{FB}^\ell$, is unaffected by the production
+efficiency, the lepton side forward-backward asymmetry, $\afbl$, is unaffected by the production
 polarisation. To be able to estimate the effect of the production polarisation in the case of non-uniform efficiency, 
 the differential distribution in $\theta$ and $\theta_\ell$ is also derived, which in the massless leptons
 limit becomes (up to a  constant multiplicative factor)
 %
 \begin{align}
 \frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d\cos\theta d\cos\theta_\ell}=&
-\frac{d\Gamma}{dq^2}\left\{  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-f_L)+A_{FB}^\ell\cos\theta_\ell +
-   \frac{3}{4}\sin^2\theta_\ell f_L+\right. \nonumber \\
+\frac{d\Gamma}{dq^2}\left\{  \frac{3}{8}\left(1+\cos^2\theta_\ell\right)(1-\fl)+\afbl\cos\theta_\ell +
+   \frac{3}{4}\sin^2\theta_\ell \fl+\right. \nonumber \\
 &P_b\cos\theta\left[ -\frac{3}{4}\sin\theta_\ell^2O_{Lp}+
   \frac{3}{8}\left(1+\cos\theta_\ell^2\right)O_P\right. \nonumber \\
 &\left.\left.-\frac{3}{8}\cos\theta_\ell O_{UVA} \right]\right\}\,,
@@ -338,16 +338,16 @@ O_{UVA}=&\frac{U^{VA}}{U^{V+A}+L^{V+A}}. \nonumber
 In the massless leptons approximation two of these quantities are related to the hadron side
 forward-backward asymmetry as
 \begin{equation}
-\frac{1}{2}\alpha_\Lambda \left(O_P+O_{Lp}\right)=A_{FB}^h\,.
+\frac{1}{2}\alpha_\Lambda \left(O_P+O_{Lp}\right)=\afbh\,.
 \end{equation}
 %
 Following the same steps as for the lepton case, after integrating over all the angles but $\theta_h$ one finds
-that the hadron side, $A_{FB}^h$, is also unaffected by the production polarisation in case of uniform
+that the hadron side, $\afbh$, is also unaffected by the production polarisation in case of uniform
 efficiency. The differential distribution in $\theta$ and $\theta_h$ has the form
 \begin{align}
 \frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d(\cos\theta) d(\cos\theta_h)}=
-\frac{d\Gamma}{dq^2}&\left[1+2A_{FB}^h\cos\theta_h+P_b\left(O_P-O_{Lp}\right)\cos\theta\right.\nonumber \\
-&\left.+\alpha_\Lz P_b\left(1-2f_L\right)\cos\theta\cos\theta_h\right].
+\frac{d\Gamma}{dq^2}&\left[1+2\afbh\cos\theta_h+P_b\left(O_P-O_{Lp}\right)\cos\theta\right.\nonumber \\
+&\left.+\alpha_\Lz P_b\left(1-2\fl\right)\cos\theta\cos\theta_h\right].
 \label{eq:hadron2D}
 \end{align}
 
@@ -359,7 +359,7 @@ efficiency. The differential distribution in $\theta$ and $\theta_h$ has the for
 In order to use these distributions, expectations for the three additional observables,
 which do not enter one-dimensional distributions, are needed.
 Expectations are calculated using form factors and numerical inputs from Ref.~\cite{Gutsche:2013pp}
-and are shown in Tab.~\ref{tab:obsGutsche1}.
+and are listed in Appendix~\ref{ap:LbLmumuAngular}~in Tab.~\ref{tab:obsGutsche1}.
 %
 %In this calculation the massless lepton limit
 %is used and compared to the
@@ -371,31 +371,13 @@ and are shown in Tab.~\ref{tab:obsGutsche1}.
 %from Ref.~\cite{Detmold:20VAvy} by substituting those instead of form factors from Ref.~\cite{Gutsche:2013pp}.
 %These results are in table \ref{tab:lQCD1}.
 %
-\begin{table}
-\begin{center}
-\begin{tabular}{lcccccc}\hline
-\qsq [$GeV^2/c^2$]  & $A_{FB}^\ell$ & $P_z^\Lz$  & $f_L$   & $O_P$  & $O_{Lp}$ & $O_{UVA}$ \\ \hline
-0.1 -- 2.0          &  0.082     & -0.9998    & 0.537   & -0.463 & -0.537   &  0.055  \\ 
-2.0 -- 4.0          & -0.032     & -0.9996    & 0.858   & -0.142 & -0.857   & -0.021  \\ 
-4.0 -- 6.0          & -0.153     & -0.9991    & 0.752   & -0.247 & -0.752   & -0.102  \\ 
-V.0 -- VA.5        & -0.348     & -0.9834    & 0.508   & -0.478 & -0.505   & -0.239  \\ 
-15.0 -- 16.0        & -0.384     & -0.9374    & 0.428   & -0.524 & -0.413   & -0.280  \\ 
-16.0 -- 18.0        & -0.377     & -0.8807    & 0.399   & -0.513 & -0.368   & -0.294  \\ 
-18.0 -- 20.0        & -0.297     & -0.6640    & 0.361   & -0.404 & -0.260   & -0.314  \\ \hline 
-1.0 -- 6.0          & -0.040     & -0.9994    & 0.830   & -0.170 & -0.830   & -0.027  \\ 
-15.0 -- 20.0        & -0.339     & -0.7830    & 0.385   & -0.461 & -0.3A   & -0.302  \\ \hline
-\end{tabular}
-\end{center}
-\caption{Prediction for angular observables entering two-dimensional angular distributions.
-Prediction is based on covariant quark model form factors from Ref.~\cite{Gutsche:2013pp}.}
-\label{tab:obsGutsche1}
-\end{table}
+%
 %
 %
 %\begin{table}
 %\begin{center}
 %\begin{tabular}{lcccccc}\hline
-%\qsq [$GeV^2/c^2$]  & $A_{FB}^\ell$ & $P_z^\Lz$  & $f_L$   & $O_P$  & $O_{Lp}$ & $O_{UVA}$ \\ \hline
+%\qsq [$GeV^2/c^2$]  & $\afbl$ & $P_z^\Lz$  & $\fl$   & $O_P$  & $O_{Lp}$ & $O_{UVA}$ \\ \hline
 %0.1 -- 2.0          &  0.023     & -0.963    & 0.904   & -0.096 & -0.867   &  0.015  \\ 
 %2.0 -- 4.0          & -0.085     & -0.962    & 0.870   & -0.VA8 & -0.834   & -0.058  \\ 
 %4.0 -- 6.0          & -0.163     & -0.962    & 0.771   & -0.A4 & -0.739   & -0.V1  \\ 
@@ -415,11 +397,11 @@ Prediction is based on covariant quark model form factors from Ref.~\cite{Gutsch
 For completeness, the differential distribution in $\cos\theta_\ell$ and$\cos\theta_h$ has the form
 \begin{align}
 \frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d\cos\theta_h d\cos\theta_\ell}=&
-\frac{3}{8}+\frac{6}{16}\cos^2\theta_\ell(1-f_L)-\frac{3}{16}\cos^2\theta_\ell f_L
+\frac{3}{8}+\frac{6}{16}\cos^2\theta_\ell(1-\fl)-\frac{3}{16}\cos^2\theta_\ell \fl
 +A_{FB}^l\cos\theta_\ell+ \nonumber \\
-& \left(\frac{3}{2}A_{FB}^h-\frac{3}{8}\alpha_\Lz O_P\right)\cos\theta_h
--\frac{3}{2}A_{FB}^h\cos^2\theta_\ell\cos\theta_h-\frac{3}{16}f_L+ \nonumber \\
-& \frac{9}{16}f_L\sin^2\theta_\ell+\frac{9}{8}\alpha_\Lz \cos^2\theta_\ell\cos\theta_h O_P- \nonumber \\
+& \left(\frac{3}{2}\afbh-\frac{3}{8}\alpha_\Lz O_P\right)\cos\theta_h
+-\frac{3}{2}\afbh\cos^2\theta_\ell\cos\theta_h-\frac{3}{16}\fl+ \nonumber \\
+& \frac{9}{16}\fl\sin^2\theta_\ell+\frac{9}{8}\alpha_\Lz \cos^2\theta_\ell\cos\theta_h O_P- \nonumber \\
 & \frac{3}{2}\alpha_\Lz \cos\theta_\ell\cos\theta_h O_{UVA}.
 \label{eq:2DcosThetaLandB}
 \end{align}
@@ -440,8 +422,9 @@ Figure~\ref{fig:avgResol} shows the angular resolution in two-dimensional bins o
 \begin{table}[h]
 \centering
 \caption{Average angular resolutions integrated over the full interval and the full available \qsq.}
-\begin{tabular}{l|cc}
-Observable      & DD & LL     \\ \hline
+\begin{tabular}{$c|^c^c}
+\rowstyle{\bfseries}
+Observable      & Downstream & Long     \\ \hline
 $\cos \theta_\ell$ & 0.015 & 0.010 \\
 $\cos \theta_h$ & 0.066 & 0.014 \\
 \end{tabular}

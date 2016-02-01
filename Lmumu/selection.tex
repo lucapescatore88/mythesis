@@ -61,16 +61,17 @@ in a 100~\mevcc~interval around the known \jpsi mass~\cite{PDG2014}.
 
 \begin{table}[h]
 \centering
-      \begin{tabular}{lc}\hline
+      \begin{tabular}{$l^c}
+      \rowstyle{\bfseries}
 Particle     			&  	Requirement          \\ \hline
 \multirow{5}{*}{\Lb}            	&  	$4.6 < m(p\pi\mu\mu) < 7.0$ \gevcc \\
-            				& 	DIRA$>0.9999$          \\
+            				& 	\texttt{DIRA}$>0.9999$          \\
 					& 	\chisqip$<16.0$               \\
-            				& 	$\chi^2_{\rm FD}>121.0$             \\
-            				& 	$\chi^2_{vtx}$/ndf$<8.0$          \\ \hline
-\multirow{3}{*}{\Lz}      	& 	$\chi^2_{vtx}$/ndf$<30.0(25.0)$              \\
+            				& 	$\chisq_{\rm FD}>121.0$             \\
+            				& 	$\chisq_{vtx}$/ndf$<8.0$          \\ \hline
+\multirow{3}{*}{\Lz}      	& 	$\chisq_{vtx}$/ndf$<30.0(25.0)$              \\
          				& 	Decay time $>2$ ps              \\
-					& 	$|m(p\pi)-m^PDG_\Lz|< 35(64)$ \gevc        \\ \hline
+					& 	$|m(p\pi)-m^{\rm PDG}_\Lz|< 35(64)$ \gevc        \\ \hline
 \multirow{3}{*}{$p$/$\pi$}	& 	$p>2$ \gevc           \\ 
 					& 	$\pt>250$ \mevc           \\  
             				& 	\chisqip$>9(4)$              \\ \hline
@@ -82,7 +83,7 @@ Particle     			&  	Requirement          \\ \hline
             				& 	\verb!PID!$\mu>-3$		\\
             				& 	\chisqip$>9.0$        \\      \hline
 \multirow{2}{*}{Dimuon}     & 	$\chi^2_{vtx}$/ndf$<12.0$          \\
-            				&	$m(\mu\mu)<7.1$ \gevcc         \\ \hline
+            				&	$m(\mu\mu)<7.1$~\gevcc         \\ \hline
       \end{tabular}
 \caption{Summary of pre-selection requirements. Where two values are given,
 the main one applies to long candidates and the one in parenthesis to downstream candidates.}
@@ -96,7 +97,7 @@ the main one applies to long candidates and the one in parenthesis to downstream
 The final selection is performed using a neural network (NN) classifier based on the NeuroBayes 
 package~\cite{Feindt:2006pm,feindt-2004}. The input to the neural network consists of 14 variables carrying 
 information about the kinematics of the decay, the quality of tracks and vertices and the PID of the muons.
-The list of inputs is reported in Tab.~\ref{tab:Lb_nnInputs}, together with information 
+The list of the 10 most significant inputs is reported in Tab.~\ref{tab:Lb_nnInputs}, together with information 
 about the importance of each input.
 %
 %In appendix \ref{app:MC_data_comp} we report comparisons between the variable used in data and Monte Carlo.
@@ -111,9 +112,9 @@ candidate type (long or downstream). This effectively corresponds to making a se
 training for the two categories. 
 %Further details on the definition and calculation of the
 %variables importance is available in Ref.~\cite{LHCb-ANA-2011-094}.
-The graphical representation of the correlation matrix is shown in Fig.~\ref{fig:Lb_nnCorrelation},
-where the variable with ID$ = 1$ is the neural network output and the IDs of the other variables are 
-listed in Tab.~\ref{tab:Lb_nnInputs}.
+%The graphical representation of the correlation matrix is shown in Fig.~\ref{fig:Lb_nnCorrelation},
+%where the variable with ID$ = 1$ is the neural network output and the IDs of the other variables are 
+%listed in Tab.~\ref{tab:Lb_nnInputs}.
 
 The NN is trained using representative samples of signal and background.  A sample of simulated 
 $\Lb\to\Lz\mumu$ events is used as a proxy for the signal, while for the background a representative sample
@@ -140,7 +141,7 @@ Other variables that contribute significantly are the \chisqip of \Lb, \Lz and m
 the separation between the \Lb and \Lz vertices and, finally, the muon PID.
 
 Figure~\ref{fig:Lb_nnDist} shows distributions of neural network output for the signal and background samples
-and purity, $P=N(\mathrm{signal})/N(\mathrm{background})$, as a function of the neural network output.
+and purity, $P=N_{\mathrm{sig}}/N_{\mathrm{bkg}}$, as a function of the neural network output.
 The distributions from test samples are also overlaid in order to check for overtraining. 
 The distributions follow the same shape but with different fluctuations
 indicating no significant overtraining. In general it can be concluded that the neural network
@@ -148,59 +149,71 @@ is able to separate signal from background and the training converged properly.
 %
 \begin{table}
 \centering
-\caption{Summary of inputs to the neural network in order of importance.
-Column ``ID'' lists the indices used for the correlation matrix (see Fig.~\ref{fig:Lb_nnCorrelation}).
+\caption{Summary of the 10 most significant inputs to the neural network in order of importance.
+%Column ``ID'' lists the indices used for the correlation matrix in Fig.~\ref{fig:Lb_nnCorrelation}.
 Column ``adds'' gives the significance added by a given input when it is added to the list of those
-ranked above. Finally, column ``only this'' provides the power of a given input alone and ``loss'' shows 
+ranked above. Column ``only this'' provides the power of a given input alone and ``loss'' shows 
 how much information is lost when removing only a given input.}
-\begin{tabular}{lcccc}\hline
-Input                     			& ID  & adds 		& only this & loss \\ \hline
-\Lz$_{DD}$ \pt                  		& 15 	& 143.11 		& 143.11 	& 29.20  \\
-$\chi^2_{\rm DTF}$       		& 2 	& 77.81 		& 134.00 	& 51.10  \\
-min(\chisqip $\mu$)             	& 7 	& 61.31 		& 113.62 	& 29.76  \\
-\chisqip \Lb                    		& 5 	& 52.94 		& 113.23 	& 40.98  \\
-\chisqip $\pi_{LL}$             	& 16 	& 20.29 		& 60.72 	& 12.82  \\
-min(PID $\mu$)                  	& 8 	& 17.91 		& 59.11 	& 13.44  \\
-$\tau_{\Lb}$       		        & 3 	& 16.24 		& 35.36 	& 11.24  \\
-\Lb DIRA                        		& 4 	& 12.28 		& 73.96 	& 9.98 	 \\
-\Lz$_{DD}$ flight distance      	& 14 	& 9.47 	  	& 86.75 	& 11.24  \\
-\chisqip \Lz$_{DD}$             	& 13 	& 10.58 		& 59.84 	& 8.88 	 \\
-max(\chisqip $\mu$)             	& 6 	& 9.51  		& 97.24 	& 8.15 	 \\
-\chisqip \Lz${}_{LL}$           	& 10 	& 7.31 		& 54.27 	& 10.32  \\
-max(PID $\mu$)                  	& 9 	& 6.99 		& 69.33 	& 6.87 	 \\
-$\pi_{LL}$ \pt                  		& 18 	& 6.13 		& 47.03 	& 7.12 	 \\
-\Lz${}_{LL}$ \pt         	    		& 12 	& 5.58 		& 49.64 	& 5.86 	 \\
-\chisqip $p_{LL}$               	& 17 	& 4.48 		& 53.01 	& 4.18 	 \\
-\chisqip $p_{DD}$               	& 20 	& 3.43 		& 55.09 	& 3.31 	 \\
-\Lz$_{LL}$ flight distance     	& 11 	& 0.87 		& 52.52 	& 0.86 	 \\
-$p_{DD}$ \pt                    		& 21 	& 0.74 		& 129.58 	& 0.75 	 \\
-\chisqip $\pi_{DD}$             	& 19 	& 0.24 		& 70.43 	& 0.24 	 \\
+\begin{tabular}{$l^c^c^c}
+\rowstyle{\bfseries}
+Input                     			& adds 		& only this & loss \\ \hline
+\Lz$_{\rm DD}$ \pt                  		& 143.11 		& 143.11 	& 29.20  \\
+$\chi^2_{\rm DTF}$       		& 77.81 		& 134.00 	& 51.10  \\
+min(\chisqip $\mu$)             	& 61.31 		& 113.62 	& 29.76  \\
+\chisqip \Lb                    		& 52.94 		& 113.23 	& 40.98  \\
+\chisqip $\pi_{\rm LL}$              	& 20.29 		& 60.72 	& 12.82  \\
+min(PID $\mu$)                   	& 17.91 		& 59.11 	& 13.44  \\
+$\tau_{\Lb}$       		        	& 16.24 		& 35.36 	& 11.24  \\
+\Lb \verb!DIRA!                         	& 12.28 		& 73.96 	& 9.98 	 \\
+\Lz$_{\rm DD}$ flight distance       	& 9.47 	  	& 86.75 	& 11.24  \\
+\chisqip \Lz$_{\rm DD}$              	& 10.58 		& 59.84 	& 8.88 	 \\
+%Input                     			& ID  & adds 		& only this & loss \\ \hline
+%\Lz$_{DD}$ \pt                  		& 15 	& 143.11 		& 143.11 	& 29.20  \\
+%$\chi^2_{\rm DTF}$       		& 2 	& 77.81 		& 134.00 	& 51.10  \\
+%min(\chisqip $\mu$)             	& 7 	& 61.31 		& 113.62 	& 29.76  \\
+%\chisqip \Lb                    		& 5 	& 52.94 		& 113.23 	& 40.98  \\
+%\chisqip $\pi_{LL}$             	& 16 	& 20.29 		& 60.72 	& 12.82  \\
+%min(PID $\mu$)                  	& 8 	& 17.91 		& 59.11 	& 13.44  \\
+%$\tau_{\Lb}$       		        & 3 	& 16.24 		& 35.36 	& 11.24  \\
+%\Lb DIRA                        		& 4 	& 12.28 		& 73.96 	& 9.98 	 \\
+%\Lz$_{DD}$ flight distance      	& 14 	& 9.47 	  	& 86.75 	& 11.24  \\
+%\chisqip \Lz$_{DD}$             	& 13 	& 10.58 		& 59.84 	& 8.88 	 \\
+%max(\chisqip $\mu$)             	& 6 	& 9.51  		& 97.24 	& 8.15 	 \\
+%\chisqip \Lz${}_{LL}$           	& 10 	& 7.31 		& 54.27 	& 10.32  \\
+%max(PID $\mu$)                  	& 9 	& 6.99 		& 69.33 	& 6.87 	 \\
+%$\pi_{LL}$ \pt                  		& 18 	& 6.13 		& 47.03 	& 7.12 	 \\
+%\Lz${}_{LL}$ \pt         	    		& 12 	& 5.58 		& 49.64 	& 5.86 	 \\
+%\chisqip $p_{LL}$               	& 17 	& 4.48 		& 53.01 	& 4.18 	 \\
+%\chisqip $p_{DD}$               	& 20 	& 3.43 		& 55.09 	& 3.31 	 \\
+%\Lz$_{LL}$ flight distance     	& 11 	& 0.87 		& 52.52 	& 0.86 	 \\
+%$p_{DD}$ \pt                    		& 21 	& 0.74 		& 129.58 	& 0.75 	 \\
+%\chisqip $\pi_{DD}$             	& 19 	& 0.24 		& 70.43 	& 0.24 	 \\
 \hline
 \end{tabular}
 \label{tab:Lb_nnInputs}
 \end{table}
 %
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{Lmumu/figs/correlation.pdf}
-\caption{Graphical representation of correlation matrix between truth and neural network inputs.
-Column/row number 1 is correlation to the truth (whether candidate is signal or background). All
-others give correlation between inputs with numbering scheme corresponding to the id column 
-of Tab.~\ref{tab:Lb_nnInputs}. Correlation is calculated using all events without distinguishing signal and
-background.}
-\label{fig:Lb_nnCorrelation}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.7\textwidth]{Lmumu/figs/correlation.pdf}
+%\caption{Graphical representation of the correlation matrix between neural network inputs.
+%Column/row number 1 is the correlation to the neural network output. All
+%others give the correlation between inputs with numbering scheme corresponding
+%to the ID column of Tab.~\ref{tab:Lb_nnInputs}. 
+%Correlation is calculated using all events without distinguishing signal and background.
+%}
+%\label{fig:Lb_nnCorrelation}
+%\end{figure}
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/TrainAndTest.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/purity_NN.pdf}
-\caption{(left) NN output distribution for training (points) and test (stripes) samples,
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/TrainAndTest.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/purity_NN.pdf}
+\caption{(left) Neural network output distribution for training (points) and test (stripes) samples,
 for signal and background events. (right) Purity as a function of neural network output.}
 \label{fig:Lb_nnDist}
 \end{figure}
-
-
+%
 It can happen that too much information is given to the classifier, which becomes able to 
 calculate the invariant mass of the candidates from the input variables.
 This can generate fake peaks and it is therefore important to check
@@ -211,8 +224,8 @@ are flat indicating that no significant correlation is present.
 %
 \begin{figure}
 \centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf}
 \caption{Average value of NN output as a function of \Lb mass for data sideband (left) and simulated signal (right) events.}
 \label{fig:Lb_NNprofiles}
 \end{figure}
@@ -335,7 +348,8 @@ required to be less than 0.2 mm to form a 2-body object.
 \centering
 \caption{Summary of trigger lines which candidates have to pass at various trigger levels.
 Trigger is always required to be due to tracks of the candidate itself.}
-\begin{tabular}{lc} \hline
+\begin{tabular}{$l^c} 
+	\rowstyle{\bfseries}
 Trigger Level &  Lines   \\ \hline
 L0            & \verb!L0Muon!  \\
                 & \verb!L0DiMuon! \\ \hline
