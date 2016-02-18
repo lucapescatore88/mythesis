@@ -1,11 +1,5 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
-\bibitem{Aaij:2015xza}
-{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Differential branching fraction
-  and angular analysis of $\Lambda^{0}_{b} \rightarrow \Lambda \mu^+\mu^-$
-  decays}},  {\em JHEP} {\bf 1506} (2015) 115,
-  [\href{http://arxiv.org/abs/1503.07138}{{\tt arXiv:1503.07138}}].
-
 \bibitem{PDG2014}
 {\bf Particle Data Group} Collaboration, K.~Olive et~al., {\it {Review of
   Particle Physics}},  {\em Chin.Phys.} {\bf C38} (2014) 090001.
@@ -202,6 +196,12 @@ C.~Bobeth, M.~Gorbahn, T.~Hermann, M.~Misiak, E.~Stamou, et~al., {\it {$B_{s,d}
   and angular analysis of the decay $B^0 \to K^{*0} \mu^+\mu^-$}},  {\em JHEP}
   {\bf 08} (2013) 131, [\href{http://arxiv.org/abs/1304.6325}{{\tt
   arXiv:1304.6325}}].
+
+\bibitem{Aaij:2015xza}
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Differential branching fraction
+  and angular analysis of $\Lambda^{0}_{b} \rightarrow \Lambda \mu^+\mu^-$
+  decays}},  {\em JHEP} {\bf 1506} (2015) 115,
+  [\href{http://arxiv.org/abs/1503.07138}{{\tt arXiv:1503.07138}}].
 
 \bibitem{LHCB-PAPER-2013-037}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Measurement of
@@ -586,32 +586,16 @@ A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller, {\it {A Comparative study of the
   supersymmetric theories}},  {\em Phys. Rev.} {\bf D61} (2000) 074024,
   [\href{http://arxiv.org/abs/hep-ph/9910221}{{\tt hep-ph/9910221}}].
 
-\bibitem{Ali:2002jg}
-A.~Ali, E.~Lunghi, C.~Greub, and G.~Hiller, {\it {Improved model independent
-  analysis of semileptonic and radiative rare $B$ decays}},  {\em Phys.Rev.}
-  {\bf D66} (2002) 034002, [\href{http://arxiv.org/abs/hep-ph/0112300}{{\tt
-  hep-ph/0112300}}].
-
 \bibitem{Hrivnac:1994jx}
 J.~Hrivnac, R.~Lednicky, and M.~Smizanska, {\it {Feasibility of beauty baryon
   polarization measurement in $\Lambda^0 J/\psi$ decay channel by ATLAS LHC}},
   {\em J.Phys.G} {\bf G21} (1995) 629--638,
   [\href{http://arxiv.org/abs/hep-ph/9405231}{{\tt hep-ph/9405231}}].
 
-\bibitem{Aaij:2015bfa}
-{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Determination of the quark
-  coupling strength $|V\_{ub}|$ using baryonic decays}},
-  \href{http://arxiv.org/abs/1504.01568}{{\tt arXiv:1504.01568}}.
-
-\bibitem{Crivellin:2014zpa}
-A.~Crivellin and S.~Pokorski, {\it {Can the differences in the determinations
-  of $V\_{ub}$ and $V\_{cb}$ be explained by New Physics?}},  {\em Phys. Rev.
-  Lett.} {\bf 114} (2015), no.~1 011802,
-  [\href{http://arxiv.org/abs/1407.1320}{{\tt arXiv:1407.1320}}].
-
-\bibitem{Altmannshofer:2014rta}
-W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\to s$ transitions
-  after LHC run 1}},  \href{http://arxiv.org/abs/1411.3161}{{\tt
-  arXiv:1411.3161}}.
+\bibitem{Detmold:2016pkz}
+W.~Detmold and S.~Meinel, {\it {$\Lambda_b \to \Lambda \ell^+ \ell^-$ form
+  factors, differential branching fraction, and angular observables from
+  lattice QCD with relativistic $b$ quarks}},
+  \href{http://arxiv.org/abs/1602.01399}{{\tt arXiv:1602.01399}}.
 
 \end{thebibliography}\endgroup
