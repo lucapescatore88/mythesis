@@ -1,9 +1,12 @@
 \section{Result extraction}
 \label{sec:RKst_result}
 
-This section presents the final results of this analysis
-together with the description of sanity checks performed to verify the stability
-of the methods used.
+This section presents the procedure to obtain the \RKst ratio together with
+methods to check robustness of the analysis.
+
+%This section presents the final results of this analysis
+%together with the description of sanity checks performed to verify the stability
+%of the methods used.
 
 \subsection{$R_{\jpsi}$ sanity check}
 \label{sec:Rjpsi}
@@ -36,49 +39,49 @@ in the $r_{\jpsi}$ ratio.
 %the probability for a $\bquark$ quark to produce a \Bz meson.
 
 
-Measured values of the $R_{\jpsi}$ ratio are reported in Tab.~\ref{tab:Rjpsi}, where the error 
-shown is statistical only. For this purpose the trigger efficiencies are corrected using the 
-factors obtained in Sec.~\ref{sec:tistos}. Note that systematic uncertainties, 
-which cancel when doing the ratio between the rare and
-resonant channels with same leptonic final state, do not cancel in this case.
-A reasonable agreement with unity is found.
+%Measured values of the $R_{\jpsi}$ ratio are reported in Tab.~\ref{tab:Rjpsi}, where the error 
+%shown is statistical only. For this purpose the trigger efficiencies are corrected using the 
+%factors obtained in Sec.~\ref{sec:tistos}. Note that systematic uncertainties, 
+%which cancel when doing the ratio between the rare and
+%resonant channels with same leptonic final state, do not cancel in this case.
+%A reasonable agreement with unity is found.
 
-\begin{table}[h!]
-\centering
- \caption{Fully corrected measured values of the ratio
- $R_{\jpsi}$ in the three electron trigger categories. }
-\begin{tabular}{c|c}
+%\begin{table}[h!]
+%\centering
+% \caption{Fully corrected measured values of the ratio
+% $R_{\jpsi}$ in the three electron trigger categories. }
+%\begin{tabular}{c|c}
 
-Trigger & $r_{\jpsi}$ \\
-\hline
-L0E & $ 1.073  \pm 0.009 \pm 0.021 $ \\
-L0H & $ 1.016  \pm 0.024 \pm 0.068 $ \\
-L0I & $ 1.150  \pm 0.017 \pm 0.148 $ \\
+%Trigger & $r_{\jpsi}$ \\
+%\hline
+%L0E & $ 1.073  \pm 0.009 \pm 0.021 $ \\
+%L0H & $ 1.016  \pm 0.024 \pm 0.068 $ \\
+%L0I & $ 1.150  \pm 0.017 \pm 0.148 $ \\
 
-  \end{tabular}
- \label{tab:Rjpsi}
-\end{table}
+ % \end{tabular}
+ %\label{tab:Rjpsi}
+%\end{table}
 
-\subsection{\BR(\BdToKstG) sanity check}
+%\subsection{\BR(\BdToKstG) sanity check}
 
-As a further check, the \BdToKstG branching fraction is determined using the ratio
+%As a further check, the \BdToKstG branching fraction is determined using the ratio
 %
-$$r_\gamma = \frac{\BR(\BdToKstG)} {\BR(\BdToKstJPsee)} = \frac{N_{\gamma(ee)}}{N_{\jpsi(ee)}} \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{\gamma(ee)}} = 0.053 \pm 0.002 \, .$$
-
-The measured value is
+%$$r_\gamma = \frac{\BR(\BdToKstG)} {\BR(\BdToKstJPsee)} = \frac{N_{\gamma(ee)}}{N_{\jpsi(ee)}} \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{\gamma(ee)}} = 0.053 \pm 0.002 \, .$$
 %
-$$\BR(\BdToKstG) = (4.18 \pm 0.26) \times 10^{-5} \, ,$$
+%The measured value is
 %
-\noindent where the uncertainty is only statistical.
-A reasonable agreement with the PDG~\cite{PDG2014} value, $(4.33 \pm 0.15) \times 10^{-5}$, is found.
+%$$\BR(\BdToKstG) = (4.18 \pm 0.26) \times 10^{-5} \, ,$$
+%
+%\noindent where the uncertainty is only statistical.
+%A reasonable agreement with the PDG~\cite{PDG2014} value, $(4.33 \pm 0.15) \times 10^{-5}$, is found.
 
 
-\subsection{\RKst result summary}
+\subsection{\RKst}
 
 The ratio \RKst is extracted by dividing the $r_{ee}$ and $r_{\mu\mu}$
 parameters described in Sec.~\ref{sec:rkst_fits}. These ratios are 
 direct parameters of the fit but they can also be built from the yields
-in Tab.~\ref{tab:RKst_yields} and the efficiencies in Tab.~\ref{tab:double_rel_eff}.
+in Tab.~\ref{tab:RKst_yields} and the efficiencies in Tab.~\ref{tab:RKst_RelEff}.
 In summary the definition of the \RKst ratio is the following:
 %
 \begin{equation}
@@ -95,21 +98,22 @@ In summary the definition of the \RKst ratio is the following:
 %
 As the electron ratio $R_{ee}$ is a shared parameter in the simultaneous fit to the
 three electron categories its value is already a combination of the three samples.
-Results are shown in Tab.~\ref{tab:RKst_results}.
 
-\begin{table}
-\centering
- \caption{Measured values of $r_{ee}$, $r_{\mu\mu}$ and \RKst ratios.}
-\begin{tabular}{c|c|c|c}
+%Results are shown in Tab.~\ref{tab:RKst_results}.
 
- Ratio 			low-\qsq & central-\qsq & high-\qsq	\\ \hline
-$R_{ee}$ 	& \\ %$ 0.00305  \pm 0.00040  $ 	& $ 0.00406  \pm 0.00081 $ \\
-$R_{\mu\mu}$ 	& \\ %$ 0.00242  \pm 0.00011 $ 	& $ 0.00225  \pm 0.00010 $ \\
-\hline $R_{\Kstarz}$ 	& blind 	& blind  \\
+%\begin{table}
+%\centering
+ %\caption{Measured values of $r_{ee}$, $r_{\mu\mu}$ and \RKst ratios.}
+%\begin{tabular}{c|c|c|c}
 
- \end{tabular}
- \label{tab:RKst_results}
-\end{table}
+% Ratio 			low-\qsq & central-\qsq & high-\qsq	\\ \hline
+%$R_{ee}$ 	& \\ %$ 0.00305  \pm 0.00040  $ 	& $ 0.00406  \pm 0.00081 $ \\
+%$R_{\mu\mu}$ 	& \\ %$ 0.00242  \pm 0.00011 $ 	& $ 0.00225  \pm 0.00010 $ \\
+%\hline $R_{\Kstarz}$ 	& blind 	& blind  \\
+
+ %\end{tabular}
+ %\label{tab:RKst_results}
+%\end{table}
 
 %\subsection{Branching ratios and expectations}
 

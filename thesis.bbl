@@ -1,8 +1,26 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
+\bibitem{Aaij:2015xza}
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Differential branching fraction
+  and angular analysis of $\Lambda^{0}_{b} \rightarrow \Lambda \mu^+\mu^-$
+  decays}},  {\em JHEP} {\bf 1506} (2015) 115,
+  [\href{http://arxiv.org/abs/1503.07138}{{\tt arXiv:1503.07138}}].
+
 \bibitem{PDG2014}
 {\bf Particle Data Group} Collaboration, K.~Olive et~al., {\it {Review of
   Particle Physics}},  {\em Chin.Phys.} {\bf C38} (2014) 090001.
+
+\bibitem{Aad:2012tfa}
+{\bf ATLAS} Collaboration, G.~Aad et~al., {\it {Observation of a new particle
+  in the search for the Standard Model Higgs boson with the ATLAS detector at
+  the LHC}},  {\em Phys. Lett.} {\bf B716} (2012) 1--29,
+  [\href{http://arxiv.org/abs/1207.7214}{{\tt arXiv:1207.7214}}].
+
+\bibitem{Chatrchyan:2012xdj}
+{\bf CMS} Collaboration, S.~Chatrchyan et~al., {\it {Observation of a new boson
+  at a mass of 125 GeV with the CMS experiment at the LHC}},  {\em Phys. Lett.}
+  {\bf B716} (2012) 30--61, [\href{http://arxiv.org/abs/1207.7235}{{\tt
+  arXiv:1207.7235}}].
 
 \bibitem{Susskind:1978ms}
 L.~Susskind, {\it {Dynamics of Spontaneous Symmetry Breaking in the
@@ -11,6 +29,14 @@ L.~Susskind, {\it {Dynamics of Spontaneous Symmetry Breaking in the
 \bibitem{Glashow:1961tr}
 S.~Glashow, {\it {Partial Symmetries of Weak Interactions}},  {\em Nucl.Phys.}
   {\bf 22} (1961) 579--588.
+
+\bibitem{SM_particles}
+``Wikipedia.'' \url{https://en.wikipedia.org/wiki/Standard_Model}.
+\newblock Accessed: 2016-02-26.
+
+\bibitem{Gross:1973id}
+D.~J. Gross and F.~Wilczek, {\it {Ultraviolet Behavior of Nonabelian Gauge
+  Theories}},  {\em Phys. Rev. Lett.} {\bf 30} (1973) 1343--1346.
 
 \bibitem{Aaij:2014jqa}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Observation of the resonant
@@ -32,6 +58,14 @@ C.~Wu, E.~Ambler, R.~Hayward, D.~Hoppes, and R.~Hudson, {\it {Experimental Test
 \bibitem{Strocchi:1977za}
 F.~Strocchi, {\it {Spontaneous Symmetry Breaking in Local Gauge Quantum Field
   Theory: The Higgs Mechanism}},  {\em Commun.Math.Phys.} {\bf 56} (1977) 57.
+
+\bibitem{Cabibbo:1963yz}
+N.~Cabibbo, {\it {Unitary Symmetry and Leptonic Decays}},  {\em Phys. Rev.
+  Lett.} {\bf 10} (1963) 531--533. [,648(1963)].
+
+\bibitem{Kobayashi:1973fv}
+M.~Kobayashi and T.~Maskawa, {\it {CP Violation in the Renormalizable Theory of
+  Weak Interaction}},  {\em Prog. Theor. Phys.} {\bf 49} (1973) 652--657.
 
 \bibitem{Charles:2015gya}
 J.~Charles, O.~Deschamps, S.~Descotes-Genon, H.~Lacker, A.~Menzel, et~al., {\it
@@ -74,12 +108,6 @@ B.~T. Cleveland, T.~Daily, R.~Davis, Jr., J.~R. Distel, K.~Lande, C.~K. Lee,
 J.~L. Feng, {\it {Naturalness and the Status of Supersymmetry}},  {\em
   Ann.Rev.Nucl.Part.Sci.} {\bf 63} (2013) 351--382,
   [\href{http://arxiv.org/abs/1302.6587}{{\tt arXiv:1302.6587}}].
-
-\bibitem{Aad:2012tfa}
-{\bf ATLAS} Collaboration, G.~Aad et~al., {\it {Observation of a new particle
-  in the search for the Standard Model Higgs boson with the ATLAS detector at
-  the LHC}},  {\em Phys. Lett.} {\bf B716} (2012) 1--29,
-  [\href{http://arxiv.org/abs/1207.7214}{{\tt arXiv:1207.7214}}].
 
 \bibitem{Pontecorvo:1967fh}
 B.~Pontecorvo, {\it {Neutrino Experiments and the Problem of Conservation of
@@ -196,12 +224,6 @@ C.~Bobeth, M.~Gorbahn, T.~Hermann, M.~Misiak, E.~Stamou, et~al., {\it {$B_{s,d}
   and angular analysis of the decay $B^0 \to K^{*0} \mu^+\mu^-$}},  {\em JHEP}
   {\bf 08} (2013) 131, [\href{http://arxiv.org/abs/1304.6325}{{\tt
   arXiv:1304.6325}}].
-
-\bibitem{Aaij:2015xza}
-{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Differential branching fraction
-  and angular analysis of $\Lambda^{0}_{b} \rightarrow \Lambda \mu^+\mu^-$
-  decays}},  {\em JHEP} {\bf 1506} (2015) 115,
-  [\href{http://arxiv.org/abs/1503.07138}{{\tt arXiv:1503.07138}}].
 
 \bibitem{LHCB-PAPER-2013-037}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Measurement of

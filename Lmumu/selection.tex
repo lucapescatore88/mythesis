@@ -4,13 +4,13 @@
 This section described the requirements applied to reconstruct $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ candidates 
 The selection procedure is divided into two steps: a pre-selection, where cuts are applied in order to be able to work
 with manageable datasets and a multivariate analysis (MVA) which combines information from several variables.
-At first good tracks are selected using requirements on basic kinematic properties, as the \pt of the final particles,
-and quality requirements, as the track \chisq.
-The selection then aims to first form a dimuon candidate from two oppositely changed muons. 
-Then, in events containing a dimuon candidate, two oppositely charged tracks are combined
-and retained as \Lz candidate if they form a good vertex which is well separated
-from all primary vertices. Finally the dimuon and \Lz candidates are combined to form \Lb
-baryons and requirements are set on the properties of this combination. 
+As a first step good quality tracks are selected by imposing requirements on their basic kinematic properties, 
+such as the \pt of the final particles, and quality requirements, such as the track \chisq.
+The selection then forms a dimuon candidate from two oppositely changed muons. 
+In events containing a dimuon candidate, two oppositely charged tracks are combined
+and retained as a \Lz candidate if they form a good quality vertex which is well separated
+from all primary vertices. Finally, the dimuon and \Lz candidates are combined to form \Lb
+baryons with requirements placed on the properties of this combination. 
 
 
 \subsection{Pre-selection}
@@ -20,11 +20,11 @@ The full list of pre-selection cuts is reported in Tab.~\ref{tab:Lb_stripping}.
 In the table \chisqip is defined as the projected distance from a vertex
 divided by its uncertainty, for example the $\chisqip(primary) > n$ requirement on $\Lb$ means
 that the \Lb vertex must be at least $\sqrt{n}$ standard deviations away from the primary vertex.
-Another quantity, especially useful to remove combinatorial background, is a pointing variable called DIRA
+Another quantity, found to be particularly powerful at removing combinatorial background, is a pointing variable called DIRA
 defined as the cosine of the angle between the direction of a particle's momentum and
 the flight direction from its mother vertex. Requiring a DIRA close to unity corresponds to 
 the selection of particles with well-defined origin vertices.
-Graphical representation of the \chisqip and DIRA variables are shown in Fig.~\ref{fig:IPandDIRA}.
+A graphical representation of the \chisqip and DIRA variables are shown in Fig.~\ref{fig:IPandDIRA}.
 %
 \begin{figure}[hb]
 \centering
@@ -34,14 +34,14 @@ Graphical representation of the \chisqip and DIRA variables are shown in Fig.~\r
 \end{figure}
 %
 The variable $\chi^2_{FD}$ represents the flight distance of a particle from its origin vertex
-divided by its uncertainty. The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ 
+divided by the corresponding uncertainty. The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ 
 from the fit to tracks and vertices, which are used to quantify their quality.
 The \verb!GhostProb! quantity describes the probability of a track being fake.
-By construction, cutting at k, removes $(1 - k)\cdot 100 \%$ of fake tracks.
+By construction, cutting at a value of $k$, removes $(1 - k)\cdot 100 \%$ of fake tracks.
 The \verb!hasRich!, \verb!hasCalo! and \verb!isMuon! variables are binary indicators that
-the information from the RICH/calorimeter/muon detector is available for the track.
-Loose PID requirements on the proton are also applied in pre-selection.
-Details about the quantification of the PID quality are given in Sec.~\ref{sec:PID_perf}.
+the information from the RICH, calorimeter and muon detectors is available for the track.
+Loose PID requirements on the proton are also applied in the pre-selection.
+Details about PID quality estimators are given in Sec.~\ref{sec:PID_perf}.
 %To quantify the probability of particular particle identity a combined likelihood is calculated
 %combining information from the calorimeters, the RICH and the Muon detectors.
 %The pion hypothesis is used as a reference point and the probability of a specific ID is given
@@ -53,10 +53,10 @@ Details about the quantification of the PID quality are given in Sec.~\ref{sec:P
 %\end{equation}
 %quantifies the probability of a particle being a kaon rather than a pion.
 %For details about the definition of the variables used see Ref. \cite{Loki_twiki}.
-A large mass window is kept around the \Lb peak in order to be able
-to fit the sideband, to train the multivariate analysis and to better constrain backgrounds.
+A large mass window around the \Lb peak is used to allow a fit to the sideband to be performed 
+and to use sideband candidates to train a multivariate classifier.
 Rare candidates are selected by the \qsq region requirements described in Sec.~\ref{sec:Lb_q2choice},
-while resonant candidates are further constrained to have dimuon invariant mass
+while resonant candidates are further constrained to have dimuon invariant masses
 in a 100~\mevcc~interval around the known \jpsi mass~\cite{PDG2014}.
 
 \begin{table}[h]

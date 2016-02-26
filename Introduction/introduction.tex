@@ -2,17 +2,18 @@
 \label{ch:introduction}
 
 The Standard Model of particle physics (SM) is a Quantum Field Theory (QFT) describing strong 
-and electroweak (EW) interactions. It was formulated in his current form in the mid-70s and has 
-been an extremely successful and predictive theory since then. Almost all known phenomena 
-from 1~\ev~up to several hundred \gev~are well 
-described by the SM and experiments at the Large Hadron Collider (LHC) are now probing the SM up
+and electroweak (EW) interactions. It was formulated in its current form in the mid-70s and has 
+been an extremely successful predictive theory since then. Almost all known phenomena 
+from 1~\ev~up to several hundred \gev~are described well by the SM and experiments 
+at the Large Hadron Collider (LHC) are now probing the SM up
 to and above the TeV scale. As an example of the level of accuracy of the SM, Tab.~\ref{tab:Zwidths} reports
 the predicted and measured values of the widths of the \Z and \W bosons~\cite{PDG2014}.
 %
 % as well as the anomalous 
 %magnetic moment of the muon $(g-2)$ which is one of the most precisely measured quantities in physics~\cite{PDG2014}.
-Finally, in 2013 the Higgs boson was observed, one of the fundamental building blocks of the theory, which
-gives a solid basis to it by introducing a mechanism that produces particles' masses~\cite{Susskind:1978ms}.
+Finally, in 2012 the Higgs boson, which is one of the fundamental building blocks of the theory,
+was observed~\cite{Aad:2012tfa,Chatrchyan:2012xdj}  This is a critical ingredient of the SM as it introduces a mechanism
+that produces particles' masses~\cite{Susskind:1978ms}.
 Despite the success of the SM, experimentally well established effects, like neutrino oscillations and the
 presence of dark matter, are outside the reach of this theory. Furthermore, the model does not include
 the description of gravity, which can be neglected at the EW energy scale. 
@@ -37,15 +38,15 @@ $\Gamma_\W$		& $2.0915 \pm 0.0005$ \gev		& $2.085 \pm 0.042$ \gev		\\
 
 The SM is based on the symmetry groups of strong, $SU(3)_C$, and electroweak, $SU(2)_W \times U(1)_Y$, interactions.
 The subscripts C, W and Y stand for colour charge, weak isospin and hyper-charge respectively. The Lagrangian describing the
-SM results from the application of the principle of invariance under the unitary group given by the product
-$SU(3)_C €‰\otimes ‰SU(2)_{W} €‰\otimes €‰U(1)_Y$, which reflects conservation laws such as the conservation 
-of electric and strong charge. The model has then 26 free parameters, which are experimentally measured.
+SM results from the application of the principle of invariance of the wave function under the unitary group transformations given
+by the product $SU(3)_C €‰\otimes ‰SU(2)_{W} €‰\otimes €‰U(1)_Y$, and leads to conservation laws such as the conservation 
+of electric and strong charge. The model has then 26 free parameters, which have to be experimentally measured.
 
-Particles included in the SM can be grouped under a few categories depending on their properties and ability 
+Particles included in the SM can be grouped into a few categories depending on their properties and ability 
 to interact with each other. The first distinction is between fermions, half-integer spin particles, and 
 bosons, integer spin particles. Fermions constitute the basic building blocks of matter, while bosons are 
 the mediators of the interactions. Since the concept of bosonic mediators of 
-interactions arises because of gauge symmetry~\cite{Glashow:1961tr}, they are called ``gauge bosons".
+interactions arises because of local gauge symmetry~\cite{Glashow:1961tr}, they are called ``gauge bosons".
 %
 \begin{table}[h!]
 \caption{Fundamental forces of nature together with their gauge bosons, relative strengths and range.
@@ -56,8 +57,8 @@ Interaction	 & Mediator	& Strength	& Range (m)	& Mediator mass \\
 \hline
 Strong		& $g$		& 1			& $\infty$		& 0		\\
 EM			& $\gamma$	& $10^{-3}$		& $\infty$ 		& 0		\\
-Weak		& $Z$, $W^\pm$	& $10^{-16}$		& $10^{-18}$	& $W^\pm = 80.399$~\gevcc \\
-			&		&			&		& $Z_0 = 91.188$~\gevcc	\\
+Weak		& $Z^0$, $W^\pm$	& $10^{-16}$		& $10^{-18}$	& $W^\pm = 80.399$~\gevcc \\
+			&		&			&		& $Z^0 = 91.188$~\gevcc	\\
 Gravity		& $g^0$ (graviton?) & $10^{-41}$	& $\infty$		& 0		\\
 \end{tabular}
 \label{tab:interactions}
@@ -67,26 +68,26 @@ The list of the known interactions with their force carrier and properties
 is reported in Tab.~\ref{tab:interactions}. The matter of which we are made of is mainly composed of electrons 
 and protons, which have spin 1/2; protons are in turn composed of \uquark and \dquark quarks, which again have 
 spin 1/2. Among fermions one can then consider two smaller groups: quarks and leptons. Quarks carry colour 
-charge and therefore can interact through the, so called, strong interaction,
+charge and therefore can interact through the so-called strong interaction,
 while leptons, which do not carry colour charge, are insensitive to it.
 For each particle a corresponding anti-particle exists with opposite quantum numbers.
 Finally, fermions are divided into three families having similar properties but different masses.
-This last structure embedded in the SM is also called ``flavour structure" and it will be the main tool
-used in this thesis; a more detailed description of it is given in the next sections.
+This last classification embedded in the SM is also called ``flavour structure" and it will be the main tool
+used in this thesis; a more detailed description of it is given in the following sections.
 A schematic view of the fundamental particles in the SM is shown in Fig.~\ref{fig:SMparticles}.
 %
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{Introduction/figs/SM.png}
-\caption{A scheme of the fundamental particles in the SM with their properties.}
+\caption{A scheme of the fundamental particles in the SM with their properties~\cite{SM_particles}.}
 \label{fig:SMparticles}
 \end{figure}
-%
+
 Due to the asymptotic freedom of the strong interaction quarks cannot be observed alone but
-are always combined with other quarks to form color singlets. Non-fundamental particles
-composed by quarks are called hadrons and can be divided in mesons, where the color singlet
-is achieved by the combination of a quark and its antiquark (\quark\quarkbar), and baryons
-formed by three quarks (\quark\quark\quark) of different colours.
+are always combined with other quarks to form color singlets~\cite{Gross:1973id}. Non-fundamental particles
+composed of quarks are called hadrons and are classified into two groups: mesons, where the color singlet
+is achieved by the combination of a quark and an antiquark (\quark\quarkbar), and baryons
+formed from three quarks (\quark\quark\quark) of different colours.
 Recently, in 2014 and 2015 evidence for new states, formed by four and five quarks, was found~\cite{Aaij:2014jqa,Aaij:2015tga}.
 %Recently evidence for particles composed by 4 quarks was also found~\cite{}.
 
@@ -95,7 +96,7 @@ Recently, in 2014 and 2015 evidence for new states, formed by four and five quar
 \label{sec:EMandEW}
 
 The electromagnetic interaction is responsible for binding electrons and nuclei
-together in atoms and its mediator is the photon.
+together to form atoms and its mediator is the photon.
 %
 %,which also sets the range of the EM force to infinity, since this is proportional to the inverse of the mediator mass.
 %In fact Heisenberg's Uncertainty Principle tells us that $\Delta E \Delta t > \hbar$, namely virtual particles
@@ -105,34 +106,35 @@ together in atoms and its mediator is the photon.
 %close to the mass shell, this results in a very long lifetime. The EM force has therefore an infinite range.
 %
 The weak interaction is responsible for the $\beta$ decay of nuclei and is mediated
-by the emission or absorption of $W^\pm$ and $Z$ bosons. Unlike the electromagnetic force,
+by the emission or absorption of $W^\pm$ and $Z^0$ bosons. Unlike the electromagnetic force,
 that affects only charged particles, all known fermions interact through the weak interaction.
 The weak interaction is also the only one that violates the parity symmetry, which states that interactions are invariant under
-a reflection of all coordinates. This symmetry breaking arises from the fact that only left-handed fermions interact through
+an inversion of spatial coordinates. This symmetry breaking arises from the fact that only left-handed fermions interact through
 the weak interaction as discovered by Wu in 1957~\cite{Wu:1957my}. Similarly, the weak interaction
 is the only one that also breaks the CP symmetry, which combines parity transformations and charge conjugation.
-This is particularly interesting because all interactions are invariant under the CPT transformation, which combines the CP
-transformation and time reversal, hence, breaking CP the weak interaction must also be not invariant under time reversal.
-In 1968 Salam, Glashow and Weinberg unified the weak and electromagnetic forces in a single theory, where the coupling
-constants of the electromagnetic, $e$, and weak, $g$, interactions are linked by the weak mixing angle, $\theta_W$
+This is particularly interesting because all interactions are believed to be invariant under the CPT transformation, which combines the CP
+transformation and time reversal. Hence, breaking CP the weak interaction implies that the process is also not invariant under 
+time reversal transformations.
+In 1968 Salam, Glashow and Weinberg unified the weak and electromagnetic forces into a single theory, where the coupling
+constants of the electromagnetic, $e$, and weak, $g$, interactions are related through the weak mixing angle, $\theta_W$
 by the relation $g\sin\theta_W = e$~\cite{PDG2014}. 
 %
 The electroweak symmetry is spontaneously broken by the Higgs
-field~\cite{Strocchi:1977za} and this causes the $W^\pm$ and \Z bosons to become massive (see Tab.~\ref{tab:interactions}) 
-and consequently the weak force has a very short range. In fact using Heisenberg's Principle ($\Delta E \Delta t > \hbar$) 
+mechanism~\cite{Strocchi:1977za} and this causes the $W^\pm$ and \Z bosons to become massive (see Tab.~\ref{tab:interactions}) 
+and consequently the weak force has a very short range. In fact, using Heisenberg's Principle ($\Delta E \Delta t > \hbar$) 
 together with Einstein's formula $\Delta E = m c^2$, which relates mass and energy, and knowing that the maximum 
-space that a particle can cover in a time $\Delta t$ is $r = c \Delta t$, qualitatively $r \sim \hbar / mc$. In this picture
-the carriers of the weak force can travel $r \sim 2 \cdot 10^{-3}$~fm. The photon must instead be massless in the theory, 
+space that a particle can cover in a time $\Delta t$ is $r \sim c \Delta t$, qualitatively $r \sim \hbar / mc$. In this picture
+the carriers of the weak force can travel $r \sim 2 \cdot 10^{-3}$~fm. In contrast, the photon must be massless in the theory, 
 which accounts for the long range of the electromagnetic force.
 %
 The EW interactions are divided into charged currents (CC) and neutral
 currents (NC). In the first group, quarks and leptons interact with the $W^\pm$ bosons, producing decays such as
-$\mu^+(\mu^-) \rightarrow e^+ \nu_e \overline{\nu}_\mu (e^- \overline{\nu}_e \nu_\mu)$ and $n \rightarrow p e^- \overline{\nu}_e (\overline{p} e^+ \nu_e)$.
+$\mu^+(\mu^-) \rightarrow e^+ \nu_e \overline{\nu}_\mu (e^- \overline{\nu}_e \nu_\mu)$ and $n (\overline{n}) \rightarrow p e^- \overline{\nu}_e (\overline{p} e^+ \nu_e)$.
 The study of these processes confirmed that only the left-handed (right-handed) component of fermions (anti-fermions)
 takes part in weak processes. The CC interactions have a peculiarity: they are the only interactions in the SM that violate
-flavour conservation at tree level (see next section), while any other interaction not conserving flavour has to happen through
-loops. The second group of EW interactions, NC, corresponds to diagrams mediated by a photon or a \Z boson interacting
-with a fermion and its anti-fermion.
+flavour conservation at tree level (see next section), while any other interaction not conserving flavour has to proceed through
+higher order processes. The second group of EW interactions, NC, corresponds to diagrams mediated by a photon or a \Z 
+boson interacting with a fermion and its anti-fermion.
 
 
 
@@ -140,14 +142,14 @@ with a fermion and its anti-fermion.
 \label{sec:flavour}
 
 ``Flavour" in particle physics refers to the quark/lepton composition of a particle. The introduction of flavour quantum numbers
-was motivated in order to explain why some decays, although kinematically allowed, had never been observed. To all leptons is
+was motivated in order to explain why some decays, although kinematically allowed, had never been observed. All leptons are
 assigned a quantum number $L_\ell = 1$ (where $\ell = e,\mu,\tau$), which in the SM is conserved by all interactions.
 This conservation is experimentally well established; for example decays like $\mu^- \rightarrow e^- \gamma $ have never
 been observed.
 %This is explained by the fact that the lepton number in the initial
 %and final state are different and the decay would violate lepton flavour.
 %
-In the hadronic sector particles carry flavour numbers described as follow:
+In the hadronic sector particles carry flavour numbers described as:
 %
  \begin{itemize}
  \item \emph{Isospin}: $I_3 = 1/2$ for the up quark and $I_3 = -1/2$ for the down quark;
@@ -157,16 +159,16 @@ In the hadronic sector particles carry flavour numbers described as follow:
  they are respectively defined as $C = -(n_c - \bar{n}_c)$, $B = -(n_b - \bar{n}_b)$, $T = -(n_t - \bar{n}_t)$.
  \end{itemize}
 
-As mentioned before, in the SM the only interaction violating flavour conservation is the weak interaction
+As mentioned previously, in the SM the only interaction violating flavour conservation is the weak interaction
 when mediated by $W^\pm$ bosons.
 
 Measuring branching fractions of weak decays like $\pi \to \mu \nu_\mu$ and $K \to \mu \nu_\mu$, corresponding
 respectively to $ud\to\mu\nu_\mu$ and $us\to\mu\nu_\mu$ processes, suggested the existence of more than one
-coupling constant for different quarks. Nicola Cabibbo~\cite{PDG2014}, in order to preserve the universality
+coupling constant for different quarks. Nicola Cabibbo~\cite{PDG2014,Cabibbo:1963yz}, in order to preserve the universality
 of weak interactions, suggested that the differences could arise from the fact that
 the doublets participating in the weak interactions are an admixture of the mass eigenstates. 
-He therefore introduced the Cabibbo angle, $\theta_c$, considering that eigenstates participating 
-to the weak interaction are rotated with respect of the flavour eigenstates.
+He therefore introduced the Cabibbo angle, $\theta_c$, proposing that eigenstates participating 
+to the weak interaction are rotated with respect to the flavour eigenstates.
 %
 \begin{equation}
 \left( \begin{array}{c}
@@ -185,16 +187,16 @@ d \\ s
 \end{array} \right)
 \end{equation}
 
-Considering a 6 quark system one angle is not enough to describe a rotation but the mixing can be generalised
-using a $3 \times 3$ unitary matrix, which is called CKM matrix, from the names of Cabibbo, Kobayashi and Maskawa.
+In a six quark system one angle is not sufficient to describe a rotation but the mixing can be generalised
+using a $3 \times 3$ unitary matrix, called the CKM matrix, from the names of Cabibbo, Kobayashi and Maskawa~\cite{Cabibbo:1963yz,Kobayashi:1973fv}.
 The unitarity of the matrix is required to preserve the universality of the weak interaction. Theoretically, a $N \times N$ complex
 matrix depends on $2 \cdot N^2$ real parameters. Requiring unitarity ($AA^\dagger = A(A^*)^T = I$), the number
 of independent parameters left is 
 \begin{equation}
 (N - 1)^2 = \underbrace{\frac{1}{2}N(N-1)}_\text{Number of mixing angles} + \underbrace{\frac{1}{2}(N-1)(N-2)}_\text{Number of complex phases}.
 \end{equation}  
-Therefore a $3 \times 3$ matrix depends then on 4 real parameters, which
-can be divided in 3 real constants and one imaginary phase. The imaginary phase generates the \mbox{CP-violation} which was
+Therefore a $3 \times 3$ matrix depends then on 4 real parameters: three real constants 
+and one imaginary phase. The imaginary phase generates the \mbox{CP-violation} which was
 observed in weak interactions.
 Figure~\ref{fig:ch_currents_ckm} displays examples of CC processes together with the CKM elements associated with their vertices.
 %
@@ -206,26 +208,31 @@ Figure~\ref{fig:ch_currents_ckm} displays examples of CC processes together with
 \end{figure}
 %
 Equation~\ref{CKM} reports the most recent measured values of its elements~\cite{PDG2014}
-together with the Wolfenstein parametrisation which highlights the hierarchical structure of the matrix.
+together with the widely used Wolfenstein parametrisation which highlights the hierarchical structure of the matrix.
 In fact elements on the diagonal, corresponding to transitions between quarks of the same generation,
 are approximately 1 and become smaller and smaller going farther from the diagonal.
 In the formula $\rho$, $A$, and $\lambda$ are the real constants and $\eta$ the imaginary phase 
-and Eq.~\ref{params} shows their relations with the 3 mixing angles; terms further from the diagonal 
+and Eq.~\ref{params} shows how they are related to the three mixing angles; terms further from the diagonal 
 are proportional to higher powers of $\lambda$.
 %
-\begin{multline}
-V_{CKM} = \left( \begin{array}{ccc}
+\begin{alignat}{3}
+& V_{CKM} = \left( \begin{array}{ccc}
+V_{ud} & V_{us} & V_{ub}  \\
+V_{cd} & V_{cs} & V_{cb}  \\
+V_{td} & V_{ts} & V_{tb}  
+ \end{array} \right) = \\
+& = \left( \begin{array}{ccc}
 0.97427 \pm 0.00015 & 0.22534 \pm 0.00065 & 0.00351^{+0.00015}_{-0.0014} \\
  0.22520 \pm 0.00065 & 0.97344 \pm 0.00016 & 0.00412^{+0.0011}_{-0.0005} \\
  0.00867^{+0.00029}_{-0.00031} & 0.0404^{+0.0011}_{-0.0005} & 0.999146^{+0.000021}_{-0.000046} 
  \end{array} \right) = \\
- = \left( \begin{array}{ccc}
+& = \left( \begin{array}{ccc}
 1 - \lambda^2/2 & \lambda  & A \lambda^3(\rho -i\eta) \\
 -\lambda & 1 - \lambda^2/2 & A\lambda^2 \\
 A \lambda^3(1 - \rho -i\eta) & A\lambda^2 & 1 
 \end{array} \right) + O(\lambda^4) \\
 \label{CKM}
-\end{multline}
+\end{alignat}
 %
 \begin{equation}
 \begin{array}{rl}
@@ -252,28 +259,28 @@ The unitarity of the CKM matrix imposes constraints to its elements of the form:
 \begin{equation}
 \sum_i |V_{ik}|^2 = 1 \text{ and } \sum_k V_{ik} V^{*}_{jk} = 0.
 \end{equation}
-These correspond to constraints to three complex numbers, which can be viewed
+These correspond to constraints on three complex numbers, which can be viewed
 as the sides of triangles in the $(\rho,\eta)$ plane; these are called ``unitarity triangles".
 The most commonly used unitarity triangle arises from $V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb}=0$.
 %\begin{equation}
 %V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb}=0.
 %\end{equation}
 Figure~\ref{fig:unitarity_triangle} shows a representation of such triangle together with
-a plot summarising the most up to date experimental constraints to its parameters~\cite{Charles:2015gya}.
+a plot summarising the most up-to-date experimental constraints to its parameters~\cite{Charles:2015gya}.
 Due to these unitarity constraints flavour-changing neutral currents
 are forbidden at tree level in the SM.
 
 The precise measurement of the parameters of the CKM matrix
-is a powerful stability test of the SM and sets a solid base for new physics
-searches in the flavour sector. One of the main goals of the LHCb experiment is to precisely
-measure the angle $\gamma$, which is currently the least constrained by measurements.
+is a powerful stability test of the SM and sets a solid basis for new physics
+searches in the flavour sector. One of the main goals of the LHCb experiment is to measure precisely
+ the angle $\gamma$, which is currently the least constrained by measurements.
  %
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=0.5\textwidth]{Introduction/figs/Unitarity_triangle.png}
 \includegraphics[width=0.7\textwidth]{Introduction/figs/Unitarity_triangle_HFAG.pdf}
 \caption{(top) A representation of the unitarity triangle and its parameters.
-(bottom) A summary of the most up to date measurements of the unitarity triangle parameters~\cite{Charles:2015gya}.}
+(bottom) A summary of the most up-to-date measurements of the unitarity triangle parameters~\cite{Charles:2015gya}.}
 \label{fig:unitarity_triangle}
 \end{figure}
  
@@ -283,11 +290,11 @@ measure the angle $\gamma$, which is currently the least constrained by measurem
 \section{The puzzles of the SM}
 \label{sec:SMproblems}
 
-Despite the confirmation of many predictions of the SM, the theory has several limitations
+Despite the experimental confirmation of many predictions of the SM, the theory has several limitations
 and is unable to account for some well established experimental facts:
 %
 \begin{itemize}
-\item \emph{Dark matter}: experimental evidence tells us that the content of visible matter in the universe is not enough
+\item \emph{Dark matter}: experimental evidence tells us that the content of visible matter in the universe is not sufficient
 to account for the observed rotation of galaxies~\cite{Zwicky:1933gu}. The most natural way to solve the problem
 is the hypothesis of a form of matter that interacts with the gravitational field but not with the other SM interactions. 
 %Furthermore, studies of the fluctuations of the cosmic microwave background indicate the existence of
@@ -298,20 +305,21 @@ is the hypothesis of a form of matter that interacts with the gravitational fiel
 \item \emph{Matter-antimatter asymmetry}: a large asymmetry is observed between the quantity of matter 
 and antimatter in the universe, $O(10^{-9})$. Assuming that both were equally created in the initial state of 
 the universe, a condition such as the violation of the CP symmetry is necessary to account for the observed
-imbalance. However, the magnitude of CP violation predicted by the SM, $O(10^{-20})$, is not enough 
-to explain the observed imbalance~\cite{Gavela:1993ts}.
+imbalance. However, the magnitude of CP violation predicted by the SM, $O(10^{-20})$, is unable to account
+ for the observed imbalance~\cite{Gavela:1993ts}.
 %
 \item \emph{Gravity}: even though the gravitational force was the first to be discovered this is not included
 in the SM. % as it can be neglected at the EW scale. 
 When introducing gravity in the framework of QFT the
-theory diverges. On the other hand gravity becomes irrelevant for small masses as those 
-of particles and can be neglected in good approximation at the EW energy scale.
-Many attempts were made but there is not yet a consistent procedure to introduce gravity in the SM. 
+theory diverges. On the other hand gravity becomes irrelevant for the small masses 
+of particles and can be neglected to a good approximation at the EW energy scale.
+Many attempts have been made but there is not yet a consistent theoretical framework through which
+ gravity can be introduced in the SM. 
 %
-\item \emph{Neutrino oscillation}: measurements regarding solar and atmospheric neutrinos as wells as
-neutrinos from nuclear reactors established that neutrinos can change flavour while propagating in space.
-This is not predicted in the SM, in fact in the SM neutrinos are massless, while an oscillation requires a non
-zero mass~\cite{Maltoni:2011zz,Cleveland:1998nv,Fukuda:1998mi,Eguchi:2002dm}.
+\item \emph{Neutrino oscillation}: measurements of solar and atmospheric neutrinos, as well as
+neutrinos from nuclear reactors have established that neutrinos can change flavour while propagating in space.
+This is not predicted in the SM, in fact in the SM neutrinos are massless, while an oscillation requires a non-zero
+ mass~\cite{Maltoni:2011zz,Cleveland:1998nv,Fukuda:1998mi,Eguchi:2002dm}.
 %
 \item \emph{The hierarchy problem}: the mass of a scalar (spin 0) particle, such as the Higgs boson,
 suffers from quantum corrections due to the physics at high energy scales. As new physics can appear
