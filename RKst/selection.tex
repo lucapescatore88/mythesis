@@ -318,8 +318,8 @@ contribution is taken into account by the choice of the \qsq intervals (see Sec.
 \begin{center}
 \begin{figure}[h!]
 \centering 
-\includegraphics[width=0.49\textwidth]{RKst/figs/RKst/phi.pdf}
-\includegraphics[width=0.49\textwidth]{RKst/figs/RKst/Kmumu.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Background/phi.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Background/Kmumu.pdf}
 \caption{ (left) Distribution of 2011 data events as a function of the variables $(m_{K(\pi\rightarrow K)})$ 
 and $(m_{K(\pi\rightarrow K)\mu\mu})$, where $\pi\rightarrow K$ means that the kaon mass is given 
 to the pions too. (right) The invariant mass distribution of the three-body system $(K\mu\mu)$,
@@ -415,12 +415,12 @@ is taken into account in the systematic uncertainties.
 Finally, charmonium decays where the identity of the kaon, or the pion, and one of the muons are swapped
 is a potentially dangerous background. These decays are rejected by requiring that the hadron-$\mu$ invariant
 mass $m((h \to \mu)\mu)$, where the muon mass hypothesis is assigned to the hadron, is not compatible with
-a \jpsi (\psitwos) resonance: $|m((h\to \mu)\mu)?m_{\jpsi, (\psitwos)} | > 60$~\mevcc.
+a \jpsi (\psitwos) resonance: $|m((h\to \mu)\mu)-m_{\jpsi, (\psitwos)} | > 60$~\mevcc.
 
-\subsection{Mis-reconstructed background}
+\subsection{Partially-reconstructed background}
 \label{sec:RKst_peaking_Dchains}
 
-Mis-reconstructed candidates are defined as decays where one or more particles in the final state are not reconstructed,
+Partially-reconstructed candidates are defined as decays where one or more particles in the final state are not reconstructed,
 resulting in $m(K\pi\ell\ell)$ values smaller than $m_{\Bz}$, but with tails that can still contaminate the signal peak.
 Sources of mis-reconstructed background are decays involving higher hadronic states such as 
 \decay{\Bz}{(Y\to\kaon\pi X)(\jpsi\to\epem)}, where $X$ represents one or more not reconstructed particles. 
@@ -428,13 +428,17 @@ The $Y$ state can be a \Kstar resonance as well as \D mesons that decay semilept
 followed by \decay{\Dm}{\Kstarz \ell^- \nu_\ell}). In case of the $\jpsi(ee)$ channel, an additional source of mis-reconstructed 
 background are decays of higher \ccbar resonances, \decay{\Bz}{(\Kstarz\to K\pi)(Y\to(\jpsi\to\epem)X)}.
 %
-To reject this backgrounds in the \mm channels the 4-body invariant mass $m(K\pi\mu\mu)$ is recalculated using 
-\verb!DecayTreeFitter! with a vertex constraint. For the resonant case this also includes a \jpsi mass constraint to the dilepton pair. 
-By using this procedure mis-reconstructed events are pushed towards low masses, resulting in no contamination above 5150~\mevcc.
-%
-To correctly model the long radiative tail of the $ee$ and $\jpsi(ee)$ mass shapes, a fit region that extends down to 4500~\mevcc is used.
-As a consequence, no mass constraint to the dilepton pair is applied, as this could bias the 4-body mass distribution, and the
-mis-reconstructed background is modelled in the fit (for details see Sec.~\ref{sec:RKst_misreco_fit}).
+To reject this backgrounds in the $\mumu$ channels the 4-body invariant mass $m(K\pi\mu\mu)$ is recalculated using 
+\verb!DecayTreeFitter! with a vertex constraint. For the resonant case this also includes a \jpsi mass constraint to the dilepton pair;
+in this case the 4-body mass is denoted as $m(K\pi\mu\mu)_{\jpsi}$. Partially-reconstructed candidates are pushed towards 
+low constrained-mass values, resulting in no contamination above 5150~\mevcc. This requirement is implicitly applied 
+for the muon channels by the definition of the invariant mass fit-windows. 
+The same requirement is also applied to select the $\jpsi(ee)$ and $\psitwos(ee)$ samples.
+However, the vertex constrain alone is not sufficient to cleanup the electron rare channels.
+Furthermore, to correctly model the long radiative tail of the mass shapes, a fit region that extends 
+down to 4500~\mevcc~is needed. As a consequence the partially-reconstructed background is still relevant
+for the electron rare channels and extends below the signal peak. For this reason this background is modelled 
+in the fit for the rare channels (for details see Sec.~\ref{sec:RKst_misreco_fit}).
 
 
 %Mis-reconstructed background is defined as decays where one or more particles are not reconstructed.
@@ -762,7 +766,7 @@ together with curves of the background rejection as a function of the signal eff
 After full selection about $\sim 3\%$ of events still contain multiple candidates
 which are removed at random keeping only a single candidate per event.
 
-
+\clearpage
 
 \section{Selection summary}
 
@@ -811,7 +815,8 @@ ID & \Kstarz & $|m(\kaon\pi) - m_{\Kstarz}^{PDG}| < 100\mevcc$ & all \\
 	&					& $\texttt{NNout} > 0.16$ & $\gamma(ee)$ \\
 %	&					& $\texttt{NNout} > 0.36$ & \JPsee \mKpiee \\
 	&					& $\texttt{NNout} > 0.68$ & $\psitwos(ee)$ \\
-	
+\cline{2-4}
+	& Part-reco					& $m(K\pi\ell\ell)_\jpsi	> 5150$~\mevcc		& $\jpsi(ee)$	\\
 \cline{2-4}
 	& \multirow{3}{*}{Comb, part-reco}	& $\mbcm > 4680 + 31 \cdot \log(\chisq_{\rm FD})$ & $ee$ low- \\
 	&							& $\mbcm > 4437 + 64 \cdot \log(\chisq_{\rm FD})$ & $ee$ central- \\

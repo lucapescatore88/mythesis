@@ -94,8 +94,9 @@ the main one applies to long candidates and the one in parenthesis to downstream
 \subsection{Neural Networks}
 \label{sec:Lb_mva}
 
-The final selection is performed using a neural network (NN) classifier based on the NeuroBayes 
-package~\cite{Feindt:2006pm,feindt-2004}. The input to the neural network consists of 14 variables carrying 
+The final selection is performed using a neural network classifier based on the NeuroBayes package.
+%~\cite{Feindt:2006pm,feindt-2004}
+ The input to the neural network consists of 14 variables carrying 
 information about the kinematics of the decay, the quality of tracks and vertices and the PID of the muons.
 The list of the 10 most significant inputs is reported in Tab.~\ref{tab:Lb_nnInputs}, together with information 
 about the importance of each input.
@@ -128,23 +129,24 @@ sample by rejecting events in a 100~\mevcc~interval around the nominal \jpsi and
 %The events above $6 \gevcc$ used for training are not used in the subsequent analysis. 
 %For the signal the training is performed combining simulated $\Lb\to\Lz\mumu$ events corresponding 
 %to the beam conditions in both years. %Only triggered events are used for training.
-A total of 30000 total events is used for the training from each sample. This corresponds $\sim 50\%$ of the available
-sideband data sample and $\sim 20\%$ of the simulated sample. The full simulated sample is not used
-as the same sample will also be used to study efficiencies. For reproducibility the events are sampled uniformly.
+A total of $3\cdot10^4$ events is used for the training from each sample. This corresponds to approximately
+$\simeq 50\%$ of the available sideband data and $\simeq 20\%$ of the simulated sample. The full simulated sample 
+is not used in the training as the same sample will also be used to study efficiencies. For reproducibility 
+the events are sampled uniformly.
 
 The single most important variable used for downstream candidates is the transverse momentum of
-\Lz, which allows to reject random combination of tracks as these have preferentially low \pt.
-For long candidates instead the best variable is the $\chi^2$ from a kinematic fit that constrains
-the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices
-performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
+\Lz, which allows random combinations of tracks to be rejected as these have preferentially low \pt.
+In contrast, for long candidates the most powerful variable is the \chisq from a kinematic fit that constrains
+the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices. 
+%performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
 Other variables that contribute significantly are the \chisqip of \Lb, \Lz and muons,
 the separation between the \Lb and \Lz vertices and, finally, the muon PID.
 
 Figure~\ref{fig:Lb_nnDist} shows distributions of neural network output for the signal and background samples
 and purity, $P=N_{\mathrm{sig}}/N_{\mathrm{bkg}}$, as a function of the neural network output.
-The distributions from test samples are also overlaid in order to check for overtraining. 
-The distributions follow the same shape but with different fluctuations
-indicating no significant overtraining. In general it can be concluded that the neural network
+To check for potential overtraining, the distributions from test samples are also overlaid. These are found to 
+follow the same shape but with different fluctuations
+giving no significant evidence of overtraining. In general it can be concluded that the neural network
 is able to separate signal from background and the training converged properly.
 %
 \begin{table}
@@ -214,8 +216,8 @@ for signal and background events. (right) Purity as a function of neural network
 \label{fig:Lb_nnDist}
 \end{figure}
 %
-It can happen that too much information is given to the classifier, which becomes able to 
-calculate the invariant mass of the candidates from the input variables.
+It can happen that too much information is given to the classifier, allowing
+ the invariant mass of the candidates to be inferred from the input variables.
 This can generate fake peaks and it is therefore important to check
 for correlations between the 4-body invariant mass and the NN output.
 Figure~\ref{fig:Lb_NNprofiles} reports the average neural network output as a function of
@@ -244,54 +246,54 @@ are flat indicating that no significant correlation is present.
 \subsection{MVA optimisation}
 \label{sec:Lb_mva_opt}
 
-In the high \qsq region, where the signal is already observed, the requirement on the neural network output
-is chosen maximising the significance, $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, where
+In the high-\qsq region, where the signal is already observed, the requirement on the neural network output
+is chosen to maximise the significance, $N_{\mathrm{S}}/\sqrt{N_{\mathrm{S}}+N_{\mathrm{B}}}$, where
 $N_\mathrm{S}$ and $N_\mathrm{B}$ are the numbers of expected signal and background candidates respectively.
 $N_\mathrm{S}$ is derived from simulation but, as an arbitrary number of events can be generated, it
 needs to be normalised. To do this, the invariant mass distribution of real $\Lb\to\jpsi\Lz$ candidates
-is fit after pre-selection (including all requirements but MVA). This is possible as the peak of the resonant
-channel is already well visible before the MVA cut. The resonant yield is then scaled by the ratio
+is fit after pre-selection (including all requirements except the MVA selection). This is possible as the peak of the resonant
+channel is already clearly visible before the MVA requirement. The resonant yield is then scaled by the ratio
 of between the $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ branching fractions as measured 
-by LHCb on 2011 data 
+by LHCb on 2011 data, 
 \begin{equation}
 \BR(\Lb\to\Lz\mumu) / \BR(\Lb\to\jpsi\Lz) =  1.54 \times 10^{-3}
 \end{equation}
 \noindent
-and by the $\jpsi\to\mumu$ branching fraction. In summary:
+and by the $\jpsi\to\mumu$ branching fraction, \emph{i.e.}
 \begin{equation}
 N_\mathrm{S} = N_\jpsi \cdot \frac{\BR(\Lb\to\Lz\mumu)}{\BR(\Lb\to\jpsi\Lz) \cdot \BR(\jpsi\to\mumu) }.
 \end{equation}
 %
-The number of expected background events instead is derived fitting the data
-sideband with an exponential and extrapolating under the signal region.
+The number of expected background candidates is derived by fitting the data
+sideband with an exponential and extrapolating into the signal region.
 
-In the low \qsq region, where the signal is unobserved, the so called ``Punzi figure-of-merit",
+In the low-\qsq region, where the signal is unobserved, the so called ``Punzi figure-of-merit",
 $N_{\mathrm{S}}/(n_\sigma/2+\sqrt{N_{\mathrm{B}}})$, is maximised~\cite{Punzi:2003bu}.
 This figure-of-merit is considered to be optimal for discovery and the parameter $n_\sigma$ corresponds to
 the number of expected standard deviations of significance, in this analysis $n_\sigma = 3$ is used.
 Moreover, the Punzi shape does not depend on the relative normalisation between signal and background, which
-is important since the signal is still unobserved at low \qsq and the existing predictions vary significantly
+is important since the signal is still unobserved at low-\qsq and the existing predictions vary significantly
 for this region. The dependence of the figure-of-merit for both \qsq regions is shown in Fig.~\ref{fig:Lb_FOM}, and curves
 of signal efficiency versus background rejection are shown in Fig.~\ref{fig:Lb_ROC}.
 
-For final selection the neural network output is required to be larger than 0.76 for candidates in the high \qsq region
-and 0.97 for the low \qsq ones. Using these requirements the neural network retains approximately 96\% (66 \%)
-of downstream candidates and 97 \% (82 \%) of long candidates for the high (low) \qsq selection, with respect to
+For the final selection the neural network output is required to be larger than 0.76 for candidates in the high-\qsq region
+and 0.97 for the low-\qsq ones. Using these requirements the neural network retains approximately 96\% (66 \%)
+of downstream candidates and 97 \% (82 \%) of long candidates for the high- (low-) \qsq selection, with respect to
 the pre-selected samples. After full selection $\sim 0.5$\% of the events contain multiple candidates
 which are randomly rejected keeping only one candidate per event. 
 %
-%As reminder, in low \qsq region we start with much larger background than in high \qsq region.
+%As reminder, in low-\qsq region we start with much larger background than in high-\qsq region.
 %Moreover, while background rejection looks similar at selected requirement, in terms of amount of background kept, there is huge difference. 
 %
-To normalise the branching ratio measurement \jpsi events are selected using the low and high \qsq requirements
- to normalise respectively low and high \qsq intervals. 
+To normalise the branching ratio measurement \jpsi events are selected using the low- and high-\qsq requirements
+ to normalise respectively low and high-\qsq intervals. 
 %
 \begin{figure}
 \centering
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/Lmumu_lowQ2_FoM.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/Lmumu_highQ2_FoM.pdf}
-\caption{Dependence of the figure-of-merits on the neural network output requirement for the low \qsq
-(left) and high \qsq (right) regions. The vertical lines correspond to the chosen cuts.}
+\caption{Dependence of the figure-of-merits on the neural network output requirement for the low-\qsq
+(left) and high-\qsq (right) regions. The vertical lines correspond to the chosen cuts.}
 \label{fig:Lb_FOM}
 \end{figure}
 %
@@ -299,7 +301,7 @@ To normalise the branching ratio measurement \jpsi events are selected using the
 \centering
 \includegraphics[width=0.7\textwidth]{Lmumu/figs/ROC.pdf}
 %\includegraphics[width=0.48\textwidth]{Lmumu/figs/ROC_Lmumu_highQ2.pdf}
-\caption{Receiver operating characteristic (ROC) curves for low \qsq (black) and high \qsq (red).
+\caption{Receiver operating characteristic (ROC) curves for low-\qsq (black) and high-\qsq (red).
 They show the signal efficiency versus the background rejection.
 The optimal points on these curves are the closest ones to (1,1). }
 \label{fig:Lb_ROC}
@@ -368,7 +370,7 @@ Hlt2        & \verb!Hlt2Topo[2-4]BodyBBDT!  \\
 %\centering
 %\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_highq2.pdf}
 %\includegraphics[width=0.48\textwidth]{Lmumu/figs/trig_lowq2.pdf}
-%\caption{ Single trigger efficiency for high \qsq events (left) and low \qsq (right). }
+%\caption{ Single trigger efficiency for high-\qsq events (left) and low-\qsq (right). }
 %\label{fig:trigContrib}
 %\end{figure}
 

@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {3.4.2}Neural Networks}{60}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}MVA optimisation}{64}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Trigger}{65}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Background from specific decays}{66}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.5}Background from specific decays}{67}{subsection.3.4.5}
 \contentsline {section}{\numberline {3.5}Yield extraction}{68}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Fit description}{69}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Fit results}{73}{subsection.3.5.2}
@@ -73,15 +73,15 @@
 \contentsline {section}{\numberline {4.4}Fit strategy}{102}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Feldman-cousins plug-in method}{103}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Modelling the angular distributions}{104}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Angular acceptance}{105}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Angular acceptance}{106}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Studies on a three-dimensional fit}{107}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Systematics uncertainties on angular observables}{108}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Angular correlations}{108}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Resolution}{109}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.1}Angular correlations}{109}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Resolution}{110}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Efficiency description}{110}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Background parameterisation}{112}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.4}Background parameterisation}{111}{subsection.4.5.4}
 \contentsline {subsection}{\numberline {4.5.5}Polarisation}{112}{subsection.4.5.5}
-\contentsline {section}{\numberline {4.6}$J/\ensuremath {\psii }$ cross-check}{113}{section.4.6}
+\contentsline {section}{\numberline {4.6}$J/\ensuremath {\psii }$ cross-check}{112}{section.4.6}
 \contentsline {section}{\numberline {4.7}Results}{114}{section.4.7}
 \contentsline {chapter}{\numberline {5}Testing lepton flavour universality with $R_{\ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace }$}{118}{chapter.5}
 \contentsline {section}{\numberline {5.1}Combining ratios}{121}{section.5.1}
@@ -102,21 +102,21 @@
 \contentsline {subsubsection}{\numberline {5.6.3.5}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace (\ensuremath {\ensuremath {\ensuremath {D}\xspace }\xspace ^-}\xspace \ensuremath {\rightarrow }\xspace K \ensuremath {\ensuremath {e}\xspace ^-}\xspace \overline {\nu })\ensuremath {\ensuremath {e}\xspace ^+}\xspace \nu }\xspace }{136}{subsubsection.5.6.3.5}
 \contentsline {subsubsection}{\numberline {5.6.3.6}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\gamma \ensuremath {\rightarrow }\xspace \ensuremath {e^+ e^-})}\xspace }{137}{subsubsection.5.6.3.6}
 \contentsline {subsubsection}{\numberline {5.6.3.7}Other peaking backgrounds}{138}{subsubsection.5.6.3.7}
-\contentsline {subsection}{\numberline {5.6.4}Mis-reconstructed background}{139}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.4}Partially-reconstructed background}{139}{subsection.5.6.4}
 \contentsline {subsection}{\numberline {5.6.5}Bremsstrahlung corrected mass}{139}{subsection.5.6.5}
-\contentsline {subsection}{\numberline {5.6.6}Multivariate analysis}{142}{subsection.5.6.6}
+\contentsline {subsection}{\numberline {5.6.6}Multivariate analysis}{141}{subsection.5.6.6}
 \contentsline {subsection}{\numberline {5.6.7}Optimisation}{144}{subsection.5.6.7}
-\contentsline {section}{\numberline {5.7}Selection summary}{146}{section.5.7}
-\contentsline {section}{\numberline {5.8}Mass fits}{146}{section.5.8}
+\contentsline {section}{\numberline {5.7}Selection summary}{147}{section.5.7}
+\contentsline {section}{\numberline {5.8}Mass fits}{148}{section.5.8}
 \contentsline {subsection}{\numberline {5.8.1}Muon channels}{148}{subsection.5.8.1}
-\contentsline {subsubsection}{\numberline {5.8.1.1}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace \ensuremath {\rightarrow }\xspace \mu ^+\mu ^-)}\xspace PDF}{148}{subsubsection.5.8.1.1}
-\contentsline {subsubsection}{\numberline {5.8.1.2}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {\ensuremath {\mu }\xspace ^+}\xspace \ensuremath {\ensuremath {\mu }\xspace ^-}\xspace }\xspace PDF}{151}{subsubsection.5.8.1.2}
-\contentsline {subsubsection}{\numberline {5.8.1.3}Summary}{153}{subsubsection.5.8.1.3}
+\contentsline {subsubsection}{\numberline {5.8.1.1}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace \ensuremath {\rightarrow }\xspace \mu ^+\mu ^-)}\xspace PDF}{149}{subsubsection.5.8.1.1}
+\contentsline {subsubsection}{\numberline {5.8.1.2}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {\ensuremath {\mu }\xspace ^+}\xspace \ensuremath {\ensuremath {\mu }\xspace ^-}\xspace }\xspace PDF}{150}{subsubsection.5.8.1.2}
+\contentsline {subsubsection}{\numberline {5.8.1.3}Summary}{151}{subsubsection.5.8.1.3}
 \contentsline {subsection}{\numberline {5.8.2}Electron channels}{153}{subsection.5.8.2}
 \contentsline {subsubsection}{\numberline {5.8.2.1}Signal PDFs for the electron channels}{154}{subsubsection.5.8.2.1}
 \contentsline {subsubsection}{\numberline {5.8.2.2}Background PDFs for the electron channels}{157}{subsubsection.5.8.2.2}
-\contentsline {subsubsection}{\numberline {5.8.2.3}Summary of the fit to the electron samples}{161}{subsubsection.5.8.2.3}
-\contentsline {subsection}{\numberline {5.8.3}Event yields}{163}{subsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.2.3}Summary of the fit to the electron samples}{160}{subsubsection.5.8.2.3}
+\contentsline {subsection}{\numberline {5.8.3}Event yields}{162}{subsection.5.8.3}
 \contentsline {section}{\numberline {5.9}Efficiency}{166}{section.5.9}
 \contentsline {subsection}{\numberline {5.9.1}Geometric efficiency}{168}{subsection.5.9.1}
 \contentsline {subsection}{\numberline {5.9.2}Reconstruction efficiency and bin migration}{168}{subsection.5.9.2}
