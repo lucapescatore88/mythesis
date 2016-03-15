@@ -82,6 +82,11 @@ M.~Gavela and Hernandez, {\it {Standard model CP violation and baryon
   asymmetry}},  {\em Mod.Phys.Lett.} {\bf A9} (1994) 795--810,
   [\href{http://arxiv.org/abs/hep-ph/9312215}{{\tt hep-ph/9312215}}].
 
+\bibitem{Carlip:2001wq}
+S.~Carlip, {\it {Quantum gravity: A Progress report}},  {\em Rept. Prog. Phys.}
+  {\bf 64} (2001) 885, [\href{http://arxiv.org/abs/gr-qc/0108040}{{\tt
+  gr-qc/0108040}}].
+
 \bibitem{Maltoni:2011zz}
 M.~Maltoni, {\it {Status of three-neutrino oscillations}},  {\em PoS} {\bf
   EPS-HEP2011} (2011) 090.
@@ -197,7 +202,7 @@ A.~Khodjamirian, T.~Mannel, A.~Pivovarov, and Y.-M. Wang, {\it {Charm-loop
 
 \bibitem{Bobeth:2013uxa}
 C.~Bobeth, M.~Gorbahn, T.~Hermann, M.~Misiak, E.~Stamou, et~al., {\it {$B_{s,d}
-  \to l+ l-$ in the Standard Model with Reduced Theoretical Uncertainty}},
+  \to l^+ l^-$ in the Standard Model with Reduced Theoretical Uncertainty}},
   {\em Phys.Rev.Lett.} {\bf 112} (2014) 101801,
   [\href{http://arxiv.org/abs/1311.0903}{{\tt arXiv:1311.0903}}].
 
@@ -233,13 +238,13 @@ C.~Bobeth, M.~Gorbahn, T.~Hermann, M.~Misiak, E.~Stamou, et~al., {\it {$B_{s,d}
 
 \bibitem{Aaij:2015oid}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Angular analysis of the $B^{0}
-  \to K^{*0} \mu^{+} \mu^{?}$ decay using 3 fb$^{?1}$ of integrated
+  \to K^{*0} \mu^{+} \mu^{-}$ decay using 3 fb$^{-1}$ of integrated
   luminosity}},  {\em JHEP} {\bf 02} (2016) 104,
   [\href{http://arxiv.org/abs/1512.04442}{{\tt arXiv:1512.04442}}].
 
 \bibitem{Descotes-Genon:2013wba}
-S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B \to
-  K^*\mu^+\mu^-$ Anomaly}},  {\em Phys.Rev.} {\bf D88} (2013), no.~7 074002,
+S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B\to
+  K^*\mu^+\mu^-$ Anomaly}},  {\em Phys. Rev.} {\bf D88} (2013) 074002,
   [\href{http://arxiv.org/abs/1307.5683}{{\tt arXiv:1307.5683}}].
 
 \bibitem{LHCB-PAPER-2014-007}
@@ -262,6 +267,15 @@ S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B \to
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Angular analysis of the $B^0
   \rightarrow K^{*0} e^+ e^-$ decay in the low-$q^2$ region}},  {\em JHEP} {\bf
   04} (Jan, 2015) 064. 18 p.
+
+\bibitem{Altmannshofer:2014rta}
+W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\to s$ transitions
+  after LHC run 1}},  \href{http://arxiv.org/abs/1411.3161}{{\tt
+  arXiv:1411.3161}}.
+
+\bibitem{Hurth:2016fbr}
+T.~Hurth, F.~Mahmoudi, and S.~Neshatpour, {\it {On the anomalies in the latest
+  LHCb data}},  \href{http://arxiv.org/abs/1603.00865}{{\tt arXiv:1603.00865}}.
 
 \bibitem{Ahmed:2001eh}
 {\bf MEGA} Collaboration, M.~Ahmed et~al., {\it {Search for the lepton family
@@ -291,6 +305,10 @@ W.~J. Marciano, T.~Mori, and J.~M. Roney, {\it {Charged Lepton Flavor Violation
 
 \bibitem{Evans:2009zzc}
 L.~Evans, {\it {The LHC machine}},  {\em PoS} {\bf EPS-HEP2009} (2009) 004.
+
+\bibitem{Christiane:1260465}
+C.~Lef\'evre, ``{The CERN accelerator complex. Complexe des accélérateurs du
+  CERN}.'' Dec, 2008.
 
 \bibitem{Alves:2008zz}
 {\bf LHCb} Collaboration, A.~A. Alves~Jr. et~al., {\it {The \lhcb detector at

@@ -1,7 +1,7 @@
 \section{Selection}
 \label{sec:Lb_selection}
 
-This section described the requirements applied to reconstruct $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ candidates 
+This section describes the requirements applied to reconstruct $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ candidates. 
 The selection procedure is divided into two steps: a pre-selection, where cuts are applied in order to be able to work
 with manageable datasets and a multivariate analysis (MVA) which combines information from several variables.
 As a first step good quality tracks are selected by imposing requirements on their basic kinematic properties, 
@@ -24,7 +24,7 @@ Another quantity, found to be particularly powerful at removing combinatorial ba
 defined as the cosine of the angle between the direction of a particle's momentum and
 the flight direction from its mother vertex. Requiring a DIRA close to unity corresponds to 
 the selection of particles with well-defined origin vertices.
-A graphical representation of the \chisqip and DIRA variables are shown in Fig.~\ref{fig:IPandDIRA}.
+Figure~\ref{fig:IPandDIRA} shows graphical representations of the \chisqip and DIRA variables.
 %
 \begin{figure}[hb]
 \centering
@@ -33,8 +33,8 @@ A graphical representation of the \chisqip and DIRA variables are shown in Fig.~
 \label{fig:IPandDIRA}
 \end{figure}
 %
-The variable $\chi^2_{FD}$ represents the flight distance of a particle from its origin vertex
-divided by the corresponding uncertainty. The $\chi^2_{trk}$/ndf and $\chi^2_{vtx}$/ndf quantities are the $\chi^2$ 
+The variable $\chisq_{\rm FD}$ represents the flight distance of a particle from its origin vertex
+divided by the corresponding uncertainty. The $\chisq_{trk}$/ndf and $\chisq_{vtx}$/ndf quantities are the $\chisq$ 
 from the fit to tracks and vertices, which are used to quantify their quality.
 The \verb!GhostProb! quantity describes the probability of a track being fake.
 By construction, cutting at a value of $k$, removes $(1 - k)\cdot 100 \%$ of fake tracks.
@@ -65,27 +65,27 @@ in a 100~\mevcc~interval around the known \jpsi mass~\cite{PDG2014}.
       \rowstyle{\bfseries}
 Particle     			&  	Requirement          \\ \hline
 \multirow{5}{*}{\Lb}            	&  	$4.6 < m(p\pi\mu\mu) < 7.0$ \gevcc \\
-            				& 	\texttt{DIRA}$>0.9999$          \\
-					& 	\chisqip$<16.0$               \\
+            				& 	$\texttt{DIRA}>0.9999$          \\
+					& 	$\chisqip<16.0$               \\
             				& 	$\chisq_{\rm FD}>121.0$             \\
-            				& 	$\chisq_{vtx}$/ndf$<8.0$          \\ \hline
-\multirow{3}{*}{\Lz}      	& 	$\chisq_{vtx}$/ndf$<30.0(25.0)$              \\
+            				& 	$\chisq_{vtx}/ndf<8.0$          \\ \hline
+\multirow{3}{*}{\Lz}      	& 	$\chisq_{vtx}/ndf<30.0(25.0)$              \\
          				& 	Decay time $>2$ ps              \\
-					& 	$|m(p\pi)-m^{\rm PDG}_\Lz|< 35(64)$ \gevc        \\ \hline
+					& 	$|m(p\pi)-m^{\rm PDG}_\Lz|< 35(64)$~\gevc        \\ \hline
 \multirow{3}{*}{$p$/$\pi$}	& 	$p>2$ \gevc           \\ 
 					& 	$\pt>250$ \mevc           \\  
-            				& 	\chisqip$>9(4)$              \\ \hline
+            				& 	$\chisqip>9(4)$              \\ \hline
 \multirow{2}{*}{$p$ (only long cand.) } 	&   	\verb!hasRICH!    \\
-					&   	\verb!PID!p$> -5$  \\  \hline
+					&   	$\verb!PID!p>-5$  \\  \hline
 \multirow{5}{*}{$\mu$}       &   	\verb!isMuon!    \\
-					& 	$\chi^2_{trk}$/ndf$< 5$ 		\\
-					& 	\verb!GhostProb!$<0.4$	\\
-            				& 	\verb!PID!$\mu>-3$		\\
-            				& 	\chisqip$>9.0$        \\      \hline
-\multirow{2}{*}{Dimuon}     & 	$\chi^2_{vtx}$/ndf$<12.0$          \\
-            				&	$m(\mu\mu)<7.1$~\gevcc         \\ \hline
+					& 	$\chisq_{trk}/ndf< 5$ 		\\
+					& 	$\verb!GhostProb!<0.4$	\\
+            				& 	$\verb!PID!\mu>-3$		\\
+            				& 	$\chisqip>9.0$        \\      \hline
+\multirow{2}{*}{Dimuon}     & 	$\chisq_{vtx}/ndf<12.0$          \\
+            				&	$|m(\mu\mu) - m^{\rm PDG}_\jpsi|< 100$~\mevcc ~~($\jpsi\Lz$ only)       \\ \hline
       \end{tabular}
-\caption{Summary of pre-selection requirements. Where two values are given,
+\caption{Summary of the pre-selection requirements. Where two values are given,
 the main one applies to long candidates and the one in parenthesis to downstream candidates.}
 \label{tab:Lb_stripping}
 \end{table}
@@ -117,15 +117,15 @@ training for the two categories.
 %where the variable with ID$ = 1$ is the neural network output and the IDs of the other variables are 
 %listed in Tab.~\ref{tab:Lb_nnInputs}.
 
-The NN is trained using representative samples of signal and background.  A sample of simulated 
-$\Lb\to\Lz\mumu$ events is used as a proxy for the signal, while for the background a representative sample
+The neural network is trained using representative samples of signal and background.  A sample of simulated 
+$\Lb\to\Lz\mumu$ candidates is used as a proxy for the signal, while for the background a representative sample
 is given by candidates in the upper $m(p\pi\mu\mu)$ invariant mass sideband. Only the upper sideband,
 $m(p\pi\mu\mu) > 6 \gevcc$, is used since it contains only combinatorial background,
 while the lower sideband may contain partially reconstructed and misreconstructed candidates.
 In the \qsq spectrum of background samples the \jpsi and \psitwos peaks are still present indicating that charmonium
 resonances are often combined with other random tracks. These candidates do not give a good description of purely
 combinatorial background and, in order to avoid biases, they are removed from the training
-sample by rejecting events in a 100~\mevcc~interval around the nominal \jpsi and \psitwos masses~\cite{PDG2014}.
+sample by rejecting candidates in a 100~\mevcc~interval around the nominal \jpsi and \psitwos masses~\cite{PDG2014}.
 %The events above $6 \gevcc$ used for training are not used in the subsequent analysis. 
 %For the signal the training is performed combining simulated $\Lb\to\Lz\mumu$ events corresponding 
 %to the beam conditions in both years. %Only triggered events are used for training.
@@ -212,14 +212,14 @@ $\tau_{\Lb}$       		        	& 16.24 		& 35.36 	& 11.24  \\
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/TrainAndTest.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/purity_NN.pdf}
 \caption{(left) Neural network output distribution for training (points) and test (stripes) samples,
-for signal and background events. (right) Purity as a function of neural network output.}
+for signal (blue) and background (red) candidates. (right) Purity as a function of neural network output.}
 \label{fig:Lb_nnDist}
 \end{figure}
 %
 It can happen that too much information is given to the classifier, allowing
  the invariant mass of the candidates to be inferred from the input variables.
 This can generate fake peaks and it is therefore important to check
-for correlations between the 4-body invariant mass and the NN output.
+for correlations between the 4-body invariant mass and the neural network output.
 Figure~\ref{fig:Lb_NNprofiles} reports the average neural network output as a function of
 the 4-body $m(p\pi\mu\mu)$ invariant mass for data and simulation. The distributions
 are flat indicating that no significant correlation is present.
@@ -228,7 +228,8 @@ are flat indicating that no significant correlation is present.
 \centering
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_bkgData.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/NNout_profile_vs_LbMM_MCsignal.pdf}
-\caption{Average value of NN output as a function of \Lb mass for data sideband (left) and simulated signal (right) events.}
+\caption{Average value of neural network output as a function of the 4-body invariant mass 
+for data sideband (left) and simulated signal (right) candidates.}
 \label{fig:Lb_NNprofiles}
 \end{figure}
 
@@ -277,16 +278,16 @@ for this region. The dependence of the figure-of-merit for both \qsq regions is 
 of signal efficiency versus background rejection are shown in Fig.~\ref{fig:Lb_ROC}.
 
 For the final selection the neural network output is required to be larger than 0.76 for candidates in the high-\qsq region
-and 0.97 for the low-\qsq ones. Using these requirements the neural network retains approximately 96\% (66 \%)
-of downstream candidates and 97 \% (82 \%) of long candidates for the high- (low-) \qsq selection, with respect to
+and 0.97 for the low-\qsq ones. Using these requirements the neural network retains approximately 97 \% (82 \%) of long 
+candidates and 96\% (66 \%) of downstream candidates for the high- (low-) \qsq selection, with respect to
 the pre-selected samples. After full selection $\sim 0.5$\% of the events contain multiple candidates
 which are randomly rejected keeping only one candidate per event. 
 %
 %As reminder, in low-\qsq region we start with much larger background than in high-\qsq region.
 %Moreover, while background rejection looks similar at selected requirement, in terms of amount of background kept, there is huge difference. 
 %
-To normalise the branching ratio measurement \jpsi events are selected using the low- and high-\qsq requirements
- to normalise respectively low and high-\qsq intervals. 
+To normalise the branching ratio measurement $\Lb\to\jpsi\Lz$ candidates are selected using both, low- and high-\qsq, 
+requirements to normalise respectively low and high-\qsq intervals. 
 %
 \begin{figure}
 \centering
@@ -332,10 +333,10 @@ The optimal points on these curves are the closest ones to (1,1). }
 
 \subsection{Trigger}
 
-Finally, specific trigger lines are selected, corresponding to events triggered by muons
+Specific trigger lines are selected, corresponding to events triggered by the muons
 which formed the reconstructed candidate. This is denoted as Trigger On Signal (TOS).
 The trigger lines used in the analysis are listed in Tab.~\ref{tab:Lb_triggerLines}.
-The logical {\em or } of the lines on the same lever is required and the logical {\em and }
+The logical {\em or } of the lines on the same level is required and the logical {\em and}
 of those on different levels.
 The \verb!L0Muon! trigger requires hits in the muon detector and triggers if a muon with $\pt > 1.5 \gevc$ is identified.
 \verb!L0Dimuon! imposes the same requirement on the sum of the transverse momenta of two tracks.
@@ -348,8 +349,8 @@ required to be less than 0.2 mm to form a 2-body object.
 %
 \begin{table}[h]
 \centering
-\caption{Summary of trigger lines which candidates have to pass at various trigger levels.
-Trigger is always required to be due to tracks of the candidate itself.}
+\caption{Summary of the trigger lines used to select events at various levels.
+Trigger is always required to be due to the tracks of the candidate itself.}
 \begin{tabular}{$l^c} 
 	\rowstyle{\bfseries}
 Trigger Level &  Lines   \\ \hline
@@ -406,7 +407,7 @@ not peak under the signal but show a decaying distribution at the edge of the fi
 background is considered as absorbed in the combinatorial background.
 %Given that this contribution does not contribute in the region where we expect \Lb peak, we do
 %not attempt to exclude this but it is again modelled in the fit.
-Figure~\ref{fig:peakingBkgs} shows the invariant mass distribution of simulated $\Lb\ra\jpsi\Lz$
+Figure~\ref{fig:peakingBkgs} shows the 4-body invariant mass distribution of simulated $\Lb\ra\jpsi\Lz$
 events falling into the rare \qsq region and the distribution of simulated $B^{+} \ra\mumu K^{*+}$
 events mis-reconstructed as $\Lb\ra\jpsi\Lz$ decays.
 %
