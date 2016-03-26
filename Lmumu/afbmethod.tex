@@ -1,7 +1,7 @@
 \chapter{Angular analysis of $\protect\Lb\to\Lz\mumu$ decays}
 \label{sec:ang_ana}
 
-Neglecting \Lb production polarisation, the $\Lb\to\Lz\mumu$ decay angular distributions can be described 
+Neglecting the production polarisation of \Lb, the $\Lb\to\Lz\mumu$ decay angular distribution can be described 
 as a function of three angles and \qsq. The first two angles are the ones which are relevant for the
 analysis in this chapter and are defined in Fig.~\ref{fig:Lb_angles}, where $\theta_\ell$ is the angle between 
 the positive (negative) muon direction in the dimuon rest frame and the dimuon system direction in the \Lb (\Lbbar) 
@@ -26,10 +26,10 @@ $d\Gamma / d\qsq$ is rate integrated over the angles.
 \label{fig:Lb_angles}
 \end{figure}
 
-The $\afbl$ observable was also measured by LHCb in $\Bz\ra\Kstarz\mumu$ decays
+The $\afbl$ observable was measured by LHCb also for $\Bz\ra\Kstarz\mumu$ decays
 which are going through the same quark level transition as $\Lb\to\Lz\mumu$ decays. Instead the hadronic
 asymmetry, $\afbh$, is interesting only in the \Lb case as it is zero by definition
-in \Bz decays, where \Kstarz decays strongly.
+in the \Bz case, due to the strong decay of the \Kstarz.
 
 \section{One-dimensional angular distributions}
 
@@ -133,7 +133,7 @@ contributions and $S$ the scalar contribution. The apices $V$ and $A$ represent 
 vector and axial-vector currents, with $X^{V+A} = X^{V} + X^{A}$.
 The authors of Ref.~\cite{Gutsche:2013pp} define then the lepton-side forward-backward asymmetry as
 \begin{equation}
-A_{\rm FB}^{\ell}(q^{2}) 
+A_{\rm FB}^{\ell} 
 = - \frac{3}{2}\,\frac{v\cdot P^{VA}}
 {v^{2}\cdot\big(\,U^{V+A}
 +L^{V+A}\big)+\frac{2m_{\ell}^{2}}{q^{2}}\cdot 3 \cdot
@@ -181,8 +181,8 @@ Equations~\ref{eq:totalBR} and \ref{eq:differentialBR} can be then combined to a
  \nonumber \\
 & \left. \frac{3}{4}\sin^2\theta_\ell\frac{L^{V+A}}{U^{V+A}+L^{V+A}}\right].
 \end{align}
-The amplitude combination in the last term can be viewed as ratio between longitudinal and sum of
-longitudinal and unpolarised transverse contributions and therefore one can define the longitudinal fraction
+The amplitude combination in the last term can be viewed as the ratio between the longitudinal and the sum of
+longitudinal and unpolarised contributions and therefore one can define the longitudinal fraction
 \begin{equation}
 \fl=\frac{L^{V+A}}{U^{V+A}+L^{V+A}},
 \end{equation}
@@ -309,14 +309,14 @@ To incorporate effects of production polarisation this was introduced in the equ
 %\end{equation}
 In the modified version an angle $\theta$ is defined as the angle between the \Lz direction
 in the \Lb rest frame with respect to $\hat{n} = \hat{p}_{inc} \times \hat{p}_{\Lb}$, where $\hat{p}_{inc}$
-represents the direction of the incoming proton. This angle is sensitive to the production polarisation
-through the spin-density matrix. % in Eq.~\ref{eq:spinDensity}.
+represents the direction of the incoming proton; this angle is sensitive to the production polarisation.
+%through the spin-density matrix. % in Eq.~\ref{eq:spinDensity}.
 %, while the angle between the decay planes $\chi$ is changed to the polar angles of proton and positive muon.
 Integrating over all the angles but $\theta_\ell$ results in 
 the same distribution as in the unpolarised case (Eq.~\ref{costheta2}). Therefore, in the case of uniform
 efficiency, the lepton side forward-backward asymmetry, $\afbl$, is unaffected by the production
 polarisation. To be able to estimate the effect of the production polarisation in the case of non-uniform efficiency, 
-the differential distribution in $\theta$ and $\theta_\ell$ is also derived, which in the massless leptons
+the differential distribution in $\theta$ and $\theta_\ell$ is derived, which in the massless leptons
 limit becomes (up to a  constant multiplicative factor)
 %
 \begin{align}
@@ -343,7 +343,7 @@ forward-backward asymmetry as
 %
 Following the same steps as for the lepton case, after integrating over all the angles but $\theta_h$ one finds
 that the hadron side, $\afbh$, is also unaffected by the production polarisation in case of uniform
-efficiency. The differential distribution in $\theta$ and $\theta_h$ has the form
+efficiency and the differential distribution in $\theta$ and $\theta_h$ has the form
 \begin{align}
 \frac{d\Gamma(\Lambda_{b}\to \Lambda \,\ell^{+}\ell^{-})}{dq^2d(\cos\theta) d(\cos\theta_h)}=
 \frac{d\Gamma}{dq^2}&\left[1+2\afbh\cos\theta_h+P_b\left(O_P-O_{Lp}\right)\cos\theta\right.\nonumber \\
@@ -359,7 +359,7 @@ efficiency. The differential distribution in $\theta$ and $\theta_h$ has the for
 In order to use these distributions, expectations for the three additional observables,
 which do not enter one-dimensional distributions, are needed.
 Expectations are calculated using form factors and numerical inputs from Ref.~\cite{Gutsche:2013pp}
-and are listed in Appendix~\ref{ap:LbLmumuAngular}~in Tab.~\ref{tab:obsGutsche1}.
+and are listed in Appendix~\ref{ap:LbLmumuAngular}.
 %
 %In this calculation the massless lepton limit
 %is used and compared to the
@@ -411,15 +411,14 @@ For completeness, the differential distribution in $\cos\theta_\ell$ and$\cos\th
 \section{Angular resolution}
 \label{sec:and_resolution}
 
-This section describes a study of the angular resolution done in order to achieve a better understanding
+This section describes a study of the angular resolution performed in order to achieve a better understanding
 of detector and reconstruction effects. This will be then used to study systematic uncertainties (see Sec.~\ref{sec:ang_pol_sys}).
 The study is performed by analysing simulated events and comparing generated and reconstructed quantities.
-Figure~\ref{fig:resolutionvsq2ang} shows plots of the difference between true and measured angular observables 
-($\cos \theta_\ell$ and $\cos \theta_h$) as a function of the observable itself.
-These are centred at zero indicating no bias in the measurement.
-Figure~\ref{fig:avgResol} shows the angular resolution in two-dimensional bins of \qsq and angular observables.
+Figure~\ref{fig:resolutionvsq2ang} shows the difference between true and measured angular observables,
+$\cos \theta_\ell$ and $\cos \theta_h$, as a function of the observables themselves.
+These distributions are centred at zero indicating no bias in the measurement.
 %
-\begin{table}[h]
+\begin{table}[b]
 \centering
 \caption{Average angular resolutions integrated over the full interval and the full available \qsq.}
 \begin{tabular}{$c|^c^c}
@@ -437,39 +436,42 @@ $\cos \theta_h$ & 0.066 & 0.014 \\
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmT_vs_cosThetaB_LL.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmT_vs_cosThetaL_DD.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmT_vs_cosThetaB_DD.pdf}
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf}
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf}
- \caption{Difference of between generated and reconstructed angular observables as a function of 
- the observables themselves for long (top) and downstream (bottom) candidates and as a function 
- of \qsq for long (bottom left) and downstream (bottom right) candidates.
- As the plots are made using fully selected rare samples the bottom plots present empty bands
- corresponding to the charmonium vetoes.
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmTcosThetaL_vs_q2_DD.pdf}
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/RmTcosThetaL_vs_q2_LL.pdf}
+ \caption{Difference between generated and reconstructed angular observables, $\cos\theta_\ell$ (left) and
+ $\cos\theta_h$ (right) as a function of 
+ the observables themselves for long (top) and downstream (bottom) candidates. 
+ The spread of these distributions can be interpreted as the angular observables' resolution.
+ %As the plots are made using fully selected rare samples the bottom plots present empty bands
+ %corresponding to the charmonium vetoes.
  }
 \label{fig:resolutionvsq2ang}
 \end{figure}
 %
 %Plots shown are done on long-long events only but we performed the same study separately on down-down events too.
-In Fig.~\ref{fig:resolutionvsq2ang} the same difference is shown also as a function of \qsq revealing again no bias.
-The spread of these distributions around the central value can be takes as an estimate of the angular resolution.
+%In Fig.~\ref{fig:resolutionvsq2ang} the same difference is shown also as a function of \qsq revealing again no bias.
+%
+The spread of these distributions around the central value can be interpeted as an estimate of the angular resolution.
 Taking vertical slices of the plots in Fig.~\ref{fig:resolutionvsq2ang} one obtains approximately gaussian
 distributions centred at zero. These are fit with a single gaussian and its width
 is interpreted as the angular resolution. Table~\ref{tab:resolutions} reports the average resolutions
-for the two angular observables separately for long and downstream candidates. As expected candidates built
+for the two angular observables separately for long and downstream candidates. Candidates built
 from long tracks are characterised by a better angular resolution due to a better momentum and vertex resolution.
 %Furthermore also the resolution of the lepton observable is better than the hadronic one.
 %
 %
-\begin{figure}
-\centering
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf}
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf} \\
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf}
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf}
-\caption{Angular resolution for $\cos \theta_\ell$ (left plots) and  $\cos \theta_h$ (right plots)
-as a function of the angular observables and \qsq for downstream (upper plots) and
-long (lower plots) candidates. White bands correspond to the \jpsi and \psitwos resonances
-which are excluded from the study.}
-\label{fig:avgResol}
-\end{figure}
+%Figure~\ref{fig:avgResol} shows the angular resolution in two-dimensional bins of \qsq and angular observables.
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaL_DD.pdf}
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaB_DD.pdf} \\
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaL_LL.pdf}
+%\includegraphics[width=0.49\textwidth]{Lmumu/figs/resolution/resolution2D_cosThetaB_LL.pdf}
+%\caption{Angular resolution for $\cos \theta_\ell$ (left plots) and  $\cos \theta_h$ (right plots)
+%as a function of the angular observables and \qsq for downstream (upper plots) and
+%long (lower plots) candidates. White bands correspond to the \jpsi and \psitwos resonances
+%which are excluded from the study.}
+%\label{fig:avgResol}
+%\end{figure}
 
 

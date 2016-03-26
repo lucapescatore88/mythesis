@@ -9,7 +9,7 @@ N_\mathrm{S}P_{\mathrm{S}}(m_i)+N_\mathrm{C}P_\mathrm{C}(m_i)+N_{\mathrm{B}}P_{\
 \end{equation}
 \noindent
 where $N_\mathrm{S}$, $N_\mathrm{C}$ and $N_\mathrm{B}$ are respectively the numbers of signal, 
-combinatorial and \KS background events and the $P_i(m_i)$ are the corresponding probability density functions (PDF).
+combinatorial and \KS background candidates and the $P_i(m_i)$ are the corresponding probability density functions (PDF).
 The fit variable is the 4-body $m(p\pi\mu\mu)$ invariant mass obtained from
 a kinematical fit of the full decay chain in which each particle is constrained to point to its
 assigned origin vertex and the invariant mass of the $p\pi$ system is constrained to be equal to
@@ -62,7 +62,7 @@ B = \frac{n}{|\alpha|} - |\alpha|.
 The full PDF for the resonant channel is therefore:
 %
 \begin{equation}
-P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f)\text{CB}(m;m_0,\sigma_2,\alpha_2,n),
+P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \cdot \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f)\text{CB}(m;m_0,\sigma_2,\alpha_2,n),
 \end{equation}
 %
 where $f$ is the relative fraction of candidates falling into the first CB function.
@@ -71,7 +71,7 @@ where $f$ is the relative fraction of candidates falling into the first CB funct
 \centering
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/fitLb2JpsiL_DD_MC.pdf}
 \includegraphics[width=0.49\textwidth]{Lmumu/figs/MassFits/fitLb2JpsiL_LL_MC.pdf}
-\caption{Invariant mass distribution of $\Lb\ra\Lz\jpsi$ downstream (left) long (right) candidates.
+\caption{Invariant mass distribution of $\Lb\ra\jpsi\Lz$ downstream (left) and long (right) candidates.
 The points show simulated data and the blue line is the signal fit function.}
 \label{fig:Lb_jpsiMCfit}
 \end{figure}
@@ -82,7 +82,7 @@ with $\alpha_1$ and $\alpha_2$, is fixed to the value found in the fit to simula
 In this fit two background components are modelled: the combinatorial background,
 parameterized with an exponential and the background from $\Bz\ra\jpsi\KS$ decays.
 The shape used to describe the \KS background is obtained from a $\Bz\ra\jpsi\KS$ simulated
-sample to which the full selection is applied. The invariant distribution of these events
+sample to which the full selection is applied. The invariant distribution of these candidates
 is fit with a DCB function, which is then used to model the \KS background
 in the $\Lb\to\jpsi\Lz$ fit. The fit to the simulated $\Bz\ra\jpsi\KS$ events
 is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the fit to the data all
@@ -92,41 +92,41 @@ to take into account possible data-simulation differences, an horizontal shift i
 floating (by adding a constant to the central value of the DCB, $m_0 \ra m_0 + m'$).
 In summary, the free parameters in the fit to the resonant $\Lb\to\jpsi\Lz$ sample
 are the yields of the signal and the combinatorial and \KS backgrounds, the slope
-of the exponential and the horizontal shift of the \KS shape. Note that all parameters
-of the fit to the long and downstream samples are independent.
+of the exponential and the horizontal shift of the \KS shape. Note that all the parameters
+of the PDFs used to fit the long and downstream samples are independent.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Lmumu/figs/MassFits/fitKS_bkg.pdf}
 \caption{Invariant mass distribution of simulated $\Bz\ra\jpsi\KS$ events after 
-full selection fitted a Double Crystal Ball function. }
+full selection fitted with a Double Crystal Ball function. }
 \label{fig:KSbkgFit}
 \end{figure}
 
 Finally, the rare $\Lb\to\Lz\mumu$ data sample is fit. In this case the fit to the long
 and downstream samples is performed simultaneously to obtain a more stable convergence. 
-In this fit the signal is modelled with the same shape used in the resonant case as there is no physical
+For this fit the signal is modelled with the same shape used in the resonant case as there is no physical
 reason why they should be different. This method is also useful to limit systematic uncertainties
 as the result will be given as a ratio between rare and resonant quantities.
-However, the low statistics for the rare sample does not allow to constrain many parameters.
+However, the low statistics available in the rare sample does not allow to constrain many parameters.
 %,especially when dividing data in \qsq bins.
 Therefore, all parameters of the signal shape are fixed to
-the ones derived from the fit to the normalisation channel. However, to account for possible differences, 
+the ones derived from the fit to the $\jpsi\Lz$ channel. However, to account for possible differences, 
 arising from a different resolution in different \qsq regions, a scale factor is multiplied
-to the widths of the two gaussian cores of the signal DCB: $\sigma_1 \rightarrow c\cdot \sigma_1$
-and $\sigma_2 \rightarrow c\cdot \sigma_2$, where the two scale factors are the same. This factors
-are fixed in the fit to data by fitting rare $\Lb\to\Lz\mumu$ simulated events in each \qsq bin and comparing
+to the widths of the two gaussian cores of the signal DCB: $\sigma_1 \rightarrow c(\qsq)\cdot \sigma_1$
+and $\sigma_2 \rightarrow c(\qsq)\cdot \sigma_2$, where the two scale factors are the same. These factors
+are fixed to values obtained by fitting rare $\Lb\to\Lz\mumu$ simulated events in each \qsq bin and comparing
 the widths with the ones found on the fit to the resonant simulated sample, namely
 \begin{equation}
 c = \sigma_{\mumu}^{MC} / \sigma_{\jpsi}^{MC}.
 \end{equation}
-Values obtained are $\sim 1.9$ for downstream candidates and $\sim 2.3$ for long candidates,
+These values are found to be $\sim 1.9$ for downstream candidates and $\sim 2.3$ for long candidates,
 corresponding to the fact that in the resonant case a further constrain on the dimuon mass
 is used, which improves the resolution by a factor of $\sim2$. The dependence of the scaling factor on \qsq 
-is found to be small. For the fits on the long and downstream samples the parameters are always fixed to the
-corresponding \jpsi fit; in this analysis shape parameters are never shared between the two candidate categories.
+is found to be small. For the fits on the long and downstream samples the parameters are always separately fixed to the
+corresponding $\jpsi\Lz$ fits; in this analysis shape parameters are never shared between the two candidate categories.
 
-Also in the rare case the modelled background components are
+The modelled background components are, also in the rare case,
 the combinatorial background, described with an exponential function and the \KS background. 
 The slope of the background is visibly different depending on the \qsq interval. This is partly due to the 
 fact that at high \qsq the combinatorial changes slope because of a kinematical limit at low 4-body
@@ -135,16 +135,16 @@ parameters in each \qsq interval. % and for the downstream and long samples.
 The background component from $\Bz\to\KS\mumu$ decays is modelled using the same shapes used
 for the resonant channel. However, in this case the horizontal shift is fixed to what found
 for the resonant channel. The expected amount of misreconstructed $\Bz\ra\KS\mumu$
-events is small and does not allow to determine reliably the yield. Therefore
+candidates is small and does not allow to determine reliably its yield. Therefore, 
 this is fixed to the yield of $\Bz\ra\jpsi\KS$ decays rescaled by the expected ratio
 of branching fractions between the resonant and rare channels. The \qsq distribution of $\Bz\ra\KS\mumu$ 
 simulated events is used to predict the yield as a function of \qsq. Table~\ref{tab:KSprediction} reports the 
-number of predicted $\Bz\ra\KS\mumu$ events in each \qsq interval obtained with the following formula:
+number of predicted $\Bz\ra\KS\mumu$ candidates in each \qsq interval obtained with the following formula:
 \begin{equation}
-N_{\KS\mumu}(\qsq) = N_{\jpsi\KS}\frac{B(\Bz\ra\KS\mumu)}{B(\Bz\ra\KS\jpsi)}\cdot \frac{1}{\epsilon_{rel}} \cdot B(\jpsi\ra\mumu) \frac{N(\qsq)_{MC}}{N^{tot}_{MC}} 
+N_{\KS\mumu}(\qsq) = N_{\jpsi\KS}\frac{B(\Bz\ra\KS\mumu)}{B(\Bz\ra\KS\jpsi)}\cdot \frac{1}{\varepsilon_{rel}} \cdot B(\jpsi\ra\mumu) \frac{N(\qsq)_{MC}}{N^{tot}_{MC}} 
 \end{equation}
 where $N(\qsq)_{MC}$ is the number of simulated rare candidates falling in a \qsq interval after full selection and $N^{tot}_{MC}$ 
-is the total number of simulated events. 
+is the total number of simulated events and \mbox{$\varepsilon_{rel} = \varepsilon_{\mu\mu} / \varepsilon_{\jpsi}$} is the relative selection efficiency between the two channels. 
 %The \KS\mumu contribution is then completely taken out to study systematic
 %uncertainties as described in Sec.~\ref{sec:Lb_sys}.
 %Only for the 6-8 \gevgevcccc bin, a background component coming from the residual of the \jpsi radiative tail is
@@ -171,7 +171,7 @@ is the total number of simulated events.
 \label{tab:KSprediction}
 \end{table}
 
-As the fit on the rare sample is performed simultaneously on long and downstream candidates,
+As the fit to the rare sample is performed simultaneously on long and downstream candidates,
 their two yields are not free to vary separately but are parameterised
 as a function of the common branching fraction using the following formula:
 %
@@ -210,10 +210,10 @@ the combinatorial background and the green dashed line the $\Bz\ra\KS\mumu$ back
 \end{figure}
 %
 Figures~\ref{fig:Lb_totalFit} and~\ref{fig:Lb_totalFit_low} show fitted invariant mass distributions for
-the normalisation channel, selected with the high \qsq and low \qsq requirements respectively.
+the normalisation channel, selected with the high-\qsq and low-\qsq requirements respectively.
 %The $\chi^2$ value of the fit is $126$ for LL and $112$ for DD both with 140 degrees of freedom, which corresponds to probability of 80\% and 95\%.
-Table~\ref{tab:Lb_rawYieldJpsi} reports the measured yields of $\Lb\ra\jpsi\Lz$ candidates found using the low 
-and high \qsq selections. Values for the signal shape parameters are shown on Fig.~\ref{fig:Lb_totalFit}.
+Table~\ref{tab:Lb_rawYieldJpsi} reports the measured yields of $\Lb\ra\jpsi\Lz$ candidates found using the low- 
+and \mbox{high-\qsq} selections. Values for the signal shape parameters are shown on Fig.~\ref{fig:Lb_totalFit}.
 Fits to the rare $\Lb\ra\Lz\mumu$ samples are shown in Fig.~\ref{fig:Lb_Lmumu} for the integrated
 $15 < \qsq < 20$ and $1.1 < \qsq < 6.0$~\gevgevcccc ~\qsq intervals, while
 %The exponential slopes, the scale factors multiplied to the widths and the number of combinatorial events
@@ -223,7 +223,7 @@ and~\ref{fig:Lb_differentialFitLL} for downstream and long candidates respective
 The yields of rare candidates obtained from the fit are listed in Tab.~\ref{tab:Lb_rawYield} together with their significances.
 Most candidates are found in the downstream sample, which comprises $\sim 80\,\%$ of the total yield.
 Note that, since the fit is simultaneous to the two candidate categories, their yields
-are not parameters free to float independently in the fit but are correlated via the branching ratio.
+are not parameters free to vary independently but are correlated via the branching ratio.
 The statistical significance of the observed signal yields is evaluated as the change in the logarithm 
 of the likelihood function, $\sqrt{2\Delta\ln{\mathcal{L}}}$, when the signal component
 is excluded from the fit, relative to the nominal fit in which it is present.
@@ -248,7 +248,7 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
 \caption{Signal yields, $N_\mathrm{S}$, obtained from the
   invariant mass fit to \decay{\Lb}{\Lz\mumu} candidates in each \qsq interval
   together with their statistical significance. 
-  The $8--11$ and $12.5--15$~\gevgevcccc ~\qsq intervals are excluded
+  The \mbox{$8-11$} and \mbox{$12.5-15$}~\gevgevcccc ~\qsq intervals are excluded
   from the study as they are dominated by resonant decays via charmonium resonances.}
 \begin{tabular}{$l^c^c^c^c}
 \rowstyle{\bfseries} 
@@ -282,8 +282,8 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
 \centering
 \includegraphics[width=0.7\textwidth]{Lmumu/figs/paper/figure13.pdf}
 \includegraphics[width=0.7\textwidth]{Lmumu/figs/paper/figure2.pdf}
-\caption{Invariant mass distributions of $\Lb\ra\Lz\mumu$ candidates in the integrated 0.1--6.0 \gevgevcccc(top)
-and 15--20 \gevgevcccc (bottom) ~\qsq intervals. Points show data combining long and downstream candidates together.
+\caption{Invariant mass distributions of $\Lb\ra\Lz\mumu$ candidates in the integrated $0.1 - 6.0$ (top)
+and $15 - 20$~\gevgevcccc (bottom) ~\qsq intervals. Points show data combining long and downstream candidates together.
 The blue solid line represents the total fit function and the dashed red line the combinatorial background.}
 %\includegraphics[width=0.54\textwidth]{Lmumu/figs/MassFits/Lb2Lmumu_DD_lowQ2_fitAndRes.pdf}
 %\includegraphics[width=0.54\textwidth]{Lmumu/figs/MassFits/Lb2Lmumu_LL_lowQ2_fitAndRes.pdf}
@@ -300,9 +300,9 @@ The blue solid line represents the total fit function and the dashed red line th
 \centering
 \includegraphics[width=1.\textwidth]{Lmumu/figs/MassFits/q2_fits_DD_plot2.pdf}
 \includegraphics[width=1.\textwidth]{Lmumu/figs/MassFits/q2_fits_DD_plot1.pdf}
-\caption{Invariant mass distributions of rare $\Lb\ra\Lz\mumu$ candidates in the considered \qsq bins
- %[0.1,2], [2,4], [4,6], [6,8], [11,12.5], [15,16], [16,18], [18,20]
- for downstream candidates. }
+\caption{Invariant mass distributions of rare $\Lb\ra\Lz\mumu$ downstream candidates in the considered \qsq intervals.
+ %[0.1,2], [2,4], [4,6], [6,8], [11,12.5], [15,16], [16,18], [18,20] 
+ }
 \label{fig:Lb_differentialFitDD}
 \end{figure}
 
@@ -310,9 +310,9 @@ The blue solid line represents the total fit function and the dashed red line th
 \centering
 \includegraphics[width=1.\textwidth]{Lmumu/figs/MassFits/q2_fits_LL_plot2.pdf}
 \includegraphics[width=1.\textwidth]{Lmumu/figs/MassFits/q2_fits_LL_plot1.pdf}
-\caption{Invariant mass distributions of rare $\Lb\ra\Lz\mumu$ candidates in the considered \qsq bins
- %[0.1,2], [2,4], [4,6], [6,8], [11,12.5], [15,16], [16,18], [18,20]
- for long candidates. }
+\caption{Invariant mass distributions of rare $\Lb\ra\Lz\mumu$ long candidates in the considered \qsq intervals.
+ %[0.1,2], [2,4], [4,6], [6,8], [11,12.5], [15,16], [16,18], [18,20] 
+ }
 \label{fig:Lb_differentialFitLL}
 \end{figure}
 

@@ -1,16 +1,16 @@
 \section{Fit strategy}
 
 %This chapter describes the fitting technique applied to extract the angular observables.
-There are physical limits to the values of the parameters of interests:
-$A_{\rm FB}^h$ is limited in the [-0.5,0.5] interval and for the $f_{\rm L}$ and 
-$A_{\rm FB}^\ell$ parameters the physical region, given by $|A_{\rm FB}^\ell| < 3/4(f_{\rm L}-1)$,
+There are physical boundaries to the values of the parameters of interests:
+\afbh is limited in the $[-0.5,0.5]$ interval and for the \fl and 
+\afbl parameters the physical region, given by $| \afbl | < 3/4 \cdot (\fl-1)$,
 is the triangle shown in Fig.~\ref{fig:pdfscan}.
-If the measured value is close to the border the fit does not always converge. Therefore
+If the measured value is close to the border of the physical region the fit does not always converge. Therefore
 a ``brute force" fitting technique is applied. For this purpose fit parameters are
-divided into two categories: parameters of interest (PoIs), $A_{\rm FB}^\ell$,
-$A_{\rm FB}^h$ and $f_{\rm L}$ and all other parameters, which are referred to as ``nuisances".
+divided into two categories: parameters of interest (PoIs), \afbl,
+\afbh and \fl and all other parameters, which are referred to as ``nuisances".
 The value of the Log-Likelihood ($\log\mathcal{L}$) of the fit model with respect to data 
-is evaluated in a grid of points in the PoIs allowed area to find the function minimum.
+is evaluated in a grid of points in the PoIs' allowed area to find the function's minimum.
 A first coarse scan finds a candidate minimum and then the procedure is reiterated two
 more times in finer intervals around it. For each point all the nuisances are fitted
 using a maximum likelihood fit. Using this method the best fit point is therefore constrained inside
@@ -20,8 +20,8 @@ the boundary is chosen as the best fit. %More details are given in Sec.~\ref{sec
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{Lmumu/figs/scan.pdf}
-\caption{The physical ($A_{\rm FB}^\ell$,$f_{\rm L}$) parameter space. The dark region corresponds 
-to points where the PDF is positive in the whole $[-1,1]$ interval. }
+\caption{The physical (\afbl,\fl) parameter space. The dark region corresponds 
+to points where the PDF is positive in the whole $[-1,1]$ $\cos\theta_\ell$ interval. }
 \label{fig:pdfscan}
 \end{figure}
 
@@ -30,7 +30,7 @@ to points where the PDF is positive in the whole $[-1,1]$ interval. }
 \label{sec:FeldmanCousins}
 
 Physical boundaries of the parameter space could result in a wrong estimation of the uncertainties,
-especially if the measured value is close to the border. To deal with this effect in this analysis the 
+especially if the measured value is close to the boundary. To deal with this effect the 
 likelihood-ordering method~\cite{Feldman:1997qc} is used to estimate uncertainties and
 nuisance parameters are accounted for using the plug-in method~\cite{Karbach:2011uz}. This is a unified 
 method to calculate confidence intervals and upper/lower limits, based on simulated experiments and has 
@@ -48,7 +48,7 @@ The method is constituted by the following steps:
 \item generate simulated samples following the distribution given by the fit model,
 where all nuisance parameters are taken from the fit in point 2 and PoIs are fixed to the same value used in point 2;
 \item repeat the two fits made on data (points 1 and 2) on each simulated sample: fit with all parameters free and with fixed PoIs;
-\item extract the value of the Log-Likelihoods at the minimum for all cases;
+\item canculate the minimum values of the Log-Likelihoods for all cases;
 \item calculate the percentage of simulated experiments in which the free-to-fixed likelihood ratio
 is bigger than in data: $\log\mathcal{L}_{fixed}/\log\mathcal{L}_{free} > (\log\mathcal{L}_{fixed}/\log\mathcal{L}_{free})_{data}$;
 \item repeat the procedure for many values of the PoIs scanning around the best fit point.
@@ -61,10 +61,10 @@ can also be scanned giving a grid of p-values, which translates into two-dimensi
 %
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/pvalue_fL_1500_2000_new.pdf}
-\includegraphics[width=0.49\textwidth]{Lmumu/figs/pvalue_afbB_1500_2000_new.pdf}
-\caption{ Dependence of the p-value from the values of the angular observables $f_{\rm L}$ (left) 
-and $A_{\rm FB}^h$ (right) in simulated experiments. The red lines mark the points
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/pvalue_fL_1500_2000.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/pvalue_afbB_1500_2000.pdf}
+\caption{ Dependence of the p-value on the values of the angular observables \fl (left) 
+and \afbh (right) in simulated experiments. The red lines mark the points
 at p-value 32\% corresponding to a 68\% CL.}
 \label{fig:FCexample}
 \end{figure}
