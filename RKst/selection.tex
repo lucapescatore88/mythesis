@@ -13,26 +13,26 @@ All these first three steps are referred to as ``pre-selection";
 background and clear the way for the last step;
 \item in the final step a neural network is used to remove combinatorial background. Furthermore,
 for the electron channels, which are more challenging, the kinematic structure of the decays
-is also used to improve the samples purity.
+is also used to improve the samples' purity.
 \end{itemize}
 %
 %In order to minimise the systematic uncertainties the same selection requirements are used to select 
 %the rare signal candidates and the relative charmonium channel, a part from the \qsq cuts which serve
 %to distinguish them. 
-To identify the $\Bz \to\Kstarz(\jpsi\to \mumu)$ candidates a dilepton mass
+Inorder to identify the $\jpsi(\mu\mu)$ candidates a dimuon invariant mass
 interval of 100~\mevcc~around the nominal \jpsi peak~\cite{PDG2014} is selected.
 On the other hand it is not possible to use a narrow interval around $\jpsi(ee)$ mass peak as the invariant mass
 distribution is characterised by a long radiative tail at low masses due to bremsstrahlung radiation.
-Furthermore, a requirement in \qsq distorts the 4-body $m(K\pi ee)$ mass distribution which is not advisable as is
-important to be able to fit a wide mass range to constrain the backgrounds. For these reasons the interval to select
-$\Bz \to\Kstarz(\jpsi\to \ee)$ candidates is chosen to go as low as possible without overlapping with
+Furthermore, a requirement on $m(ee)$ would distort the 4-body $m(K\pi ee)$ mass distribution which is not advisable as is
+important to be able to fit a wide mass range in order to constrain the backgrounds. For these reasons the interval to select
+$\jpsi(ee)$ candidates is chosen to go as low as possible in \qsq without overlapping with
 the rare channel interval. Candidates are therefore identified as $\jpsi(ee)$ if they fall in the \qsq interval
 $6 < \qsq < 11$~\gevgevcccc. Similarly, candidates are identified as $\psitwos(ee)$ is they fall into $11 < \qsq < 15$~\gevgevcccc
 and $\gamma(ee)$ if they fall into $\qsq < 0.004$~\gevgevcccc.
-Table~\ref{tab:candidates} summarises the requirements to distinguish sample from different channels.
+Table~\ref{tab:candidates} summarises the requirements used to distinguish samples corresponding to different decay channels.
 Figure~\ref{fig:2D_q2_B0mass} shows two-dimensional distributions of \qsq versus the 4-body invariant mass 
 for candidates passing the full selection. Horizontal bands can be clearly seen at \qsq values corresponding to the \jpsi and \psitwos resonances.
-On the plot for muons it is also evident a vertical band which corresponds to rare decay of interest.
+On the plot for muons it is also evident a vertical band which corresponds to the rare decay.
 
 \begin{table}[t!]
 \begin{center}
@@ -48,7 +48,7 @@ On the plot for muons it is also evident a vertical band which corresponds to ra
 	& \BdToKstmm (low)			& $0.0004<\qsq<1.1\gevgevcccc$ \\
 	& \BdToKstmm (central)		& $1.1<\qsq<6\gevgevcccc$ \\
 	& \BdToKstmm (high)		& $\qsq>15\gevgevcccc$ \\
-	& \BdToKstJPsmm (\mcKpimm)	& $|m_{\mm} - m_{\jpsi}^{PDG}| < 100\mevcc$ \\ \hline
+	& \BdToKstJPsmm (\mcKpimm)	& $|m_{\mu\mu} - m_{\jpsi}^{PDG}| < 100\mevcc$ \\ \hline
 \multirow{7}{*}{$ee$} 
 	&  \BdToKstee (low)			& $0.0004<\qsq<1.1\gevgevcccc$ \\
 	& \BdToKstee (central)		& $1.1<\qsq<6\gevgevcccc$ \\
@@ -69,7 +69,7 @@ On the plot for muons it is also evident a vertical band which corresponds to ra
 \includegraphics[width=1.\textwidth]{RKst/figs/electron_B0jpsi2D_selected.pdf}
 \includegraphics[width=1.\textwidth]{RKst/figs/muon_B0jpsi2D_selected.pdf}
 \caption{Two-dimensional distributions of \qsq versus 4-body $m(K\pi\ell\ell)$
-invariant mass for the electron (top) and muonic (bottom) channels in 2012 data.}
+invariant mass for the electron (top) and muon (bottom) channels in 2012 data.}
 \label{fig:2D_q2_B0mass}
 \end{figure}
 
@@ -82,12 +82,12 @@ reported in Tab.~\ref{tab:RKst_triglines}, where the logical $and$ of L0, HLT1 a
 lines is required and the logical $or$ of the lines on the same level. The candidates are
 required to be triggered-on-signal (TOS) for most of the stages, namely
 it is required for the particle which triggered to be one of the particles used to build the signal candidates.
-Only for \verb!L0Global!, used in the electron case, we require a trigger-independent-of-signal (TIS),
-this is aimed to collect all the possible statistics for the electron channels, which are the most challenging.
+Only for \verb!L0Global!, used in the electron case, a trigger-independent-of-signal (TIS) is required. 
+%this is aimed to collect all the possible statistics for the electron channels, which are the most challenging.
 The \verb!L0Muon! trigger requires hits in the muon detector, while \verb!L0Electron! and \verb!L0Hadron! use information
 from the calorimeters; \verb!HLT1TrackAllL0! adds information from the trackers and
 triggers if the L0 decision is confirmed; finally, \verb!HLT2Topo[2,3]BodyBBDT! uses a full reconstruction 
-of the event and a neural network trained on events with a specific topology in order to detect specific decay structures.
+of the event and a neural network trained on candidates with a specific topology in order to detect specific decay structures.
 %More information about the muon triggers can be found at Sec.~\ref{sec:Lb_trigger}.
 
 \begin{table}[h!]
@@ -121,7 +121,7 @@ them. These categories are defined to be exclusive in the following way:
 \item {\bf L0E}: events triggered by at least one of the electrons in the signal candidate (\verb!L0Electron_TOS!);
 \item {\bf L0H}: events triggered by at least one of the hadrons in the signal candidate and not by L0Electron (\verb|L0Hadron_TOS && !L0Electron_TOS|);
 \item {\bf L0I}: events triggered by particles not in the signal candidate and not by the previous cases 
-(\verb|L0_TIS && !(L0Electron_TOS |\verb!|| L0Hadron_TOS)!).
+(\verb|L0Global_TIS && !(L0Electron_TOS |\verb!|| L0Hadron_TOS)!).
 \end{itemize}
 
 The majority of the selected events falls in the L0E category, while
@@ -133,7 +133,7 @@ Candidates are then required to pass the kinematic and quality cuts summarised i
 The meaning of the variables in the table was already explained in Sec.~\ref{sec:Lb_selection}.
 Loose PID cuts are applied in preselection to limit the size of the samples, while tighter cuts are applied
 in a second stage. A large mass window is kept around the \Bz peak in order to be able
-to use the sideband to train the multivariate analysis and to constrain the backgrounds.
+to use the sideband to train the multivariate classifier and to constrain the backgrounds.
 %
 %In the table $IP_{\chi_2}$ is defined as the projected distance from the vertex divided by its uncertainty, for example $IP^B_{\chi_2}(primary) > 4$ means
 %that the B vertex is 2 standard deviations away from the primary vertex.
@@ -169,9 +169,9 @@ $\pi$			& $\chisqip(primary) > 9$ \\
  \hline
 \multirow{4}{*}{ \Kstarz }
        			& $\pt > 500$ \mevc \\
-       			& $|m - m_{\Kstarz}^{PDG}| < 300$ \mevcc  \\ %300 in stripping but then we restrict it to 100
+       			& $|m_{K\pi} - m_{\Kstarz}^{PDG}| < 300$ \mevcc  \\ %300 in stripping but then we restrict it to 100
        			& $\chisqip(primary) > 9$ \\
-       			& Origin vertex $\chi_2/\text{ndf} < 25$ \\
+       			& Origin vertex $\chisq/\text{ndf} < 25$ \\
 \hline
 \multirow{3}{*}{ $\mu$ }
        			& $\pt > 300$ \mevc \\
@@ -183,20 +183,20 @@ $\pi$			& $\chisqip(primary) > 9$ \\
        			& $\pt > 300$ \mevc \\
        			& $\chisqip(primary) > 9$ \\
        			& {\verb hasCalo }\\ %RequiresDet='CALO'
-       			& $PID_e > 0$ \\
+       			& \verb!PID!$_e > 0$ \\
 \hline
 \multirow{4}{*}{ $\ell\ell$ }
-				& $m < 5500$ \mevcc \\
-			  	& End vertex $\chi^2/\text{ndf} < 9$ \\
+				& $m_{\ell\ell} < 5500$ \mevcc \\
+			  	& End vertex $\chisq/\text{ndf} < 9$ \\
 			  	& Origin vertex $\chi^2$ separation $> 16$ \\
 %			  	& $\chisqip(primary) > 0$ \\
 \hline
 \multirow{4}{*}{ $B^0$  }
  %      & $| m - m_{B^0}^{PDG}| < 600$ \mevcc  \\
        			& {\verb DIRA } $> 0.9995$ \\ 
-       			& End vertex $\chi^2/\text{ndf} < 9$ \\
+       			& End vertex $\chisq/\text{ndf} < 9$ \\
      			& $\chisqip(primary) < 25$ \\
-     			& Primary vertex $\chi^2$ separation $> 100$ \\
+     			& Primary vertex $\chisq$ separation $> 100$ \\
 \end{tabular}
 \label{tab:RKstripping}
 \end{center}
