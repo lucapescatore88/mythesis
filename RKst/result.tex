@@ -1,30 +1,33 @@
-\section{Result extraction}
+\clearpage
+\section{Result extraction and validation}
 \label{sec:RKst_result}
 
 This section presents the procedure to obtain the \RKst ratio together with
-methods to check robustness of the analysis.
+methods to validate the robustness of the analysis.
 
 %This section presents the final results of this analysis
 %together with the description of sanity checks performed to verify the stability
 %of the methods used.
 
-\subsection{$R_{\jpsi}$ sanity check}
+\subsection{$r_{\jpsi}$ sanity check}
 \label{sec:Rjpsi}
 
 In order to cross-check the analysis procedure, the ratio between the
 measured branching ratio of the electron and muon resonant channels is calculated:
 %
 \begin{equation}
-r_{\jpsi} = \frac{\BR(\Bz\to\Kstarz\jpsi(\to \mumu))} {\BR(\Bz\to\Kstarz\jpsi(\to \epem))} 
-= \frac{\varepsilon_{\jpsi(\mu\mu)} \cdot N_{\Bz\to\Kstarz\jpsi(\to \epem)}}{\varepsilon_{\jpsi(ee)} 
-\cdot N_{\Bz\to\Kstarz\jpsi(\to \mumu)}}.
+r_{\jpsi} = \frac{\BR(\Bz\to\Kstarz(\jpsi\to \mumu))} {\BR(\Bz\to\Kstarz(\jpsi\to \epem))} 
+= \frac{\varepsilon_{\jpsi(\mu\mu)} \cdot N_{\Bz\to\Kstarz(\jpsi\to \epem)}}{\varepsilon_{\jpsi(ee)} 
+\cdot N_{\Bz\to\Kstarz(\jpsi\to \mumu)}}.
 \end{equation}
 %
-Unlike absolute branching fractions calculations, the determination of $R_{\jpsi}$ represents a better
+Compared with absolute branching fractions calculations, the determination of $r_{\jpsi}$ represents a better
 sanity test as it is not affected by uncertainties due to the knowledge of the amount of collected 
-luminosity, $\mathcal{L}$, or the fragmentation fraction, $f_d$, the probability for a $\bquark$
+luminosity or of the fragmentation fraction: the probability for a $\bquark$
 quark to produce a \Bz meson. These quantities come with large uncertainties but they cancel
-in the $r_{\jpsi}$ ratio.
+in the $r_{\jpsi}$ ratio. As new physics is expected not to affect tree level $b\to\cquark\cquarkbar\squark$ 
+processes the ratio between the \jpsi channels should be 1, while deviations from unity would signal
+unaccounted systematic effects.
 
 %but this ratio
 %is a better defined sanity check for our analysis. In fact the absolute branching fractions
@@ -75,10 +78,26 @@ in the $r_{\jpsi}$ ratio.
 %\noindent where the uncertainty is only statistical.
 %A reasonable agreement with the PDG~\cite{PDG2014} value, $(4.33 \pm 0.15) \times 10^{-5}$, is found.
 
+\subsection{\BR(\BdToKstG)}
+
+As a further check, the \BdToKstG branching fraction can be determined using the ratio
+%
+$$r_\gamma = \frac{\BR(\BdToKstG)} {\BR(\BdToKstJPsee)} = \frac{N_{\gamma(ee)}}{N_{\jpsi(ee)}} \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{\gamma(ee)}}.$$
+
+This is an interesting cross-check as it involves only electrons that are those 
+that could be more easily affected by systematics effects due to the more complex reconstruction process.
+The measured value can be compared with the one reported in the Review of Particle Physics, $(4.33 \pm 0.15) \times 10^{-5}$~\cite{PDG2014}.
+
+%The measured value is
+%
+%$$\BR(\BdToKstG) = ( \pm ) \times 10^{-5} \, ,$$
+%
+%\noindent where the uncertainty is only statistical.
+%A reasonable agreement with the PDG~\cite{PDG2014} value, $(4.33 \pm 0.15) \times 10^{-5}$, is found.
 
 \subsection{\RKst}
 
-The ratio \RKst is extracted by dividing the $r_{ee}$ and $r_{\mu\mu}$
+The ratio \RKst is calculated by dividing the $r_{ee}$ and $r_{\mu\mu}$
 parameters described in Sec.~\ref{sec:rkst_fits}. These ratios are 
 direct parameters of the fit but they can also be built from the yields
 in Tab.~\ref{tab:RKst_yields} and the efficiencies in Tab.~\ref{tab:RKst_RelEff}.
@@ -96,8 +115,9 @@ In summary the definition of the \RKst ratio is the following:
 \cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}}.
 \end{equation}
 %
-As the electron ratio $R_{ee}$ is a shared parameter in the simultaneous fit to the
-three electron categories its value is already a combination of the three samples.
+As the electron ratio, $r_{ee}$, is a shared parameter in the simultaneous fit across the
+three trigger categories its value is already a combination of the three samples.
+Results are still blinded.
 
 %Results are shown in Tab.~\ref{tab:RKst_results}.
 

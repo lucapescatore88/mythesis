@@ -105,40 +105,41 @@
 \BOOKMARK [2][-]{subsection.5.6.5}{Bremsstrahlung corrected mass}{section.5.6}% 105
 \BOOKMARK [2][-]{subsection.5.6.6}{Multivariate analysis}{section.5.6}% 106
 \BOOKMARK [2][-]{subsection.5.6.7}{Optimisation}{section.5.6}% 107
-\BOOKMARK [1][-]{section.5.7}{Selection summary}{chapter.5}% 108
-\BOOKMARK [1][-]{section.5.8}{Mass fits}{chapter.5}% 109
-\BOOKMARK [2][-]{subsection.5.8.1}{Muon channels}{section.5.8}% 110
-\BOOKMARK [3][-]{subsubsection.5.8.1.1}{B \0400 \040K *0 \(J-3mu/-2mu 2mu \040+-\) PDF}{subsection.5.8.1}% 111
-\BOOKMARK [3][-]{subsubsection.5.8.1.2}{B \0400 \040K *0 \040+ - \040PDF}{subsection.5.8.1}% 112
-\BOOKMARK [3][-]{subsubsection.5.8.1.3}{Summary}{subsection.5.8.1}% 113
-\BOOKMARK [2][-]{subsection.5.8.2}{Electron channels}{section.5.8}% 114
-\BOOKMARK [3][-]{subsubsection.5.8.2.1}{Signal PDFs for the electron channels}{subsection.5.8.2}% 115
-\BOOKMARK [3][-]{subsubsection.5.8.2.2}{Background PDFs for the electron channels}{subsection.5.8.2}% 116
-\BOOKMARK [3][-]{subsubsection.5.8.2.3}{Summary of the fit to the electron samples}{subsection.5.8.2}% 117
-\BOOKMARK [2][-]{subsection.5.8.3}{Event yields}{section.5.8}% 118
-\BOOKMARK [1][-]{section.5.9}{Efficiency}{chapter.5}% 119
-\BOOKMARK [2][-]{subsection.5.9.1}{Geometric efficiency}{section.5.9}% 120
-\BOOKMARK [2][-]{subsection.5.9.2}{Reconstruction efficiency and bin migration}{section.5.9}% 121
-\BOOKMARK [3][-]{subsubsection.5.9.2.1}{Bin migration}{subsection.5.9.2}% 122
-\BOOKMARK [2][-]{subsection.5.9.3}{PID efficiency}{section.5.9}% 123
-\BOOKMARK [2][-]{subsection.5.9.4}{Trigger efficiency}{section.5.9}% 124
-\BOOKMARK [3][-]{subsubsection.5.9.4.1}{Electron triggers}{subsection.5.9.4}% 125
-\BOOKMARK [3][-]{subsubsection.5.9.4.2}{TISTOS cross-check}{subsection.5.9.4}% 126
-\BOOKMARK [2][-]{subsection.5.9.5}{Neural networks and BCM efficiencies}{section.5.9}% 127
-\BOOKMARK [1][-]{section.5.10}{Systematic uncertainties}{chapter.5}% 128
-\BOOKMARK [2][-]{subsection.5.10.1}{Choice of signal and background PDFs}{section.5.10}% 129
-\BOOKMARK [2][-]{subsection.5.10.2}{Efficiency determinations}{section.5.10}% 130
-\BOOKMARK [2][-]{subsection.5.10.3}{Bin migration}{section.5.10}% 131
-\BOOKMARK [1][-]{section.5.11}{Result extraction}{chapter.5}% 132
-\BOOKMARK [2][-]{subsection.5.11.1}{RJ-3mu/-2mu 2mu sanity check}{section.5.11}% 133
-\BOOKMARK [2][-]{subsection.5.11.2}{RK *0}{section.5.11}% 134
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 135
-\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 136
-\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 137
-\BOOKMARK [1][-]{section.1.2}{Two-dimensional angular distribution parameters}{chapter.1}% 138
-\BOOKMARK [1][-]{section.1.3}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 139
-\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 140
-\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 141
-\BOOKMARK [0][-]{chapter.4}{Improved predictions for \0400b \040 \040 \040+- \040observables.}{}% 142
-\BOOKMARK [0][-]{chapter.5}{Invariant mass fits to B \0400 \040K *0 + - simulated candidates}{}% 143
-\BOOKMARK [0][-]{chapter.6}{Invariant mass fits to B \0400 \040K *0 e+ e- candidates divided in trigger categories}{}% 144
+\BOOKMARK [2][-]{subsection.5.6.8}{Selection summary}{section.5.6}% 108
+\BOOKMARK [1][-]{section.5.7}{Mass fits}{chapter.5}% 109
+\BOOKMARK [2][-]{subsection.5.7.1}{Muon channels}{section.5.7}% 110
+\BOOKMARK [3][-]{subsubsection.5.7.1.1}{B \0400 \040K *0 \(J-3mu/-2mu 2mu \040+-\) PDF}{subsection.5.7.1}% 111
+\BOOKMARK [3][-]{subsubsection.5.7.1.2}{B \0400 \040K *0 \040+ - \040PDF}{subsection.5.7.1}% 112
+\BOOKMARK [3][-]{subsubsection.5.7.1.3}{Summary}{subsection.5.7.1}% 113
+\BOOKMARK [2][-]{subsection.5.7.2}{Electron channels}{section.5.7}% 114
+\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Signal PDFs for the electron channels}{subsection.5.7.2}% 115
+\BOOKMARK [3][-]{subsubsection.5.7.2.2}{Background PDFs for the electron channels}{subsection.5.7.2}% 116
+\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Summary of the fit to the electron samples}{subsection.5.7.2}% 117
+\BOOKMARK [2][-]{subsection.5.7.3}{Event yields}{section.5.7}% 118
+\BOOKMARK [1][-]{section.5.8}{Efficiency}{chapter.5}% 119
+\BOOKMARK [2][-]{subsection.5.8.1}{Geometric efficiency}{section.5.8}% 120
+\BOOKMARK [2][-]{subsection.5.8.2}{Reconstruction efficiency and bin migration}{section.5.8}% 121
+\BOOKMARK [3][-]{subsubsection.5.8.2.1}{Bin migration}{subsection.5.8.2}% 122
+\BOOKMARK [2][-]{subsection.5.8.3}{PID efficiency}{section.5.8}% 123
+\BOOKMARK [2][-]{subsection.5.8.4}{Trigger efficiency}{section.5.8}% 124
+\BOOKMARK [3][-]{subsubsection.5.8.4.1}{Electron triggers}{subsection.5.8.4}% 125
+\BOOKMARK [3][-]{subsubsection.5.8.4.2}{TISTOS cross-check}{subsection.5.8.4}% 126
+\BOOKMARK [2][-]{subsection.5.8.5}{Neural networks and BCM efficiencies}{section.5.8}% 127
+\BOOKMARK [1][-]{section.5.9}{Systematic uncertainties}{chapter.5}% 128
+\BOOKMARK [2][-]{subsection.5.9.1}{Choice of signal and background PDFs}{section.5.9}% 129
+\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determinations}{section.5.9}% 130
+\BOOKMARK [2][-]{subsection.5.9.3}{Bin migration}{section.5.9}% 131
+\BOOKMARK [1][-]{section.5.10}{Result extraction and validation}{chapter.5}% 132
+\BOOKMARK [2][-]{subsection.5.10.1}{rJ-3mu/-2mu 2mu sanity check}{section.5.10}% 133
+\BOOKMARK [2][-]{subsection.5.10.2}{B\(B \0400 \040K *0 \)}{section.5.10}% 134
+\BOOKMARK [2][-]{subsection.5.10.3}{RK *0}{section.5.10}% 135
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 136
+\BOOKMARK [0][-]{chapter.1}{Decay models}{}% 137
+\BOOKMARK [1][-]{section.1.1}{ 0b \040 \040 \040+- distribution}{chapter.1}% 138
+\BOOKMARK [1][-]{section.1.2}{Two-dimensional angular distribution parameters}{chapter.1}% 139
+\BOOKMARK [1][-]{section.1.3}{ 0b \040 J-3mu/-2mu 2mu \040distribution}{chapter.1}% 140
+\BOOKMARK [0][-]{chapter.2}{Data-simulation comparison}{}% 141
+\BOOKMARK [0][-]{chapter.3}{Systematic uncertainties on the efficiency calculation for the \0400b \040 \040 \040+- branching fraction analysis.}{}% 142
+\BOOKMARK [0][-]{chapter.4}{Improved predictions for \0400b \040 \040 \040+- \040observables.}{}% 143
+\BOOKMARK [0][-]{chapter.5}{Invariant mass fits to B \0400 \040K *0 + - simulated candidates}{}% 144
+\BOOKMARK [0][-]{chapter.6}{Invariant mass fits to B \0400 \040K *0 e+ e- candidates divided in trigger categories}{}% 145
