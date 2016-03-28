@@ -106,7 +106,7 @@
 \BOOKMARK [2][-]{subsection.5.6.6}{Multivariate analysis}{section.5.6}% 106
 \BOOKMARK [2][-]{subsection.5.6.7}{Optimisation}{section.5.6}% 107
 \BOOKMARK [2][-]{subsection.5.6.8}{Selection summary}{section.5.6}% 108
-\BOOKMARK [1][-]{section.5.7}{Mass fits}{chapter.5}% 109
+\BOOKMARK [1][-]{section.5.7}{Invariant mass fits}{chapter.5}% 109
 \BOOKMARK [2][-]{subsection.5.7.1}{Muon channels}{section.5.7}% 110
 \BOOKMARK [3][-]{subsubsection.5.7.1.1}{B \0400 \040K *0 \(J-3mu/-2mu 2mu \040+-\) PDF}{subsection.5.7.1}% 111
 \BOOKMARK [3][-]{subsubsection.5.7.1.2}{B \0400 \040K *0 \040+ - \040PDF}{subsection.5.7.1}% 112
@@ -127,7 +127,7 @@
 \BOOKMARK [2][-]{subsection.5.8.5}{Neural networks and BCM efficiencies}{section.5.8}% 127
 \BOOKMARK [1][-]{section.5.9}{Systematic uncertainties}{chapter.5}% 128
 \BOOKMARK [2][-]{subsection.5.9.1}{Choice of signal and background PDFs}{section.5.9}% 129
-\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determinations}{section.5.9}% 130
+\BOOKMARK [2][-]{subsection.5.9.2}{Efficiency determination}{section.5.9}% 130
 \BOOKMARK [2][-]{subsection.5.9.3}{Bin migration}{section.5.9}% 131
 \BOOKMARK [1][-]{section.5.10}{Result extraction and validation}{chapter.5}% 132
 \BOOKMARK [2][-]{subsection.5.10.1}{rJ-3mu/-2mu 2mu sanity check}{section.5.10}% 133

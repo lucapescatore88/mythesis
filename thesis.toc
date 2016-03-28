@@ -107,7 +107,7 @@
 \contentsline {subsection}{\numberline {5.6.6}Multivariate analysis}{140}{subsection.5.6.6}
 \contentsline {subsection}{\numberline {5.6.7}Optimisation}{143}{subsection.5.6.7}
 \contentsline {subsection}{\numberline {5.6.8}Selection summary}{146}{subsection.5.6.8}
-\contentsline {section}{\numberline {5.7}Mass fits}{147}{section.5.7}
+\contentsline {section}{\numberline {5.7}Invariant mass fits}{147}{section.5.7}
 \contentsline {subsection}{\numberline {5.7.1}Muon channels}{147}{subsection.5.7.1}
 \contentsline {subsubsection}{\numberline {5.7.1.1}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace \ensuremath {\rightarrow }\xspace \mu ^+\mu ^-)}\xspace PDF}{148}{subsubsection.5.7.1.1}
 \contentsline {subsubsection}{\numberline {5.7.1.2}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \ensuremath {\ensuremath {\mu }\xspace ^+}\xspace \ensuremath {\ensuremath {\mu }\xspace ^-}\xspace }\xspace PDF}{149}{subsubsection.5.7.1.2}
@@ -115,7 +115,7 @@
 \contentsline {subsection}{\numberline {5.7.2}Electron channels}{152}{subsection.5.7.2}
 \contentsline {subsubsection}{\numberline {5.7.2.1}Signal PDFs for the electron channels}{153}{subsubsection.5.7.2.1}
 \contentsline {subsubsection}{\numberline {5.7.2.2}Background PDFs for the electron channels}{156}{subsubsection.5.7.2.2}
-\contentsline {subsubsection}{\numberline {5.7.2.3}Summary of the fit to the electron samples}{159}{subsubsection.5.7.2.3}
+\contentsline {subsubsection}{\numberline {5.7.2.3}Summary of the fit to the electron samples}{160}{subsubsection.5.7.2.3}
 \contentsline {subsection}{\numberline {5.7.3}Event yields}{161}{subsection.5.7.3}
 \contentsline {section}{\numberline {5.8}Efficiency}{165}{section.5.8}
 \contentsline {subsection}{\numberline {5.8.1}Geometric efficiency}{167}{subsection.5.8.1}
@@ -128,13 +128,13 @@
 \contentsline {subsection}{\numberline {5.8.5}Neural networks and BCM efficiencies}{174}{subsection.5.8.5}
 \contentsline {section}{\numberline {5.9}Systematic uncertainties}{175}{section.5.9}
 \contentsline {subsection}{\numberline {5.9.1}Choice of signal and background PDFs}{175}{subsection.5.9.1}
-\contentsline {subsection}{\numberline {5.9.2}Efficiency determinations}{177}{subsection.5.9.2}
+\contentsline {subsection}{\numberline {5.9.2}Efficiency determination}{177}{subsection.5.9.2}
 \contentsline {subsection}{\numberline {5.9.3}Bin migration}{177}{subsection.5.9.3}
-\contentsline {section}{\numberline {5.10}Result extraction and validation}{179}{section.5.10}
-\contentsline {subsection}{\numberline {5.10.1}$r_{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace }$ sanity check}{179}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.10}Result extraction and validation}{178}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}$r_{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\ensuremath {\psii }}\xspace \mskip 2mu}}\xspace }$ sanity check}{178}{subsection.5.10.1}
 \contentsline {subsection}{\numberline {5.10.2}{\ensuremath {\cal B}\xspace }(\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace \gamma }\xspace )}{179}{subsection.5.10.2}
-\contentsline {subsection}{\numberline {5.10.3}\ensuremath {R_{\ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace }}\xspace }{180}{subsection.5.10.3}
-\contentsline {chapter}{\numberline {6}Conclusions}{181}{chapter.6}
+\contentsline {subsection}{\numberline {5.10.3}\ensuremath {R_{\ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace }}\xspace }{179}{subsection.5.10.3}
+\contentsline {chapter}{\numberline {6}Conclusions}{180}{chapter.6}
 \contentsline {chapter}{\numberline {A}Decay models}{193}{chapter.1}
 \contentsline {section}{\numberline {A.1}$\ensuremath {\ensuremath {\PLambda }\xspace ^0_\ensuremath {\ensuremath {b}\xspace }\xspace }\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\PLambda }\xspace \ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}\xspace $ distribution}{193}{section.1.1}
 \contentsline {section}{\numberline {A.2}Two-dimensional angular distribution parameters}{196}{section.1.2}
