@@ -333,7 +333,7 @@ In summary the signal PDF for the fit on data is defined as:
 \end{array} 
 \end{equation}
 %
-where the free parameters are: $c$, the widths' scaling factor, and $m'$, the mass shift.
+where the free parameters are: $c$, the widths' scaling factors, and $m'$, the mass shifts.
 
 
 \subsubsection{Background PDFs for the electron channels}
@@ -347,16 +347,16 @@ This section reports the background components considered for each fitted sample
 
 \item \textit{Combinatorial}: described using an exponential function; the yield and slope parameters are free to vary in the fit;
 
-\item \textit{Partially-reconstructed} (hadronic): the shape is obtained from a $K_1^+(1270)$ simulated samples smoothed with
-a \verb!RooKeysPdf!. Simulated distributions are shown in Fig.~\ref{fig:misreco}. The fraction of partially-reconstructed 
-candidates with respect to signal ones is expected to be very similar to that
-in \BdToKstGee and therefore the normalisation is fixed as:
+\item \textit{Partially-reconstructed} (hadronic): the shape is obtained from a $K_1^+(1270)$ simulated sample smoothed with
+a \verb!RooKeysPdf!; the simulated distribution is shown in Fig.~\ref{fig:misreco}. The fraction of partially-reconstructed 
+candidates with respect to the signal ones is expected to be very similar to that
+found in \mbox{\BdToKstGee} and therefore the normalisation is constrained as:
 %
 $$N_{\ee, \, {\rm low}}^{\rm part-reco} = N_{\ee} \cdot \frac{N_{\gamma(ee)}^{\rm part-reco}}{N_{\gamma(ee)}},$$
 %
-where $N_{\gamma(ee)}^{\rm part-reco (hadronic)}/N_{\gamma(ee)}$ is the fraction of hadronic partially-reconstructed background candidates relative to the signal yield in the \BdToKstGee channel;
+where $N_{\gamma(ee)}^{\rm part-reco (hadronic)}/N_{\gamma(ee)}$ is the fraction of hadronic partially-reconstructed background candidates relative to the signal yield in the $\gamma(ee)$ channel;
 
-\item \textit{\BdToKstG leakage}: the leakage from the \BdToKstGee decay into the low-\qsq region is modelled using simulated candidates that pass the low-\qsq requirements: the distribution is smoothed using a \verb!RooKeysPdf!; the normalisation is fixed to the \BdToKstGee yield, $N_{\gamma(ee)}$ as:
+\item \textit{\BdToKstG leakage}: the leakage from the \BdToKstGee decay into the low-\qsq region is modelled using simulated candidates that pass the low-\qsq requirements. The distribution, smoothed with a \verb!RooKeysPdf!, is shown in Fig.~\ref{fig:misreco} and the normalisation is constrained to the $\gamma(ee)$ yield, $N_{\gamma(ee)}$, as:
 %
 $$N_{\ee, \, {\rm low}}^{\rm leak} = N_{\gamma(ee)} \cdot f_{\gamma(ee)}^{\rm leak, \,MC},$$
 %
@@ -385,8 +385,8 @@ but in this case the normalisation is left free to vary.
 
 \item \textit{\BdToKstJPs leakage}: the leakage from the \jpsi radiative tail into the central-\qsq interval is modelled by selecting 
 simulated \BdToKstJPsee candidates which pass the central-\qsq requirements and smoothing the distributions
-with a kernel density estimation method. The normalisation is fixed to the $\Bs\to\Kstarz(\jpsi\to\ee)$ yield, 
-$N_{\jpsi ee}$, as:
+with a kernel density estimation method; the simulated distribution is shown in Fig.~\ref{fig:misreco}. The normalisation is constrained 
+to the $\jpsi(ee)$ yield, $N_{\jpsi (ee)}$, as:
 %
 $$N_{\ee, \, {\rm central}}^{\rm leak} = N_{\jpsi(ee)} \cdot f_{\jpsi(ee)}^{\rm leak, \,MC},$$
 %\frac{N_{\jpsi(ee)}^{\rm leak, \,MC}}{N_{\jpsi(ee)}^{\rm MC}},$$
@@ -412,7 +412,7 @@ anti-MVA cut, $\verb!NNout! < 0.1$, and smoothed with a \texttt{RooKeysPdf};
  the normalisation is left free to vary.
 
 \item \textit{\BdToKstPsi leakage}: the leakage from the \psitwos radiative tail is modelled using simulated 
-\BdToKstPsiee candidates which pass the the high-\qsq requirements. The normalisation is fixed to 
+\BdToKstPsiee candidates which pass the the high-\qsq requirements. The normalisation is constrained to 
 the $\psitwos(ee)$ yield, $N_{\psitwos(ee)}$ as:
 %
 $$N_{\ee, \, {\rm high}}^{\rm leak} = N_{\psitwos(ee)} \cdot f_{\psitwos(ee)}^{\rm leak, \,MC},$$
@@ -441,12 +441,12 @@ to $\Kstar\gamma$. The yield is constrained to the $N_{ee}^{low}$ yield.
 %\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partRecoKst_KstJPsEE_PV_L0E__for_B0_PV_M.pdf}
 %\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partRecoJPs_KstJPsEE_PV_L0E__for_B0_PV_M.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partReco_KstEE_low_L0E__for_B0_PV_M.pdf}
-\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partReco_KstEE_central_L0E__for_B0_PV_M.pdf}
-\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partReco_KstEE_high_L0E__for_B0_PV_M.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_leakJPs_KstEE_central_L0E__for_B0_PV_M.pdf}
+\includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_Lb2pKJPs_KstJPsEE_L0E__for_B0_PV_M.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/Fit/fit_EE/rooKeysModel_bkg_partReco_KstGEE_L0E__for_B0_PV_M.pdf}
-\caption{Distributions of the \mKpiee invariant mass of decays involving
-higher \Kstarz resonances for the (top left) low- (top right) central-, (bottom left) high-\qsq intervals 
-and (bottom right) \BdToKstGee.}
+\caption{Distributions of the \mKpiee invariant mass of: decays involving
+higher \Kstarz resonances (top left), the \jpsi leakage into the central-\qsq 
+interval (top right), \Lb decays (bottom left) and \BdToKstGee decays (bottom right).}
 \label{fig:misreco}
 %\end{figure}
 
@@ -467,11 +467,15 @@ The following backgrounds are considered for the fits to the invariant mass of \
 
 \item \textit{Combinatorial}: described using an exponential function. The yield and slope parameters are free to vary in the fit;
 
-\item $\Lb\to pK(\jpsi\to\ee)$: described using simulated candidates to which the full selection is applied. This distribution has a broad 
-shape under the signal peak and is smoothed using a \texttt{RooKeysPdf}. The normalisation is constrained to the 
-$\Lb\to pK(\jpsi\to\mumu)$ yield returned by the muon fit after correcting for efficiency differences between final states with muons and electrons.
+\item $\Lb\to pK(\jpsi\to\ee)$: described using simulated candidates to which the full selection is applied. This distribution,
+which is shown in Fig.~\ref{fig:misreco}, has a broad 
+shape under the signal peak and is smoothed using a \texttt{RooKeysPdf}. The normalisation is fixed to the 
+$\Lb\to pK(\jpsi\to\mumu)$ yield returned by the muon fit after correcting for efficiency differences 
+between final states with muons and electrons.
 
-\item $\Bs\to\Kstarz(\jpsi\to\ee)$: described using the same PDF adopted for the signal, but a different central value, $m_0$, which is set at the \Bs nominal mass. The normalisation is constrained to the $\Bd\to\Kstarz(\jpsi\to\mumu)$ yield returned by the muon fit after correcting for efficiency differences between final states with muons and electrons;
+\item $\Bs\to\Kstarz(\jpsi\to\ee)$: described using the same PDF adopted for the signal, but a different central value, 
+$m_0$, which is set at the \Bs nominal mass. The normalisation is fixed to the $\Bd\to\Kstarz(\jpsi\to\mumu)$ yield 
+returned by the muon fit after correcting for efficiency differences between final states with muons and electrons;
 
 \end{itemize}
 
@@ -528,7 +532,7 @@ In summary, the free parameters in the fit to data are:
 \item one mass shift, $m'$, and one width scale factor, $c$, for the signal PDF common between \BdToKstJPsee and \BdToKstee in all intervals,
 but different for the three trigger categories and for \BdToKstPsiee and \BdToKstGee;
 \item the yield and slope, when applicable (e.g. no slope at high-\qsq), of the combinatorial background in each trigger category and for each channel;
-\item the yield of the backgrounds when not fixed as described in the previous section.
+\item the yield of the backgrounds when not constrained or fixed as described in the previous section.
 \end{itemize}
 
 Fits to simulated \BdToKstJPsee candidates are shown in Appendix~\ref{app:RKMCfits}, while

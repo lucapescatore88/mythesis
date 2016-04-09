@@ -13,33 +13,34 @@ combinatorial and \KS background candidates and the $P_i(m_i)$ are the correspon
 The fit variable is the 4-body $m(p\pi\mu\mu)$ invariant mass obtained from
 a kinematical fit of the full decay chain in which each particle is constrained to point to its
 assigned origin vertex and the invariant mass of the $p\pi$ system is constrained to be equal to
-the world average for the \Lz baryon mass. In the resonant case a further constrain is used on the dimuon
-mass to be equal to the known \jpsi mass. This method allows to improve the mass resolution giving
+the world average of the \Lz baryon mass~\cite{PDG2014}. In the resonant case a further constraint is imposed, namely 
+that the dimuon mass is equal to the known \jpsi mass. This method allows the mass resolution to be improved giving
 better defined peaks and therefore a more stable fit. For brevity, in the following these variables are
 simply referred to as ``invariant mass".
 
 \subsection{Fit description}
 \label{sec:Lb_fit}
 
-The fit is performed though the following steps:
+The fit is performed via the following steps:
 %
 \begin{itemize}
-\item simulated distributions are fit to extract initial parameters;
+\item simulated distributions are fitted to extract initial parameters values;
 \item the resonant data sample is fitted;
-\item the rare sample is fitted fixing some parameters to those obtained in the previous cases.
+\item the rare sample is fitted with the values of some parameters fixed to those obtained in the previous cases.
 \end{itemize}
 %
 
-In the first step simulated $\Lb\to\jpsi\Lz$ distributions are fitted using the signal PDF alone.
+In the first step, simulated $\Lb\to\jpsi\Lz$ distributions are fitted using the signal PDF alone.
 This is done separately for downstream and long candidates. Figure~\ref{fig:Lb_jpsiMCfit} shows 
 distributions of candidates selected in the resonant sample with the fit function overlaid.
 %
 The signal is described as the sum of two Crystal Ball functions (CB) with
-common mean ($m_0$) and tail slope ($n$). This is also known as Double Crystal Ball (DCB) function.
+common mean ($m_0$) and tail slope ($n$). This is also known as a Double Crystal Ball (DCB) function.
 A single Crystal Ball~\cite{Skwarnicki:1986xj} is a probability
 density function commonly used to model processes involving energy loss. In particular it is used
-to describe resonances' peaks with radiative tails. This function 
-consists of a Gaussian core and a power-law tail below a certain threshold and has form
+to describe resonances that have radiative tails. This function 
+combines a Gaussian core with a power-law tail of slope $n$ that takes effect beyond some 
+threshold $\alpha$ away from the peak value. This asymmetric function has the form
 %
 \begin{equation}
 C(x;\alpha,n,\bar{x},\sigma) = N \cdot
@@ -59,10 +60,10 @@ B = \frac{n}{|\alpha|} - |\alpha|.
 \end{array}
 \end{equation}
 %
-The full PDF for the resonant channel is therefore:
+The full PDF for the resonant signal channel,  $P_\mathrm{S}(m)$, is therefore:
 %
 \begin{equation}
-P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \cdot \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f)\text{CB}(m;m_0,\sigma_2,\alpha_2,n),
+P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \cdot \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f) \cdot \text{CB}(m;m_0,\sigma_2,\alpha_2,n),
 \end{equation}
 %
 where $f$ is the relative fraction of candidates falling into the first CB function.
@@ -76,20 +77,22 @@ The points show simulated data and the blue line is the signal fit function.}
 \label{fig:Lb_jpsiMCfit}
 \end{figure}
 
-In a second step the fit to the resonant channel data sample is performed.
-For this fit the tail slope parameter, ``$n$", which is highly correlated
-with $\alpha_1$ and $\alpha_2$, is fixed to the value found in the fit to simulated data.
+In a second step, the fit to the resonant channel data sample is performed.
+For this fit the tail slope parameter, $n$, which is highly correlated
+with $\alpha_1$ and $\alpha_2$, is fixed to the value found in the fit to simulated candidates.
 In this fit two background components are modelled: the combinatorial background,
-parameterized with an exponential and the background from $\Bz\ra\jpsi\KS$ decays.
+parameterised with an exponential and the background from $\Bz\ra\jpsi\KS$ decays.
 The shape used to describe the \KS background is obtained from a $\Bz\ra\jpsi\KS$ simulated
-sample to which the full selection is applied. The invariant distribution of these candidates
-is fit with a DCB function, which is then used to model the \KS background
+sample that has satisfied the full selection. The invariant distribution of these candidates
+is fitted with a DCB function, which is then used to model the \KS background
 in the $\Lb\to\jpsi\Lz$ fit. The fit to the simulated $\Bz\ra\jpsi\KS$ events
-is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the fit to the data all
-its parameters are fixed. This is particularly important when fitting long candidates, where the \KS
-peak is less evident, which does not allow to constrain many parameters. On the other hand, in order
-to take into account possible data-simulation differences, an horizontal shift is added and left
-floating (by adding a constant to the central value of the DCB, $m_0 \ra m_0 + m'$).
+is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the fit to the data, all
+of its parameters are fixed. This is particularly important when fitting long candidates, because the 
+contribution from the \KS peak smaller and therefore the values of the parameters would 
+not be adequately constrained by data. On the other hand, in order
+to take into account possible differences between simulation and data in the definition of the
+absolute mass scale, an offset is introduced by adding a shift to the central value 
+of the DCB, $m_0 \ra m_0 + m'$, where $m'$ is left free to vary in the fit.
 In summary, the free parameters in the fit to the resonant $\Lb\to\jpsi\Lz$ sample
 are the yields of the signal and the combinatorial and \KS backgrounds, the slope
 of the exponential and the horizontal shift of the \KS shape. Note that all the parameters
@@ -98,44 +101,46 @@ of the PDFs used to fit the long and downstream samples are independent.
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Lmumu/figs/MassFits/fitKS_bkg.pdf}
-\caption{Invariant mass distribution of simulated $\Bz\ra\jpsi\KS$ events after 
-full selection fitted with a Double Crystal Ball function. }
+\caption{Invariant mass distribution of simulated $\Bz\ra\jpsi\KS$ events passing the
+full $\Lz\mu\mu$ selection with the fit function, a Double Crystal Ball, overlaid. }
 \label{fig:KSbkgFit}
 \end{figure}
 
-Finally, the rare $\Lb\to\Lz\mumu$ data sample is fit. In this case the fit to the long
-and downstream samples is performed simultaneously to obtain a more stable convergence. 
+Finally, the fit to the rare $\Lb\to\Lz\mumu$ data sample is carried out. In this case the fits to the long
+and downstream samples are performed simultaneously to obtain a more stable convergence. 
 For this fit the signal is modelled with the same shape used in the resonant case as there is no physical
-reason why they should be different. This method is also useful to limit systematic uncertainties
+reason why they should be different. This method is also useful to reduce systematic uncertainties
 as the result will be given as a ratio between rare and resonant quantities.
-However, the low statistics available in the rare sample does not allow to constrain many parameters.
+However, the small candidate yields expected in the rare samples do not allow many 
+parameters to be reliably extracted from the fits.
 %,especially when dividing data in \qsq bins.
 Therefore, all parameters of the signal shape are fixed to
 the ones derived from the fit to the $\jpsi\Lz$ channel. However, to account for possible differences, 
-arising from a different resolution in different \qsq regions, a scale factor is multiplied
-to the widths of the two gaussian cores of the signal DCB: $\sigma_1 \rightarrow c(\qsq)\cdot \sigma_1$
-and $\sigma_2 \rightarrow c(\qsq)\cdot \sigma_2$, where the two scale factors are the same. These factors
-are fixed to values obtained by fitting rare $\Lb\to\Lz\mumu$ simulated events in each \qsq bin and comparing
-the widths with the ones found on the fit to the resonant simulated sample, namely
+arising from a different resolution in the various \qsq regions, a scale factor is applied
+to the widths of the two Gaussian cores of the signal DCB: $\sigma_1 \rightarrow c(\qsq)\cdot \sigma_1$
+and $\sigma_2 \rightarrow c(\qsq)\cdot \sigma_2$, where the same scale factor, $c$, is applied to both widths
+but it is allowed to vary for each \qsq region. 
+These factors are fixed to values obtained by fitting rare $\Lb\to\Lz\mumu$ simulated events in each \qsq bin and comparing
+the widths with those obtained from the fit to the resonant simulated sample, namely
 \begin{equation}
 c = \sigma_{\mumu}^{MC} / \sigma_{\jpsi}^{MC}.
 \end{equation}
 These values are found to be $\sim 1.9$ for downstream candidates and $\sim 2.3$ for long candidates,
-corresponding to the fact that in the resonant case a further constrain on the dimuon mass
+corresponding to the fact that in the resonant case a further constraint on the dimuon mass
 is used, which improves the resolution by a factor of $\sim2$. The dependence of the scaling factor on \qsq 
-is found to be small. For the fits on the long and downstream samples the parameters are always separately fixed to the
+is found to be small. For the fits to the long and downstream samples the parameters are always separately fixed to the
 corresponding $\jpsi\Lz$ fits; in this analysis shape parameters are never shared between the two candidate categories.
 
 The modelled background components are, also in the rare case,
 the combinatorial background, described with an exponential function and the \KS background. 
 The slope of the background is visibly different depending on the \qsq interval. This is partly due to the 
-fact that at high \qsq the combinatorial changes slope because of a kinematical limit at low 4-body
+fact that at high \qsq the combinatorial background changes slope because of a kinematical limit at low 4-body
 masses imposed by the \qsq requirements. The exponential slopes are therefore left as independent
 parameters in each \qsq interval. % and for the downstream and long samples.
 The background component from $\Bz\to\KS\mumu$ decays is modelled using the same shapes used
-for the resonant channel. However, in this case the horizontal shift is fixed to what found
-for the resonant channel. The expected amount of misreconstructed $\Bz\ra\KS\mumu$
-candidates is small and does not allow to determine reliably its yield. Therefore, 
+for the resonant channel. However, in this case the mass offset, $m'$, is fixed to that found
+for the resonant channel. The expected level of misreconstructed $\Bz\ra\KS\mumu$
+candidates is small and does not allow its yield to be determined reliably. Therefore, 
 this is fixed to the yield of $\Bz\ra\jpsi\KS$ decays rescaled by the expected ratio
 of branching fractions between the resonant and rare channels. The \qsq distribution of $\Bz\ra\KS\mumu$ 
 simulated events is used to predict the yield as a function of \qsq. Table~\ref{tab:KSprediction} reports the 
@@ -154,19 +159,19 @@ is the total number of simulated events and \mbox{$\varepsilon_{rel} = \varepsil
 \begin{table}
 \centering
 \caption{Predicted numbers of $\Bz\ra\KS\mumu$ events in each considered \qsq interval.}
-\begin{tabular}{$l^c^c}
+\begin{tabular}{$c^c^c}
 	\rowstyle{\bfseries}
- \qsq interval [\gevgevcccc]  & Downstream & Long \\ \hline
-0.1--2.0 & 0.9 & 0.1 \\
-2.0--4.0 & 0.9 & 0.1 \\
-4.0--6.0 & 0.8 & 0.1 \\
-6.0--8.0 & 1.1 & 0.1 \\
-11.0--12.5 & 1.9 & 0.2 \\
-15.0--16.0 & 1.1 & 0.1 \\
-16.0--18.0 & 2.0 & 0.2 \\
-18.0--20.0 & 1.1 & 0.1 \\ \hline
-1.1--6.0 & 2.1 & 0.1 \\
-15.0--20.0 & 4.2 & 0.5 \\ 
+ \qsq [\gevgevcccc]  & Downstream & Long \\ \hline
+\phantom{0}0.1 -- 2.0\phantom{0} & 0.9 & 0.1 \\
+\phantom{0}2.0 -- 4.0\phantom{0} & 0.9 & 0.1 \\
+\phantom{0}4.0 -- 6.0\phantom{0} & 0.8 & 0.1 \\
+\phantom{0}6.0 -- 8.0\phantom{0} & 1.1 & 0.1 \\
+11.0 -- 12.5 & 1.9 & 0.2 \\
+15.0 -- 16.0 & 1.1 & 0.1 \\
+16.0 -- 18.0 & 2.0 & 0.2 \\
+18.0 -- 20.0 & 1.1 & 0.1 \\ \hline
+1.1 -- 6.0 & 2.1 & 0.1 \\
+15.0 -- 20.0 & 4.2 & 0.5 \\ 
 \end{tabular}
 \label{tab:KSprediction}
 \end{table}
@@ -221,7 +226,7 @@ $15 < \qsq < 20$ and $1.1 < \qsq < 6.0$~\gevgevcccc ~\qsq intervals, while
 fitted invariant mass distribution in all other considered \qsq intervals are in Figs.~\ref{fig:Lb_differentialFitDD}
 and~\ref{fig:Lb_differentialFitLL} for downstream and long candidates respectively.
 The yields of rare candidates obtained from the fit are listed in Tab.~\ref{tab:Lb_rawYield} together with their significances.
-Most candidates are found in the downstream sample, which comprises $\sim 80\,\%$ of the total yield.
+Most candidates are found in the downstream sample, which comprises $\sim 80\%$ of the total yield.
 Note that, since the fit is simultaneous to the two candidate categories, their yields
 are not parameters free to vary independently but are correlated via the branching ratio.
 The statistical significance of the observed signal yields is evaluated as the change in the logarithm 
@@ -252,7 +257,7 @@ low-\qsq	& $3363 \pm 59$ 	&  $\phantom{0}\,7225 \pm 89\phantom{0}$  \\
   from the study as they are dominated by resonant decays via charmonium resonances.}
 \begin{tabular}{$l^c^c^c^c}
 \rowstyle{\bfseries} 
- \qsq interval [\gevgevcccc] & DD & LL & Tot. yield & Significance \\ \hline
+ \qsq [\gevgevcccc] & DD & LL & Tot. yield & Significance \\ \hline
 \phantom{x}0.1 -- 2.0\phantom{x}   &  $\phantom{x}6.9 \pm 2.2$  &  $\phantom{xx}9.1 \pm 3.0\phantom{x}$	 &  $16.0\pm5.3$            		&  4.4 \\
 \phantom{x}2.0 -- 4.0\phantom{x}   &  $\phantom{x}1.8 \pm 1.7$  &  $\phantom{xx}3.0 \pm 2.8\phantom{x}$ 	 &  $\phantom{x}4.8\pm4.7$  	 &  1.2 \\
 \phantom{x}4.0 -- 6.0\phantom{x}   &  $\phantom{x}0.4 \pm 0.9$  &  $\phantom{xx}0.6 \pm 1.4\phantom{x}$	 &  $\phantom{x}0.9\pm2.3$  	 &  0.5 \\
