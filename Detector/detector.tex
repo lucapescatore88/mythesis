@@ -437,7 +437,7 @@ The four-momentum conservation can be ensured at each vertex and the origin and 
 are related via the momentum of the particle. Furthermore, additional constraints can be imposed due to a particular
 decay hypothesis such as the known invariant masses of final and intermediate particles.
 In order to do this the \verb!DecayTreeFitter! tool was developed by the BaBar experiment and later used by LHCb~\cite{Hulsbergen:2005pu}. 
-The algorithm takes a complete decay chain and  parametrises it in terms of vertex positions, decay lengths and momentum parameters.
+The algorithm takes a complete decay chain and  parameterises it in terms of vertex positions, decay lengths and momentum parameters.
 These parameters are then fit simultaneously, taking into account the relevant constraints, including the information
 from photons. %To perform the fit efficiently a Kalman filter is used. 
 Figure~\ref{fig:DTFeffect} illustrates the effect of
@@ -460,7 +460,7 @@ with and without constraints using the \theverbbox  tool. }
 
 %As a service work for the experiment I have been working on the validation of the simulation of hadronic processes.
 Particle-antiparticle asymmetries are of major interest for LHCb and detection efficiencies are usually obtained from simulation.
-It is therefore important, in order to limit systematic uncertainties, to have a model that parametrises
+It is therefore important, in order to limit systematic uncertainties, to have a model that parameterises
 correctly the cross-sections of particles and antiparticles or at least their ratio.
 
 The LHCb simulation software propagates particles though the detector using the $\textsc{Geant4}$ toolkit~\cite{Alves:2008zz}.
@@ -471,10 +471,10 @@ complete and consistent sets of models chosen to be appropriate for a given use 
 physics lists are considered:
 %
 \begin{itemize}
-\item {\bf LHEP} (Low and High Energy Parametrisation): based on a parametrised modelling of all hadronic 
-interactions for all particles. This list combines the High Energy Parametrised model (HEP) and the low energy 
+\item {\bf LHEP} (Low and High Energy parameterisation): based on a parameterised modelling of all hadronic 
+interactions for all particles. This list combines the High Energy parameterised model (HEP) and the low energy 
 one (LEP). There is a sharp switch from the low to the high energy model at 25 GeV. The modelling of elastic 
-scattering off a nucleus and of nuclear capture also proceeds via parametrised models.
+scattering off a nucleus and of nuclear capture also proceeds via parameterised models.
 %
 \item { \bf FTFP$\_$BERT}: includes the following models:
 %
@@ -528,7 +528,7 @@ P_{int} = \frac{N_{int}}{N_{tot}},
 %
 where $N_{int}$ is the number of particles which interacted in the material and $N_{tot}$ is the number of generated particles.
 %, usually set at 100k for this analysis.
-As $\textsc{Geant4}$ provides an ID for the end process of a particle (e.g. 121 for inelastic interaction, 111 for elastic, 
+As $\textsc{Geant4}$ provides an ID for the end process of a particle (\emph{e.g.} 121 for inelastic interaction, 111 for elastic, 
 201 for decay) it is possible to distinguish the inelastic and elastic probabilities of interaction and therefore cross-sections.
 
 To compare simulation and data the cross-section and $P_{int}$ are related through the following formula valid for thin layers:
@@ -542,7 +542,7 @@ where $\rho$ is the density of the material and A is its mass number, $\Delta x$
 
 \subsection{PDG prediction}
 
-In the Review of Particle Physics (PDG)~\cite{PDG2014} cross-sections of protons and neutrons are parametrised as:
+In the Review of Particle Physics (PDG)~\cite{PDG2014} cross-sections of protons and neutrons are parameterised as:
 %
 \begin{align} 
 \sigma_{tot}^{ab} = Z^{ab} + B^{ab}\log^2(s/s_M) + Y^{ab}_1(s_M/s)^{\eta_1} - Y^{ab}_2(s_M/s)^{\eta_2}, \\
@@ -570,7 +570,7 @@ $K^\pm$ / $n$              &     16.49 &    3.44        &    1.82 \\
 $\bar{p}$,$p$ / $n$     &    35.00   &   12.19       & 6.62 \\
 \end{tabular}
 \caption{Values for the constants $Z^{ab}$, $Y^{ab}_1$ and $Y^{ab}_2$~\cite{PDG2014}, 
-which parametrise hadronic cross-sections. }
+which parameterise hadronic cross-sections. }
 \end{table}
 \label{PDGvalues}
 \end{center}

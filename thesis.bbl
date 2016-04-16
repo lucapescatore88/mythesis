@@ -32,7 +32,6 @@ S.~Glashow, {\it {Partial Symmetries of Weak Interactions}},  {\em Nucl.Phys.}
 
 \bibitem{SM_particles}
 ``Wikipedia.'' \url{https://en.wikipedia.org/wiki/Standard_Model}.
-\newblock Accessed: 2016-02-26.
 
 \bibitem{Gross:1973id}
 D.~J. Gross and F.~Wilczek, {\it {Ultraviolet Behavior of Nonabelian Gauge
@@ -61,7 +60,7 @@ F.~Strocchi, {\it {Spontaneous Symmetry Breaking in Local Gauge Quantum Field
 
 \bibitem{Cabibbo:1963yz}
 N.~Cabibbo, {\it {Unitary Symmetry and Leptonic Decays}},  {\em Phys. Rev.
-  Lett.} {\bf 10} (1963) 531--533. [,648(1963)].
+  Lett.} {\bf 10} (1963) 531--533.
 
 \bibitem{Kobayashi:1973fv}
 M.~Kobayashi and T.~Maskawa, {\it {CP Violation in the Renormalizable Theory of
@@ -70,7 +69,7 @@ M.~Kobayashi and T.~Maskawa, {\it {CP Violation in the Renormalizable Theory of
 \bibitem{Charles:2015gya}
 J.~Charles, O.~Deschamps, S.~Descotes-Genon, H.~Lacker, A.~Menzel, et~al., {\it
   {Current status of the Standard Model CKM fit and constraints on $\Delta F=2$
-  New Physics}},  {\em Phys.Rev.} {\bf D91} (2015), no.~7 073007,
+  New Physics}},  {\em Phys.Rev.} {\bf D91} (2015) 073007,
   [\href{http://arxiv.org/abs/1501.05013}{{\tt arXiv:1501.05013}}].
 
 \bibitem{Zwicky:1933gu}
@@ -243,8 +242,8 @@ C.~Bobeth, M.~Gorbahn, T.~Hermann, M.~Misiak, E.~Stamou, et~al., {\it {$B_{s,d}
   [\href{http://arxiv.org/abs/1512.04442}{{\tt arXiv:1512.04442}}].
 
 \bibitem{Descotes-Genon:2013wba}
-S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B\to
-  K^*\mu^+\mu^-$ Anomaly}},  {\em Phys. Rev.} {\bf D88} (2013) 074002,
+S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B \to
+  K^*\mu^+\mu^-$ Anomaly}},  {\em Phys.Rev.} {\bf D88} (2013), no.~7 074002,
   [\href{http://arxiv.org/abs/1307.5683}{{\tt arXiv:1307.5683}}].
 
 \bibitem{LHCB-PAPER-2014-007}
@@ -269,9 +268,9 @@ S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B\to
   04} (Jan, 2015) 064. 18 p.
 
 \bibitem{Altmannshofer:2014rta}
-W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\to s$ transitions
-  after LHC run 1}},  \href{http://arxiv.org/abs/1411.3161}{{\tt
-  arXiv:1411.3161}}.
+W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\rightarrow s$
+  transitions after LHC run 1}},  {\em Eur. Phys. J.} {\bf C75} (2015), no.~8
+  382, [\href{http://arxiv.org/abs/1411.3161}{{\tt arXiv:1411.3161}}].
 
 \bibitem{Hurth:2016fbr}
 T.~Hurth, F.~Mahmoudi, and S.~Neshatpour, {\it {On the anomalies in the latest
@@ -307,8 +306,8 @@ W.~J. Marciano, T.~Mori, and J.~M. Roney, {\it {Charged Lepton Flavor Violation
 L.~Evans, {\it {The LHC machine}},  {\em PoS} {\bf EPS-HEP2009} (2009) 004.
 
 \bibitem{Christiane:1260465}
-C.~Lef\'evre, ``{The CERN accelerator complex. Complexe des accélérateurs du
-  CERN}.'' Dec, 2008.
+C.~Lef\'evre, ``{The CERN accelerator complex. Complexe des acc\'el\'erateurs
+  du CERN}.'' Dec, 2008.
 
 \bibitem{Alves:2008zz}
 {\bf LHCb} Collaboration, A.~A. Alves~Jr. et~al., {\it {The \lhcb detector at
@@ -331,17 +330,17 @@ A.~A. Alves~Jr. et~al., {\it {Performance of the LHCb muon system}},  {\em
   arXiv:1211.1346}}].
 
 \bibitem{LHCb:2003ab}
-{\bf LHCb} Collaboration, R.~e.~a. Aaij, {\it {LHCb technical design report:
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {LHCb technical design report:
   Reoptimized detector design and performance}},
   \href{http://arxiv.org/abs/CERN-LHCC-2003-030}{{\tt CERN-LHCC-2003-030}}.
 
 \bibitem{Cherenkov_sheme}
 ``Wikipedia.'' \url{https://en.wikipedia.org/wiki/Cherenkov_radiation}.
-\newblock Accessed: 2016-02-26.
 
 \bibitem{Aaij:1978280}
-{\bf LHCb} Collaboration, R.~e.~a. Aaij, {\it {LHCb Detector Performance}},
-  {\em Int. J. Mod. Phys. A} {\bf 30} (Dec, 2014) 1530022. 82 p.
+{\bf LHCb} Collaboration, R.~Aaij et~al., {\it {LHCb Detector Performance}},
+  {\em Int. J. Mod. Phys.} {\bf A30} (2015), no.~07 1530022,
+  [\href{http://arxiv.org/abs/1412.6352}{{\tt arXiv:1412.6352}}].
 
 \bibitem{sPlot}
 M.~Pivk and F.~R. Le~Diberder, {\it {SPlot: A Statistical tool to unfold data
@@ -490,9 +489,9 @@ S.~Sahoo, C.~Das, and L.~Maharana, {\it {Effect of both Z and Z'-mediated
   [\href{http://arxiv.org/abs/1112.4563}{{\tt arXiv:1112.4563}}].
 
 \bibitem{Aaltonen:2011qs}
-{\bf CDF Collaboration} Collaboration, T.~Aaltonen et~al., {\it {Observation of
-  the Baryonic Flavor-Changing Neutral Current Decay $\Lambda_{b} \to \Lambda
-  \mu^{+} \mu^{-}$}},  {\em Phys.Rev.Lett.} {\bf 107} (2011) 201802,
+{\bf CDF} Collaboration, T.~Aaltonen et~al., {\it {Observation of the Baryonic
+  Flavor-Changing Neutral Current Decay $\Lambda_{b} \to \Lambda \mu^{+}
+  \mu^{-}$}},  {\em Phys.Rev.Lett.} {\bf 107} (2011) 201802,
   [\href{http://arxiv.org/abs/1107.3753}{{\tt arXiv:1107.3753}}].
 
 \bibitem{Behari:2013xc}
@@ -536,7 +535,7 @@ T.~Skwarnicki, {\em {A study of the radiative cascade transitions between the
 \bibitem{Detmold:2012vy}
 W.~Detmold, C.-J.~D. Lin, S.~Meinel, and M.~Wingate, {\it {$\Lb\to\Lz\mumu$
   form factors and differential branching fraction from lattice QCD}},  {\em
-  Phys.~Rev.} {\bf D87} (2013), no.~7 074502,
+  Phys.~Rev.} {\bf D87} (2013) 074502,
   [\href{http://arxiv.org/abs/1212.4827}{{\tt arXiv:1212.4827}}].
 
 \bibitem{Aaij:2013oha}
@@ -549,6 +548,7 @@ T.~Blake, S.~Coquereau, M.~Chrzaszcz, S.~Cunliffe, C.~Parkinson, K.~Petridis,
   and M.~Tresch, {\it {The $B_0 \to$ K$^*_0 \mu\mu$ selection using 3fb$^{-1}$
   of LHCb data}},  Tech. Rep. LHCb-INT-2013-058. CERN-LHCb-INT-2013-058, CERN,
   Geneva, Nov, 2013.
+\newblock Unpublished.
 
 \bibitem{James:1975dr}
 F.~James and M.~Roos, {\it {Minuit: A System for Function Minimization and
@@ -588,14 +588,14 @@ G.~Hiller and M.~Schmaltz, {\it {Diagnosing lepton-nonuniversality in $b \to s
   [\href{http://arxiv.org/abs/1411.4773}{{\tt arXiv:1411.4773}}].
 
 \bibitem{Lees:2012tva}
-{\bf BaBar Collaboration} Collaboration, J.~Lees et~al., {\it {Measurement of
-  Branching Fractions and Rate Asymmetries in the Rare Decays $B \rightarrow
-  K^{(*)} l^+ l^-$}},  {\em Phys.Rev.} {\bf D86} (2012) 032012,
+{\bf BaBar} Collaboration, J.~Lees et~al., {\it {Measurement of Branching
+  Fractions and Rate Asymmetries in the Rare Decays $B \rightarrow K^{(*)} l^+
+  l^-$}},  {\em Phys.Rev.} {\bf D86} (2012) 032012,
   [\href{http://arxiv.org/abs/1204.3933}{{\tt arXiv:1204.3933}}].
 
 \bibitem{Wei:2009zv}
-{\bf BELLE Collaboration} Collaboration, J.-T. Wei et~al., {\it {Measurement of
-  the Differential Branching Fraction and Forward-Backword Asymmetry for $B
+{\bf BELLE} Collaboration, J.-T. Wei et~al., {\it {Measurement of the
+  Differential Branching Fraction and Forward-Backword Asymmetry for $B
   \rightarrow K^{(*)}l^+l^-$}},  {\em Phys.Rev.Lett.} {\bf 103} (2009) 171801,
   [\href{http://arxiv.org/abs/0904.0770}{{\tt arXiv:0904.0770}}].
 
@@ -609,19 +609,18 @@ G.~Hiller and M.~Schmaltz, {\it {Diagnosing lepton-nonuniversality in $b \to s
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Measurement of the ratio of
   branching fractions $\mathcal{B}(\bar{B}^0 \to
   D^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{B}^0 \to
-  D^{*+}\mu^{-}\bar{\nu}_{\mu})$}},  {\em Phys. Rev. Lett.} {\bf 115} (2015),
-  no.~11 111803, [\href{http://arxiv.org/abs/1506.08614}{{\tt
-  arXiv:1506.08614}}]. [Addendum: Phys. Rev. Lett.115,no.15,159901(2015)].
+  D^{*+}\mu^{-}\bar{\nu}_{\mu})$}},  {\em Phys. Rev. Lett.} {\bf 115} (2015)
+  111803, [\href{http://arxiv.org/abs/1506.08614}{{\tt arXiv:1506.08614}}].
 
 \bibitem{Loki_twiki}
 ``Lhcb loki twiki.''
   \url{https://twiki.cern.ch/twiki/bin/view/LHCb/LoKiHybridFilters}.
-\newblock Accessed: 2015-09-30.
+\newblock Unpublished.
 
 \bibitem{ProbNNs_pres}
-``Probnn presentation at ppts meeting.''
+``{ProbNN presentation at PPTS meeting}.''
   \url{https://indico.cern.ch/event/226062/contribution/1/material/slides/0.pdf}.
-\newblock Accessed: 2015-09-30.
+\newblock Unpublished.
 
 \bibitem{Verkerke:2003ir}
 W.~Verkerke and D.~P. Kirkby, {\it {The RooFit toolkit for data modeling}},
@@ -653,7 +652,8 @@ J.~Hrivnac, R.~Lednicky, and M.~Smizanska, {\it {Feasibility of beauty baryon
 \bibitem{Detmold:2016pkz}
 W.~Detmold and S.~Meinel, {\it {$\Lambda_b \to \Lambda \ell^+ \ell^-$ form
   factors, differential branching fraction, and angular observables from
-  lattice QCD with relativistic $b$ quarks}},
-  \href{http://arxiv.org/abs/1602.01399}{{\tt arXiv:1602.01399}}.
+  lattice QCD with relativistic $b$ quarks}},  {\em Phys. Rev.} {\bf D93}
+  (2016), no.~7 074501, [\href{http://arxiv.org/abs/1602.01399}{{\tt
+  arXiv:1602.01399}}].
 
 \end{thebibliography}\endgroup

@@ -3,33 +3,35 @@
 
 The selection efficiency is calculated for each decay according to the formula
 \begin{equation}
-\varepsilon^{tot}=\varepsilon(Geom)\varepsilon(Det|Geom)\varepsilon(Reco|Det)\varepsilon(MVA|Reco)\varepsilon(Trig|MVA).
+\label{eq:Lmumu_eff}
+\varepsilon^{tot}=\varepsilon(Geom)\,\varepsilon(Det|Geom)\,\varepsilon(Reco|Det)\,\varepsilon(MVA|Reco)\,\varepsilon(Trig|MVA).
 \end{equation}
-In this expression the first term gives the efficiency to have final state particles in the LHCb acceptance.
-The second term handles the possibility of \Lz escaping the detector or interacting with it and therefore
+In this expression the first term represents the geometric efficiency, \emph{i.e.} the fraction of events where
+the muons of the decay candidate are inside the LHCb acceptance.
+The second term handles the possibility of the \Lz either escaping the detector or interacting with it and therefore
 never decaying into $p\pi$; this term is referred to as ``detection" efficiency.
 The third term carries information about the reconstruction and pre-selection efficiencies,
-which are kept together given that boundaries between them are completely artificial.
-The fourth part deals with the efficiency of the neural network candidates that passed the pre--selection. 
+which are considered together given that boundaries between them are arbitrary.
+The fourth part describes the efficiency of the neural network for candidates that have passed the pre-selection criteria. 
 Finally, the last term handles the trigger efficiency for candidates which are accepted by the full selection.
 %Trigger efficiency is calculated before the MVA one because the training is performed on untriggered data to save statistics.
 Most of the efficiency components are evaluated using the simulated samples described in Sec.~\ref{sec:Lb_simulation}.
-Only the efficiency of the PID requirement for the proton (see Tab.~\ref{tab:Lb_stripping}) is separately derived
-with a data--driven method because the simulation does not provide a good description of PID variables. 
+The efficiency of the PID requirement for the proton (see Tab.~\ref{tab:Lb_stripping}) is derived separately 
+using a data-driven method because the simulation does not provide a good description of PID variables. 
 %For complete information, all absolute efficiencies for the two decays $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ are
 %separately listed in the next subsections. 
-Representative absolute efficiencies' values are given in the next sections.
-However, for the analysis itself only the relative efficiency,
-$\varepsilon($\Lb\to\Lz\mumu$)/\varepsilon(\Lb\to\jpsi\Lz)$, is used. 
+Although the analysis itself only depends on the relative efficiency,
+$\varepsilon(\Lb\to\Lz\mumu)/\varepsilon(\Lb\to\jpsi\Lz)$, representative values of the absolute efficiencies 
+for each of the four terms in Eq.~\ref{eq:Lmumu_eff} are given in the following sections for completeness.. 
 
 
 \subsection{Geometric acceptance}
 \label{sec:Lb_geomAcc}
 In order to save disk space and time the simulation only includes events in which the final muons
-are in the detector acceptance and therefore can be reconstructed. This corresponds to a requirement for each
+are inside the detector acceptance and therefore can be reconstructed. This corresponds to a requirement for each
 of the muons to be in an interval \mbox{$10 < \theta < 400$~mrad}, where $\theta$ is the angle between
 the muon momentum and the beam line. The efficiency of this requirement is obtained by using 
-a separate simulated sample, where events are generated in the full space.
+a separate simulated sample, where events are generated in the full $4\pi$ solid angle.
 The geometric efficiency varies between 18\% at high-\qsq and 20\% at low-\qsq;
 Fig.~\ref{fig:Lb_absEff} shows the dependence of this efficiency as a function of \qsq.
 
@@ -69,8 +71,8 @@ evaluated from simulated data.
 %Table~\ref{tab:Lb_recoEff} reports values of reconstruction efficiency for the two integrated \qsq intervals
  %for long and downstream candidates.
 The reconstruction efficiency is subdivided in ``Detection" and ``Reconstruction and pre-selection" efficiencies.
-In fact, since \Lz is a long lived particle, there is a non-negligible probability that it interacts in the detector
-or escapes from it and therefore never decays in proton and pion. 
+In fact, since the \Lz is a long lived particle, there is a non-negligible probability for it to interact with the detector
+or escape from it; in these cases it cannot be detected as a proton and a pion. 
 %The efficiency for this to happen is what is called ``Detection" efficiency. 
 The reconstruction efficiency includes the probability 
 for the tracks to produce observable signatures and to pass the pre-selection 
@@ -110,9 +112,9 @@ and 2.0\% for long candidates.
 %\subsubsection{Neural Networks efficiency}
 %
 The MVA selection efficiency is again evaluated from simulated samples
-and it is observed to vary from 55\% to 88\% for downstream candidates
-and from 74\% to 96\% for long candidates.
-Fig.~\ref{fig:Lb_absEff} shows the dependence of these efficiencies as a function of \qsq.
+and it is observed to vary between 55\% and 88\% for downstream candidates
+and between 74\% and 96\% for long candidates.
+Figure~\ref{fig:Lb_absEff} shows the dependence of these efficiencies as a function of \qsq.
 %Results are shown in 
 %Tab.~\ref{tab:Lb_mvaEff} for the two integrated \qsq intervals.
 The sudden jump in MVA efficiency at $\sim 9$~\gevcc~is due to the fact that
@@ -154,22 +156,24 @@ which results in different efficiencies.
 \subsection{Trigger efficiency}
 \label{sec:Lb_trigger_eff}
 
-The trigger efficiency is again evaluated using a simulated sample. It increases with \qsq and varies 
+The trigger efficiency is also evaluated using a simulated sample. It increases with \qsq and varies 
 from $\sim 57\%$ to $\sim 86\%$ for both downstream and long candidates.
-Fig.~\ref{fig:Lb_absEff} shows the dependence of this efficiency as a function of \qsq.
-Using the high statistics resonant channel it is possible to crosscheck using data the trigger efficiency obtained using the simulation.
-In LHCb triggered events can fall into two categories: events triggered by a track which is part of a signal candidate, 
-Trigger On Signal (TOS), or by other tracks in the event, Trigger Independent of Signal (TIS). 
-As the TIS and TOS categories are not exclusive the TIS sample provides a control
-sample which can be used to obtain the efficiency for TOS trigger. This can be calculated with the formula:
+Figure~\ref{fig:Lb_absEff} shows the dependence of this efficiency as a function of \qsq.
+To increase confidence in these evaluations, 
+%Using the high statistics resonant channel it is possible to crosscheck using data 
+the trigger efficiency obtained using the simulation is validated using data recorded in the high statistics resonant channel.
+In LHCb triggered events can fall into two categories: those triggered by a track that is part of a signal candidate, 
+Trigger On Signal (TOS), and those triggered by other tracks in the event that are not part of the signal candidate, 
+Trigger Independent of Signal (TIS). As the TIS and TOS categories are not exclusive the TIS sample provides a control
+sample which can be used to obtain the efficiency for TOS triggers. This can be calculated with the formula:
 \begin{equation}
 \varepsilon_{\rm TOS} = \frac{\text{TIS  and TOS }}{\text{TIS}}.
 \end{equation}
 As data contains background the numbers of signal candidates in the ``TIS" and \mbox{``TIS and TOS"}
 categories are not just determined by counting but from fits to the 4-body invariant mass, 
-$m(p\pi\mu\mu)$, distributions after applying these requirements. This procedure takes the name of TISTOS method. 
-Using the data--driven method an efficiency of ($70 \pm 5$)\% is obtained, while this is calculated to be
-($73.33 \pm 0.02$)\% using the simulation. Results are therefore compatible within $1\sigma$. 
+$m(p\pi\mu\mu)$, distributions after applying these requirements. This procedure is referred to as the TISTOS method. 
+Using this data--driven method an efficiency of ($70 \pm 5$)\% is obtained. This is consistent with, and hence validates, 
+the significantly more precise value of ($73.33 \pm 0.02$)\% obtained using the simulation.
 %
 %\begin{table}[h]
 %\centering
@@ -199,15 +203,15 @@ Using the data--driven method an efficiency of ($70 \pm 5$)\% is obtained, while
 \subsection{PID efficiency}
 \label{sec:PIDeff}
 For long tracks a PID requirement on protons (\verb!PID!p$ > -5$) is applied. The simulation is known not to
-describe PID variables well and therefore a data-driven method is used to obtain this efficiency component.
-This is done using the \verb!PIDCalib! package (see Sec.~\ref{sec:PID_calib}), which uses as calibration samples
-decays where particles can be identified due to their kinematic properties. In the case of protons a sample of
-\Lz particles is used, where the proton can be identified because it always has the highest momentum.
-The package allows to divide the phase space in bins of variables relevant for PID
-performances; in this analysis momentum and pseudorapidity are used.
+describe PID variables well and therefore a data--driven method is used to obtain this efficiency component.
+This is done using the \verb!PIDCalib! package (see Sec.~\ref{sec:PID_calib}), which uses samples of
+decays where particles can be identified due to their kinematic properties as calibration samples. In the case of protons 
+a sample of \Lz particles is used, where the proton can be identified because it always has the highest momentum.
+The package allows the phase space to be divided into bins of variables relevant for PID
+performances; in this analysis, momentum and pseudorapidity are used.
 Using the calibration sample the efficiency is derived in each two-dimensional bin.
-Finally, to take into account that the decay channel under study could have different kinematical distributions
-than the calibration sample these efficiency tables are used to re-weight the simulation.
+Finally, to take into account the possibility that the decay channel under study could have different kinematical distributions
+than the calibration sample, these efficiency tables are used to re-weight the simulation.
 The PID efficiency varies from 97.3\% at low-\qsq to 98.2\% at high-\qsq. 
 %Absolute PID efficiencies are listed in Tab.~\ref{tab:Lb_PIDabs} for the two integrated \qsq intervals.
 %
@@ -237,16 +241,16 @@ The PID efficiency varies from 97.3\% at low-\qsq to 98.2\% at high-\qsq.
 
 \subsection{Relative efficiencies}
 
-In the previous sections absolute efficiencies values were given for the rare channel, which are summarised in Fig.~\ref{fig:Lb_absEff}.
+In the previous sections absolute efficiency values were given for the rare channel, which are summarised in Fig.~\ref{fig:Lb_absEff}.
 This section reports the corresponding relative efficiencies with respect to the $\Lb\to\jpsi\Lz$ channel, which will be
 used to correct the yields and obtain the differential branching fraction. Table~\ref{tab:jpsiEff} reports the absolute 
 efficiency values for the \jpsi channel used to derive the relative efficiencies.
 Relative geometric, detection and PID efficiencies are listed in Tab.~\ref{tab:relativeGeometric}, while
 Tabs.~\ref{tab:allRelativeEffDD} and \ref{tab:allRelativeEffLL} report relative reconstruction, trigger and MVA efficiencies 
 separately for downstream and long candidates. Since the latter three components are obtained from the 
-same simulated sample their statistical uncertainties are correlated. Therefore, the total of the three is also reported 
-as a single efficiency and labeled ``Full Selection". Finally, Tab.~\ref{tab:Lb_effSummary} reports the total of 
-all relative efficiencies, which will be then used to correct the raw yields and calculate the differential branching fraction.
+same simulated sample their statistical uncertainties are correlated. Therefore, the product of the three is also reported 
+as a single efficiency and labeled ``Full Selection". Finally, Tab.~\ref{tab:Lb_effSummary} reports the overall relative efficiency, obtained 
+as the product of all components, which will be then used to correct the raw yields and calculate the differential branching fraction.
 Uncertainties reflect the statistics of both rare and resonant samples, while systematic uncertainties are discussed in following sections.
 
 \begin{table}
@@ -270,7 +274,7 @@ Total  				&	$0.00729 \pm 0.00005$   & $0.00230 \pm 0.00003$    	\\
 
 \begin{table}
 \centering
-\caption{Relative geometric, detection and PID relative efficiencies between
+\caption{Relative geometric, detection and PID efficiencies between
 $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ decays; uncertainties reflect the statistics of both samples.}
 \begin{tabular}{$l^c^c^c}
 \rowstyle{\bfseries}
@@ -414,9 +418,9 @@ long candidates; uncertainties reflect the statistics of both samples.}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf}
-\caption{Absolute efficiencies as a function of \qsq: geometric efficiency (a), 
-detection efficiency (b), reconstruction efficiency for DD (c) and LL (d) candidates, 
-MVA efficiency for DD (e) and LL (f) and trigger efficiency for DD (g) and LL (h).}
+\caption{Absolute efficiencies as a function of \qsq: geometric efficiency (a); 
+detection efficiency (b); reconstruction efficiency for DD (c) and LL (d) candidates; 
+MVA efficiency for DD (e) and LL (f); trigger efficiency for DD (g) and LL (h).}
 \label{fig:Lb_absEff}
 \end{figure}
 

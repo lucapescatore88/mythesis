@@ -20,9 +20,9 @@ The full list of pre-selection cuts is reported in Tab.~\ref{tab:Lb_stripping}.
 In the table \chisqip is defined as the projected distance from a vertex
 divided by its uncertainty, for example the $\chisqip(primary) > n$ requirement on $\Lb$ means
 that the \Lb vertex must be at least $\sqrt{n}$ standard deviations away from the primary vertex.
-Another quantity, found to be particularly powerful at removing combinatorial background, is a pointing variable called DIRA
-defined as the cosine of the angle between the direction of a particle's momentum and
-the flight direction from its mother vertex. Requiring a DIRA close to unity corresponds to 
+Another quantity, found to be particularly powerful at removing combinatorial background, is a pointing 
+variable called DIRA defined as the cosine of the angle between the direction of a particle's momentum 
+and the flight direction from its mother vertex. Requiring a DIRA close to unity corresponds to 
 the selection of particles with well-defined origin vertices.
 Figure~\ref{fig:IPandDIRA} shows graphical representations of the \chisqip and DIRA variables.
 %
@@ -34,8 +34,8 @@ Figure~\ref{fig:IPandDIRA} shows graphical representations of the \chisqip and D
 \end{figure}
 %
 The variable $\chisq_{\rm FD}$ represents the flight distance of a particle from its origin vertex
-divided by the corresponding uncertainty. The $\chisq_{trk}$/ndf and $\chisq_{vtx}$/ndf quantities are the $\chisq$ 
-from the fit to tracks and vertices, which are used to quantify their quality.
+divided by the corresponding uncertainty. The $\chisq_{trk}$/ndf and $\chisq_{vtx}$/ndf quantities 
+are the $\chisq$ from the fit to tracks and vertices, which are used to quantify their quality.
 The \verb!GhostProb! quantity describes the probability of a track being fake.
 By construction, cutting at a value of $k$, removes $(1 - k)\cdot 100 \%$ of fake tracks.
 The \verb!hasRich!, \verb!hasCalo! and \verb!isMuon! variables are binary indicators that
@@ -68,8 +68,8 @@ Particle     			&  	Requirement          \\ \hline
             				& 	$\texttt{DIRA}>0.9999$          \\
 					& 	$\chisqip<16.0$               \\
             				& 	$\chisq_{\rm FD}>121.0$             \\
-            				& 	$\chisq_{vtx}/ndf<8.0$          \\ \hline
-\multirow{3}{*}{\Lz}      	& 	$\chisq_{vtx}/ndf<30.0(25.0)$              \\
+            				& 	$\chisq_{vtx}/\text{ndf}<8.0$          \\ \hline
+\multirow{3}{*}{\Lz}      	& 	$\chisq_{vtx}/\text{ndf}<30.0(25.0)$              \\
          				& 	Decay time $>2$ ps              \\
 					& 	$|m(p\pi)-m^{\rm PDG}_\Lz|< 35(64)$~\gevc        \\ \hline
 \multirow{3}{*}{$p$/$\pi$}	& 	$p>2$ \gevc           \\ 
@@ -78,7 +78,7 @@ Particle     			&  	Requirement          \\ \hline
 \multirow{2}{*}{$p$ (only long cand.) } 	&   	\verb!hasRICH!    \\
 					&   	$\verb!PID!p>-5$  \\  \hline
 \multirow{5}{*}{$\mu$}       &   	\verb!isMuon!    \\
-					& 	$\chisq_{trk}/ndf< 5$ 		\\
+					& 	$\chisq_{trk}/\text{ndf}< 5$ 		\\
 					& 	$\verb!GhostProb!<0.4$	\\
             				& 	$\verb!PID!\mu>-3$		\\
             				& 	$\chisqip>9.0$        \\      \hline
@@ -136,9 +136,9 @@ the events are sampled uniformly.
 
 The single most important variable used for downstream candidates is the transverse momentum of
 \Lz, which allows random combinations of tracks to be rejected as these have preferentially low \pt.
-In contrast, for long candidates the most powerful variable is the \chisq from a kinematic fit that constrains
-the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices. 
-%performed using the \verb!DecayTreeFitter! tool (see Sec.~\ref{sec:DTF}).
+In contrast, for long candidates the most powerful variable is $\chisq_{\rm DTF}$, the \chisq from a kinematic 
+fit (see Sec.~\ref{sec:DTF}) that constrains the decay products of the \Lb, the \Lz and the dimuon, to originate from their respective vertices. 
+%performed using the \verb!DecayTreeFitter! tool .
 Other variables that contribute significantly are the \chisqip of \Lb, \Lz and muons,
 the separation between the \Lb and \Lz vertices and, finally, the muon PID.
 
@@ -215,9 +215,9 @@ $\tau_{\Lb}$       		        	& 16.24 		& 35.36 	& 11.24  \\
 for signal (blue) and background (red) candidates. (right) Purity as a function of neural network output.}
 \label{fig:Lb_nnDist}
 \end{figure}
-%
-It can happen that too much information is given to the classifier, allowing
- the invariant mass of the candidates to be inferred from the input variables.
+
+If too much information is given as inputs, the classifier can become able to infer
+ the 4-body invariant mass of the candidates from its inputs.
 This can generate fake peaks and it is therefore important to check
 for correlations between the 4-body invariant mass and the neural network output.
 Figure~\ref{fig:Lb_NNprofiles} reports the average neural network output as a function of
@@ -355,14 +355,14 @@ Trigger is always required to be due to the tracks of the candidate itself.}
 \begin{tabular}{$l^c} 
 	\rowstyle{\bfseries}
 Trigger Level &  Lines   \\ \hline
-L0            & \verb!L0Muon!  \\
-                & \verb!L0DiMuon! \\ \hline
-Hlt1         & \verb!Hlt1TrackAllL0! \\ 
-               & \verb!Hlt1TrackMuon!      \\ \hline
-Hlt2        & \verb!Hlt2Topo[2-4]BodyBBDT!  \\
-              & \verb!Hlt2TopoMu[2-4]BodyBBDT!\\
-              & \verb!Hlt2SingleMuon!     \\
-              & \verb!Hlt2DiMuonDetached! \\ \hline
+\multirow{2}{*}{L0}            	& \verb!L0Muon!  \\
+                				& \verb!L0DiMuon! \\ \hline
+\multirow{2}{*}{HLT1}        	& \verb!Hlt1TrackAllL0! \\ 
+               				& \verb!Hlt1TrackMuon!      \\ \hline
+\multirow{4}{*}{HLT2} 	& \verb!Hlt2Topo[2-4]BodyBBDT!  \\
+              				& \verb!Hlt2TopoMu[2-4]BodyBBDT!\\
+              				& \verb!Hlt2SingleMuon!     \\
+              				& \verb!Hlt2DiMuonDetached! \\ \hline
 \end{tabular}
 \label{tab:Lb_triggerLines}
 \end{table}
@@ -413,7 +413,7 @@ background is considered as part of the combinatorial background.
 %not attempt to exclude this but it is again modelled in the fit.
 Figure~\ref{fig:peakingBkgs} shows the 4-body invariant mass distribution of simulated $\Lb\ra\jpsi\Lz$
 events falling into the rare \qsq region and the distribution of simulated $B^{+} \ra\mumu K^{*+}$
-events mis-reconstructed as $\Lb\ra\jpsi\Lz$ decays.
+events misreconstructed as $\Lb\ra\jpsi\Lz$ decays.
 %
 \begin{figure}
 \centering
