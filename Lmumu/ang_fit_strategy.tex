@@ -29,12 +29,13 @@ to points where the PDF is positive in the whole $[-1,1]$ $\cos\theta_\ell$ inte
 \subsection{Feldman-cousins plug-in method}
 \label{sec:FeldmanCousins}
 
-Physical boundaries of the parameter space could result in a wrong estimation of the uncertainties,
-especially if the measured value is close to the boundary. To deal with this effect the 
-likelihood-ordering method~\cite{Feldman:1997qc} is used to estimate uncertainties and
-nuisance parameters are accounted for using the plug-in method~\cite{Karbach:2011uz}. This is a unified 
-method to calculate confidence intervals and upper/lower limits, based on simulated experiments and has 
-the advantage of having a well defined frequentist coverage.
+%Physical boundaries of the parameter space could result in a wrong estimation of the uncertainties,
+%especially if the measured value is close to the boundary. 
+When a measured value is close to the physical boundary of the parameter space, the uncertainties may be 
+incorrectly estimated. To deal with this effect, the likelihood-ratio ordering method~\cite{Feldman:1997qc} is used to 
+estimate uncertainties and nuisance parameters are accounted for using the plug-in method~\cite{Karbach:2011uz}. 
+This is a unified method to calculate confidence intervals and upper/lower limits, based on simulated experiments 
+and has the advantage of having a well defined frequentist coverage.
 
 %One defines two classes of parameters: Parameters of Interest (PoI), which are those for which
 %one wants to construct confidence intervals, and nuisance parameters, which are all the secondary
@@ -55,8 +56,8 @@ $$\log\mathcal{L}_{fixed}/\log\mathcal{L}_{free} > (\log\mathcal{L}_{fixed}/\log
 \item repeat the procedure for many values of the PoIs scanning around the best fit point.
 \end{enumerate}
 
-The confidence interval at $k\%$ is given by the points where the free-to-fixed likelihood ratio is bigger in data than
-simulation for $(1-k)\%$ of the pseudo-experiments. As an example, Fig.~\ref{fig:FCexample} shows the p-values obtained
+The confidence interval at $k\%$ is given by the points where the fixed-to-free likelihood ratio is bigger in data than
+simulation for $(100-k)\%$ of the pseudo-experiments. As an example, Fig.~\ref{fig:FCexample} shows the p-values obtained
 with the plug-in method for $A_{\rm FB}^h$ and $f_{\rm L}$. A two-dimensional region 
 can also be scanned giving a grid of p-values, which translates into two-dimensional confidence regions.
 %
@@ -105,8 +106,8 @@ where $k=(\text{LL,DD})$. The first term represents the signal which is modelled
 given by Eqs.~\ref{eq:afbLTh} and~\ref{eq:afbBTh}, respectively for the lepton and hadron cases, while the second 
 term represents the background, which is parameterised using a linear function: 
 \mbox{$P_B^k(\cos\theta_{\ell/h}) = (c \cdot \cos\theta_{\ell/h}+q)$}. Both terms are multiplied by an acceptance 
-function $\varepsilon$ described in Sec.~\ref{sec:AngEff}. Imposing the PDF normalisation, the background model
-is left with one free parameter which is fixed by fitting candidates in the \Lb invariant mass sideband, $m(p\pi\mu\mu) > 5700$~\mevcc, 
+function $\varepsilon( \cos\theta_{\ell/h})$ described in Sec.~\ref{sec:AngEff}. After imposing the PDF normalisation, the background model
+is left with one free parameter which is fixed by fitting candidates in the \Lb invariant mass sideband, \mbox{$m(p\pi\mu\mu) > 5700$~\mevcc}, 
 which contains only background. Finally, $f_b$ is the background fraction: $f_b = B/(S+B)$.
 To limit systematic effects due to the background parameterisation
 the fit is performed in a restricted invariant mass region around the \Lb mass peak that is dominated by the signal:
@@ -130,7 +131,7 @@ In summary the only free fit parameter in each of the final fits to data is the 
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFit_highq2_LL.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_DD.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/AngularBkgFits/BkgFitB_highq2_LL.pdf}
-\caption{Background distribution as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom)
+\caption{Background distributions as a function of $\cos\theta_\ell$ (top) and $\cos\theta_h$ (bottom)
 for downstream (left) and long (right) candidates in the 15 -- 20~\gevgevcccc ~\qsq interval.  }
 \label{fig:cosThetaLbkg}
 \end{figure}
@@ -153,19 +154,20 @@ for downstream (left) and long (right) candidates in the 15 -- 20~\gevgevcccc ~\
 Selection requirements on the minimum momentum of the muons can distort the $\cos\theta_\ell$ 
 distribution by removing candidates with extreme values of the angle. Similarly, 
 the impact parameter requirements affect $\cos\theta_h$ because very forward hadrons tend
-to have smaller impact parameter values. While in principle one could take this into account
-by an additional weight, to minimise the distortion of the estimated uncertainties,
-the efficiency function is incorporated in the fit model. The angular efficiency is
-parameterised using a second-order polynomial, whose parameters are determined separately for long 
-and downstream candidates by fitting simulated events. An independent set of parameters is obtained
-also for each \qsq interval. These parameters are then fixed for the fits to data.
+to have smaller impact parameter values. 
+%While in principle one could take this into account
+%by an additional weight, to minimise the distortion of the estimated uncertainties,
+As described in Sec.~\ref{sec:angfit}, to take these effects into account the efficiency function is incorporated in the 
+fit model. The angular efficiency is parameterised using a second-order polynomial, whose parameters 
+are determined separately for long and downstream candidates by fitting simulated events. An independent 
+set of parameters is obtained also for each \qsq interval. These parameters are then fixed when fitting the data.
 Using polynomial functions allows the normalisation of the PDF to be calculated analytically.
 Figure~\ref{fig:angular_eff} shows the acceptance as a function of $\cos\theta_h$ and 
-$\cos\theta_\ell$ for the 15 -- 20~\gevgevcccc~\qsq interval obtained using a $\Lb\to\Lz\mumu$ simulated sample.
+$\cos\theta_\ell$ for the \mbox{15 -- 20~\gevgevcccc~\qsq} interval obtained using a $\Lb\to\Lz\mumu$ simulated sample.
 %$\ref{fig:cosThetaLeffJpsi} and \ref{fig:cosThetaBeffJpsi} $J/\psi\Lz$ MC and $\Lz\mumu$ 
 %
 For the lepton side, even though the efficiency is symmetric by construction,
-all parameters are left free to float, namely it is not constrained to be symmetric.
+all parameters are left free to vary, namely it is not constrained to be symmetric.
 
 \begin{figure}[h]
 \centering
@@ -213,16 +215,16 @@ downstream (left) and long (right) candidates in the 15 -- 20~\gevgevcccc ~\qsq 
 
 \subsection{Evaluation of a three-dimensional fit approach}
 
-An alternative way of extracting the angular observables would be to fit at the same time both angles 
-and the invariant mass distribution at the same time in order to have a better handle on the level of background.
-In this case one can use more of the information available. There are disadvantages with this approach, namely that
+An alternative way of extracting the angular observables would be to fit both angles 
+and the invariant mass distribution at the same time in order to have a better handle on the level of background and making 
+a more effective use  of the information available. However, there are disadvantages with this approach, namely that
 it is necessary to use a larger mass window including more background and this method introduces more parameters to fit.
 %In the 1D case the free parameters are the two parameters of interest ($A_{\rm FB}^\ell$ and $f_{\rm L}$)
 %for the lepton case and one ($A_{\rm FB}^h$) for the hadron one. 
 %For the 3D case in addition to the three PoIs there are 
 In fact, in the 3D case in addition to the \afbl, \fl and \afbh parameters, there are
 two background fractions and the two exponential slopes for the invariant mass background.
-Furthermore, to take into account correlations three futher observables enter the fit (see Eq.~\ref{eq:lepton2D}). 
+Furthermore, to take into account correlations three further observables enter the fit (see Eq.~\ref{eq:lepton2D}). 
 
 As a large number of free parameters is difficult to constrain with the very limited statistics available, 
 %Therefore we have a total of 4 free parameters for the lepton case and 3 for hadron case fitting in 1D and 7 free parameters in the 3D fit.
@@ -237,8 +239,8 @@ in the mass window are generated to be data-like using information from the prel
 %
 %This is done using the statistics of our highest statistics bin, $15-20$ $GeV^2/c^2$ in \qsq, 
 %and our lowest statistics unblinded bin, $11-12.5$ $GeV^2/c^2$ in \qsq.
-Each pseudo-experiment is fitted with both the 1D and 3D methods. Figure~\ref{fig:3DtoyResults} reports 
-distributions of parameters of interest obtained from the fit in the 1D and 3D cases.
+Each pseudo-experiment is fitted with both the 1D and 3D methods. As an example, Fig.~\ref{fig:3DtoyResults} 
+reports distributions of \afbl obtained from the fit in the 1D and 3D cases.
 The RMS of these distributions can be taken as a measure of the sensitivity of each method.
 Table~\ref{tab:3DtoyResults} lists the RMS values obtained from both methods; for all parameters 
 of interest the 1D fit method gives a smaller RMS, hence a better sensitivity.
@@ -246,7 +248,7 @@ of interest the 1D fit method gives a smaller RMS, hence a better sensitivity.
 \begin{table}[hb]
 \centering
 \caption{RMS values for pseudo-experiments on the extraction of the three parameters
-of interests with the 1D or 3D fitting methods.}
+of interests with the 1D and 3D fitting methods.}
 \begin{tabular}{$l^c^c^c^c}
 \rowstyle{\bfseries}
 \boldmath{\qsq [\gevgevcccc]}         &   Fit type 	 & \boldmath{$A_{\rm FB}^h$}  & \boldmath{ $A_{\rm FB}^\ell$} &   \boldmath{$f_{\rm L}$} 	 \\
@@ -298,10 +300,10 @@ of interests with the 1D or 3D fitting methods.}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/toys3D/B1/3D/toys3D_afb.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/toys3D/B2/1D/toys3D_afb.pdf}
 \includegraphics[width=0.48\textwidth]{Lmumu/figs/toys3D/B2/3D/toys3D_afb.pdf}
-\caption{Values of the $A_{\rm FB}^{\ell}$ parameter observed in pseudo-experiments 
-with input $A_{\rm FB}^{\ell} = 0$ using the 1D (left) and 3D (right) fit methods. Events 
+\caption{Values of the \afbl parameter observed in pseudo-experiments 
+with input $\afbl = 0$ using the 1D (left) and 3D (right) fit methods. Events 
 are generated with parameters and sample sizes corresponding to those observed in the highest 
-statistics interval (top), 15 -- 20~\gevgevcccc, and in the lowest statistics one, \mbox{11 -- 12.5~\gevgevcccc}. }
+statistics interval (top), 15 -- 20~\gevgevcccc, and in the lowest statistics one (bottom), \mbox{11 -- 12.5~\gevgevcccc}. }
 \label{fig:3DtoyResults}
 \end{figure}
 

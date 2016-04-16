@@ -73,10 +73,10 @@
 \contentsline {section}{\numberline {4.4}Fit strategy}{103}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Feldman-cousins plug-in method}{104}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Modelling the angular distributions}{105}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Angular acceptance}{107}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Evaluation of a three-dimensional fit approach}{107}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.3}Angular acceptance}{106}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Evaluation of a three-dimensional fit approach}{108}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Systematics uncertainties on angular observables}{109}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Angular correlations}{110}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}Angular correlations}{109}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Resolution}{110}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Efficiency description}{111}{subsection.4.5.3}
 \contentsline {subsection}{\numberline {4.5.4}Background parameterisation}{111}{subsection.4.5.4}
