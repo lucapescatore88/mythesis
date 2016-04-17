@@ -93,14 +93,14 @@
 \contentsline {subsection}{\numberline {5.5.1}Data-simulation corrections}{125}{subsection.5.5.1}
 \contentsline {section}{\numberline {5.6}Selection}{128}{section.5.6}
 \contentsline {subsection}{\numberline {5.6.1}Trigger and pre-selection }{129}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}PID}{132}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.2}PID}{133}{subsection.5.6.2}
 \contentsline {subsection}{\numberline {5.6.3}Peaking backgrounds }{134}{subsection.5.6.3}
 \contentsline {subsubsection}{\numberline {5.6.3.1}Charmonium vetoes}{134}{subsubsection.5.6.3.1}
 \contentsline {subsubsection}{\numberline {5.6.3.2}$\phi $ veto}{135}{subsubsection.5.6.3.2}
-\contentsline {subsubsection}{\numberline {5.6.3.3}$\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^+}\xspace \ensuremath {\rightarrow }\xspace K^+ \ensuremath {\ell ^+ \ell ^-}$ plus a random pion}{135}{subsubsection.5.6.3.3}
+\contentsline {subsubsection}{\numberline {5.6.3.3}$\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^+}\xspace \ensuremath {\rightarrow }\xspace K^+ \ensuremath {\ell ^+ \ell ^-}$ plus a random pion}{136}{subsubsection.5.6.3.3}
 \contentsline {subsubsection}{\numberline {5.6.3.4}$\Lambda _b$ decays}{136}{subsubsection.5.6.3.4}
 \contentsline {subsubsection}{\numberline {5.6.3.5}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace (\ensuremath {\ensuremath {\ensuremath {D}\xspace }\xspace ^-}\xspace \ensuremath {\rightarrow }\xspace K \ensuremath {\ensuremath {e}\xspace ^-}\xspace \overline {\nu })\ensuremath {\ensuremath {e}\xspace ^+}\xspace \nu }\xspace }{137}{subsubsection.5.6.3.5}
-\contentsline {subsubsection}{\numberline {5.6.3.6}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\gamma \ensuremath {\rightarrow }\xspace \ensuremath {e^+ e^-})}\xspace }{138}{subsubsection.5.6.3.6}
+\contentsline {subsubsection}{\numberline {5.6.3.6}\ensuremath {\ensuremath {\ensuremath {\ensuremath {B}\xspace }\xspace ^0}\xspace \ensuremath {\rightarrow }\xspace \ensuremath {\ensuremath {\ensuremath {K}\xspace }\xspace ^{*0}}\xspace (\gamma \ensuremath {\rightarrow }\xspace \ensuremath {e^+ e^-})}\xspace }{137}{subsubsection.5.6.3.6}
 \contentsline {subsubsection}{\numberline {5.6.3.7}Other peaking backgrounds}{138}{subsubsection.5.6.3.7}
 \contentsline {subsection}{\numberline {5.6.4}Partially-reconstructed background}{139}{subsection.5.6.4}
 \contentsline {subsection}{\numberline {5.6.5}Bremsstrahlung corrected mass}{140}{subsection.5.6.5}
