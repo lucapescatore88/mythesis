@@ -2,10 +2,11 @@
 \label{sec:Lb_eff}
 
 The selection efficiency is calculated for each decay according to the formula
-\begin{equation}
-\label{eq:Lmumu_eff}
-\varepsilon^{tot}=\varepsilon(Geom)\,\varepsilon(Det|Geom)\,\varepsilon(Reco|Det)\,\varepsilon(MVA|Reco)\,\varepsilon(Trig|MVA).
-\end{equation}
+%\begin{equation}
+%\label{eq:Lmumu_eff}
+%\varepsilon^{tot}=\varepsilon(Geom)\,\varepsilon(Det|Geom)\,\varepsilon(Reco|Det)\,\varepsilon(MVA|Reco)\,\varepsilon(Trig|MVA).
+%\end{equation}
+$$\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm det|geom} \cdot \varepsilon^{\rm reco|det} \cdot \varepsilon^{\rm MVA|reco} \cdot \varepsilon^{\rm trig|MVA}$$
 In this expression the first term represents the geometric efficiency, \emph{i.e.} the fraction of events where
 the muons of the decay candidate are inside the LHCb acceptance.
 The second term handles the possibility of the \Lz either escaping the detector or interacting with it and therefore
@@ -259,12 +260,12 @@ Uncertainties reflect the statistics of both rare and resonant samples, while sy
 \begin{tabular}{$l^c^c}
 \rowstyle{\bfseries}
 Efficiency				& 	Downstream				& 	Long				\\  \hline		
-$\varepsilon(Geom)$ 	&   	\multicolumn{2}{c}{	$0.1818 \pm 0.0003$ } 	\\	
-$\varepsilon(Det)$ 		&   	\multicolumn{2}{c}{	$0.9017 \pm 0.0003$ } 	\\
-$\varepsilon(Reco)$	 	& 	$0.0724 \pm 0.0004$   & $0.0203 \pm 0.0002$     \\
-$\varepsilon(PID)$		&	--	&  $97.89 \pm 0.005$   \\
-$\varepsilon(MVA)$ 		&	$0.882 \pm 0.002$   & $0.942 \pm 0.002$     \\
-$\varepsilon(Trig)$ 		&	$0.697 \pm 0.003$   & $0.734 \pm 0.005$     \\ \hline
+$\varepsilon^{\rm geom}$ 	&   	\multicolumn{2}{c}{	$0.1818 \pm 0.0003$ } 	\\	
+$\varepsilon^{\rm det}$ 	&   	\multicolumn{2}{c}{	$0.9017 \pm 0.0003$ } 	\\
+$\varepsilon^{\rm reco}$	& 	$0.0724 \pm 0.0004$   & $0.0203 \pm 0.0002$     \\
+$\varepsilon^{\rm pid}$	&	--	&  $97.89 \pm 0.005$   \\
+$\varepsilon^{\rm MVA}$ 	&	$0.882 \pm 0.002$   & $0.942 \pm 0.002$     \\
+$\varepsilon^{\rm trig}$ 	&	$0.697 \pm 0.003$   & $0.734 \pm 0.005$     \\ \hline
 Full Selection			&	$0.0445 \pm 0.0003$   & $0.0140 \pm 0.0002$     \\ \hline
 Total  				&	$0.00729 \pm 0.00005$   & $0.00230 \pm 0.00003$    	\\
 \end{tabular}

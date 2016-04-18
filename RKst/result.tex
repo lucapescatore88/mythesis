@@ -1,8 +1,12 @@
 \section{Result extraction and validation}
 \label{sec:RKst_result}
 
-This section presents the procedure to obtain the \RKst ratio together with
-methods to validate the robustness of the analysis.
+This section presents the procedure to obtain the \RKst ratio, together with
+methods to validate the robustness of the methods used.
+To avoid biases the analysis is carried out in a blind way and 
+the quantity of interest, \RKst, will not be calculated until the candidate 
+selection and efficiency estimation strategies are approved by the LHCb Collaboration.
+
 
 %This section presents the final results of this analysis
 %together with the description of sanity checks performed to verify the stability
@@ -17,7 +21,7 @@ measured branching ratio of the electron and muon resonant channels is calculate
 \begin{equation}
 r_{\jpsi} = \frac{\BR(\Bz\to\Kstarz(\jpsi\to \mumu))} {\BR(\Bz\to\Kstarz(\jpsi\to \epem))} 
 = \frac{\varepsilon_{\jpsi(\mu\mu)} \cdot N_{\Bz\to\Kstarz(\jpsi\to \epem)}}{\varepsilon_{\jpsi(ee)} 
-\cdot N_{\Bz\to\Kstarz(\jpsi\to \mumu)}}.
+\cdot N_{\Bz\to\Kstarz(\jpsi\to \mumu)}}\;.
 \end{equation}
 %
 Compared with absolute branching fractions calculations, the determination of $r_{\jpsi}$ represents a better
@@ -25,7 +29,7 @@ sanity test as it is not affected by uncertainties due to the knowledge of the a
 luminosity or of the fragmentation fraction: the probability for a $\bquark$
 quark to produce a \Bz meson. These quantities come with large uncertainties but they cancel
 in the $r_{\jpsi}$ ratio. As new physics is expected not to affect tree level $b\to\cquark\cquarkbar\squark$ 
-processes the ratio between the \jpsi channels should be 1, while deviations from unity would signal
+processes, the ratio between the \jpsi channels should be 1, while deviations from unity would signal
 unaccounted systematic effects.
 
 %but this ratio
@@ -83,9 +87,9 @@ As a further check, the \BdToKstG branching fraction can be determined using the
 %
 $$r_\gamma = \frac{\BR(\BdToKstG)} {\BR(\BdToKstJPsee)} = \frac{N_{\gamma(ee)}}{N_{\jpsi(ee)}} \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{\gamma(ee)}}.$$
 
-This is an interesting cross-check as it involves only electrons that are those 
-that could be more easily affected by systematics effects due to the more complex reconstruction process.
-The measured value can be compared with the one reported in the Review of Particle Physics, $(4.33 \pm 0.15) \times 10^{-5}$~\cite{PDG2014}.
+This is an interesting cross-check as it involves only electrons which are more easily affected by systematics 
+effects due to the more complex reconstruction process. The measured value can be compared with the one reported 
+in the Review of Particle Physics, $(4.33 \pm 0.15) \times 10^{-5}$~\cite{PDG2014}.
 
 %The measured value is
 %
@@ -96,7 +100,7 @@ The measured value can be compared with the one reported in the Review of Partic
 
 \subsection{\RKst}
 
-The ratio \RKst is calculated by dividing the $r_{ee}$ and $r_{\mu\mu}$
+The \RKst ratio is calculated by dividing the $r_{ee}$ and $r_{\mu\mu}$
 parameters described in Sec.~\ref{sec:rkst_fits}. These ratios are 
 direct parameters of the fit but they can also be built from the yields
 in Tab.~\ref{tab:RKst_yields} and the efficiencies in Tab.~\ref{tab:RKst_RelEff}.
@@ -111,11 +115,11 @@ In summary the definition of the \RKst ratio is the following:
 = \frac{N_{ee}}{N_{\jpsi(ee)}} 
 \cdot \frac{N_{\jpsi(\mu\mu)}}{N_{\mu\mu}}
 \cdot \frac{\varepsilon_{\jpsi(ee)}}{\varepsilon_{ee}} 
-\cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}}.
+\cdot \frac{\varepsilon_{\mu\mu}}{\varepsilon_{\jpsi(\mu\mu)}}\;.
 \end{equation}
 %
 As the electron ratio, $r_{ee}$, is a shared parameter in the simultaneous fit across the
-three trigger categories its value is already a combination of the three samples.
+three trigger categories, its value is already a combination of the three samples.
 Results are still blinded.
 
 %Results are shown in Tab.~\ref{tab:RKst_results}.

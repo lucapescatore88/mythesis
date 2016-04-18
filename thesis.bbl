@@ -265,7 +265,8 @@ S.~Descotes-Genon, J.~Matias, and J.~Virto, {\it {Understanding the $B \to
 \bibitem{Aaij:1981106}
 {\bf LHCb} Collaboration, R.~Aaij et~al., {\it {Angular analysis of the $B^0
   \rightarrow K^{*0} e^+ e^-$ decay in the low-$q^2$ region}},  {\em JHEP} {\bf
-  04} (Jan, 2015) 064. 18 p.
+  04} (2015), no.~arXiv:1501.03038. LHCB-PAPER-2014-066. CERN-PH-EP-2014-301
+  064.
 
 \bibitem{Altmannshofer:2014rta}
 W.~Altmannshofer and D.~M. Straub, {\it {New physics in $b\rightarrow s$
@@ -306,8 +307,8 @@ W.~J. Marciano, T.~Mori, and J.~M. Roney, {\it {Charged Lepton Flavor Violation
 L.~Evans, {\it {The LHC machine}},  {\em PoS} {\bf EPS-HEP2009} (2009) 004.
 
 \bibitem{Christiane:1260465}
-C.~Lef\'evre, ``{The CERN accelerator complex. Complexe des acc\'el\'erateurs
-  du CERN}.'' Dec, 2008.
+C.~Lef\'evre, {\it {The CERN accelerator complex. Complexe des
+  acc\'el\'erateurs du CERN}}, [\href{http://cds.cern.ch/record/1260465}{{http://cds.cern.ch/record/1260465}}] CERN-DI-0812015.
 
 \bibitem{Alves:2008zz}
 {\bf LHCb} Collaboration, A.~A. Alves~Jr. et~al., {\it {The \lhcb detector at
@@ -613,7 +614,7 @@ G.~Hiller and M.~Schmaltz, {\it {Diagnosing lepton-nonuniversality in $b \to s
   111803, [\href{http://arxiv.org/abs/1506.08614}{{\tt arXiv:1506.08614}}].
 
 \bibitem{Loki_twiki}
-``Lhcb loki twiki.''
+``{LHCb loki twiki}''
   \url{https://twiki.cern.ch/twiki/bin/view/LHCb/LoKiHybridFilters}.
 \newblock Unpublished.
 
@@ -631,6 +632,11 @@ W.~Verkerke and D.~P. Kirkby, {\it {The RooFit toolkit for data modeling}},
 P.~Ball and R.~Zwicky, {\it {New results on $B \to \pi, K, \eta$ decay form
   factors from light-cone sum rules}},  {\em Phys. Rev.} {\bf D71} (2005)
   014015, [\href{http://arxiv.org/abs/hep-ph/0406232}{{\tt hep-ph/0406232}}].
+
+\bibitem{Aoki:2013ldr}
+S.~Aoki et~al., {\it {Review of lattice results concerning low-energy particle
+  physics}},  {\em Eur. Phys. J.} {\bf C74} (2014) 2890,
+  [\href{http://arxiv.org/abs/1310.8555}{{\tt arXiv:1310.8555}}].
 
 \bibitem{Melikhov:2000yu}
 D.~Melikhov and B.~Stech, {\it {Weak form-factors for heavy meson decays: An
