@@ -160,9 +160,10 @@ as systematic uncertainties.
 
 \subsubsection{Simulation statistics}
 
-The limited statistics of the simulated samples used to determine efficiencies is considered as a source of systematic uncertainty.
-While it is not the dominant source, its size is not completely negligible.
-Therefore, when reporting relative efficiency values, the statistical uncertainty due to the  
+The limited statistics of the simulated samples used to determine the efficiencies is considered 
+as a source of systematic uncertainty.
+While it is not the dominant source, its size is not completely negligible, 
+therefore, when reporting efficiency values, the statistical uncertainty due to the  
 rare and resonant channels is always considered. 
 %While it would be useful to treat part from normalisation channel separately due to the correlation 
 %across \qsq bins, given its size we decide to suppress it as in final presentation its effect is hard to see.
@@ -182,7 +183,7 @@ taken as systematic uncertainty. To assess the systematic uncertainty due to the
 an alternative set of form factors is used based on lattice QCD calculations~\cite{Detmold:2012vy}. 
 The two models are compared and the full difference is taken as systematic uncertainty.
 %
-In total this results in an uncertainty of $\sim 1.3\%$ for long candidates and $\sim 0.6\%$ for downstream
+In total this results in an uncertainty of \mbox{$\sim1.3\%$} for long candidates and \mbox{$\sim0.6\%$} for downstream
 candidates, mostly coming from the knowledge of the production polarisation.
 
 \subsubsection{\Lb lifetime}
@@ -190,7 +191,7 @@ candidates, mostly coming from the knowledge of the production polarisation.
 The \Lb lifetime is known with limited precision. For the evaluation of efficiencies the
 world average value, $1.482\pm0.030$~ps$^{-1}$~\cite{Aaij:2013oha}, is used. This is
 varied by one standard deviation from the measured value to assess the systematic uncertainty.
-Only the case where both signal and normalisation channel are varied in same direction are considered.
+Only the case where both signal and normalisation channels are varied in the same direction are considered.
 The largest difference from the default lifetime case is taken as the systematic uncertainty,
 which is found to vary from $\sim 0.4\%$ at low-\qsq to $\sim 0.1\%$ at high-\qsq.
 %We do not attempt to separate out part correlated amongst \qsq bins. This source does not affect
@@ -215,14 +216,8 @@ in data and simulation found analysing \KS events~\cite{Blake:1631348}. This eff
 yet fully understood and is currently under study. It seems to be mainly due to a poor simulation
 of the vertexing efficiency for downstream tracks.
 %
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{Lmumu/figs/DDvtx_eff_POwen.pdf}
-\caption{Ratio of reconstruction efficiency in data and simulation found using \KS events~\cite{Blake:1631348}.}
-\label{KS_vtxeff}
-\end{figure}
 %
-As the analysis is performed separately for downstream and long candidates and efficiencies are calculated separately, 
+However, as the analysis is performed separately for downstream and long candidates and efficiencies are calculated separately, 
 the effect of this mis-modelling, present in both the rare and resonant channels, largely cancels in their ratio.
 Nevertheless, a systematic uncertainty is assessed by re-weighting simulated candidates 
 by the efficiency ratio between data and simulation found for \KS as a function of its momentum (see Fig.~\ref{KS_vtxeff}). 
@@ -230,6 +225,13 @@ The efficiencies obtained using the weighted and unweighted simulation are compa
 As the discrepancy shows little dependence on momentum, dependencies due to the different momentum 
 distributions of \Lz and \KS are assumed to be negligible. This results in a systematic uncertainty for downstream candidates
 of $\sim 0.4\%$ at low-\qsq and $\sim 1.2\%$ at high-\qsq.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Lmumu/figs/DDvtx_eff_POwen.pdf}
+\caption{Ratio of reconstruction efficiency in data and simulation found using \KS events~\cite{Blake:1631348}.}
+\label{KS_vtxeff}
+\end{figure}
 
 \subsubsection{Data-simulation discrepancies}
 
@@ -271,7 +273,7 @@ N(\jpsi\Lz)_{k} \cdot \varepsilon^{\mathrm{rel}}_{k} \cdot \frac {\Delta\qsq} { 
 where $k = $(LL,DD), $\Delta\qsq$ is the width of the \qsq interval, 
 \mbox{$\mathcal{B}(\jpsi\to\mumu) =$} ($5.93 \pm 0.06)\cdot 10^{-2}$~\cite{PDG2014} and the only free parameter
 is the relative branching fraction ratio. Table~\ref{tab:Lb_effSummary} summarises the total relative efficiencies, 
-$\varepsilon^{rel}$, for downstream and long candidates together with their correlated and uncorrelated uncertainties, 
+$\varepsilon^{\rm rel}$, for downstream and long candidates together with their correlated and uncorrelated uncertainties, 
 where the correlation is intended between the downstream and long samples. In the table the uncorrelated uncertainty 
 corresponds to the total systematic uncertainty on the efficiency determination.
 The correlated uncertainty is given as a percentage since it can be applied to either downstream or long candidates,  

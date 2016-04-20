@@ -82,7 +82,7 @@ Particle     			&  	Requirement          \\ \hline
 					& 	$\verb!GhostProb!<0.4$	\\
             				& 	$\verb!PID!\mu>-3$		\\
             				& 	$\chisqip>9.0$        \\      \hline
-\multirow{2}{*}{Dimuon}     & 	$\chisq_{vtx}/ndf<12.0$          \\
+\multirow{2}{*}{Dimuon}     & 	$\chisq_{vtx}//\text{ndf}<12.0$          \\
             				&	$|m(\mu\mu) - m^{\rm PDG}_\jpsi|< 100$~\mevcc ~~($\jpsi\Lz$ only)       \\ \hline
       \end{tabular}
 \caption{Summary of the pre-selection requirements. Where two values are given,
@@ -255,7 +255,7 @@ needs to be normalised. To do this, the invariant mass distribution of real $\Lb
 is fit after pre-selection (including all requirements except the MVA selection). This is possible as the peak of the resonant
 channel is already clearly visible before the MVA requirement. The resonant yield is then scaled by the ratio
 of the $\Lb\to\Lz\mumu$ and $\Lb\to\jpsi\Lz$ branching fractions as measured 
-by LHCb on 2011 data, 
+by LHCb using 2011 data~\cite{LHCb-PAPER-2013-025}, 
 \begin{equation}
 \BR(\Lb\to\Lz\mumu) / \BR(\Lb\to\jpsi\Lz) =  1.54 \times 10^{-3},
 \end{equation}
@@ -266,7 +266,7 @@ N_\mathrm{S} = N_\jpsi \cdot \frac{\BR(\Lb\to\Lz\mumu)}{\BR(\Lb\to\jpsi\Lz) \cdo
 \end{equation}
 %
 The number of expected background candidates is derived by fitting the data
-sideband with an exponential and extrapolating into the signal region.
+sideband with an exponential function and extrapolating into the signal region.
 
 In the low-\qsq region, where the signal is unobserved, the so called ``Punzi figure-of-merit",
 $N_{\mathrm{S}}/(n_\sigma/2+\sqrt{N_{\mathrm{B}}})$, is maximised~\cite{Punzi:2003bu}.
@@ -388,6 +388,7 @@ as a \Lz due to a $p\rightarrow \pi$ identity swap.
 % and $m(p\pi)$ in the \Lz mass window. 
 The lack of background from other decays is
 mainly due to the distinctive topology of the \Lz decay, which is long-lived and decays at a displaced vertex.
+
 Simulated samples are used to study the effect of misreconstructed $\Bz\ra\jpsi\KS$ and $\Bz\ra\KS\mumu$ decays. 
 In data, the $\Bz\ra\jpsi\KS$ contribution is clearly visible in the mass distribution of the resonant channel.
 This background is not suppressed by the application of specific cuts in this analysis because its mass shape is sufficiently 
@@ -398,6 +399,7 @@ Details are given in Sec.~\ref{sec:Lb_fit} and predicted numbers of candidates a
 This contribution, although essentially negligible, is considered in the fit.
 The possible contamination due to $B^{+} \ra\mumu K^{*+}$ decays, where the $K^{*+}\to\KS\pi$, is also 
 investigated using a dedicated simulated sample and found to be negligible.
+
 Finally, $\Lb\ra\jpsi\Lz$ events 
 %radiating photons from the final state, can escape the \jpsi veto and be 
 in which a photon is radiated from one of the muons in the \jpsi decay, may be reconstructed 

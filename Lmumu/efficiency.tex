@@ -6,7 +6,10 @@ The selection efficiency is calculated for each decay according to the formula
 %\label{eq:Lmumu_eff}
 %\varepsilon^{tot}=\varepsilon(Geom)\,\varepsilon(Det|Geom)\,\varepsilon(Reco|Det)\,\varepsilon(MVA|Reco)\,\varepsilon(Trig|MVA).
 %\end{equation}
-$$\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm det|geom} \cdot \varepsilon^{\rm reco|det} \cdot \varepsilon^{\rm MVA|reco} \cdot \varepsilon^{\rm trig|MVA}$$
+\begin{equation}
+\label{eq:Lmumu_eff}
+\varepsilon^{tot} = \varepsilon^{\rm geom} \cdot \varepsilon^{\rm det|geom} \cdot \varepsilon^{\rm reco|det} \cdot \varepsilon^{\rm MVA|reco} \cdot \varepsilon^{\rm trig|MVA}
+\end{equation}
 In this expression the first term represents the geometric efficiency, \emph{i.e.} the fraction of events where
 the muons of the decay candidate are inside the LHCb acceptance.
 The second term handles the possibility of the \Lz either escaping the detector or interacting with it and therefore
@@ -23,7 +26,7 @@ using a data-driven method because the simulation does not provide a good descri
 %separately listed in the next subsections. 
 Although the analysis itself only depends on the relative efficiency,
 $\varepsilon(\Lb\to\Lz\mumu)/\varepsilon(\Lb\to\jpsi\Lz)$, representative values of the absolute efficiencies 
-for each of the four terms in Eq.~\ref{eq:Lmumu_eff} are given in the following sections for completeness.. 
+for each of the five terms in Eq.~\ref{eq:Lmumu_eff} are given in the following sections for completeness.. 
 
 
 \subsection{Geometric acceptance}
@@ -411,14 +414,14 @@ long candidates; uncertainties reflect the statistics of both samples.}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf}
-\includegraphics[width=0.48\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_geom.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_det.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_reco.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_reco.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_mva.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_mva.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_DD_trig.pdf}
+\includegraphics[width=0.49\textwidth]{Lmumu/figs/efficiencies/BR/effvsq2_LL_trig.pdf}
 \caption{Absolute efficiencies as a function of \qsq: geometric efficiency (a); 
 detection efficiency (b); reconstruction efficiency for DD (c) and LL (d) candidates; 
 MVA efficiency for DD (e) and LL (f); trigger efficiency for DD (g) and LL (h).}

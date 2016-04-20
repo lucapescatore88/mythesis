@@ -29,7 +29,6 @@ The fit is performed via the following steps:
 \item the rare sample is fitted with the values of some parameters fixed to those obtained in the previous cases.
 \end{itemize}
 %
-
 In the first step, simulated $\Lb\to\jpsi\Lz$ distributions are fitted using the signal PDF alone.
 This is done separately for downstream and long candidates. Figure~\ref{fig:Lb_jpsiMCfit} shows 
 distributions of candidates selected in the resonant sample with the fit function overlaid.
@@ -63,7 +62,7 @@ B = \frac{n}{|\alpha|} - |\alpha|.
 The full PDF for the resonant signal channel,  $P_\mathrm{S}(m)$, is therefore:
 %
 \begin{equation}
-P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \cdot \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f) \cdot \text{CB}(m;m_0,\sigma_2,\alpha_2,n),
+P_\mathrm{S}(m;m_0,\alpha_1,\alpha_2,f,n) = f \cdot \text{CB}(m;m_0,\sigma_1,\alpha_1,n)+(1-f) \cdot \text{CB}(m;m_0,\sigma_2,\alpha_2,n), \nonumber
 \end{equation}
 %
 where $f$ is the relative fraction of candidates falling into the first CB function.
@@ -88,9 +87,9 @@ is fitted with a DCB function, which is then used to model the \KS background
 in the $\Lb\to\jpsi\Lz$ fit. The fit to the simulated $\Bz\ra\jpsi\KS$ events
 is reported in Fig.~\ref{fig:KSbkgFit}. When the \KS shape is introduced in the fit to the data, all
 of its parameters are fixed. This is particularly important when fitting long candidates, because the 
-contribution from the \KS peak smaller and therefore the values of the parameters would 
-not be adequately constrained by data. On the other hand, in order
-to take into account possible differences between simulation and data in the definition of the
+contribution from the \KS peak is smaller and therefore the values of the parameters would 
+not be adequately constrained by data. 
+To take into account possible differences between simulation and data in the definition of the
 absolute mass scale, an offset is introduced by adding a shift to the central value 
 of the DCB, $m_0 \ra m_0 + m'$, where $m'$ is left free to vary in the fit.
 In summary, the free parameters in the fit to the resonant $\Lb\to\jpsi\Lz$ sample
@@ -187,11 +186,11 @@ N(\jpsi\Lz)_{k} \cdot \varepsilon^{\mathrm{rel}}_{k} \cdot \frac {\Delta\qsq} { 
 \end{equation}
 %
 where $k = $(LL,DD), $\Delta\qsq$ is the width of the \qsq interval and the only free parameter is the ratio of the branching 
-fraction of the rare decay to that of the \jpsi channel. The value of the branching fraction of the $\jpsi\to\mumu$ decay is taken 
-to be \mbox{$(5.93 \pm 0.06)\cdot 10^{-2}$~\cite{PDG2014}} and $\varepsilon^{rel}$ corresponds to
-the relative efficiencies of the rare and resonant channels obtained in Sec.~\ref{sec:Lb_eff}. 
+fraction of the rare decay to that of the \jpsi channel, $\mathcal{B}^{\rm rel}$. The value of the branching fraction 
+of the $\jpsi\to\mumu$ decay is taken to be \mbox{$(5.93 \pm 0.06)\cdot 10^{-2}$~\cite{PDG2014}} and $\varepsilon^{\rm rel}$ 
+corresponds to the relative efficiencies of the rare and resonant channels obtained in Sec.~\ref{sec:Lb_eff}. 
 In this formula the efficiencies and the normalisation yield appear as constants, namely 
-$N(\Lz\mumu)_{k} = C_k \cdot \mathcal{B}^{rel}$. 
+$N(\Lz\mumu)_{k} = C_k \cdot \mathcal{B}^{\rm rel}$. 
 %These constants are then varied in order to obtain 
 %systematic uncertainties on the final result as described in Sec.~\ref{sec:Lb_sys}.
 

@@ -40,7 +40,7 @@ On the plot for muons a vertical band which corresponds to the rare decay is als
 \centering 
 \includegraphics[width=1.\textwidth]{RKst/figs/electron_B0jpsi2D_selected.pdf}
 \includegraphics[width=1.\textwidth]{RKst/figs/muon_B0jpsi2D_selected.pdf}
-\caption{Two-dimensional \qsq \emph{vs} $m(K\pi\ell\ell)$ distributions for 
+\caption{Two-dimensional \qsq versus $m(K\pi\ell\ell)$ distributions for 
 fully selected electron (top) and muon (bottom) candidates in 2012 data. 
 Requirements on \qsq to separate the various decay channels are not applied.}
 \label{fig:2D_q2_B0mass}
@@ -242,7 +242,7 @@ and electron (right) in 2012 data. The red line indicates the chosen cut.}
 \centering 
 \includegraphics[width=0.49\textwidth]{RKst/figs/kaon_PID.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/pion_PID.pdf}
-\caption{Correct ID \emph{vs} mis-ID probability distributions for 
+\caption{Correct ID versus mis-ID probability distributions for 
 the kaon (left) and the pion (right) in the decay candidates after pre-selection.}
 \label{fig:k_pi_pid}
 \end{figure}
@@ -307,7 +307,7 @@ $1.1 < \qsq < 6$~\gevgevcccc interval and 1.8\% of \psitwos candidates leak abov
 A kaon from the decay $\Bs \rightarrow \phi \ll$, where the $\phi$ decays in two kaons,
 can be mis-identified as a pion and therefore cause the $\phi$ to be reconstructed as a $\Kstarz$. This results in
 a candidate with a value of $m(K\pi)$ that is less than the nominal \Kstarz mass but still high enough to
-pass the selection requirements. Figure~\ref{fig:phiplots} (left) shows a plot of $m(K\pi)$ \emph{vs}
+pass the selection requirements. Figure~\ref{fig:phiplots} (left) shows a plot of $m(K\pi)$ versus
 $m(K\pi \mu\mu)$, where the kaon mass hypothesis is assigned to the pion. A peak can clearly be seen
 around the (\Bs,$\phi$) mass.
 To remove this background only candidates with $m(K(\pi\rightarrow K)) > 1040$~\mevcc~are selected.
@@ -326,7 +326,7 @@ Furthermore, this contribution is already taken into account by the choice of th
 \includegraphics[width=0.49\textwidth]{RKst/figs/Background/Kmumu.pdf}
 \caption{ (left) Distribution of data candidates as a function of the variables $m(K(\pi\rightarrow K))$ 
 and $m(K(\pi\rightarrow K)\mu\mu)$, where $\pi\rightarrow K$ means that the kaon mass hypothesis 
-is assigned to the pion. (right) The invariant mass distribution of the three-body system $(K\mu\mu)$,
+is assigned to the pion. (right) The invariant mass distribution of the 3-body system $(K\mu\mu)$,
 where the peak due to the $B^+ \to K^+ \mumu$ decay is visible. }
 \label{fig:phiplots}
 \end{figure}
@@ -338,7 +338,7 @@ where the peak due to the $B^+ \to K^+ \mumu$ decay is visible. }
 $\Bu \to K^+ \ll$ decays can contaminate the upper \Bz mass sideband if they are combined
 with a soft pion from elsewhere in the event and therefore reconstructed as a \Bz decay.
 Similarly, a kaon can be mis-identified as a pion and combined with another kaon in the event.
-Figure~\ref{fig:phiplots} (right) shows the invariant mass distribution of the three-body ($K\mumu$) system,
+Figure~\ref{fig:phiplots} (right) shows the invariant mass distribution of the 3-body ($K\mumu$) system,
 $m(K\mu\mu)$. This is characterised by a narrow peak at the $\Bu$ mass. Since these
 candidates have $m(K\pi\ell\ell) > 5380$~\mevcc~there is no contribution under the \Bz peak,
 but they can cause problems when using sidebands candidates to train the neural network.
@@ -348,7 +348,7 @@ which results in a $\sim95\%$ background rejection while keeping $\sim99\%$ sign
 \subsubsection{$\Lambda_b$ decays}
 
 $\Lb\to\jpsi\Lz$ decays are unlikely to be reconstructed as $\Bz \to \Kstarz \ll$ because
-the \Lz is long-lived and decays further in the detector with a separate vertex.
+the \Lz is long-lived and decays further into the detector with a separate vertex.
 %Nevertheless, simulated events were used to check how many 
 The number of candidates falling into the \Bz samples was estimated using simulation and found to be negligible. 
 In contrast, the $\Lb\to\jpsi pK$ decay channel can contribute more easily, when the proton is mis-identified as a kaon.
@@ -360,7 +360,7 @@ In fact, the $m(pK)$ is above the \Lz threshold and therefore they must come fro
 
 The \decay{\Bd}{\Dm\ep\nu} decay, where the \Dm in turn decays semileptonically to $\Kstarz\en\nu$ has the same final particles
 as the \BdToKstee decay plus two neutrinos which are not reconstructed. This decay has a branching ratio almost four orders of 
-magnitude larger than \BdToKstee and it may pass the selection requirements when the two neutrinos have low momentum. 
+magnitude larger than \BdToKstee and it may pass the selection requirements when the two neutrinos have low momenta. 
 %This cut, developed for the angular analysis, 
 To reduce the level of this background the angle $\theta_\ell$ is used, which is defined as the angle between the direction of the \ep (\en)
 in the dielectron rest frame and the direction of the dielectron in the \Bd (\Bdb) rest frame. 
@@ -386,7 +386,7 @@ of the invariant mass window used for the fits.
 
 For the low-\qsq region, a potentially dangerous background is due to the \BdToKstG decay followed by a conversion
 of the photon in the detector. The branching fraction of \BdToKstG has been measured to be \mbox{\BF~= $(4.33 \pm 0.15)\times 10^{-5}$} and, 
-when the photon converts into a \ee\! pair, it has similar characteristics to \BdKstee. 
+when the photon converts into a \ee\! pair, these decays have similar characteristics to \mbox{\BdKstee}. 
 In \lhcb around 40\% of photons convert before the calorimeter. Although only $\sim 10\%$ of these convert
 in the VeLo and are reconstructed as long tracks, the resulting \Bd mass peaks under that of the signal, making it a dangerous background. 
 This signal-like background is reduced effectively by the choice of the lower bound for the low-\qsq interval which corresponds to 
@@ -425,7 +425,7 @@ is not compatible with a \jpsi (\psitwos) resonance: $|m((h\to \mu)\mu)-m_{\jpsi
 
 Partially-reconstructed candidates are defined as decays where one or more particles in the final state are not reconstructed,
 resulting in $m(K\pi\ell\ell)$ values smaller than the mass of the \Bz, but with tails that can still contaminate the signal sample.
-Sources of partially-reconstructed background are decays involving higher hadronic states such as 
+Sources of partially-reconstructed background include decays involving higher hadronic states such as 
 \decay{\Bz}{(Y\to\kaon\pi X)(\jpsi\to\epem)}, where $X$ represents at least one particle that is not reconstructed. 
 The $Y$ state can be a \Kstar resonance as well as \D mesons that decays semileptonically, as explained in the previous sections.
 For the resonant channels, an additional source of partially-reconstructed 
@@ -438,8 +438,8 @@ pushes partially-reconstructed candidates towards low $m(K\pi\ell\ell)_{\jpsi}$ 
 
 This requirement is implicitly applied for the muon channels by the definition of the invariant mass fit-windows. For the electron channels,
 the requirement $m(K\pi\ell\ell)_{\jpsi(\psitwos)} > 5150~\mevcc$ is explicitly applied to select the $\jpsi(ee)$ and $\psitwos(ee)$ samples.
-For the electron rare decay channels the vertex constraint alone is not sufficient to remove all background.
-Furthermore, to correctly model the long radiative tails of the mass shapes, a fit region that extends 
+For the electron rare decay channels the vertex constraint alone is not sufficient to remove all background and,
+furthermore, to model correctly the long radiative tails of the mass shapes, a fit region that extends 
 down to 4500~\mevcc~is necessary. For these reasons the requirement is not applied for the electron rare decay channels
 and, as a consequence, the partially-reconstructed background is still relevant and needs to be modelled in the fit. % (for details see Sec.~\ref{sec:RKst_misreco_fit}).
 
@@ -521,7 +521,7 @@ channels for which the bremsstrahlung radiation is negligible.
 \includegraphics[width=0.49\textwidth]{RKst/figs/HOP/HOP_bkg_central.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/HOP/HOP_sig_high.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/HOP/HOP_bkg_high.pdf}
-\caption{Two-dimensional distributions of $\log(\chisq_{\rm FD})$ \emph{vs} \mbcm for (left) 
+\caption{Two-dimensional distributions of $\log(\chisq_{\rm FD})$ versus \mbcm for (left) 
 \mbox{\BdToKstee} signal and (right) partially-reconstructed background.
 From top to bottom the low-, central- and high-\qsq intervals.}
 \label{fig:hop}
@@ -553,9 +553,9 @@ which ensures that candidates used for training are not used for optimisation.
 {\bf Samples:}
 
 Representative samples of the signal and background are needed to train the classifier.
-For the signal, fully reconstructed \BdToKstmm and \BdKstee simulated events can be used.
+For the signal, fully reconstructed \BdToKstmm and \BdKstee simulated events can be used,
 %The simulation is corrected improve the data-simulation agreement as described in (see Sec. \ref{sec:RKst_mc_weighting}).
-Instead a sample representative of the background can be obtained using real data candidates
+while a sample representative of the background can be obtained using real data candidates
 in the upper \Bz sideband: $m(K\pi\mu\mu) > 5400$~\mevcc~ and $m(K\pi ee) > 5600$~\mevcc.
 The lower sideband is not used in the training as it contains a significant fraction of misreconstructed background.
 All pre-selection requirements are applied to the samples used for the training.
@@ -728,7 +728,7 @@ sideband (top) and simulated signal (bottom) candidates for the electron (left) 
 \includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_EE-q2central/EE_ROC_t_MVA.pdf}
 \includegraphics[width=0.49\textwidth]{RKst/figs/Optimisation/optimizeCut_MM-q2central/MM_ROC_t_MVA.pdf}
 \caption{(top) Dependence of figure-of-merit on the requirement on neural network output.
-(bottom) Signal efficiency \emph{vs} background rejection.
+(bottom) Signal efficiency versus background rejection.
 Plots correspond to the electron (left) and muons (right) samples.}
 \label{fig:RKst_FOM}
 \end{figure}
@@ -737,7 +737,7 @@ The number of signal candidates accepted by a given requirement is determined us
 Firstly, \mbox{\BdToKstJPsll} candidates selected with all the requirements except for the MVA, and BCM cuts 
 are fitted to determine the total yield. 
 % (see Fig.~\ref{fig:RKst_sW_mass}).
-This number is then scaled by the ratio between the rare and resonant branching fractions and
+This number is then scaled by the ratio of the rare and resonant branching fractions and
 the efficiency ratio: 
 %as a function of the cut
 %

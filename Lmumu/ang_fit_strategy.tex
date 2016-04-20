@@ -2,7 +2,7 @@
 
 %This chapter describes the fitting technique applied to extract the angular observables.
 There are physical boundaries to the values of the parameters of interests:
-\afbh is limited in the $[-0.5,0.5]$ interval and for the \fl and 
+\afbh is limited to the $[-0.5,0.5]$ interval and for the \fl and 
 \afbl parameters the physical region, given by $| \afbl | < 3/4 \cdot (\fl-1)$,
 is the triangle shown in Fig.~\ref{fig:pdfscan}.
 If the measured value is close to the boundary of the physical region the fit does not always converge. 
@@ -10,7 +10,7 @@ Therefore a ``brute force" fitting technique is applied. For this purpose fit pa
 divided into two categories: parameters of interest (PoIs), \afbl,
 \afbh and \fl and all other parameters, which are referred to as ``nuisances".
 The value of the Log-Likelihood ($\log\mathcal{L}$) of the fit model with respect to data 
-is evaluated in a grid of points in the PoIs' allowed area to find the function's minimum.
+is evaluated in a grid of points in the allowed area of the PoIs to find its minimum.
 A first coarse scan finds a candidate minimum and then the procedure is reiterated two
 more times in finer intervals around it. For each point all the nuisances are fitted
 using a maximum likelihood fit. Using this method the best fit point is therefore constrained inside
@@ -116,10 +116,10 @@ $5580 < m(p\pi\mu\mu) < 5660$~\mevcc ~(``signal region").
 %
 The background fraction, $f_b$, is obtained by looking at the 4-body $m(p\pi\mu\mu)$ invariant mass
 distribution in a wider interval and fitting it to extract the fraction of background in the signal region.
-In the fit to the angular distributions this is then gaussian constrained to the obtained value.
+In the fit to the angular distributions this is then Gaussian constrained to the obtained value.
 %
 Figure~\ref{fig:cosThetaLbkg} shows the angular distributions of sideband candidates
-for the high-\qsq integrated interval with overlaid the background function.
+for the high-\qsq integrated interval with the background function overlaid.
 Note that a different acceptance shape is used for the downstream and long samples and for each \qsq interval.
 %
 In summary the only free fit parameter in each of the final fits to data is the forward-backward asymmetry
@@ -216,7 +216,7 @@ downstream (left) and long (right) candidates in the 15 -- 20~\gevgevcccc ~\qsq 
 \subsection{Evaluation of a three-dimensional fit approach}
 
 An alternative way of extracting the angular observables would be to fit both angles 
-and the invariant mass distribution at the same time in order to have a better handle on the level of background and making 
+and the invariant mass distribution at the same time in order to have a better handle on the level of background and to make 
 a more effective use  of the information available. However, there are disadvantages with this approach, namely that
 it is necessary to use a larger mass window including more background and this method introduces more parameters to fit.
 %In the 1D case the free parameters are the two parameters of interest ($A_{\rm FB}^\ell$ and $f_{\rm L}$)
@@ -234,7 +234,7 @@ pseudo-experiments are used to check which method gives the best sensitivity.
 Events are generated in a 3D ($\cos\theta_\ell$,$\cos\theta_h$,$m_{p\pi\mu\mu}$) space.
 The generated values of the observables are $\afbl = 0$, $\fl = 0.7$ 
 and $\afbh = -0.37$, which are data-like values inspired from a preliminary measurement
-in the highest statistics interval. Similarly, the overall sample size and the fraction of background candidates
+in the highest statistics \qsq interval. Similarly, the overall sample size and the fraction of background candidates
 in the mass window are generated to be data-like using information from the preliminary fit to data.
 %
 %This is done using the statistics of our highest statistics bin, $15-20$ $GeV^2/c^2$ in \qsq, 
