@@ -184,7 +184,7 @@ In general, this does not include constraints to intermediate resonances, unless
 When constraints to intermediate resonances are applied the invariant mass is referred to as
 $m(K\pi ee)_R$, where $R = \jpsi$ or \psitwos.
 %The reconstructed invariant mass of the \Bz depends on which L0 line triggered the event.
-A simultaneous fit to the normalisation and control samples as well as \BdToKstee and
+A simultaneous fit to the normalisation and control samples, as well as to \BdToKstee, and
 across the three trigger categories defined in Sec.~\ref{sec:RKst_trigstripping} is performed.
 %
 For each trigger category, the $\jpsi(ee)$ and $ee$ yields are extracted from the following signal channel categories:
@@ -198,15 +198,15 @@ The additional control channels, which are fit simultaneously, are:
 %
 \begin{itemize}
 \item \BdToKstGee to constrain the yield of partially-reconstructed   background 
-in the low-\qsq and the leakage of \BdToKstG into the low-\qsq;
-\item \BdToKstJPsee, without the \jpsi mass constraint, to constrain the leakage into the central-\qsq and the 
-parameters that model residual data-simulation discrepancies;
-\item \BdToKstPsiee, with a \psitwos mass constraint,  $m(K\pi ee)_{\psi}$, to constrain the leakage to lower and higher \qsq values.
+in the low-\qsq and the leakage of \BdToKstG into the low-\qsq interval;
+\item \BdToKstJPsee, without the \jpsi mass constraint, to constrain the leakage into the 
+central-\qsq interval and the parameters that model residual data-simulation discrepancies;
+\item \BdToKstPsiee, with a \psitwos mass constraint,  $m(K\pi ee)_{\psitwos}$, to constrain the leakage to lower and higher \qsq values.
 \end{itemize}
 
 When fitting the variable without a \jpsi mass constraint it is important to use a wider mass range to better constrain the 
 parameters modelling the radiative tails and the backgrounds; therefore a mass window [4500,6200]~\mevcc~ is used. The lower limit 
-is given by the point in which the \qsq cut (at 6~\gevgevcccc to separate the rare and resonant channels)
+is given by the point at which the \qsq cut (at 6~\gevgevcccc to separate the rare and resonant channels)
 starts to affect the 4-body invariant mass distribution. 
 %
 %For the variable with a mass constraint a mass window of 5150--5850\mevcc is used to fit the \JPsee, which has the advantage of removing the contributions from the partially-reconstructed   background.
@@ -302,7 +302,7 @@ distributions can differ significantly.
 \mathcal{P}^{{\rm L0}x}(m) = f^{{\rm L0}x}_{0\gamma} \cdot \mathcal{P}^{{\rm L0}x}_{0\gamma}(m) + f^{{\rm L0}x}_{1\gamma} \cdot \mathcal{P}^{{\rm L0}x}_{1\gamma}(m) + (1 - f^{{\rm L0}x}_{0\gamma} - f^{{\rm L0}x}_{1\gamma}) \cdot  \mathcal{P}^{{\rm L0}x}_{2\gamma}(m),
 \end{equation}
 where the $\mathcal{P}(m)^{{\rm L0}x}_{n\gamma}$ functions are the chosen PDFs for the bremsstrahlung and trigger categories
-and the $f^{{\rm L0}x}_{n\gamma}$ parameters are the relative fractions of candidates falling in each category.
+and the $f^{{\rm L0}x}_{n\gamma}$ parameters are the relative fractions of candidates falling into each category.
 \item Most parameters are fixed and the combined PDF, $\mathcal{P}^{{\rm L0}x}_{sig}(m)$,
 is used to fit data in each of the trigger categories.
 \end{itemize}
@@ -489,7 +489,7 @@ shape under the signal peak and is smoothed using a \texttt{RooKeysPdf}. The nor
 $\Lb\to pK(\jpsi\to\mumu)$ yield obtained from the muon fit after correcting for efficiency differences 
 between final states with muons and electrons.
 
-\item $\Bs\to\Kstarz(\jpsi\to\ee)$: described using the same PDF adopted for the signal, but a different central value, 
+\item $\Bs\to\Kstarz(\jpsi\to\ee)$: described using the same PDF adopted for the signal, but with a different central value, 
 $m_0$, which is set at the \Bs nominal mass. The normalisation is fixed to the $\Bd\to\Kstarz(\jpsi\to\mumu)$ yield 
 obtained from the muon fit after correcting for efficiency differences between final states with muons and electrons.
 
@@ -497,8 +497,8 @@ obtained from the muon fit after correcting for efficiency differences between f
 
 The \jpsi mass constraint has the effect of pushing the partially-reconstructed   background away from 
 the peak outside the fit window. The \jpsi control sample is selected using the requirement that the 4-body 
-mass constrained using \verb!DecaTreeFitter! is above 5150~\mevc, which explicitly removes
-the partially-reconstructed   background; this cut does not produce significant distortion to the
+invariant mass constrained using \verb!DecayTreeFitter! is above 5150~\mevc, which explicitly removes
+the partially-reconstructed   background; this cut does not produce significant distortion of the
 unconstrained invariant mass distribution in the considered window. 
 For these reasons this background does not need to be modelled in either of these cases.
 %
@@ -642,7 +642,7 @@ and high-\qsq intervals. The dashed black line represents the signal and the sha
 \includegraphics[width=0.7\textwidth]{RKst/figs/Fit/fit_EE/fit_Psi.pdf}
 \caption{Fit to the \mKpiee invariant mass of control channel candidates.
 From top to bottom: the invariant mass distribution without mass constraint of \BdToKstGee
-and \BdToKstJPsee candidates and the constrained invariant mass, $\mKpiee_{\psi}$, of \BdToKstPsiee candidates.
+and \BdToKstJPsee candidates, and the constrained invariant mass, $\mKpiee_{\psitwos}$, of \BdToKstPsiee candidates.
 The dashed black line represents the signal and the shaded shapes the backgrounds.}
 \label{fig:fitsControlEE}
 \end{figure}
