@@ -22,13 +22,11 @@ simply referred to as ``invariant mass".
 \label{sec:Lb_fit}
 
 The fit is performed via the following steps:
-%
 \begin{itemize}
 \item simulated distributions are fitted to extract initial parameters values;
 \item the resonant data sample is fitted;
 \item the rare sample is fitted with the values of some parameters fixed to those obtained in the previous cases.
 \end{itemize}
-%
 In the first step, simulated $\Lb\to\jpsi\Lz$ distributions are fitted using the signal PDF alone.
 This is done separately for downstream and long candidates. Figure~\ref{fig:Lb_jpsiMCfit} shows 
 distributions of candidates selected in the resonant sample with the fit function overlaid.
@@ -44,7 +42,7 @@ threshold $\alpha$ away from the peak value. This asymmetric function has the fo
 \begin{equation}
 C(x;\alpha,n,\bar{x},\sigma) = N \cdot
 \begin{cases}
-exp \left( -\frac{(x - \bar{x})^2}{2\sigma} \right)  & \mbox{   if   } \frac{(x - \bar{x})}{\sigma} > \alpha, \\
+\exp \left( -\frac{(x - \bar{x})^2}{2\sigma} \right)  & \mbox{   if   } \frac{(x - \bar{x})}{\sigma} > \alpha, \\
 A\left( B - \frac{(x - \bar{x})}{\sigma} \right)^{-n} & \mbox{   if   } \frac{(x - \bar{x})}{\sigma} < \alpha,
 \end{cases}
 \end{equation}
@@ -53,9 +51,8 @@ where for normalisation and continuity
 %
 \begin{equation}
 \label{CB}
-\begin{array}{ll}
-A = \left( \frac{c}{|\alpha|} \right))^n \cdot exp(- \frac{\alpha^2}{2}), \\
-B = \frac{n}{|\alpha|} - |\alpha|.
+\begin{array}{lcr}
+A = \left( \frac{c}{|\alpha|} \right))^n \cdot \exp(- \frac{\alpha^2}{2}) & \text{ and } & B = \frac{n}{|\alpha|} - |\alpha|.
 \end{array}
 \end{equation}
 %

@@ -203,7 +203,42 @@ Figure~\ref{fig:ch_currents_ckm} displays examples of CC processes together with
 %
 \begin{figure}[h!]
 \centering 
-\includegraphics[width=0.6\textwidth]{Introduction/figs/ch_currents_ckm.png}
+%\includegraphics[width=0.6\textwidth]{Introduction/figs/ch_currents_ckm.png
+\unitlength = 1mm
+\begin{fmffile}{Vuj_diagram}
+ \subfloat{
+\begin{fmfgraph*}(50,35)
+\fmfleft{w}
+\fmfright{l1,l2}
+\fmflabel{$u$}{l1}
+\fmflabel{$d$}{l2}
+%\fmflabel{$W^+$}{w}
+%\fmflabel{$V_{ud}$,right=0.8}{v1}
+\fmfv{l.d=.1w,l=$V_{ud}$}{v1}
+\fmf{fermion}{l1,v1,l2}
+%\fmf{fermion}{o1,v2,o2}
+\fmf{photon,label=$W^+$}{w,v1}
+%\fmf{photon}{w,v1}
+\end{fmfgraph*}
+}
+\hspace{1cm}
+ \subfloat{
+\begin{fmfgraph*}(50,35)
+\fmfleft{w}
+\fmfright{l1,l2}
+\fmflabel{$u$}{l1}
+\fmflabel{$s$}{l2}
+%\fmflabel{$W^+$}{w}
+%\fmflabel{$V_{ud}$,right=0.8}{v1}
+\fmfv{l.d=.1w,l=$V_{us}$}{v1}
+\fmf{fermion}{l1,v1,l2}
+%\fmf{fermion}{o1,v2,o2}
+\fmf{photon,label=$W^+$}{w,v1}
+%\fmf{photon}{w,v1}
+\end{fmfgraph*}
+}
+\end{fmffile}
+\bigskip
 \caption{Feynman diagrams with CKM weights on weak interaction vertices as defined in Eq.~\ref{eq:CKM}.}
 \label{fig:ch_currents_ckm}
 \end{figure}
@@ -345,12 +380,52 @@ in the SM and, in particular, of generation changing interactions, where a quark
 into one of an other family. Another class of processes is the Flavour Changing Neutral Currents (FCNCs), \emph{e.g.} transitions from a
 \bquark quark with a charge of -1/3 to a \squark or \dquark quark with the same charge. Examples of FCNC transitions in the quark
 and lepton sector are shown in Fig.~\ref{fig:neutr_curr}.
-%
+
 \begin{figure}[h!]
 \centering 
-\includegraphics[width=0.25\textwidth]{Introduction/figs/Z2ffbar.png}
-\includegraphics[width=0.6\textwidth]{Introduction/figs/neutral_current_proc.png}
-\caption{Feynman diagrams of a neutral current allowed in the SM (left), where$f$ represents any fermion,
+\bigskip
+%\includegraphics[width=0.25\textwidth]{Introduction/figs/Z2ffbar.png}
+%\includegraphics[width=0.6\textwidth]{Introduction/figs/neutral_current_proc.png}
+\unitlength = 1mm
+\begin{fmffile}{Z_diagrams}
+ \subfloat{
+\begin{fmfgraph*}(30,25)
+\fmfleft{z}
+\fmfright{l1,l2}
+\fmflabel{$f$}{l1}
+\fmflabel{$\overline{f}$}{l2}
+%\fmflabel{$Z^0$}{z}
+\fmf{fermion}{l1,v1,l2}
+\fmf{photon,label=$Z^0$}{z,v1}
+\end{fmfgraph*}
+}
+\hspace{0.5cm}
+ \subfloat{
+\begin{fmfgraph*}(30,25)
+\fmfleft{z}
+\fmfright{l1,l2}
+\fmflabel{$d$}{l1}
+\fmflabel{$\overline{s}$}{l2}
+%\fmflabel{$Z^0$}{z}
+\fmf{fermion}{l1,v1,l2}
+\fmf{photon,label=$Z^0$}{z,v1}
+\end{fmfgraph*}
+}
+\hspace{0.5cm}
+ \subfloat{
+\begin{fmfgraph*}(30,25)
+\fmfleft{z}
+\fmfright{l1,l2}
+\fmflabel{$e^-$}{l1}
+\fmflabel{$\mu^+$}{l2}
+%\fmflabel{$Z^0$}{z}
+\fmf{fermion}{l1,v1,l2}
+\fmf{photon,label=$Z^0$}{z,v1}
+\end{fmfgraph*}
+}
+\end{fmffile}
+\bigskip
+\caption{Feynman diagrams of a neutral current allowed in the SM (left), where $f$ represents any fermion,
 and FCNCs processes forbidden in the SM (centre and right).}
 \label{fig:neutr_curr}
 \end{figure}
@@ -361,7 +436,7 @@ could be part of a larger matrix involving for example quark-lepton terms. This 
 new sources of FCNCs but could also allow for natural explanations of the equality of the proton and electron charges.
 Furthermore, the observation of neutrino oscillation proves that flavour is not always conserved
 suggesting flavour structures beyond the SM. Finally, the values of the terms of the CKM matrix and the PMNS
-matrix~\cite{Pontecorvo:1967fh,Maki:1962mu}, which is the mixing-matrix equivalent to the CKM in the lepton sector,
+matrix~\cite{Pontecorvo:1967fh,Maki:1962mu}, which is the mixing-matrix for the lepton sector,
 are not explained in the SM but have to be measured experimentally. These open problems motivate searches for flavour
 symmetries and deeper motivations for flavour conservation. 
 
@@ -475,7 +550,47 @@ which describes the $\beta$ decay in terms of a four-fermion interaction,
 where the short distance physics is hidden into a point-like vertex as illustrated in Fig.~\ref{fig:fermi_theory}.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{Introduction/figs/fermi_theory.png}
+%\includegraphics[width=0.7\textwidth]{Introduction/figs/fermi_theory.png}
+\unitlength = 1mm
+\begin{fmffile}{FermiTheory_diagrams}
+ \subfloat{
+\begin{fmfgraph*}(50,40)
+\fmfleft{b}
+\fmfright{c,u,d}
+\fmflabel{$b$}{b}
+\fmflabel{$c$}{c}
+\fmflabel{$d$}{d}
+\fmflabel{$\overline{u}$}{u}
+\fmf{phantom}{b,v1,u}
+\fmffreeze
+\fmf{fermion}{b,v1,c}
+\fmf{phantom}{u,v1,d}
+\fmffreeze
+\fmf{fermion}{u,v2,d}
+\fmf{photon,label=$W^-$,label.side=left}{v1,v2}
+\end{fmfgraph*}
+}
+\hspace{1.5cm}
+ \subfloat{
+\begin{fmfgraph*}(50,40)
+\fmfleft{x1,b,x2}
+\fmfright{c,u,d}
+\fmflabel{$b$}{b}
+\fmflabel{$c$}{c}
+\fmflabel{$d$}{d}
+\fmflabel{$\overline{u}$}{u}
+\fmf{phantom}{b,v1,u}
+\fmffreeze
+\fmf{phantom}{d,v1,c}
+\fmf{phantom}{b,v1}
+\fmffreeze
+\fmf{fermion}{b,v1,c}
+\fmf{fermion}{u,v1,d}
+\fmfv{decor.shape=square,decor.filled=full, decor.size=3thick}{v1}
+\end{fmfgraph*}
+}
+\end{fmffile}
+\bigskip
 \caption{Example of a Fermi theory in which the full theory (left) is divided into (right) a
 short distance contribution, hidden in the vertex, and a long distance contribution.}
 \label{fig:fermi_theory}
@@ -540,7 +655,7 @@ values of the effective Hamiltonian. Given an initial state $I$ and a final stat
 \begin{equation}
 \begin{array}{rl}
 A(I\to F) &= \langle I | \mathcal{H}_{eff} | F \rangle = \\
-&= \frac{G_F}{\sqrt{2}} \sum V_{CKM}^i \underbrace{C_i(\mu)}_{\shortstack{Perturbative \\ Includes new physics}} \cdot  \underbrace{\langle I | \mathcal{O}_i(\mu) | F \rangle}_{\shortstack{Non-preturbative \\ Known physics}},
+&= \frac{G_F}{\sqrt{2}} \sum V_{CKM}^i \underbrace{C_i(\mu)}_{\shortstack{Perturbative \\ Includes new physics}} \cdot  \underbrace{\langle I | \mathcal{O}_i(\mu) | F \rangle}_{\shortstack{Non-perturbative \\ Known physics}},
 \end{array}
 \end{equation}
 where $\langle I | \mathcal{O}_i(\mu) | F \rangle$ are the hadronic matrix elements also called  ``form factors".
@@ -593,7 +708,43 @@ The vertices corresponding to the radiative and semileptonic operators are illus
 %
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\textwidth]{Introduction/figs/vtx_operators.png}
+%\includegraphics[width=0.6\textwidth]{Introduction/figs/vtx_operators.png}
+\unitlength = 1mm
+\begin{fmffile}{Operators_diagrams}
+ \subfloat{
+\begin{fmfgraph*}(40,30)
+\fmfleft{x1,b,x2,x3}
+\fmfright{y1,s,y2,y3}
+\fmftop{gamma}
+\fmflabel{$\gamma$}{gamma}
+\fmflabel{$b$}{b}
+\fmflabel{$s$}{s}
+\fmf{fermion}{b,v1,s}
+\fmffreeze
+\fmf{photon}{v1,gamma}
+\end{fmfgraph*}
+}
+\hspace{1.5cm}
+ \subfloat{
+\begin{fmfgraph*}(40,30)
+\fmfleft{x1,b,x2}
+\fmfright{s,lm,lp}
+\fmflabel{$b$}{b}
+\fmflabel{$s$}{s}
+\fmflabel{$\ell^+$}{lp}
+\fmflabel{$\ell^+$}{lm}
+\fmf{phantom}{b,v1,lm}
+\fmffreeze
+\fmf{phantom}{lp,v1,s}
+\fmf{phantom}{b,v1}
+\fmffreeze
+\fmf{fermion}{b,v1,s}
+\fmf{fermion}{lm,v1,lp}
+\fmfv{decor.shape=square,decor.filled=full, decor.size=3thick}{v1}
+\end{fmfgraph*}
+}
+\end{fmffile}
+\bigskip
 \caption{Interaction vertices corresponding to the radiative (left) and semileptonic (right) operators.}
 \label{fig:vtx_operators}
 \end{figure}
