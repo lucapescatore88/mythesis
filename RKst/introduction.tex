@@ -42,7 +42,65 @@ However, the luminosity measurement, usually a source of systematic uncertainty,
 sides of the ratio and therefore cancels out.
 
 \begin{figure}[h]
-\centering \includegraphics[width=0.8\textwidth]{RKst/figs/penguins.png}
+%\centering \includegraphics[width=0.8\textwidth]{RKst/figs/penguins.png}
+\centering 
+\unitlength = 1mm
+\begin{fmffile}{penguinNP_diagram}
+ \subfloat{
+	\begin{fmfgraph*}(50,50)
+	\fmfipair{Vtb,Vts,b,s,ep,em,p,p'}
+	\fmfiequ{.5[Vtb,Vts]}{.5[nw,ne]}
+	\fmfiequ{Vts}{Vtb+(.3w,0)}
+	\fmfiequ{b}{.7[sw,nw]}
+	\fmfiequ{s}{.7[se,ne]}
+	\fmfiequ{xpart(p')}{xpart(.5[ep,em])}
+	\fmfiequ{ypart(p')}{.2h}
+	\fmfiequ{p}{p'+(0,.2h)}
+	\fmfiequ{.5[ep,em]}{.5[sw,se]}
+	\fmfiequ{em}{ep+(.7w,0)}
+	\fmfi{photon,lab=$W$,lab.sid=left}{Vtb--Vts}
+	\fmfi{fermion,lab=$b$,lab.sid=left}{b--Vtb}
+	\fmfi{fermion,lab=$s$,lab.sid=left}{Vts--s}
+	\fmfi{fermion,lab=$t$}{Vtb{b-Vtb} .. tension 2 .. {right}p}
+	\fmfi{fermion,lab=$t$}{p{right} .. tension 2 .. {Vts-s}Vts}
+	\fmfi{photon}{p--p'}
+	\fmfi{fermion,lab=$\ell^+$,lab.sid=left}{ep--p'}
+	\fmfi{fermion,lab=$\ell^-$,lab.sid=left}{p'--em}
+	\fmfiv{d.sh=circle,d.siz=2thick}{Vtb}
+	\fmfiv{d.sh=circle,d.siz=2thick}{Vts}
+	\fmfiv{d.sh=circle,d.siz=2thick}{p}
+	\fmfiv{d.sh=circle,d.siz=2thick}{p'}
+	\end{fmfgraph*}
+}
+\hspace{1cm}
+ \subfloat{
+	\begin{fmfgraph*}(50,50)
+	\fmfipair{Vtb,Vts,b,s,ep,em,p,p'}
+	\fmfiequ{.5[Vtb,Vts]}{.5[nw,ne]}
+	\fmfiequ{Vts}{Vtb+(.3w,0)}
+	\fmfiequ{b}{.7[sw,nw]}
+	\fmfiequ{s}{.7[se,ne]}
+	\fmfiequ{xpart(p')}{xpart(.5[ep,em])}
+	\fmfiequ{ypart(p')}{.2h}
+	\fmfiequ{p}{p'+(0,.2h)}
+	\fmfiequ{.5[ep,em]}{.5[sw,se]}
+	\fmfiequ{em}{ep+(.7w,0)}
+	\fmfi{boson,lab=new,lab.sid=left}{Vtb--Vts}
+	\fmfi{fermion,lab=$b$,lab.sid=left}{b--Vtb}
+	\fmfi{fermion,lab=$s$,lab.sid=left}{Vts--s}
+	\fmfi{fermion,lab=$t$}{Vtb{b-Vtb} .. tension 2 .. {right}p}
+	\fmfi{fermion,lab=$t$}{p{right} .. tension 2 .. {Vts-s}Vts}
+	\fmfi{photon}{p--p'}
+	\fmfi{fermion,lab=$\ell^+$,lab.sid=left}{ep--p'}
+	\fmfi{fermion,lab=$\ell^-$,lab.sid=left}{p'--em}
+	\fmfiv{d.sh=circle,d.siz=2thick}{Vtb}
+	\fmfiv{d.sh=circle,d.siz=2thick}{Vts}
+	\fmfiv{d.sh=circle,d.siz=2thick}{p}
+	\fmfiv{d.sh=circle,d.siz=2thick}{p'}
+	\end{fmfgraph*}}
+\end{fmffile}
+\bigskip
+
 \caption{Example of penguin diagrams, on the left involving SM particles and on the right 
 involving new possible particles.}
 \label{fig:NPpenguins}
